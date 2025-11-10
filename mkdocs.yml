@@ -1,5 +1,5 @@
-site_name: Mkdocs Template Site
-site_description: 'DESCRIPTION All content licensed Creative Commons ShareAlike Attribution Noncommercial'
+site_name: High School Physics Course
+site_description: 'A comprehensive year-long physics course developing students scientific literacy through systematic progression from foundational knowledge to creative application. All content licensed Creative Commons ShareAlike Attribution Noncommercial'
 site_author: 'Dan McCreary'
 repo_name: 'GitHub Repo'
 site_url: 'https://dmccreary.github.io/high-school-physics-course/'
@@ -8,6 +8,34 @@ edit_uri: 'blob/master/docs'
 
 nav:
   - Home: index.md
+  - Course Description: course-description.md
+  - Chapters:
+    - Overview: chapters/index.md
+    - Chapter 1 - Scientific Foundations: chapters/01-scientific-foundations/index.md
+    - Chapter 2 - Motion in One Dimension: chapters/02-motion-one-dimension/index.md
+    - Chapter 3 - Motion in Two Dimensions: chapters/03-motion-two-dimensions/index.md
+    - Chapter 4 - Forces and Newton's Laws: chapters/04-forces-newtons-laws/index.md
+    - Chapter 5 - Applications of Newton's Laws: chapters/05-applications-newtons-laws/index.md
+    - Chapter 6 - Work, Energy, and Power: chapters/06-work-energy-power/index.md
+    - Chapter 7 - Momentum and Collisions: chapters/07-momentum-collisions/index.md
+    - Chapter 8 - Rotational Motion: chapters/08-rotational-motion/index.md
+    - Chapter 9 - Oscillations: chapters/09-oscillations/index.md
+    - Chapter 10 - Waves and Sound: chapters/10-waves-sound/index.md
+    - Chapter 11 - Light and Optics: chapters/11-light-optics/index.md
+    - Chapter 12 - Electric Charge and Fields: chapters/12-electric-charge-fields/index.md
+  
+  - MicroSims:
+    - List of MicroSims: sims/index.md
+    - Scientific Method Workflow: sims/scientific-method/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Projectile Motion Simulator: sims/projectile-motion/index.md
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+    - Concept List: learning-graph/concept-list.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Quality Metrics: learning-graph/quality-metrics.md
+    - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Interactive Viewer: sims/graph-viewer/index.md
   - Checklist: checklist.md
   - Code Highlight Test: code-highlight-test.md
   - Glossary: glossary.md

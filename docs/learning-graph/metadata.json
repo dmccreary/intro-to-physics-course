@@ -1,0 +1,10 @@
+{
+  "title": "High School Physics Course",
+  "description": "A comprehensive year-long physics course developing students' scientific literacy through systematic progression from foundational knowledge to creative application, structured on the Revised Bloom's Taxonomy (2001). Students master physics concepts by sequentially building cognitive skills—from recalling fundamental principles to designing original experiments and novel solutions to real-world problems.",
+  "creator": "Physics Curriculum Team",
+  "date": "2025-11-09",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}
