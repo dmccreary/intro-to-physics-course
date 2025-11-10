@@ -1549,11 +1549,9 @@
 <li><strong>Repeat and refine</strong> based on feedback and new questions</li>
 </ol>
 <p>Let's consider a real-world example. Suppose you notice that when you drop different objects from the same height, some seem to fall faster than others. You might hypothesize: "Heavier objects fall faster than lighter objects." To test this, you could design an experiment dropping objects of different masses from the same height and timing their fall. After collecting data, you'd analyze whether the results support your hypothesis.</p>
-<details>
-<summary>Scientific Method Flowchart</summary>
-<iframe height="900px" src="../../sims/scientific-method/main.html" style="border: 2px solid #667eea; border-radius: 8px;" width="100%"></iframe>
+<iframe src="../../sims/scientific-method/main.html" width="100%" height="1600px" scrolling="no"></iframe>
+
 <p><a href="../../sims/scientific-method/">View detailed explanation and educational context</a></p>
-</details>
 <p><strong>Key Insight:</strong> The scientific method is iterative, meaning we cycle through these steps multiple times. Even when results don't support our initial hypothesis, we learn valuable information that helps refine our understanding.</p>
 <h2 id="measurement-the-language-of-physics">Measurement: The Language of Physics</h2>
 <p>Physics is a quantitative science, which means we express concepts using numbers and measurements rather than qualitative descriptions. Saying "the ball moved fast" is less useful than saying "the ball moved at 15 meters per second." <strong>Measurement</strong> is the process of comparing a physical quantity to a standard unit, allowing us to communicate precise information about the physical world.</p>
@@ -1684,47 +1682,68 @@
 <p>Notice the pattern: each prefix represents a specific power of ten. This makes conversions within the metric system straightforward compared to other systems (like converting inches to feet to miles).</p>
 <details>
 <summary>Metric Prefix Visualization MicroSim</summary>
-<p>Type: microsim</p>
+<p>Type: MicroSim
+Name: metric-scale-zoom</p>
 <p>Learning objective: Help students visualize the relative scale of metric prefixes and practice conversions between different orders of magnitude</p>
-<p>Canvas layout (800x600px):
-- Top area (800x150): Title and instruction text
-- Middle area (800x350): Visual scale showing objects at different metric scales
-- Bottom area (800x100): Interactive conversion practice area</p>
-<p>Visual elements:
-- Horizontal logarithmic scale from nanometers to kilometers
-- Animated objects appearing at appropriate scale points:
-  * Virus (nanometer scale) - ~100 nm
-  * Human hair width (micrometer scale) - ~100 μm
-  * Fingernail width (millimeter scale) - ~10 mm
-  * Textbook height (centimeter scale) - ~25 cm
-  * Person height (meter scale) - ~1.7 m
-  * Football field (kilometer scale) - ~0.1 km
-- Each object labeled with measurement and prefix
-- Zoom functionality to focus on specific scale ranges</p>
-<p>Interactive controls:
-- Slider: Select a scale to explore (nano to kilo)
-- Button: "Show Comparison" - displays two selected objects side by side
-- Input field: "Convert this value" with dropdown for source unit
-- Input field: Target unit selection
-- Button: "Check Answer" with immediate feedback
-- Display: Running score of correct conversions</p>
-<p>Default parameters:
-- Starting scale: meter (10⁰)
-- Initial comparison: Comparing a meter stick to a centimeter
-- Conversion practice: Random values between 1-1000</p>
-<p>Behavior:
-- Slider movement smoothly zooms the scale visualization
-- Object icons grow/shrink proportionally as zoom changes
-- Hovering over objects shows detailed information (actual size, common examples)
-- Conversion practice generates random problems (e.g., "Convert 2.5 km to meters")
-- Correct answers trigger positive feedback animation (green checkmark)
-- Incorrect answers show correct answer and explanation</p>
-<p>Implementation notes:
-- Use p5.js for rendering and animation
-- Logarithmic scale positioning: position = log₁₀(size) * scaleFactor
-- Store object data in array with {name, size_in_meters, image, description}
-- Conversion logic: multiply or divide by appropriate power of 10
-- Track statistics: problems attempted, correct answers, average time</p>
+<p>Canvas layout (800x600px):</p>
+<ul>
+<li>Top area (800x150): Title and instruction text</li>
+<li>Middle area (800x350): Visual scale showing objects at different metric scales</li>
+<li>Bottom area (800x100): Interactive conversion practice area</li>
+</ul>
+<p>Visual elements:</p>
+<ul>
+<li>Horizontal logarithmic scale from nanometers to kilometers</li>
+<li>
+<p>Animated objects appearing at appropriate scale points:</p>
+</li>
+<li>
+<p>Virus (nanometer scale) - ~100 nm</p>
+</li>
+<li>Human hair width (micrometer scale) - ~100 μm</li>
+<li>Fingernail width (millimeter scale) - ~10 mm</li>
+<li>Textbook height (centimeter scale) - ~25 cm</li>
+<li>Person height (meter scale) - ~1.7 m</li>
+<li>
+<p>Football field (kilometer scale) - ~0.1 km</p>
+</li>
+<li>
+<p>Each object labeled with measurement and prefix</p>
+</li>
+<li>Zoom functionality with range control slider to focus on specific scale ranges</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Horizontal Slider: Select a scale to explore (nano to kilo)</li>
+<li>Button: "Show Comparison" - displays two selected objects side by side</li>
+<li>Input field: "Convert this value" with dropdown for source unit</li>
+<li>Input field: Target unit selection</li>
+<li>Button: "Check Answer" with immediate feedback</li>
+<li>Display: Running score of correct conversions</li>
+</ul>
+<p>Default parameters:</p>
+<ul>
+<li>Starting scale: meter (10⁰)</li>
+<li>Initial comparison: Comparing a meter stick to a centimeter</li>
+<li>Conversion practice: Random values between 1-1000</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Slider movement smoothly zooms the scale visualization</li>
+<li>Object icons grow/shrink proportionally as zoom changes</li>
+<li>Hovering over objects shows detailed information (actual size, common examples)</li>
+<li>Conversion practice generates random problems (e.g., "Convert 2.5 km to meters")</li>
+<li>Correct answers trigger positive feedback animation (green checkmark)</li>
+<li>Incorrect answers show correct answer and explanation</li>
+</ul>
+<p>Implementation notes:</p>
+<ul>
+<li>Use p5.js for rendering and animation</li>
+<li>Logarithmic scale positioning: position = log₁₀(size) * scaleFactor</li>
+<li>Store object data in array with {name, size_in_meters, image, description}</li>
+<li>Conversion logic: multiply or divide by appropriate power of 10</li>
+<li>Track statistics: problems attempted, correct answers, average time</li>
+</ul>
 <p>Implementation: p5.js with custom canvas controls</p>
 </details>
 <h2 id="unit-conversion-translating-between-systems">Unit Conversion: Translating Between Systems</h2>
@@ -1979,10 +1998,12 @@
 <li><strong>cos(θ)</strong> = adjacent / hypotenuse</li>
 <li><strong>tan(θ)</strong> = opposite / adjacent</li>
 </ul>
-<p><strong>Memory aid: SOH-CAH-TOA</strong>
-- <strong>S</strong>ine = <strong>O</strong>pposite/<strong>H</strong>ypotenuse
-- <strong>C</strong>osine = <strong>A</strong>djacent/<strong>H</strong>ypotenuse
-- <strong>T</strong>angent = <strong>O</strong>pposite/<strong>A</strong>djacent</p>
+<p><strong>Memory aid: SOH-CAH-TOA</strong></p>
+<ul>
+<li><strong>S</strong>ine = <strong>O</strong>pposite/<strong>H</strong>ypotenuse</li>
+<li><strong>C</strong>osine = <strong>A</strong>djacent/<strong>H</strong>ypotenuse</li>
+<li><strong>T</strong>angent = <strong>O</strong>pposite/<strong>A</strong>djacent</li>
+</ul>
 <p><strong>Pythagorean Theorem:</strong> For any right triangle with legs <em>a</em> and <em>b</em> and hypotenuse <em>c</em>:</p>
 <p><em>c</em>² = <em>a</em>² + <em>b</em>²</p>
 <p><strong>Inverse functions</strong> (finding angles from ratios):
