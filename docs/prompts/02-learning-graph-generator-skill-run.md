@@ -1,15 +1,4 @@
-
-╭─── Claude Code v2.0.36 ────────────────────────────────────────────────────────────────────────────────────────────╮
-│                                                │ Tips for getting started                                          │
-│                Welcome back Dan!               │ Run /init to create a CLAUDE.md file with instructions for Claude │
-│                                                │ ───────────────────────────────────────────────────────────────── │
-│                    ▗ ▗   ▖ ▖                   │ Recent activity                                                   │
-│                                                │ No recent activity                                                │
-│                      ▘▘ ▝▝                     │                                                                   │
-│                                                │                                                                   │
-│            Sonnet 4.5 · Claude Pro             │                                                                   │
-│   /…/Documents/ws/high-school-physics-course   │                                                                   │
-╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+# Run of the learning-graph-generator skill 
 
 > run the learning-graph-generator skill 
 
