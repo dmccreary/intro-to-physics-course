@@ -9,4 +9,4 @@
 
 [FAQ Coverage Gaps](../learning-graph/faq-coverage-gaps.md)
 
-[]()
+[FAQ Session Log](https://github.com/dmccreary/intro-to-physics-course/blob/main/logs/faq.md)
