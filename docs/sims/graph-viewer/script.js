@@ -97,15 +97,35 @@ function getColorName(color) {
     'violet': 'Violet',
     'gray': 'Gray',
     'brown': 'Brown',
-    'teal': 'Teal'
+    'teal': 'Teal',
+    'yellow': 'Yellow',
+    'pink': 'Pink',
+    'purple': 'Purple',
+    'cyan': 'Cyan'
   };
   return colorNames[color.toLowerCase()] || color;
 }
 
-// Helper function to determine if text should be white or black
+// Helper function to determine if text should be white or black based on background color
 function getTextColorForBackground(backgroundColor) {
-  // Colors that need white text
-  const darkColors = ['red', 'green', 'blue', 'indigo', 'violet', 'gray', 'brown'];
+  // Colors that need white text (dark backgrounds)
+  const darkColors = ['red', 'green', 'blue', 'indigo', 'violet', 'gray', 'grey', 'brown', 'purple', 'teal', 'navy', 'maroon', 'darkblue', 'darkgreen', 'darkred'];
+
+  // For hex colors, calculate luminance
+  if (backgroundColor.startsWith('#')) {
+    const hex = backgroundColor.replace('#', '');
+    const r = parseInt(hex.substr(0, 2), 16);
+    const g = parseInt(hex.substr(2, 2), 16);
+    const b = parseInt(hex.substr(4, 2), 16);
+
+    // Calculate relative luminance (ITU-R BT.709)
+    const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+
+    // If luminance is less than 0.5, use white text
+    return luminance < 0.5 ? 'white' : 'black';
+  }
+
+  // For named colors
   return darkColors.includes(backgroundColor.toLowerCase()) ? 'white' : 'black';
 }
 
@@ -169,9 +189,24 @@ function initializeNetwork(graphData) {
     setMetadata(graphData.metadata);
   }
 
-  // Generate legend from groups data
+  // Process groups to automatically set font colors based on background
+  var processedGroups = {};
   if (graphData.groups) {
-    generateLegend(graphData.groups);
+    for (const [groupName, groupStyle] of Object.entries(graphData.groups)) {
+      processedGroups[groupName] = { ...groupStyle };
+
+      // Automatically determine and set font color based on background color
+      if (groupStyle.color) {
+        const fontColor = getTextColorForBackground(groupStyle.color);
+        if (!processedGroups[groupName].font) {
+          processedGroups[groupName].font = {};
+        }
+        processedGroups[groupName].font.color = fontColor;
+      }
+    }
+
+    // Generate legend from processed groups data
+    generateLegend(processedGroups);
   }
 
   // Create DataSets from loaded data
@@ -188,7 +223,7 @@ function initializeNetwork(graphData) {
   };
 
   var options = {
-    groups: graphData.groups || {},  // Apply group-based styling
+    groups: processedGroups || {},  // Apply group-based styling with corrected font colors
     edges: {
       arrows: {
         to: { enabled: true, type: 'arrow', color: 'black', scaleFactor: 1 }
