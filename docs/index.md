@@ -11,6 +11,7 @@ hide:
 Welcome to the Introduction to Physics website.
 
 Status:
+
 1. Course description: done (quality score: 86)
 2. Learning Graph: done see [graph quality metrics](./learning-graph/quality-metrics.md)
 3. Book Chapter Structure: done - 12 chapters
