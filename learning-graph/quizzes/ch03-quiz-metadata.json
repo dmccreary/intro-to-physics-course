@@ -1,0 +1,27 @@
+{
+  "chapter": "Motion in Two Dimensions",
+  "chapter_number": 3,
+  "chapter_file": "docs/chapters/03-motion-two-dimensions/index.md",
+  "quiz_file": "docs/chapters/03-motion-two-dimensions/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 88,
+  "overall_quality_score": 84,
+  "answer_distribution": {
+    "A": 0,
+    "B": 7,
+    "C": 3,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 2,
+    "Understand": 5,
+    "Apply": 3,
+    "Analyze": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 6,
+    "tested_concepts": 6,
+    "coverage_percentage": 100
+  }
+}

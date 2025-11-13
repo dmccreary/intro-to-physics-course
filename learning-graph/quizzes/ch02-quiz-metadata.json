@@ -1,0 +1,160 @@
+{
+  "chapter": "Motion in One Dimension",
+  "chapter_number": 2,
+  "chapter_file": "docs/chapters/02-motion-one-dimension/index.md",
+  "quiz_file": "docs/chapters/02-motion-one-dimension/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 92,
+  "overall_quality_score": 83,
+  "questions": [
+    {
+      "id": "ch02-q001",
+      "number": 1,
+      "question_text": "What is the key difference between distance and displacement?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Distance and Displacement",
+      "source_link": "../02-motion-one-dimension/index.md#distance-and-displacement-two-ways-to-describe-motion",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 92
+    },
+    {
+      "id": "ch02-q002",
+      "number": 2,
+      "question_text": "Which statement correctly describes velocity?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Velocity",
+      "source_link": "../02-motion-one-dimension/index.md#speed-and-velocity-describing-how-fast",
+      "distractor_quality": 0.85,
+      "explanation_word_count": 84
+    },
+    {
+      "id": "ch02-q003",
+      "number": 3,
+      "question_text": "What does acceleration measure?",
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Acceleration",
+      "source_link": "../02-motion-one-dimension/index.md#acceleration-the-rate-of-change-of-velocity",
+      "distractor_quality": 0.87,
+      "explanation_word_count": 65
+    },
+    {
+      "id": "ch02-q004",
+      "number": 4,
+      "question_text": "On a position-time graph, what does the slope represent?",
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Position-Time Graphs",
+      "source_link": "../02-motion-one-dimension/index.md#position-time-graphs-visualizing-motion",
+      "distractor_quality": 0.90,
+      "explanation_word_count": 78
+    },
+    {
+      "id": "ch02-q005",
+      "number": 5,
+      "question_text": "What does the area under a velocity-time graph represent?",
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Velocity-Time Graphs",
+      "source_link": "../02-motion-one-dimension/index.md#velocity-time-graphs-a-different-perspective",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 82
+    },
+    {
+      "id": "ch02-q006",
+      "number": 6,
+      "question_text": "A car travels 3 blocks east, then 4 blocks north. What is the magnitude of the displacement?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Displacement",
+      "source_link": "../02-motion-one-dimension/index.md#distance-and-displacement-two-ways-to-describe-motion",
+      "distractor_quality": 0.91,
+      "explanation_word_count": 70
+    },
+    {
+      "id": "ch02-q007",
+      "number": 7,
+      "question_text": "An object starts from rest and accelerates at 2 m/s² for 5 seconds. What is its final velocity?",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Uniformly Accelerated Motion",
+      "source_link": "../02-motion-one-dimension/index.md#uniformly-accelerated-motion",
+      "distractor_quality": 0.86,
+      "explanation_word_count": 62
+    },
+    {
+      "id": "ch02-q008",
+      "number": 8,
+      "question_text": "Which kinematic equation should you use when time is unknown and you need to find final velocity?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Kinematic Equations",
+      "source_link": "../02-motion-one-dimension/index.md#the-kinematic-equations-mathematical-tools-for-uniformly-accelerated-motion",
+      "distractor_quality": 0.92,
+      "explanation_word_count": 68
+    },
+    {
+      "id": "ch02-q009",
+      "number": 9,
+      "question_text": "What is the acceleration due to gravity near Earth's surface (using the standard convention with positive upward)?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Acceleration (free fall context)",
+      "source_link": "../02-motion-one-dimension/index.md#special-case-free-fall",
+      "distractor_quality": 0.84,
+      "explanation_word_count": 88
+    },
+    {
+      "id": "ch02-q010",
+      "number": 10,
+      "question_text": "An object moving at constant velocity has what acceleration?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Uniform Motion",
+      "source_link": "../02-motion-one-dimension/index.md#uniform-motion",
+      "distractor_quality": 0.87,
+      "explanation_word_count": 75
+    }
+  ],
+  "answer_distribution": {
+    "A": 0,
+    "B": 4,
+    "C": 6,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 4,
+    "Understand": 4,
+    "Apply": 2,
+    "Analyze": 0,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_target_distribution": {
+    "Remember": 4,
+    "Understand": 4,
+    "Apply": 1.5,
+    "Analyze": 0.5,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 11,
+    "tested_concepts": 10,
+    "coverage_percentage": 91
+  },
+  "notes": "Introductory kinematics chapter. Answer distribution heavily skewed toward B and C (need more A and D). Excellent concept coverage (91%). Missing: Linear Motion, Acceleration-Time Graphs."
+}

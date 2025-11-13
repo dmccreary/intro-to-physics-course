@@ -1,0 +1,130 @@
+{
+  "chapter": "Chapter 11: Light and Optics",
+  "chapter_file": "docs/chapters/11-light-optics/index.md",
+  "quiz_file": "docs/chapters/11-light-optics/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch11-q001",
+      "number": 1,
+      "question_text": "What is the law of reflection?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Law of Reflection",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch11-q002",
+      "number": 2,
+      "question_text": "What is refraction?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Refraction",
+      "explanation_word_count": 43
+    },
+    {
+      "id": "ch11-q003",
+      "number": 3,
+      "question_text": "How are the angles of incidence and refraction related?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Snell's Law",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch11-q004",
+      "number": 4,
+      "question_text": "Light travels from air (n=1) into water (n=1.33) at an angle of 45\u00b0 to the normal. What is the refracted angle?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Snell's Law",
+      "explanation_word_count": 35
+    },
+    {
+      "id": "ch11-q005",
+      "number": 5,
+      "question_text": "What is the difference between a converging lens and a diverging lens?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Lenses",
+      "explanation_word_count": 53
+    },
+    {
+      "id": "ch11-q006",
+      "number": 6,
+      "question_text": "What is the focal length of a lens?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Lenses",
+      "explanation_word_count": 47
+    },
+    {
+      "id": "ch11-q007",
+      "number": 7,
+      "question_text": "A converging mirror with radius of curvature R = 20 cm reflects parallel light rays. Where do they converge?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Mirrors",
+      "explanation_word_count": 44
+    },
+    {
+      "id": "ch11-q008",
+      "number": 8,
+      "question_text": "What is diffraction in the context of light?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Diffraction",
+      "explanation_word_count": 37
+    },
+    {
+      "id": "ch11-q009",
+      "number": 9,
+      "question_text": "What is polarization of light?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Polarization",
+      "explanation_word_count": 41
+    },
+    {
+      "id": "ch11-q010",
+      "number": 10,
+      "question_text": "How does the wave-particle duality of light affect its behavior?",
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concept_tested": "Wave-Particle Duality",
+      "explanation_word_count": 46
+    }
+  ],
+  "answer_distribution": {
+    "A": 0,
+    "B": 9,
+    "C": 1,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 4,
+    "Understand": 3,
+    "Apply": 2,
+    "Analyze": 1,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 11,
+    "tested_concepts": 8,
+    "coverage_percentage": 72
+  }
+}

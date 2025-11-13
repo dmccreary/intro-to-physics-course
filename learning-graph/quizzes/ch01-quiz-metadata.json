@@ -1,0 +1,160 @@
+{
+  "chapter": "Scientific Foundations and Mathematical Tools",
+  "chapter_number": 1,
+  "chapter_file": "docs/chapters/01-scientific-foundations/index.md",
+  "quiz_file": "docs/chapters/01-scientific-foundations/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 95,
+  "overall_quality_score": 85,
+  "questions": [
+    {
+      "id": "ch01-q001",
+      "number": 1,
+      "question_text": "What is the primary purpose of the scientific method in physics?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Scientific Method",
+      "source_link": "../01-scientific-foundations/index.md#the-scientific-method-how-physicists-think",
+      "distractor_quality": 0.90,
+      "explanation_word_count": 68
+    },
+    {
+      "id": "ch01-q002",
+      "number": 2,
+      "question_text": "What are the two essential components of every measurement in physics?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "Measurement",
+      "source_link": "../01-scientific-foundations/index.md#measurement-the-language-of-physics",
+      "distractor_quality": 0.85,
+      "explanation_word_count": 72
+    },
+    {
+      "id": "ch01-q003",
+      "number": 3,
+      "question_text": "Which of the following is the SI base unit for mass?",
+      "correct_answer": "C",
+      "bloom_level": "Remember",
+      "difficulty": "easy",
+      "concept_tested": "SI Units",
+      "source_link": "../01-scientific-foundations/index.md#si-units-the-international-standard",
+      "distractor_quality": 0.88,
+      "explanation_word_count": 52
+    },
+    {
+      "id": "ch01-q004",
+      "number": 4,
+      "question_text": "How many significant figures are in the measurement 0.00520 meters?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Significant Figures",
+      "source_link": "../01-scientific-foundations/index.md#significant-figures-communicating-precision",
+      "distractor_quality": 0.92,
+      "explanation_word_count": 80
+    },
+    {
+      "id": "ch01-q005",
+      "number": 5,
+      "question_text": "A student converts 2.5 kilometers to meters. What is the correct result?",
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "easy",
+      "concept_tested": "Unit Conversion",
+      "source_link": "../01-scientific-foundations/index.md#unit-conversion-translating-between-systems",
+      "distractor_quality": 0.87,
+      "explanation_word_count": 58
+    },
+    {
+      "id": "ch01-q006",
+      "number": 6,
+      "question_text": "What is the key difference between a scalar quantity and a vector quantity?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Scalars and Vectors",
+      "source_link": "../01-scientific-foundations/index.md#scalars-and-vectors-two-types-of-quantities",
+      "distractor_quality": 0.89,
+      "explanation_word_count": 95
+    },
+    {
+      "id": "ch01-q007",
+      "number": 7,
+      "question_text": "You have two displacement vectors: A = 30 m east and B = 40 m north. Using the component method of vector addition, what is the magnitude of the resultant vector?",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Vector Addition",
+      "source_link": "../01-scientific-foundations/index.md#vector-addition-combining-vectors",
+      "distractor_quality": 0.91,
+      "explanation_word_count": 82
+    },
+    {
+      "id": "ch01-q008",
+      "number": 8,
+      "question_text": "A velocity vector has magnitude 60 m/s at an angle of 30° above the horizontal. What is the horizontal (x) component of this vector?",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Vector Components",
+      "source_link": "../01-scientific-foundations/index.md#vector-representation-arrows-and-components",
+      "distractor_quality": 0.86,
+      "explanation_word_count": 70
+    },
+    {
+      "id": "ch01-q009",
+      "number": 9,
+      "question_text": "A graph of position vs. time for an object moving at constant velocity will have what shape?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "easy",
+      "concept_tested": "Graphical Analysis",
+      "source_link": "../01-scientific-foundations/index.md#graphical-analysis-reading-the-story-in-data",
+      "distractor_quality": 0.84,
+      "explanation_word_count": 62
+    },
+    {
+      "id": "ch01-q010",
+      "number": 10,
+      "question_text": "What does it mean when measurements are precise but not accurate?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Precision vs Accuracy",
+      "source_link": "../01-scientific-foundations/index.md#precision-vs-accuracy-two-different-concepts",
+      "distractor_quality": 0.93,
+      "explanation_word_count": 88
+    }
+  ],
+  "answer_distribution": {
+    "A": 0,
+    "B": 6,
+    "C": 3,
+    "D": 1
+  },
+  "bloom_distribution": {
+    "Remember": 2,
+    "Understand": 4,
+    "Apply": 4,
+    "Analyze": 0,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "bloom_target_distribution": {
+    "Remember": 4,
+    "Understand": 4,
+    "Apply": 1.5,
+    "Analyze": 0.5,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 19,
+    "tested_concepts": 10,
+    "coverage_percentage": 53
+  },
+  "notes": "Introductory chapter with strong foundational content. Answer distribution needs rebalancing (too many B answers). Consider adding questions for: Dimensional Analysis, Error Analysis, Trigonometry for Physics, Dot Product, Cross Product, Proportional Reasoning, Scientific Notation."
+}

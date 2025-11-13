@@ -1,0 +1,130 @@
+{
+  "chapter": "Chapter 10: Waves and Sound",
+  "chapter_file": "docs/chapters/10-waves-sound/index.md",
+  "quiz_file": "docs/chapters/10-waves-sound/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch10-q001",
+      "number": 1,
+      "question_text": "What is a wave?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Wave Properties",
+      "explanation_word_count": 49
+    },
+    {
+      "id": "ch10-q002",
+      "number": 2,
+      "question_text": "How are wavelength and frequency related?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Wavelength",
+      "explanation_word_count": 51
+    },
+    {
+      "id": "ch10-q003",
+      "number": 3,
+      "question_text": "What causes the Doppler Effect?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Doppler Effect",
+      "explanation_word_count": 47
+    },
+    {
+      "id": "ch10-q004",
+      "number": 4,
+      "question_text": "An observer hears a siren frequency of 1200 Hz from an approaching ambulance. When the ambulance moves away, the frequency drops to 800 Hz. What is the actual source frequency?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Doppler Effect",
+      "explanation_word_count": 44
+    },
+    {
+      "id": "ch10-q005",
+      "number": 5,
+      "question_text": "What is the relationship between sound intensity and distance from the source?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Sound Intensity",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch10-q006",
+      "number": 6,
+      "question_text": "What happens when two waves interfere constructively?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Interference",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch10-q007",
+      "number": 7,
+      "question_text": "A sound wave travels through air at 340 m/s with a frequency of 440 Hz. What is its wavelength?",
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Wavelength",
+      "explanation_word_count": 33
+    },
+    {
+      "id": "ch10-q008",
+      "number": 8,
+      "question_text": "What is diffraction?",
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Diffraction",
+      "explanation_word_count": 49
+    },
+    {
+      "id": "ch10-q009",
+      "number": 9,
+      "question_text": "What are harmonics in a vibrating string?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Harmonics",
+      "explanation_word_count": 44
+    },
+    {
+      "id": "ch10-q010",
+      "number": 10,
+      "question_text": "Why does a vibrating tuning fork create sound waves in air?",
+      "correct_answer": "B",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concept_tested": "Wave Properties",
+      "explanation_word_count": 41
+    }
+  ],
+  "answer_distribution": {
+    "A": 2,
+    "B": 7,
+    "C": 1,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 2,
+    "Understand": 5,
+    "Apply": 2,
+    "Analyze": 1,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 12,
+    "tested_concepts": 7,
+    "coverage_percentage": 58
+  }
+}

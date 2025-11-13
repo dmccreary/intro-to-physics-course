@@ -1,0 +1,128 @@
+{
+  "chapter": "Chapter 5: Applications of Newton's Laws",
+  "chapter_file": "docs/chapters/05-applications-newtons-laws/index.md",
+  "quiz_file": "docs/chapters/05-applications-newtons-laws/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch5-q001",
+      "number": 1,
+      "question_text": "What is kinetic friction?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Kinetic Friction",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch5-q002",
+      "number": 2,
+      "question_text": "How does the coefficient of kinetic friction compare to the coefficient of static friction?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Coefficient of Friction",
+      "explanation_word_count": 43
+    },
+    {
+      "id": "ch5-q003",
+      "number": 3,
+      "question_text": "A 10 kg box is being pulled across a horizontal floor with a rope. The tension in the rope is 50 N. Which statement is correct?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Tension",
+      "explanation_word_count": 35
+    },
+    {
+      "id": "ch5-q004",
+      "number": 4,
+      "question_text": "A block of mass m is placed on an inclined plane at angle \u03b8 to the horizontal. What is the component of weight parallel to the incline?",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Inclined Plane",
+      "explanation_word_count": 37
+    },
+    {
+      "id": "ch5-q005",
+      "number": 5,
+      "question_text": "In an Atwood machine with two masses (M = 5 kg and m = 3 kg) connected by a rope over a pulley, which statement is correct?",
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Atwood Machine",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch5-q006",
+      "number": 6,
+      "question_text": "What is centripetal force?",
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Centripetal Force",
+      "explanation_word_count": 47
+    },
+    {
+      "id": "ch5-q007",
+      "number": 7,
+      "question_text": "A car travels around a horizontal curve of radius 50 m at constant speed. For the car to maintain circular motion, what must be true?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Centripetal Acceleration",
+      "explanation_word_count": 44
+    },
+    {
+      "id": "ch5-q008",
+      "number": 8,
+      "question_text": "Why are highway curves banked (tilted) in many places?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Banked Curves",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch5-q009",
+      "number": 9,
+      "question_text": "A box slides down a 30\u00b0 incline with kinetic friction coefficient \u03bc\u2096 = 0.2. What is the net force along the incline for a 10 kg box? (Use g = 10 m/s\u00b2)",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Friction",
+      "explanation_word_count": 60
+    },
+    {
+      "id": "ch5-q010",
+      "number": 10,
+      "question_text": "In a pulley system with a movable pulley, what advantage does it provide?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Pulley Systems",
+      "explanation_word_count": 52
+    }
+  ],
+  "answer_distribution": {
+    "A": 2,
+    "B": 5,
+    "C": 3,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 2,
+    "Understand": 4,
+    "Apply": 4,
+    "Analyze": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 11,
+    "tested_concepts": 10,
+    "coverage_percentage": 90
+  }
+}

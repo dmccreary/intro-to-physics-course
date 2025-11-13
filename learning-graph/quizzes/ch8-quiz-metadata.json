@@ -1,0 +1,128 @@
+{
+  "chapter": "Chapter 8: Rotational Motion and Angular Momentum",
+  "chapter_file": "docs/chapters/08-rotational-motion/index.md",
+  "quiz_file": "docs/chapters/08-rotational-motion/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch8-q001",
+      "number": 1,
+      "question_text": "What is angular displacement?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Angular Displacement",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch8-q002",
+      "number": 2,
+      "question_text": "How is angular velocity related to tangential velocity?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Angular Velocity",
+      "explanation_word_count": 48
+    },
+    {
+      "id": "ch8-q003",
+      "number": 3,
+      "question_text": "What is torque?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Torque",
+      "explanation_word_count": 50
+    },
+    {
+      "id": "ch8-q004",
+      "number": 4,
+      "question_text": "You push on a door handle 0.8 m from the door's hinge with a force of 25 N perpendicular to the door. What is the torque about the hinge?",
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Torque",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch8-q005",
+      "number": 5,
+      "question_text": "What is rotational inertia?",
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Rotational Inertia",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch8-q006",
+      "number": 6,
+      "question_text": "How does an ice skater spinning with arms extended change their spin rate when pulling arms inward?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Conservation of Angular Momentum",
+      "explanation_word_count": 38
+    },
+    {
+      "id": "ch8-q007",
+      "number": 7,
+      "question_text": "A disk rotates at 2 rad/s and has a rotational inertia of 3 kg\u00b7m\u00b2. What is its rotational kinetic energy?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Rotational Kinetic Energy",
+      "explanation_word_count": 27
+    },
+    {
+      "id": "ch8-q008",
+      "number": 8,
+      "question_text": "What is angular momentum?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Angular Momentum",
+      "explanation_word_count": 33
+    },
+    {
+      "id": "ch8-q009",
+      "number": 9,
+      "question_text": "A wheel rolling without slipping down a ramp will reach the bottom sooner than a sliding block of the same mass. Why?",
+      "correct_answer": "C",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concept_tested": "Rolling Motion",
+      "explanation_word_count": 55
+    },
+    {
+      "id": "ch8-q010",
+      "number": 10,
+      "question_text": "When a torque is applied to a rigid object, what changes in the object's motion?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Angular Acceleration",
+      "explanation_word_count": 46
+    }
+  ],
+  "answer_distribution": {
+    "A": 2,
+    "B": 7,
+    "C": 1,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 3,
+    "Understand": 4,
+    "Apply": 2,
+    "Analyze": 1
+  },
+  "concept_coverage": {
+    "total_concepts": 10,
+    "tested_concepts": 9,
+    "coverage_percentage": 90
+  }
+}
