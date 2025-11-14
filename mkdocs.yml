@@ -53,7 +53,8 @@ nav:
     - Branches of Physics: sims/branches-of-physics/index.md
     - Scientific Method Workflow: sims/scientific-method/index.md
     - Learning Graph Viewer: sims/graph-viewer/index.md
-    - Projectile Motion Simulator: sims/projectile-motion/index.md
+    - Projectile Motion: sims/projectile-motion/index.md
+    - Projectile Motion Gravity: sims/projectile-motion-gravity/index.md
     - Metric Scale Zoom: sims/metric-scale-zoom/index.md
   
   - Learning Graph:
@@ -75,6 +76,7 @@ nav:
   - Glossary: glossary.md
   - How We Built This Site: how-we-built-this-site.md
   - References: references.md
+  - Book Build References: book-build-references.md
   - Feedback: feedback.md
   - License: license.md
   - Contact: contact.md

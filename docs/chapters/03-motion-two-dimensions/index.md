@@ -184,6 +184,9 @@ The trajectory—the path traced by the projectile—forms a parabola. This eleg
 | Velocity | Constant ($v_x$) | Changes ($v_y = v_{0y} - gt$) |
 | Position equation | $x = v_x t$ | $y = y_0 + v_{0y}t - \frac{1}{2}gt^2$ |
 
+#### Diagram: Projectile Motion
+<iframe src="../../sims/projectile-motion/main.html" height="482px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Projectile Motion Trajectory Diagram</summary>
     Type: diagram
