@@ -1249,4 +1249,4 @@ Understanding oscillations prepares you for the next chapter on waves, where osc
 
 ---
 
-**Next Steps:** In [Chapter 10: Waves](../10-waves/index.md), you'll see how oscillations propagate through space, creating wave motion. The concepts of period, frequency, and amplitude carry directly into wave physics, while new concepts like wavelength and wave speed emerge.
+**Next Steps:** In [Chapter 10: Waves](../10-waves-sound/index.md), you'll see how oscillations propagate through space, creating wave motion. The concepts of period, frequency, and amplitude carry directly into wave physics, while new concepts like wavelength and wave speed emerge.

@@ -54,7 +54,7 @@ See [MicroSims Index](sims/index.md) for all available simulations.
 
 Assessment is distributed across Bloom's Taxonomy levels: Remembering (10%), Understanding (15%), Applying (30%), Analyzing (20%), Evaluating (15%), and Creating (10%). You'll be evaluated through weekly quizzes, problem sets, laboratory analysis reports, peer reviews, and two major capstone projects. The emphasis is on demonstrating higher-order thinking skills rather than pure memorization, with substantial weight given to problem-solving and creative application.
 
-See [Course Description](course-description.md#assessment--grading-framework) for the complete grading breakdown.
+See [Course Description](course-description.md#assessment-and-grading-framework) for the complete grading breakdown.
 
 ### Can I use this textbook for self-study?
 
