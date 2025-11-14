@@ -85,6 +85,7 @@ As an object undergoes SHM, its position, velocity, and acceleration all vary wi
 
 When the object reaches its farthest point from equilibrium (maximum displacement), it momentarily stops before reversing direction. At this instant, velocity is zero but acceleration is maximum. Conversely, when the object passes through the equilibrium position, it's moving at its fastest, but the acceleration is zero because there's no restoring force at that point.
 
+#### Diagram: Position-Velocity-Acceleration Relationship in SHM MicroSim
 <details markdown="1">
     <summary>Position-Velocity-Acceleration Relationship in SHM MicroSim</summary>
     Type: microsim
@@ -195,6 +196,7 @@ Where:
 - ω is angular frequency
 - φ is the phase constant (initial angle), which depends on where the object started
 
+#### Diagram: Period, Frequency, and Angular Frequency Relationship Diagram
 <details markdown="1">
     <summary>Period, Frequency, and Angular Frequency Relationship Diagram</summary>
     Type: infographic
@@ -285,6 +287,7 @@ To measure a spring constant experimentally:
 3. Plot force (F = mg) versus displacement (x)
 4. The slope of the line equals k
 
+#### Diagram: Hooke's Law Interactive Demonstration
 <details markdown="1">
     <summary>Hooke's Law Interactive Demonstration</summary>
     Type: microsim
@@ -397,6 +400,7 @@ The restoring force for a pendulum comes from the component of gravity tangent t
 
 For small angles (in radians), sin(θ) ≈ θ, which makes the restoring force proportional to angular displacement—the condition for SHM.
 
+#### Diagram: Simple Pendulum Period vs. Length Investigation
 <details markdown="1">
     <summary>Simple Pendulum Period vs. Length Investigation</summary>
     Type: microsim
@@ -481,6 +485,7 @@ Examples of physical pendulums:
 
 Physical pendulums have a special property: there exists a point on the pendulum (called the center of oscillation) where, if you placed all the mass there, the period would be unchanged. This principle is used in designing accurate pendulum clocks.
 
+#### Diagram: Simple vs. Physical Pendulum Comparison Diagram
 <details markdown="1">
     <summary>Simple vs. Physical Pendulum Comparison Diagram</summary>
     Type: diagram
@@ -567,6 +572,7 @@ Energy distribution at different points in the oscillation:
 | Maximum left | -A | 0 | 0 | Maximum | Constant |
 | Equilibrium moving right | 0 | Maximum | Maximum | 0 | Constant |
 
+#### Diagram: Energy Transformation in SHM Bar Chart Animation
 <details markdown="1">
     <summary>Energy Transformation in SHM Bar Chart Animation</summary>
     Type: chart
@@ -646,6 +652,7 @@ Types of damping:
 
 Most real-world oscillators (pendulums, springs, guitar strings) are underdamped. They oscillate multiple times before stopping.
 
+#### Diagram: Types of Damping Comparison Graph
 <details markdown="1">
     <summary>Types of Damping Comparison Graph</summary>
     Type: chart
@@ -748,6 +755,7 @@ The amplitude at resonance depends on damping:
 
 Resonance amplitude can be dozens or hundreds of times larger than off-resonance oscillations. This explains why pushing a swing at the right frequency (its natural frequency) builds up large swings with minimal effort.
 
+#### Diagram: Resonance Amplitude vs. Driving Frequency Interactive Graph
 <details markdown="1">
     <summary>Resonance Amplitude vs. Driving Frequency Interactive Graph</summary>
     Type: chart
@@ -809,6 +817,7 @@ Resonance plays a crucial role in many phenomena:
 
 Engineers must carefully analyze natural frequencies and avoid driving systems at resonance unless desired. Earthquake-resistant buildings are designed so their natural frequencies don't match typical earthquake frequencies.
 
+#### Diagram: Tacoma Narrows Bridge Resonance Timeline
 <details markdown="1">
     <summary>Tacoma Narrows Bridge Resonance Timeline</summary>
     Type: timeline
@@ -866,6 +875,7 @@ To avoid destructive resonance or to exploit beneficial resonance, engineers use
 - Use resonant cavities to amplify electromagnetic waves
 - Create resonant structures in architecture for acoustic purposes
 
+#### Diagram: Driven Oscillator Interactive MicroSim
 <details markdown="1">
     <summary>Driven Oscillator Interactive MicroSim</summary>
     Type: microsim
@@ -999,6 +1009,7 @@ Oscillations appear throughout modern technology:
 - Aircraft wings have natural frequencies engineers must avoid exciting
 - Train cars use spring-damper systems for passenger comfort
 
+#### Diagram: Applications of Oscillations Across Fields Infographic
 <details markdown="1">
     <summary>Applications of Oscillations Across Fields Infographic</summary>
     Type: infographic

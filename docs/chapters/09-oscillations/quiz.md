@@ -18,7 +18,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Simple Harmonic Motion
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Amplitude
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Period
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Hooke's Law
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Hooke's Law
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Simple Pendulum
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Resonance
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Simple Harmonic Motion
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Simple Pendulum
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of oscillations and periodic motion with these 10 questi
 
     **Concept Tested:** Resonance
 
-    **See:** [Chapter 9 - Oscillations and Periodic Motion](docs/chapters/09-oscillations/index.md)
+    **See:** [Chapter 9 - Oscillations and Periodic Motion](index.md)
 

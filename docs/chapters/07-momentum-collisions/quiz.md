@@ -18,7 +18,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Linear Momentum
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Impulse-Momentum Theorem
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Conservation of Momentum
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Conservation of Momentum
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Elastic Collisions
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Perfectly Inelastic Collisions
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Perfectly Inelastic Collisions
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Center of Mass
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Conservation of Momentum
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of momentum and collisions with these 10 questions.
 
     **Concept Tested:** Rocket Propulsion
 
-    **See:** [Chapter 7 - Momentum and Collisions](docs/chapters/07-momentum-collisions/index.md)
+    **See:** [Chapter 7 - Momentum and Collisions](index.md)
 

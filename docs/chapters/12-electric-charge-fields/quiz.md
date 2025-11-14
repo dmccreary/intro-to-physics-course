@@ -18,7 +18,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Electric Charge
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Coulomb's Law
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Coulomb's Law
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Electric Field
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Electric Field Lines
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Electric Potential
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Voltage
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Electric Potential Energy
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Equipotential Surfaces
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of electric charge and electric fields with these 10 que
 
     **Concept Tested:** Conservation of Charge
 
-    **See:** [Chapter 12 - Electric Charge and Electric Fields](docs/chapters/12-electric-charge-fields/index.md)
+    **See:** [Chapter 12 - Electric Charge and Electric Fields](index.md)
 

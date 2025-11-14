@@ -61,6 +61,7 @@ The Greek letter delta (Δ) means "change in," so Δx represents the change in p
 
 where x_final is your ending position and x_initial is your starting position.
 
+#### Diagram: Distance vs Displacement Interactive Visualization
 <details markdown="1">
 <summary>Distance vs Displacement Interactive Visualization</summary>
 Type: microsim
@@ -167,6 +168,7 @@ On a position-time graph (which we'll explore in detail later), the instantaneou
 
 In everyday conversation, when people say "velocity" or "speed," they usually mean instantaneous velocity or speed unless they specify otherwise. From now on in this course, when we use the term "velocity" without qualification, we typically mean instantaneous velocity.
 
+#### Diagram: Velocity vs Speed Comparison Table
 <details markdown="1">
 <summary>Velocity vs Speed Comparison Table</summary>
 Type: diagram
@@ -303,6 +305,7 @@ Examples of uniformly accelerated motion include:
 
 This is one of the most important types of motion to master because many real-world situations approximate constant acceleration, and the mathematics remains manageable. When acceleration is constant, we can use a set of powerful equations called the kinematic equations (which we'll derive shortly).
 
+#### Diagram: Comparison of Uniform vs Uniformly Accelerated Motion
 <details markdown="1">
 <summary>Comparison of Uniform vs Uniformly Accelerated Motion</summary>
 Type: chart
@@ -416,6 +419,7 @@ When the graph is perfectly horizontal, position isn't changing—the object is 
 
 Let's examine some example scenarios:
 
+#### Diagram: Position-Time Graph Interactive Analyzer
 <details markdown="1">
 <summary>Position-Time Graph Interactive Analyzer</summary>
 Type: microsim
@@ -539,6 +543,7 @@ Let's connect v-t graphs to x-t graphs with an example:
 | Area under v-t graph | Rectangle | Triangle or trapezoid |
 | Corresponding x-t graph | Straight line | Parabola |
 
+#### Diagram: Velocity-Time Graph Area Calculator MicroSim
 <details markdown="1">
 <summary>Velocity-Time Graph Area Calculator MicroSim</summary>
 Type: microsim
@@ -657,6 +662,7 @@ Though we rarely analyze this in introductory physics, the slope of an a-t graph
 
 Let's see how all three graph types connect:
 
+#### Diagram: Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs
 <details markdown="1">
 <summary>Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs</summary>
 Type: microsim
@@ -861,6 +867,7 @@ x - x₀ = 25 m
 
 The kinematic equations are tools you'll use throughout your physics education and beyond. Mastering them now will make dynamics, projectile motion, and many other topics much easier to understand.
 
+#### Diagram: Kinematic Equation Selector Tool
 <details markdown="1">
 <summary>Kinematic Equation Selector Tool</summary>
 Type: infographic

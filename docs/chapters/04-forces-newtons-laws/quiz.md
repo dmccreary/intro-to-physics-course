@@ -18,7 +18,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Force
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Net Force
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Newton's First Law
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Newton's Second Law
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Newton's Third Law
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Normal Force
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Weight
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Equilibrium
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Action-Reaction Pairs
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of forces and newton's laws with these 10 questions.
 
     **Concept Tested:** Dynamic Equilibrium
 
-    **See:** [Chapter 4 - Forces and Newton's Laws](docs/chapters/04-forces-newtons-laws/index.md)
+    **See:** [Chapter 4 - Forces and Newton's Laws](index.md)
 

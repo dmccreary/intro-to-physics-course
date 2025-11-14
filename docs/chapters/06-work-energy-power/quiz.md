@@ -18,7 +18,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Work
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Work by Constant Force
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Kinetic Energy
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Gravitational Potential Energy
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Conservative Forces
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Elastic Potential Energy
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Work-Energy Theorem
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Conservation of Energy
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Power
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of work, energy, and power with these 10 questions.
 
     **Concept Tested:** Simple Machines
 
-    **See:** [Chapter 6 - Work, Energy, and Power](docs/chapters/06-work-energy-power/index.md)
+    **See:** [Chapter 6 - Work, Energy, and Power](index.md)
 

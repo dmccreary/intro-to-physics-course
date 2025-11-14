@@ -121,6 +121,7 @@ Notice the pattern: each prefix represents a specific power of ten. This makes c
 [Run the Metric Scale Zoom Fullscreen](../../sims/metric-scale-zoom/main.html)
 
 
+#### Diagram: Metric Scale Zoom
 <details markdown="1">
 <summary>Metric Scale Zoom</summary>
 
@@ -315,6 +316,7 @@ This means the true value likely falls between 2.43 m and 2.47 m.
 - **Relative uncertainty:** The fractional or percentage uncertainty (e.g., 0.02/2.45 = 0.8%)
 - **Standard deviation:** A statistical measure of the spread in repeated measurements
 
+#### Diagram: Precision vs Accuracy Target Diagram
 <details markdown="1">
 <summary>Precision vs Accuracy Target Diagram</summary>
 Type: diagram
@@ -423,6 +425,7 @@ We represent vectors graphically as arrows, where:
 - The **length** of the arrow represents the magnitude
 - The **direction** the arrow points represents the direction of the vector
 
+#### Diagram: Vector Basics Interactive MicroSim
 <details markdown="1">
 <summary>Vector Basics Interactive MicroSim</summary>
 Type: microsim
@@ -573,6 +576,7 @@ Using components:
 - *R* = √(30² + 40²) = √(900 + 1,600) = √2,500 = 50 m/s
 - θ = tan⁻¹(40/30) = tan⁻¹(1.33) = 53° north of east
 
+#### Diagram: Vector Addition Interactive MicroSim
 <details markdown="1">
 <summary>Vector Addition Interactive MicroSim</summary>
 Type: microsim
@@ -837,6 +841,7 @@ Choose two points far apart on the best-fit line (NOT necessarily data points):
 - Area under force-distance graph = work
 - Area under power-time graph = energy
 
+#### Diagram: Interactive Graph Analysis MicroSim
 <details markdown="1">
 <summary>Interactive Graph Analysis MicroSim</summary>
 Type: microsim

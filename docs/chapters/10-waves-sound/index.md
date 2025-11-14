@@ -93,6 +93,7 @@ Key features of transverse waves:
 - Typically travel through solids (which resist shear forces)
 - Examples: waves on strings, water surface waves, electromagnetic waves
 
+#### Diagram: Transverse Wave Animation MicroSim
 <details markdown="1">
     <summary>Transverse Wave Animation MicroSim</summary>
     Type: microsim
@@ -149,6 +150,7 @@ Key features of longitudinal waves:
 - Can travel through solids, liquids, and gases
 - Examples: sound waves, seismic P-waves, compression waves in springs
 
+#### Diagram: Longitudinal Wave Animation MicroSim
 <details markdown="1">
     <summary>Longitudinal Wave Animation MicroSim</summary>
     Type: microsim
@@ -246,6 +248,7 @@ This equation tells us that wave speed equals frequency times wavelength. If you
 
 Key insight: In a given medium, wave speed is constant. This means that if frequency increases, wavelength must decrease proportionally, and vice versa.
 
+#### Diagram: Wave Properties Interactive Calculator MicroSim
 <details markdown="1">
     <summary>Wave Properties Interactive Calculator MicroSim</summary>
     Type: microsim
@@ -355,6 +358,7 @@ Examples of destructive interference:
 
 **Wave interference** is the general term for the interaction of waves through the superposition principle. Interference can be constructive, destructive, or anything in between, depending on the relative phase of the combining waves.
 
+#### Diagram: Two-Source Wave Interference Simulation MicroSim
 <details markdown="1">
     <summary>Two-Source Wave Interference Simulation MicroSim</summary>
     Type: microsim
@@ -433,6 +437,7 @@ For a standing wave on a string of length L with both ends fixed:
 
 The distance between consecutive nodes (or consecutive antinodes) is half a wavelength: $\frac{\lambda}{2}$
 
+#### Diagram: Standing Waves on a String MicroSim
 <details markdown="1">
     <summary>Standing Waves on a String MicroSim</summary>
     Type: microsim
@@ -539,6 +544,7 @@ Examples of diffraction:
 - Water waves spreading after passing through a harbor opening
 - Light waves spreading through small apertures, creating diffraction patterns
 
+#### Diagram: Wave Behavior Comparison Infographic
 <details markdown="1">
     <summary>Wave Behavior Comparison Infographic</summary>
     Type: infographic
@@ -625,6 +631,7 @@ $$f' = f \left(\frac{v \pm v_o}{v}\right)$$
 
 Where v_o is the observer speed (plus sign when approaching, minus sign when receding).
 
+#### Diagram: Doppler Effect Interactive Simulation MicroSim
 <details markdown="1">
     <summary>Doppler Effect Interactive Simulation MicroSim</summary>
     Type: microsim
@@ -798,6 +805,7 @@ Key points about the decibel scale:
 | Threshold of pain | 1 | 120 |
 | Jet engine (nearby) | 10² | 140 |
 
+#### Diagram: Sound Intensity and Decibel Calculator MicroSim
 <details markdown="1">
     <summary>Sound Intensity and Decibel Calculator MicroSim</summary>
     Type: microsim
@@ -915,6 +923,7 @@ Applications of ultrasound:
 - **Distance measurement**: Ultrasonic sensors measure distances by timing echo returns
 - **Welding**: Ultrasonic welding joins materials using high-frequency vibrations
 
+#### Diagram: Human Hearing Range Interactive Diagram
 <details markdown="1">
     <summary>Human Hearing Range Interactive Diagram</summary>
     Type: infographic
@@ -1031,6 +1040,7 @@ $$f_n = \frac{nv}{2L}$$
 **Closed pipe** (bottle, organ pipe closed at one end):
 $$f_n = \frac{nv}{4L}$$ (only odd harmonics: n = 1, 3, 5...)
 
+#### Diagram: Musical Harmonics Visualizer MicroSim
 <details markdown="1">
     <summary>Musical Harmonics Visualizer MicroSim</summary>
     Type: microsim
@@ -1094,6 +1104,7 @@ $$f_n = \frac{nv}{4L}$$ (only odd harmonics: n = 1, 3, 5...)
     - Smooth slider transitions with animation
 </details>
 
+#### Diagram: Acoustic Resonance in Pipes Diagram
 <details markdown="1">
     <summary>Acoustic Resonance in Pipes Diagram</summary>
     Type: diagram

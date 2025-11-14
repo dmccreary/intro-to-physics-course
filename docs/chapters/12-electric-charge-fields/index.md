@@ -64,6 +64,7 @@ One of the most important principles in all of physics is the **conservation of 
 
 When you rub a balloon on your hair, electrons transfer from your hair to the balloon. Your hair loses electrons (becoming positively charged), while the balloon gains the same number of electrons (becoming negatively charged). The total charge of the system—you plus the balloon—hasn't changed; it's just been redistributed.
 
+#### Diagram: Charge Conservation in Chemical Reactions
 <details markdown="1">
     <summary>Charge Conservation in Chemical Reactions</summary>
     Type: diagram
@@ -171,6 +172,7 @@ Classic examples:
 
 The direction of electron transfer depends on each material's relative affinity for electrons. The **triboelectric series** ranks materials by their tendency to give up or accept electrons. Materials higher on the series (like rabbit fur) tend to lose electrons, while materials lower on the series (like PVC plastic) tend to gain electrons.
 
+#### Diagram: Triboelectric Series Interactive Infographic
 <details markdown="1">
     <summary>Triboelectric Series Interactive Infographic</summary>
     Type: infographic
@@ -239,6 +241,7 @@ The process:
 
 The remarkable feature of induction is that the conductor ends up with the opposite charge from the nearby charged object, even though they never touched. A negatively charged rod can induce a positive charge in a conductor, and vice versa.
 
+#### Diagram: Charging by Induction Animation MicroSim
 <details markdown="1">
     <summary>Charging by Induction Animation MicroSim</summary>
     Type: microsim
@@ -347,6 +350,7 @@ How do electric and gravitational forces compare in strength? Consider two elect
 
 The electric force is about 10^42^ times stronger than the gravitational force! This enormous difference explains why electric forces dominate at atomic scales, determining the structure of atoms, molecules, and materials. Gravity only becomes significant for large objects, where the huge number of atoms provides enough mass to generate noticeable gravitational effects.
 
+#### Diagram: Coulomb's Law Force Calculator MicroSim
 <details markdown="1">
     <summary>Coulomb's Law Force Calculator MicroSim</summary>
     Type: microsim
@@ -454,6 +458,7 @@ Common field line patterns:
 - **Two equal positive charges**: Lines repel each other and curve away
 - **Parallel plates**: Uniform field (straight parallel lines) between plates
 
+#### Diagram: Electric Field Lines Visualization MicroSim
 <details markdown="1">
     <summary>Electric Field Lines Visualization MicroSim</summary>
     Type: microsim
@@ -577,6 +582,7 @@ $$\Delta KE = W = -\Delta U$$
 
 This is just conservation of energy for electric systems.
 
+#### Diagram: Electric Potential Energy Interactive Chart
 <details markdown="1">
     <summary>Electric Potential Energy Interactive Chart</summary>
     Type: chart
@@ -669,6 +675,7 @@ Common voltage examples:
 - Lightning bolt: 100 million V
 - Static shock from carpet: 5,000 - 25,000 V
 
+#### Diagram: Voltage and Electric Field Relationship Diagram
 <details markdown="1">
     <summary>Voltage and Electric Field Relationship Diagram</summary>
     Type: diagram

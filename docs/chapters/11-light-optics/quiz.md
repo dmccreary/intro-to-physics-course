@@ -18,7 +18,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Law of Reflection
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Refraction
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Snell's Law
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Snell's Law
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Lenses
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Lenses
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Mirrors
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Diffraction
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Polarization
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of light and optics with these 10 questions.
 
     **Concept Tested:** Wave-Particle Duality
 
-    **See:** [Chapter 11 - Light and Optics](docs/chapters/11-light-optics/index.md)
+    **See:** [Chapter 11 - Light and Optics](index.md)
 

@@ -72,6 +72,7 @@ But what if both students pushed east with the same forces? Then we'd add them: 
 
 The key principle: **Only the net force determines how an object's motion changes.**
 
+#### Diagram: Free-Body Diagram Tutorial
 <details markdown="1">
     <summary>Free-Body Diagram Tutorial</summary>
     Type: infographic
@@ -153,6 +154,7 @@ Newton's First Law only works in **inertial reference frames**—coordinate syst
 
 Most physics problems assume you're viewing from Earth's surface, which is approximately an inertial frame (Earth's rotation and orbital motion introduce tiny effects we usually ignore).
 
+#### Diagram: Inertia Demonstration MicroSim
 <details markdown="1">
     <summary>Inertia Demonstration MicroSim</summary>
     Type: microsim
@@ -263,6 +265,7 @@ When solving Newton's Second Law problems, follow these steps:
 4. **Solve the equations** for the unknown quantity
 5. **Check your answer** (Does it make physical sense? Are the units correct?)
 
+#### Diagram: Force and Acceleration Relationship Chart
 <details markdown="1">
     <summary>Force and Acceleration Relationship Chart</summary>
     Type: chart
@@ -360,6 +363,7 @@ The answer: **They act on different objects!** When you push a cart, the cart pu
 
 Forces only cancel (produce equilibrium) when they act on the same object.
 
+#### Diagram: Action-Reaction Pairs Interactive Diagram
 <details markdown="1">
     <summary>Action-Reaction Pairs Interactive Diagram</summary>
     Type: infographic
@@ -484,6 +488,7 @@ In equation form:
 
 You'll use these conditions extensively when solving statics problems.
 
+#### Diagram: Equilibrium Classification Workflow
 <details markdown="1">
     <summary>Equilibrium Classification Workflow</summary>
     Type: workflow
@@ -592,6 +597,7 @@ When you stand on a scale, it doesn't actually measure your weight directly. It 
 
 This "apparent weight" is what causes the stomach-drop feeling on roller coasters and the floating sensation in free-falling elevators (don't try this at home).
 
+#### Diagram: Weight in Different Gravitational Fields MicroSim
 <details markdown="1">
     <summary>Weight in Different Gravitational Fields MicroSim</summary>
     Type: microsim
@@ -711,6 +717,7 @@ The normal force is crucial because:
 3. It's not always equal to weight—you must calculate it from equilibrium conditions
 4. It can do no work (always perpendicular to motion)
 
+#### Diagram: Normal Force on Inclined Planes Diagram
 <details markdown="1">
     <summary>Normal Force on Inclined Planes Diagram</summary>
     Type: diagram

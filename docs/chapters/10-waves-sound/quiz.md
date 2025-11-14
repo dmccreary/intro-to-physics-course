@@ -18,7 +18,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Wave Properties
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Wavelength
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Doppler Effect
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Doppler Effect
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Sound Intensity
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Interference
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Wavelength
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Diffraction
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Harmonics
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of waves and sound with these 10 questions.
 
     **Concept Tested:** Wave Properties
 
-    **See:** [Chapter 10 - Waves and Sound](docs/chapters/10-waves-sound/index.md)
+    **See:** [Chapter 10 - Waves and Sound](index.md)
 

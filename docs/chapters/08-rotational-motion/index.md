@@ -69,6 +69,7 @@ Here's how angular displacement parallels linear displacement:
 | Unit: meters (m) | Unit: radians (rad) | 1 rad = *s*/*r* (dimensionless) |
 | Depends on path | Depends on rotation | Same angle for all points |
 
+#### Diagram: Angular Displacement Visualization MicroSim
 <details markdown="1">
 <summary>Angular Displacement Visualization MicroSim</summary>
 Type: microsim
@@ -141,6 +142,7 @@ Angular velocity appears everywhere in daily life:
 - **Earth's rotation:** One rotation per 24 hours = 7.27 × 10⁻⁵ rad/s
 - **Washing machine spin cycle:** 1000-1600 rpm (105-168 rad/s)
 
+#### Diagram: Comparative Angular Velocities Chart
 <details markdown="1">
 <summary>Comparative Angular Velocities Chart</summary>
 Type: chart
@@ -240,6 +242,7 @@ The parallel structure makes these equations easier to remember:
 | *v*² = *v*₀² + 2*a*Δ*x* | ω² = ω₀² + 2αΔθ |
 | *x* = *x*₀ + ½(*v*₀ + *v*)t | θ = θ₀ + ½(ω₀ + ω)t |
 
+#### Diagram: Rotational Kinematics Problem Solver MicroSim
 <details markdown="1">
 <summary>Rotational Kinematics Problem Solver MicroSim</summary>
 Type: microsim
@@ -340,6 +343,7 @@ You intuitively understand torque from everyday experiences:
 
 The direction of torque follows the right-hand rule: fingers curl in the direction of rotation the torque would cause, and your thumb points in the direction of the torque vector.
 
+#### Diagram: Interactive Torque Diagram with Forces
 <details markdown="1">
 <summary>Interactive Torque Diagram with Forces</summary>
 Type: diagram
@@ -441,6 +445,7 @@ Rotational inertia explains many phenomena:
 - **Flywheels:** Store energy in rotating mass with high rotational inertia
 - **Tightrope walkers:** Long poles increase rotational inertia, making balance easier by slowing potential rotation
 
+#### Diagram: Rotational Inertia Comparison MicroSim
 <details markdown="1">
 <summary>Rotational Inertia Comparison MicroSim</summary>
 Type: microsim
@@ -561,6 +566,7 @@ For a rolling object without slipping, *v* = *rω*, so the two types of kinetic 
 
 Notice that the sphere's energy is split: 71% translational, 29% rotational. Different shapes have different splits.
 
+#### Diagram: Energy Distribution in Rolling Objects Chart
 <details markdown="1">
 <summary>Energy Distribution in Rolling Objects Chart</summary>
 Type: chart
@@ -642,6 +648,7 @@ where *m* is mass, *v* is tangential velocity, and *r* is the radius of the circ
 - Conserved in the absence of external torques
 - Can be transferred between objects during collisions
 
+#### Diagram: Angular Momentum Vector Visualization
 <details markdown="1">
 <summary>Angular Momentum Vector Visualization</summary>
 Type: diagram
@@ -714,6 +721,7 @@ This conservation law explains many fascinating phenomena:
 4. Final angular velocity: ω_f = *L*_f/*I*_f = 47.1/2.0 = 23.6 rad/s
 5. Converting: ω_f = **3.75 rev/s** (2.5 times faster!)
 
+#### Diagram: Figure Skater Angular Momentum Conservation MicroSim
 <details markdown="1">
 <summary>Figure Skater Angular Momentum Conservation MicroSim</summary>
 Type: microsim
@@ -808,6 +816,7 @@ Consider a wheel rolling to the right. At any instant:
 
 The bottom point being stationary is counterintuitive but crucial. If it weren't stationary, the object would be sliding, not rolling. Static friction prevents this sliding.
 
+#### Diagram: Rolling Motion Velocity Vectors MicroSim
 <details markdown="1">
 <summary>Rolling Motion Velocity Vectors MicroSim</summary>
 Type: microsim
@@ -932,6 +941,7 @@ Rotational motion principles appear throughout technology and nature:
 - **Cat righting reflex:** Cats twist separate body parts to change orientation without external torque
 - **Falling leaves:** Tumbling motion as air resistance creates varying torques
 
+#### Diagram: Real-World Rotational Applications Infographic
 <details markdown="1">
 <summary>Real-World Rotational Applications Infographic</summary>
 Type: infographic

@@ -18,7 +18,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Angular Displacement
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Angular Velocity
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Torque
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Torque
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Rotational Inertia
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Conservation of Angular Momentum
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Rotational Kinetic Energy
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Angular Momentum
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Rolling Motion
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of rotational motion and angular momentum with these 10 
 
     **Concept Tested:** Angular Acceleration
 
-    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](docs/chapters/08-rotational-motion/index.md)
+    **See:** [Chapter 8 - Rotational Motion and Angular Momentum](index.md)
 

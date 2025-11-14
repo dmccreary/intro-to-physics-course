@@ -89,6 +89,7 @@ Let's examine how work behaves in different situations:
 | Carrying a box horizontally | Perpendicular to motion | 90° | Zero |
 | Pulling a sled at an angle | Between parallel and perpendicular | 30°-60° | Positive (reduced) |
 
+#### Diagram: Work Scenario Interactive Diagram
 <details markdown="1">
     <summary>Work Scenario Interactive Diagram</summary>
     Type: diagram
@@ -167,6 +168,7 @@ $$W = \frac{1}{2}kx^2$$
 
 This quadratic relationship means doubling the stretch requires four times the work.
 
+#### Diagram: Variable Force Work Calculation MicroSim
 <details markdown="1">
     <summary>Variable Force Work Calculation MicroSim</summary>
     Type: microsim
@@ -298,6 +300,7 @@ Using work-energy theorem:
 
 Same answer, but the energy approach is often more intuitive and requires fewer steps.
 
+#### Diagram: Work-Energy Theorem Interactive Demonstration
 <details markdown="1">
     <summary>Work-Energy Theorem Interactive Demonstration</summary>
     Type: microsim
@@ -435,6 +438,7 @@ Important characteristics:
 
 $$PE_s = \frac{1}{2}(200 \text{ N/m})(0.3 \text{ m})^2 = 9 \text{ J}$$
 
+#### Diagram: Potential Energy Comparison Chart
 <details markdown="1">
     <summary>Potential Energy Comparison Chart</summary>
     Type: chart
@@ -609,6 +613,7 @@ $$v = 8.1 \text{ m/s}$$
 
 The "missing" 20 J was converted to thermal energy heating the air and ball.
 
+#### Diagram: Energy Conservation Roller Coaster Simulation
 <details markdown="1">
     <summary>Energy Conservation Roller Coaster Simulation</summary>
     Type: microsim
@@ -747,6 +752,7 @@ From an energy diagram, you can determine:
 - **Range of motion**: Between turning points where $E_{total} = PE$
 - **Force direction**: Force points from higher PE toward lower PE (down the PE slope)
 
+#### Diagram: Energy Diagram Interactive Explorer
 <details markdown="1">
     <summary>Energy Diagram Interactive Explorer</summary>
     Type: microsim
@@ -977,6 +983,7 @@ Efficiency has profound real-world implications:
 4. **Performance**: More efficient devices often perform better (less heat, longer lifespan)
 5. **Sustainability**: Efficient use of resources is essential for long-term sustainability
 
+#### Diagram: Energy Efficiency Comparison Infographic
 <details markdown="1">
     <summary>Energy Efficiency Comparison Infographic</summary>
     Type: infographic
@@ -1133,6 +1140,7 @@ The efficiency of a simple machine relates the two:
 
 $$\text{Efficiency} = \frac{AMA}{IMA} \times 100\%$$
 
+#### Diagram: Simple Machines Comparison Table
 <details markdown="1">
     <summary>Simple Machines Comparison Table</summary>
     Type: markdown-table
@@ -1150,6 +1158,7 @@ $$\text{Efficiency} = \frac{AMA}{IMA} \times 100\%$$
 
 </details>
 
+#### Diagram: Pulley System Mechanical Advantage Simulator
 <details markdown="1">
     <summary>Pulley System Mechanical Advantage Simulator</summary>
     Type: microsim

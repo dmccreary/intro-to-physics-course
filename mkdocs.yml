@@ -63,7 +63,14 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Quality Metrics: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
-    - Interactive Viewer: sims/graph-viewer/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Glossary Quality Report: learning-graph/glossary-quality-report.md
+    - FAQ Coverage Report: learning-graph/faq-coverage-gaps.md
+    - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - Quiz Generator Report: learning-graph/quiz-generation-report.md
+    - References Quality Report: learning-graph/reference-quality-report.md
+    - Diagram Table: learning-graph/diagram-table.md
+    - Diagram Details: learning-graph/diagram-details.md
   
   - Prompts:
     - List of prompts: prompts/index.md
@@ -71,11 +78,12 @@ nav:
     - prompts/02-learning-graph-generator-skill-run.md
     - prompts/03-run-init.md
     - prompts/04-book-chapter-structure-skill.md
-  - Checklist: checklist.md
-  - Code Highlight Test: code-highlight-test.md
+  
   - Glossary: glossary.md
-  - How We Built This Site: how-we-built-this-site.md
+  - FAQs: faq.md
   - References: references.md
+
+  - How We Built This Site: how-we-built-this-site.md
   - Book Build References: book-build-references.md
   - Feedback: feedback.md
   - License: license.md

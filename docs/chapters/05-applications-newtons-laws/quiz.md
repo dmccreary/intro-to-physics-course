@@ -18,7 +18,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Kinetic Friction
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -36,7 +36,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Coefficient of Friction
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -54,7 +54,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Tension
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -72,7 +72,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Inclined Plane
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -90,7 +90,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Atwood Machine
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -108,7 +108,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Centripetal Force
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -126,7 +126,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Centripetal Acceleration
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -144,7 +144,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Banked Curves
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -162,7 +162,7 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Friction
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 
 ---
 
@@ -180,5 +180,5 @@ Test your understanding of applications of newton's laws with these 10 questions
 
     **Concept Tested:** Pulley Systems
 
-    **See:** [Chapter 5 - Applications of Newton's Laws](docs/chapters/05-applications-newtons-laws/index.md)
+    **See:** [Chapter 5 - Applications of Newton's Laws](index.md)
 

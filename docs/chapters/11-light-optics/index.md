@@ -116,6 +116,7 @@ While nothing can travel faster than light in vacuum, light does slow down when 
 - Light in glass: ~2.00 × 10⁸ m/s (67% of c)
 - Light in diamond: ~1.24 × 10⁸ m/s (41% of c)
 
+#### Diagram: Historical Measurements of Light Speed
 <details markdown="1">
 <summary>Historical Measurements of Light Speed</summary>
 Type: timeline
@@ -174,6 +175,7 @@ When light strikes a smooth surface, it reflects in a predictable way described 
 
 Both angles are measured from the normal to the surface, not from the surface itself. This law applies to all types of electromagnetic radiation and is fundamental to understanding mirrors, periscopes, and many optical instruments.
 
+#### Diagram: Law of Reflection Interactive Diagram
 <details markdown="1">
 <summary>Law of Reflection Interactive Diagram</summary>
 Type: microsim
@@ -319,6 +321,7 @@ Magnification (M) indicates the ratio of image height to object height:
 - Negative M: Image is inverted
 - Positive M: Image is upright
 
+#### Diagram: Spherical Mirror Ray Diagram Interactive MicroSim
 <details markdown="1">
 <summary>Spherical Mirror Ray Diagram Interactive MicroSim</summary>
 Type: microsim
@@ -408,6 +411,7 @@ Key refraction behaviors:
 - Light bends away from the normal when entering a less dense medium (lower n)
 - No bending occurs when light hits perpendicular to the surface (θ₁ = 0°)
 
+#### Diagram: Snell's Law Interactive Demonstration
 <details markdown="1">
 <summary>Snell's Law Interactive Demonstration</summary>
 Type: microsim
@@ -590,6 +594,7 @@ Ray diagrams help visualize how lenses form images. For any lens, we can trace t
 
 The image forms where these rays intersect (real image) or where their backward extensions intersect (virtual image).
 
+#### Diagram: Lens Ray Diagram Interactive MicroSim
 <details markdown="1">
 <summary>Lens Ray Diagram Interactive MicroSim</summary>
 Type: microsim
@@ -806,6 +811,7 @@ Applications:
 - Colored glass and plastics
 - Fabric dyes
 
+#### Diagram: Color Mixing Interactive MicroSim
 <details markdown="1">
 <summary>Color Mixing Interactive MicroSim</summary>
 Type: microsim
@@ -920,6 +926,7 @@ Young's experiment was revolutionary because it:
 - Challenged Newton's corpuscular (particle) theory
 - Established the foundation for wave optics
 
+#### Diagram: Young's Double Slit Interference Pattern MicroSim
 <details markdown="1">
 <summary>Young's Double Slit Interference Pattern MicroSim</summary>
 Type: microsim
@@ -1035,6 +1042,7 @@ Applications of diffraction gratings:
 - **Security features**: Holographic images on currency and credit cards
 - **Art and decoration**: Iridescent effects on surfaces
 
+#### Diagram: Diffraction Grating Comparison Chart
 <details markdown="1">
 <summary>Diffraction Grating Comparison Chart</summary>
 Type: chart
@@ -1190,6 +1198,7 @@ where:
 
 When two polarizers are crossed (θ = 90°), no light passes through (I = 0).
 
+#### Diagram: Polarization Filter Interactive MicroSim
 <details markdown="1">
 <summary>Polarization Filter Interactive MicroSim</summary>
 Type: microsim
