@@ -15,22 +15,22 @@
         <link rel="canonical" href="https://dmccreary.github.io/intro-to-physics-course/chapters/02-motion-one-dimension/">
       
       
-        <link rel="prev" href="../01-scientific-foundations/quiz/">
+        <link rel="prev" href="../01-scientific-foundations/">
       
       
-        <link rel="next" href="quiz/">
+        <link rel="next" href="../03-motion-two-dimensions/">
       
       
-      <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>Content - Introduction to Physics</title>
+        <title>Chapter 2 - Motion in One Dimension - Introduction to Physics</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -57,23 +57,13 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-BF05WTGMW9"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-BF05WTGMW9",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-BF05WTGMW9",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
 
     
     
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Content - Introduction to Physics" >
+        <meta  property="og:title"  content="Chapter 2 - Motion in One Dimension - Introduction to Physics" >
       
         <meta  property="og:description"  content="A comprehensive year-long introduction to physics course developing students scientific literacy through systematic progression from foundational knowledge to creative application. All content licensed Creative Commons ShareAlike Attribution Noncommercial" >
       
@@ -89,7 +79,7 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Content - Introduction to Physics" >
+        <meta  name="twitter:title"  content="Chapter 2 - Motion in One Dimension - Introduction to Physics" >
       
         <meta  name="twitter:description"  content="A comprehensive year-long introduction to physics course developing students scientific literacy through systematic progression from foundational knowledge to creative application. All content licensed Creative Commons ShareAlike Attribution Noncommercial" >
       
@@ -105,7 +95,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="navy" data-md-color-accent="yellow">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -149,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Content
+              Chapter 2 - Motion in One Dimension
             
           </span>
         </div>
@@ -161,13 +151,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -199,14 +187,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/intro-to-physics-course/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -251,7 +238,7 @@
       <a href="https://github.com/dmccreary/intro-to-physics-course/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub Repo
@@ -271,10 +258,8 @@
       <a href="../.." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -293,10 +278,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -321,30 +304,53 @@
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
         
-      
+          
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -357,14 +363,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -392,47 +397,16 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="../01-scientific-foundations/" class="md-nav__link">
         
-          
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../01-scientific-foundations/" class="md-nav__link">
-      
-  
   
   <span class="md-ellipsis">
     Chapter 1 - Scientific Foundations
-    
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
+      </a>
     </li>
   
 
@@ -446,55 +420,234 @@
   
   
   
-    
-    
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
       
         
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
           
-        
-      
-        
-      
-    
-    
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
-              
-  
   
   <span class="md-ellipsis">
     Chapter 2 - Motion in One Dimension
-    
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link md-nav__link--active" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_3">
-            <span class="md-nav__icon md-icon"></span>
-            Chapter 2 - Motion in One Dimension
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
+  
+  <span class="md-ellipsis">
+    Chapter 2 - Motion in One Dimension
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Motion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distance-and-displacement-two-ways-to-describe-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distance and Displacement: Two Ways to Describe Motion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed-and-velocity-describing-how-fast" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed and Velocity: Describing How Fast
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instantaneous-velocity-motion-at-a-single-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instantaneous Velocity: Motion at a Single Moment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceleration-the-rate-of-change-of-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceleration: The Rate of Change of Velocity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-linear-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Linear Motion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Linear Motion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniform-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uniform Motion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uniformly-accelerated-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uniformly Accelerated Motion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#position-time-graphs-visualizing-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Position-Time Graphs: Visualizing Motion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#velocity-time-graphs-a-different-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      Velocity-Time Graphs: A Different Perspective
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceleration-time-graphs-completing-the-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceleration-Time Graphs: Completing the Picture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-kinematic-equations-mathematical-tools-for-uniformly-accelerated-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Kinematic Equations: Mathematical Tools for Uniformly Accelerated Motion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#special-case-free-fall" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Case: Free Fall
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-problem-solving-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Problem-Solving Framework
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary-and-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary and Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
               
             
               
@@ -504,13 +657,200 @@
   
   
     <li class="md-nav__item">
-      <a href="quiz/" class="md-nav__link">
+      <a href="../03-motion-two-dimensions/" class="md-nav__link">
         
   
+  <span class="md-ellipsis">
+    Chapter 3 - Motion in Two Dimensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-forces-newtons-laws/" class="md-nav__link">
+        
   
   <span class="md-ellipsis">
-    Quiz
-    
+    Chapter 4 - Forces and Newton's Laws
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-applications-newtons-laws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5 - Applications of Newton's Laws
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-work-energy-power/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6 - Work, Energy, and Power
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-momentum-collisions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 7 - Momentum and Collisions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-rotational-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 8 - Rotational Motion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-oscillations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 9 - Oscillations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-waves-sound/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 10 - Waves and Sound
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-light-optics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 11 - Light and Optics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-electric-charge-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 12 - Electric Charge and Fields
   </span>
   
 
@@ -526,62 +866,9 @@
     </li>
   
 
-              
-            
-              
-                
-  
-  
-  
-  
-    
     
       
-        
-          
-        
       
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../03-motion-two-dimensions/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 3 - Motion in Two Dimensions
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -594,52 +881,12 @@
         
       
         
-      
-    
-    
-    
-    
-      
-        
+          
         
       
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
         
-  
-  
-  
-    <a href="../04-forces-newtons-laws/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 4 - Forces and Newton's Laws
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
+          
+        
       
         
           
@@ -650,7 +897,6 @@
     
     
     
-    
       
         
         
@@ -659,449 +905,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
-  
-  
-    <a href="../05-applications-newtons-laws/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 5 - Applications of Newton's Laws
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../06-work-energy-power/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 6 - Work, Energy, and Power
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../07-momentum-collisions/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 7 - Momentum and Collisions
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../08-rotational-motion/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 8 - Rotational Motion
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../09-oscillations/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 9 - Oscillations
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../10-waves-sound/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 10 - Waves and Sound
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../11-light-optics/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 11 - Light and Optics
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../12-electric-charge-fields/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    Chapter 12 - Electric Charge and Fields
-    
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1138,22 +948,9 @@
         
       
         
-      
+          
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
     
     
     
@@ -1165,16 +962,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1199,8 +993,6 @@
     
       
         
-          
-        
       
         
       
@@ -1210,19 +1002,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
     
     
     
@@ -1236,14 +1015,11 @@
         
   
   
-  
-    <a href="../../prompts/" class="md-nav__link">
+    <a href="../../prompts/index.md" class="md-nav__link">
       
-  
   
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1254,6 +1030,46 @@
   
 
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../code-highlight-test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Highlight Test
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1268,54 +1084,8 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FAQs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../references/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    References
-    
   </span>
   
 
@@ -1334,10 +1104,8 @@
       <a href="../../how-we-built-this-site/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     How We Built This Site
-    
   </span>
   
 
@@ -1353,13 +1121,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../book-build-references/" class="md-nav__link">
+      <a href="../../references/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    Book Build References
-    
+    References
   </span>
   
 
@@ -1378,10 +1144,8 @@
       <a href="../../feedback/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Feedback
-    
   </span>
   
 
@@ -1400,10 +1164,8 @@
       <a href="../../license/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1422,10 +1184,8 @@
       <a href="../../contact/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1503,21 +1263,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Distance and Displacement: Two Ways to Describe Motion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-distance-vs-displacement-interactive-visualization" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Distance vs Displacement Interactive Visualization
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1535,21 +1280,6 @@
       Instantaneous Velocity: Motion at a Single Moment
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Instantaneous Velocity: Motion at a Single Moment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-velocity-vs-speed-comparison-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Velocity vs Speed Comparison Table
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1588,21 +1318,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Uniformly Accelerated Motion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-comparison-of-uniform-vs-uniformly-accelerated-motion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Comparison of Uniform vs Uniformly Accelerated Motion
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -1617,21 +1332,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Position-Time Graphs: Visualizing Motion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-position-time-graph-interactive-analyzer" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Position-Time Graph Interactive Analyzer
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1640,21 +1340,6 @@
       Velocity-Time Graphs: A Different Perspective
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Velocity-Time Graphs: A Different Perspective">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-velocity-time-graph-area-calculator-microsim" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Velocity-Time Graph Area Calculator MicroSim
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1665,21 +1350,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Acceleration-Time Graphs: Completing the Picture">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-three-graph-motion-analyzer-connecting-x-t-v-t-and-a-t-graphs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1688,21 +1358,6 @@
       The Kinematic Equations: Mathematical Tools for Uniformly Accelerated Motion
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="The Kinematic Equations: Mathematical Tools for Uniformly Accelerated Motion">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#diagram-kinematic-equation-selector-tool" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Kinematic Equation Selector Tool
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1755,7 +1410,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
 
   
     <a href="https://github.com/dmccreary/intro-to-physics-course/blob/master/docs/chapters/02-motion-one-dimension/index.md" title="Edit this page" class="md-content__button md-icon">
@@ -1843,7 +1497,6 @@
 <p>The Greek letter delta (Δ) means "change in," so Δx represents the change in position. Mathematically, displacement is calculated as:</p>
 <p><strong>Δx = x_final - x_initial</strong></p>
 <p>where x_final is your ending position and x_initial is your starting position.</p>
-<h4 id="diagram-distance-vs-displacement-interactive-visualization">Diagram: Distance vs Displacement Interactive Visualization</h4>
 <details>
 <summary>Distance vs Displacement Interactive Visualization</summary>
 <p>Type: microsim</p>
@@ -1923,7 +1576,6 @@
 <li>Steeper slope → greater speed</li>
 </ul>
 <p>In everyday conversation, when people say "velocity" or "speed," they usually mean instantaneous velocity or speed unless they specify otherwise. From now on in this course, when we use the term "velocity" without qualification, we typically mean instantaneous velocity.</p>
-<h4 id="diagram-velocity-vs-speed-comparison-table">Diagram: Velocity vs Speed Comparison Table</h4>
 <details>
 <summary>Velocity vs Speed Comparison Table</summary>
 <p>Type: diagram</p>
@@ -2074,7 +1726,6 @@
 <li>An object sliding down a frictionless inclined plane</li>
 </ul>
 <p>This is one of the most important types of motion to master because many real-world situations approximate constant acceleration, and the mathematics remains manageable. When acceleration is constant, we can use a set of powerful equations called the kinematic equations (which we'll derive shortly).</p>
-<h4 id="diagram-comparison-of-uniform-vs-uniformly-accelerated-motion">Diagram: Comparison of Uniform vs Uniformly Accelerated Motion</h4>
 <details>
 <summary>Comparison of Uniform vs Uniformly Accelerated Motion</summary>
 <p>Type: chart</p>
@@ -2181,7 +1832,6 @@
 <p><strong>4. Horizontal sections mean stationary</strong></p>
 <p>When the graph is perfectly horizontal, position isn't changing—the object is at rest during that time interval.</p>
 <p>Let's examine some example scenarios:</p>
-<h4 id="diagram-position-time-graph-interactive-analyzer">Diagram: Position-Time Graph Interactive Analyzer</h4>
 <details>
 <summary>Position-Time Graph Interactive Analyzer</summary>
 <p>Type: microsim</p>
@@ -2306,7 +1956,6 @@
 </tr>
 </tbody>
 </table>
-<h4 id="diagram-velocity-time-graph-area-calculator-microsim">Diagram: Velocity-Time Graph Area Calculator MicroSim</h4>
 <details>
 <summary>Velocity-Time Graph Area Calculator MicroSim</summary>
 <p>Type: microsim</p>
@@ -2401,7 +2050,6 @@ The v-t graph is a straight line starting at the origin (v = 0 at t = 0) with sl
 <p><strong>4. The slope would indicate rate of change of acceleration</strong></p>
 <p>Though we rarely analyze this in introductory physics, the slope of an a-t graph represents how quickly acceleration itself is changing—sometimes called "jerk" in technical contexts.</p>
 <p>Let's see how all three graph types connect:</p>
-<h4 id="diagram-three-graph-motion-analyzer-connecting-x-t-v-t-and-a-t-graphs">Diagram: Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs</h4>
 <details>
 <summary>Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs</summary>
 <p>Type: microsim</p>
@@ -2603,7 +2251,6 @@ v² = v₀² + 2a(x - x₀)
 0 = 25 - 1.0(x - x₀)
 x - x₀ = 25 m</p>
 <p>The kinematic equations are tools you'll use throughout your physics education and beyond. Mastering them now will make dynamics, projectile motion, and many other topics much easier to understand.</p>
-<h4 id="diagram-kinematic-equation-selector-tool">Diagram: Kinematic Equation Selector Tool</h4>
 <details>
 <summary>Kinematic Equation Selector Tool</summary>
 <p>Type: infographic</p>
@@ -2823,8 +2470,6 @@ Verify with car: (20 m/s)(18 s) = 360 m ✓</p>
 
 
 
-  
-
 
 
 
@@ -2851,7 +2496,7 @@ Verify with car: (20 m/s)(18 s) = 360 m ✓</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../01-scientific-foundations/quiz/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quiz">
+          <a href="../01-scientific-foundations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter 1 - Scientific Foundations">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2861,20 +2506,20 @@ Verify with car: (20 m/s)(18 s) = 360 m ✓</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Quiz
+                Chapter 1 - Scientific Foundations
               </div>
             </div>
           </a>
         
         
           
-          <a href="quiz/" class="md-footer__link md-footer__link--next" aria-label="Next: Quiz">
+          <a href="../03-motion-two-dimensions/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 3 - Motion in Two Dimensions">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Quiz
+                Chapter 3 - Motion in Two Dimensions
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2908,12 +2553,10 @@ Verify with car: (20 m/s)(18 s) = 360 m ✓</p>
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       
