@@ -1,0 +1,128 @@
+{
+  "chapter": "Chapter 4: Forces and Newton's Laws",
+  "chapter_file": "docs/chapters/04-forces-newtons-laws/index.md",
+  "quiz_file": "docs/chapters/04-forces-newtons-laws/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch4-q001",
+      "number": 1,
+      "question_text": "What is the SI unit of force?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Force",
+      "explanation_word_count": 48
+    },
+    {
+      "id": "ch4-q002",
+      "number": 2,
+      "question_text": "Two forces of 5 N and 3 N act on an object in the same direction. What is the net force?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Net Force",
+      "explanation_word_count": 29
+    },
+    {
+      "id": "ch4-q003",
+      "number": 3,
+      "question_text": "Which statement best describes Newton's First Law of Motion?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Newton's First Law",
+      "explanation_word_count": 40
+    },
+    {
+      "id": "ch4-q004",
+      "number": 4,
+      "question_text": "A 2 kg object accelerates at 3 m/s\u00b2 when a net force is applied. What is the magnitude of the net force?",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Newton's Second Law",
+      "explanation_word_count": 31
+    },
+    {
+      "id": "ch4-q005",
+      "number": 5,
+      "question_text": "If a hand pushes on a wall with a force of 50 N, what force does the wall exert on the hand?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Newton's Third Law",
+      "explanation_word_count": 43
+    },
+    {
+      "id": "ch4-q006",
+      "number": 6,
+      "question_text": "A book rests on a table. The weight of the book is balanced by which force?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Normal Force",
+      "explanation_word_count": 37
+    },
+    {
+      "id": "ch4-q007",
+      "number": 7,
+      "question_text": "A 5 kg object rests on a horizontal surface on Earth. What is its weight? (Use g = 10 m/s\u00b2)",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Weight",
+      "explanation_word_count": 40
+    },
+    {
+      "id": "ch4-q008",
+      "number": 8,
+      "question_text": "How does static equilibrium differ from dynamic equilibrium?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Equilibrium",
+      "explanation_word_count": 41
+    },
+    {
+      "id": "ch4-q009",
+      "number": 9,
+      "question_text": "A car accelerates forward. According to Newton's Third Law, this happens because:",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Action-Reaction Pairs",
+      "explanation_word_count": 36
+    },
+    {
+      "id": "ch4-q010",
+      "number": 10,
+      "question_text": "Which of the following scenarios describes an object in equilibrium?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Dynamic Equilibrium",
+      "explanation_word_count": 43
+    }
+  ],
+  "answer_distribution": {
+    "A": 0,
+    "B": 5,
+    "C": 5,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 1,
+    "Understand": 5,
+    "Apply": 4,
+    "Analyze": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 13,
+    "tested_concepts": 10,
+    "coverage_percentage": 76
+  }
+}

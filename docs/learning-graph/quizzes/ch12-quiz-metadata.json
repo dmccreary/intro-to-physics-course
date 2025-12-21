@@ -1,0 +1,130 @@
+{
+  "chapter": "Chapter 12: Electric Charge and Electric Fields",
+  "chapter_file": "docs/chapters/12-electric-charge-fields/index.md",
+  "quiz_file": "docs/chapters/12-electric-charge-fields/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch12-q001",
+      "number": 1,
+      "question_text": "What is electric charge?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Electric Charge",
+      "explanation_word_count": 48
+    },
+    {
+      "id": "ch12-q002",
+      "number": 2,
+      "question_text": "What does Coulomb's Law describe?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Coulomb's Law",
+      "explanation_word_count": 44
+    },
+    {
+      "id": "ch12-q003",
+      "number": 3,
+      "question_text": "Two point charges of +2 C and +3 C are separated by 1 m. What is the force between them? (Use k = 9 \u00d7 10\u2079 N\u00b7m\u00b2/C\u00b2)",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Coulomb's Law",
+      "explanation_word_count": 40
+    },
+    {
+      "id": "ch12-q004",
+      "number": 4,
+      "question_text": "What is an electric field?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Electric Field",
+      "explanation_word_count": 56
+    },
+    {
+      "id": "ch12-q005",
+      "number": 5,
+      "question_text": "What do electric field lines indicate?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Electric Field Lines",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch12-q006",
+      "number": 6,
+      "question_text": "What is the relationship between electric field and electric potential?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Electric Potential",
+      "explanation_word_count": 48
+    },
+    {
+      "id": "ch12-q007",
+      "number": 7,
+      "question_text": "What is electric potential difference (voltage)?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Voltage",
+      "explanation_word_count": 47
+    },
+    {
+      "id": "ch12-q008",
+      "number": 8,
+      "question_text": "A positive charge is moved against the direction of an electric field. What happens to its electric potential energy?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Electric Potential Energy",
+      "explanation_word_count": 40
+    },
+    {
+      "id": "ch12-q009",
+      "number": 9,
+      "question_text": "What are equipotential surfaces?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Equipotential Surfaces",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch12-q010",
+      "number": 10,
+      "question_text": "How is charge conserved in an isolated electrical system?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Conservation of Charge",
+      "explanation_word_count": 49
+    }
+  ],
+  "answer_distribution": {
+    "A": 0,
+    "B": 8,
+    "C": 2,
+    "D": 0
+  },
+  "bloom_distribution": {
+    "Remember": 3,
+    "Understand": 6,
+    "Apply": 1,
+    "Analyze": 0,
+    "Evaluate": 0,
+    "Create": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 10,
+    "tested_concepts": 9,
+    "coverage_percentage": 90
+  }
+}

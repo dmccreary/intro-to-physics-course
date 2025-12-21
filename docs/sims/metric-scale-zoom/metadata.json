@@ -1,0 +1,242 @@
+{
+  "microsim": {
+    "title": "Metric Scale Zoom",
+    "name": "metric-scale-zoom",
+    "description": "An interactive MicroSim that helps students visualize the relative scale of metric prefixes and practice conversions between different orders of magnitude, from nanometers to exameters.",
+    "version": "1.0.0",
+    "created": "2025-11-13",
+    "updated": "2025-11-13",
+    "author": "Dan McCreary",
+    "license": "CC BY-NC-SA 4.0",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "subject": "Physics, Mathematics, Measurement",
+    "gradeLevel": "9-12",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Basic understanding of the metric system",
+      "Familiarity with powers of 10",
+      "Scientific notation (helpful but not required)"
+    ],
+    "learningObjectives": [
+      "Recognize common metric prefixes and their corresponding powers of 10",
+      "Understand the logarithmic nature of the metric system",
+      "Apply appropriate metric units to describe objects of different sizes",
+      "Analyze the relative scale differences between everyday objects and astronomical features",
+      "Evaluate which metric prefix is most appropriate for a given measurement"
+    ],
+    "bloomsTaxonomy": [
+      "Remember",
+      "Understand",
+      "Apply",
+      "Analyze",
+      "Evaluate"
+    ],
+    "standards": [
+      "NGSS: Measurement and data, scale and proportion",
+      "Common Core Math: Understanding place value and powers of 10",
+      "Physics: Scientific measurement and units"
+    ],
+    "tags": [
+      "metric system",
+      "measurement",
+      "scale",
+      "orders of magnitude",
+      "scientific notation",
+      "prefixes",
+      "units",
+      "logarithmic scale",
+      "physics",
+      "mathematics"
+    ],
+    "technicalDetails": {
+      "framework": "p5.js",
+      "version": "1.11.10",
+      "canvasDimensions": {
+        "width": "responsive",
+        "height": 450,
+        "drawHeight": 400,
+        "controlHeight": 50
+      },
+      "responsive": true,
+      "accessibility": {
+        "screenReaderSupport": true,
+        "keyboardNavigation": false,
+        "describeFunction": true
+      },
+      "dependencies": [
+        "p5.js CDN v1.11.10"
+      ]
+    },
+    "controls": [
+      {
+        "type": "slider",
+        "name": "Zoom Level",
+        "description": "Adjusts the scale level from nanometers to exameters",
+        "range": {
+          "min": 0,
+          "max": 9,
+          "default": 4,
+          "step": 1
+        },
+        "unit": "scale index",
+        "purpose": "Navigate through different orders of magnitude"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "currentObjectIndex",
+        "description": "Index of the currently displayed object",
+        "type": "integer",
+        "range": "0-9",
+        "default": 4
+      },
+      {
+        "name": "scaleObjects",
+        "description": "Array of objects at different metric scales",
+        "type": "array",
+        "count": 10
+      }
+    ],
+    "simulationModel": {
+      "modelType": "Logarithmic scale visualization",
+      "variables": [
+        "Object size in meters",
+        "Metric prefix",
+        "Display unit",
+        "Power of 10 exponent"
+      ],
+      "equations": [
+        "Scale position: log₁₀(size in meters)",
+        "Conversion: value × 10^exponent = size in meters"
+      ],
+      "assumptions": [
+        "Objects are represented at approximate typical sizes",
+        "Scale transitions are discrete steps rather than continuous zoom",
+        "Logarithmic scale provides equal visual spacing for exponential changes"
+      ],
+      "limitations": [
+        "Only shows 10 discrete scale levels",
+        "Does not include all possible metric prefixes",
+        "Object sizes are approximations for educational purposes",
+        "Does not demonstrate actual size conversions between all units"
+      ]
+    },
+    "educationalContext": {
+      "assessmentOpportunities": [
+        "Identify appropriate metric prefixes for given measurements",
+        "Convert between different metric units",
+        "Explain the relationship between metric prefixes and powers of 10",
+        "Estimate relative sizes across different scales"
+      ],
+      "commonMisconceptions": [
+        "Thinking metric prefixes increase linearly rather than logarithmically",
+        "Confusing the order or meaning of metric prefixes",
+        "Not understanding that each prefix represents a specific power of 10"
+      ],
+      "extensionActivities": [
+        "Research additional objects that fit on the scale",
+        "Create a visual scale timeline",
+        "Connect logarithmic scale to scientific notation",
+        "Practice unit conversions across multiple scales"
+      ]
+    },
+    "visualElements": {
+      "drawingArea": {
+        "background": "aliceblue",
+        "elements": [
+          "Title text",
+          "Object image (200x200 px)",
+          "Object name",
+          "Measurement with prefix",
+          "Scale information (10^n meters)"
+        ]
+      },
+      "controlArea": {
+        "background": "white",
+        "elements": [
+          "Zoom level slider",
+          "Zoom level indicator text"
+        ]
+      },
+      "colorScheme": {
+        "background": ["aliceblue", "white"],
+        "text": ["black", "navy", "darkgreen"],
+        "borders": "silver"
+      }
+    },
+    "dataObjects": [
+      {
+        "name": "Virus",
+        "size": "100 nm",
+        "sizeInMeters": 1e-7,
+        "prefix": "nano",
+        "exponent": -9
+      },
+      {
+        "name": "Human Hair Width",
+        "size": "100 μm",
+        "sizeInMeters": 1e-4,
+        "prefix": "micro",
+        "exponent": -6
+      },
+      {
+        "name": "Fingernail Width",
+        "size": "1 cm",
+        "sizeInMeters": 0.01,
+        "prefix": "centi",
+        "exponent": -2
+      },
+      {
+        "name": "Textbook Height",
+        "size": "25 cm",
+        "sizeInMeters": 0.25,
+        "prefix": "centi",
+        "exponent": -2
+      },
+      {
+        "name": "Person Height",
+        "size": "1.7 m",
+        "sizeInMeters": 1.7,
+        "prefix": "base",
+        "exponent": 0
+      },
+      {
+        "name": "Football Field",
+        "size": "100 m",
+        "sizeInMeters": 100,
+        "prefix": "hecto",
+        "exponent": 2
+      },
+      {
+        "name": "State Width",
+        "size": "400 km",
+        "sizeInMeters": 400000,
+        "prefix": "kilo",
+        "exponent": 3
+      },
+      {
+        "name": "Earth Diameter",
+        "size": "12.742 Mm",
+        "sizeInMeters": 12742000,
+        "prefix": "mega",
+        "exponent": 6
+      },
+      {
+        "name": "Solar System Diameter",
+        "size": "28.746 Tm",
+        "sizeInMeters": 2.8746e13,
+        "prefix": "tera",
+        "exponent": 12
+      },
+      {
+        "name": "Galaxy Diameter",
+        "size": "946.1 Em",
+        "sizeInMeters": 9.461e20,
+        "prefix": "exa",
+        "exponent": 18
+      }
+    ]
+  }
+}

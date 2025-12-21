@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Course - Diagram and MicroSim Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1, h2, h3 { color: #2c3e50; }
+        .summary {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stat-card h3 { margin-top: 0; font-size: 1.1em; color: #7f8c8d; }
+        .stat-card .number { font-size: 2em; font-weight: bold; color: #3498db; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        tr:hover { background: #f8f9fa; }
+        .difficulty-easy { color: #27ae60; font-weight: bold; }
+        .difficulty-medium { color: #f39c12; font-weight: bold; }
+        .difficulty-hard { color: #e74c3c; font-weight: bold; }
+        .difficulty-very-hard { color: #c0392b; font-weight: bold; }
+        .type-microsim { background: #e8f4fd; }
+        .type-diagram { background: #fff5e6; }
+        .filter-buttons {
+            margin: 20px 0;
+        }
+        .filter-buttons button {
+            padding: 8px 16px;
+            margin: 0 5px;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .filter-buttons button:hover {
+            background: #2980b9;
+        }
+        .filter-buttons button.active {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Geometry Course - Diagram and MicroSim Report</h1>
+
+    <div class="summary">
+        <h2>Overview</h2>
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>Total Elements</h3>
+                <div class="number">26</div>
+            </div>
+            <div class="stat-card">
+                <h3>Diagrams</h3>
+                <div class="number">12</div>
+            </div>
+            <div class="stat-card">
+                <h3>MicroSims</h3>
+                <div class="number">13</div>
+            </div>
+            <div class="stat-card">
+                <h3>Easy</h3>
+                <div class="number difficulty-easy">7</div>
+            </div>
+            <div class="stat-card">
+                <h3>Medium</h3>
+                <div class="number difficulty-medium">6</div>
+            </div>
+            <div class="stat-card">
+                <h3>Hard</h3>
+                <div class="number difficulty-hard">5</div>
+            </div>
+            <div class="stat-card">
+                <h3>Very Hard</h3>
+                <div class="number difficulty-very-hard">8</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>All Visual Elements</h2>
+    <table id="elementsTable">
+        <thead>
+            <tr>
+                <th>Chapter</th>
+                <th>Element Title</th>
+                <th>Type</th>
+                <th>Bloom Levels</th>
+                <th>UI Elements</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr class="type-diagram">
+                <td><strong>01</strong></td>
+                <td>3D visualization of parallel, perpendicular, and skew lines</td>
+                <td><em>Diagram</em></td>
+                <td><small>Understanding</small></td>
+                <td style="text-align: center;">0</td>
+                <td class="difficulty-medium">Medium</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>01</strong></td>
+                <td>Comparison of rays and line segments</td>
+                <td><em>Diagram</em></td>
+                <td><small>Understanding</small></td>
+                <td style="text-align: center;">4</td>
+                <td class="difficulty-medium">Medium</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>01</strong></td>
+                <td>Interactive angle creation and measurement</td>
+                <td><em>Microsim</em></td>
+                <td><small>Analyzing, Creating</small></td>
+                <td style="text-align: center;">9</td>
+                <td class="difficulty-hard">Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>01</strong></td>
+                <td>Interactive reasoning challenge game</td>
+                <td><em>Microsim</em></td>
+                <td><small>Evaluating, Creating</small></td>
+                <td style="text-align: center;">10</td>
+                <td class="difficulty-hard">Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>01</strong></td>
+                <td>Interactive visualization of undefined terms</td>
+                <td><em>Microsim</em></td>
+                <td><small>Applying</small></td>
+                <td style="text-align: center;">6</td>
+                <td class="difficulty-medium">Medium</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>01</strong></td>
+                <td>Visual examples of collinear and coplanar arrangements</td>
+                <td><em>Diagram</em></td>
+                <td><small>Analyzing</small></td>
+                <td style="text-align: center;">7</td>
+                <td class="difficulty-medium">Medium</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>01</strong></td>
+                <td>Visual representation of point, line, and plane</td>
+                <td><em>Diagram</em></td>
+                <td><small>Remembering, Understanding</small></td>
+                <td style="text-align: center;">5</td>
+                <td class="difficulty-medium">Medium</td>
+            </tr>
+
+            <tr class="type-unknown">
+                <td><strong>01</strong></td>
+                <td>Visual summary of all concepts and their relationships</td>
+                <td><em>Unknown</em></td>
+                <td><small>Remembering, Evaluating</small></td>
+                <td style="text-align: center;">2</td>
+                <td class="difficulty-easy">Easy</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive circle measurement tool</td>
+                <td><em>Microsim</em></td>
+                <td><small>Applying, Analyzing</small></td>
+                <td style="text-align: center;">13</td>
+                <td class="difficulty-hard">Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive demonstration of Cavalieri's Principle</td>
+                <td><em>Microsim</em></td>
+                <td><small>Understanding, Evaluating</small></td>
+                <td style="text-align: center;">14</td>
+                <td class="difficulty-very-hard">Very Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive exploration of 3D solid cross-sections</td>
+                <td><em>Microsim</em></td>
+                <td><small>Analyzing, Evaluating</small></td>
+                <td style="text-align: center;">23</td>
+                <td class="difficulty-very-hard">Very Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive exploration of 3D solid nets</td>
+                <td><em>Microsim</em></td>
+                <td><small>Understanding, Analyzing</small></td>
+                <td style="text-align: center;">16</td>
+                <td class="difficulty-very-hard">Very Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive exploration of regular polygon areas</td>
+                <td><em>Microsim</em></td>
+                <td><small>Applying, Analyzing</small></td>
+                <td style="text-align: center;">15</td>
+                <td class="difficulty-very-hard">Very Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive exploration of triangle area formula</td>
+                <td><em>Microsim</em></td>
+                <td><small>Applying, Analyzing</small></td>
+                <td style="text-align: center;">15</td>
+                <td class="difficulty-hard">Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive optimization problem solver</td>
+                <td><em>Microsim</em></td>
+                <td><small>Analyzing, Evaluating, Creating</small></td>
+                <td style="text-align: center;">21</td>
+                <td class="difficulty-very-hard">Very Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive scale model creation and analysis</td>
+                <td><em>Microsim</em></td>
+                <td><small>Applying, Analyzing, Creating</small></td>
+                <td style="text-align: center;">23</td>
+                <td class="difficulty-very-hard">Very Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive surface area calculation tool</td>
+                <td><em>Microsim</em></td>
+                <td><small>Applying, Analyzing</small></td>
+                <td style="text-align: center;">19</td>
+                <td class="difficulty-very-hard">Very Hard</td>
+            </tr>
+
+            <tr class="type-microsim">
+                <td><strong>12</strong></td>
+                <td>Interactive volume calculation and comparison tool</td>
+                <td><em>Microsim</em></td>
+                <td><small>Applying, Analyzing, Evaluating</small></td>
+                <td style="text-align: center;">31</td>
+                <td class="difficulty-very-hard">Very Hard</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>12</strong></td>
+                <td>Visual catalog of common 3D solids</td>
+                <td><em>Diagram</em></td>
+                <td><small>Remembering, Understanding</small></td>
+                <td style="text-align: center;">0</td>
+                <td class="difficulty-easy">Easy</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>12</strong></td>
+                <td>Visual comparison of different packaging arrangements</td>
+                <td><em>Diagram</em></td>
+                <td><small>Analyzing, Evaluating, Creating</small></td>
+                <td style="text-align: center;">3</td>
+                <td class="difficulty-hard">Hard</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>12</strong></td>
+                <td>Visual comparison of polygon perimeters approaching circle circumference</td>
+                <td><em>Diagram</em></td>
+                <td><small>Understanding, Analyzing</small></td>
+                <td style="text-align: center;">0</td>
+                <td class="difficulty-easy">Easy</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>12</strong></td>
+                <td>Visual comparison of volume formulas and relationships</td>
+                <td><em>Diagram</em></td>
+                <td><small>Understanding, Analyzing</small></td>
+                <td style="text-align: center;">0</td>
+                <td class="difficulty-easy">Easy</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>12</strong></td>
+                <td>Visual guide to circle measurements</td>
+                <td><em>Diagram</em></td>
+                <td><small>Remembering, Understanding</small></td>
+                <td style="text-align: center;">1</td>
+                <td class="difficulty-easy">Easy</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>12</strong></td>
+                <td>Visual guide to how scale affects length, area, and volume</td>
+                <td><em>Diagram</em></td>
+                <td><small>Understanding, Analyzing</small></td>
+                <td style="text-align: center;">0</td>
+                <td class="difficulty-easy">Easy</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>12</strong></td>
+                <td>Visual guide to quadrilateral area formulas</td>
+                <td><em>Diagram</em></td>
+                <td><small>Remembering, Understanding</small></td>
+                <td style="text-align: center;">0</td>
+                <td class="difficulty-easy">Easy</td>
+            </tr>
+
+            <tr class="type-diagram">
+                <td><strong>12</strong></td>
+                <td>Visual reference for surface area calculations</td>
+                <td><em>Diagram</em></td>
+                <td><small>Remembering, Understanding</small></td>
+                <td style="text-align: center;">0</td>
+                <td class="difficulty-medium">Medium</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

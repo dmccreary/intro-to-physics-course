@@ -37,7 +37,7 @@ Claude Code v2.0.36
   docs/chapters/01/index.md or similar?)
 
   Please provide the text/content you want me to convert into a Mermaid diagram, and I'll:
-  - Create the interactive diagram in /docs/sims/[diagram-name]/
+  - Create the interactive diagram in `/docs/sims/[diagram-name]/`
   - Generate all necessary files (main.html, index.md, style.css, script.js, metadata.json)
   - Add an iframe reference wrapped in <details markdown="1"> tags to chapter 1
 
@@ -106,7 +106,9 @@ Implementation: Mermaid flowchart or similar diagram tool
   ⎿  (No content)
 
 ⏺ Write(docs/sims/scientific-method/main.html)
-  ⎿  Wrote 109 lines to docs/sims/scientific-method/main.html                               
+  ⎿  Wrote 109 lines to docs/sims/scientific-method/main.html
+
+  ```html                               
      <!DOCTYPE html>
      <html lang="en">
      <head>
@@ -117,6 +119,7 @@ Implementation: Mermaid flowchart or similar diagram tool
          <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
      </head>
      <body>
+   ```
      … +99 lines (ctrl+o to expand)
 
 ⏺ Write(docs/sims/scientific-method/style.css)
@@ -167,7 +170,10 @@ Implementation: Mermaid flowchart or similar diagram tool
      correct or integrate existing knowledge. This interactive flowchart visualizes each step of the scientific method as used in
      physics and all scientific disciplines.
      ## Interactive Diagram
+
+```html
      <iframe src="main.html" width="100%" height="800px" style="border: 2px solid #667eea; border-radius: 8px;"></iframe>
+```
      … +69 lines (ctrl+o to expand)
 
 ⏺ Now let me find chapter 1 and add the iframe reference with the details tag:
@@ -247,7 +253,7 @@ Implementation: Mermaid flowchart or similar diagram tool
        108 -  - Purple: Communication and iteration
        109 -  
        110 -  Implementation: Mermaid flowchart or similar diagram tool
-        65 +  [View detailed explanation and educational context](../../sims/scientific-method/index.md)
+        65 +  [View detailed explanation and educational context](../sims/scientific-method/index.md)
         66    </details>
         67    
         68    **Key Insight:** The scientific method is iterative, meaning we cycle through these steps multiple times. Even 

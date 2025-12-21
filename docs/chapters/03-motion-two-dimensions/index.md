@@ -113,6 +113,7 @@ Here are common free fall situations you might encounter:
 
 #### Diagram: Free Fall Motion MicroSim
 
+#### Diagram: Free Fall Motion MicroSim
 <details markdown="1">
     <summary>Free Fall Motion MicroSim</summary>
     Type: microsim
@@ -190,6 +191,10 @@ The trajectory—the path traced by the projectile—forms a parabola. This eleg
 
 #### Diagram: Projectile Motion Trajectory Diagram
 
+#### Diagram: Projectile Motion
+<iframe src="../../sims/projectile-motion/main.html" height="482px" scrolling="no"></iframe>
+
+#### Diagram: Projectile Motion Trajectory Diagram
 <details markdown="1">
     <summary>Projectile Motion Trajectory Diagram</summary>
     Type: diagram
@@ -267,6 +272,7 @@ Consider these important observations:
 
 #### Diagram: Horizontal Projection Interactive Comparison
 
+#### Diagram: Horizontal Projection Interactive Comparison
 <details markdown="1">
     <summary>Horizontal Projection Interactive Comparison</summary>
     Type: microsim
@@ -366,6 +372,7 @@ The range equation reveals an interesting optimization: the angle that produces 
 
 #### Diagram: Angled Projectile Motion Explorer MicroSim
 
+#### Diagram: Angled Projectile Motion Explorer MicroSim
 <details markdown="1">
     <summary>Angled Projectile Motion Explorer MicroSim</summary>
     Type: microsim
@@ -482,6 +489,7 @@ Here are typical situations involving relative velocity:
 
 #### Diagram: River Crossing Relative Velocity Diagram
 
+#### Diagram: River Crossing Relative Velocity Diagram
 <details markdown="1">
     <summary>River Crossing Relative Velocity Diagram</summary>
     Type: diagram
@@ -534,6 +542,7 @@ The component method is more general and works for any angles, while the geometr
 
 #### Diagram: Relative Velocity Problem Solver MicroSim
 
+#### Diagram: Relative Velocity Problem Solver MicroSim
 <details markdown="1">
     <summary>Relative Velocity Problem Solver MicroSim</summary>
     Type: microsim

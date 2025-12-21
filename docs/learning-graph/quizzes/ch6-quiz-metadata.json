@@ -1,0 +1,128 @@
+{
+  "chapter": "Chapter 6: Work, Energy, and Power",
+  "chapter_file": "docs/chapters/06-work-energy-power/index.md",
+  "quiz_file": "docs/chapters/06-work-energy-power/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch6-q001",
+      "number": 1,
+      "question_text": "What is the SI unit of work and energy?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Work",
+      "explanation_word_count": 42
+    },
+    {
+      "id": "ch6-q002",
+      "number": 2,
+      "question_text": "When you carry a heavy box horizontally across a room at constant velocity, how much work do you do against gravity?",
+      "correct_answer": "D",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Work by Constant Force",
+      "explanation_word_count": 53
+    },
+    {
+      "id": "ch6-q003",
+      "number": 3,
+      "question_text": "What is kinetic energy?",
+      "correct_answer": "A",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Kinetic Energy",
+      "explanation_word_count": 43
+    },
+    {
+      "id": "ch6-q004",
+      "number": 4,
+      "question_text": "A 2 kg ball falls from rest from a height of 5 m. What is its kinetic energy just before hitting the ground? (Use g = 10 m/s\u00b2)",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Gravitational Potential Energy",
+      "explanation_word_count": 62
+    },
+    {
+      "id": "ch6-q005",
+      "number": 5,
+      "question_text": "What distinguishes conservative forces from non-conservative forces?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Conservative Forces",
+      "explanation_word_count": 43
+    },
+    {
+      "id": "ch6-q006",
+      "number": 6,
+      "question_text": "A spring compressed by 0.1 m stores elastic potential energy. If you compress it by 0.2 m instead, how does the stored energy change?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Elastic Potential Energy",
+      "explanation_word_count": 39
+    },
+    {
+      "id": "ch6-q007",
+      "number": 7,
+      "question_text": "What does the work-energy theorem state?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Work-Energy Theorem",
+      "explanation_word_count": 40
+    },
+    {
+      "id": "ch6-q008",
+      "number": 8,
+      "question_text": "In a perfectly frictionless system, what can you conclude about mechanical energy?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Conservation of Energy",
+      "explanation_word_count": 35
+    },
+    {
+      "id": "ch6-q009",
+      "number": 9,
+      "question_text": "What is power in physics?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Power",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch6-q010",
+      "number": 10,
+      "question_text": "Why are simple machines useful despite the principle of conservation of energy?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Simple Machines",
+      "explanation_word_count": 47
+    }
+  ],
+  "answer_distribution": {
+    "A": 1,
+    "B": 7,
+    "C": 1,
+    "D": 1
+  },
+  "bloom_distribution": {
+    "Remember": 3,
+    "Understand": 4,
+    "Apply": 3,
+    "Analyze": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 15,
+    "tested_concepts": 10,
+    "coverage_percentage": 66
+  }
+}

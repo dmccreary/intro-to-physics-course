@@ -1,0 +1,64 @@
+#### Drawing: Metric Scale Zoom
+
+<details markdown="1">
+<summary>Metric Scale Zoom</summary>
+
+**Type:** MicroSim
+Name: metric-scale-zoom
+
+Learning objective: Help students visualize the relative scale of metric prefixes and practice conversions between different orders of magnitude
+
+Canvas layout 500px high:
+
+- Drawing area 400px: Title and image of object read from png file with description below image that shows distance across the object
+- Control area 50px: Horizontal slider showing zoom level
+
+Visual elements:
+
+- Horizontal logarithmic scale from nanometers to millions of kilometers
+
+  * Virus (nanometer scale) - ~100 nm
+  * Human hair width (micrometer scale) - ~100 μm
+  * Fingernail width (millimeter scale) - ~10 mm
+  * Textbook height (centimeter scale) - ~25 cm
+  * Person height (meter scale) - ~1.7 m
+  * Football field (kilometer scale) - ~0.1 km
+  * State
+  * Planet
+  * Solar System
+  * Galaxy
+
+- The lower text below the object labeled with name, measurement and prefix
+- Zoom functionality with range control slider to focus on specific scale ranges
+
+
+Default parameters:
+
+- Starting scale: meter (10⁰)
+
+Behavior:
+
+- Slider movement smoothly zooms the scale visualization
+
+Implementation notes:
+
+- Use p5.js for rendering and animation
+
+- Logarithmic scale positioning: position = log₁₀(size)
+- Conversion logic: multiply or divide by appropriate power of 10
+- Track statistics: problems attempted, correct answers, average time
+
+In the img directory you will find the following files
+
+img/earth.png
+img/fingernail.png
+img/football-field.png
+img/galaxy.png
+img/hair.png
+img/person.png
+img/solar.png
+img/state.png
+img/textbook.png
+img/virus.png
+
+Implementation: p5.js with custom canvas controls

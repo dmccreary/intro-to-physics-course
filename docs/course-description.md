@@ -401,7 +401,7 @@ Picture this: you’re not just learning about the universe—you’re learning 
 
 ---
 
-### **Assessment & Grading Framework**
+### Assessment and Grading Framework
 
 | Bloom Level | Weight | Assessment Types |
 |-------------|--------|------------------|

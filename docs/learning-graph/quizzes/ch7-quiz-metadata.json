@@ -1,0 +1,128 @@
+{
+  "chapter": "Chapter 7: Momentum and Collisions",
+  "chapter_file": "docs/chapters/07-momentum-collisions/index.md",
+  "quiz_file": "docs/chapters/07-momentum-collisions/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch7-q001",
+      "number": 1,
+      "question_text": "What is linear momentum?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Linear Momentum",
+      "explanation_word_count": 38
+    },
+    {
+      "id": "ch7-q002",
+      "number": 2,
+      "question_text": "How does impulse relate to momentum?",
+      "correct_answer": "A",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Impulse-Momentum Theorem",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch7-q003",
+      "number": 3,
+      "question_text": "In a closed system with no external forces, what is conserved?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Conservation of Momentum",
+      "explanation_word_count": 43
+    },
+    {
+      "id": "ch7-q004",
+      "number": 4,
+      "question_text": "Two billiard balls collide head-on. Before collision, ball A (1 kg) moves at 4 m/s and ball B (2 kg) moves at 1 m/s toward A. What is the total momentum before collision?",
+      "correct_answer": "D",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Conservation of Momentum",
+      "explanation_word_count": 44
+    },
+    {
+      "id": "ch7-q005",
+      "number": 5,
+      "question_text": "What is the key difference between elastic and inelastic collisions?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Elastic Collisions",
+      "explanation_word_count": 41
+    },
+    {
+      "id": "ch7-q006",
+      "number": 6,
+      "question_text": "In a perfectly inelastic collision, what happens to the colliding objects?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Perfectly Inelastic Collisions",
+      "explanation_word_count": 39
+    },
+    {
+      "id": "ch7-q007",
+      "number": 7,
+      "question_text": "A 1000 kg car moving at 20 m/s collides with a stationary 1000 kg car in a perfectly inelastic collision. What is their combined velocity after collision?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Perfectly Inelastic Collisions",
+      "explanation_word_count": 23
+    },
+    {
+      "id": "ch7-q008",
+      "number": 8,
+      "question_text": "What is the center of mass of a system?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Center of Mass",
+      "explanation_word_count": 48
+    },
+    {
+      "id": "ch7-q009",
+      "number": 9,
+      "question_text": "A 0.1 kg firework rocket with initial velocity 50 m/s explodes into two fragments of equal mass. One fragment has velocity 80 m/s forward. What is the velocity of the second fragment?",
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Conservation of Momentum",
+      "explanation_word_count": 34
+    },
+    {
+      "id": "ch7-q010",
+      "number": 10,
+      "question_text": "Why does a rocket accelerate forward when it expels gases backward?",
+      "correct_answer": "B",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Rocket Propulsion",
+      "explanation_word_count": 46
+    }
+  ],
+  "answer_distribution": {
+    "A": 2,
+    "B": 5,
+    "C": 2,
+    "D": 1
+  },
+  "bloom_distribution": {
+    "Remember": 1,
+    "Understand": 5,
+    "Apply": 4,
+    "Analyze": 0
+  },
+  "concept_coverage": {
+    "total_concepts": 10,
+    "tested_concepts": 7,
+    "coverage_percentage": 70
+  }
+}

@@ -162,10 +162,10 @@ Sonnet 4.5 · Claude Pro
      # Chapters
      This textbook is organized into 12 chapters covering 200 physics concepts.
      ## Chapter Overview
-     1. [Scientific Foundations and Mathematical Tools](01-scientific-foundations/index.md) - This chapter introduces the
+     1. [Scientific Foundations and Mathematical Tools](../chapters/01-scientific-foundations/index.md) - This chapter introduces the
      scientific method, measurement systems, units, error analysis, mathematical tools including vectors, and graphical analysis
      techniques essential for all physics study.
-     2. [Motion in One Dimension](02-motion-one-dimension/index.md) - This chapter covers the fundamentals of kinematics including
+     2. [Motion in One Dimension](../chapters/02-motion-one-dimension/index.md) - This chapter covers the fundamentals of kinematics including
       displacement, velocity, acceleration, motion graphs, and kinematic equations for uniform and accelerated motion.
      … +28 lines (ctrl+o to expand)
 

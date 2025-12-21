@@ -11,6 +11,7 @@ nav:
   - Course Description: course-description.md
   - Chapters:
     - Overview: chapters/index.md
+<<<<<<< HEAD
     - 1. Scientific Foundations: chapters/01-scientific-foundations/index.md
     - 2. Motion in One Dimension: chapters/02-motion-one-dimension/index.md
     - 3.  Motion in Two Dimensions: chapters/03-motion-two-dimensions/index.md
@@ -23,14 +24,58 @@ nav:
     - 10. Waves and Sound: chapters/10-waves-sound/index.md
     - 11. Light and Optics: chapters/11-light-optics/index.md
     - 12. Electric Charge and Fields: chapters/12-electric-charge-fields/index.md
+=======
+    - Chapter 1 - Scientific Foundations:
+      - Content: chapters/01-scientific-foundations/index.md
+      - Quiz: chapters/01-scientific-foundations/quiz.md
+    - Chapter 2 - Motion in One Dimension:
+      - Content: chapters/02-motion-one-dimension/index.md
+      - Quiz: chapters/02-motion-one-dimension/quiz.md
+    - Chapter 3 - Motion in Two Dimensions:
+      - Content: chapters/03-motion-two-dimensions/index.md
+      - Quiz: chapters/03-motion-two-dimensions/quiz.md
+    - Chapter 4 - Forces and Newton's Laws:
+      - Content: chapters/04-forces-newtons-laws/index.md
+      - Quiz: chapters/04-forces-newtons-laws/quiz.md
+    - Chapter 5 - Applications of Newton's Laws:
+      - Content: chapters/05-applications-newtons-laws/index.md
+      - Quiz: chapters/05-applications-newtons-laws/quiz.md
+    - Chapter 6 - Work, Energy, and Power:
+      - Content: chapters/06-work-energy-power/index.md
+      - Quiz: chapters/06-work-energy-power/quiz.md
+    - Chapter 7 - Momentum and Collisions:
+      - Content: chapters/07-momentum-collisions/index.md
+      - Quiz: chapters/07-momentum-collisions/quiz.md
+    - Chapter 8 - Rotational Motion:
+      - Content: chapters/08-rotational-motion/index.md
+      - Quiz: chapters/08-rotational-motion/quiz.md
+    - Chapter 9 - Oscillations:
+      - Content: chapters/09-oscillations/index.md
+      - Quiz: chapters/09-oscillations/quiz.md
+    - Chapter 10 - Waves and Sound:
+      - Content: chapters/10-waves-sound/index.md
+      - Quiz: chapters/10-waves-sound/quiz.md
+    - Chapter 11 - Light and Optics:
+      - Content: chapters/11-light-optics/index.md
+      - Quiz: chapters/11-light-optics/quiz.md
+    - Chapter 12 - Electric Charge and Fields:
+      - Content: chapters/12-electric-charge-fields/index.md
+      - Quiz: chapters/12-electric-charge-fields/quiz.md
+>>>>>>> 68d6a4f732b12166559c562f71d75438a7ac1dbd
   
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Branches of Physics: sims/branches-of-physics/index.md
     - Scientific Method Workflow: sims/scientific-method/index.md
     - Learning Graph Viewer: sims/graph-viewer/index.md
+<<<<<<< HEAD
     - Projectile Motion Simulator: sims/projectile-motion/index.md
     - Elasticity: sims/elasticity/index.md
+=======
+    - Projectile Motion: sims/projectile-motion/index.md
+    - Projectile Motion Gravity: sims/projectile-motion-gravity/index.md
+    - Metric Scale Zoom: sims/metric-scale-zoom/index.md
+>>>>>>> 68d6a4f732b12166559c562f71d75438a7ac1dbd
   
   - Learning Graph:
     - Introduction: learning-graph/index.md
@@ -38,34 +83,49 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Quality Metrics: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
-    - Interactive Viewer: sims/graph-viewer/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Glossary Quality Report: learning-graph/glossary-quality-report.md
+    - FAQ Coverage Report: learning-graph/faq-coverage-gaps.md
+    - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - Quiz Generator Report: learning-graph/quiz-generation-report.md
+    - References Quality Report: learning-graph/references-quality-report.md
+    - Diagram Table: learning-graph/diagram-table.md
+    - Diagram Details: learning-graph/diagram-details.md
   
   - Prompts:
     - List of prompts: prompts/index.md
     - prompts/01-run-course-description-analyzer-skill.md
     - prompts/02-learning-graph-generator-skill-run.md
     - prompts/03-run-init.md
+    - prompts/06-mermaid-scientific-method.md
+    - prompts/07-generate-social-media-cover.md
+    - prompts/08-generate-glossary.md
+    - prompts/09-faq-generator.md
+    - prompts/10-generate-logo.md
+    - prompts/11-add-level-4-diagram-links.md
     - prompts/04-book-chapter-structure-skill.md
-  - Checklist: checklist.md
-  - Code Highlight Test: code-highlight-test.md
+  
   - Glossary: glossary.md
-  - How We Built This Site: how-we-built-this-site.md
+  - FAQs: faq.md
   - References: references.md
+
+  - How We Built This Site: how-we-built-this-site.md
+  - Book Build References: book-build-references.md
   - Feedback: feedback.md
   - License: license.md
   - Contact: contact.md
  
-# CoderDojo Microsite Standards from here down
+# Dan's Microsite Standards from here down
 
 theme:
   name: material
   extra_css:
     - styles/custom.css
   logo: img/logo.png
-  # favicon: img/my-icon.png
+  favicon: img/favicon.ico
   palette:
-    primary: 'blue'
-    accent: 'orange'
+    primary: 'navy'
+    accent: 'yellow'
   include_sidebar: true
   features:
     - content.code.copy
@@ -81,20 +141,20 @@ theme:
 plugins:
   - search
   - social
+  - social_override
 markdown_extensions:
-  - admonition
   - md_in_html
+  - attr_list
+  - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - attr_list
   - pymdownx.highlight:
       linenums: true
 extra_css:
    - css/extra.css
 extra_javascript:
    - js/extra.js
-#extra:
-#  analytics:
-#    provider: google
-    # https://analytics.google.com/analytics/web/#/a1420179p349994530/admin/streams/table/4433129821
-#    property: G-XXXX
+extra:
+  analytics:
+    provider: google
+    property: G-BF05WTGMW9

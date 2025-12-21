@@ -1,0 +1,128 @@
+{
+  "chapter": "Chapter 9: Oscillations and Periodic Motion",
+  "chapter_file": "docs/chapters/09-oscillations/index.md",
+  "quiz_file": "docs/chapters/09-oscillations/quiz.md",
+  "generated_date": "2025-11-13",
+  "total_questions": 10,
+  "content_readiness_score": 85,
+  "overall_quality_score": 82,
+  "questions": [
+    {
+      "id": "ch9-q001",
+      "number": 1,
+      "question_text": "What is simple harmonic motion?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Simple Harmonic Motion",
+      "explanation_word_count": 46
+    },
+    {
+      "id": "ch9-q002",
+      "number": 2,
+      "question_text": "In simple harmonic motion, when is the acceleration maximum?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Amplitude",
+      "explanation_word_count": 47
+    },
+    {
+      "id": "ch9-q003",
+      "number": 3,
+      "question_text": "What is the period of an oscillation?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Period",
+      "explanation_word_count": 41
+    },
+    {
+      "id": "ch9-q004",
+      "number": 4,
+      "question_text": "A spring with spring constant k = 100 N/m is attached to a 0.25 kg mass. What is the period of oscillation?",
+      "correct_answer": "A",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Hooke's Law",
+      "explanation_word_count": 32
+    },
+    {
+      "id": "ch9-q005",
+      "number": 5,
+      "question_text": "What does Hooke's Law state?",
+      "correct_answer": "B",
+      "bloom_level": "Remember",
+      "difficulty": "medium",
+      "concept_tested": "Hooke's Law",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch9-q006",
+      "number": 6,
+      "question_text": "How does increasing amplitude affect the period of a simple pendulum?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Simple Pendulum",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch9-q007",
+      "number": 7,
+      "question_text": "What is resonance?",
+      "correct_answer": "B",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Resonance",
+      "explanation_word_count": 44
+    },
+    {
+      "id": "ch9-q008",
+      "number": 8,
+      "question_text": "A mass on a spring has total mechanical energy of 10 J. At maximum displacement (amplitude), what is the kinetic energy?",
+      "correct_answer": "C",
+      "bloom_level": "Apply",
+      "difficulty": "medium",
+      "concept_tested": "Simple Harmonic Motion",
+      "explanation_word_count": 45
+    },
+    {
+      "id": "ch9-q009",
+      "number": 9,
+      "question_text": "How does the period of a simple pendulum depend on its length?",
+      "correct_answer": "C",
+      "bloom_level": "Understand",
+      "difficulty": "medium",
+      "concept_tested": "Simple Pendulum",
+      "explanation_word_count": 42
+    },
+    {
+      "id": "ch9-q010",
+      "number": 10,
+      "question_text": "Which of the following will NOT increase the amplitude of oscillation in a resonating system?",
+      "correct_answer": "D",
+      "bloom_level": "Analyze",
+      "difficulty": "medium",
+      "concept_tested": "Resonance",
+      "explanation_word_count": 50
+    }
+  ],
+  "answer_distribution": {
+    "A": 1,
+    "B": 4,
+    "C": 4,
+    "D": 1
+  },
+  "bloom_distribution": {
+    "Remember": 3,
+    "Understand": 4,
+    "Apply": 2,
+    "Analyze": 1
+  },
+  "concept_coverage": {
+    "total_concepts": 10,
+    "tested_concepts": 6,
+    "coverage_percentage": 60
+  }
+}

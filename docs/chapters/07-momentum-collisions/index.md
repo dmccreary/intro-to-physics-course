@@ -71,7 +71,6 @@ Notice how both mass and velocity contribute to momentum. A massive freight trai
 Because momentum is a vector, we must consider its direction. An object moving east has positive momentum in the east direction. If it turns around and moves west, its momentum becomes negative (or positive in the west direction). When analyzing collisions, tracking the direction of momentum is crucial.
 
 #### Diagram: Momentum Comparison Interactive Simulator
-
 <details markdown="1">
 <summary>Momentum Comparison Interactive Simulator</summary>
 Type: microsim
@@ -174,7 +173,6 @@ Understanding impulse explains many safety features and sports techniques:
 - **Following through**: In baseball and golf, extending contact time maximizes impulse and changes ball momentum more effectively
 
 #### Diagram: Force vs. Time: Impact Scenarios Comparison
-
 <details markdown="1">
 <summary>Force vs. Time: Impact Scenarios Comparison</summary>
 Type: chart
@@ -272,7 +270,6 @@ Collisions are classified based on whether kinetic energy is conserved. While mo
 | Perfectly Inelastic | Yes | No | Stick together, maximum KE loss |
 
 #### Diagram: Collision Types Comparison Diagram
-
 <details markdown="1">
 <summary>Collision Types Comparison Diagram</summary>
 Type: diagram
@@ -402,7 +399,6 @@ $$\Delta KE = KE_i - KE_f$$
 For perfectly inelastic collisions, the fraction of kinetic energy lost depends on the mass ratio and can be substantial—often 50% or more.
 
 #### Diagram: Interactive Collision Simulator
-
 <details markdown="1">
 <summary>Interactive Collision Simulator</summary>
 Type: microsim
@@ -516,7 +512,6 @@ A cue ball (mass m) moving at 5 m/s strikes a stationary eight ball (mass m) at 
 Using conservation of momentum in x and y, along with energy conservation, we can determine both final speeds and the eight ball's angle.
 
 #### Diagram: 2D Collision Vector Diagram
-
 <details markdown="1">
 <summary>2D Collision Vector Diagram</summary>
 Type: diagram
@@ -662,7 +657,6 @@ Real rockets face several challenges:
 4. **Exhaust velocity limits**: Chemical rockets max out around 4-5 km/s exhaust velocity
 
 #### Diagram: Rocket Propulsion Momentum Diagram
-
 <details markdown="1">
 <summary>Rocket Propulsion Momentum Diagram</summary>
 Type: workflow
@@ -741,7 +735,6 @@ The Saturn V moon rocket used three stages:
 - **Third stage**: Placed spacecraft into Earth orbit, then fired again for moon trajectory
 
 #### Diagram: Multistage Rocket Efficiency Comparison
-
 <details markdown="1">
 <summary>Multistage Rocket Efficiency Comparison</summary>
 Type: chart

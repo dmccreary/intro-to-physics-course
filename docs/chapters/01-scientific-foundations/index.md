@@ -119,23 +119,30 @@ Notice the pattern: each prefix represents a specific power of ten. This makes c
 
 #### Diagram: Metric Prefix Visualization MicroSim
 
+#### Drawing: Metric Scale Zoom
+
+<iframe src="../../sims/metric-scale-zoom/main.html" height="450px" width="100%" scrolling="no"></iframe>
+[Run the Metric Scale Zoom Fullscreen](../../sims/metric-scale-zoom/main.html)
+
+
+#### Diagram: Metric Scale Zoom
 <details markdown="1">
-<summary>Metric Prefix Visualization MicroSim</summary>
-Type: MicroSim
-Name: metric-scale-zoom
+<summary>Metric Scale Zoom</summary>
+
+**Type:** MicroSim
+**Name:** metric-scale-zoom
+**Status:** Done
 
 Learning objective: Help students visualize the relative scale of metric prefixes and practice conversions between different orders of magnitude
 
-Canvas layout (800x600px):
+Canvas layout 500px high:
 
-- Top area (800x150): Title and instruction text
-- Middle area (800x350): Visual scale showing objects at different metric scales
-- Bottom area (800x100): Interactive conversion practice area
+- Drawing area 400px: Title and image of object read from png file with description below image that shows distance across the object
+- Control area 50px: Horizontal slider showing zoom level
 
 Visual elements:
 
-- Horizontal logarithmic scale from nanometers to kilometers
-- Animated objects appearing at appropriate scale points:
+- Horizontal logarithmic scale from nanometers to millions of kilometers
 
   * Virus (nanometer scale) - ~100 nm
   * Human hair width (micrometer scale) - ~100 μm
@@ -143,41 +150,42 @@ Visual elements:
   * Textbook height (centimeter scale) - ~25 cm
   * Person height (meter scale) - ~1.7 m
   * Football field (kilometer scale) - ~0.1 km
+  * State
+  * Planet
+  * Solar System
+  * Galaxy
 
-- Each object labeled with measurement and prefix
+- The lower text below the object labeled with name, measurement and prefix
 - Zoom functionality with range control slider to focus on specific scale ranges
 
-Interactive controls:
-
-- Horizontal Slider: Select a scale to explore (nano to kilo)
-- Button: "Show Comparison" - displays two selected objects side by side
-- Input field: "Convert this value" with dropdown for source unit
-- Input field: Target unit selection
-- Button: "Check Answer" with immediate feedback
-- Display: Running score of correct conversions
 
 Default parameters:
 
 - Starting scale: meter (10⁰)
-- Initial comparison: Comparing a meter stick to a centimeter
-- Conversion practice: Random values between 1-1000
 
 Behavior:
 
 - Slider movement smoothly zooms the scale visualization
-- Object icons grow/shrink proportionally as zoom changes
-- Hovering over objects shows detailed information (actual size, common examples)
-- Conversion practice generates random problems (e.g., "Convert 2.5 km to meters")
-- Correct answers trigger positive feedback animation (green checkmark)
-- Incorrect answers show correct answer and explanation
 
 Implementation notes:
 
 - Use p5.js for rendering and animation
-- Logarithmic scale positioning: position = log₁₀(size) * scaleFactor
-- Store object data in array with {name, size_in_meters, image, description}
+- Logarithmic scale positioning: position = log₁₀(size)
 - Conversion logic: multiply or divide by appropriate power of 10
 - Track statistics: problems attempted, correct answers, average time
+
+In the img directory you will find the following files
+
+earth.png
+fingernail.png
+football-field.png
+galaxy.png
+hair.png
+person.png
+solar.png
+state.png
+textbook.png
+virus.png
 
 Implementation: p5.js with custom canvas controls
 </details>
@@ -315,6 +323,7 @@ This means the true value likely falls between 2.43 m and 2.47 m.
 
 #### Diagram: Precision vs Accuracy Target Diagram
 
+#### Diagram: Precision vs Accuracy Target Diagram
 <details markdown="1">
 <summary>Precision vs Accuracy Target Diagram</summary>
 Type: diagram
@@ -425,6 +434,7 @@ We represent vectors graphically as arrows, where:
 
 #### Diagram: Vector Basics Interactive MicroSim
 
+#### Diagram: Vector Basics Interactive MicroSim
 <details markdown="1">
 <summary>Vector Basics Interactive MicroSim</summary>
 Type: microsim
@@ -577,6 +587,7 @@ Using components:
 
 #### Diagram: Vector Addition Interactive MicroSim
 
+#### Diagram: Vector Addition Interactive MicroSim
 <details markdown="1">
 <summary>Vector Addition Interactive MicroSim</summary>
 Type: microsim
@@ -843,6 +854,7 @@ Choose two points far apart on the best-fit line (NOT necessarily data points):
 
 #### Diagram: Interactive Graph Analysis MicroSim
 
+#### Diagram: Interactive Graph Analysis MicroSim
 <details markdown="1">
 <summary>Interactive Graph Analysis MicroSim</summary>
 Type: microsim

@@ -63,6 +63,9 @@ where x_final is your ending position and x_initial is your starting position.
 
 #### Diagram: Distance vs Displacement Interactive Visualization
 
+#### Diagram: Distance vs Displacement Interactive Visualization
+
+#### Diagram: Distance vs Displacement Interactive Visualization
 <details markdown="1">
 <summary>Distance vs Displacement Interactive Visualization</summary>
 Type: microsim
@@ -171,6 +174,7 @@ In everyday conversation, when people say "velocity" or "speed," they usually me
 
 #### Diagram: Velocity vs Speed Comparison Table
 
+#### Diagram: Velocity vs Speed Comparison Table
 <details markdown="1">
 <summary>Velocity vs Speed Comparison Table</summary>
 Type: diagram
@@ -309,6 +313,7 @@ This is one of the most important types of motion to master because many real-wo
 
 #### Diagram: Comparison of Uniform vs Uniformly Accelerated Motion
 
+#### Diagram: Comparison of Uniform vs Uniformly Accelerated Motion
 <details markdown="1">
 <summary>Comparison of Uniform vs Uniformly Accelerated Motion</summary>
 Type: chart
@@ -424,6 +429,7 @@ Let's examine some example scenarios:
 
 #### Diagram: Position-Time Graph Interactive Analyzer
 
+#### Diagram: Position-Time Graph Interactive Analyzer
 <details markdown="1">
 <summary>Position-Time Graph Interactive Analyzer</summary>
 Type: microsim
@@ -549,6 +555,7 @@ Let's connect v-t graphs to x-t graphs with an example:
 
 #### Diagram: Velocity-Time Graph Area Calculator MicroSim
 
+#### Diagram: Velocity-Time Graph Area Calculator MicroSim
 <details markdown="1">
 <summary>Velocity-Time Graph Area Calculator MicroSim</summary>
 Type: microsim
@@ -669,6 +676,7 @@ Let's see how all three graph types connect:
 
 #### Diagram: Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs
 
+#### Diagram: Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs
 <details markdown="1">
 <summary>Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs</summary>
 Type: microsim
@@ -875,6 +883,7 @@ The kinematic equations are tools you'll use throughout your physics education a
 
 #### Diagram: Kinematic Equation Selector Tool
 
+#### Diagram: Kinematic Equation Selector Tool
 <details markdown="1">
 <summary>Kinematic Equation Selector Tool</summary>
 Type: infographic
