@@ -54,6 +54,7 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Branches of Physics: sims/branches-of-physics/index.md
+    - Current Animation: sims/current-animation/index.md
     - Scientific Method Workflow: sims/scientific-method/index.md
     - Learning Graph Viewer: sims/graph-viewer/index.md
     - Projectile Motion: sims/projectile-motion/index.md
