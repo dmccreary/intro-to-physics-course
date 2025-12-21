@@ -1,4 +1,4 @@
-# Geometry Course - Diagram and MicroSim Details
+# Diagram and MicroSim Details
 
 **Total Visual Elements:** 104
 **Diagrams:** 30
@@ -14,18 +14,18 @@
 - **UI Elements:** 21
 - **Difficulty:** Hard
 
-### [Metric Scale Zoom](../chapters/01-scientific-foundations/index.md#diagram-metric-scale-zoom)
-- **Status:** Done
-- **Type:** Microsim
-- **Bloom's Taxonomy:** Not specified
-- **UI Elements:** 6
-- **Difficulty:** Medium
-
 ### [Precision vs Accuracy Target Diagram](../chapters/01-scientific-foundations/index.md#diagram-precision-vs-accuracy-target-diagram)
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
+
+### [The Scientific Method](../chapters/01-scientific-foundations/index.md#diagram-the-scientific-method)
+- **Status:** Done
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 6
+- **Difficulty:** Medium
 
 ### [Vector Addition Interactive MicroSim](../chapters/01-scientific-foundations/index.md#diagram-vector-addition-interactive-microsim)
 - **Type:** Microsim
@@ -107,7 +107,7 @@
 - **UI Elements:** 17
 - **Difficulty:** Hard
 
-### [Projectile Motion](../chapters/03-motion-two-dimensions/index.md#diagram-projectile-motion)
+### [Projectile Motion Trajectory Diagram](../chapters/03-motion-two-dimensions/index.md#diagram-projectile-motion-trajectory-diagram)
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0

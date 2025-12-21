@@ -256,13 +256,25 @@ Picture this: you’re not just learning about the universe—you’re learning 
 19. Electric Potential
 20. Voltage
 
+### Electric Circuits
+
+1. Current
+2. Ohm's Law
+3. Capacitors
+4. Inductors
+5. Power
+6. AC Power
+7. DC Power
+8. Batteries
+9. Solar Cells
+10. Motors
+
 ## Concepts Not Covered
 
 - Quantum Mechanics
 - Atomic Physics
 - Solid State Physics
 - Digital Electronics
-- Circuits
 
 ### **I. REMEMBERING: Foundational Knowledge**
 
