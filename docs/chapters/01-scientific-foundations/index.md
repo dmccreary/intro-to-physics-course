@@ -57,6 +57,8 @@ The scientific method typically follows these steps:
 
 Let's consider a real-world example. Suppose you notice that when you drop different objects from the same height, some seem to fall faster than others. You might hypothesize: "Heavier objects fall faster than lighter objects." To test this, you could design an experiment dropping objects of different masses from the same height and timing their fall. After collecting data, you'd analyze whether the results support your hypothesis.
 
+#### Diagram: The Scientific Method
+
 <iframe src="../../sims/scientific-method/main.html" width="100%" height="1600px" scrolling="no"></iframe>
 
 [View detailed explanation and educational context](../../sims/scientific-method/index.md)
@@ -114,6 +116,8 @@ The metric system uses prefixes to express very large or very small quantities c
 | nano- | n | 10⁻⁹ | nanometer (nm) = 0.000000001 m |
 
 Notice the pattern: each prefix represents a specific power of ten. This makes conversions within the metric system straightforward compared to other systems (like converting inches to feet to miles).
+
+#### Diagram: Metric Prefix Visualization MicroSim
 
 <details markdown="1">
 <summary>Metric Prefix Visualization MicroSim</summary>
@@ -309,6 +313,8 @@ This means the true value likely falls between 2.43 m and 2.47 m.
 - **Relative uncertainty:** The fractional or percentage uncertainty (e.g., 0.02/2.45 = 0.8%)
 - **Standard deviation:** A statistical measure of the spread in repeated measurements
 
+#### Diagram: Precision vs Accuracy Target Diagram
+
 <details markdown="1">
 <summary>Precision vs Accuracy Target Diagram</summary>
 Type: diagram
@@ -416,6 +422,8 @@ Many physics problems involve combining quantities. With scalars, we simply add 
 We represent vectors graphically as arrows, where:
 - The **length** of the arrow represents the magnitude
 - The **direction** the arrow points represents the direction of the vector
+
+#### Diagram: Vector Basics Interactive MicroSim
 
 <details markdown="1">
 <summary>Vector Basics Interactive MicroSim</summary>
@@ -566,6 +574,8 @@ Using components:
 - *R*ᵧ = 0 + 40 = 40 m/s
 - *R* = √(30² + 40²) = √(900 + 1,600) = √2,500 = 50 m/s
 - θ = tan⁻¹(40/30) = tan⁻¹(1.33) = 53° north of east
+
+#### Diagram: Vector Addition Interactive MicroSim
 
 <details markdown="1">
 <summary>Vector Addition Interactive MicroSim</summary>
@@ -830,6 +840,8 @@ Choose two points far apart on the best-fit line (NOT necessarily data points):
 - Area under velocity-time graph = displacement
 - Area under force-distance graph = work
 - Area under power-time graph = energy
+
+#### Diagram: Interactive Graph Analysis MicroSim
 
 <details markdown="1">
 <summary>Interactive Graph Analysis MicroSim</summary>

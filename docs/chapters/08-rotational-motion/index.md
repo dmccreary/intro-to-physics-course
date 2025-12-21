@@ -69,6 +69,8 @@ Here's how angular displacement parallels linear displacement:
 | Unit: meters (m) | Unit: radians (rad) | 1 rad = *s*/*r* (dimensionless) |
 | Depends on path | Depends on rotation | Same angle for all points |
 
+#### Diagram: Angular Displacement Visualization MicroSim
+
 <details markdown="1">
 <summary>Angular Displacement Visualization MicroSim</summary>
 Type: microsim
@@ -140,6 +142,8 @@ Angular velocity appears everywhere in daily life:
 - **Ceiling fans:** Low speed ~100 rpm (10.5 rad/s), high speed ~300 rpm (31.4 rad/s)
 - **Earth's rotation:** One rotation per 24 hours = 7.27 × 10⁻⁵ rad/s
 - **Washing machine spin cycle:** 1000-1600 rpm (105-168 rad/s)
+
+#### Diagram: Comparative Angular Velocities Chart
 
 <details markdown="1">
 <summary>Comparative Angular Velocities Chart</summary>
@@ -239,6 +243,8 @@ The parallel structure makes these equations easier to remember:
 | *x* = *x*₀ + *v*₀t + ½*a*t² | θ = θ₀ + ω₀t + ½αt² |
 | *v*² = *v*₀² + 2*a*Δ*x* | ω² = ω₀² + 2αΔθ |
 | *x* = *x*₀ + ½(*v*₀ + *v*)t | θ = θ₀ + ½(ω₀ + ω)t |
+
+#### Diagram: Rotational Kinematics Problem Solver MicroSim
 
 <details markdown="1">
 <summary>Rotational Kinematics Problem Solver MicroSim</summary>
@@ -340,6 +346,8 @@ You intuitively understand torque from everyday experiences:
 
 The direction of torque follows the right-hand rule: fingers curl in the direction of rotation the torque would cause, and your thumb points in the direction of the torque vector.
 
+#### Diagram: Interactive Torque Diagram with Forces
+
 <details markdown="1">
 <summary>Interactive Torque Diagram with Forces</summary>
 Type: diagram
@@ -440,6 +448,8 @@ Rotational inertia explains many phenomena:
 - **Figure skating spins:** Pulling arms in reduces rotational inertia without changing mass
 - **Flywheels:** Store energy in rotating mass with high rotational inertia
 - **Tightrope walkers:** Long poles increase rotational inertia, making balance easier by slowing potential rotation
+
+#### Diagram: Rotational Inertia Comparison MicroSim
 
 <details markdown="1">
 <summary>Rotational Inertia Comparison MicroSim</summary>
@@ -561,6 +571,8 @@ For a rolling object without slipping, *v* = *rω*, so the two types of kinetic 
 
 Notice that the sphere's energy is split: 71% translational, 29% rotational. Different shapes have different splits.
 
+#### Diagram: Energy Distribution in Rolling Objects Chart
+
 <details markdown="1">
 <summary>Energy Distribution in Rolling Objects Chart</summary>
 Type: chart
@@ -642,6 +654,8 @@ where *m* is mass, *v* is tangential velocity, and *r* is the radius of the circ
 - Conserved in the absence of external torques
 - Can be transferred between objects during collisions
 
+#### Diagram: Angular Momentum Vector Visualization
+
 <details markdown="1">
 <summary>Angular Momentum Vector Visualization</summary>
 Type: diagram
@@ -713,6 +727,8 @@ This conservation law explains many fascinating phenomena:
 3. By conservation: *L*_f = *L*_i = 47.1 kg·m²/s
 4. Final angular velocity: ω_f = *L*_f/*I*_f = 47.1/2.0 = 23.6 rad/s
 5. Converting: ω_f = **3.75 rev/s** (2.5 times faster!)
+
+#### Diagram: Figure Skater Angular Momentum Conservation MicroSim
 
 <details markdown="1">
 <summary>Figure Skater Angular Momentum Conservation MicroSim</summary>
@@ -807,6 +823,8 @@ Consider a wheel rolling to the right. At any instant:
 - **Points on the side:** Have velocities between these extremes
 
 The bottom point being stationary is counterintuitive but crucial. If it weren't stationary, the object would be sliding, not rolling. Static friction prevents this sliding.
+
+#### Diagram: Rolling Motion Velocity Vectors MicroSim
 
 <details markdown="1">
 <summary>Rolling Motion Velocity Vectors MicroSim</summary>
@@ -931,6 +949,8 @@ Rotational motion principles appear throughout technology and nature:
 - **Hurricane formation:** Air spiraling inward speeds up as rotational inertia decreases
 - **Cat righting reflex:** Cats twist separate body parts to change orientation without external torque
 - **Falling leaves:** Tumbling motion as air resistance creates varying torques
+
+#### Diagram: Real-World Rotational Applications Infographic
 
 <details markdown="1">
 <summary>Real-World Rotational Applications Infographic</summary>

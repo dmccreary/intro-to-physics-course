@@ -49,6 +49,8 @@ Consider the following comparison:
 
 For each dimension, you can write separate kinematic equations. Time (t) is the common factor that connects the two motions—the projectile experiences the same elapsed time in both dimensions.
 
+#### Diagram: Vector Components Diagram
+
 <details markdown="1">
     <summary>Vector Components Diagram</summary>
     Type: diagram
@@ -108,6 +110,8 @@ Here are common free fall situations you might encounter:
 - **Thrown upward:** $v_{0y} > 0$, object rises then falls
 - **Thrown downward:** $v_{0y} < 0$, object speeds up throughout fall
 - **At maximum height:** $v_y = 0$ momentarily before falling back down
+
+#### Diagram: Free Fall Motion MicroSim
 
 <details markdown="1">
     <summary>Free Fall Motion MicroSim</summary>
@@ -184,6 +188,8 @@ The trajectory—the path traced by the projectile—forms a parabola. This eleg
 | Velocity | Constant ($v_x$) | Changes ($v_y = v_{0y} - gt$) |
 | Position equation | $x = v_x t$ | $y = y_0 + v_{0y}t - \frac{1}{2}gt^2$ |
 
+#### Diagram: Projectile Motion Trajectory Diagram
+
 <details markdown="1">
     <summary>Projectile Motion Trajectory Diagram</summary>
     Type: diagram
@@ -258,6 +264,8 @@ Consider these important observations:
 - Greater horizontal speed increases range but not flight time
 - Vertical velocity at impact depends only on fall height, not horizontal motion
 - At impact, velocity vector points downward and forward at some angle
+
+#### Diagram: Horizontal Projection Interactive Comparison
 
 <details markdown="1">
     <summary>Horizontal Projection Interactive Comparison</summary>
@@ -355,6 +363,8 @@ The range equation reveals an interesting optimization: the angle that produces 
 | 45° | Optimal parabola | Medium | Maximum |
 | 60° | High arc | Longer | Medium |
 | 75° | Very steep | Longest | Short |
+
+#### Diagram: Angled Projectile Motion Explorer MicroSim
 
 <details markdown="1">
     <summary>Angled Projectile Motion Explorer MicroSim</summary>
@@ -470,6 +480,8 @@ Here are typical situations involving relative velocity:
 - **Moving walkway:** Person's velocity relative to ground = walking velocity on walkway + walkway velocity
 - **Chase problems:** Relative velocity of pursuer and target determines whether they'll meet
 
+#### Diagram: River Crossing Relative Velocity Diagram
+
 <details markdown="1">
     <summary>River Crossing Relative Velocity Diagram</summary>
     Type: diagram
@@ -519,6 +531,8 @@ Since velocity is a vector quantity, relative velocity problems require vector a
 2. **Pythagorean theorem and trigonometry:** For perpendicular velocities, use $v = \sqrt{v_x^2 + v_y^2}$ and $\theta = \tan^{-1}(v_y/v_x)$
 
 The component method is more general and works for any angles, while the geometric method is faster for perpendicular or parallel velocities.
+
+#### Diagram: Relative Velocity Problem Solver MicroSim
 
 <details markdown="1">
     <summary>Relative Velocity Problem Solver MicroSim</summary>

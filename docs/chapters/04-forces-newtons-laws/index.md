@@ -72,6 +72,8 @@ But what if both students pushed east with the same forces? Then we'd add them: 
 
 The key principle: **Only the net force determines how an object's motion changes.**
 
+#### Diagram: Free-Body Diagram Tutorial
+
 <details markdown="1">
     <summary>Free-Body Diagram Tutorial</summary>
     Type: infographic
@@ -152,6 +154,8 @@ The puck keeps sliding forever at constant velocity. There's no net force, so it
 Newton's First Law only works in **inertial reference frames**—coordinate systems that aren't accelerating. If you're in a car that suddenly brakes, you lurch forward. From inside the car, it seems like a force pushed you. But from outside, you just kept moving at constant velocity while the car slowed down. Your reference frame (the car) was accelerating, so Newton's First Law didn't apply from that perspective.
 
 Most physics problems assume you're viewing from Earth's surface, which is approximately an inertial frame (Earth's rotation and orbital motion introduce tiny effects we usually ignore).
+
+#### Diagram: Inertia Demonstration MicroSim
 
 <details markdown="1">
     <summary>Inertia Demonstration MicroSim</summary>
@@ -263,6 +267,8 @@ When solving Newton's Second Law problems, follow these steps:
 4. **Solve the equations** for the unknown quantity
 5. **Check your answer** (Does it make physical sense? Are the units correct?)
 
+#### Diagram: Force and Acceleration Relationship Chart
+
 <details markdown="1">
     <summary>Force and Acceleration Relationship Chart</summary>
     Type: chart
@@ -359,6 +365,8 @@ Students often ask: "If action and reaction are equal and opposite, why don't th
 The answer: **They act on different objects!** When you push a cart, the cart pushes back on you with equal force. But the forward force on the cart makes the cart accelerate, while the backward force on you might make you slide backward. They don't cancel because they're not acting on the same object.
 
 Forces only cancel (produce equilibrium) when they act on the same object.
+
+#### Diagram: Action-Reaction Pairs Interactive Diagram
 
 <details markdown="1">
     <summary>Action-Reaction Pairs Interactive Diagram</summary>
@@ -484,6 +492,8 @@ In equation form:
 
 You'll use these conditions extensively when solving statics problems.
 
+#### Diagram: Equilibrium Classification Workflow
+
 <details markdown="1">
     <summary>Equilibrium Classification Workflow</summary>
     Type: workflow
@@ -591,6 +601,8 @@ When you stand on a scale, it doesn't actually measure your weight directly. It 
 - Free fall: You feel weightless (scale reads zero, even though gravity still pulls on you!)
 
 This "apparent weight" is what causes the stomach-drop feeling on roller coasters and the floating sensation in free-falling elevators (don't try this at home).
+
+#### Diagram: Weight in Different Gravitational Fields MicroSim
 
 <details markdown="1">
     <summary>Weight in Different Gravitational Fields MicroSim</summary>
@@ -710,6 +722,8 @@ The normal force is crucial because:
 2. Friction depends on normal force (f = μN, which you'll learn in the next chapter)
 3. It's not always equal to weight—you must calculate it from equilibrium conditions
 4. It can do no work (always perpendicular to motion)
+
+#### Diagram: Normal Force on Inclined Planes Diagram
 
 <details markdown="1">
     <summary>Normal Force on Inclined Planes Diagram</summary>
