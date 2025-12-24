@@ -1,4 +1,8 @@
 
+// Fluid Dynamics
+// Source: https://vislupus.github.io/p5-simulations/fluid-dynamics.html
+// Author: Nikola Bozhinov (github: vislupus)
+
 let numParticles = 100;
 let particles = [];
 let target, vel, sliderAcc, sliderVel, sliderMassP, sliderG, sliderU, sliderD;
@@ -67,8 +71,8 @@ function draw() {
     collisionsPT = 0;
     collisionsPW = 0;
     for (let p of particles) {
-        let point = new Point(p.pos.x, p.pos.y, p);
-        quadtree.insert(point);
+        let pt = new Point(p.pos.x, p.pos.y, p);
+        quadtree.insert(pt);
 
         let range = new Circle(p.pos.x, p.pos.y, p.r * 2);
         let points = quadtree.query(range);
@@ -352,11 +356,153 @@ class Target {
     }
 
     show() {
-        //                noStroke();
         stroke(255);
         noFill();
-        //                fill(200);
         ellipse(this.pos.x, this.pos.y, this.r * 2);
+    }
+}
+
+// QuadTree implementation for spatial partitioning
+class Point {
+    constructor(x, y, userData) {
+        this.x = x;
+        this.y = y;
+        this.userData = userData;
+    }
+}
+
+class Rectangle {
+    constructor(x, y, w, h) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+    }
+
+    contains(point) {
+        return (
+            point.x >= this.x - this.w / 2 &&
+            point.x < this.x + this.w / 2 &&
+            point.y >= this.y - this.h / 2 &&
+            point.y < this.y + this.h / 2
+        );
+    }
+
+    intersects(range) {
+        return !(
+            range.x - range.w / 2 > this.x + this.w / 2 ||
+            range.x + range.w / 2 < this.x - this.w / 2 ||
+            range.y - range.h / 2 > this.y + this.h / 2 ||
+            range.y + range.h / 2 < this.y - this.h / 2
+        );
+    }
+}
+
+class Circle {
+    constructor(x, y, r) {
+        this.x = x;
+        this.y = y;
+        this.r = r;
+        this.rSquared = r * r;
+    }
+
+    contains(point) {
+        let d = Math.pow(point.x - this.x, 2) + Math.pow(point.y - this.y, 2);
+        return d <= this.rSquared;
+    }
+
+    intersects(range) {
+        let xDist = Math.abs(range.x - this.x);
+        let yDist = Math.abs(range.y - this.y);
+        let r = this.r;
+        let w = range.w / 2;
+        let h = range.h / 2;
+
+        if (xDist > r + w || yDist > r + h) {
+            return false;
+        }
+        if (xDist <= w || yDist <= h) {
+            return true;
+        }
+        let edges = Math.pow(xDist - w, 2) + Math.pow(yDist - h, 2);
+        return edges <= this.rSquared;
+    }
+}
+
+class QuadTree {
+    constructor(boundary, capacity) {
+        this.boundary = boundary;
+        this.capacity = capacity;
+        this.points = [];
+        this.divided = false;
+    }
+
+    subdivide() {
+        let x = this.boundary.x;
+        let y = this.boundary.y;
+        let w = this.boundary.w / 2;
+        let h = this.boundary.h / 2;
+
+        let ne = new Rectangle(x + w / 2, y - h / 2, w, h);
+        this.northeast = new QuadTree(ne, this.capacity);
+
+        let nw = new Rectangle(x - w / 2, y - h / 2, w, h);
+        this.northwest = new QuadTree(nw, this.capacity);
+
+        let se = new Rectangle(x + w / 2, y + h / 2, w, h);
+        this.southeast = new QuadTree(se, this.capacity);
+
+        let sw = new Rectangle(x - w / 2, y + h / 2, w, h);
+        this.southwest = new QuadTree(sw, this.capacity);
+
+        this.divided = true;
+    }
+
+    insert(point) {
+        if (!this.boundary.contains(point)) {
+            return false;
+        }
+
+        if (this.points.length < this.capacity) {
+            this.points.push(point);
+            return true;
+        }
+
+        if (!this.divided) {
+            this.subdivide();
+        }
+
+        return (
+            this.northeast.insert(point) ||
+            this.northwest.insert(point) ||
+            this.southeast.insert(point) ||
+            this.southwest.insert(point)
+        );
+    }
+
+    query(range, found) {
+        if (!found) {
+            found = [];
+        }
+
+        if (!this.boundary.intersects(range)) {
+            return found;
+        }
+
+        for (let p of this.points) {
+            if (range.contains(p)) {
+                found.push(p);
+            }
+        }
+
+        if (this.divided) {
+            this.northwest.query(range, found);
+            this.northeast.query(range, found);
+            this.southwest.query(range, found);
+            this.southeast.query(range, found);
+        }
+
+        return found;
     }
 }
 
