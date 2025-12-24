@@ -1,0 +1,26 @@
+{
+  "title": "Gravitational Attractor",
+  "description": "Interactive simulation demonstrating gravitational attraction between particles and a central attractor, featuring collision physics, path tracing, and orbital dynamics visualization.",
+  "creator": "Dan McCreary",
+  "contributor": "Nikola Bozhinov (vislupus)",
+  "date": "2024-12-24",
+  "subject": ["gravitational force", "orbital motion", "Newton's law of gravitation", "particle physics", "physics simulation", "attraction", "collision physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "gravitational-attractor-v1",
+  "educational": {
+    "level": "High School",
+    "gradeRange": "10-12",
+    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+    "concepts": ["gravitational-force", "orbital-motion", "conservation-of-momentum", "inverse-square-law"],
+    "prerequisites": ["vectors", "newtons-laws", "force"],
+    "estimatedTime": "45-60 minutes"
+  },
+  "technical": {
+    "library": "p5.js",
+    "libraryVersion": "1.11.10",
+    "features": ["particle simulation", "force visualization", "path tracing", "collision detection", "mouse interaction"]
+  }
+}

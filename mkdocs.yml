@@ -61,7 +61,8 @@ nav:
     - Projectile Motion Gravity: sims/projectile-motion-gravity/index.md
     - Metric Scale Zoom: sims/metric-scale-zoom/index.md
     - Elasticity: sims/elasticity/index.md
-  
+    - Gravitational Attractor: sims/gravitational-attractor/index.md
+
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Concept List: learning-graph/concept-list.md

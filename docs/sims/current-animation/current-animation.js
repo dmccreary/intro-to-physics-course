@@ -114,6 +114,7 @@ function draw() {
 }
 
 // Draw a black line with red circles as current from (x1,y1) to (x2,y2)
+// note that lineWidth is a global variable for the entire circuit
 function drawAnimatedWire(x1, y1, x2, y2, speed, spacing) {
   let distance = dist(x1, y1, x2, y2);
   let spacingPixels = spacing * 50; // Convert spacing to pixels
