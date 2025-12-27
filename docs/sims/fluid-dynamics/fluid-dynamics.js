@@ -1,75 +1,130 @@
-
 // Fluid Dynamics
 // Source: https://vislupus.github.io/p5-simulations/fluid-dynamics.html
 // Author: Nikola Bozhinov (github: vislupus)
 
+// Canvas dimensions
+let canvasWidth = 950;
+let drawHeight = 500;
+let controlHeight = 100;
+let canvasHeight = drawHeight + controlHeight;
+let margin = 20;
+
+// Simulation state
+let running = false;
+let startButton;
+
+// Simulation parameters
 let numParticles = 100;
 let particles = [];
-let target, vel, sliderAcc, sliderVel, sliderMassP, sliderG, sliderU, sliderD;
+let target, vel, acc;
+let sliderAcc, sliderVel, sliderMassP, sliderG, sliderU, sliderD;
 let collisionsPP = 0;
 let collisionsPT = 0;
 let collisionsPW = 0;
-let stopVal = 50;
+
+function updateCanvasSize() {
+    canvasWidth = windowWidth;
+    positionControls();
+}
 
 function setup() {
-    createCanvas(950, 600);
-//                                    frameRate(5);
+    updateCanvasSize();
+    createCanvas(canvasWidth, canvasHeight);
 
+    // Create Start/Pause button
+    startButton = createButton('Start');
+    startButton.mousePressed(toggleSimulation);
+    startButton.style('font-size', '16px');
+    startButton.style('padding', '4px 12px');
+    startButton.style('cursor', 'pointer');
+
+    // Create sliders
     sliderAcc = createSlider(0, 5, 2.6, 0.1);
-    sliderAcc.position(10, 5);
-    sliderAcc.style('width', '380px');
-
     sliderVel = createSlider(0, 10, 3.6, 0.1);
-    sliderVel.position(10, 30);
-    sliderVel.style('width', '380px');
-
     sliderMassP = createSlider(0.01, 5, 1, 0.01);
-    sliderMassP.position(10, 55);
-    sliderMassP.style('width', '380px');
-
     sliderG = createSlider(0, 10, 5, 0.1);
-    sliderG.position(10, 85);
-    sliderG.style('width', '380px');
-
     sliderU = createSlider(1000, 10000, 5000, 1);
-    sliderU.position(10, 115);
-    sliderU.style('width', '380px');
-
     sliderD = createSlider(0, 1000, 50, 1);
-    sliderD.position(10, 145);
-    sliderD.style('width', '380px');
 
-    target = new Target(width / 6, height / 2, 30, 3000);
+    positionControls();
+
+    // Create target obstacle
+    target = new Target(canvasWidth / 6, drawHeight / 2, 30, 3000);
+}
+
+function positionControls() {
+    if (!startButton || !sliderAcc) return;
+
+    let controlsY = drawHeight + 10;
+    let buttonWidth = 80;
+    let labelWidth = 50;
+    let availableWidth = canvasWidth - margin - buttonWidth - margin;
+    let sliderWidth = (availableWidth / 3) - labelWidth - 10;
+
+    // Start after button
+    let startX = margin + buttonWidth + 10;
+    let col1X = startX + labelWidth;
+    let col2X = startX + (availableWidth / 3) + labelWidth;
+    let col3X = startX + (availableWidth * 2 / 3) + labelWidth;
+
+    // Button position
+    startButton.position(margin, controlsY + 25);
+
+    // Row 1: Acc, Vel, Mass
+    sliderAcc.position(col1X, controlsY + 5);
+    sliderAcc.style('width', sliderWidth + 'px');
+
+    sliderVel.position(col2X, controlsY + 5);
+    sliderVel.style('width', sliderWidth + 'px');
+
+    sliderMassP.position(col3X, controlsY + 5);
+    sliderMassP.style('width', sliderWidth + 'px');
+
+    // Row 2: G, Upper, Lower
+    sliderG.position(col1X, controlsY + 50);
+    sliderG.style('width', sliderWidth + 'px');
+
+    sliderU.position(col2X, controlsY + 50);
+    sliderU.style('width', sliderWidth + 'px');
+
+    sliderD.position(col3X, controlsY + 50);
+    sliderD.style('width', sliderWidth + 'px');
+}
+
+function toggleSimulation() {
+    running = !running;
+    startButton.html(running ? 'Pause' : 'Start');
+}
+
+function windowResized() {
+    updateCanvasSize();
+    resizeCanvas(canvasWidth, canvasHeight);
+    // Update target position on resize
+    if (target) {
+        target.pos.x = canvasWidth / 6;
+        target.pos.y = drawHeight / 2;
+    }
 }
 
 function draw() {
     background(0);
 
-    const boundary = new Rectangle(width / 2, height / 2, width, height);
-    const capacity = 4;
-    const quadtree = new QuadTree(boundary, capacity);
-
+    // Get slider values
     vel = sliderVel.value();
     acc = sliderAcc.value();
 
-    fill(255);
-    noStroke();
-    textSize(16);
-    text(`Acceleration: ${acc}`, 400, 17);
-    text(`Velocity: ${vel}`, 400, 42);
-    text(`Mass of particles: ${sliderMassP.value()}`, 400, 66);
-    text(`${sliderG.value()}`, 400, 96);
-    text(`${sliderU.value()}`, 400, 126);
-    text(`${sliderD.value()}`, 400, 156);
+    // Calculate wall positions based on drawHeight
+    let wallTop = 50;
+    let wallBottom = drawHeight - 50;
 
-    text(`${frameRate().toFixed(1)} fps`, 10, height - 70);
-    text(`frames: ${frameCount}`, 10, height - 50);
+    const boundary = new Rectangle(canvasWidth / 2, drawHeight / 2, canvasWidth, drawHeight);
+    const capacity = 4;
+    const quadtree = new QuadTree(boundary, capacity);
 
-
-    let flow = createVector(acc, 0);
     collisionsPP = 0;
     collisionsPT = 0;
     collisionsPW = 0;
+
     for (let p of particles) {
         let pt = new Point(p.pos.x, p.pos.y, p);
         quadtree.insert(pt);
@@ -84,7 +139,6 @@ function draw() {
                 p.collide(other, intersects.dist, intersects.minDist);
             }
         }
-
 
         range = new Circle(p.pos.x, p.pos.y, p.r * 6);
         points = quadtree.query(range);
@@ -102,82 +156,91 @@ function draw() {
             }
         }
 
-
-
-        if (p.pos.y <= height / 2) {
-            p.applyForce(flow.setMag(map(p.pos.y, 200, height / 2, 0.1, acc)));
+        let flow = createVector(acc, 0);
+        if (p.pos.y <= drawHeight / 2) {
+            p.applyForce(flow.setMag(map(p.pos.y, wallTop, drawHeight / 2, 0.1, acc)));
         } else {
-            p.applyForce(flow.setMag(map(p.pos.y, height / 2, height - 200, acc, 0.1)));
+            p.applyForce(flow.setMag(map(p.pos.y, drawHeight / 2, wallBottom, acc, 0.1)));
         }
 
-        //                                p.applyForce(flow);
-        p.update();
+        if (running) {
+            p.update();
+        }
         p.collideTarget(target);
-        p.edges();
+        p.edges(wallTop, wallBottom);
         p.show();
     }
 
-    for (let i = 0; i < numParticles; i++) {
-        let x = random(-100, -50);
-        let y = random(200, height - 200);
-        let vx = random(-vel, vel);
-        let vy = random(-vel / 2, vel / 2);
-
-        particles.push(new Particles(x, y, 1, sliderMassP.value(), vx, vy));
+    // Add new particles only when running
+    if (running) {
+        for (let i = 0; i < numParticles; i++) {
+            let x = random(-100, -50);
+            let y = random(wallTop + 50, wallBottom - 50);
+            let vx = random(-vel, vel);
+            let vy = random(-vel / 2, vel / 2);
+            particles.push(new Particles(x, y, 1, sliderMassP.value(), vx, vy));
+        }
     }
 
-    //            Target
+    // Draw target obstacle
     target.show();
 
-
-    //            noFill();
-    //            stroke(color('lime'));
-    //
-    //            //            rectMode(CENTER);
-    //            //            let rangeSampler = new Rectangle(mouseX, mouseY, 25, 25);
-    //
-    //            let rangeSampler = new Circle(mouseX, mouseY, 25);
-    //
-    //            if (mouseX < width && mouseY < height) {
-    //                //                rect(rangeSampler.x, rangeSampler.y, rangeSampler.w * 2, rangeSampler.h * 2);
-    //                circle(rangeSampler.x, rangeSampler.y, 25 * 2);
-    //
-    //                let points = quadtree.query(rangeSampler);
-    //
-    //                //                noStroke();
-    //                //                fill(255);
-    //                //                text(`Count sample: ${points.length}`, 10, height - 30);
-    //
-    //                for (let p of points) {
-    //                    strokeWeight(4);
-    //                    point(p.x, p.y);
-    //
-    //                    //                    console.log(p.userData)
-    //                }
-    //            }
-
-
-    noStroke();
-    fill(255);
-    text(`particles: ${particles.length}`, 10, height - 30);
-    text(`collisions particle/target: ${collisionsPT}`, width - 230, height - 70);
-    text(`collisions particle/particle: ${collisionsPP}`, width - 230, height - 50);
-    text(`collisions particle/wall: ${collisionsPW}`, width - 230, height - 30);
-
-    //            Walls
+    // Draw walls
     stroke(255);
     strokeWeight(2);
     noFill();
-    line(0, 200, width, 200)
-    line(0, height - 200, width, height - 200)
+    line(0, wallTop, canvasWidth, wallTop);
+    line(0, wallBottom, canvasWidth, wallBottom);
 
+    // Draw title
+    fill(255);
+    noStroke();
+    textSize(18);
+    textAlign(LEFT, TOP);
+    text("Fluid Dynamics Simulation", margin, 10);
 
+    // Draw statistics on right side of drawing area
+    textSize(12);
+    textAlign(RIGHT, TOP);
+    fill(150, 150, 200);
+    text(`Particles: ${particles.length}`, canvasWidth - margin, 10);
+    text(`P/Target: ${collisionsPT}`, canvasWidth - margin, 26);
+    text(`P/Particle: ${collisionsPP}`, canvasWidth - margin, 42);
+    text(`P/Wall: ${collisionsPW}`, canvasWidth - margin, 58);
 
-    //            if (frameCount > stopVal) {
-    //                noLoop();
-    //            }
+    // Draw controls area background
+    noStroke();
+    fill(25, 25, 45);
+    rect(0, drawHeight, canvasWidth, controlHeight);
+
+    // Draw divider line
+    stroke(60, 60, 100);
+    line(0, drawHeight, canvasWidth, drawHeight);
+
+    // Draw slider labels
+    fill(200, 200, 255);
+    noStroke();
+    textSize(11);
+    textAlign(LEFT, CENTER);
+
+    let controlsY = drawHeight + 10;
+    let buttonWidth = 80;
+    let availableWidth = canvasWidth - margin - buttonWidth - margin;
+    let startX = margin + buttonWidth + 10;
+    let col1LabelX = startX;
+    let col2LabelX = startX + (availableWidth / 3);
+    let col3LabelX = startX + (availableWidth * 2 / 3);
+
+    // Row 1 labels
+    text(`Acc: ${sliderAcc.value().toFixed(1)}`, col1LabelX, controlsY + 12);
+    text(`Vel: ${sliderVel.value().toFixed(1)}`, col2LabelX, controlsY + 12);
+    text(`Mass: ${sliderMassP.value().toFixed(2)}`, col3LabelX, controlsY + 12);
+
+    // Row 2 labels
+    text(`Grav: ${sliderG.value().toFixed(1)}`, col1LabelX, controlsY + 57);
+    text(`Upper: ${sliderU.value()}`, col2LabelX, controlsY + 57);
+    text(`Lower: ${sliderD.value()}`, col3LabelX, controlsY + 57);
 }
-
 
 
 class Particles {
@@ -213,34 +276,32 @@ class Particles {
         this.vel.add(this.acc);
         this.pos.add(this.vel);
         this.acc.set(0, 0);
-
-        //                                if (this.vel.x !== 0 || this.vel.y !== 0 && this.vel.y !== 1) {
-        //                                    this.drawArrow('#ffff33', 1, this.vel);
-        //                                }
     }
 
-    edges() {
-        if (this.pos.x < -150 || this.pos.x > width) {
+    edges(wallTop, wallBottom) {
+        // Remove particles that leave the canvas
+        if (this.pos.x < -150 || this.pos.x > canvasWidth) {
             particles.splice(particles.indexOf(this), 1);
         }
 
-        if (this.pos.y <= 170 + this.r || this.pos.y >= height - 170 - this.r) {
+        // Remove particles that go too far beyond walls
+        if (this.pos.y <= wallTop - 30 || this.pos.y >= wallBottom + 30) {
             particles.splice(particles.indexOf(this), 1);
         }
 
-
-        if (this.pos.y <= 200 + this.r || this.pos.y >= height - 200 - this.r) {
-            this.vel.y = -this.vel.y
-
+        // Bounce off walls
+        if (this.pos.y <= wallTop + this.r || this.pos.y >= wallBottom - this.r) {
+            this.vel.y = -this.vel.y;
             collisionsPW++;
         }
 
-        if (this.pos.y > height - 200 - this.r) {
-            this.pos.y = height - 200 - this.r;
+        // Constrain to walls
+        if (this.pos.y > wallBottom - this.r) {
+            this.pos.y = wallBottom - this.r;
         }
 
-        if (this.pos.y < 200 + this.r) {
-            this.pos.y = 200 + this.r;
+        if (this.pos.y < wallTop + this.r) {
+            this.pos.y = wallTop + this.r;
         }
     }
 
@@ -260,7 +321,6 @@ class Particles {
                 this.pos.x -= overlap * (this.pos.x - target.pos.x) / distance;
                 this.pos.y -= overlap * (this.pos.y - target.pos.y) / distance;
 
-
                 let dx = target.pos.x - this.pos.x;
                 let dy = target.pos.y - this.pos.y;
 
@@ -271,7 +331,7 @@ class Particles {
 
                 this.vel.x -= p * target.mass * nx;
                 this.vel.y -= p * target.mass * ny;
-                this.vel.limit(vel)
+                this.vel.limit(vel);
 
                 collisionsPT++;
             }
@@ -287,7 +347,6 @@ class Particles {
         other.pos.x += overlap * (this.pos.x - other.pos.x) / distance;
         other.pos.y += overlap * (this.pos.y - other.pos.y) / distance;
 
-
         let dx = other.pos.x - this.pos.x;
         let dy = other.pos.y - this.pos.y;
 
@@ -301,11 +360,11 @@ class Particles {
 
         this.vel.x -= p * other.mass * nx;
         this.vel.y -= p * other.mass * ny;
-        this.vel.limit(vel)
+        this.vel.limit(vel);
 
         other.vel.x += p * this.mass * nx;
         other.vel.y += p * this.mass * ny;
-        other.vel.limit(vel)
+        other.vel.limit(vel);
 
         collisionsPP++;
     }
@@ -342,7 +401,6 @@ class Particles {
 
     show() {
         noStroke();
-        //                noFill();
         fill(150);
         ellipse(this.pos.x, this.pos.y, this.r * 2);
     }
@@ -505,4 +563,3 @@ class QuadTree {
         return found;
     }
 }
-
