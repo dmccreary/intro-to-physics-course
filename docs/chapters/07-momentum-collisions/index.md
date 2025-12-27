@@ -73,6 +73,8 @@ Because momentum is a vector, we must consider its direction. An object moving e
 #### Diagram: Momentum Comparison Interactive Simulator
 <details markdown="1">
 <summary>Momentum Comparison Interactive Simulator</summary>
+**TODO:** human-review-needed
+
 Type: microsim
 
 Learning objective: Help students visualize how mass and velocity combine to determine momentum, and understand momentum as a vector quantity
@@ -175,6 +177,8 @@ Understanding impulse explains many safety features and sports techniques:
 #### Diagram: Force vs. Time: Impact Scenarios Comparison
 <details markdown="1">
 <summary>Force vs. Time: Impact Scenarios Comparison</summary>
+**TODO:** human-review-needed
+
 Type: chart
 
 Chart type: Line chart with dual y-axis
@@ -272,6 +276,8 @@ Collisions are classified based on whether kinetic energy is conserved. While mo
 #### Diagram: Collision Types Comparison Diagram
 <details markdown="1">
 <summary>Collision Types Comparison Diagram</summary>
+**TODO:** human-review-needed
+
 Type: diagram
 
 Purpose: Visually illustrate the three types of collisions with before-and-after scenarios showing conservation principles
@@ -399,8 +405,16 @@ $$\Delta KE = KE_i - KE_f$$
 For perfectly inelastic collisions, the fraction of kinetic energy lost depends on the mass ratio and can be substantial—often 50% or more.
 
 #### Diagram: Interactive Collision Simulator
+
+<iframe src="../../sims/collisions/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/collisions/index.md)
+
 <details markdown="1">
 <summary>Interactive Collision Simulator</summary>
+**Status:** done
+**TODO:** human-review-needed (existing sim only shows elastic collisions - specification requests elastic/inelastic/perfectly inelastic modes)
+
 Type: microsim
 
 Learning objective: Allow students to experiment with different collision types and observe conservation of momentum and energy in real-time
@@ -514,6 +528,8 @@ Using conservation of momentum in x and y, along with energy conservation, we ca
 #### Diagram: 2D Collision Vector Diagram
 <details markdown="1">
 <summary>2D Collision Vector Diagram</summary>
+**TODO:** human-review-needed
+
 Type: diagram
 
 Purpose: Show how momentum vectors add in two dimensions before and after a collision
@@ -659,6 +675,8 @@ Real rockets face several challenges:
 #### Diagram: Rocket Propulsion Momentum Diagram
 <details markdown="1">
 <summary>Rocket Propulsion Momentum Diagram</summary>
+**TODO:** human-review-needed
+
 Type: workflow
 
 Purpose: Illustrate how rockets gain momentum by expelling exhaust gases, demonstrating momentum conservation in space
@@ -737,6 +755,8 @@ The Saturn V moon rocket used three stages:
 #### Diagram: Multistage Rocket Efficiency Comparison
 <details markdown="1">
 <summary>Multistage Rocket Efficiency Comparison</summary>
+**TODO:** human-review-needed
+
 Type: chart
 
 Chart type: Bar chart comparing velocity achieved

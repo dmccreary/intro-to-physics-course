@@ -75,8 +75,15 @@ Both descriptions are valid and give the same results for circuit analysis. Most
 
 #### Diagram: Current Flow Animation MicroSim
 
+<iframe src="../../sims/current-animation/main.html" width="100%" height="502px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/current-animation/index.md)
+
 <details markdown="1">
     <summary>Current Flow Animation MicroSim</summary>
+    **Status:** done
+    **TODO:** human-review-needed (existing sim is simpler than specification - lacks conventional vs electron flow toggle)
+
     Type: microsim
 
     Learning objective: Visualize the difference between conventional current and electron flow in a simple circuit
@@ -166,6 +173,8 @@ Ohm's Law tells us that for a given resistance, the current is directly proporti
 
 <details markdown="1">
     <summary>Ohm's Law Interactive Calculator MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Explore the relationship between voltage, current, and resistance through interactive manipulation
@@ -278,6 +287,8 @@ where:
 
 <details markdown="1">
     <summary>Capacitor Charging and Discharging MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Visualize how capacitors store and release energy, and understand the exponential charging/discharging behavior
@@ -387,6 +398,8 @@ where N is the number of turns, A is the cross-sectional area, l is the length, 
 
 <details markdown="1">
     <summary>Inductor Behavior in DC Circuits MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Demonstrate how inductors oppose changes in current and store energy in magnetic fields
@@ -486,6 +499,8 @@ AC is used in:
 
 <details markdown="1">
     <summary>DC vs AC Waveform Comparison MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Compare DC and AC power sources and understand key AC parameters (amplitude, frequency, RMS)
@@ -580,6 +595,8 @@ A 3.7 V, 2000 mAh battery stores: E = 3.7 V × 2 Ah = 7.4 Wh
 
 <details markdown="1">
     <summary>Battery Internal Structure and Operation MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Understand the electrochemical processes inside batteries and how they produce electric current
@@ -703,6 +720,8 @@ If one component fails, other branches continue operating—like modern house wi
 
 <details markdown="1">
     <summary>Series vs Parallel Circuit Comparison MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Compare current, voltage, and power distribution in series vs parallel circuits
@@ -814,6 +833,8 @@ Real output varies with:
 
 <details markdown="1">
     <summary>Solar Cell Operation and I-V Curve MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Understand how solar cells generate electricity and how to interpret their characteristic curves
@@ -908,6 +929,8 @@ The charge controller:
 
 <details markdown="1">
     <summary>Solar Battery Charging System MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Understand how solar panels charge batteries and power loads through a complete day-night cycle
@@ -1058,6 +1081,8 @@ $$P_{mech} = \tau \omega = E_{back} \times I$$
 
 <details markdown="1">
     <summary>DC Motor Operation MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Understand how DC motors convert electrical energy to mechanical rotation using magnetic forces
@@ -1145,6 +1170,8 @@ PWM is the most common method—by varying the duty cycle (percentage of time th
 
 <details markdown="1">
     <summary>Motor Speed Control with Variable Voltage MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Explore how changing voltage affects motor speed and understand the relationship between voltage, speed, current, and torque
@@ -1282,6 +1309,8 @@ A small farm needs to pump water from a well during daylight hours. The system m
 
 <details markdown="1">
     <summary>Solar Water Pump System MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Apply concepts of solar power, batteries, and motors to a real-world pumping application

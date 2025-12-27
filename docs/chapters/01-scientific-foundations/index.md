@@ -323,9 +323,14 @@ This means the true value likely falls between 2.43 m and 2.47 m.
 
 #### Diagram: Precision vs Accuracy Target Diagram
 
-#### Diagram: Precision vs Accuracy Target Diagram
+<iframe src="../../sims/precision-accuracy/main.html" width="100%" height="672px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/precision-accuracy/index.md)
+
 <details markdown="1">
 <summary>Precision vs Accuracy Target Diagram</summary>
+**Status:** done
+
 Type: diagram
 
 Purpose: Visually distinguish between precision (repeatability) and accuracy (correctness) in measurements
@@ -437,6 +442,8 @@ We represent vectors graphically as arrows, where:
 #### Diagram: Vector Basics Interactive MicroSim
 <details markdown="1">
 <summary>Vector Basics Interactive MicroSim</summary>
+**TODO:** human-review-needed
+
 Type: microsim
 
 Learning objective: Teach students how vectors are represented graphically and how magnitude and direction work together
@@ -590,6 +597,8 @@ Using components:
 #### Diagram: Vector Addition Interactive MicroSim
 <details markdown="1">
 <summary>Vector Addition Interactive MicroSim</summary>
+**TODO:** human-review-needed
+
 Type: microsim
 
 Learning objective: Demonstrate both graphical (tip-to-tail) and component methods of vector addition, allowing students to practice and compare approaches
@@ -857,6 +866,8 @@ Choose two points far apart on the best-fit line (NOT necessarily data points):
 #### Diagram: Interactive Graph Analysis MicroSim
 <details markdown="1">
 <summary>Interactive Graph Analysis MicroSim</summary>
+**TODO:** human-review-needed
+
 Type: microsim
 
 Learning objective: Teach students to interpret different types of graphs common in physics, extract quantitative information (slope, intercepts, area under curve), and understand the physical meaning of graph features

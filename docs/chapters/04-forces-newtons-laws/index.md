@@ -75,6 +75,8 @@ The key principle: **Only the net force determines how an object's motion change
 #### Diagram: Free-Body Diagram Tutorial
 <details markdown="1">
     <summary>Free-Body Diagram Tutorial</summary>
+    **TODO:** human-review-needed
+
     Type: infographic
 
     Purpose: Teach students how to draw and interpret free-body diagrams (FBDs), the essential tool for analyzing forces
@@ -157,6 +159,8 @@ Most physics problems assume you're viewing from Earth's surface, which is appro
 #### Diagram: Inertia Demonstration MicroSim
 <details markdown="1">
     <summary>Inertia Demonstration MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Demonstrate how mass affects inertia by comparing how different objects respond to identical forces
@@ -268,6 +272,8 @@ When solving Newton's Second Law problems, follow these steps:
 #### Diagram: Force and Acceleration Relationship Chart
 <details markdown="1">
     <summary>Force and Acceleration Relationship Chart</summary>
+    **TODO:** human-review-needed
+
     Type: chart
 
     Chart type: Multiple line graphs with interactive controls
@@ -366,6 +372,8 @@ Forces only cancel (produce equilibrium) when they act on the same object.
 #### Diagram: Action-Reaction Pairs Interactive Diagram
 <details markdown="1">
     <summary>Action-Reaction Pairs Interactive Diagram</summary>
+    **TODO:** human-review-needed
+
     Type: infographic
 
     Purpose: Help students identify action-reaction pairs in various scenarios and understand why they don't cancel
@@ -491,6 +499,8 @@ You'll use these conditions extensively when solving statics problems.
 #### Diagram: Equilibrium Classification Workflow
 <details markdown="1">
     <summary>Equilibrium Classification Workflow</summary>
+    **TODO:** human-review-needed
+
     Type: workflow
 
     Purpose: Help students determine whether an object is in equilibrium and classify the type
@@ -600,6 +610,8 @@ This "apparent weight" is what causes the stomach-drop feeling on roller coaster
 #### Diagram: Weight in Different Gravitational Fields MicroSim
 <details markdown="1">
     <summary>Weight in Different Gravitational Fields MicroSim</summary>
+    **TODO:** human-review-needed
+
     Type: microsim
 
     Learning objective: Demonstrate the difference between mass (constant) and weight (variable) by showing the same object in different gravitational environments
@@ -720,6 +732,8 @@ The normal force is crucial because:
 #### Diagram: Normal Force on Inclined Planes Diagram
 <details markdown="1">
     <summary>Normal Force on Inclined Planes Diagram</summary>
+    **TODO:** human-review-needed
+
     Type: diagram
 
     Purpose: Show how normal force changes with incline angle and how weight components relate to it
