@@ -62,6 +62,9 @@ nav:
     - Metric Scale Zoom: sims/metric-scale-zoom/index.md
     - Elasticity: sims/elasticity/index.md
     - Gravitational Attractor: sims/gravitational-attractor/index.md
+    - Exoplanet: sims/exoplanet/index.md
+    - Fluid-Dynamics: sims/fluid-dynamics/index.md
+    - Solar System: sims/solar-system/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md
