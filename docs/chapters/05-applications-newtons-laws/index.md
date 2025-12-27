@@ -49,6 +49,9 @@ Friction arises from microscopic interactions between surface irregularities. Ev
 #### Diagram: Microscopic View of Surface Contact
 <details markdown="1">
 <summary>Microscopic View of Surface Contact</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: diagram
 
 Purpose: Illustrate how microscopic surface irregularities create friction between two surfaces
@@ -105,6 +108,9 @@ where $f_s^{max}$ is the maximum static friction force, $\mu_s$ is the coefficie
 #### Diagram: Interactive Static Friction MicroSim
 <details markdown="1">
 <summary>Interactive Static Friction MicroSim</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: microsim
 
 Learning objective: Demonstrate how static friction responds to applied force up to its maximum value, then transitions to kinetic friction
@@ -197,6 +203,9 @@ The independence from surface area seems counterintuitive. A brick lying flat ex
 #### Diagram: Friction Coefficient Comparison Chart
 <details markdown="1">
 <summary>Friction Coefficient Comparison Chart</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: chart
 
 Chart type: Grouped horizontal bar chart
@@ -293,6 +302,9 @@ When analyzing tension problems, remember these key principles:
 #### Diagram: Tension Force Diagram
 <details markdown="1">
 <summary>Tension Force Diagram</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: diagram
 
 Purpose: Illustrate how tension forces act within a rope and on connected objects
@@ -405,6 +417,9 @@ The suitcase barely accelerates because most of the applied force goes into redu
 #### Diagram: Angled Tension Component MicroSim
 <details markdown="1">
 <summary>Angled Tension Component MicroSim</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: microsim
 
 Learning objective: Visualize how changing the angle of an applied force affects its horizontal and vertical components, and how this influences normal force and friction
@@ -479,6 +494,9 @@ For an incline at angle θ above the horizontal:
 #### Diagram: Inclined Plane Force Decomposition Diagram
 <details markdown="1">
 <summary>Inclined Plane Force Decomposition Diagram</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: diagram
 
 Purpose: Show how to properly decompose weight into components parallel and perpendicular to an inclined plane
@@ -581,6 +599,9 @@ The block accelerates down the ramp at 3.62 m/s².
 #### Diagram: Inclined Plane Motion MicroSim
 <details markdown="1">
 <summary>Inclined Plane Motion MicroSim</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: microsim
 
 Learning objective: Demonstrate how incline angle and friction affect an object's acceleration down a ramp, and show the transition from static to sliding motion
@@ -662,6 +683,9 @@ Consider an Atwood machine with masses m₁ and m₂ (where m₂ > m₁) connect
 #### Diagram: Atwood Machine Free-Body Diagram
 <details markdown="1">
 <summary>Atwood Machine Free-Body Diagram</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: diagram
 
 Purpose: Illustrate the forces acting on each mass in an Atwood machine and show how to set up equations
@@ -743,6 +767,9 @@ Notice that tension (57.2 N) is between m₁g = 49 N and m₂g = 68.6 N, which m
 #### Diagram: Interactive Atwood Machine MicroSim
 <details markdown="1">
 <summary>Interactive Atwood Machine MicroSim</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: microsim
 
 Learning objective: Demonstrate how mass ratio affects acceleration in an Atwood machine and visualize the relationship between tension, weight, and acceleration
@@ -842,6 +869,9 @@ Check work (energy conservation):
 #### Diagram: Pulley System Mechanical Advantage Diagram
 <details markdown="1">
 <summary>Pulley System Mechanical Advantage Diagram</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: diagram
 
 Purpose: Compare three different pulley configurations showing how mechanical advantage increases with system complexity
@@ -951,6 +981,9 @@ Common sources of centripetal force:
 #### Diagram: Centripetal Force and Acceleration Visualization
 <details markdown="1">
 <summary>Centripetal Force and Acceleration Visualization</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: diagram
 
 Purpose: Illustrate the relationship between velocity, centripetal acceleration, and centripetal force for an object in circular motion
@@ -1030,6 +1063,9 @@ The maximum safe speed is about 93 km/h (58 mph). In wet conditions, with μs �
 #### Diagram: Car on Curve MicroSim
 <details markdown="1">
 <summary>Car on Curve MicroSim</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: microsim
 
 Learning objective: Demonstrate the relationship between speed, curve radius, and friction in determining whether a car can successfully navigate a curve
@@ -1110,6 +1146,9 @@ At this speed, any vehicle—regardless of mass—can take the curve without rel
 #### Diagram: Banked Curve Force Analysis Diagram
 <details markdown="1">
 <summary>Banked Curve Force Analysis Diagram</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: diagram
 
 Purpose: Show force decomposition on a vehicle on a banked curve and explain how normal force provides centripetal component
@@ -1205,6 +1244,9 @@ This is reasonable for most tire-road combinations, explaining why the car can s
 #### Diagram: Banked Curve Speed Analysis MicroSim
 <details markdown="1">
 <summary>Banked Curve Speed Analysis MicroSim</summary>
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
+
 Type: microsim
 
 Learning objective: Explore how vehicle speed relative to ideal speed determines the magnitude and direction of friction required on a banked curve

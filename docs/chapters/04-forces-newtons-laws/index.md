@@ -76,6 +76,7 @@ The key principle: **Only the net force determines how an object's motion change
 <details markdown="1">
     <summary>Free-Body Diagram Tutorial</summary>
     **TODO:** human-review-needed
+    **Status:** INCOMPLETE
 
     Type: infographic
 
@@ -506,6 +507,7 @@ You'll use these conditions extensively when solving statics problems.
 <details markdown="1">
 <summary>Equilibrium Classification Workflow</summary>
 **TODO:** human-review-needed
+**Status:** INCOMPLETE
 
 Type: workflow
 
@@ -741,6 +743,7 @@ The normal force is crucial because:
 <details markdown="1">
     <summary>Normal Force on Inclined Planes Diagram</summary>
     **TODO:** human-review-needed
+    **Status:** INCOMPLETE
 
     Type: diagram
 
