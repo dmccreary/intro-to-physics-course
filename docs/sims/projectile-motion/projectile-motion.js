@@ -75,7 +75,7 @@ function draw() {
 
   // Drawing area (aliceblue background)
   fill('aliceblue');
-  noStroke();
+  stroke('silver');
   rect(0, 0, width, drawHeight);
 
   // Draw ground line

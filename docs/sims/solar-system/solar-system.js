@@ -92,15 +92,12 @@ function windowResized() {
 }
 
 function draw() {
-    background(0);
-
-    // Draw divider between drawing area and controls
-    stroke(60, 60, 100);
-    line(0, drawHeight, canvasWidth, drawHeight);
+    fill('aliceblue');
+    stroke('silver');
+    rect(0, 0, width, drawHeight);
 
     // Controls background
-    noStroke();
-    fill(25, 25, 45);
+    fill('white');
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Update and show planets

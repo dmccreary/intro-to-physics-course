@@ -21,6 +21,10 @@ let numParticles = 30;
 let vel = 5;
 let numParticlesSlider, velocitySlider;
 
+// Collision visualization
+let collisionEvents = [];
+let collisionDuration = 200; // milliseconds
+
 function updateCanvasSize() {
     canvasWidth = windowWidth;
     positionControls();
@@ -47,6 +51,7 @@ function setup() {
 
 function initParticles() {
     particles = [];
+    collisionEvents = [];
     numParticles = numParticlesSlider.value();
     vel = velocitySlider.value();
 
@@ -58,6 +63,65 @@ function initParticles() {
         let m = random(10, 150);
         particles[i] = new Particle(x, y, m, i, vx, vy);
     }
+}
+
+function drawCollisionArrow(x1, y1, x2, y2) {
+    // Draw line between collision points
+    stroke('red');
+    strokeWeight(2);
+    line(x1, y1, x2, y2);
+
+    // Draw arrowhead at midpoint pointing along collision normal
+    let midX = (x1 + x2) / 2;
+    let midY = (y1 + y2) / 2;
+    let angle = atan2(y2 - y1, x2 - x1);
+
+    push();
+    translate(midX, midY);
+    rotate(angle);
+    fill('red');
+    noStroke();
+    let arrowSize = 8;
+    triangle(arrowSize, 0, -arrowSize, arrowSize / 2, -arrowSize, -arrowSize / 2);
+    pop();
+}
+
+function drawActiveCollisions() {
+    let currentTime = millis();
+
+    // Remove expired collisions and draw active ones
+    collisionEvents = collisionEvents.filter(event => {
+        let age = currentTime - event.time;
+        if (age < collisionDuration) {
+            // Calculate fade based on age
+            let alpha = map(age, 0, collisionDuration, 255, 50);
+            stroke(255, 0, 0, alpha);
+            strokeWeight(2);
+            line(event.x1, event.y1, event.x2, event.y2);
+
+            // Draw arrowhead
+            let midX = (event.x1 + event.x2) / 2;
+            let midY = (event.y1 + event.y2) / 2;
+            let angle = atan2(event.y2 - event.y1, event.x2 - event.x1);
+
+            push();
+            translate(midX, midY);
+            rotate(angle);
+            fill(255, 0, 0, alpha);
+            noStroke();
+            let arrowSize = 8;
+            triangle(arrowSize, 0, -arrowSize, arrowSize / 2, -arrowSize, -arrowSize / 2);
+            pop();
+
+            // Draw collision point
+            noStroke();
+            fill(0, 102, 255, alpha);
+            ellipse(event.collisionX, event.collisionY, 10);
+
+            return true; // Keep this event
+        }
+        return false; // Remove expired event
+    });
 }
 
 function positionControls() {
@@ -89,7 +153,14 @@ function windowResized() {
 }
 
 function draw() {
-    background(0);
+    // Drawing area (aliceblue background)
+    fill('aliceblue');
+    stroke('silver');
+    rect(0, 0, width, drawHeight);
+
+    // Controls background
+    fill('white');
+    rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Check if particle count changed
     if (numParticlesSlider.value() !== numParticles) {
@@ -108,30 +179,24 @@ function draw() {
         p.show();
     }
 
-    // Draw title
-    fill(255);
+    // Draw collision arrows that persist for 100ms
+    drawActiveCollisions();
+
+    // Draw title over drawing area
+    fill('black');
     noStroke();
-    textSize(18);
+    textSize(24);
     textAlign(LEFT, TOP);
     text("Elastic Collisions Simulation", margin, 10);
 
     // Draw particle count
-    textSize(12);
+    textSize(15);
     textAlign(RIGHT, TOP);
-    fill(150, 150, 200);
+    fill('black');
     text(`Particles: ${particles.length}`, canvasWidth - margin, 10);
 
-    // Draw controls area background
-    noStroke();
-    fill(25, 25, 45);
-    rect(0, drawHeight, canvasWidth, controlHeight);
-
-    // Draw divider line
-    stroke(60, 60, 100);
-    line(0, drawHeight, canvasWidth, drawHeight);
-
     // Draw slider labels
-    fill(200, 200, 255);
+    fill('black');
     noStroke();
     textSize(16);
     textAlign(LEFT, CENTER);
@@ -176,7 +241,7 @@ class Particle {
         this.acc.set(0, 0);
 
         if (this.vel.x !== 0 || this.vel.y !== 0 && this.vel.y !== 1) {
-            this.drawArrow('#ffff33', 5, this.vel);
+            this.drawArrow('blue', 5, this.vel);
         }
     }
 
@@ -217,17 +282,20 @@ class Particle {
                 let minDist = particles[i].r + this.r;
 
                 if (distance <= minDist) {
-                    stroke(color('red'));
-                    strokeWeight(2);
-                    line(this.pos.x, this.pos.y, particles[i].pos.x, particles[i].pos.y);
-
                     // Collision point
                     let collisionPointX = ((this.pos.x * particles[i].r) + (particles[i].pos.x * this.r)) / (this.r + particles[i].r);
                     let collisionPointY = ((this.pos.y * particles[i].r) + (particles[i].pos.y * this.r)) / (this.r + particles[i].r);
 
-                    noStroke();
-                    fill(color(0, 102, 255));
-                    ellipse(collisionPointX, collisionPointY, 10);
+                    // Store collision event for visualization
+                    collisionEvents.push({
+                        x1: this.pos.x,
+                        y1: this.pos.y,
+                        x2: particles[i].pos.x,
+                        y2: particles[i].pos.y,
+                        collisionX: collisionPointX,
+                        collisionY: collisionPointY,
+                        time: millis()
+                    });
 
                     let overlap = 0.5 * (distance - this.r - particles[i].r);
 
@@ -262,10 +330,12 @@ class Particle {
         }
     }
 
+    // Draw particle
     show() {
-        stroke(255);
-        strokeWeight(2);
-        fill(color(200, 200, 200, 80));
+        stroke('black');
+        strokeWeight(1);
+        // fill the circle
+        fill(color(50, 50, 200, 80));
         circle(this.pos.x, this.pos.y, this.r * 2);
     }
 }
