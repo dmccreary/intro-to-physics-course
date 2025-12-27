@@ -53,39 +53,60 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - Action Reaction: sims/action-reaction/index.md
+    - Angled Projectile: sims/angled-projectile/index.md
+    - Angled Tension: sims/angled-tension/index.md
+    - Atwood FBD: sims/atwood-fbd/index.md
+    - Atwood Machine: sims/atwood-machine/index.md
+    - Banked Curve Forces: sims/banked-curve-forces/index.md
+    - Banked Curve Speed: sims/banked-curve-speed/index.md
     - Branches of Physics: sims/branches-of-physics/index.md
+    - Car on Curve: sims/car-on-curve/index.md
+    - Centripetal Force: sims/centripetal-force-viz/index.md
     - Collisions: sims/collisions/index.md
     - Current Animation: sims/current-animation/index.md
-    - Scientific Method Workflow: sims/scientific-method/index.md
-    - Learning Graph Viewer: sims/graph-viewer/index.md
-    - Projectile Motion: sims/projectile-motion/index.md
-    - Projectile Motion Gravity: sims/projectile-motion-gravity/index.md
-    - Metric Scale Zoom: sims/metric-scale-zoom/index.md
-    - Elasticity: sims/elasticity/index.md
-    - Gravitational Attractor: sims/gravitational-attractor/index.md
-    - Exoplanet: sims/exoplanet/index.md
-    - Fluid-Dynamics: sims/fluid-dynamics/index.md
-    - Solar System: sims/solar-system/index.md
-    - Precision vs Accuracy: sims/precision-accuracy/index.md
-    - Vector Basics: sims/vector-basics/index.md
-    - Vector Addition: sims/vector-addition/index.md
-    - Graph Analysis: sims/graph-analysis/index.md
-    - Ohm's Law Calculator: sims/ohms-law/index.md
-    - Series vs Parallel: sims/series-parallel/index.md
     - DC Motor: sims/dc-motor/index.md
     - Distance vs Displacement: sims/distance-displacement/index.md
-    - Velocity Speed Comparison: sims/velocity-speed-comparison/index.md
-    - Uniform vs Accelerated Motion: sims/uniform-accelerated-motion/index.md
-    - Position Time Analyzer: sims/position-time-analyzer/index.md
-    - Velocity Time Area: sims/velocity-time-area/index.md
-    - Three Graph Analyzer: sims/three-graph-analyzer/index.md
-    - Kinematic Selector: sims/kinematic-selector/index.md
-    - Vector Components: sims/vector-components/index.md
+    - Elasticity: sims/elasticity/index.md
+    - Equilibrium Workflow: sims/equilibrium-workflow/index.md
+    - Exoplanet: sims/exoplanet/index.md
+    - Fluid Dynamics: sims/fluid-dynamics/index.md
+    - Free Body Diagram: sims/free-body-diagram/index.md
     - Free Fall: sims/free-fall/index.md
+    - Friction Coefficient Chart: sims/friction-coefficient-chart/index.md
+    - Graph Analysis: sims/graph-analysis/index.md
+    - Gravitational Attractor: sims/gravitational-attractor/index.md
     - Horizontal Projection: sims/horizontal-projection/index.md
-    - Angled Projectile: sims/angled-projectile/index.md
-    - River Crossing: sims/river-crossing/index.md
+    - Inclined Plane Forces: sims/inclined-plane-forces/index.md
+    - Inclined Plane Motion: sims/inclined-plane-motion/index.md
+    - Inertia Demo: sims/inertia-demo/index.md
+    - Kinematic Selector: sims/kinematic-selector/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Metric Scale Zoom: sims/metric-scale-zoom/index.md
+    - Microscopic Surface Contact: sims/microscopic-surface-contact/index.md
+    - Newtons Second Law: sims/newtons-second-law/index.md
+    - Normal Force Incline: sims/normal-force-incline/index.md
+    - Ohms Law Calculator: sims/ohms-law/index.md
+    - Position Time Analyzer: sims/position-time-analyzer/index.md
+    - Precision vs Accuracy: sims/precision-accuracy/index.md
+    - Projectile Motion: sims/projectile-motion/index.md
+    - Projectile Motion Gravity: sims/projectile-motion-gravity/index.md
+    - Pulley Mechanical Advantage: sims/pulley-mechanical-advantage/index.md
     - Relative Velocity: sims/relative-velocity/index.md
+    - River Crossing: sims/river-crossing/index.md
+    - Scientific Method: sims/scientific-method/index.md
+    - Series vs Parallel: sims/series-parallel/index.md
+    - Solar System: sims/solar-system/index.md
+    - Static Friction: sims/static-friction/index.md
+    - Tension Force Diagram: sims/tension-force-diagram/index.md
+    - Three Graph Analyzer: sims/three-graph-analyzer/index.md
+    - Uniform vs Accelerated Motion: sims/uniform-accelerated-motion/index.md
+    - Vector Addition: sims/vector-addition/index.md
+    - Vector Basics: sims/vector-basics/index.md
+    - Vector Components: sims/vector-components/index.md
+    - Velocity Speed Comparison: sims/velocity-speed-comparison/index.md
+    - Velocity Time Area: sims/velocity-time-area/index.md
+    - Weight Gravity: sims/weight-gravity/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md

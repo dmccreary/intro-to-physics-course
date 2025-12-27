@@ -73,10 +73,14 @@ But what if both students pushed east with the same forces? Then we'd add them: 
 The key principle: **Only the net force determines how an object's motion changes.**
 
 #### Diagram: Free-Body Diagram Tutorial
+
+<iframe src="../../sims/free-body-diagram/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
+[Run the Free-Body Diagram Tutorial Fullscreen](../../sims/free-body-diagram/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-    <summary>Free-Body Diagram Tutorial</summary>
-    **TODO:** human-review-needed
-    **Status:** INCOMPLETE
+    <summary>Free-Body Diagram Tutorial Specification</summary>
+    **Status:** done
 
     Type: infographic
 
@@ -158,11 +162,14 @@ Newton's First Law only works in **inertial reference frames**—coordinate syst
 Most physics problems assume you're viewing from Earth's surface, which is approximately an inertial frame (Earth's rotation and orbital motion introduce tiny effects we usually ignore).
 
 #### Diagram: Inertia Demonstration MicroSim
-<details markdown="1">
-    <summary>Inertia Demonstration MicroSim</summary>
 
-    **TODO:** human-review-needed
-    **Status:** INCOMPLETE
+<iframe src="../../sims/inertia-demo/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run the Inertia Demonstration Fullscreen](../../sims/inertia-demo/main.html){ .md-button .md-button--primary }
+
+<details markdown="1">
+    <summary>Inertia Demonstration MicroSim Specification</summary>
+    **Status:** done
 
     Type: microsim
 
@@ -273,14 +280,14 @@ When solving Newton's Second Law problems, follow these steps:
 5. **Check your answer** (Does it make physical sense? Are the units correct?)
 
 #### Diagram: Force and Acceleration Relationship Chart
+
+<iframe src="../../sims/newtons-second-law/main.html" height="582px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/newtons-second-law/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-    <summary>Force and Acceleration Relationship Chart</summary>
-
-    Title: "Exploring Newton's Second Law: F = ma"
-    Name: newtons-second-law
-
-    **TODO:** human-review-needed
-    **Status:** INCOMPLETE
+    <summary>Force and Acceleration Relationship Chart Specification</summary>
+    **Status:** done
 
     Type: chart
 
@@ -375,11 +382,14 @@ The answer: **They act on different objects!** When you push a cart, the cart pu
 Forces only cancel (produce equilibrium) when they act on the same object.
 
 #### Diagram: Action-Reaction Pairs Interactive Diagram
-<details markdown="1">
-    <summary>Action-Reaction Pairs Interactive Diagram</summary>
 
-    **TODO:** human-review-needed
-    **Status:** INCOMPLETE
+<iframe src="../../sims/action-reaction/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/action-reaction/main.html){ .md-button .md-button--primary }
+
+<details markdown="1">
+    <summary>Action-Reaction Pairs Specification</summary>
+    **Status:** done
 
     Type: infographic
 
@@ -504,10 +514,14 @@ In equation form:
 You'll use these conditions extensively when solving statics problems.
 
 #### Diagram: Equilibrium Classification Workflow
+
+<iframe src="../../sims/equilibrium-workflow/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/equilibrium-workflow/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Equilibrium Classification Workflow</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Equilibrium Classification Workflow Specification</summary>
+**Status:** done
 
 Type: workflow
 
@@ -616,11 +630,14 @@ When you stand on a scale, it doesn't actually measure your weight directly. It 
 This "apparent weight" is what causes the stomach-drop feeling on roller coasters and the floating sensation in free-falling elevators (don't try this at home).
 
 #### Diagram: Weight in Different Gravitational Fields MicroSim
-<details markdown="1">
-<summary>Weight in Different Gravitational Fields MicroSim</summary>
 
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<iframe src="../../sims/weight-gravity/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/weight-gravity/main.html){ .md-button .md-button--primary }
+
+<details markdown="1">
+<summary>Weight in Different Gravitational Fields Specification</summary>
+**Status:** done
 
 Type: microsim
 
@@ -740,10 +757,14 @@ The normal force is crucial because:
 4. It can do no work (always perpendicular to motion)
 
 #### Diagram: Normal Force on Inclined Planes Diagram
+
+<iframe src="../../sims/normal-force-incline/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/normal-force-incline/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-    <summary>Normal Force on Inclined Planes Diagram</summary>
-    **TODO:** human-review-needed
-    **Status:** INCOMPLETE
+    <summary>Normal Force on Inclined Planes Specification</summary>
+    **Status:** done
 
     Type: diagram
 

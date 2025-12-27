@@ -73,6 +73,7 @@ Because momentum is a vector, we must consider its direction. An object moving e
 #### Diagram: Momentum Comparison Interactive Simulator
 <details markdown="1">
 <summary>Momentum Comparison Interactive Simulator</summary>
+**Status:** INCOMPLETE
 **TODO:** human-review-needed
 
 Type: microsim
@@ -177,6 +178,7 @@ Understanding impulse explains many safety features and sports techniques:
 #### Diagram: Force vs. Time: Impact Scenarios Comparison
 <details markdown="1">
 <summary>Force vs. Time: Impact Scenarios Comparison</summary>
+**Status:** INCOMPLETE
 **TODO:** human-review-needed
 
 Type: chart
@@ -276,6 +278,7 @@ Collisions are classified based on whether kinetic energy is conserved. While mo
 #### Diagram: Collision Types Comparison Diagram
 <details markdown="1">
 <summary>Collision Types Comparison Diagram</summary>
+**Status:** INCOMPLETE
 **TODO:** human-review-needed
 
 Type: diagram
@@ -528,6 +531,7 @@ Using conservation of momentum in x and y, along with energy conservation, we ca
 #### Diagram: 2D Collision Vector Diagram
 <details markdown="1">
 <summary>2D Collision Vector Diagram</summary>
+**Status:** INCOMPLETE
 **TODO:** human-review-needed
 
 Type: diagram
@@ -675,6 +679,7 @@ Real rockets face several challenges:
 #### Diagram: Rocket Propulsion Momentum Diagram
 <details markdown="1">
 <summary>Rocket Propulsion Momentum Diagram</summary>
+**Status:** INCOMPLETE
 **TODO:** human-review-needed
 
 Type: workflow
@@ -755,6 +760,7 @@ The Saturn V moon rocket used three stages:
 #### Diagram: Multistage Rocket Efficiency Comparison
 <details markdown="1">
 <summary>Multistage Rocket Efficiency Comparison</summary>
+**Status:** INCOMPLETE
 **TODO:** human-review-needed
 
 Type: chart

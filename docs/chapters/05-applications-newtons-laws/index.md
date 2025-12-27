@@ -47,10 +47,14 @@ Every time you walk, write, or drive a car, you're experiencing friction—the f
 Friction arises from microscopic interactions between surface irregularities. Even surfaces that appear smooth contain countless tiny peaks and valleys that interlock when pressed together. At the molecular level, electromagnetic forces between atoms contribute to the resistance we experience as friction. The rougher the surfaces, the greater these interactions and the stronger the frictional force.
 
 #### Diagram: Microscopic View of Surface Contact
+
+<iframe src="../../sims/microscopic-surface-contact/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/microscopic-surface-contact/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Microscopic View of Surface Contact</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Microscopic View of Surface Contact Specification</summary>
+**Status:** done
 
 Type: diagram
 
@@ -106,10 +110,14 @@ $$f_s^{max} = \mu_s N$$
 where $f_s^{max}$ is the maximum static friction force, $\mu_s$ is the coefficient of static friction (a dimensionless constant), and $N$ is the normal force. For actual static friction below the maximum, we write $f_s \leq \mu_s N$.
 
 #### Diagram: Interactive Static Friction MicroSim
+
+<iframe src="../../sims/static-friction/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/static-friction/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Interactive Static Friction MicroSim</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Interactive Static Friction Specification</summary>
+**Status:** done
 
 Type: microsim
 
@@ -201,10 +209,14 @@ Several factors affect friction coefficients:
 The independence from surface area seems counterintuitive. A brick lying flat experiences the same friction as when standing on its edge, despite the different contact areas. This occurs because pressure increases as area decreases—fewer contact points bear more load, resulting in similar overall friction. This principle breaks down at extremely high or low pressures where material deformation becomes significant.
 
 #### Diagram: Friction Coefficient Comparison Chart
+
+<iframe src="../../sims/friction-coefficient-chart/main.html" height="520px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/friction-coefficient-chart/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Friction Coefficient Comparison Chart</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Friction Coefficient Comparison Chart Specification</summary>
+**Status:** done
 
 Type: chart
 
@@ -300,10 +312,14 @@ When analyzing tension problems, remember these key principles:
 - Tension forces always come in pairs due to Newton's third law
 
 #### Diagram: Tension Force Diagram
+
+<iframe src="../../sims/tension-force-diagram/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/tension-force-diagram/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Tension Force Diagram</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Tension Force Diagram Specification</summary>
+**Status:** done
 
 Type: diagram
 
@@ -415,10 +431,14 @@ $$a = 0.028 \text{ m/s}^2$$
 The suitcase barely accelerates because most of the applied force goes into reducing the normal force rather than providing horizontal motion.
 
 #### Diagram: Angled Tension Component MicroSim
+
+<iframe src="../../sims/angled-tension/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/angled-tension/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Angled Tension Component MicroSim</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Angled Tension Component Specification</summary>
+**Status:** done
 
 Type: microsim
 
@@ -492,10 +512,14 @@ For an incline at angle θ above the horizontal:
 - Weight components: $mg \sin \theta$ (parallel to incline), $mg \cos \theta$ (perpendicular to incline)
 
 #### Diagram: Inclined Plane Force Decomposition Diagram
+
+<iframe src="../../sims/inclined-plane-forces/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/inclined-plane-forces/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Inclined Plane Force Decomposition Diagram</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Inclined Plane Force Decomposition Specification</summary>
+**Status:** done
 
 Type: diagram
 
@@ -597,10 +621,14 @@ $$a = 3.62 \text{ m/s}^2$$
 The block accelerates down the ramp at 3.62 m/s².
 
 #### Diagram: Inclined Plane Motion MicroSim
+
+<iframe src="../../sims/inclined-plane-motion/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/inclined-plane-motion/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Inclined Plane Motion MicroSim</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Inclined Plane Motion Specification</summary>
+**Status:** done
 
 Type: microsim
 
@@ -681,10 +709,14 @@ The Atwood machine is a classic physics demonstration consisting of two masses c
 Consider an Atwood machine with masses m₁ and m₂ (where m₂ > m₁) connected by a massless string over a massless, frictionless pulley. When released, m₂ accelerates downward while m₁ accelerates upward. Both masses have the same magnitude of acceleration because they're connected by an inextensible string—if m₂ drops 10 cm, then m₁ rises 10 cm.
 
 #### Diagram: Atwood Machine Free-Body Diagram
+
+<iframe src="../../sims/atwood-fbd/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/atwood-fbd/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Atwood Machine Free-Body Diagram</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Atwood Machine Free-Body Diagram Specification</summary>
+**Status:** done
 
 Type: diagram
 
@@ -765,10 +797,14 @@ $$T = m_2(g - a) = 7(9.8 - 1.63) = 57.2 \text{ N}$$ ✓
 Notice that tension (57.2 N) is between m₁g = 49 N and m₂g = 68.6 N, which makes physical sense.
 
 #### Diagram: Interactive Atwood Machine MicroSim
+
+<iframe src="../../sims/atwood-machine/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/atwood-machine/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Interactive Atwood Machine MicroSim</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Interactive Atwood Machine Specification</summary>
+**Status:** done
 
 Type: microsim
 
@@ -867,10 +903,14 @@ Check work (energy conservation):
 - Work output: $W_{out} = mgd_{load} = (120)(9.8)(3) = 3528$ J ✓
 
 #### Diagram: Pulley System Mechanical Advantage Diagram
+
+<iframe src="../../sims/pulley-mechanical-advantage/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/pulley-mechanical-advantage/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Pulley System Mechanical Advantage Diagram</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Pulley System Mechanical Advantage Specification</summary>
+**Status:** done
 
 Type: diagram
 
@@ -979,10 +1019,14 @@ Common sources of centripetal force:
 | Roller coaster loop | Combination of normal force and gravity |
 
 #### Diagram: Centripetal Force and Acceleration Visualization
+
+<iframe src="../../sims/centripetal-force-viz/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/centripetal-force-viz/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Centripetal Force and Acceleration Visualization</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Centripetal Force and Acceleration Specification</summary>
+**Status:** done
 
 Type: diagram
 
@@ -1061,10 +1105,14 @@ Converting to km/h: $25.8 \times 3.6 = 93$ km/h
 The maximum safe speed is about 93 km/h (58 mph). In wet conditions, with μs ≈ 0.5, this drops to 62 km/h (39 mph), explaining why speed limits are lower in rain.
 
 #### Diagram: Car on Curve MicroSim
+
+<iframe src="../../sims/car-on-curve/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/car-on-curve/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Car on Curve MicroSim</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Car on Curve Specification</summary>
+**Status:** done
 
 Type: microsim
 
@@ -1144,10 +1192,14 @@ $$v_{ideal} = \sqrt{rg \tan \theta}$$
 At this speed, any vehicle—regardless of mass—can take the curve without relying on friction. Below this speed, friction must point up the incline to prevent sliding down. Above this speed, friction must point down the incline to prevent sliding up and off the curve.
 
 #### Diagram: Banked Curve Force Analysis Diagram
+
+<iframe src="../../sims/banked-curve-forces/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/banked-curve-forces/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Banked Curve Force Analysis Diagram</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Banked Curve Force Analysis Specification</summary>
+**Status:** done
 
 Type: diagram
 
@@ -1242,10 +1294,14 @@ $$\mu = \frac{f}{N} = \frac{3095}{12,180} = 0.25$$
 This is reasonable for most tire-road combinations, explaining why the car can safely exceed the ideal speed.
 
 #### Diagram: Banked Curve Speed Analysis MicroSim
+
+<iframe src="../../sims/banked-curve-speed/main.html" height="552px" width="100%" scrolling="no"></iframe>
+
+[Run Fullscreen](../../sims/banked-curve-speed/main.html){ .md-button .md-button--primary }
+
 <details markdown="1">
-<summary>Banked Curve Speed Analysis MicroSim</summary>
-**TODO:** human-review-needed
-**Status:** INCOMPLETE
+<summary>Banked Curve Speed Analysis Specification</summary>
+**Status:** done
 
 Type: microsim
 

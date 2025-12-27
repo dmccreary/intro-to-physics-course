@@ -92,6 +92,8 @@ Let's examine how work behaves in different situations:
 #### Diagram: Work Scenario Interactive Diagram
 <details markdown="1">
     <summary>Work Scenario Interactive Diagram</summary>
+    **Status:** INCOMPLETE
+
     Type: diagram
 
     Purpose: Illustrate how the angle between force and displacement affects the work done, showing multiple common scenarios visually.
@@ -171,6 +173,8 @@ This quadratic relationship means doubling the stretch requires four times the w
 #### Diagram: Variable Force Work Calculation MicroSim
 <details markdown="1">
     <summary>Variable Force Work Calculation MicroSim</summary>
+    **Status:** INCOMPLETE
+
     Type: microsim
 
     Learning objective: Help students visualize how work is calculated for variable forces by showing the area under a force-position curve and allowing them to experiment with different force functions.
@@ -303,6 +307,8 @@ Same answer, but the energy approach is often more intuitive and requires fewer 
 #### Diagram: Work-Energy Theorem Interactive Demonstration
 <details markdown="1">
     <summary>Work-Energy Theorem Interactive Demonstration</summary>
+    **Status:** INCOMPLETE
+
     Type: microsim
 
     Learning objective: Demonstrate the work-energy theorem by showing how forces do work to change an object's kinetic energy, with real-time calculations and visualizations.
@@ -441,6 +447,8 @@ $$PE_s = \frac{1}{2}(200 \text{ N/m})(0.3 \text{ m})^2 = 9 \text{ J}$$
 #### Diagram: Potential Energy Comparison Chart
 <details markdown="1">
     <summary>Potential Energy Comparison Chart</summary>
+    **Status:** INCOMPLETE
+
     Type: chart
 
     Chart type: Side-by-side bar chart with grouped bars
@@ -616,6 +624,8 @@ The "missing" 20 J was converted to thermal energy heating the air and ball.
 #### Diagram: Energy Conservation Roller Coaster Simulation
 <details markdown="1">
     <summary>Energy Conservation Roller Coaster Simulation</summary>
+    **Status:** INCOMPLETE
+
     Type: microsim
 
     Learning objective: Demonstrate conservation of mechanical energy by simulating a roller coaster where students can see energy transforming between kinetic and potential energy while total mechanical energy remains constant.
@@ -755,6 +765,8 @@ From an energy diagram, you can determine:
 #### Diagram: Energy Diagram Interactive Explorer
 <details markdown="1">
     <summary>Energy Diagram Interactive Explorer</summary>
+    **Status:** INCOMPLETE
+
     Type: microsim
 
     Learning objective: Help students understand energy diagrams by allowing them to explore different potential energy functions, adjust total energy, and see how these determine motion, turning points, and equilibrium positions.
@@ -986,6 +998,8 @@ Efficiency has profound real-world implications:
 #### Diagram: Energy Efficiency Comparison Infographic
 <details markdown="1">
     <summary>Energy Efficiency Comparison Infographic</summary>
+    **Status:** INCOMPLETE
+
     Type: infographic
 
     Purpose: Create an interactive visual comparison of energy efficiencies across common devices and processes, helping students understand real-world energy conversion and waste.
@@ -1159,8 +1173,13 @@ $$\text{Efficiency} = \frac{AMA}{IMA} \times 100\%$$
 </details>
 
 #### Diagram: Pulley System Mechanical Advantage Simulator
+
+<iframe src="../../sims/pulley-mechanical-advantage/main.html" width="100%" height="560px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Pulley System Mechanical Advantage Simulator</summary>
+    **Status:** done
+
     Type: microsim
 
     Learning objective: Demonstrate how different pulley configurations provide different mechanical advantages, showing the tradeoff between force and distance.
