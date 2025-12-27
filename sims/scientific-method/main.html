@@ -9,25 +9,9 @@
 </head>
 <body>
     <div class="container">
-        <!--
-        <header>
-            <h1>Scientific Method</h1>
-            <p class="subtitle">Interactive Workflow Diagram</p>
-        </header>
-
-        <div class="description">
-            <p>This flowchart visualizes the scientific method process used in physics and all scientific disciplines. The diagram shows the iterative nature of scientific inquiry, including decision points for hypothesis testing and the cyclical process of investigation that leads to new questions and discoveries.</p>
-        </div>
-
-        <div class="controls">
-            <button id="zoomIn" aria-label="Zoom in">🔍 +</button>
-            <button id="zoomOut" aria-label="Zoom out">🔍 −</button>
-            <button id="resetZoom" aria-label="Reset zoom">⟲ Reset</button>
-            <button id="exportSVG" aria-label="Export as SVG">💾 Export SVG</button>
-        </div>
-        -->
-        <div class="diagram-container" id="diagramContainer">
-            <div class="mermaid">
+        <div class="main-content">
+            <div class="diagram-container" id="diagramContainer">
+                <div class="mermaid">
 flowchart TD
     Start("Observe Phenomenon<br/>or Ask Question"):::observeNode
     Research["Background Research"]:::researchNode
@@ -68,6 +52,15 @@ flowchart TD
     classDef endNode fill:#9575cd,stroke:#4527a0,stroke-width:3px,color:#fff,font-size:16px,font-weight:bold
 
     linkStyle default stroke:#666,stroke-width:2px,font-size:14px
+                </div>
+            </div>
+
+            <div class="infobox" id="infobox">
+                <h3 id="infoTitle">Scientific Method</h3>
+                <p id="infoDescription">Hover over any step in the diagram to learn more about it and see a physics example.</p>
+                <div id="infoExample" class="example-box">
+                    <strong>Tip:</strong> Click on any node to keep its information displayed.
+                </div>
             </div>
         </div>
 
