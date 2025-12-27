@@ -1,0 +1,4442 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive year-long introduction to physics course developing students scientific literacy through systematic progression from foundational knowledge to creative application. All content licensed Creative Commons ShareAlike Attribution Noncommercial">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/intro-to-physics-course/chapters/13-electric-circuits/">
+      
+      
+        <link rel="prev" href="../12-electric-charge-fields/quiz/">
+      
+      
+        <link rel="next" href="quiz/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Content - Introduction to Physics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-BF05WTGMW9"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-BF05WTGMW9",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-BF05WTGMW9",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Content - Introduction to Physics" >
+      
+        <meta  property="og:description"  content="A comprehensive year-long introduction to physics course developing students scientific literacy through systematic progression from foundational knowledge to creative application. All content licensed Creative Commons ShareAlike Attribution Noncommercial" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/intro-to-physics-course/assets/images/social/chapters/13-electric-circuits/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/intro-to-physics-course/chapters/13-electric-circuits/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Content - Introduction to Physics" >
+      
+        <meta  name="twitter:description"  content="A comprehensive year-long introduction to physics course developing students scientific literacy through systematic progression from foundational knowledge to creative application. All content licensed Creative Commons ShareAlike Attribution Noncommercial" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/intro-to-physics-course/assets/images/social/chapters/13-electric-circuits/index.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="navy" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#electric-circuits" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Introduction to Physics" class="md-header__button md-logo" aria-label="Introduction to Physics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction to Physics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Content
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/intro-to-physics-course/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Introduction to Physics" class="md-nav__button md-logo" aria-label="Introduction to Physics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Introduction to Physics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/intro-to-physics-course/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../01-scientific-foundations/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    1 - Scientific Foundations
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../02-motion-one-dimension/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    2 - Motion in One Dimension
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../03-motion-two-dimensions/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    3 - Motion in Two Dimensions
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../04-forces-newtons-laws/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    4 - Forces and Newton's Laws
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../05-applications-newtons-laws/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    5 - Applications of Newton's Laws
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../06-work-energy-power/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    6 - Work, Energy, and Power
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../07-momentum-collisions/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7 - Momentum and Collisions
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../08-rotational-motion/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8 - Rotational Motion
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../09-oscillations/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9 - Oscillations
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../10-waves-sound/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10 - Waves and Sound
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../11-light-optics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11 - Light and Optics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../12-electric-charge-fields/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12 - Electric Charge and Fields
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    13 - Electric Circuits
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_14">
+            <span class="md-nav__icon md-icon"></span>
+            13 - Electric Circuits
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quiz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../book-build-references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Build References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-electric-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to Electric Circuits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electric-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Current
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electric Current">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-electric-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Electric Current?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-flow-vs-electron-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Flow vs. Electron Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Current Flow vs. Electron Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-current-flow-animation-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Current Flow Animation MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resistance-and-ohms-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resistance and Ohm's Law
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resistance and Ohm's Law">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-resistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Resistance?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ohms-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ohm's Law
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ohm's Law">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ohms-law-interactive-calculator-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Ohm's Law Interactive Calculator MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resistors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resistors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capacitance-and-capacitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Capacitance and Capacitors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Capacitance and Capacitors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-capacitance" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Capacitance?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capacitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Capacitors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Capacitors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-capacitor-charging-and-discharging-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Capacitor Charging and Discharging MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-storage-in-capacitors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy Storage in Capacitors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inductance-and-inductors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inductance and Inductors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inductance and Inductors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-inductance" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Inductance?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inductors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inductors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inductors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inductor-behavior-in-dc-circuits-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inductor Behavior in DC Circuits MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dc-and-ac-power-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      DC and AC Power Sources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DC and AC Power Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dc-power-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      DC Power Sources
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ac-power-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      AC Power Sources
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AC Power Sources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dc-vs-ac-waveform-comparison-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: DC vs AC Waveform Comparison MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batteries-and-energy-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batteries and Energy Storage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Batteries and Energy Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-batteries-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Batteries Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-batteries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Batteries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-capacity-and-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Capacity and Energy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Battery Capacity and Energy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-battery-internal-structure-and-operation-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Battery Internal Structure and Operation MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electric-power" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Power
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electric Power">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-in-electric-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power in Electric Circuits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-and-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy and Cost
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series-and-parallel-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Series and Parallel Circuits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Series and Parallel Circuits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#series-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Series Circuits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parallel Circuits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Parallel Circuits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-series-vs-parallel-circuit-comparison-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Series vs Parallel Circuit Comparison MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kirchhoffs-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kirchhoff's Laws
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solar-cells-and-photovoltaics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solar Cells and Photovoltaics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solar Cells and Photovoltaics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-solar-cells-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Solar Cells Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solar-panel-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solar Panel Characteristics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solar Panel Characteristics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-solar-cell-operation-and-i-v-curve-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Solar Cell Operation and I-V Curve MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solar-battery-charging-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solar Battery Charging Systems
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solar Battery Charging Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#complete-solar-power-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Solar Power System
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#charge-controllers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Charge Controllers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Charge Controllers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-solar-battery-charging-system-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Solar Battery Charging System MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-off-grid-solar-lighting-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Off-Grid Solar Lighting System
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#electric-motors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Motors
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Electric Motors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-electric-motors-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Electric Motors Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dc-motor-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      DC Motor Operation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DC Motor Operation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-dc-motor-operation-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: DC Motor Operation MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-speed-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Speed Control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motor Speed Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-motor-speed-control-with-variable-voltage-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Motor Speed Control with Variable Voltage MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#applications-of-electric-motors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications of Electric Motors
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-application-solar-powered-electric-motor-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Application: Solar-Powered Electric Motor System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Real-World Application: Solar-Powered Electric Motor System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-solar-water-pump-system-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Solar Water Pump System MicroSim
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-and-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary and Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/intro-to-physics-course/blob/master/docs/chapters/13-electric-circuits/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="electric-circuits">Electric Circuits</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter explores how electric charge flows through circuits to power our modern world. Building on your understanding of electric charge, fields, and potential from Chapter 12, you'll learn how components like resistors, capacitors, and inductors control current flow. Ohm's Law provides the fundamental relationship between voltage, current, and resistance. You'll discover the differences between DC and AC power sources and understand how batteries store and release energy. Practical applications include solar-powered systems that charge batteries during daylight and provide illumination at night, and electric motors that convert electrical energy into mechanical motion. These concepts form the foundation for understanding all electrical and electronic technology.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 20 concepts from the learning graph:</p>
+<ol>
+<li>Electric Current</li>
+<li>Current Flow</li>
+<li>Conventional Current</li>
+<li>Electron Flow</li>
+<li>Resistance</li>
+<li>Ohm's Law</li>
+<li>Resistors</li>
+<li>Capacitance</li>
+<li>Capacitors</li>
+<li>Inductance</li>
+<li>Inductors</li>
+<li>DC Power Sources</li>
+<li>AC Power Sources</li>
+<li>Batteries</li>
+<li>Electric Power</li>
+<li>Series Circuits</li>
+<li>Parallel Circuits</li>
+<li>Kirchhoff's Laws</li>
+<li>Solar Cells</li>
+<li>Electric Motors</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-scientific-foundations/">Chapter 1: Scientific Foundations and Mathematical Tools</a></li>
+<li><a href="../06-work-energy-power/">Chapter 6: Work, Energy, and Power</a></li>
+<li><a href="../12-electric-charge-fields/">Chapter 12: Electric Charge and Fields</a></li>
+</ul>
+<hr />
+<h2 id="introduction-to-electric-circuits">Introduction to Electric Circuits</h2>
+<p>Every time you flip a light switch, charge your phone, or start a car, you're using electric circuits. A circuit is a closed path through which electric charge can flow, carrying energy from a source (like a battery or power plant) to devices that use that energy (like lights, motors, or computers). Understanding circuits is essential for comprehending how virtually all modern technology works.</p>
+<p>In this chapter, we'll explore the fundamental components and principles that govern electric circuits, from simple flashlight circuits to sophisticated solar power systems.</p>
+<h2 id="electric-current">Electric Current</h2>
+<h3 id="what-is-electric-current">What Is Electric Current?</h3>
+<p><strong>Electric current</strong> is the flow of electric charge through a conductor. Just as water current describes how much water flows past a point per unit time, electric current describes how much charge flows past a point per unit time.</p>
+<p>Mathematically, current is defined as:</p>
+<p>$$I = \frac{\Delta Q}{\Delta t}$$</p>
+<p>where:</p>
+<ul>
+<li>I = current (in amperes, A)</li>
+<li>ΔQ = amount of charge that flows (in coulombs, C)</li>
+<li>Δt = time interval (in seconds, s)</li>
+</ul>
+<p>One ampere equals one coulomb of charge flowing past a point per second: 1 A = 1 C/s.</p>
+<h3 id="current-flow-vs-electron-flow">Current Flow vs. Electron Flow</h3>
+<p>There's an important historical distinction in how we describe current:</p>
+<p><strong>Conventional current</strong> is defined as the direction positive charges would flow—from the positive terminal of a battery, through the circuit, to the negative terminal. This convention was established before scientists discovered that electrons (negative charges) are what actually move in metal wires.</p>
+<p><strong>Electron flow</strong> is the actual movement of electrons in a conductor—from the negative terminal, through the circuit, to the positive terminal. Electrons flow opposite to the conventional current direction.</p>
+<p>Both descriptions are valid and give the same results for circuit analysis. Most physics and engineering use conventional current because it simplifies calculations.</p>
+<h4 id="diagram-current-flow-animation-microsim">Diagram: Current Flow Animation MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Current Flow Animation MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Visualize the difference between conventional current and electron flow in a simple circuit
+
+Canvas layout (900x500px):
+- Main circuit view (700x500): Animated circuit with flowing charges
+- Control panel (200x500): Toggle switches and current display
+
+Visual elements:
+- Simple circuit with battery, wire loop, and light bulb
+- Battery shown with + and - terminals clearly labeled
+- Animated particles representing charge carriers
+- Wire drawn as thick gray path with rounded corners
+- Light bulb that glows brighter with higher current
+- Arrows showing direction of flow
+
+Interactive controls:
+- Toggle: &quot;Show conventional current&quot; / &quot;Show electron flow&quot;
+- Slider: Current magnitude (0.1 to 5.0 A)
+- Checkbox: &quot;Show charge values&quot;
+- Button: &quot;Pause/Play animation&quot;
+- Display: Current value in amperes
+
+Animation behavior:
+- Conventional current mode: Red (+) particles flow from + to - terminal
+- Electron flow mode: Blue (-) particles flow from - to + terminal
+- Particle speed proportional to current magnitude
+- Particles evenly distributed around circuit
+- Light bulb brightness proportional to current
+- Smooth particle motion using p5.js animation
+
+Default parameters:
+- Mode: Conventional current
+- Current: 1.0 A
+- Animation: Playing
+
+Implementation notes:
+- Use p5.js for rendering and animation
+- Store particle positions in array, update with velocity each frame
+- Wrap particles around circuit path using modular arithmetic
+- Draw circuit path as series of bezier curves for smooth corners
+- Light bulb glow using radial gradient with alpha based on current
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="resistance-and-ohms-law">Resistance and Ohm's Law</h2>
+<h3 id="what-is-resistance">What Is Resistance?</h3>
+<p><strong>Resistance</strong> is a measure of how much a material opposes the flow of electric current. Think of it like friction for electricity—just as friction opposes mechanical motion, resistance opposes current flow.</p>
+<p>Resistance is measured in ohms (Ω), named after German physicist Georg Ohm. Materials with high resistance (insulators) allow very little current to flow, while materials with low resistance (conductors) allow current to flow easily.</p>
+<p>Factors affecting resistance:</p>
+<ul>
+<li><strong>Material</strong>: Copper has low resistance; rubber has high resistance</li>
+<li><strong>Length</strong>: Longer wires have more resistance (R ∝ L)</li>
+<li><strong>Cross-sectional area</strong>: Thicker wires have less resistance (R ∝ 1/A)</li>
+<li><strong>Temperature</strong>: Most metals have higher resistance when hot</li>
+</ul>
+<p>The resistance of a wire is given by:</p>
+<p>$$R = \rho \frac{L}{A}$$</p>
+<p>where ρ (rho) is the resistivity of the material, L is length, and A is cross-sectional area.</p>
+<h3 id="ohms-law">Ohm's Law</h3>
+<p><strong>Ohm's Law</strong> is the fundamental relationship governing electric circuits:</p>
+<p>$$V = IR$$</p>
+<p>where:</p>
+<ul>
+<li>V = voltage (potential difference) across a component (in volts, V)</li>
+<li>I = current through the component (in amperes, A)</li>
+<li>R = resistance of the component (in ohms, Ω)</li>
+</ul>
+<p>This simple equation can be rearranged to solve for any variable:</p>
+<ul>
+<li>To find voltage: V = IR</li>
+<li>To find current: I = V/R</li>
+<li>To find resistance: R = V/I</li>
+</ul>
+<p>Ohm's Law tells us that for a given resistance, the current is directly proportional to the applied voltage. Double the voltage, and you double the current.</p>
+<h4 id="diagram-ohms-law-interactive-calculator-microsim">Diagram: Ohm's Law Interactive Calculator MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Ohm&#39;s Law Interactive Calculator MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Explore the relationship between voltage, current, and resistance through interactive manipulation
+
+Canvas layout (900x600px):
+- Circuit visualization (600x400): Shows battery, resistor, and ammeter
+- Control panel (300x600): Three linked sliders and displays
+- Graph area (600x200): Real-time V-I characteristic curve
+
+Visual elements:
+- Simple circuit with adjustable battery voltage
+- Resistor shown with color bands indicating value
+- Animated current flow (particle speed reflects current magnitude)
+- Ammeter displaying current reading
+- Voltmeter across resistor
+- V-I graph with current point highlighted
+
+Interactive controls:
+- Slider: Voltage (0 to 12 V)
+- Slider: Resistance (1 to 1000 Ω, logarithmic scale)
+- Calculated display: Current (automatically updated)
+- Radio buttons: &quot;Solve for V&quot;, &quot;Solve for I&quot;, &quot;Solve for R&quot;
+- In &quot;Solve for&quot; modes, that variable becomes calculated while others are adjustable
+
+Graph features:
+- X-axis: Voltage (0-12 V)
+- Y-axis: Current (0-12 A, scaled appropriately)
+- Line showing V = IR relationship for current resistance
+- Moving dot showing current operating point
+- Shaded &quot;power dissipation&quot; region under curve
+
+Animation behavior:
+- Current particles speed changes with I value
+- Resistor color bands update with resistance value
+- Wire &quot;heats up&quot; (color shifts to orange/red) at high power
+- Graph updates in real-time as sliders move
+
+Default parameters:
+- Voltage: 6 V
+- Resistance: 100 Ω
+- Mode: Solve for I
+
+Implementation notes:
+- Use p5.js for all rendering
+- Link sliders mathematically: changing V or R updates I display
+- Color-code resistor using standard 4-band color code
+- Power warning when P &gt; 1 W (wire color change)
+</code></pre></div></td></tr></table></div>
+</details>
+<h3 id="resistors">Resistors</h3>
+<p><strong>Resistors</strong> are components designed to provide a specific amount of resistance in a circuit. They're used to:</p>
+<ul>
+<li>Limit current to safe levels</li>
+<li>Divide voltage between components</li>
+<li>Set timing in RC circuits</li>
+<li>Convert electrical energy to heat</li>
+</ul>
+<p>Resistors are marked with colored bands that indicate their resistance value and tolerance. The standard color code uses:</p>
+<table>
+<thead>
+<tr>
+<th>Color</th>
+<th>Digit</th>
+<th>Multiplier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Black</td>
+<td>0</td>
+<td>×1</td>
+</tr>
+<tr>
+<td>Brown</td>
+<td>1</td>
+<td>×10</td>
+</tr>
+<tr>
+<td>Red</td>
+<td>2</td>
+<td>×100</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>3</td>
+<td>×1,000</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>4</td>
+<td>×10,000</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>5</td>
+<td>×100,000</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>6</td>
+<td>×1,000,000</td>
+</tr>
+<tr>
+<td>Violet</td>
+<td>7</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Gray</td>
+<td>8</td>
+<td>—</td>
+</tr>
+<tr>
+<td>White</td>
+<td>9</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Gold</td>
+<td>—</td>
+<td>×0.1 (±5%)</td>
+</tr>
+<tr>
+<td>Silver</td>
+<td>—</td>
+<td>×0.01 (±10%)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="capacitance-and-capacitors">Capacitance and Capacitors</h2>
+<h3 id="what-is-capacitance">What Is Capacitance?</h3>
+<p><strong>Capacitance</strong> is the ability of a component to store electric charge. A device with high capacitance can store more charge at a given voltage than one with low capacitance.</p>
+<p>Capacitance is defined as:</p>
+<p>$$C = \frac{Q}{V}$$</p>
+<p>where:</p>
+<ul>
+<li>C = capacitance (in farads, F)</li>
+<li>Q = stored charge (in coulombs, C)</li>
+<li>V = voltage across the capacitor (in volts, V)</li>
+</ul>
+<p>One farad is a very large capacitance—most practical capacitors are measured in microfarads (μF), nanofarads (nF), or picofarads (pF).</p>
+<h3 id="capacitors">Capacitors</h3>
+<p>A <strong>capacitor</strong> consists of two conducting plates separated by an insulating material (dielectric). When voltage is applied, positive charge accumulates on one plate and negative charge on the other, creating an electric field between the plates that stores energy.</p>
+<p>The capacitance of a parallel-plate capacitor is:</p>
+<p>$$C = \epsilon_0 \epsilon_r \frac{A}{d}$$</p>
+<p>where:</p>
+<ul>
+<li>ε₀ = permittivity of free space (8.85 × 10⁻¹² F/m)</li>
+<li>εᵣ = relative permittivity (dielectric constant) of the insulator</li>
+<li>A = plate area</li>
+<li>d = plate separation</li>
+</ul>
+<h4 id="diagram-capacitor-charging-and-discharging-microsim">Diagram: Capacitor Charging and Discharging MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Capacitor Charging and Discharging MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Visualize how capacitors store and release energy, and understand the exponential charging/discharging behavior
+
+Canvas layout (900x700px):
+- Circuit view (600x400): RC circuit with switch
+- Capacitor detail view (300x400): Shows charge accumulation on plates
+- Graph area (900x300): Voltage and current vs. time plots
+
+Visual elements:
+- Battery (adjustable voltage)
+- Resistor (adjustable resistance)
+- Capacitor shown as two parallel plates with gap
+- Three-position switch: Charge / Off / Discharge
+- Animated electrons flowing in circuit
+- Charge buildup on capacitor plates (+ and - symbols accumulating)
+- Electric field lines between plates (density shows field strength)
+
+Interactive controls:
+- Slider: Battery voltage (1 to 12 V)
+- Slider: Resistance (100 Ω to 100 kΩ)
+- Slider: Capacitance (1 μF to 1000 μF)
+- Three-way toggle: Charge / Off / Discharge
+- Button: Reset
+- Display: Time constant τ = RC
+- Display: Current charge Q and voltage Vc
+
+Graph features:
+- Upper plot: Capacitor voltage Vc vs. time
+- Lower plot: Circuit current I vs. time
+- Vertical line showing current time
+- Markers at τ, 2τ, 3τ, 4τ, 5τ (63%, 86%, 95%, 98%, 99% charged)
+- Exponential curve fitting
+
+Animation behavior:
+- Charging: Electrons flow from battery negative terminal to capacitor plate
+- Electrons accumulate on one plate, creating negative charge
+- Opposite plate loses electrons (becomes positive)
+- Current starts high, decreases exponentially
+- Voltage starts at 0, increases exponentially toward battery voltage
+- Discharging: Reverse process, electrons flow from negative plate through resistor to positive plate
+- Time constant τ = RC determines speed of charging/discharging
+
+Equations displayed:
+- Charging: Vc(t) = V₀(1 - e^(-t/RC))
+- Discharging: Vc(t) = V₀e^(-t/RC)
+- Current: I(t) = (V₀/R)e^(-t/RC)
+
+Default parameters:
+- Voltage: 9 V
+- Resistance: 10 kΩ
+- Capacitance: 100 μF
+- τ = 1 second
+
+Implementation notes:
+- Use p5.js with frameCount for timing
+- Store simulation time, update exponential equations each frame
+- Draw charges as small circles, number proportional to Q
+- Field lines density proportional to voltage
+- Graph uses scrolling time axis or fixed window
+</code></pre></div></td></tr></table></div>
+</details>
+<h3 id="energy-storage-in-capacitors">Energy Storage in Capacitors</h3>
+<p>Capacitors store energy in the electric field between their plates. The energy stored is:</p>
+<p>$$U = \frac{1}{2}CV^2 = \frac{1}{2}QV = \frac{Q^2}{2C}$$</p>
+<p>This stored energy can be released quickly (as in camera flashes) or slowly (as in power supply filtering). Capacitors are essential in:</p>
+<ul>
+<li>Power supply smoothing</li>
+<li>Timing circuits</li>
+<li>Energy storage (supercapacitors)</li>
+<li>Signal filtering</li>
+<li>Motor starting circuits</li>
+</ul>
+<h2 id="inductance-and-inductors">Inductance and Inductors</h2>
+<h3 id="what-is-inductance">What Is Inductance?</h3>
+<p><strong>Inductance</strong> is a property of a conductor that opposes changes in current. When current through a coil changes, it creates a changing magnetic field, which in turn induces a voltage that opposes the change in current (Lenz's Law).</p>
+<p>Inductance is measured in henrys (H), named after American physicist Joseph Henry.</p>
+<p>The induced voltage across an inductor is:</p>
+<p>$$V = L\frac{dI}{dt}$$</p>
+<p>where L is the inductance and dI/dt is the rate of change of current.</p>
+<h3 id="inductors">Inductors</h3>
+<p>An <strong>inductor</strong> is typically a coil of wire, often wound around a magnetic core. Inductors:</p>
+<ul>
+<li>Oppose changes in current (like electrical inertia)</li>
+<li>Store energy in magnetic fields</li>
+<li>Are used in filters, transformers, and motors</li>
+<li>Block high-frequency AC while passing DC</li>
+</ul>
+<p>The inductance of a solenoid (coil) is:</p>
+<p>$$L = \mu_0 \mu_r \frac{N^2 A}{l}$$</p>
+<p>where N is the number of turns, A is the cross-sectional area, l is the length, and μ is the permeability.</p>
+<h4 id="diagram-inductor-behavior-in-dc-circuits-microsim">Diagram: Inductor Behavior in DC Circuits MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Inductor Behavior in DC Circuits MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Demonstrate how inductors oppose changes in current and store energy in magnetic fields
+
+Canvas layout (900x700px):
+- Circuit view (600x400): RL circuit with switch
+- Inductor detail view (300x400): Coil with magnetic field visualization
+- Graph area (900x300): Current and voltage vs. time
+
+Visual elements:
+- Battery with voltage label
+- Resistor with value label
+- Inductor shown as coiled wire with magnetic field lines
+- Animated magnetic field (concentric circles around coil)
+- Current flow animation (particles in wire)
+- Switch for connecting/disconnecting battery
+
+Interactive controls:
+- Slider: Battery voltage (1 to 12 V)
+- Slider: Resistance (10 Ω to 1 kΩ)
+- Slider: Inductance (1 mH to 1 H)
+- Toggle: Switch on/off
+- Button: Reset
+- Display: Time constant τ = L/R
+- Display: Current I and stored energy
+
+Animation behavior:
+- Switch on: Current rises slowly (inductor opposes change)
+- Magnetic field builds up around coil
+- Current approaches V/R exponentially with time constant L/R
+- Switch off: Current tries to continue (inductor opposes decrease)
+- Without proper circuit, this can cause voltage spike (shown as spark)
+- With flyback diode: Current decays through diode
+
+Graph features:
+- Current vs. time: exponential rise/fall
+- Inductor voltage vs. time: high at switch, decays to zero
+- Markers at τ, 2τ, 3τ showing 63%, 86%, 95% of final value
+
+Equations displayed:
+- Current rise: I(t) = (V/R)(1 - e^(-Rt/L))
+- Current fall: I(t) = I₀e^(-Rt/L)
+- Energy stored: U = ½LI²
+
+Default parameters:
+- Voltage: 6 V
+- Resistance: 100 Ω
+- Inductance: 100 mH
+
+Implementation notes:
+- Use p5.js for rendering
+- Magnetic field lines as animated concentric circles
+- Field intensity (line density) proportional to current
+- Spark effect using random bright yellow particles
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="dc-and-ac-power-sources">DC and AC Power Sources</h2>
+<h3 id="dc-power-sources">DC Power Sources</h3>
+<p><strong>Direct current (DC)</strong> flows in one direction only, maintaining a constant polarity. DC sources include:</p>
+<ul>
+<li><strong>Batteries</strong>: Convert chemical energy to electrical energy</li>
+<li><strong>Solar cells</strong>: Convert light energy to electrical energy</li>
+<li><strong>DC power supplies</strong>: Convert AC to DC</li>
+<li><strong>Fuel cells</strong>: Convert hydrogen and oxygen to electricity</li>
+</ul>
+<p>DC is used in:</p>
+<ul>
+<li>Electronic devices (phones, computers, LED lights)</li>
+<li>Electric vehicles</li>
+<li>Battery-powered tools</li>
+<li>Low-voltage lighting systems</li>
+</ul>
+<h3 id="ac-power-sources">AC Power Sources</h3>
+<p><strong>Alternating current (AC)</strong> periodically reverses direction, typically following a sinusoidal pattern. The voltage varies as:</p>
+<p>$$V(t) = V_0 \sin(2\pi ft)$$</p>
+<p>where V₀ is the peak voltage and f is the frequency (60 Hz in North America, 50 Hz in most other countries).</p>
+<p>AC advantages:</p>
+<ul>
+<li>Easy to transform to different voltages</li>
+<li>Efficient for long-distance transmission</li>
+<li>Simple to generate with rotating machinery</li>
+</ul>
+<p>AC is used in:</p>
+<ul>
+<li>Household power distribution</li>
+<li>Industrial motors</li>
+<li>Power transmission lines</li>
+<li>Many appliances (refrigerators, air conditioners)</li>
+</ul>
+<h4 id="diagram-dc-vs-ac-waveform-comparison-microsim">Diagram: DC vs AC Waveform Comparison MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;DC vs AC Waveform Comparison MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Compare DC and AC power sources and understand key AC parameters (amplitude, frequency, RMS)
+
+Canvas layout (900x600px):
+- Waveform display (900x400): Side-by-side DC and AC waveforms
+- Control panel (900x200): Sliders and calculated values
+
+Visual elements:
+- Left graph: DC voltage (horizontal line)
+- Right graph: AC voltage (sine wave)
+- Time axis with grid lines
+- Voltage axis with positive and negative regions
+- RMS value line overlaid on AC waveform
+- Peak and peak-to-peak annotations
+- Animated &quot;electron&quot; showing instantaneous current direction
+
+Interactive controls:
+- Slider: DC voltage (0 to 12 V)
+- Slider: AC peak voltage (0 to 170 V)
+- Slider: AC frequency (1 to 120 Hz)
+- Checkbox: &quot;Show RMS value&quot;
+- Checkbox: &quot;Show instantaneous power&quot;
+- Toggle: &quot;Sync animations to frequency&quot;
+
+Calculated displays:
+- V_rms = V_peak / √2
+- Period T = 1/f
+- Comparison: &quot;A 120V AC outlet has V_peak = 170V&quot;
+
+Animation behavior:
+- DC side: Steady electron drift in one direction
+- AC side: Electrons oscillate back and forth
+- Waveform scrolls left to show time progression
+- Current direction arrows reverse with AC polarity
+- Power graph (if shown) always positive for resistive load
+
+Special features:
+- Overlay mode: Show DC and equivalent AC RMS on same axes
+- Power comparison: Same power delivery at V_dc = V_ac(rms)
+
+Default parameters:
+- DC voltage: 6 V
+- AC peak voltage: 8.5 V (6 V RMS)
+- Frequency: 60 Hz
+
+Implementation notes:
+- Use p5.js for waveform rendering
+- Scrolling waveform using circular buffer or array shift
+- Draw sine wave point by point: y = amplitude * sin(2πft)
+- RMS line as dashed horizontal at V_peak/√2
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="batteries-and-energy-storage">Batteries and Energy Storage</h2>
+<h3 id="how-batteries-work">How Batteries Work</h3>
+<p>A <strong>battery</strong> is an electrochemical device that converts chemical energy into electrical energy through oxidation-reduction (redox) reactions. A battery consists of:</p>
+<ul>
+<li><strong>Anode</strong> (negative electrode): Where oxidation occurs (electrons released)</li>
+<li><strong>Cathode</strong> (positive electrode): Where reduction occurs (electrons absorbed)</li>
+<li><strong>Electrolyte</strong>: Allows ion flow between electrodes while preventing electron flow</li>
+<li><strong>Separator</strong>: Prevents direct contact between electrodes</li>
+</ul>
+<p>When connected to a circuit, electrons flow from anode to cathode through the external circuit (providing useful work), while ions flow through the electrolyte to complete the circuit internally.</p>
+<h3 id="types-of-batteries">Types of Batteries</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Voltage</th>
+<th>Rechargeable</th>
+<th>Energy Density</th>
+<th>Common Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alkaline</td>
+<td>1.5 V</td>
+<td>No</td>
+<td>Medium</td>
+<td>Remote controls, toys</td>
+</tr>
+<tr>
+<td>Lithium-ion</td>
+<td>3.7 V</td>
+<td>Yes</td>
+<td>High</td>
+<td>Phones, laptops, EVs</td>
+</tr>
+<tr>
+<td>Lead-acid</td>
+<td>2.0 V/cell</td>
+<td>Yes</td>
+<td>Low</td>
+<td>Cars, backup power</td>
+</tr>
+<tr>
+<td>NiMH</td>
+<td>1.2 V</td>
+<td>Yes</td>
+<td>Medium</td>
+<td>Rechargeable AAs</td>
+</tr>
+<tr>
+<td>LiFePO₄</td>
+<td>3.2 V</td>
+<td>Yes</td>
+<td>Medium-High</td>
+<td>Solar storage, EVs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="battery-capacity-and-energy">Battery Capacity and Energy</h3>
+<p>Battery capacity is measured in ampere-hours (Ah) or milliampere-hours (mAh):</p>
+<p>$$\text{Capacity (Ah)} = \text{Current (A)} \times \text{Time (h)}$$</p>
+<p>A 2000 mAh battery can theoretically deliver 2000 mA for 1 hour, or 1000 mA for 2 hours, or 500 mA for 4 hours.</p>
+<p>Energy stored is:</p>
+<p>$$E = \text{Capacity} \times \text{Voltage}$$</p>
+<p>A 3.7 V, 2000 mAh battery stores: E = 3.7 V × 2 Ah = 7.4 Wh</p>
+<h4 id="diagram-battery-internal-structure-and-operation-microsim">Diagram: Battery Internal Structure and Operation MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Battery Internal Structure and Operation MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Understand the electrochemical processes inside batteries and how they produce electric current
+
+Canvas layout (900x600px):
+- Battery cross-section (500x500): Detailed internal view
+- External circuit (400x300): Load connected to battery
+- Status panel (400x300): Voltage, current, charge level
+
+Visual elements:
+- Cutaway view of cylindrical or rectangular battery
+- Anode (labeled, colored gray/dark)
+- Cathode (labeled, colored lighter)
+- Electrolyte region (translucent blue)
+- Ion movement animated within battery (+ ions moving toward cathode)
+- Electron flow in external circuit
+- Chemical equation annotations
+
+Interactive controls:
+- Slider: Load resistance (1 Ω to 1 MΩ)
+- Toggle: Connect/disconnect load
+- Slider: Simulation speed
+- Dropdown: Battery type (Alkaline, Li-ion, Lead-acid)
+- Button: &quot;Recharge&quot; (for rechargeable types)
+
+Animation behavior:
+- Discharge mode:
+  - Electrons flow from anode through external circuit to cathode
+  - Positive ions flow through electrolyte from anode to cathode
+  - Anode material slowly &quot;dissolves&quot; (visual shrinking)
+  - Cathode material &quot;grows&quot;
+  - Voltage slowly decreases as battery depletes
+- Charge mode (rechargeable):
+  - Reverse process with external power supply
+  - Electrons forced back to anode
+  - Ions return through electrolyte
+
+Status displays:
+- Terminal voltage (decreases under load)
+- Current draw
+- State of charge (% remaining)
+- Internal resistance effect
+
+Chemical reactions shown:
+- Li-ion: Li ⇌ Li⁺ + e⁻ (anode)
+- Electrons flow through circuit, ions through electrolyte
+
+Default parameters:
+- Battery type: Li-ion
+- Load: 100 Ω
+- Initial charge: 100%
+
+Implementation notes:
+- Use p5.js for all animations
+- Particle system for electrons (blue) and ions (red/orange)
+- State of charge affects animation speed and voltage display
+- Cutaway effect using clipping mask
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="electric-power">Electric Power</h2>
+<h3 id="power-in-electric-circuits">Power in Electric Circuits</h3>
+<p><strong>Electric power</strong> is the rate at which electrical energy is converted to other forms (heat, light, motion, etc.). Power is given by:</p>
+<p>$$P = IV$$</p>
+<p>Using Ohm's Law, we can also write:</p>
+<p>$$P = I^2R = \frac{V^2}{R}$$</p>
+<p>Power is measured in watts (W), where 1 watt = 1 joule per second.</p>
+<p>Examples of power consumption:</p>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Typical Power</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LED bulb</td>
+<td>10 W</td>
+</tr>
+<tr>
+<td>Laptop</td>
+<td>50 W</td>
+</tr>
+<tr>
+<td>Refrigerator</td>
+<td>150 W</td>
+</tr>
+<tr>
+<td>Hair dryer</td>
+<td>1500 W</td>
+</tr>
+<tr>
+<td>Electric car charger</td>
+<td>7000-19000 W</td>
+</tr>
+</tbody>
+</table>
+<h3 id="energy-and-cost">Energy and Cost</h3>
+<p>Electrical energy is typically billed in kilowatt-hours (kWh):</p>
+<p>$$\text{Energy (kWh)} = \text{Power (kW)} \times \text{Time (h)}$$</p>
+<p>If electricity costs $0.15 per kWh, running a 1500 W hair dryer for 15 minutes costs:</p>
+<p>$$\text{Cost} = 1.5 \text{ kW} \times 0.25 \text{ h} \times \$0.15/\text{kWh} = \$0.056$$</p>
+<h2 id="series-and-parallel-circuits">Series and Parallel Circuits</h2>
+<h3 id="series-circuits">Series Circuits</h3>
+<p>In a <strong>series circuit</strong>, components are connected end-to-end, so the same current flows through all components.</p>
+<p>Key properties of series circuits:</p>
+<ul>
+<li><strong>Current</strong>: Same through all components: I~total~ = I~1~ = I~2~ = I~3~</li>
+<li><strong>Voltage</strong>: Divides among components: V~total~ = V~1~ + V~2~ + V~3~</li>
+<li><strong>Resistance</strong>: Adds directly: R~total~ = R~1~ + R~2~ + R~3~</li>
+</ul>
+<p>If one component fails (opens), the entire circuit stops working—like old Christmas lights.</p>
+<h3 id="parallel-circuits">Parallel Circuits</h3>
+<p>In a <strong>parallel circuit</strong>, components are connected across the same two points, so they all have the same voltage across them.</p>
+<p>Key properties of parallel circuits:</p>
+<ul>
+<li><strong>Voltage</strong>: Same across all components: V~total~ = V~1~ = V~2~ = V~3~</li>
+<li><strong>Current</strong>: Divides among branches: I~total~ = I~1~ + I~2~ + I~3~</li>
+<li><strong>Resistance</strong>: Combines as reciprocals: 1/R~total~ = 1/R~1~ + 1/R~2~ + 1/R~3~</li>
+</ul>
+<p>If one component fails, other branches continue operating—like modern house wiring.</p>
+<h4 id="diagram-series-vs-parallel-circuit-comparison-microsim">Diagram: Series vs Parallel Circuit Comparison MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Series vs Parallel Circuit Comparison MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Compare current, voltage, and power distribution in series vs parallel circuits
+
+Canvas layout (900x700px):
+- Series circuit (450x500): Three resistors in series with battery
+- Parallel circuit (450x500): Three resistors in parallel with battery
+- Comparison table (900x200): Side-by-side values
+
+Visual elements:
+- Each circuit shows:
+  - Battery with labeled voltage
+  - Three resistors (can be different values)
+  - Ammeter symbols showing current at each point
+  - Voltmeter symbols showing voltage across each component
+  - Animated current flow (particle density shows current magnitude)
+  - Brightness indicators (bulbs instead of resistors option)
+
+Interactive controls:
+- Slider: Battery voltage (1 to 12 V)
+- Slider: R₁ value (10 to 1000 Ω)
+- Slider: R₂ value (10 to 1000 Ω)
+- Slider: R₃ value (10 to 1000 Ω)
+- Toggle: &quot;Show as resistors&quot; / &quot;Show as light bulbs&quot;
+- Checkbox: &quot;Highlight voltage drops&quot;
+- Checkbox: &quot;Show power dissipation&quot;
+
+Calculated displays (for each circuit):
+- Total resistance
+- Total current
+- Current through each component
+- Voltage across each component
+- Power dissipated in each component
+- Total power
+
+Animation behavior:
+- Particle speed reflects current magnitude
+- Series: Same number of particles everywhere (same current)
+- Parallel: More particles in lower-resistance branches
+- If using bulbs: Brightness proportional to power dissipated
+- Color coding: Red for high current paths, blue for low
+
+Special features:
+- &quot;Remove component&quot; button to show what happens when one fails
+- Series: All bulbs go out
+- Parallel: Other bulbs stay on, get slightly brighter
+
+Equations displayed:
+- Series: R_total = R₁ + R₂ + R₃
+- Parallel: 1/R_total = 1/R₁ + 1/R₂ + 1/R₃
+
+Default parameters:
+- Voltage: 9 V
+- R₁ = R₂ = R₃ = 100 Ω
+
+Implementation notes:
+- Use p5.js for circuit rendering and animation
+- Calculate all values using circuit equations
+- Particle system with adjustable density and speed
+- Bulb brightness using glow effect with variable alpha
+</code></pre></div></td></tr></table></div>
+</details>
+<h3 id="kirchhoffs-laws">Kirchhoff's Laws</h3>
+<p><strong>Kirchhoff's Laws</strong> provide the foundation for analyzing any circuit:</p>
+<p><strong>Kirchhoff's Current Law (KCL)</strong>: The sum of currents entering a junction equals the sum of currents leaving:</p>
+<p>$$\sum I_{in} = \sum I_{out}$$</p>
+<p>This is conservation of charge—charge doesn't accumulate at junctions.</p>
+<p><strong>Kirchhoff's Voltage Law (KVL)</strong>: The sum of voltage changes around any closed loop equals zero:</p>
+<p>$$\sum V = 0$$</p>
+<p>This is conservation of energy—a charge returning to its starting point has the same potential energy.</p>
+<h2 id="solar-cells-and-photovoltaics">Solar Cells and Photovoltaics</h2>
+<h3 id="how-solar-cells-work">How Solar Cells Work</h3>
+<p><strong>Solar cells</strong> (photovoltaic cells) convert light energy directly into electrical energy using the photovoltaic effect. When photons strike a semiconductor material (usually silicon), they knock electrons loose, creating a flow of current.</p>
+<p>A typical silicon solar cell:</p>
+<ol>
+<li>Is made of two layers of silicon: n-type (extra electrons) and p-type (electron "holes")</li>
+<li>Creates an electric field at the p-n junction</li>
+<li>When light hits, it frees electrons that flow through external circuit</li>
+<li>Produces about 0.5-0.6 V per cell at ~15-22% efficiency</li>
+</ol>
+<h3 id="solar-panel-characteristics">Solar Panel Characteristics</h3>
+<p>Solar panels are rated by their peak power output under standard test conditions:</p>
+<ul>
+<li><strong>V~oc~</strong> (Open-circuit voltage): Maximum voltage with no load</li>
+<li><strong>I~sc~</strong> (Short-circuit current): Maximum current with no resistance</li>
+<li><strong>V~mp~, I~mp~</strong> (Maximum power point): Voltage and current at peak power</li>
+<li><strong>P~max~</strong> = V~mp~ × I~mp~</li>
+</ul>
+<p>Real output varies with:</p>
+<ul>
+<li>Light intensity (direct sunlight vs. clouds)</li>
+<li>Temperature (cooler is better for efficiency)</li>
+<li>Angle to sun</li>
+<li>Shading (even partial shade dramatically reduces output)</li>
+</ul>
+<h4 id="diagram-solar-cell-operation-and-i-v-curve-microsim">Diagram: Solar Cell Operation and I-V Curve MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Solar Cell Operation and I-V Curve MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Understand how solar cells generate electricity and how to interpret their characteristic curves
+
+Canvas layout (900x700px):
+- Solar cell cross-section (450x400): Showing photovoltaic effect
+- I-V and P-V curves (450x400): Characteristic curves
+- Control panel (900x300): Light and load controls
+
+Visual elements:
+- Cross-section of solar cell showing:
+  - Incoming light rays (yellow arrows)
+  - N-type and P-type silicon layers
+  - P-N junction with electric field
+  - Free electrons being knocked loose by photons
+  - Electron flow through external circuit
+  - Metal contacts on top and bottom
+- I-V curve with operating point marked
+- P-V curve showing maximum power point
+
+Interactive controls:
+- Slider: Light intensity (0 to 1000 W/m², representing 0 to full sun)
+- Slider: Load resistance (0 to ∞, or use specific values)
+- Slider: Temperature (0°C to 50°C)
+- Checkbox: &quot;Show photon animation&quot;
+- Checkbox: &quot;Show electron generation&quot;
+- Button: &quot;Find maximum power point&quot;
+
+Animation behavior:
+- Photons (yellow dots) rain down on cell
+- Some photons penetrate to junction and create electron-hole pairs
+- Electrons flow through external circuit (blue particles)
+- Animation speed proportional to current
+- More photons at higher light intensity
+
+Graph features:
+- I-V curve: Current vs. voltage, shifts with light intensity
+- P-V curve: Power vs. voltage, peak at MPP
+- Operating point moves along curve as load changes
+- MPP (maximum power point) highlighted
+- Fill factor shown as ratio of rectangles
+
+Calculated displays:
+- Open-circuit voltage (V_oc)
+- Short-circuit current (I_sc)
+- Maximum power (P_max)
+- Fill factor = P_max / (V_oc × I_sc)
+- Efficiency = P_out / P_in × 100%
+
+Temperature effects:
+- Higher temperature: Lower V_oc, slightly higher I_sc
+- Net effect: Lower efficiency at high temperature
+
+Default parameters:
+- Light: 1000 W/m² (full sun)
+- Load: At maximum power point
+- Temperature: 25°C
+
+Implementation notes:
+- Use p5.js for rendering and particle systems
+- I-V curve from diode equation with light-generated current
+- Particle generation rate proportional to light intensity
+- Color gradient for intensity (yellow = bright, gray = dim)
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="solar-battery-charging-systems">Solar Battery Charging Systems</h2>
+<h3 id="complete-solar-power-system">Complete Solar Power System</h3>
+<p>A solar battery charging system allows you to capture sunlight during the day, store the energy in batteries, and use it when needed (at night or during cloudy weather). A complete system includes:</p>
+<ol>
+<li><strong>Solar panels</strong>: Convert sunlight to DC electricity</li>
+<li><strong>Charge controller</strong>: Regulates charging to protect batteries</li>
+<li><strong>Battery bank</strong>: Stores electrical energy</li>
+<li><strong>Inverter</strong> (optional): Converts DC to AC for standard appliances</li>
+<li><strong>Load</strong>: Devices that use the stored energy</li>
+</ol>
+<h3 id="charge-controllers">Charge Controllers</h3>
+<p>A <strong>charge controller</strong> is essential for protecting batteries from overcharging and deep discharge. Types include:</p>
+<ul>
+<li><strong>PWM (Pulse Width Modulation)</strong>: Simple, inexpensive, ~75-80% efficient</li>
+<li><strong>MPPT (Maximum Power Point Tracking)</strong>: Sophisticated, tracks optimal operating point, ~94-99% efficient</li>
+</ul>
+<p>The charge controller:</p>
+<ul>
+<li>Prevents overcharging (stops charging when battery is full)</li>
+<li>Prevents over-discharge (disconnects load when battery is low)</li>
+<li>May provide load control and system monitoring</li>
+</ul>
+<h4 id="diagram-solar-battery-charging-system-microsim">Diagram: Solar Battery Charging System MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Solar Battery Charging System MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Understand how solar panels charge batteries and power loads through a complete day-night cycle
+
+Canvas layout (1000x800px):
+- System diagram (700x500): Complete solar system schematic
+- Time simulation (300x200): Day/night cycle control
+- Energy flow diagram (300x300): Sankey-style power flow
+- Status panel (1000x300): All readings and graphs
+
+Visual elements:
+- Animated sun that moves across sky (day) or moon (night)
+- Solar panel with variable angle, shows current output
+- Charge controller with LED status indicators
+- Battery bank with charge level indicator (like fuel gauge)
+- Inverter (if AC loads present)
+- Load (LED lights that turn on at night)
+- Power flow arrows showing energy direction (animated particles)
+- Wire connections with current flow visualization
+
+Interactive controls:
+- Slider: Time of day (0-24 hours) or play button for real-time simulation
+- Slider: Cloud cover (0-100%)
+- Slider: Load power (0 to battery capacity)
+- Toggle: &quot;Manual time control&quot; / &quot;Auto simulation&quot;
+- Slider: Simulation speed (1x to 100x)
+- Dropdown: Battery type (Lead-acid, Li-ion, LiFePO4)
+- Slider: Battery capacity (10 Ah to 200 Ah)
+- Slider: Solar panel wattage (10 W to 200 W)
+
+Day/night behavior:
+- Dawn to dusk: Sun rises, solar panel generates power
+- Power flows: Panel → Charge controller → Battery (if not full) and/or Load
+- Dusk to dawn: No solar input
+- Power flows: Battery → Load (lights turn on automatically)
+- Battery level decreases at night, increases during day
+
+Energy flow visualization:
+- Sankey diagram showing power distribution
+- Yellow arrows from panel (solar input)
+- Green arrows to battery (charging)
+- Red arrows to load (consumption)
+- Gray arrows for losses
+
+Status displays:
+- Solar panel output (W)
+- Battery voltage, current, state of charge (%)
+- Load consumption (W)
+- Energy harvested today (Wh)
+- Energy consumed today (Wh)
+- Estimated hours of remaining power
+
+Graphs (scrolling 24-hour view):
+- Solar power output vs. time
+- Battery state of charge vs. time
+- Load power vs. time
+
+Scenarios:
+- &quot;Sunny day&quot;: Full solar harvest
+- &quot;Cloudy day&quot;: Reduced harvest, may not fully charge
+- &quot;High load&quot;: Battery drains faster at night
+- &quot;Balanced system&quot;: Battery maintains 50-80% through cycle
+
+Default parameters:
+- 100W solar panel
+- 100 Ah, 12V battery (LiFePO4)
+- 20W LED load (on at night only)
+- Clear day
+
+Implementation notes:
+- Use p5.js for all rendering
+- Sun position: angle = (time - 6) * 15 degrees (rises at 6, sets at 18)
+- Solar output: P = P_max × sin(sun_angle) × (1 - cloud_cover)
+- Battery SOC: integrate (charge_current - discharge_current) over time
+- LED brightness proportional to power when on
+- Particle flow animation for current
+</code></pre></div></td></tr></table></div>
+</details>
+<h3 id="example-off-grid-solar-lighting-system">Example: Off-Grid Solar Lighting System</h3>
+<p>Let's design a simple solar-powered LED lighting system for a garden shed:</p>
+<p><strong>Requirements:</strong>
+- Provide 4 hours of light each evening
+- Use a 10W LED light
+- System should work even after 2 cloudy days</p>
+<p><strong>Calculations:</strong></p>
+<ol>
+<li>
+<p>Daily energy need: 10 W × 4 h = 40 Wh</p>
+</li>
+<li>
+<p>For 2 cloudy days reserve: 40 Wh × 3 days = 120 Wh</p>
+</li>
+<li>
+<p>Battery sizing (12V system, 50% max discharge):</p>
+</li>
+<li>
+<p>Capacity needed: 120 Wh ÷ 12 V ÷ 0.5 = 20 Ah</p>
+</li>
+<li>
+<p>Solar panel sizing (assuming 5 peak sun hours, 80% system efficiency):</p>
+</li>
+<li>Daily harvest needed: 40 Wh ÷ 0.8 = 50 Wh</li>
+<li>Panel size: 50 Wh ÷ 5 h = 10 W minimum</li>
+<li>With margin for cloudy days: 20 W panel recommended</li>
+</ol>
+<p><strong>System components:</strong>
+- 20 W solar panel
+- 20 Ah, 12V LiFePO4 battery
+- PWM charge controller (10A rating)
+- 10W, 12V LED light with dusk sensor</p>
+<h2 id="electric-motors">Electric Motors</h2>
+<h3 id="how-electric-motors-work">How Electric Motors Work</h3>
+<p>An <strong>electric motor</strong> converts electrical energy into mechanical (rotational) energy using the magnetic force on current-carrying conductors. The basic principle:</p>
+<ol>
+<li>Current flows through a coil of wire (armature) placed in a magnetic field</li>
+<li>The magnetic force on the current creates a torque on the coil</li>
+<li>The coil rotates, doing mechanical work</li>
+<li>A commutator or electronic controller reverses current direction to maintain rotation</li>
+</ol>
+<h3 id="dc-motor-operation">DC Motor Operation</h3>
+<p>In a <strong>DC motor</strong>:</p>
+<ul>
+<li>Permanent magnets or field coils create a stationary magnetic field</li>
+<li>Current through the armature creates a second magnetic field</li>
+<li>The two fields interact, creating torque</li>
+<li>A commutator switches current direction as the armature rotates</li>
+<li>This maintains consistent torque direction</li>
+</ul>
+<p>Key relationships for DC motors:</p>
+<p><strong>Back-EMF</strong>: As the motor spins, it generates a voltage (back-EMF) that opposes the applied voltage:</p>
+<p>$$V = IR + E_{back}$$</p>
+<p>$$E_{back} = k\omega$$</p>
+<p>where k is a motor constant and ω is angular velocity.</p>
+<p><strong>Torque</strong>: The torque is proportional to current:</p>
+<p>$$\tau = k_t I$$</p>
+<p><strong>Power</strong>: Mechanical power output:</p>
+<p>$$P_{mech} = \tau \omega = E_{back} \times I$$</p>
+<h4 id="diagram-dc-motor-operation-microsim">Diagram: DC Motor Operation MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;DC Motor Operation MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Understand how DC motors convert electrical energy to mechanical rotation using magnetic forces
+
+Canvas layout (1000x700px):
+- Motor cross-section view (500x500): Shows armature, magnets, commutator
+- Side panel (300x500): Force vectors and current direction
+- Control panel (200x700): Voltage, load, and displays
+- Performance graphs (1000x200): Speed-torque and efficiency curves
+
+Visual elements:
+- Permanent magnets (N and S poles labeled, colored red and blue)
+- Rotating armature coil (multiple turns shown)
+- Commutator segments (split ring)
+- Brushes contacting commutator
+- Current direction indicators (arrows in wire)
+- Magnetic field lines (permanent magnets)
+- Force arrows on current-carrying conductors (F = IL × B)
+- Rotation direction arrow
+- Animated rotation of armature
+
+Interactive controls:
+- Slider: Applied voltage (0 to 12 V)
+- Slider: Load torque (0 to max stall torque)
+- Checkbox: &quot;Show magnetic field lines&quot;
+- Checkbox: &quot;Show force vectors&quot;
+- Checkbox: &quot;Show current direction&quot;
+- Button: &quot;Apply brake&quot; (increases load suddenly)
+- Toggle: &quot;Slow motion&quot; for commutator action
+- Slider: Motor constant (for different motor sizes)
+
+Animation behavior:
+- Armature rotates at speed proportional to (V - I×R) / k
+- Current increases when load increases (motor slows)
+- At stall (zero speed): I = V/R (maximum current, danger!)
+- At no load: Speed = V/k (maximum speed, minimum current)
+- Commutator action shown: Current reverses as brushes cross gaps
+- Force vectors rotate with armature, always creating torque
+
+Performance displays:
+- Applied voltage (V)
+- Motor current (A)
+- Motor speed (RPM)
+- Torque (N·m)
+- Mechanical power output (W)
+- Electrical power input (W)
+- Efficiency (%)
+- Back-EMF (V)
+
+Graph panel:
+- Speed vs. Torque characteristic (linear for ideal DC motor)
+- Current vs. Torque
+- Efficiency vs. Speed (peaks at mid-range)
+- Operating point highlighted on curves
+
+Warning indicators:
+- &quot;Stall current!&quot; warning if motor is stalled
+- &quot;Overload!&quot; if current exceeds safe limit
+- Temperature indicator rises with I²R losses
+
+Default parameters:
+- Voltage: 6 V
+- Motor: Small hobby motor (k = 0.01 V/rad/s)
+- Load: Light (10% of stall torque)
+
+Implementation notes:
+- Use p5.js for rendering with rotation transforms
+- Physics model: dω/dt = (τ_motor - τ_load - τ_friction) / J
+- Commutator: Draw segmented ring, highlight active segment
+- Force vectors: Calculate F = BIL, show as arrows
+- Smooth animation using requestAnimationFrame
+</code></pre></div></td></tr></table></div>
+</details>
+<h3 id="motor-speed-control">Motor Speed Control</h3>
+<p>The speed of a DC motor can be controlled by:</p>
+<ol>
+<li><strong>Voltage control</strong>: Higher voltage = higher speed</li>
+<li><strong>PWM (Pulse Width Modulation)</strong>: Rapidly switching voltage on/off</li>
+<li><strong>Field weakening</strong>: Reducing field strength increases speed (but reduces torque)</li>
+</ol>
+<p>PWM is the most common method—by varying the duty cycle (percentage of time the voltage is on), you can smoothly control speed while maintaining good efficiency.</p>
+<h4 id="diagram-motor-speed-control-with-variable-voltage-microsim">Diagram: Motor Speed Control with Variable Voltage MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Motor Speed Control with Variable Voltage MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Explore how changing voltage affects motor speed and understand the relationship between voltage, speed, current, and torque
+
+Canvas layout (1000x700px):
+- Motor with spinning load (500x400): Visual representation
+- Power supply controls (250x400): Voltage source
+- Oscilloscope view (250x400): PWM waveform
+- Performance dashboard (1000x300): Meters and graphs
+
+Visual elements:
+- DC motor with visible shaft
+- Spinning fan or wheel attached to shaft (speed visible)
+- Power supply with large voltage display
+- PWM controller with duty cycle knob
+- Ammeter showing motor current
+- Tachometer showing RPM
+- Load weight attached to pulley (variable)
+
+Interactive controls:
+- Mode selector: &quot;Variable DC&quot; or &quot;PWM Control&quot;
+
+Variable DC mode:
+- Slider: Voltage (0 to 12 V, continuous)
+
+PWM mode:
+- Slider: Duty cycle (0 to 100%)
+- Slider: PWM frequency (100 Hz to 20 kHz)
+- Fixed supply voltage (12 V)
+
+Both modes:
+- Slider: Load (light to heavy)
+- Button: &quot;Brake&quot; (stops motor)
+- Button: &quot;Release&quot; (removes brake)
+- Checkbox: &quot;Show efficiency&quot;
+
+Animation behavior:
+- Fan/wheel rotation speed matches motor RPM
+- Higher voltage/duty cycle = faster rotation
+- Higher load = slower rotation, higher current
+- Brake: Motor stops, current spikes then system shuts down
+
+PWM visualization:
+- Oscilloscope shows voltage waveform
+- On/off states clearly visible
+- Average voltage line overlaid
+- Motor &quot;sees&quot; average voltage for speed, but full voltage during on-time
+
+Dashboard displays:
+- Applied voltage (or average for PWM)
+- Motor current (average and peak for PWM)
+- Speed (RPM)
+- Torque (calculated)
+- Input power (W)
+- Output power (W)
+- Efficiency (%)
+- Temperature indicator
+
+Comparison feature:
+- Side-by-side: Same average voltage via DC vs. PWM
+- Show that PWM is more efficient at partial speeds
+- PWM keeps motor running smoothly at low speeds
+
+Speed-Voltage graph:
+- Real-time plot of speed vs. applied voltage
+- Shows linear relationship (for DC) or average voltage (for PWM)
+- Load lines for different load settings
+
+Default parameters:
+- Mode: Variable DC
+- Voltage: 6 V
+- Load: Medium
+- PWM frequency: 1 kHz
+
+Implementation notes:
+- Use p5.js for all rendering
+- Rotation animation: angle += angular_velocity × dt
+- PWM: Use frameCount to toggle on/off state
+- Motor model: first-order lag from voltage to speed
+- Current ripple in PWM mode (triangular wave superimposed)
+</code></pre></div></td></tr></table></div>
+</details>
+<h3 id="applications-of-electric-motors">Applications of Electric Motors</h3>
+<p>Electric motors are everywhere:</p>
+<p><strong>Small motors (&lt; 1 W):</strong>
+- Vibration motors in phones
+- Toy motors
+- Watch movements</p>
+<p><strong>Medium motors (1 W - 1 kW):</strong>
+- Fans and blowers
+- Power tools
+- Appliances (washing machines, vacuum cleaners)
+- Drones and RC vehicles</p>
+<p><strong>Large motors (&gt; 1 kW):</strong>
+- Electric vehicles (50-500 kW)
+- Industrial machinery
+- HVAC systems
+- Elevators</p>
+<h2 id="real-world-application-solar-powered-electric-motor-system">Real-World Application: Solar-Powered Electric Motor System</h2>
+<p>Let's combine our knowledge of solar cells, batteries, and motors in a practical application: a solar-powered water pump for irrigation.</p>
+<h3 id="system-design">System Design</h3>
+<p>A small farm needs to pump water from a well during daylight hours. The system must:</p>
+<ul>
+<li>Pump 1000 liters of water per day</li>
+<li>Lift water 10 meters from well to storage tank</li>
+<li>Operate without grid power</li>
+</ul>
+<p><strong>Calculations:</strong></p>
+<ol>
+<li>Energy to lift water:</li>
+<li>Mass of water: 1000 kg (1000 L)</li>
+<li>Height: 10 m</li>
+<li>
+<p>Energy = mgh = 1000 × 9.8 × 10 = 98,000 J = 27.2 Wh</p>
+</li>
+<li>
+<p>Accounting for pump and motor efficiency (50% combined):</p>
+</li>
+<li>
+<p>Electrical energy needed: 27.2 ÷ 0.5 = 54.4 Wh</p>
+</li>
+<li>
+<p>Solar panel sizing (5 peak sun hours):</p>
+</li>
+<li>Panel power: 54.4 Wh ÷ 5 h = 10.9 W minimum</li>
+<li>
+<p>With margin: 20 W panel</p>
+</li>
+<li>
+<p>Motor and pump:</p>
+</li>
+<li>12V DC pump motor rated 20W</li>
+<li>Operating at 50% duty cycle during peak sun</li>
+</ol>
+<h4 id="diagram-solar-water-pump-system-microsim">Diagram: Solar Water Pump System MicroSim</h4>
+<details>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span></pre></div></td><td class="code"><div><pre><span></span><code>&lt;summary&gt;Solar Water Pump System MicroSim&lt;/summary&gt;
+Type: microsim
+
+Learning objective: Apply concepts of solar power, batteries, and motors to a real-world pumping application
+
+Canvas layout (1000x800px):
+- System overview (700x600): Complete installation diagram
+- Control center (300x400): Switches and displays
+- Performance graphs (300x400): Flow rate and energy
+
+Visual elements:
+- Sun with time-of-day position
+- Solar panel (tilted at optimal angle)
+- Controller box with indicator lights
+- Battery (optional, for cloudy-day storage)
+- Submersible pump in well (cutaway view)
+- Water rising through pipe (animated blue particles)
+- Storage tank at elevated position (fill level shown)
+- Water outflow to irrigation (when tank has water)
+
+Interactive controls:
+- Slider: Time of day (6 AM to 8 PM)
+- Slider: Cloud cover (0 to 100%)
+- Slider: Water level in well (full to low)
+- Slider: Storage tank capacity (100 to 2000 L)
+- Toggle: &quot;Battery backup&quot; on/off
+- Toggle: &quot;Auto&quot; / &quot;Manual&quot; pump control
+- Button: &quot;Open irrigation valve&quot;
+
+Animation behavior:
+- Solar panel output varies with sun angle and clouds
+- Pump runs when sufficient power available
+- Water particles flow up pipe when pump runs
+- Tank level increases as water pumped
+- Pump stops if well water level too low
+- Irrigation drains tank when valve open
+
+System calculations displayed:
+- Solar power generated (W)
+- Pump power consumption (W)
+- Water flow rate (L/min)
+- Well water level (m)
+- Tank level (L and %)
+- Total water pumped today (L)
+- Total energy harvested today (Wh)
+- System efficiency (%)
+
+Performance graphs:
+- Solar power vs. time (today)
+- Water pumped vs. time (cumulative)
+- Tank level vs. time
+- Battery level vs. time (if battery present)
+
+Failure modes to demonstrate:
+- Cloudy weather: Pump runs slower or stops
+- Low well: Pump stops to prevent dry running
+- Full tank: Pump stops, excess power charges battery
+- Night: Only battery can run pump
+
+Default parameters:
+- 50W solar panel
+- 20W pump (pumps 5 L/min at 10m head)
+- 500L storage tank
+- No battery initially
+
+Implementation notes:
+- Use p5.js for all animations
+- Water particles: array of positions, move upward when pump on
+- Sun position: map time to angle across sky
+- Energy balance: P_solar - P_pump = P_battery_charge
+- Flow rate dependent on available power (reduced in low light)
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="summary-and-key-takeaways">Summary and Key Takeaways</h2>
+<p>Electric circuits are the pathways through which charge flows, carrying energy from sources to loads. The fundamental principles governing circuits include:</p>
+<p><strong>Current and Resistance:</strong>
+- Current (I) is the flow rate of charge, measured in amperes
+- Resistance (R) opposes current flow, measured in ohms
+- Ohm's Law (V = IR) relates voltage, current, and resistance</p>
+<p><strong>Energy Storage Components:</strong>
+- Capacitors store energy in electric fields (U = ½CV²)
+- Inductors store energy in magnetic fields (U = ½LI²)
+- Batteries store energy chemically and convert it to electricity</p>
+<p><strong>Power Sources:</strong>
+- DC sources provide steady voltage in one direction (batteries, solar cells)
+- AC sources alternate direction sinusoidally (grid power, generators)
+- Power = VI = I²R = V²/R, measured in watts</p>
+<p><strong>Circuit Configurations:</strong>
+- Series: Same current through all components, voltages add
+- Parallel: Same voltage across all components, currents add
+- Kirchhoff's Laws ensure conservation of charge and energy</p>
+<p><strong>Practical Applications:</strong>
+- Solar cells convert light to electricity for sustainable power
+- Battery systems store energy for use when solar isn't available
+- Electric motors convert electrical energy to mechanical motion
+- Speed control via voltage or PWM enables precise motor control</p>
+<p>These concepts form the foundation for understanding all electrical and electronic systems, from simple flashlights to complex smart grids and electric vehicles.</p>
+<h2 id="practice-problems">Practice Problems</h2>
+<ol>
+<li>
+<p>A 9V battery is connected to a 180Ω resistor. Calculate the current through the resistor and the power dissipated.</p>
+</li>
+<li>
+<p>Three resistors (100Ω, 200Ω, 300Ω) are connected in series to a 12V battery. Find the total resistance, current, and voltage across each resistor.</p>
+</li>
+<li>
+<p>The same three resistors are now connected in parallel to the same battery. Find the total resistance and the current through each resistor.</p>
+</li>
+<li>
+<p>A 100μF capacitor is charged to 12V. Calculate the stored energy and the charge on the capacitor.</p>
+</li>
+<li>
+<p>A solar panel produces 50W under full sun. If the sun provides peak power for 5 hours per day, how many watt-hours of energy can be harvested? If this charges a 12V battery with 80% efficiency, how many amp-hours are added to the battery?</p>
+</li>
+<li>
+<p>A DC motor runs at 3000 RPM when connected to 12V with no load, drawing 0.5A. When a load is applied, it slows to 2000 RPM and draws 2A. Calculate the back-EMF in each case and the power delivered to the mechanical load.</p>
+</li>
+</ol>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Horowitz, P., &amp; Hill, W. (2015). <em>The Art of Electronics</em> (3rd ed.). Cambridge University Press.</li>
+<li>Platt, C. (2015). <em>Make: Electronics</em> (2nd ed.). Maker Media.</li>
+<li>Boxwell, M. (2017). <em>Solar Electricity Handbook</em>. Greenstream Publishing.</li>
+<li>Hughes, A., &amp; Drury, B. (2019). <em>Electric Motors and Drives</em> (5th ed.). Elsevier.</li>
+<li>Floyd, T. L. (2017). <em>Principles of Electric Circuits</em> (10th ed.). Pearson.</li>
+</ul>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In future physics courses, you'll explore more advanced electrical concepts:</p>
+<ul>
+<li>Magnetism and electromagnetic induction</li>
+<li>AC circuit analysis with complex impedance</li>
+<li>Electromagnetic waves and their applications</li>
+<li>Semiconductor physics and modern electronics</li>
+<li>Power systems and renewable energy technology</li>
+</ul>
+<p>The circuit fundamentals you've learned here provide the essential foundation for understanding how electricity powers and connects our modern world.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../12-electric-charge-fields/quiz/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quiz">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Quiz
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="quiz/" class="md-footer__link md-footer__link--next" aria-label="Next: Quiz">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Quiz
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>

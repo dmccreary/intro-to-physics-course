@@ -1,0 +1,25 @@
+{
+  "title": "Exoplanet Transit Detection",
+  "description": "Interactive simulation demonstrating how astronomers detect exoplanets using the transit method, showing brightness dips as a planet passes in front of its star with real-time light curve visualization.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-24",
+  "subject": ["exoplanets", "transit method", "astronomy", "light curves", "Kepler mission", "TESS", "planetary detection", "photometry"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "exoplanet-transit-v1",
+  "educational": {
+    "level": "High School",
+    "gradeRange": "10-12",
+    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+    "concepts": ["transit-method", "light-curves", "exoplanet-detection", "stellar-brightness", "orbital-period", "transit-depth"],
+    "prerequisites": ["light-and-brightness", "geometry", "graph-interpretation"],
+    "estimatedTime": "45-60 minutes"
+  },
+  "technical": {
+    "library": "p5.js",
+    "libraryVersion": "1.11.10",
+    "features": ["real-time light curve", "transit detection", "adjustable parameters", "visual feedback", "brightness calculation"]
+  }
+}

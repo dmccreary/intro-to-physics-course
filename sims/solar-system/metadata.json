@@ -1,0 +1,26 @@
+{
+  "title": "Solar System",
+  "description": "Interactive simulation of the inner solar system demonstrating Newtonian gravity, orbital mechanics, and Kepler's laws with real astronomical data for the Sun, Mercury, Venus, Earth, and Mars.",
+  "creator": "Dan McCreary",
+  "contributor": "Tech With Tim (Python Planet Simulation)",
+  "date": "2024-12-24",
+  "subject": ["orbital mechanics", "Kepler's laws", "gravitational force", "solar system", "planetary motion", "astronomy", "Newton's law of gravitation"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "solar-system-v1",
+  "educational": {
+    "level": "High School",
+    "gradeRange": "10-12",
+    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+    "concepts": ["gravitational-force", "orbital-velocity", "keplers-laws", "perihelion", "aphelion", "eccentricity", "astronomical-unit"],
+    "prerequisites": ["newtons-laws", "gravitational-force", "vectors", "velocity"],
+    "estimatedTime": "45-60 minutes"
+  },
+  "technical": {
+    "library": "p5.js",
+    "libraryVersion": "1.11.10",
+    "features": ["n-body simulation", "real astronomical data", "orbital tracking", "real-time statistics", "gravitational calculations"]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Elasticity",
+  "description": "Interactive simulation demonstrating how elasticity affects energy loss during ball collisions with surfaces.",
+  "creator": "Dan McCreary",
+  "subject": ["Physics", "Mechanics", "Collisions"],
+  "date": "2025-12-21",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "gradeLevel": "High School (9-12)",
+  "subjectArea": "Physics",
+  "topic": "Elasticity and Collisions",
+  "learningObjectives": [
+    "Define elasticity and coefficient of restitution",
+    "Explain energy conservation in elastic vs inelastic collisions",
+    "Predict bouncing behavior based on elasticity values",
+    "Compare elastic and inelastic collisions"
+  ],
+  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "duration": "5-10 minutes",
+  "prerequisites": ["Basic understanding of energy", "Familiarity with kinetic energy"],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 450",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js 1.11.10"],
+  "controls": [
+    {
+      "type": "button",
+      "name": "Run/Pause",
+      "description": "Starts or pauses the ball motion"
+    },
+    {
+      "type": "slider",
+      "name": "Elasticity",
+      "min": 0,
+      "max": 1,
+      "default": 0.8,
+      "step": 0.01,
+      "description": "Controls the coefficient of restitution for bounces"
+    }
+  ],
+  "modelType": "Physics-based simulation",
+  "variables": ["position", "velocity", "elasticity", "gravity"],
+  "equations": [
+    "v_after = -elasticity * v_before",
+    "v_y += gravity (each frame)"
+  ],
+  "assumptions": [
+    "2D simulation with uniform gravity",
+    "Ball treated as point mass with radius for collision detection",
+    "Air resistance ignored"
+  ],
+  "limitations": [
+    "Does not model rotational effects",
+    "Simplified collision detection",
+    "Does not show energy values numerically"
+  ]
+}

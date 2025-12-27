@@ -1,0 +1,26 @@
+{
+  "title": "Fluid Dynamics",
+  "description": "Interactive simulation demonstrating fluid flow around an obstacle with particle collisions, QuadTree spatial partitioning, adjustable flow parameters, and real-time collision statistics.",
+  "creator": "Dan McCreary",
+  "contributor": "Nikola Bozhinov (vislupus)",
+  "date": "2024-12-24",
+  "subject": ["fluid dynamics", "particle simulation", "collision detection", "laminar flow", "physics simulation", "QuadTree", "flow around obstacles"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "fluid-dynamics-v1",
+  "educational": {
+    "level": "High School",
+    "gradeRange": "10-12",
+    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+    "concepts": ["fluid-dynamics", "particle-collisions", "momentum", "flow-patterns", "viscosity"],
+    "prerequisites": ["vectors", "newtons-laws", "momentum", "collisions"],
+    "estimatedTime": "45-60 minutes"
+  },
+  "technical": {
+    "library": "p5.js",
+    "libraryVersion": "1.11.10",
+    "features": ["particle simulation", "QuadTree spatial partitioning", "collision detection", "slider controls", "real-time statistics"]
+  }
+}
