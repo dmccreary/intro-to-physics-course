@@ -51,8 +51,14 @@ For each dimension, you can write separate kinematic equations. Time (t) is the 
 
 #### Diagram: Vector Components Diagram
 
+<iframe src="../../sims/vector-components/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/vector-components/index.md)
+
 <details markdown="1">
     <summary>Vector Components Diagram</summary>
+    **Status:** done
+
     Type: diagram
 
     Purpose: Illustrate how a 2D velocity vector can be decomposed into horizontal and vertical components using trigonometry
@@ -112,8 +118,15 @@ Here are common free fall situations you might encounter:
 - **At maximum height:** $v_y = 0$ momentarily before falling back down
 
 #### Diagram: Free Fall Motion MicroSim
+
+<iframe src="../../sims/free-fall/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/free-fall/index.md)
+
 <details markdown="1">
     <summary>Free Fall Motion MicroSim</summary>
+    **Status:** done
+
     Type: microsim
 
     Learning objective: Visualize how objects fall under gravity and understand how initial velocity affects trajectory and timing
@@ -193,6 +206,8 @@ The trajectory—the path traced by the projectile—forms a parabola. This eleg
 
 <details markdown="1">
     <summary>Projectile Motion Trajectory Diagram</summary>
+    **Status:** done
+
     Type: diagram
 
     Purpose: Show the parabolic trajectory of projectile motion with velocity vectors at different points
@@ -267,8 +282,15 @@ Consider these important observations:
 - At impact, velocity vector points downward and forward at some angle
 
 #### Diagram: Horizontal Projection Interactive Comparison
+
+<iframe src="../../sims/horizontal-projection/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/horizontal-projection/index.md)
+
 <details markdown="1">
     <summary>Horizontal Projection Interactive Comparison</summary>
+    **Status:** done
+
     Type: microsim
 
     Learning objective: Demonstrate that objects with different horizontal velocities but same initial height hit the ground simultaneously (independence of horizontal and vertical motion)
@@ -365,8 +387,15 @@ The range equation reveals an interesting optimization: the angle that produces 
 | 75° | Very steep | Longest | Short |
 
 #### Diagram: Angled Projectile Motion Explorer MicroSim
+
+<iframe src="../../sims/angled-projectile/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/angled-projectile/index.md)
+
 <details markdown="1">
     <summary>Angled Projectile Motion Explorer MicroSim</summary>
+    **Status:** done
+
     Type: microsim
 
     Learning objective: Allow students to explore how launch angle and initial speed affect trajectory, range, maximum height, and flight time
@@ -480,8 +509,15 @@ Here are typical situations involving relative velocity:
 - **Chase problems:** Relative velocity of pursuer and target determines whether they'll meet
 
 #### Diagram: River Crossing Relative Velocity Diagram
+
+<iframe src="../../sims/river-crossing/main.html" width="100%" height="552px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/river-crossing/index.md)
+
 <details markdown="1">
     <summary>River Crossing Relative Velocity Diagram</summary>
+    **Status:** done
+
     Type: diagram
 
     Purpose: Illustrate how river current affects a swimmer's trajectory and how to calculate resultant velocity using vector addition
@@ -531,8 +567,15 @@ Since velocity is a vector quantity, relative velocity problems require vector a
 The component method is more general and works for any angles, while the geometric method is faster for perpendicular or parallel velocities.
 
 #### Diagram: Relative Velocity Problem Solver MicroSim
+
+<iframe src="../../sims/relative-velocity/main.html" width="100%" height="552px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/relative-velocity/index.md)
+
 <details markdown="1">
     <summary>Relative Velocity Problem Solver MicroSim</summary>
+    **Status:** done
+
     Type: microsim
 
     Learning objective: Help students visualize and solve relative velocity problems involving two moving objects in 2D space

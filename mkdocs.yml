@@ -73,6 +73,19 @@ nav:
     - Ohm's Law Calculator: sims/ohms-law/index.md
     - Series vs Parallel: sims/series-parallel/index.md
     - DC Motor: sims/dc-motor/index.md
+    - Distance vs Displacement: sims/distance-displacement/index.md
+    - Velocity Speed Comparison: sims/velocity-speed-comparison/index.md
+    - Uniform vs Accelerated Motion: sims/uniform-accelerated-motion/index.md
+    - Position Time Analyzer: sims/position-time-analyzer/index.md
+    - Velocity Time Area: sims/velocity-time-area/index.md
+    - Three Graph Analyzer: sims/three-graph-analyzer/index.md
+    - Kinematic Selector: sims/kinematic-selector/index.md
+    - Vector Components: sims/vector-components/index.md
+    - Free Fall: sims/free-fall/index.md
+    - Horizontal Projection: sims/horizontal-projection/index.md
+    - Angled Projectile: sims/angled-projectile/index.md
+    - River Crossing: sims/river-crossing/index.md
+    - Relative Velocity: sims/relative-velocity/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md

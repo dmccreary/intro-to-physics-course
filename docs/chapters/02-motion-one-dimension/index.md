@@ -62,8 +62,15 @@ The Greek letter delta (Δ) means "change in," so Δx represents the change in p
 where x_final is your ending position and x_initial is your starting position.
 
 #### Diagram: Distance vs Displacement Interactive Visualization
+
+<iframe src="../../sims/distance-displacement/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/distance-displacement/index.md)
+
 <details markdown="1">
 <summary>Distance vs Displacement Interactive Visualization</summary>
+**Status:** done
+
 Type: microsim
 
 Learning objective: Help students understand the difference between distance (path length) and displacement (straight-line change) through an interactive path-drawing exercise.
@@ -169,8 +176,15 @@ On a position-time graph (which we'll explore in detail later), the instantaneou
 In everyday conversation, when people say "velocity" or "speed," they usually mean instantaneous velocity or speed unless they specify otherwise. From now on in this course, when we use the term "velocity" without qualification, we typically mean instantaneous velocity.
 
 #### Diagram: Velocity vs Speed Comparison Table
+
+<iframe src="../../sims/velocity-speed-comparison/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/velocity-speed-comparison/index.md)
+
 <details markdown="1">
 <summary>Velocity vs Speed Comparison Table</summary>
+**Status:** done
+
 Type: diagram
 
 Purpose: Create a visual comparison showing scenarios where speed and velocity differ, helping students distinguish between these concepts.
@@ -306,8 +320,15 @@ Examples of uniformly accelerated motion include:
 This is one of the most important types of motion to master because many real-world situations approximate constant acceleration, and the mathematics remains manageable. When acceleration is constant, we can use a set of powerful equations called the kinematic equations (which we'll derive shortly).
 
 #### Diagram: Comparison of Uniform vs Uniformly Accelerated Motion
+
+<iframe src="../../sims/uniform-accelerated-motion/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/uniform-accelerated-motion/index.md)
+
 <details markdown="1">
 <summary>Comparison of Uniform vs Uniformly Accelerated Motion</summary>
+**Status:** done
+
 Type: chart
 
 Chart type: Multi-panel comparison showing position, velocity, and acceleration graphs over time
@@ -420,8 +441,15 @@ When the graph is perfectly horizontal, position isn't changing—the object is 
 Let's examine some example scenarios:
 
 #### Diagram: Position-Time Graph Interactive Analyzer
+
+<iframe src="../../sims/position-time-analyzer/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/position-time-analyzer/index.md)
+
 <details markdown="1">
 <summary>Position-Time Graph Interactive Analyzer</summary>
+**Status:** done
+
 Type: microsim
 
 Learning objective: Help students interpret position-time graphs by analyzing slopes, understanding what different curve shapes mean, and connecting graphical features to physical motion.
@@ -544,8 +572,15 @@ Let's connect v-t graphs to x-t graphs with an example:
 | Corresponding x-t graph | Straight line | Parabola |
 
 #### Diagram: Velocity-Time Graph Area Calculator MicroSim
+
+<iframe src="../../sims/velocity-time-area/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/velocity-time-area/index.md)
+
 <details markdown="1">
 <summary>Velocity-Time Graph Area Calculator MicroSim</summary>
+**Status:** done
+
 Type: microsim
 
 Learning objective: Help students understand that the area under a velocity-time curve represents displacement, and practice calculating this area for different motion scenarios.
@@ -663,8 +698,15 @@ Though we rarely analyze this in introductory physics, the slope of an a-t graph
 Let's see how all three graph types connect:
 
 #### Diagram: Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs
+
+<iframe src="../../sims/three-graph-analyzer/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/three-graph-analyzer/index.md)
+
 <details markdown="1">
 <summary>Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs</summary>
+**Status:** done
+
 Type: microsim
 
 Learning objective: Help students understand the relationships between position, velocity, and acceleration graphs by showing all three simultaneously and demonstrating how features in one graph correspond to features in the others.
@@ -868,8 +910,15 @@ x - x₀ = 25 m
 The kinematic equations are tools you'll use throughout your physics education and beyond. Mastering them now will make dynamics, projectile motion, and many other topics much easier to understand.
 
 #### Diagram: Kinematic Equation Selector Tool
+
+<iframe src="../../sims/kinematic-selector/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/kinematic-selector/index.md)
+
 <details markdown="1">
 <summary>Kinematic Equation Selector Tool</summary>
+**Status:** done
+
 Type: infographic
 
 Purpose: Create an interactive decision tree to help students select the appropriate kinematic equation based on known and unknown variables.

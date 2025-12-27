@@ -159,7 +159,9 @@ Most physics problems assume you're viewing from Earth's surface, which is appro
 #### Diagram: Inertia Demonstration MicroSim
 <details markdown="1">
     <summary>Inertia Demonstration MicroSim</summary>
+
     **TODO:** human-review-needed
+    **Status:** INCOMPLETE
 
     Type: microsim
 
@@ -272,7 +274,12 @@ When solving Newton's Second Law problems, follow these steps:
 #### Diagram: Force and Acceleration Relationship Chart
 <details markdown="1">
     <summary>Force and Acceleration Relationship Chart</summary>
+
+    Title: "Exploring Newton's Second Law: F = ma"
+    Name: newtons-second-law
+
     **TODO:** human-review-needed
+    **Status:** INCOMPLETE
 
     Type: chart
 
@@ -313,8 +320,6 @@ When solving Newton's Second Law problems, follow these steps:
     - Large, readable axis labels
     - Equation F = ma shown prominently
 
-    Title: "Exploring Newton's Second Law: F = ma"
-
     Additional features:
     - Toggle: Switch between showing all lines vs just selected scenario
     - Data table showing key points for each line
@@ -322,8 +327,7 @@ When solving Newton's Second Law problems, follow these steps:
       * Point on 2kg line: "Accelerating a soccer ball"
       * Point on 10kg line: "Pushing a shopping cart"
 
-    Implementation: Chart.js or D3.js
-    Canvas size: 800px × 600px
+    Implementation: p5.js
 </details>
 
 ## Newton's Third Law: Action-Reaction Pairs
@@ -372,7 +376,9 @@ Forces only cancel (produce equilibrium) when they act on the same object.
 #### Diagram: Action-Reaction Pairs Interactive Diagram
 <details markdown="1">
     <summary>Action-Reaction Pairs Interactive Diagram</summary>
+
     **TODO:** human-review-needed
+    **Status:** INCOMPLETE
 
     Type: infographic
 
@@ -498,72 +504,72 @@ You'll use these conditions extensively when solving statics problems.
 
 #### Diagram: Equilibrium Classification Workflow
 <details markdown="1">
-    <summary>Equilibrium Classification Workflow</summary>
-    **TODO:** human-review-needed
+<summary>Equilibrium Classification Workflow</summary>
+**TODO:** human-review-needed
 
-    Type: workflow
+Type: workflow
 
-    Purpose: Help students determine whether an object is in equilibrium and classify the type
+Purpose: Help students determine whether an object is in equilibrium and classify the type
 
-    Visual style: Decision tree flowchart with color-coded paths
+Visual style: Decision tree flowchart with color-coded paths
 
-    Start node: "Object with forces acting on it"
+Start node: "Object with forces acting on it"
 
-    Step 1 - Decision diamond: "Is the net force zero?"
-    - Calculation shown: ΣF_x = ? and ΣF_y = ?
-    - Hover text: "Add all force components in each direction. Use + for one direction, - for opposite."
+Step 1 - Decision diamond: "Is the net force zero?"
+- Calculation shown: ΣF_x = ? and ΣF_y = ?
+- Hover text: "Add all force components in each direction. Use + for one direction, - for opposite."
 
-    Branch: If F_net ≠ 0 → "NOT in equilibrium"
-    - Process box: "Object accelerates according to F_net = ma"
-    - Example shown: Skydiver speeding up (Weight > Air resistance)
-    - Color: Red path
+Branch: If F_net ≠ 0 → "NOT in equilibrium"
+- Process box: "Object accelerates according to F_net = ma"
+- Example shown: Skydiver speeding up (Weight > Air resistance)
+- Color: Red path
 
-    Branch: If F_net = 0 → Continue to Step 2
+Branch: If F_net = 0 → Continue to Step 2
 
-    Step 2 - Decision diamond: "Is the velocity zero?"
-    - Hover text: "Check if object is at rest or moving"
+Step 2 - Decision diamond: "Is the velocity zero?"
+- Hover text: "Check if object is at rest or moving"
 
-    Branch: If v = 0 → "STATIC EQUILIBRIUM"
-    - Process box: "Object remains at rest"
-    - Examples shown:
-      * Book on table
-      * Bridge supporting traffic
-      * Hanging picture frame
-    - Color: Blue path
-    - Hover details: "All forces balanced, no motion"
+Branch: If v = 0 → "STATIC EQUILIBRIUM"
+- Process box: "Object remains at rest"
+- Examples shown:
+  * Book on table
+  * Bridge supporting traffic
+  * Hanging picture frame
+- Color: Blue path
+- Hover details: "All forces balanced, no motion"
 
-    Branch: If v ≠ 0 → "DYNAMIC EQUILIBRIUM"
-    - Process box: "Object moves at constant velocity"
-    - Examples shown:
-      * Parachutist at terminal velocity
-      * Car at constant highway speed
-      * Object sliding on frictionless ice
-    - Color: Green path
-    - Hover details: "All forces balanced, motion continues unchanged"
+Branch: If v ≠ 0 → "DYNAMIC EQUILIBRIUM"
+- Process box: "Object moves at constant velocity"
+- Examples shown:
+  * Parachutist at terminal velocity
+  * Car at constant highway speed
+  * Object sliding on frictionless ice
+- Color: Green path
+- Hover details: "All forces balanced, motion continues unchanged"
 
-    Additional annotation box:
-    - "Common mistake: 'No motion' doesn't mean 'no forces'!"
-    - "Equilibrium means forces balance, NOT that they're absent"
+Additional annotation box:
+- "Common mistake: 'No motion' doesn't mean 'no forces'!"
+- "Equilibrium means forces balance, NOT that they're absent"
 
-    Practice problems (shown in sidebar):
-    1. Chandelier hanging from ceiling → Static
-    2. Elevator moving up at constant 2 m/s → Dynamic
-    3. Ball thrown upward (at peak) → NOT equilibrium (acceleration = -g)
-    4. Hockey puck sliding at constant v on ice → Dynamic
+Practice problems (shown in sidebar):
+1. Chandelier hanging from ceiling → Static
+2. Elevator moving up at constant 2 m/s → Dynamic
+3. Ball thrown upward (at peak) → NOT equilibrium (acceleration = -g)
+4. Hockey puck sliding at constant v on ice → Dynamic
 
-    Interactive features:
-    - Click on examples to see free-body diagrams
-    - "Test yourself" mode: Random scenario appears, student selects path
-    - Hover over decision diamonds to see expanded criteria
+Interactive features:
+- Click on examples to see free-body diagrams
+- "Test yourself" mode: Random scenario appears, student selects path
+- Hover over decision diamonds to see expanded criteria
 
-    Color scheme:
-    - Decision diamonds: Yellow
-    - Static equilibrium path/result: Blue
-    - Dynamic equilibrium path/result: Green
-    - Non-equilibrium path/result: Red
-    - Start/examples: Gray
+Color scheme:
+- Decision diamonds: Yellow
+- Static equilibrium path/result: Blue
+- Dynamic equilibrium path/result: Green
+- Non-equilibrium path/result: Red
+- Start/examples: Gray
 
-    Implementation: Flowchart using Mermaid.js with custom hover interactions
+Implementation: Flowchart using Mermaid.js with custom hover interactions
 </details>
 
 ## Weight: A Special Force
@@ -609,85 +615,87 @@ This "apparent weight" is what causes the stomach-drop feeling on roller coaster
 
 #### Diagram: Weight in Different Gravitational Fields MicroSim
 <details markdown="1">
-    <summary>Weight in Different Gravitational Fields MicroSim</summary>
-    **TODO:** human-review-needed
+<summary>Weight in Different Gravitational Fields MicroSim</summary>
 
-    Type: microsim
+**TODO:** human-review-needed
+**Status:** INCOMPLETE
 
-    Learning objective: Demonstrate the difference between mass (constant) and weight (variable) by showing the same object in different gravitational environments
+Type: microsim
 
-    Canvas layout (900x600px):
-    - Left section (600x600): Visual display showing three planetary surfaces side-by-side
-    - Right section (300x600): Control panel and data display
+Learning objective: Demonstrate the difference between mass (constant) and weight (variable) by showing the same object in different gravitational environments
 
-    Visual elements:
-    - Three planets/celestial bodies shown:
-      * Earth (blue-green)
-      * Moon (gray)
-      * Jupiter (orange with bands)
-    - Same object (astronaut figure) standing on each surface
-    - Spring scales beneath each astronaut showing different readings
-    - Force arrows showing weight (W = mg) scaled to magnitude
+Canvas layout (900x600px):
+- Left section (600x600): Visual display showing three planetary surfaces side-by-side
+- Right section (300x600): Control panel and data display
 
-    Planetary data displayed:
-    Earth:
-    - g = 9.8 m/s²
-    - Astronaut mass: 70 kg
-    - Weight: 686 N (calculated in real-time)
+Visual elements:
+- Three planets/celestial bodies shown:
+  * Earth (blue-green)
+  * Moon (gray)
+  * Jupiter (orange with bands)
+- Same object (astronaut figure) standing on each surface
+- Spring scales beneath each astronaut showing different readings
+- Force arrows showing weight (W = mg) scaled to magnitude
 
-    Moon:
-    - g = 1.6 m/s²
-    - Astronaut mass: 70 kg
-    - Weight: 112 N
+Planetary data displayed:
+Earth:
+- g = 9.8 m/s²
+- Astronaut mass: 70 kg
+- Weight: 686 N (calculated in real-time)
 
-    Jupiter:
-    - g = 24.8 m/s²
-    - Astronaut mass: 70 kg
-    - Weight: 1,736 N
+Moon:
+- g = 1.6 m/s²
+- Astronaut mass: 70 kg
+- Weight: 112 N
 
-    Interactive controls:
-    - Slider: "Object mass" (10-200 kg)
-    - Dropdown: Select celestial body to add (Mars, Venus, Saturn, etc.)
-    - Button: "Add custom planet" (enter custom g value)
-    - Toggle: "Show force arrows" vs "Show numerical values only"
-    - Display: Weight/mass ratio (W/m = g) for each location
+Jupiter:
+- g = 24.8 m/s²
+- Astronaut mass: 70 kg
+- Weight: 1,736 N
 
-    Real-time updates:
-    - As mass slider changes, all three weights recalculate
-    - Astronaut figure size changes to represent mass (visual cue)
-    - Spring scales compress proportionally to weight
-    - Force arrows scale in length
+Interactive controls:
+- Slider: "Object mass" (10-200 kg)
+- Dropdown: Select celestial body to add (Mars, Venus, Saturn, etc.)
+- Button: "Add custom planet" (enter custom g value)
+- Toggle: "Show force arrows" vs "Show numerical values only"
+- Display: Weight/mass ratio (W/m = g) for each location
 
-    Educational features:
-    - Highlight box: "Mass = 70 kg EVERYWHERE (constant)"
-    - Color coding: Mass values in blue (constant), weight values in red (variable)
-    - Comparison table showing weight ratios:
-      * Moon weight = 0.16 × Earth weight
-      * Jupiter weight = 2.53 × Earth weight
-    - "What if?" scenarios:
-      * "Could you jump higher on the Moon?" (Yes—same muscle force, less weight)
-      * "Would a baseball fly farther on Mars?" (Yes—weaker gravity)
+Real-time updates:
+- As mass slider changes, all three weights recalculate
+- Astronaut figure size changes to represent mass (visual cue)
+- Spring scales compress proportionally to weight
+- Force arrows scale in length
 
-    Special feature - Free space mode:
-    - Toggle: "Enter deep space (zero gravity)"
-    - Visual: Astronaut floats, no surface contact
-    - Spring scale reads zero
-    - Weight = 0 N
-    - Mass still = 70 kg
-    - Annotation: "Weightless but not massless!"
+Educational features:
+- Highlight box: "Mass = 70 kg EVERYWHERE (constant)"
+- Color coding: Mass values in blue (constant), weight values in red (variable)
+- Comparison table showing weight ratios:
+  * Moon weight = 0.16 × Earth weight
+  * Jupiter weight = 2.53 × Earth weight
+- "What if?" scenarios:
+  * "Could you jump higher on the Moon?" (Yes—same muscle force, less weight)
+  * "Would a baseball fly farther on Mars?" (Yes—weaker gravity)
 
-    Implementation notes:
-    - Use p5.js for rendering
-    - Store g-values for all celestial bodies in data structure
-    - Calculate W = mg on every frame
-    - Smooth transitions when changing mass (use lerp function)
+Special feature - Free space mode:
+- Toggle: "Enter deep space (zero gravity)"
+- Visual: Astronaut floats, no surface contact
+- Spring scale reads zero
+- Weight = 0 N
+- Mass still = 70 kg
+- Annotation: "Weightless but not massless!"
 
-    Visual styling:
-    - Planetary surfaces with appropriate colors/textures
-    - Clear numeric displays with large fonts
-    - Arrows with thickness proportional to force magnitude
+Implementation notes:
+- Use p5.js for rendering
+- Store g-values for all celestial bodies in data structure
+- Calculate W = mg on every frame
+- Smooth transitions when changing mass (use lerp function)
 
-    Canvas background: Star field for space context
+Visual styling:
+- Planetary surfaces with appropriate colors/textures
+- Clear numeric displays with large fonts
+- Arrows with thickness proportional to force magnitude
+
+Canvas background: Star field for space context
 </details>
 
 ## Normal Force: The Support Force
