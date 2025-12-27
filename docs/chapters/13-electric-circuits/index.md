@@ -171,9 +171,13 @@ Ohm's Law tells us that for a given resistance, the current is directly proporti
 
 #### Diagram: Ohm's Law Interactive Calculator MicroSim
 
+<iframe src="../../sims/ohms-law/main.html" width="100%" height="652px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/ohms-law/index.md)
+
 <details markdown="1">
     <summary>Ohm's Law Interactive Calculator MicroSim</summary>
-    **TODO:** human-review-needed
+    **Status:** done
 
     Type: microsim
 
@@ -718,9 +722,13 @@ If one component fails, other branches continue operating—like modern house wi
 
 #### Diagram: Series vs Parallel Circuit Comparison MicroSim
 
+<iframe src="../../sims/series-parallel/main.html" width="100%" height="652px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/series-parallel/index.md)
+
 <details markdown="1">
     <summary>Series vs Parallel Circuit Comparison MicroSim</summary>
-    **TODO:** human-review-needed
+    **Status:** done
 
     Type: microsim
 
@@ -1079,9 +1087,13 @@ $$P_{mech} = \tau \omega = E_{back} \times I$$
 
 #### Diagram: DC Motor Operation MicroSim
 
+<iframe src="../../sims/dc-motor/main.html" width="100%" height="502px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/dc-motor/index.md)
+
 <details markdown="1">
     <summary>DC Motor Operation MicroSim</summary>
-    **TODO:** human-review-needed
+    **Status:** done
 
     Type: microsim
 

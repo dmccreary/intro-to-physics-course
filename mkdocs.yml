@@ -70,6 +70,9 @@ nav:
     - Vector Basics: sims/vector-basics/index.md
     - Vector Addition: sims/vector-addition/index.md
     - Graph Analysis: sims/graph-analysis/index.md
+    - Ohm's Law Calculator: sims/ohms-law/index.md
+    - Series vs Parallel: sims/series-parallel/index.md
+    - DC Motor: sims/dc-motor/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md

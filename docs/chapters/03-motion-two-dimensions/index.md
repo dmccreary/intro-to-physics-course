@@ -112,8 +112,6 @@ Here are common free fall situations you might encounter:
 - **At maximum height:** $v_y = 0$ momentarily before falling back down
 
 #### Diagram: Free Fall Motion MicroSim
-
-#### Diagram: Free Fall Motion MicroSim
 <details markdown="1">
     <summary>Free Fall Motion MicroSim</summary>
     Type: microsim
@@ -191,10 +189,8 @@ The trajectory—the path traced by the projectile—forms a parabola. This eleg
 
 #### Diagram: Projectile Motion Trajectory Diagram
 
-#### Diagram: Projectile Motion
 <iframe src="../../sims/projectile-motion/main.html" height="482px" scrolling="no"></iframe>
 
-#### Diagram: Projectile Motion Trajectory Diagram
 <details markdown="1">
     <summary>Projectile Motion Trajectory Diagram</summary>
     Type: diagram
@@ -269,8 +265,6 @@ Consider these important observations:
 - Greater horizontal speed increases range but not flight time
 - Vertical velocity at impact depends only on fall height, not horizontal motion
 - At impact, velocity vector points downward and forward at some angle
-
-#### Diagram: Horizontal Projection Interactive Comparison
 
 #### Diagram: Horizontal Projection Interactive Comparison
 <details markdown="1">
@@ -369,8 +363,6 @@ The range equation reveals an interesting optimization: the angle that produces 
 | 45° | Optimal parabola | Medium | Maximum |
 | 60° | High arc | Longer | Medium |
 | 75° | Very steep | Longest | Short |
-
-#### Diagram: Angled Projectile Motion Explorer MicroSim
 
 #### Diagram: Angled Projectile Motion Explorer MicroSim
 <details markdown="1">
@@ -488,8 +480,6 @@ Here are typical situations involving relative velocity:
 - **Chase problems:** Relative velocity of pursuer and target determines whether they'll meet
 
 #### Diagram: River Crossing Relative Velocity Diagram
-
-#### Diagram: River Crossing Relative Velocity Diagram
 <details markdown="1">
     <summary>River Crossing Relative Velocity Diagram</summary>
     Type: diagram
@@ -539,8 +529,6 @@ Since velocity is a vector quantity, relative velocity problems require vector a
 2. **Pythagorean theorem and trigonometry:** For perpendicular velocities, use $v = \sqrt{v_x^2 + v_y^2}$ and $\theta = \tan^{-1}(v_y/v_x)$
 
 The component method is more general and works for any angles, while the geometric method is faster for perpendicular or parallel velocities.
-
-#### Diagram: Relative Velocity Problem Solver MicroSim
 
 #### Diagram: Relative Velocity Problem Solver MicroSim
 <details markdown="1">
