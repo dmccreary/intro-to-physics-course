@@ -1,0 +1,2944 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive visualization demonstrating how DC motors convert electrical energy to mechanical rotation through electromagnetic forces, showing back-EMF, torque, and efficiency relationships.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/intro-to-physics-course/sims/dc-motor/">
+      
+      
+        <link rel="prev" href="../series-parallel/">
+      
+      
+        <link rel="next" href="../distance-displacement/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>DC Motor Operation MicroSim - Introduction to Physics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-BF05WTGMW9"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-BF05WTGMW9",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-BF05WTGMW9",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="DC Motor Operation MicroSim - Introduction to Physics" >
+      
+        <meta  property="og:description"  content="An interactive visualization demonstrating how DC motors convert electrical energy to mechanical rotation through electromagnetic forces, showing back-EMF, torque, and efficiency relationships." >
+      
+        <meta property="og:image" content="https://dmccreary.github.io/intro-to-physics-course/sims/dc-motor/dc-motor.png">
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/intro-to-physics-course/sims/dc-motor/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="DC Motor Operation MicroSim - Introduction to Physics" >
+      
+        <meta  name="twitter:description"  content="An interactive visualization demonstrating how DC motors convert electrical energy to mechanical rotation through electromagnetic forces, showing back-EMF, torque, and efficiency relationships." >
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/intro-to-physics-course/sims/dc-motor/dc-motor.png">
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="navy" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dc-motor-operation-microsim" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Introduction to Physics" class="md-header__button md-logo" aria-label="Introduction to Physics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction to Physics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DC Motor Operation MicroSim
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/intro-to-physics-course/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Introduction to Physics" class="md-nav__button md-logo" aria-label="Introduction to Physics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Introduction to Physics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/intro-to-physics-course/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            MicroSims
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branches-of-physics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Branches of Physics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collisions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collisions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../current-animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Current Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scientific-method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scientific Method Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graph-viewer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning Graph Viewer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projectile-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projectile Motion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projectile-motion-gravity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projectile Motion Gravity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metric-scale-zoom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metric Scale Zoom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elasticity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elasticity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gravitational-attractor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gravitational Attractor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exoplanet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exoplanet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fluid-dynamics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fluid-Dynamics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solar-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solar System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../precision-accuracy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Precision vs Accuracy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-addition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector Addition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graph-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graph Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ohms-law/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ohm's Law Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../series-parallel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Series vs Parallel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DC Motor
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    DC Motor
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-components-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram Components Explained
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagram Components Explained">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permanent-magnets-stator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permanent Magnets (Stator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magnetic-field-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnetic Field Lines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#armature-rotor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Armature (Rotor)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-flow-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Flow Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#force-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force Vectors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commutator-and-brushes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commutator and Brushes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-physics-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Physics Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-displays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Displays
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-dc-motors-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How DC Motors Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-emf-and-speed-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Back-EMF and Speed Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stall-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stall Condition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency Curve
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grade-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grade Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activity-1-starting-the-motor-8-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 1: Starting the Motor (8 min)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-2-understanding-back-emf-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 2: Understanding Back-EMF (10 min)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-3-load-effects-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 3: Load Effects (10 min)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-4-speed-torque-relationship-7-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 4: Speed-Torque Relationship (7 min)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-5-efficiency-analysis-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 5: Efficiency Analysis (10 min)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discussion-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussion Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-misconceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Misconceptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Real-World Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electric-vehicles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Vehicles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#household-appliances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Household Appliances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formulas-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formulas Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formulas Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motor-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Equations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-characteristic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Characteristic
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../distance-displacement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Distance vs Displacement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../velocity-speed-comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Velocity Speed Comparison
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uniform-accelerated-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uniform vs Accelerated Motion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../position-time-analyzer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Position Time Analyzer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../velocity-time-area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Velocity Time Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../three-graph-analyzer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three Graph Analyzer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinematic-selector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinematic Selector
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector Components
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../free-fall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Free Fall
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../horizontal-projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Horizontal Projection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angled-projectile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Angled Projectile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../river-crossing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    River Crossing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relative-velocity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relative Velocity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../book-build-references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Build References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Elements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-components-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram Components Explained
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagram Components Explained">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permanent-magnets-stator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permanent Magnets (Stator)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magnetic-field-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnetic Field Lines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#armature-rotor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Armature (Rotor)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-flow-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Flow Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#force-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Force Vectors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commutator-and-brushes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commutator and Brushes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-physics-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Physics Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-displays" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Displays
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-dc-motors-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      How DC Motors Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#back-emf-and-speed-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Back-EMF and Speed Control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stall-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stall Condition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency Curve
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grade-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grade Level
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Activities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activity-1-starting-the-motor-8-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 1: Starting the Motor (8 min)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-2-understanding-back-emf-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 2: Understanding Back-EMF (10 min)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-3-load-effects-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 3: Load Effects (10 min)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-4-speed-torque-relationship-7-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 4: Speed-Torque Relationship (7 min)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-5-efficiency-analysis-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity 5: Efficiency Analysis (10 min)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discussion-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discussion Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-misconceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Misconceptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#real-world-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real-World Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Real-World Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electric-vehicles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Electric Vehicles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#household-appliances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Household Appliances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Industrial Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formulas-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formulas Reference
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Formulas Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motor-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Equations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-characteristic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Characteristic
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/intro-to-physics-course/blob/master/docs/sims/dc-motor/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="dc-motor-operation-microsim">DC Motor Operation MicroSim</h1>
+<iframe src="main.html" height="502px" width="100%" scrolling="no"></iframe>
+
+<p><a class="md-button md-button--primary" href="main.html">Run the DC Motor MicroSim Fullscreen</a></p>
+<p>You can include this MicroSim on your website using the following <code>iframe</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/intro-to-physics-course/sims/dc-motor/main.html&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;502px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="description">Description</h2>
+<p>This MicroSim provides an interactive visualization of DC motor operation, demonstrating how electrical current flowing through a coil in a magnetic field produces rotation. Students can explore the relationships between applied voltage, back-EMF, torque, speed, and efficiency.</p>
+<h3 id="visual-elements">Visual Elements</h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Permanent Magnets</strong></td>
+<td>Red (N) and blue (S) poles creating the magnetic field</td>
+</tr>
+<tr>
+<td><strong>Armature (Rotor)</strong></td>
+<td>Rotating coil shown as a simplified rectangular cross-section</td>
+</tr>
+<tr>
+<td><strong>Commutator</strong></td>
+<td>Split-ring connector that reverses current direction each half-rotation</td>
+</tr>
+<tr>
+<td><strong>Brushes</strong></td>
+<td>Fixed contacts delivering current to the rotating commutator</td>
+</tr>
+<tr>
+<td><strong>Magnetic Field Lines</strong></td>
+<td>Curved lines showing field direction from N to S</td>
+</tr>
+<tr>
+<td><strong>Force Vectors</strong></td>
+<td>Arrows showing F = BIL forces on the armature</td>
+</tr>
+<tr>
+<td><strong>Current Direction</strong></td>
+<td>Arrows indicating electron flow through the circuit</td>
+</tr>
+</tbody>
+</table>
+<h3 id="diagram-components-explained">Diagram Components Explained</h3>
+<h4 id="permanent-magnets-stator">Permanent Magnets (Stator)</h4>
+<ul>
+<li><strong>Red "N" (left)</strong> - North pole of the permanent magnet, creates one side of the magnetic field</li>
+<li><strong>Blue "S" (right)</strong> - South pole of the permanent magnet, creates the opposite side</li>
+</ul>
+<h4 id="magnetic-field-lines">Magnetic Field Lines</h4>
+<ul>
+<li><strong>Light gray curved lines</strong> - Show the magnetic field flowing from North to South pole through the motor cavity. The small triangular arrows indicate field direction (N→S).</li>
+</ul>
+<h4 id="armature-rotor">Armature (Rotor)</h4>
+<ul>
+<li><strong>Gray circular core (center)</strong> - The iron core that the coil wraps around, mounted on the shaft</li>
+<li><strong>Orange/copper rectangular coil</strong> - The wire winding that carries current; when current flows through it in a magnetic field, it experiences a force</li>
+</ul>
+<h4 id="current-flow-indicators">Current Flow Indicators</h4>
+<ul>
+<li><strong>Yellow triangular arrows</strong> on the coil - Show the direction of current flow through the wire</li>
+<li><strong>⊙ and ⊗ symbols</strong> - Indicate current direction perpendicular to the page:<ul>
+<li>⊙ = current coming OUT of the page (toward you)</li>
+<li>⊗ = current going INTO the page (away from you)</li>
+</ul>
+</li>
+</ul>
+<h4 id="force-vectors">Force Vectors</h4>
+<ul>
+<li><strong>Green "F" arrows</strong> - Show the magnetic force on each side of the coil (F = BIL). The forces point in opposite directions on opposite sides, creating torque that spins the motor.</li>
+</ul>
+<h4 id="commutator-and-brushes">Commutator and Brushes</h4>
+<ul>
+<li><strong>Gold split-ring (bottom)</strong> - The commutator; reverses current direction every half-turn to maintain rotation</li>
+<li><strong>Black rectangles with +/−</strong> - Carbon brushes that deliver current to the commutator; stationary while the commutator rotates</li>
+</ul>
+<h3 id="key-physics-concepts">Key Physics Concepts</h3>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Formula</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lorentz Force</strong></td>
+<td>F = BIL</td>
+<td>Force on current-carrying wire in magnetic field</td>
+</tr>
+<tr>
+<td><strong>Torque</strong></td>
+<td>τ = Force × radius</td>
+<td>Rotational force on the armature</td>
+</tr>
+<tr>
+<td><strong>Back-EMF</strong></td>
+<td>ε = k × ω</td>
+<td>Voltage generated by rotating coil opposing applied voltage</td>
+</tr>
+<tr>
+<td><strong>Current</strong></td>
+<td>I = (V - ε) / R</td>
+<td>Current depends on net voltage after back-EMF</td>
+</tr>
+<tr>
+<td><strong>Efficiency</strong></td>
+<td>η = P_out / P_in</td>
+<td>Mechanical power out vs electrical power in</td>
+</tr>
+</tbody>
+</table>
+<h3 id="controls">Controls</h3>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Applied Voltage</td>
+<td>0-12 V</td>
+<td>Battery/power supply voltage</td>
+</tr>
+<tr>
+<td>Load</td>
+<td>0-100%</td>
+<td>Mechanical resistance (friction, attached load)</td>
+</tr>
+<tr>
+<td>Show Field Lines</td>
+<td>On/Off</td>
+<td>Toggle magnetic field visualization</td>
+</tr>
+<tr>
+<td>Show Force Vectors</td>
+<td>On/Off</td>
+<td>Toggle F = BIL force arrows</td>
+</tr>
+<tr>
+<td>Show Current Flow</td>
+<td>On/Off</td>
+<td>Toggle current direction arrows</td>
+</tr>
+<tr>
+<td>Apply Brake</td>
+<td>Button</td>
+<td>Hold to stop motor and observe stall current</td>
+</tr>
+</tbody>
+</table>
+<h3 id="performance-displays">Performance Displays</h3>
+<table>
+<thead>
+<tr>
+<th>Display</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applied Voltage</strong></td>
+<td>Input voltage from power supply</td>
+</tr>
+<tr>
+<td><strong>Back-EMF</strong></td>
+<td>Generated voltage opposing current (increases with speed)</td>
+</tr>
+<tr>
+<td><strong>Current</strong></td>
+<td>Amperes flowing through motor</td>
+</tr>
+<tr>
+<td><strong>Torque</strong></td>
+<td>Rotational force in Newton-meters</td>
+</tr>
+<tr>
+<td><strong>Speed</strong></td>
+<td>Rotations per minute (RPM)</td>
+</tr>
+<tr>
+<td><strong>Input Power</strong></td>
+<td>Electrical power consumed (V × I)</td>
+</tr>
+<tr>
+<td><strong>Output Power</strong></td>
+<td>Mechanical power produced (τ × ω)</td>
+</tr>
+<tr>
+<td><strong>Efficiency</strong></td>
+<td>Percentage of input power converted to mechanical output</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-concepts">Key Concepts</h2>
+<h3 id="how-dc-motors-work">How DC Motors Work</h3>
+<ol>
+<li><strong>Current flows through coil</strong>: Applied voltage pushes current through the armature windings</li>
+<li><strong>Magnetic force on wire</strong>: F = BIL creates forces perpendicular to both current and field</li>
+<li><strong>Torque causes rotation</strong>: Opposite forces on each side of coil create rotational torque</li>
+<li><strong>Commutator reverses current</strong>: As coil rotates 180°, commutator switches current direction</li>
+<li><strong>Continuous rotation</strong>: Switching maintains same torque direction for continuous spinning</li>
+<li><strong>Back-EMF develops</strong>: Rotating coil generates voltage opposing applied voltage</li>
+<li><strong>Equilibrium reached</strong>: Motor speeds up until back-EMF + losses balance applied voltage</li>
+</ol>
+<h3 id="back-emf-and-speed-control">Back-EMF and Speed Control</h3>
+<p>Back-EMF is the key to understanding DC motor behavior:</p>
+<p>$$\epsilon_{back} = k \cdot \omega$$</p>
+<p>Where:
+- ε_back = back-EMF (volts)
+- k = motor constant (depends on construction)
+- ω = angular velocity (rad/s)</p>
+<p><strong>At startup</strong>: ω = 0, so back-EMF = 0, and current is maximum (only limited by resistance)</p>
+<p><strong>At steady speed</strong>: Back-EMF approaches applied voltage, limiting current</p>
+<p><strong>Under load</strong>: Speed drops, back-EMF drops, current increases, torque increases to match load</p>
+<h3 id="stall-condition">Stall Condition</h3>
+<p>When the motor is stalled (ω = 0):
+- No back-EMF generated
+- Maximum current flows: I = V/R
+- Maximum torque produced
+- Efficiency = 0% (all energy becomes heat)
+- Can damage motor if sustained!</p>
+<h3 id="efficiency-curve">Efficiency Curve</h3>
+<p>Motor efficiency varies with operating conditions:</p>
+<p>$$\eta = \frac{P_{mechanical}}{P_{electrical}} = \frac{\tau \cdot \omega}{V \cdot I}$$</p>
+<p>Maximum efficiency typically occurs at moderate speeds, not at maximum speed or maximum torque.</p>
+<h2 id="lesson-plan">Lesson Plan</h2>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>By the end of this activity, students will be able to:</p>
+<ol>
+<li>Explain how electromagnetic force creates rotation in a DC motor</li>
+<li>Describe the function of the commutator in maintaining continuous rotation</li>
+<li>Define back-EMF and explain how it affects motor current and speed</li>
+<li>Predict how changes in voltage and load affect motor performance</li>
+<li>Analyze the relationship between speed, torque, current, and efficiency</li>
+</ol>
+<h3 id="grade-level">Grade Level</h3>
+<p>High School Physics (Grades 9-12)</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>Understanding of magnetic fields and forces</li>
+<li>Ohm's Law (V = IR)</li>
+<li>Basic concepts of energy and power</li>
+</ul>
+<h3 id="duration">Duration</h3>
+<p>40-50 minutes</p>
+<h3 id="activities">Activities</h3>
+<h4 id="activity-1-starting-the-motor-8-min">Activity 1: Starting the Motor (8 min)</h4>
+<ol>
+<li>Set voltage to 0 V, load to 0%</li>
+<li>Slowly increase voltage to 3 V</li>
+<li>Observe:</li>
+<li>Motor begins to spin</li>
+<li>Current starts high, then decreases</li>
+<li>Back-EMF increases as speed increases</li>
+<li><strong>Questions</strong>:</li>
+<li>Why does current decrease as the motor speeds up?</li>
+<li>What generates the back-EMF?</li>
+</ol>
+<h4 id="activity-2-understanding-back-emf-10-min">Activity 2: Understanding Back-EMF (10 min)</h4>
+<ol>
+<li>Set voltage to 6 V, load to 0%</li>
+<li>Wait for steady state</li>
+<li>Note the back-EMF value (should be close to applied voltage)</li>
+<li>Click "Apply Brake" and hold</li>
+<li>Observe:</li>
+<li>Speed drops to 0</li>
+<li>Back-EMF drops to 0</li>
+<li>Current spikes dramatically</li>
+<li>"STALL WARNING" appears</li>
+<li>Release brake, watch motor recover</li>
+<li><strong>Discussion</strong>: Why do motors draw high current at startup?</li>
+</ol>
+<h4 id="activity-3-load-effects-10-min">Activity 3: Load Effects (10 min)</h4>
+<ol>
+<li>Set voltage to 9 V, load to 0%</li>
+<li>Record: Speed, Current, Torque, Efficiency</li>
+<li>Gradually increase load to 25%, 50%, 75%</li>
+<li>At each step, record the same values</li>
+<li>Create a table comparing performance at different loads</li>
+<li><strong>Analysis</strong>:</li>
+<li>How does load affect speed? (decreases)</li>
+<li>How does load affect current? (increases)</li>
+<li>How does load affect torque? (increases)</li>
+<li>Where is efficiency highest?</li>
+</ol>
+<h4 id="activity-4-speed-torque-relationship-7-min">Activity 4: Speed-Torque Relationship (7 min)</h4>
+<ol>
+<li>Watch the Speed vs Torque graph on the right panel</li>
+<li>Observe the operating point (circle on the line)</li>
+<li>Change voltage from 6V to 12V</li>
+<li>Notice: Higher voltage = same slope, but shifted up</li>
+<li>Change load while watching the operating point move</li>
+<li><strong>Key insight</strong>: At constant voltage, speed and torque trade off linearly</li>
+</ol>
+<h4 id="activity-5-efficiency-analysis-10-min">Activity 5: Efficiency Analysis (10 min)</h4>
+<ol>
+<li>Set voltage to 12 V</li>
+<li>Vary load from 0% to 100% slowly</li>
+<li>Watch the efficiency bar</li>
+<li>Find the load setting that gives maximum efficiency</li>
+<li><strong>Questions</strong>:</li>
+<li>Why isn't efficiency 100% at low load?</li>
+<li>Why does efficiency drop at very high load?</li>
+<li>What happens to the "lost" energy?</li>
+</ol>
+<h3 id="discussion-questions">Discussion Questions</h3>
+<ol>
+<li>Why do electric car motors make a whining sound at high acceleration?</li>
+<li>Why do power tools sometimes smell like burning when stalled?</li>
+<li>How does a DC motor act as a generator when coasting?</li>
+<li>Why do modern EVs use regenerative braking?</li>
+</ol>
+<h3 id="assessment">Assessment</h3>
+<ul>
+<li>Students correctly explain the commutator's role</li>
+<li>Students predict current behavior when load changes</li>
+<li>Students identify the relationship between back-EMF and speed</li>
+<li>Students explain why stall conditions are dangerous</li>
+<li>Students analyze the efficiency curve and identify optimal operating conditions</li>
+</ul>
+<h2 id="common-misconceptions">Common Misconceptions</h2>
+<ol>
+<li><strong>"Motors use more electricity at high speed"</strong>: Actually, unloaded motors draw less current at high speed due to back-EMF</li>
+<li><strong>"Bigger voltage = more efficiency"</strong>: Efficiency depends on load matching, not just voltage</li>
+<li><strong>"Back-EMF is a problem"</strong>: It's actually essential for speed regulation and limiting current</li>
+<li><strong>"Motors always spin at constant speed"</strong>: Speed depends on the balance between voltage, back-EMF, and load</li>
+</ol>
+<h2 id="real-world-applications">Real-World Applications</h2>
+<h3 id="electric-vehicles">Electric Vehicles</h3>
+<ul>
+<li>DC motors (or DC-like behavior in AC motors with inverters)</li>
+<li>Regenerative braking uses motor as generator</li>
+<li>High torque at low speed for acceleration</li>
+</ul>
+<h3 id="power-tools">Power Tools</h3>
+<ul>
+<li>High starting torque for drilling/cutting</li>
+<li>Stall protection circuits prevent burnout</li>
+</ul>
+<h3 id="household-appliances">Household Appliances</h3>
+<ul>
+<li>Fans, mixers, vacuums</li>
+<li>Speed control via voltage or PWM</li>
+</ul>
+<h3 id="industrial-applications">Industrial Applications</h3>
+<ul>
+<li>Conveyor belts, pumps, compressors</li>
+<li>Precise speed control with feedback systems</li>
+</ul>
+<h2 id="formulas-reference">Formulas Reference</h2>
+<h3 id="motor-equations">Motor Equations</h3>
+<p>$$F = BIL$$
+Force on a current-carrying conductor</p>
+<p>$$\tau = r \times F = r \cdot BIL$$
+Torque on the armature</p>
+<p>$$\epsilon_{back} = k \cdot \omega$$
+Back-EMF (generator effect)</p>
+<p>$$I = \frac{V - \epsilon_{back}}{R}$$
+Current considering back-EMF</p>
+<p>$$P_{in} = V \cdot I$$
+Electrical input power</p>
+<p>$$P_{out} = \tau \cdot \omega$$
+Mechanical output power</p>
+<p>$$\eta = \frac{P_{out}}{P_{in}} \times 100\%$$
+Efficiency</p>
+<h3 id="motor-characteristic">Motor Characteristic</h3>
+<p>At steady state with constant voltage:
+$$\omega = \frac{V}{k} - \frac{R}{k^2} \cdot \tau$$</p>
+<p>This is the linear speed-torque relationship shown in the graph.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>Physics Classroom: Magnetism and Electromagnetism</li>
+<li>Khan Academy: Motors and Generators</li>
+<li>HyperPhysics: DC Motor</li>
+<li>OpenStax Physics: Electromagnetic Induction</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../series-parallel/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Series vs Parallel">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Series vs Parallel
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../distance-displacement/" class="md-footer__link md-footer__link--next" aria-label="Next: Distance vs Displacement">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Distance vs Displacement
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+    
+  </body>
+</html>
