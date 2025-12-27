@@ -2,44 +2,96 @@
 // Demonstrates how astronomers detect exoplanets using the transit method
 
 let canvasWidth = 800;
-let canvasHeight = 550;
-let starRadius = 80;
-let planetRadiusRatio = 0.1; // Planet radius as fraction of star radius
-let orbitalPeriod = 5; // Seconds for one orbit
+let drawHeight = 430;
+let controlHeight = 70;
+let canvasHeight = drawHeight + controlHeight;
+let starRadius, orbitRadius;
+let planetRadiusRatio = 0.1;
+let orbitalPeriod = 5;
 let orbitalAngle = 0;
-let orbitRadius = 200;
 
 // Light curve data
 let lightCurve = [];
 let maxDataPoints = 400;
 let brightness = 1.0;
 
-// Sliders
+// Controls
 let planetSizeSlider, periodSlider;
+let startButton;
+let running = false;
 let margin = 30;
+// x position for left edge of sliders
+// Take into account button width
+let sliderLeftMargin = 200;
+let controlsY = drawHeight;
 
-// Layout
-let starViewHeight = 280;
-let graphHeight = 200;
+
+// Layout proportions
+let starViewHeight, graphHeight;
 let controlsHeight = 70;
 
-function setup() {
-    const canvas = createCanvas(canvasWidth, canvasHeight);
+function updateCanvasSize() {
+    canvasWidth = windowWidth;
 
-    // Planet size slider (as percentage of star)
+    // Update layout based on canvas size
+    starViewHeight = canvasHeight * 0.52;
+    graphHeight = canvasHeight * 0.34;
+
+    // Scale star and orbit based on width
+    starRadius = canvasWidth * 0.09;
+    orbitRadius = canvasWidth * 0.22;
+    positionControls();
+}
+
+function setup() {
+    updateCanvasSize();
+    createCanvas(canvasWidth, canvasHeight);
+
+    // Start/Pause button
+    startButton = createButton('Start');
+    startButton.mousePressed(toggleSimulation);
+    startButton.style('font-size', '14px');
+    startButton.style('padding', '8px 16px');
+    startButton.style('cursor', 'pointer');
+
+    // Planet size slider
     planetSizeSlider = createSlider(5, 30, 10, 1);
-    planetSizeSlider.position(margin + 150, starViewHeight + graphHeight + 15);
-    planetSizeSlider.style('width', '200px');
+    planetSizeSlider.position(sliderLeftMargin, controlsY + 12);
 
     // Orbital period slider
     periodSlider = createSlider(2, 15, 5, 0.5);
-    periodSlider.position(margin + 150, starViewHeight + graphHeight + 45);
-    periodSlider.style('width', '200px');
+    periodSlider.position(sliderLeftMargin, controlsY + 40);
 
-    // Initialize light curve with baseline
+    // position the controls initially and after resize
+    positionControls();
+
+    // Initialize light curve
     for (let i = 0; i < maxDataPoints; i++) {
         lightCurve.push(1.0);
     }
+}
+
+function positionControls() {
+    // Only update if controls exist
+    if (!startButton || !planetSizeSlider || !periodSlider) return;
+
+    // Button in lower left
+    startButton.position(margin, controlsY + 20);
+
+    // Resize the sliders to fill the width of the canvas
+    planetSizeSlider.size(canvasWidth - margin*5 - sliderLeftMargin);
+    periodSlider.size(canvasWidth - margin*5 - sliderLeftMargin);
+}
+
+function toggleSimulation() {
+    running = !running;
+    startButton.html(running ? 'Pause' : 'Start');
+}
+
+function windowResized() {
+    updateCanvasSize();
+    resizeCanvas(canvasWidth, canvasHeight);
+    positionControls();
 }
 
 function draw() {
@@ -49,67 +101,60 @@ function draw() {
     planetRadiusRatio = planetSizeSlider.value() / 100;
     orbitalPeriod = periodSlider.value();
 
-    // Calculate planet position (edge-on orbit for maximum transit visibility)
-    let angularSpeed = TWO_PI / (orbitalPeriod * 60); // 60 fps
-    orbitalAngle += angularSpeed;
-    if (orbitalAngle > TWO_PI) orbitalAngle -= TWO_PI;
-
-    // Planet x position (circular orbit viewed edge-on)
-    let planetX = canvasWidth / 2 + orbitRadius * cos(orbitalAngle);
-    let planetY = starViewHeight / 2 + 20; // Same Y as star (edge-on view)
-    let planetRadius = starRadius * planetRadiusRatio;
-
-    // Calculate brightness based on transit
-    brightness = calculateBrightness(planetX, planetY, planetRadius);
-
-    // Update light curve
-    lightCurve.push(brightness);
-    if (lightCurve.length > maxDataPoints) {
-        lightCurve.shift();
+    // Only update angle when running
+    if (running) {
+        let angularSpeed = TWO_PI / (orbitalPeriod * 60);
+        orbitalAngle += angularSpeed;
+        if (orbitalAngle > TWO_PI) orbitalAngle -= TWO_PI;
     }
 
-    // Draw star view section
-    drawStarView(planetX, planetY, planetRadius);
+    // Star is always at center
+    let starX = canvasWidth / 2;
+    let starY = starViewHeight / 2;
 
-    // Draw light curve graph
+    // Planet orbits around star
+    let planetX = starX + orbitRadius * cos(orbitalAngle);
+    let planetY = starY;
+    let planetRadius = starRadius * planetRadiusRatio;
+
+    // Calculate brightness
+    brightness = calculateBrightness(planetX, planetY, planetRadius, starX, starY);
+
+    // Update light curve only when running
+    if (running) {
+        lightCurve.push(brightness);
+        if (lightCurve.length > maxDataPoints) {
+            lightCurve.shift();
+        }
+    }
+
+    // Draw sections
+    drawStarView(planetX, planetY, planetRadius, starX, starY);
     drawLightCurve();
-
-    // Draw controls labels
     drawControls();
-
-    // Draw transit indicator
-    drawTransitIndicator(brightness);
+    drawTransitIndicator();
 }
 
-function calculateBrightness(planetX, planetY, planetRadius) {
-    let starX = canvasWidth / 2;
-    let starY = starViewHeight / 2 + 20;
-
-    // Distance between planet center and star center
+function calculateBrightness(planetX, planetY, planetRadius, starX, starY) {
     let d = dist(planetX, planetY, starX, starY);
 
-    // Check if planet is in front of star (sin(angle) > 0 means near side of orbit)
-    // angles 0 to PI: planet is between observer and star (can transit)
-    // angles PI to 2PI: planet is behind star (no transit)
+    // Planet in front when sin > 0 (angles 0 to PI)
     let inFront = sin(orbitalAngle) > 0;
 
     if (!inFront) {
-        return 1.0; // Planet behind star, full brightness
+        return 1.0;
     }
 
-    // Calculate overlap area
     let R = starRadius;
     let r = planetRadius;
 
     if (d >= R + r) {
-        return 1.0; // No overlap
+        return 1.0;
     } else if (d <= abs(R - r)) {
-        // Complete overlap (planet fully in front of star)
         let blockedArea = PI * r * r;
         let starArea = PI * R * R;
         return 1.0 - (blockedArea / starArea);
     } else {
-        // Partial overlap - use lens intersection formula
         let part1 = r * r * acos((d * d + r * r - R * R) / (2 * d * r));
         let part2 = R * R * acos((d * d + R * R - r * r) / (2 * d * R));
         let part3 = 0.5 * sqrt((-d + r + R) * (d + r - R) * (d - r + R) * (d + r + R));
@@ -119,39 +164,32 @@ function calculateBrightness(planetX, planetY, planetRadius) {
     }
 }
 
-function drawStarView(planetX, planetY, planetRadius) {
-    let starX = canvasWidth / 2;
-    let starY = starViewHeight / 2 + 20;
-
-    // Section background
+function drawStarView(planetX, planetY, planetRadius, starX, starY) {
+    // Background
     fill(15, 15, 30);
     noStroke();
     rect(0, 0, canvasWidth, starViewHeight);
 
-    // Draw some background stars
+    // Background stars
     fill(255, 255, 255, 100);
     randomSeed(42);
     for (let i = 0; i < 50; i++) {
-        let sx = random(canvasWidth);
-        let sy = random(starViewHeight);
-        let size = random(1, 3);
-        ellipse(sx, sy, size, size);
+        ellipse(random(canvasWidth), random(starViewHeight), random(1, 3));
     }
 
-    // Draw orbital path (dashed line)
+    // Orbital path (dashed ellipse)
     stroke(100, 100, 150, 100);
     strokeWeight(1);
     drawingContext.setLineDash([5, 5]);
     noFill();
-    ellipse(starX, starY, orbitRadius * 2, 20); // Ellipse for edge-on view
+    ellipse(starX, starY, orbitRadius * 2, 20);
     drawingContext.setLineDash([]);
 
-    // Draw star with glow effect
+    // Star glow
     noStroke();
-    let glowLayers = 5;
-    for (let i = glowLayers; i > 0; i--) {
-        let alpha = map(i, glowLayers, 1, 30, 200);
-        let size = starRadius * 2 + i * 20;
+    for (let i = 5; i > 0; i--) {
+        let alpha = map(i, 5, 1, 30, 200);
+        let size = starRadius * 2 + i * 15;
         fill(255, 200, 100, alpha * brightness);
         ellipse(starX, starY, size, size);
     }
@@ -160,7 +198,7 @@ function drawStarView(planetX, planetY, planetRadius) {
     fill(255, 240, 200);
     ellipse(starX, starY, starRadius * 2, starRadius * 2);
 
-    // Draw planet only when in front of star (visible to observer)
+    // Planet (only when in front)
     let inFront = sin(orbitalAngle) > 0;
     if (inFront) {
         fill(50, 50, 80);
@@ -168,42 +206,38 @@ function drawStarView(planetX, planetY, planetRadius) {
         strokeWeight(2);
         ellipse(planetX, planetY, planetRadius * 2, planetRadius * 2);
     }
-    // Planet is completely hidden when behind star - no drawing
 
     // Title
     fill(255);
     noStroke();
-    textSize(24);
+    textSize(18);
     textAlign(LEFT, TOP);
     text("Exoplanet Transit Detection", margin, 10);
 
-    // Transit depth display
+    // Transit info
     let transitDepth = (1 - brightness) * 100;
-    textSize(14);
+    textSize(13);
     textAlign(RIGHT, TOP);
     fill(200, 200, 255);
-    text(`Transit Depth: ${transitDepth.toFixed(2)}%`, canvasWidth - margin*2, 10);
+    text(`Transit Depth: ${transitDepth.toFixed(2)}%`, canvasWidth - margin, 10);
 
     let status = inFront && transitDepth > 0.01 ? "TRANSITING" : (inFront ? "Approaching" : "Behind Star");
     fill(transitDepth > 0.01 && inFront ? color(255, 100, 100) : color(150, 150, 200));
-    text(status, canvasWidth - margin*2, 30);
+    text(status, canvasWidth - margin, 28);
 }
 
 function drawLightCurve() {
     let graphY = starViewHeight;
-    let graphWidth = canvasWidth - margin * 2;
+    let graphWidth = canvasWidth - margin * 3;
 
-    // Graph background
+    // Background
     fill(10, 10, 25);
     stroke(50, 50, 80);
     strokeWeight(1);
-    rect(margin, graphY, graphWidth, graphHeight);
+    rect(margin*2, graphY, graphWidth, graphHeight);
 
     // Grid lines
     stroke(40, 40, 60);
-    strokeWeight(1);
-
-    // Horizontal grid lines
     for (let i = 0; i <= 4; i++) {
         let y = graphY + graphHeight * i / 4;
         line(margin, y, canvasWidth - margin, y);
@@ -212,103 +246,90 @@ function drawLightCurve() {
     // Y-axis labels
     fill(150, 150, 200);
     noStroke();
-    textSize(11);
+    textSize(10);
     textAlign(RIGHT, CENTER);
     for (let i = 0; i <= 4; i++) {
         let y = graphY + graphHeight * i / 4;
-        let val = 1.0 - (i * 0.01); // 1.00 to 0.96
-        text(val.toFixed(2), margin - 5, y);
+        let val = 1.0 - (i * 0.01);
+        text(val.toFixed(2), margin +20, y);
     }
 
-    // X-axis label
+    // Axis labels
     textAlign(CENTER, TOP);
-    text("Time →", canvasWidth / 2, graphY + graphHeight + 5);
+    text("Time", canvasWidth / 2, graphY + graphHeight + 4);
 
-    // Y-axis label
     push();
-    translate(15, graphY + graphHeight / 2);
-    rotate(-HALF_PI);
-    textAlign(CENTER, CENTER);
-    text("Relative Brightness", 0, 0);
+        translate(12, graphY + graphHeight / 2);
+        rotate(-HALF_PI);
+        textAlign(CENTER, CENTER);
+        text("Brightness", 0, 0);
     pop();
 
-    // Graph title in the upper left
+    // Title
     textAlign(LEFT, TOP);
-    textSize(14);
+    textSize(12);
     fill(200, 200, 255);
-    text("Light Curve", margin + 10, graphY -20);
+    text("Light Curve", margin + 8, graphY - margin);
 
-    // Draw light curve
+    // Draw curve
+    // Do not draw in the y-label area
     stroke(100, 200, 255);
     strokeWeight(2);
     noFill();
     beginShape();
     for (let i = 0; i < lightCurve.length; i++) {
-        let x = map(i, 0, maxDataPoints, margin, canvasWidth - margin);
-        // Map brightness 0.96-1.0 to fill the graph height
-        let minBrightness = 0.96;
-        let y = map(lightCurve[i], minBrightness, 1.0, graphY + graphHeight, graphY);
+        let x = map(i, 0, maxDataPoints, margin*2, canvasWidth - margin);
+        let y = map(lightCurve[i], 0.96, 1.0, graphY + graphHeight, graphY);
         y = constrain(y, graphY, graphY + graphHeight);
         vertex(x, y);
     }
     endShape();
 
-    // Current position marker
+    // Current marker
     let currentX = canvasWidth - margin;
     let currentY = map(brightness, 0.96, 1.0, graphY + graphHeight, graphY);
     currentY = constrain(currentY, graphY, graphY + graphHeight);
     fill(255, 100, 100);
     noStroke();
-    ellipse(currentX, currentY, 8, 8);
+    ellipse(currentX, currentY, 6, 6);
 }
 
 function drawControls() {
     let controlsY = starViewHeight + graphHeight;
 
-    // Controls background
+    // Background
     fill(25, 25, 45);
     noStroke();
     rect(0, controlsY, canvasWidth, controlsHeight);
 
-    // Divider line
+    // Divider
     stroke(60, 60, 100);
-    strokeWeight(1);
     line(0, controlsY, canvasWidth, controlsY);
 
-    // Labels
+    // Slider labels (to the right of button)
     fill(200, 200, 255);
     noStroke();
-    textSize(13);
+    textSize(12);
     textAlign(LEFT, CENTER);
+    let labelX = margin + 100;
+    text(`Size: ${planetSizeSlider.value()}%`, labelX, controlsY + 20);
+    text(`Period: ${periodSlider.value().toFixed(1)}s`, labelX, controlsY + 48);
 
-    text(`Planet Size: ${planetSizeSlider.value()}% of star`, margin/2, controlsY + 22);
-    text(`Orbital Period: ${periodSlider.value().toFixed(1)} seconds`, margin/2, controlsY + 52);
-
-    // Current values on right side
+    // Right side info
     textAlign(RIGHT, CENTER);
-    let planetRadiusKm = (planetSizeSlider.value() / 100 * 696340).toFixed(0); // Sun radius = 696,340 km
-    text(`(${planetRadiusKm} km if Sun-sized star)`, canvasWidth - margin*2, controlsY + 22);
-
-    // Transit depth calculation
     let depth = pow(planetSizeSlider.value() / 100, 2) * 100;
-    text(`Expected max transit depth: ${depth.toFixed(2)}%`, canvasWidth - margin*2, controlsY + 52);
+    text(`Max depth: ${depth.toFixed(2)}%`, canvasWidth - margin, controlsY + 20);
+
+    let radiusKm = (planetSizeSlider.value() / 100 * 696340).toFixed(0);
+    text(`(${radiusKm} km)`, canvasWidth - margin, controlsY + 48);
 }
 
-function drawTransitIndicator(brightness) {
-    // Visual indicator when transit is occurring
+function drawTransitIndicator() {
     if (brightness < 0.9999) {
-        let transitDepth = (1 - brightness) * 100;
-
-        // Pulsing border effect
         let pulse = sin(frameCount * 0.1) * 0.3 + 0.7;
         stroke(255, 100, 100, 150 * pulse);
         strokeWeight(3);
         noFill();
         rect(2, 2, canvasWidth - 4, starViewHeight - 4, 5);
     }
-}
-
-// Reset light curve when parameters change significantly
-function mouseReleased() {
-    // Optional: could reset light curve here
 }

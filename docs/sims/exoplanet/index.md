@@ -8,16 +8,16 @@ quality_score: 90
 
 # Exoplanet Transit Detection
 
-<iframe src="main.html" width="100%" height="550px"></iframe>
+<iframe src="main.html" width="100%" height="500px" scrolling="no"></iframe>
 
 Copy this iframe to your website:
 
 ```html
-<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/exoplanet/main.html" width="100%" height="550px"></iframe>
+<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/exoplanet/main.html" width="100%" height="500px"></iframe>
 ```
 
-[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
-[]()
+[Run the Exoplanet Transit Detection MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+[Edit the Exoplanet Transit Detection MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/kYFkLMXgi)
 
 ## Description
 
