@@ -35,6 +35,32 @@ This MicroSim provides an interactive visualization of DC motor operation, demon
 | **Force Vectors** | Arrows showing F = BIL forces on the armature |
 | **Current Direction** | Arrows indicating electron flow through the circuit |
 
+### Diagram Components Explained
+
+#### Permanent Magnets (Stator)
+- **Red "N" (left)** - North pole of the permanent magnet, creates one side of the magnetic field
+- **Blue "S" (right)** - South pole of the permanent magnet, creates the opposite side
+
+#### Magnetic Field Lines
+- **Light gray curved lines** - Show the magnetic field flowing from North to South pole through the motor cavity. The small triangular arrows indicate field direction (N→S).
+
+#### Armature (Rotor)
+- **Gray circular core (center)** - The iron core that the coil wraps around, mounted on the shaft
+- **Orange/copper rectangular coil** - The wire winding that carries current; when current flows through it in a magnetic field, it experiences a force
+
+#### Current Flow Indicators
+- **Yellow triangular arrows** on the coil - Show the direction of current flow through the wire
+- **⊙ and ⊗ symbols** - Indicate current direction perpendicular to the page:
+    - ⊙ = current coming OUT of the page (toward you)
+    - ⊗ = current going INTO the page (away from you)
+
+#### Force Vectors
+- **Green "F" arrows** - Show the magnetic force on each side of the coil (F = BIL). The forces point in opposite directions on opposite sides, creating torque that spins the motor.
+
+#### Commutator and Brushes
+- **Gold split-ring (bottom)** - The commutator; reverses current direction every half-turn to maintain rotation
+- **Black rectangles with +/−** - Carbon brushes that deliver current to the commutator; stationary while the commutator rotates
+
 ### Key Physics Concepts
 
 | Concept | Formula | Description |

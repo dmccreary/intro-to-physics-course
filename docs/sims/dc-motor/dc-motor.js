@@ -3,12 +3,13 @@
 
 // Canvas dimensions
 let canvasWidth = 900;
-let drawHeight = 530;
-let controlHeight = 120;
+let drawHeight = 410;
+let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
+let sliderLeftMargin = 280;
 
 // Motor visualization
-let motorCenterX = 220;
+let motorCenterX = 200;
 let motorCenterY = 220;
 let motorRadius = 150;
 
@@ -38,7 +39,8 @@ let slowMotion = false;
 // UI elements
 let voltageSlider, loadSlider;
 let fieldCheckbox, forceCheckbox, currentCheckbox, slowCheckbox;
-let brakeButton;
+let startPauseButton, brakeButton;
+let isRunning = false;
 let brakeApplied = false;
 
 function setup() {
@@ -56,58 +58,71 @@ function createControls() {
     let y2 = drawHeight + 45;
     let y3 = drawHeight + 75;
 
+    // Buttons on left edge
+    startPauseButton = createButton('Start');
+    startPauseButton.position(10, y1);
+    startPauseButton.mousePressed(toggleStartPause);
+    startPauseButton.style('font-size', '12px');
+    startPauseButton.style('padding', '5px 12px');
+
+    brakeButton = createButton('Brake');
+    brakeButton.position(75, y1);
+    brakeButton.mousePressed(toggleBrake);
+    brakeButton.style('font-size', '12px');
+    brakeButton.style('padding', '5px 12px');
+
+    let resetBtn = createButton('Reset');
+    resetBtn.position(140, y1);
+    resetBtn.mousePressed(resetMotor);
+    resetBtn.style('font-size', '12px');
+    resetBtn.style('padding', '5px 12px');
+
     // Voltage slider
     voltageSlider = createSlider(0, 12, 6, 0.5);
-    voltageSlider.position(100, y1);
-    voltageSlider.size(120);
+    voltageSlider.position(sliderLeftMargin, y1);
 
     // Load slider
     loadSlider = createSlider(0, 100, 20, 1);
-    loadSlider.position(100, y2);
-    loadSlider.size(120);
+    loadSlider.position(sliderLeftMargin, y2);
 
-    // Checkboxes
-    fieldCheckbox = createCheckbox(' Field Lines', true);
-    fieldCheckbox.position(250, y1);
-    fieldCheckbox.style('font-size', '12px');
+    // Checkboxes (positions set in updateSliderSizes)
+    fieldCheckbox = createCheckbox(' Field', true);
+    fieldCheckbox.style('font-size', '11px');
     fieldCheckbox.changed(() => showFieldLines = fieldCheckbox.checked());
 
-    forceCheckbox = createCheckbox(' Force Vectors', true);
-    forceCheckbox.position(250, y2);
-    forceCheckbox.style('font-size', '12px');
+    forceCheckbox = createCheckbox(' Forces', true);
+    forceCheckbox.style('font-size', '11px');
     forceCheckbox.changed(() => showForceVectors = forceCheckbox.checked());
 
-    currentCheckbox = createCheckbox(' Current Flow', true);
-    currentCheckbox.position(370, y1);
-    currentCheckbox.style('font-size', '12px');
+    currentCheckbox = createCheckbox(' Current', true);
+    currentCheckbox.style('font-size', '11px');
     currentCheckbox.changed(() => showCurrentDirection = currentCheckbox.checked());
 
-    slowCheckbox = createCheckbox(' Slow Motion', false);
-    slowCheckbox.position(370, y2);
-    slowCheckbox.style('font-size', '12px');
+    slowCheckbox = createCheckbox(' Slow', false);
+    slowCheckbox.style('font-size', '11px');
     slowCheckbox.changed(() => slowMotion = slowCheckbox.checked());
 
-    // Brake button
-    brakeButton = createButton('Apply Brake');
-    brakeButton.position(500, y1);
-    brakeButton.mousePressed(toggleBrake);
+    // Set initial sizes and positions for sliders and checkboxes
+    updateSliderSizes();
+}
 
-    // Reset button
-    let resetBtn = createButton('Reset');
-    resetBtn.position(600, y1);
-    resetBtn.mousePressed(resetMotor);
+function toggleStartPause() {
+    isRunning = !isRunning;
+    startPauseButton.html(isRunning ? 'Pause' : 'Start');
 }
 
 function toggleBrake() {
     brakeApplied = !brakeApplied;
-    brakeButton.html(brakeApplied ? 'Release Brake' : 'Apply Brake');
+    brakeButton.html(brakeApplied ? 'Release' : 'Brake');
 }
 
 function resetMotor() {
     angularVelocity = 0;
     armatureAngle = 0;
+    isRunning = false;
+    startPauseButton.html('Start');
     brakeApplied = false;
-    brakeButton.html('Apply Brake');
+    brakeButton.html('Brake');
     voltageSlider.value(6);
     loadSlider.value(20);
 }
@@ -134,20 +149,23 @@ function updateMotorPhysics() {
     // Calculate motor torque: τ = k * I
     torqueMotor = motorConstant * current;
 
-    // Net torque and angular acceleration
-    let frictionTorque = 0.0001 * angularVelocity;  // Viscous friction
-    let netTorque = torqueMotor - loadTorque - frictionTorque;
+    // Only update physics when running
+    if (isRunning) {
+        // Net torque and angular acceleration
+        let frictionTorque = 0.0001 * angularVelocity;  // Viscous friction
+        let netTorque = torqueMotor - loadTorque - frictionTorque;
 
-    // Update angular velocity: dω/dt = τ/J
-    let dt = slowMotion ? 0.005 : 0.016;
-    let angularAccel = netTorque / inertia;
-    angularVelocity += angularAccel * dt;
-    angularVelocity = max(0, angularVelocity);  // No reverse for simple model
+        // Update angular velocity: dω/dt = τ/J
+        let dt = slowMotion ? 0.005 : 0.016;
+        let angularAccel = netTorque / inertia;
+        angularVelocity += angularAccel * dt;
+        angularVelocity = max(0, angularVelocity);  // No reverse for simple model
 
-    // Update angle
-    let angleStep = slowMotion ? angularVelocity * 0.002 : angularVelocity * 0.016;
-    armatureAngle += angleStep;
-    if (armatureAngle > TWO_PI) armatureAngle -= TWO_PI;
+        // Update angle
+        let angleStep = slowMotion ? angularVelocity * 0.002 : angularVelocity * 0.016;
+        armatureAngle += angleStep;
+        if (armatureAngle > TWO_PI) armatureAngle -= TWO_PI;
+    }
 
     // Calculate power and efficiency
     electricalPower = voltage * current;
@@ -161,7 +179,14 @@ function draw() {
     updateMotorPhysics();
 
     // Background
-    background(250);
+    // Drawing area (aliceblue background)
+    fill('aliceblue');
+    stroke('silver');
+    rect(0, 0, width, drawHeight);
+
+    // Controls background
+    fill('white');
+    rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Title
     fill(30);
@@ -178,11 +203,6 @@ function draw() {
 
     // Draw performance graph
     drawPerformanceGraph();
-
-    // Control area
-    fill(245);
-    noStroke();
-    rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Control labels
     drawControlLabels();
@@ -240,7 +260,7 @@ function drawMotor() {
     textSize(12);
     textAlign(CENTER, TOP);
     noStroke();
-    text('Motor Cross-Section', motorCenterX, motorCenterY + motorRadius + 30);
+    text('Motor Cross-Section', motorCenterX, motorCenterY + motorRadius + 20);
 }
 
 function drawMagnets() {
@@ -270,7 +290,7 @@ function drawMagnets() {
 }
 
 function drawFieldLines() {
-    stroke(100, 100, 200, 100);
+    stroke(200, 200, 240, 200);
     strokeWeight(1);
     noFill();
 
@@ -289,7 +309,7 @@ function drawFieldLines() {
         let arrowY = y * 0.85;
         push();
         translate(arrowX, arrowY);
-        fill(100, 100, 200, 150);
+        fill(200, 200, 240, 220);
         noStroke();
         triangle(8, 0, -4, -4, -4, 4);
         pop();
@@ -471,14 +491,14 @@ function drawArrow(x1, y1, x2, y2, col) {
 }
 
 function drawInfoPanel() {
-    let panelX = 450;
+    let panelX = 400;
     let panelY = 40;
-    let panelWidth = 200;
+    let panelWidth = 150;
     let panelHeight = 280;
 
     // Panel background
-    fill(255);
-    stroke(180);
+    fill('white');
+    stroke('gray');
     strokeWeight(1);
     rect(panelX, panelY, panelWidth, panelHeight, 5);
 
@@ -573,10 +593,10 @@ function drawInfoPanel() {
 }
 
 function drawPerformanceGraph() {
-    let graphX = 670;
+    let graphX = 570;
     let graphY = 40;
-    let graphWidth = 200;
-    let graphHeight = 150;
+    let graphWidth = 120;
+    let graphHeight = 160;
 
     // Background
     fill(255);
@@ -636,14 +656,14 @@ function drawPerformanceGraph() {
     fill(200, 50, 50);
     stroke(150, 30, 30);
     strokeWeight(2);
-    ellipse(opX, opY, 12, 12);
+    circle(opX, opY, 12);
 
     // Legend
     fill(80);
     textSize(8);
     textAlign(LEFT, TOP);
     noStroke();
-    text('● Operating Point', graphX + 10, graphY + graphHeight - 18);
+    text('● Operating Point', graphX + 10, graphY + graphHeight - 10);
 
     // Efficiency indicator below
     let effY = graphY + graphHeight + 20;
@@ -680,51 +700,83 @@ function drawPerformanceGraph() {
 }
 
 function drawWarnings() {
+    if (!isRunning) return;  // Don't show warnings when paused
+
     let rpm = angularVelocity * 60 / (2 * PI);
 
     if (rpm < 10 && voltage > 1 && current > 0.5) {
         // Stall warning
-        fill(255, 50, 50);
+        fill('red');
         noStroke();
-        textSize(14);
-        textAlign(CENTER, CENTER);
+        textSize(24);
+        textAlign(LEFT, CENTER);
         textStyle(BOLD);
-        text('⚠ STALL - High Current!', motorCenterX, motorCenterY + motorRadius + 55);
+        text('⚠ STALL - High Current!', canvasWidth*.52, drawHeight - 30);
         textStyle(NORMAL);
     }
 
     if (current > 2.5) {
         // Overcurrent warning
-        fill(255, 100, 50);
-        textSize(12);
-        textAlign(LEFT, TOP);
-        text('⚠ Overcurrent', 670, 280);
+        fill('red');
+        textSize(24);
+        textAlign(LEFT, CENTER);
+        text('⚠ Overcurrent', canvasWidth*.52, drawHeight - 60);
     }
 }
 
 function drawControlLabels() {
     fill(60);
-    textSize(12);
+    textSize(11);
     textAlign(LEFT, CENTER);
     noStroke();
 
-    text('Voltage: ' + voltage.toFixed(1) + ' V', 10, drawHeight + 27);
-    text('Load: ' + loadSlider.value() + '%', 10, drawHeight + 57);
+    text('Voltage: ' + voltage.toFixed(1) + ' V', 210, drawHeight + 27);
+    text('Load: ' + loadSlider.value() + '%', 210, drawHeight + 57);
 
     // Instructions
-    fill(100);
-    textSize(11);
-    text('Adjust voltage and load to see motor response. Apply brake to simulate stall condition.', 10, drawHeight + 100);
+    fill('black');
+    textSize(14);
+    text('Adjust voltage and load to see motor response. Apply brake to simulate stall.', 10, drawHeight + 75);
 }
 
 function windowResized() {
     updateCanvasSize();
     resizeCanvas(canvasWidth, canvasHeight);
+    updateSliderSizes();
 }
 
 function updateCanvasSize() {
     const container = document.querySelector('main');
     if (container) {
         canvasWidth = min(container.offsetWidth, 950);
+    }
+}
+
+function updateSliderSizes() {
+    let sliderWidth = canvasWidth - sliderLeftMargin - 170;
+    if (voltageSlider) {
+        voltageSlider.size(sliderWidth);
+    }
+    if (loadSlider) {
+        loadSlider.size(sliderWidth);
+    }
+
+    // Update checkbox positions
+    let y1 = drawHeight + 15;
+    let y2 = drawHeight + 45;
+    let col1 = canvasWidth - 150;
+    let col2 = canvasWidth - 80;
+
+    if (fieldCheckbox) {
+        fieldCheckbox.position(col1, y1);
+    }
+    if (forceCheckbox) {
+        forceCheckbox.position(col1, y2);
+    }
+    if (currentCheckbox) {
+        currentCheckbox.position(col2, y1);
+    }
+    if (slowCheckbox) {
+        slowCheckbox.position(col2, y2);
     }
 }
