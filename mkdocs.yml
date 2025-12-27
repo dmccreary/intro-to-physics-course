@@ -67,6 +67,9 @@ nav:
     - Fluid-Dynamics: sims/fluid-dynamics/index.md
     - Solar System: sims/solar-system/index.md
     - Precision vs Accuracy: sims/precision-accuracy/index.md
+    - Vector Basics: sims/vector-basics/index.md
+    - Vector Addition: sims/vector-addition/index.md
+    - Graph Analysis: sims/graph-analysis/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md

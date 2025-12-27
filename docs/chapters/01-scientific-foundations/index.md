@@ -439,10 +439,13 @@ We represent vectors graphically as arrows, where:
 
 #### Diagram: Vector Basics Interactive MicroSim
 
-#### Diagram: Vector Basics Interactive MicroSim
+<iframe src="../../sims/vector-basics/main.html" width="100%" height="652px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/vector-basics/index.md)
+
 <details markdown="1">
 <summary>Vector Basics Interactive MicroSim</summary>
-**TODO:** human-review-needed
+**Status:** done
 
 Type: microsim
 
@@ -594,10 +597,13 @@ Using components:
 
 #### Diagram: Vector Addition Interactive MicroSim
 
-#### Diagram: Vector Addition Interactive MicroSim
+<iframe src="../../sims/vector-addition/main.html" width="100%" height="652px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/vector-addition/index.md)
+
 <details markdown="1">
 <summary>Vector Addition Interactive MicroSim</summary>
-**TODO:** human-review-needed
+**Status:** done
 
 Type: microsim
 
@@ -863,10 +869,13 @@ Choose two points far apart on the best-fit line (NOT necessarily data points):
 
 #### Diagram: Interactive Graph Analysis MicroSim
 
-#### Diagram: Interactive Graph Analysis MicroSim
+<iframe src="../../sims/graph-analysis/main.html" width="100%" height="702px" scrolling="no"></iframe>
+
+[View detailed explanation and educational context](../../sims/graph-analysis/index.md)
+
 <details markdown="1">
 <summary>Interactive Graph Analysis MicroSim</summary>
-**TODO:** human-review-needed
+**Status:** done
 
 Type: microsim
 
