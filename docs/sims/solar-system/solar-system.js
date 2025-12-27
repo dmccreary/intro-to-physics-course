@@ -1,4 +1,5 @@
-
+// Solar System Simulation
+// References:
 //        https://nssdc.gsfc.nasa.gov/planetary/factsheet/
 //        https://en.wikipedia.org/wiki/Sun
 //        https://fiftyexamples.readthedocs.io/en/latest/gravity.html
@@ -12,37 +13,110 @@ let TIMESTEP = 3600 * 24; // 1 day
 let centerX, centerY;
 let planets, sun, earth, mars, mercury, venus;
 
+// Canvas dimensions
+let canvasWidth = 800;
+let drawHeight = 600;
+let controlHeight = 50;
+let canvasHeight = drawHeight + controlHeight;
+let margin = 20;
+
+// Controls
+let startButton;
+let showDataCheckbox;
+let running = false;
+let showData = false;
+
+function updateCanvasSize() {
+    canvasWidth = windowWidth;
+    // Update center position - sun in center of drawing area
+    // put the sun a bit left of center to make room for planet data on right
+    centerX = canvasWidth / 2 - 20;
+    centerY = drawHeight / 2;
+
+    // Adjust scale based on canvas width
+    SCALE = (canvasWidth * 0.25) / AU;
+
+    positionControls();
+}
+
 function setup() {
-    createCanvas(900, 630);
+    updateCanvasSize();
+    createCanvas(canvasWidth, canvasHeight);
 
     sun = new Planet(0, "Sun", 0, 0, 696342 * SCALE * 1e4 + 15, 1.98892e30, 'yellow', 0, 0);
     sun.sun = true;
 
     mercury = new Planet(1, "Mercury", -0.467 * AU, 0, 2440.5 * SCALE * 1e6, 3.30e23, '#669999', 0, 38.86 * 1000, 88);
     venus = new Planet(2, "Venus", -0.728 * AU, 0, 6051.8 * SCALE * 1e6, 4.8675e24, '#e68a00', 0, 34.79 * 1000, 225);
-    earth = new Planet(3, "Earth", -1.02 * AU, 0, 6378.137 * SCALE * 1e6, 5.97237e24, '#0086b3', 0, 29.29 * 1000, 366);
+    earth = new Planet(3, "Earth", -1.02 * AU, 0, 6378.137 * SCALE * 1e6, 5.97237e24, '#00b359', 0, 29.29 * 1000, 366);
     mars = new Planet(4, "Mars", -1.666 * AU, 0, 3396.2 * SCALE * 1e6, 6.39e23, '#e60000', 0, 21.97 * 1000, 687);
 
     planets = [sun, mercury, venus, earth, mars];
 
-    centerX = width / 2 + 150;
-    centerY = height / 2;
+    // Create Start/Pause button
+    startButton = createButton('Start');
+    startButton.mousePressed(toggleSimulation);
+    startButton.style('font-size', '16px');
+    startButton.style('padding', '4px 8px');
+    startButton.style('cursor', 'pointer');
+
+    // Create checkbox for showing planet data
+    showDataCheckbox = createCheckbox(' Show Planet Data', false);
+    showDataCheckbox.changed(toggleShowData);
+    showDataCheckbox.style('font-size', '14px');
+    showDataCheckbox.style('color', '#ccc');
+
+    positionControls();
+}
+
+function positionControls() {
+    if (!startButton || !showDataCheckbox) return;
+
+    let controlsY = drawHeight + 5;
+    startButton.position(margin, controlsY);
+    showDataCheckbox.position(margin + 100, controlsY + 5);
+}
+
+function toggleSimulation() {
+    running = !running;
+    startButton.html(running ? 'Pause' : 'Start');
+}
+
+function toggleShowData() {
+    showData = showDataCheckbox.checked();
+}
+
+function windowResized() {
+    updateCanvasSize();
+    resizeCanvas(canvasWidth, canvasHeight);
 }
 
 function draw() {
     background(0);
 
+    // Draw divider between drawing area and controls
+    stroke(60, 60, 100);
+    line(0, drawHeight, canvasWidth, drawHeight);
+
+    // Controls background
+    noStroke();
+    fill(25, 25, 45);
+    rect(0, drawHeight, canvasWidth, controlHeight);
+
+    // Update and show planets
     for (let [i, p] of planets.entries()) {
-        p.update();
+        if (running) {
+            p.update();
+        }
         p.show();
     }
 
+    // Title
     fill(255);
     noStroke();
-    textSize(16);
-    text(`${frameRate().toFixed(1)} fps`, width - 60, 20);
-    
-//            noLoop()
+    textSize(18);
+    textAlign(LEFT, TOP);
+    text("Solar System Simulation", margin, 10);
 }
 
 
@@ -98,7 +172,6 @@ class Planet {
         for (let planet of planets) {
             if (this != planet) {
                 let force = this.attraction(this, planet);
-
                 this.acc.add(force.x, force.y);
             }
         }
@@ -109,8 +182,7 @@ class Planet {
 
         this.orbits();
 
-
-        this.velocity = sqrt(this.vel.x ** 2 + this.vel.y ** 2) / 1000
+        this.velocity = sqrt(this.vel.x ** 2 + this.vel.y ** 2) / 1000;
 
         if (this.velocity < this.v_min || this.v_min == 0) {
             this.v_min = this.velocity;
@@ -136,19 +208,27 @@ class Planet {
             this.pos.y * SCALE + centerY,
             this.radius * 2);
 
-        if (this.num != 0) {
+        // Show planet data on right side if checkbox is checked
+        if (showData && this.num != 0) {
+            let dataX = canvasWidth - 120;
+            let dataY = (this.num - 1) * 115 + 40;
+
+            fill(this.color);
             textSize(14);
-            text(`${this.name}: ${(this.distance_to_sun/AU).toFixed(3)} AU`, 10, this.num * 110 + 20 - 110);
-            text(`Perihelion: ${(this.perihelion/AU).toFixed(3)} AU`, 10, this.num * 110 + 35 - 110);
-            text(`Aphelion: ${(this.aphelion/AU).toFixed(3)} AU`, 10, this.num * 110 + 50 - 110);
-            text(`Orbital velocity: ${(this.velocity).toFixed(3)} km/s`, 10, this.num * 110 + 65 - 110);
-            text(`Max. orbital velocity: ${this.v_max.toFixed(3)} km/s`, 10, this.num * 110 + 80 - 110);
-            text(`Min. orbital velocity: ${this.v_min.toFixed(3)} km/s`, 10, this.num * 110 + 95 - 110);
-            text(`Eccentricity: ${(1-2/((this.v_max/this.v_min)+1)).toFixed(4)}`, 10, this.num * 110 + 110 - 110);
+            textAlign(LEFT, TOP);
+            text(`${this.name}`, dataX, dataY);
+
+            fill(200, 200, 220);
+            textSize(12);
+            text(`Distance: ${(this.distance_to_sun/AU).toFixed(3)} AU`, dataX, dataY + 18);
+            text(`Perihelion: ${(this.perihelion/AU).toFixed(3)} AU`, dataX, dataY + 33);
+            text(`Aphelion: ${(this.aphelion/AU).toFixed(3)} AU`, dataX, dataY + 48);
+            text(`Velocity: ${(this.velocity).toFixed(2)} km/s`, dataX, dataY + 63);
+            text(`V max: ${this.v_max.toFixed(2)} km/s`, dataX, dataY + 78);
+            text(`V min: ${this.v_min.toFixed(2)} km/s`, dataX, dataY + 93);
         }
 
-
-
+        // Draw orbital trail
         for (let i = 0; i < this.orbit.length; i++) {
             if (this.orbit.length > this.orbitN) {
                 this.orbit.splice(0, 1);

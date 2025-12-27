@@ -17,7 +17,8 @@ Copy this iframe to your website:
 ```
 
 [Run Solar System MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
-[Edit the Solar System MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/k9XP-Pq_p)
+[Edit the Solar System MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/INDUo-wjp)
+
 ## Description
 
 This MicroSim demonstrates **orbital mechanics** by simulating the inner solar system using real astronomical data from NASA. The simulation calculates gravitational forces between celestial bodies using Newton's Law of Universal Gravitation and displays orbital parameters in real-time.

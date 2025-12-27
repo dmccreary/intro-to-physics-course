@@ -134,6 +134,73 @@ docs/sims/exoplanet/
 To reach 95/100:
 - Upload sketch to p5.js editor and add link to index.md
 
+## Subsequent Refinements
+
+### 8. Transit Logic Bug Fix
+
+**Problem:** Light curve was dipping when planet was both in front AND behind the star.
+
+**Root Cause:** The `inFront` check used `cos(orbitalAngle) > 0`, which only determined if the planet was on the right side of the star, not whether it was actually in front from the observer's perspective.
+
+**Solution:** Changed to `sin(orbitalAngle) > 0`:
+- Angles 0 to π: Planet in front (can transit, light dips)
+- Angles π to 2π: Planet behind (no transit, full brightness)
+
+**Additional Fix:** Planet now completely disappears when behind the star (removed the dimmed rendering).
+
+### 9. Responsive Design Implementation
+
+Made the simulation fully responsive:
+- `updateCanvasSize()` calculates dimensions from `windowWidth`
+- `windowResized()` handles browser resize events
+- `positionControls()` repositions sliders and button on resize
+- Star always centered at `canvasWidth / 2`
+- Star radius and orbit scale proportionally with canvas width
+- Sliders resize to fill available width
+
+### 10. main.html Simplified
+
+Updated to match p5.js editor format:
+- Removed extra styling
+- Added viewport meta tag
+- Clean, minimal structure for editor compatibility
+
+### 11. Start/Pause Button Added
+
+**New Controls:**
+- Start/Pause button in lower left corner of controls area
+- Toggles between "Start" and "Pause" text
+- Animation freezes when paused (planet stops, light curve stops recording)
+- Default state: **Paused** (user must click Start)
+
+**Layout Adjustments:**
+- Button at left margin
+- Slider labels moved right of button
+- Sliders fill remaining width dynamically
+
+### 12. Guard Check Added
+
+Added safety check in `positionControls()`:
+```javascript
+if (!startButton || !planetSizeSlider || !periodSlider) return;
+```
+Prevents errors if function is called before controls are created (e.g., during initial `updateCanvasSize()`).
+
+## Final Code Structure
+
+```javascript
+// Key variables
+let running = false;  // Starts paused
+let sliderLeftMargin = 200;
+let controlsY = drawHeight;
+
+// Key functions
+updateCanvasSize()    // Called on setup and resize
+positionControls()    // Positions button and sliders with guard check
+toggleSimulation()    // Toggles running state
+windowResized()       // Handles browser resize
+```
+
 ## Related Work in Session
 
 This session also standardized two other MicroSims:
