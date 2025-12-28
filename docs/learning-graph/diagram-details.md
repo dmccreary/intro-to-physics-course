@@ -1,20 +1,22 @@
 # Diagram and MicroSim Details
 
-**Total Visual Elements:** 104
-**Diagrams:** 30
-**MicroSims:** 55
+**Total Visual Elements:** 116
+**Diagrams:** 29
+**MicroSims:** 68
 
 ## Chapter 1: Scientific Foundations
 
 **Total elements:** 5
 
 ### [Interactive Graph Analysis MicroSim](../chapters/01-scientific-foundations/index.md#diagram-interactive-graph-analysis-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 21
 - **Difficulty:** Hard
 
 ### [Precision vs Accuracy Target Diagram](../chapters/01-scientific-foundations/index.md#diagram-precision-vs-accuracy-target-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
@@ -28,12 +30,14 @@
 - **Difficulty:** Medium
 
 ### [Vector Addition Interactive MicroSim](../chapters/01-scientific-foundations/index.md#diagram-vector-addition-interactive-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 23
 - **Difficulty:** Very Hard
 
 ### [Vector Basics Interactive MicroSim](../chapters/01-scientific-foundations/index.md#diagram-vector-basics-interactive-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 17
@@ -44,42 +48,49 @@
 **Total elements:** 7
 
 ### [Comparison of Uniform vs Uniformly Accelerated Motion](../chapters/02-motion-one-dimension/index.md#diagram-comparison-of-uniform-vs-uniformly-accelerated-motion)
+- **Status:** done
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 1
 - **Difficulty:** Medium
 
 ### [Distance vs Displacement Interactive Visualization](../chapters/02-motion-one-dimension/index.md#diagram-distance-vs-displacement-interactive-visualization)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 11
 - **Difficulty:** Hard
 
 ### [Kinematic Equation Selector Tool](../chapters/02-motion-one-dimension/index.md#diagram-kinematic-equation-selector-tool)
+- **Status:** done
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 5
 - **Difficulty:** Medium
 
 ### [Position-Time Graph Interactive Analyzer](../chapters/02-motion-one-dimension/index.md#diagram-position-time-graph-interactive-analyzer)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 20
 - **Difficulty:** Very Hard
 
 ### [Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs](../chapters/02-motion-one-dimension/index.md#diagram-three-graph-motion-analyzer-connecting-x-t-v-t-and-a-t-graphs)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 16
 - **Difficulty:** Very Hard
 
 ### [Velocity vs Speed Comparison Table](../chapters/02-motion-one-dimension/index.md#diagram-velocity-vs-speed-comparison-table)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Velocity-Time Graph Area Calculator MicroSim](../chapters/02-motion-one-dimension/index.md#diagram-velocity-time-graph-area-calculator-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 16
@@ -90,42 +101,49 @@
 **Total elements:** 7
 
 ### [Angled Projectile Motion Explorer MicroSim](../chapters/03-motion-two-dimensions/index.md#diagram-angled-projectile-motion-explorer-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 23
 - **Difficulty:** Very Hard
 
 ### [Free Fall Motion MicroSim](../chapters/03-motion-two-dimensions/index.md#diagram-free-fall-motion-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 15
 - **Difficulty:** Hard
 
 ### [Horizontal Projection Interactive Comparison](../chapters/03-motion-two-dimensions/index.md#diagram-horizontal-projection-interactive-comparison)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 17
 - **Difficulty:** Hard
 
 ### [Projectile Motion Trajectory Diagram](../chapters/03-motion-two-dimensions/index.md#diagram-projectile-motion-trajectory-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Relative Velocity Problem Solver MicroSim](../chapters/03-motion-two-dimensions/index.md#diagram-relative-velocity-problem-solver-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 21
 - **Difficulty:** Very Hard
 
 ### [River Crossing Relative Velocity Diagram](../chapters/03-motion-two-dimensions/index.md#diagram-river-crossing-relative-velocity-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Vector Components Diagram](../chapters/03-motion-two-dimensions/index.md#diagram-vector-components-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
@@ -136,42 +154,49 @@
 **Total elements:** 7
 
 ### [Action-Reaction Pairs Interactive Diagram](../chapters/04-forces-newtons-laws/index.md#diagram-action-reaction-pairs-interactive-diagram)
-- **Type:** Diagram
+- **Status:** done
+- **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 5
 - **Difficulty:** Medium
 
 ### [Equilibrium Classification Workflow](../chapters/04-forces-newtons-laws/index.md#diagram-equilibrium-classification-workflow)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Force and Acceleration Relationship Chart](../chapters/04-forces-newtons-laws/index.md#diagram-force-and-acceleration-relationship-chart)
-- **Type:** Unknown
+- **Status:** done
+- **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 6
 - **Difficulty:** Medium
 
 ### [Free-Body Diagram Tutorial](../chapters/04-forces-newtons-laws/index.md#diagram-free-body-diagram-tutorial)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 2
 - **Difficulty:** Medium
 
 ### [Inertia Demonstration MicroSim](../chapters/04-forces-newtons-laws/index.md#diagram-inertia-demonstration-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 13
 - **Difficulty:** Very Hard
 
 ### [Normal Force on Inclined Planes Diagram](../chapters/04-forces-newtons-laws/index.md#diagram-normal-force-on-inclined-planes-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 1
 - **Difficulty:** Medium
 
 ### [Weight in Different Gravitational Fields MicroSim](../chapters/04-forces-newtons-laws/index.md#diagram-weight-in-different-gravitational-fields-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 13
@@ -182,84 +207,98 @@
 **Total elements:** 14
 
 ### [Angled Tension Component MicroSim](../chapters/05-applications-newtons-laws/index.md#diagram-angled-tension-component-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 18
 - **Difficulty:** Hard
 
 ### [Atwood Machine Free-Body Diagram](../chapters/05-applications-newtons-laws/index.md#diagram-atwood-machine-free-body-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Banked Curve Force Analysis Diagram](../chapters/05-applications-newtons-laws/index.md#diagram-banked-curve-force-analysis-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Banked Curve Speed Analysis MicroSim](../chapters/05-applications-newtons-laws/index.md#diagram-banked-curve-speed-analysis-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 23
 - **Difficulty:** Hard
 
 ### [Car on Curve MicroSim](../chapters/05-applications-newtons-laws/index.md#diagram-car-on-curve-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 18
 - **Difficulty:** Very Hard
 
 ### [Centripetal Force and Acceleration Visualization](../chapters/05-applications-newtons-laws/index.md#diagram-centripetal-force-and-acceleration-visualization)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Friction Coefficient Comparison Chart](../chapters/05-applications-newtons-laws/index.md#diagram-friction-coefficient-comparison-chart)
+- **Status:** done
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Inclined Plane Force Decomposition Diagram](../chapters/05-applications-newtons-laws/index.md#diagram-inclined-plane-force-decomposition-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Inclined Plane Motion MicroSim](../chapters/05-applications-newtons-laws/index.md#diagram-inclined-plane-motion-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 21
 - **Difficulty:** Hard
 
 ### [Interactive Atwood Machine MicroSim](../chapters/05-applications-newtons-laws/index.md#diagram-interactive-atwood-machine-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 19
 - **Difficulty:** Hard
 
 ### [Interactive Static Friction MicroSim](../chapters/05-applications-newtons-laws/index.md#diagram-interactive-static-friction-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 15
 - **Difficulty:** Hard
 
 ### [Microscopic View of Surface Contact](../chapters/05-applications-newtons-laws/index.md#diagram-microscopic-view-of-surface-contact)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Pulley System Mechanical Advantage Diagram](../chapters/05-applications-newtons-laws/index.md#diagram-pulley-system-mechanical-advantage-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Tension Force Diagram](../chapters/05-applications-newtons-laws/index.md#diagram-tension-force-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
@@ -270,30 +309,35 @@
 **Total elements:** 9
 
 ### [Energy Conservation Roller Coaster Simulation](../chapters/06-work-energy-power/index.md#diagram-energy-conservation-roller-coaster-simulation)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 16
 - **Difficulty:** Very Hard
 
 ### [Energy Diagram Interactive Explorer](../chapters/06-work-energy-power/index.md#diagram-energy-diagram-interactive-explorer)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 14
 - **Difficulty:** Very Hard
 
 ### [Energy Efficiency Comparison Infographic](../chapters/06-work-energy-power/index.md#diagram-energy-efficiency-comparison-infographic)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 9
 - **Difficulty:** Hard
 
 ### [Potential Energy Comparison Chart](../chapters/06-work-energy-power/index.md#diagram-potential-energy-comparison-chart)
+- **Status:** done
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Medium
 
 ### [Pulley System Mechanical Advantage Simulator](../chapters/06-work-energy-power/index.md#diagram-pulley-system-mechanical-advantage-simulator)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 17
@@ -306,18 +350,21 @@
 - **Difficulty:** Easy
 
 ### [Variable Force Work Calculation MicroSim](../chapters/06-work-energy-power/index.md#diagram-variable-force-work-calculation-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 13
 - **Difficulty:** Very Hard
 
 ### [Work Scenario Interactive Diagram](../chapters/06-work-energy-power/index.md#diagram-work-scenario-interactive-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 8
 - **Difficulty:** Medium
 
 ### [Work-Energy Theorem Interactive Demonstration](../chapters/06-work-energy-power/index.md#diagram-work-energy-theorem-interactive-demonstration)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 14
@@ -328,42 +375,49 @@
 **Total elements:** 7
 
 ### [2D Collision Vector Diagram](../chapters/07-momentum-collisions/index.md#diagram-2d-collision-vector-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 3
 - **Difficulty:** Medium
 
 ### [Collision Types Comparison Diagram](../chapters/07-momentum-collisions/index.md#diagram-collision-types-comparison-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Force vs. Time: Impact Scenarios Comparison](../chapters/07-momentum-collisions/index.md#diagram-force-vs-time-impact-scenarios-comparison)
+- **Status:** done
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 1
 - **Difficulty:** Easy
 
 ### [Interactive Collision Simulator](../chapters/07-momentum-collisions/index.md#diagram-interactive-collision-simulator)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 14
 - **Difficulty:** Hard
 
 ### [Momentum Comparison Interactive Simulator](../chapters/07-momentum-collisions/index.md#diagram-momentum-comparison-interactive-simulator)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 14
 - **Difficulty:** Hard
 
 ### [Multistage Rocket Efficiency Comparison](../chapters/07-momentum-collisions/index.md#diagram-multistage-rocket-efficiency-comparison)
+- **Status:** done
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 2
 - **Difficulty:** Easy
 
 ### [Rocket Propulsion Momentum Diagram](../chapters/07-momentum-collisions/index.md#diagram-rocket-propulsion-momentum-diagram)
+- **Status:** done
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 5
@@ -374,60 +428,70 @@
 **Total elements:** 10
 
 ### [Angular Displacement Visualization MicroSim](../chapters/08-rotational-motion/index.md#diagram-angular-displacement-visualization-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 13
 - **Difficulty:** Hard
 
 ### [Angular Momentum Vector Visualization](../chapters/08-rotational-motion/index.md#diagram-angular-momentum-vector-visualization)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 1
 - **Difficulty:** Medium
 
 ### [Comparative Angular Velocities Chart](../chapters/08-rotational-motion/index.md#diagram-comparative-angular-velocities-chart)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Energy Distribution in Rolling Objects Chart](../chapters/08-rotational-motion/index.md#diagram-energy-distribution-in-rolling-objects-chart)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Figure Skater Angular Momentum Conservation MicroSim](../chapters/08-rotational-motion/index.md#diagram-figure-skater-angular-momentum-conservation-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 19
 - **Difficulty:** Very Hard
 
 ### [Interactive Torque Diagram with Forces](../chapters/08-rotational-motion/index.md#diagram-interactive-torque-diagram-with-forces)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Real-World Rotational Applications Infographic](../chapters/08-rotational-motion/index.md#diagram-real-world-rotational-applications-infographic)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 2
 - **Difficulty:** Medium
 
 ### [Rolling Motion Velocity Vectors MicroSim](../chapters/08-rotational-motion/index.md#diagram-rolling-motion-velocity-vectors-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 13
 - **Difficulty:** Hard
 
 ### [Rotational Inertia Comparison MicroSim](../chapters/08-rotational-motion/index.md#diagram-rotational-inertia-comparison-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 16
 - **Difficulty:** Hard
 
 ### [Rotational Kinematics Problem Solver MicroSim](../chapters/08-rotational-motion/index.md#diagram-rotational-kinematics-problem-solver-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 12
@@ -438,66 +502,77 @@
 **Total elements:** 11
 
 ### [Applications of Oscillations Across Fields Infographic](../chapters/09-oscillations/index.md#diagram-applications-of-oscillations-across-fields-infographic)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Medium
 
 ### [Driven Oscillator Interactive MicroSim](../chapters/09-oscillations/index.md#diagram-driven-oscillator-interactive-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 13
 - **Difficulty:** Very Hard
 
 ### [Energy Transformation in SHM Bar Chart Animation](../chapters/09-oscillations/index.md#diagram-energy-transformation-in-shm-bar-chart-animation)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 7
 - **Difficulty:** Hard
 
 ### [Hooke's Law Interactive Demonstration](../chapters/09-oscillations/index.md#diagram-hookes-law-interactive-demonstration)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 9
 - **Difficulty:** Hard
 
 ### [Period, Frequency, and Angular Frequency Relationship Diagram](../chapters/09-oscillations/index.md#diagram-period-frequency-and-angular-frequency-relationship-diagram)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 1
 - **Difficulty:** Medium
 
 ### [Position-Velocity-Acceleration Relationship in SHM MicroSim](../chapters/09-oscillations/index.md#diagram-position-velocity-acceleration-relationship-in-shm-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 7
 - **Difficulty:** Very Hard
 
 ### [Resonance Amplitude vs. Driving Frequency Interactive Graph](../chapters/09-oscillations/index.md#diagram-resonance-amplitude-vs-driving-frequency-interactive-graph)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 5
 - **Difficulty:** Medium
 
 ### [Simple Pendulum Period vs. Length Investigation](../chapters/09-oscillations/index.md#diagram-simple-pendulum-period-vs-length-investigation)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 15
 - **Difficulty:** Hard
 
 ### [Simple vs. Physical Pendulum Comparison Diagram](../chapters/09-oscillations/index.md#diagram-simple-vs-physical-pendulum-comparison-diagram)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Tacoma Narrows Bridge Resonance Timeline](../chapters/09-oscillations/index.md#diagram-tacoma-narrows-bridge-resonance-timeline)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Types of Damping Comparison Graph](../chapters/09-oscillations/index.md#diagram-types-of-damping-comparison-graph)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
@@ -508,66 +583,77 @@
 **Total elements:** 11
 
 ### [Acoustic Resonance in Pipes Diagram](../chapters/10-waves-sound/index.md#diagram-acoustic-resonance-in-pipes-diagram)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Doppler Effect Interactive Simulation MicroSim](../chapters/10-waves-sound/index.md#diagram-doppler-effect-interactive-simulation-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 16
 - **Difficulty:** Hard
 
 ### [Human Hearing Range Interactive Diagram](../chapters/10-waves-sound/index.md#diagram-human-hearing-range-interactive-diagram)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 7
 - **Difficulty:** Medium
 
 ### [Longitudinal Wave Animation MicroSim](../chapters/10-waves-sound/index.md#diagram-longitudinal-wave-animation-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 11
 - **Difficulty:** Very Hard
 
 ### [Musical Harmonics Visualizer MicroSim](../chapters/10-waves-sound/index.md#diagram-musical-harmonics-visualizer-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 17
 - **Difficulty:** Hard
 
 ### [Sound Intensity and Decibel Calculator MicroSim](../chapters/10-waves-sound/index.md#diagram-sound-intensity-and-decibel-calculator-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 15
 - **Difficulty:** Very Hard
 
 ### [Standing Waves on a String MicroSim](../chapters/10-waves-sound/index.md#diagram-standing-waves-on-a-string-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 15
 - **Difficulty:** Hard
 
 ### [Transverse Wave Animation MicroSim](../chapters/10-waves-sound/index.md#diagram-transverse-wave-animation-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 10
 - **Difficulty:** Hard
 
 ### [Two-Source Wave Interference Simulation MicroSim](../chapters/10-waves-sound/index.md#diagram-two-source-wave-interference-simulation-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 13
 - **Difficulty:** Hard
 
 ### [Wave Behavior Comparison Infographic](../chapters/10-waves-sound/index.md#diagram-wave-behavior-comparison-infographic)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 3
 - **Difficulty:** Hard
 
 ### [Wave Properties Interactive Calculator MicroSim](../chapters/10-waves-sound/index.md#diagram-wave-properties-interactive-calculator-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 18
@@ -578,54 +664,63 @@
 **Total elements:** 9
 
 ### [Color Mixing Interactive MicroSim](../chapters/11-light-optics/index.md#diagram-color-mixing-interactive-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 18
 - **Difficulty:** Hard
 
 ### [Diffraction Grating Comparison Chart](../chapters/11-light-optics/index.md#diagram-diffraction-grating-comparison-chart)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Historical Measurements of Light Speed](../chapters/11-light-optics/index.md#diagram-historical-measurements-of-light-speed)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 1
 - **Difficulty:** Easy
 
 ### [Law of Reflection Interactive Diagram](../chapters/11-light-optics/index.md#diagram-law-of-reflection-interactive-diagram)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 11
 - **Difficulty:** Hard
 
 ### [Lens Ray Diagram Interactive MicroSim](../chapters/11-light-optics/index.md#diagram-lens-ray-diagram-interactive-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 14
 - **Difficulty:** Hard
 
 ### [Polarization Filter Interactive MicroSim](../chapters/11-light-optics/index.md#diagram-polarization-filter-interactive-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 12
 - **Difficulty:** Very Hard
 
 ### [Snell's Law Interactive Demonstration](../chapters/11-light-optics/index.md#diagram-snells-law-interactive-demonstration)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 13
 - **Difficulty:** Medium
 
 ### [Spherical Mirror Ray Diagram Interactive MicroSim](../chapters/11-light-optics/index.md#diagram-spherical-mirror-ray-diagram-interactive-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 14
 - **Difficulty:** Hard
 
 ### [Young's Double Slit Interference Pattern MicroSim](../chapters/11-light-optics/index.md#diagram-youngs-double-slit-interference-pattern-microsim)
+- **Status:** INCOMPLETE
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 10
@@ -636,43 +731,138 @@
 **Total elements:** 7
 
 ### [Charge Conservation in Chemical Reactions](../chapters/12-electric-charge-fields/index.md#diagram-charge-conservation-in-chemical-reactions)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Charging by Induction Animation MicroSim](../chapters/12-electric-charge-fields/index.md#diagram-charging-by-induction-animation-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 11
 - **Difficulty:** Hard
 
 ### [Coulomb's Law Force Calculator MicroSim](../chapters/12-electric-charge-fields/index.md#diagram-coulombs-law-force-calculator-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 16
 - **Difficulty:** Very Hard
 
 ### [Electric Field Lines Visualization MicroSim](../chapters/12-electric-charge-fields/index.md#diagram-electric-field-lines-visualization-microsim)
+- **Status:** done
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 8
 - **Difficulty:** Hard
 
 ### [Electric Potential Energy Interactive Chart](../chapters/12-electric-charge-fields/index.md#diagram-electric-potential-energy-interactive-chart)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 3
 - **Difficulty:** Medium
 
 ### [Triboelectric Series Interactive Infographic](../chapters/12-electric-charge-fields/index.md#diagram-triboelectric-series-interactive-infographic)
+- **Status:** INCOMPLETE
 - **Type:** Unknown
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
 ### [Voltage and Electric Field Relationship Diagram](../chapters/12-electric-charge-fields/index.md#diagram-voltage-and-electric-field-relationship-diagram)
+- **Status:** INCOMPLETE
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
+
+## Chapter 13: Electric Circuits
+
+**Total elements:** 12
+
+### [Battery Internal Structure and Operation MicroSim](../chapters/13-electric-circuits/index.md#diagram-battery-internal-structure-and-operation-microsim)
+- **Status:** INCOMPLETE
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 9
+- **Difficulty:** Hard
+
+### [Capacitor Charging and Discharging MicroSim](../chapters/13-electric-circuits/index.md#diagram-capacitor-charging-and-discharging-microsim)
+- **Status:** INCOMPLETE
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 8
+- **Difficulty:** Hard
+
+### [Current Flow Animation MicroSim](../chapters/13-electric-circuits/index.md#diagram-current-flow-animation-microsim)
+- **Status:** done
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 11
+- **Difficulty:** Hard
+
+### [DC Motor Operation MicroSim](../chapters/13-electric-circuits/index.md#diagram-dc-motor-operation-microsim)
+- **Status:** done
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 16
+- **Difficulty:** Very Hard
+
+### [DC vs AC Waveform Comparison MicroSim](../chapters/13-electric-circuits/index.md#diagram-dc-vs-ac-waveform-comparison-microsim)
+- **Status:** INCOMPLETE
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 12
+- **Difficulty:** Very Hard
+
+### [Inductor Behavior in DC Circuits MicroSim](../chapters/13-electric-circuits/index.md#diagram-inductor-behavior-in-dc-circuits-microsim)
+- **Status:** INCOMPLETE
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 8
+- **Difficulty:** Hard
+
+### [Motor Speed Control with Variable Voltage MicroSim](../chapters/13-electric-circuits/index.md#diagram-motor-speed-control-with-variable-voltage-microsim)
+- **Status:** INCOMPLETE
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 16
+- **Difficulty:** Very Hard
+
+### [Ohm's Law Interactive Calculator MicroSim](../chapters/13-electric-circuits/index.md#diagram-ohms-law-interactive-calculator-microsim)
+- **Status:** done
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 12
+- **Difficulty:** Hard
+
+### [Series vs Parallel Circuit Comparison MicroSim](../chapters/13-electric-circuits/index.md#diagram-series-vs-parallel-circuit-comparison-microsim)
+- **Status:** done
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 10
+- **Difficulty:** Hard
+
+### [Solar Battery Charging System MicroSim](../chapters/13-electric-circuits/index.md#diagram-solar-battery-charging-system-microsim)
+- **Status:** INCOMPLETE
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 24
+- **Difficulty:** Very Hard
+
+### [Solar Cell Operation and I-V Curve MicroSim](../chapters/13-electric-circuits/index.md#diagram-solar-cell-operation-and-i-v-curve-microsim)
+- **Status:** INCOMPLETE
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 11
+- **Difficulty:** Hard
+
+### [Solar Water Pump System MicroSim](../chapters/13-electric-circuits/index.md#diagram-solar-water-pump-system-microsim)
+- **Status:** INCOMPLETE
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 14
+- **Difficulty:** Very Hard

@@ -3,11 +3,10 @@
 
 // Canvas dimensions
 let canvasWidth = 900;
-let drawHeight = 450;
+let drawHeight = 350;
 let controlHeight = 150;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
-let sliderLeftMargin = 100;
 
 // Physics constants
 const k = 8.99e9; // Coulomb's constant N·m²/C²
@@ -28,33 +27,50 @@ function setup() {
     const canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent(document.querySelector('main'));
 
-    // Create sliders
-    let sliderY = drawHeight + 20;
-    let sliderWidth = 150;
-
+    // Create sliders (positions set in updateSliderPositions)
     q1Slider = createSlider(-10, 10, 5, 0.5);
-    q1Slider.position(sliderLeftMargin, sliderY);
-    q1Slider.size(sliderWidth);
-
     q2Slider = createSlider(-10, 10, -5, 0.5);
-    q2Slider.position(sliderLeftMargin + 220, sliderY);
-    q2Slider.size(sliderWidth);
-
     distSlider = createSlider(0.2, 3.0, 1.0, 0.1);
-    distSlider.position(sliderLeftMargin + 440, sliderY);
-    distSlider.size(sliderWidth);
 
     // Buttons and checkbox
-    let buttonY = drawHeight + 70;
     resetButton = createButton('Reset');
-    resetButton.position(margin, buttonY);
     resetButton.mousePressed(resetSimulation);
 
     showGraphCheckbox = createCheckbox(' Show 1/r² graph', false);
-    showGraphCheckbox.position(margin + 80, buttonY + 3);
     showGraphCheckbox.changed(() => showGraph = showGraphCheckbox.checked());
 
+    updateSliderPositions();
+
     describe('Coulombs Law calculator showing two charged spheres with force vectors', LABEL);
+}
+
+function updateSliderPositions() {
+    let columnWidth = canvasWidth / 3;
+    let sliderPadding = 40;
+    let sliderWidth = columnWidth - sliderPadding * 2;
+    sliderWidth = max(sliderWidth, 80); // minimum width
+
+    let sliderY = drawHeight + 30;
+
+    // Column centers
+    let col1Center = columnWidth / 2;
+    let col2Center = columnWidth + columnWidth / 2;
+    let col3Center = 2 * columnWidth + columnWidth / 2;
+
+    // Position sliders centered in their columns
+    q1Slider.position(col1Center - sliderWidth / 2, sliderY);
+    q1Slider.size(sliderWidth);
+
+    q2Slider.position(col2Center - sliderWidth / 2, sliderY);
+    q2Slider.size(sliderWidth);
+
+    distSlider.position(col3Center - sliderWidth / 2, sliderY);
+    distSlider.size(sliderWidth);
+
+    // Position buttons and checkbox
+    let buttonY = drawHeight + 80;
+    resetButton.position(margin, buttonY);
+    showGraphCheckbox.position(margin + 80, buttonY + 3);
 }
 
 function resetSimulation() {
@@ -85,7 +101,6 @@ function draw() {
 
     // Control area
     fill('white');
-    noStroke();
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Draw title
@@ -96,7 +111,7 @@ function draw() {
     text("Coulomb's Law Force Calculator", canvasWidth / 2, 15);
 
     // Draw charges and force vectors
-    let centerY = 200;
+    let centerY = 110;
     let spacing = map(distance, 0.2, 3.0, 100, 350);
     let x1 = canvasWidth / 2 - spacing / 2;
     let x2 = canvasWidth / 2 + spacing / 2;
@@ -226,10 +241,10 @@ function drawArrow(x1, y1, x2, y2) {
 
 function drawFormulaPanel(force, isAttractive) {
     // Panel background
-    let panelX = 30;
-    let panelY = 280;
+    let panelX = margin;
+    let panelY = 190;
     let panelW = 280;
-    let panelH = 150;
+    let panelH = 155;
 
     fill(255, 255, 255, 240);
     stroke(200);
@@ -289,7 +304,7 @@ function drawFormulaPanel(force, isAttractive) {
 function drawInverseSquareGraph(currentForce) {
     // Graph panel on the right
     let graphX = canvasWidth - 280;
-    let graphY = 280;
+    let graphY = 190;
     let graphW = 250;
     let graphH = 150;
 
@@ -331,7 +346,10 @@ function drawInverseSquareGraph(currentForce) {
 
     let q1_C = q1 * 1e-6;
     let q2_C = q2 * 1e-6;
-    let maxForce = k * abs(q1_C * q2_C) / (0.2 * 0.2);
+
+    // Use fixed scale based on max possible charges (10 μC each at min distance)
+    let maxQ = 10 * 1e-6;
+    let maxForce = k * (maxQ * maxQ) / (0.2 * 0.2);
 
     beginShape();
     for (let r = 0.2; r <= 3.0; r += 0.05) {
@@ -359,38 +377,74 @@ function drawInverseSquareGraph(currentForce) {
 }
 
 function drawSliderLabels() {
-    fill('black');
+    // Calculate responsive positions (same as updateSliderPositions)
+    let columnWidth = canvasWidth / 3;
+    let sliderPadding = 40;
+    let sliderWidth = columnWidth - sliderPadding * 2;
+    sliderWidth = max(sliderWidth, 80);
+
+    let col1Center = columnWidth / 2;
+    let col2Center = columnWidth + columnWidth / 2;
+    let col3Center = 2 * columnWidth + columnWidth / 2;
+
+    let labelY = drawHeight + 15;
+    let polarityY = drawHeight + 55;
+
     noStroke();
     textSize(13);
-    textAlign(LEFT, CENTER);
-
-    let labelY = drawHeight + 30;
+    textAlign(CENTER, CENTER);
 
     // Q1 label with color
     fill(q1 > 0 ? '#E53935' : (q1 < 0 ? '#2196F3' : '#666'));
-    text('q₁: ' + q1.toFixed(1) + ' μC', margin, labelY);
+    text('q₁: ' + q1.toFixed(1) + ' μC', col1Center, labelY);
 
     // Q2 label with color
     fill(q2 > 0 ? '#E53935' : (q2 < 0 ? '#2196F3' : '#666'));
-    text('q₂: ' + q2.toFixed(1) + ' μC', margin + 220, labelY);
+    text('q₂: ' + q2.toFixed(1) + ' μC', col2Center, labelY);
 
     // Distance label
     fill('black');
-    text('r: ' + distance.toFixed(1) + ' m', margin + 440, labelY);
+    text('r: ' + distance.toFixed(1) + ' m', col3Center, labelY);
+
+    // Polarity indicators under sliders
+    // Offset to align with slider track (HTML sliders have thumb padding)
+    textSize(11);
+    fill('#666');
+    let trackOffset = 8;
+    let horizontalShift = 0;
+
+    // Q1 polarity: (-) on left, (+) on right
+    textAlign(LEFT, CENTER);
+    text('(−)', col1Center - sliderWidth / 2 + trackOffset + horizontalShift, polarityY);
+    textAlign(RIGHT, CENTER);
+    text('(+)', col1Center + sliderWidth / 2 - trackOffset + horizontalShift, polarityY);
+
+    // Q2 polarity: (-) on left, (+) on right
+    textAlign(LEFT, CENTER);
+    text('(−)', col2Center - sliderWidth / 2 + trackOffset + horizontalShift, polarityY);
+    textAlign(RIGHT, CENTER);
+    text('(+)', col2Center + sliderWidth / 2 - trackOffset + horizontalShift, polarityY);
+
+    // Distance range: min on left, max on right
+    textAlign(LEFT, CENTER);
+    text('0.2', col3Center - sliderWidth / 2 + trackOffset + horizontalShift, polarityY);
+    textAlign(RIGHT, CENTER);
+    text('3.0', col3Center + sliderWidth / 2 - trackOffset + horizontalShift, polarityY);
 
     // Legend
     textSize(11);
-    let legendY = drawHeight + 110;
+    textAlign(LEFT, CENTER);
+    let legendY = drawHeight + 115;
 
     fill('#4CAF50');
-    circle(margin + 200, legendY, 12);
+    circle(canvasWidth / 2 - 150, legendY, 12);
     fill('black');
-    text('Attractive (opposite charges)', margin + 210, legendY);
+    text('Attractive (opposite)', canvasWidth / 2 - 140, legendY);
 
     fill('#F44336');
-    circle(margin + 400, legendY, 12);
+    circle(canvasWidth / 2 + 50, legendY, 12);
     fill('black');
-    text('Repulsive (like charges)', margin + 410, legendY);
+    text('Repulsive (like)', canvasWidth / 2 + 60, legendY);
 }
 
 function setLineDash(pattern) {
@@ -407,4 +461,5 @@ function updateCanvasSize() {
 function windowResized() {
     updateCanvasSize();
     resizeCanvas(canvasWidth, canvasHeight);
+    updateSliderPositions();
 }

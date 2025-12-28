@@ -10,13 +10,14 @@ Coulomb's Law states that the electric force between two point charges is:
 - Directly proportional to the product of their charge magnitudes
 - Inversely proportional to the square of the distance between them
 
-**Formula:** F = k|q₁q₂|/r²
+$$F = k \frac{|q_1 q_2|}{r^2}$$
 
 Where:
-- F is the electric force (Newtons)
-- k = 8.99 × 10⁹ N·m²/C² (Coulomb's constant)
-- q₁ and q₂ are the charges (Coulombs)
-- r is the distance between charges (meters)
+
+- $F$ is the electric force (Newtons)
+- $k = 8.99 \times 10^9 \text{ N·m}^2/\text{C}^2$ (Coulomb's constant)
+- $q_1$ and $q_2$ are the charges (Coulombs)
+- $r$ is the distance between charges (meters)
 
 ## How to Use
 
