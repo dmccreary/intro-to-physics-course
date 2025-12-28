@@ -1,0 +1,15 @@
+{
+  "title": "Doppler Effect Simulation",
+  "description": "An interactive MicroSim demonstrating how source motion affects observed frequency through wavefront compression and expansion. Shows wavefront behavior for approaching and receding sound sources.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-28",
+  "subject": ["Doppler effect", "sound waves", "frequency", "wavelength", "physics", "wave mechanics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["Doppler effect", "wavefront compression", "frequency shift", "Mach number", "sound velocity"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["Basic wave properties", "Frequency and wavelength relationship", "Speed of sound"]
+}

@@ -3,7 +3,7 @@
 
 // Canvas dimensions
 let canvasWidth = 900;
-let drawHeight = 450;
+let drawHeight = 350;
 let controlHeight = 150;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 20;
@@ -38,30 +38,18 @@ function setup() {
     resetSimulation();
 
     // Create sliders
-    let sliderY = drawHeight + 15;
-    let sliderWidth = 150;
-
     speedSlider = createSlider(0, 0.8, 0.1, 0.02);
-    speedSlider.position(sliderLeftMargin, sliderY);
-    speedSlider.size(sliderWidth);
-
     freqSlider = createSlider(200, 1000, 500, 50);
-    freqSlider.position(sliderLeftMargin + 250, sliderY);
-    freqSlider.size(sliderWidth);
 
     // Buttons
-    let buttonY = drawHeight + 55;
     startButton = createButton('Stop');
-    startButton.position(margin, buttonY);
     startButton.mousePressed(toggleAnimation);
 
     resetButton = createButton('Reset');
-    resetButton.position(margin + 55, buttonY);
     resetButton.mousePressed(resetSimulation);
 
     // Direction buttons
     let leftBtn = createButton('← Left');
-    leftBtn.position(margin + 130, buttonY);
     leftBtn.mousePressed(() => {
         direction = -1;
         resetSimulation();
@@ -69,12 +57,14 @@ function setup() {
     directionButtons.push(leftBtn);
 
     let rightBtn = createButton('Right →');
-    rightBtn.position(margin + 200, buttonY);
     rightBtn.mousePressed(() => {
         direction = 1;
         resetSimulation();
     });
     directionButtons.push(rightBtn);
+
+    // Position all controls
+    updateControlPositions();
 
     describe('Doppler effect simulation showing wavefront compression and expansion as source moves', LABEL);
 }
@@ -105,13 +95,14 @@ function draw() {
 
     // Drawing area
     fill('aliceblue');
+    // silver border
     stroke('silver');
     strokeWeight(1);
     rect(0, 0, canvasWidth, drawHeight);
 
     // Control area
     fill('white');
-    noStroke();
+    // silver outline of control area
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Draw title
@@ -127,12 +118,16 @@ function draw() {
     }
 
     // Draw elements
-    drawWavefronts();
-    drawObservers();
-    drawSource();
+    push();
+    translate(0, 40); // Offset drawing area down for title
+        drawWavefronts();
+        drawObservers();
+        drawSource();
+    pop();
     drawFrequencyMeters();
     drawSliderLabels();
     drawInfo();
+
 }
 
 function updateSimulation() {
@@ -167,6 +162,12 @@ function updateSimulation() {
 }
 
 function drawWavefronts() {
+    // Clip to drawing area so wavefronts don't extend into control region
+    drawingContext.save();
+    drawingContext.beginPath();
+    drawingContext.rect(0, 0, canvasWidth, drawHeight-40);
+    drawingContext.clip();
+
     noFill();
     strokeWeight(1.5);
 
@@ -178,6 +179,8 @@ function drawWavefronts() {
 
         circle(wf.x, wf.y, wf.radius * 2);
     }
+
+    drawingContext.restore();
 }
 
 function drawSource() {
@@ -187,26 +190,26 @@ function drawSource() {
     strokeWeight(2);
 
     push();
-    translate(sourceX, drawHeight / 2);
+        translate(sourceX, drawHeight / 2);
 
-    // Draw simple car shape
-    rectMode(CENTER);
-    fill('#E53935');
-    rect(0, 0, 50, 25, 5);
+        // Draw simple car shape
+        rectMode(CENTER);
+        fill('#E53935');
+        rect(0, 0, 50, 25, 5);
 
-    // Wheels
-    fill('#333');
-    noStroke();
-    circle(-15, 15, 12);
-    circle(15, 15, 12);
+        // Wheels
+        fill('#333');
+        noStroke();
+        circle(-15, 15, 12);
+        circle(15, 15, 12);
 
-    // Direction arrow
-    fill('white');
-    if (direction > 0) {
-        triangle(20, 0, 10, -8, 10, 8);
-    } else {
-        triangle(-20, 0, -10, -8, -10, 8);
-    }
+        // Direction arrow
+        fill('white');
+        if (direction > 0) {
+            triangle(20, 0, 10, -8, 10, 8);
+        } else {
+            triangle(-20, 0, -10, -8, -10, 8);
+        }
 
     pop();
 
@@ -273,7 +276,7 @@ function drawFrequencyMeters() {
 
     // Meter panel
     let panelX = 20;
-    let panelY = 50;
+    let panelY = 30;
     let panelWidth = 180;
     let panelHeight = 130;
 
@@ -312,7 +315,7 @@ function drawFrequencyMeters() {
     let rightX = canvasWidth - 200;
     fill(255, 255, 255, 230);
     stroke(200);
-    rect(rightX, panelY, 180, panelHeight, 10);
+    rect(rightX, panelY, 180, panelHeight+20, 10);
 
     fill('black');
     noStroke();
@@ -337,17 +340,43 @@ function drawFrequencyMeters() {
     text('+ receding: lower f', x, y);
 }
 
+function updateControlPositions() {
+    // Calculate responsive slider width
+    let availableWidth = canvasWidth - 2 * margin - 40; // Gap between sliders
+    let sliderWidth = min(180, availableWidth / 2);
+
+    // Row positions
+    let sliderY = drawHeight + 30;
+    let buttonY = drawHeight + 65;
+
+    // Speed slider (left half)
+    speedSlider.position(margin, sliderY);
+    speedSlider.size(canvasWidth*.45);
+
+    // Frequency slider (right half)
+    let rightColX = canvasWidth / 2 + 10;
+    freqSlider.position(rightColX, sliderY);
+    freqSlider.size(canvasWidth*.45);
+
+    // Buttons below sliders
+    startButton.position(margin, buttonY);
+    resetButton.position(margin + 55, buttonY);
+    directionButtons[0].position(margin + 120, buttonY); // Left
+    directionButtons[1].position(margin + 190, buttonY); // Right
+}
+
 function drawSliderLabels() {
     fill('black');
     noStroke();
     textSize(13);
     textAlign(LEFT, CENTER);
 
-    let labelY = drawHeight + 25;
+    let labelY = drawHeight + 15;
     let speedRatio = speedSlider.value();
 
+    // Labels above sliders
     text('Speed: ' + (speedRatio * 100).toFixed(0) + '% of sound', margin, labelY);
-    text('Source freq: ' + sourceFrequency + ' Hz', margin + 250, labelY);
+    text('Source freq: ' + sourceFrequency + ' Hz', canvasWidth / 2 + 10, labelY);
 }
 
 function drawInfo() {
@@ -355,9 +384,8 @@ function drawInfo() {
     textSize(11);
     textAlign(LEFT, CENTER);
 
-    let infoY = drawHeight + 95;
-    text('Notice: Wavefronts compress ahead of the moving source (shorter wavelength = higher frequency)', margin, infoY);
-    text('and spread out behind (longer wavelength = lower frequency).', margin, infoY + 15);
+    let infoY = drawHeight + 100;
+    text('Wavefronts compress ahead (higher frequency) and spread behind (lower frequency).', margin, infoY);
 }
 
 function updateCanvasSize() {
@@ -373,4 +401,5 @@ function updateCanvasSize() {
 function windowResized() {
     updateCanvasSize();
     resizeCanvas(canvasWidth, canvasHeight);
+    updateControlPositions();
 }
