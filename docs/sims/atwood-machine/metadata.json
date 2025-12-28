@@ -1,0 +1,15 @@
+{
+  "title": "Atwood Machine",
+  "description": "Interactive simulation of the classic Atwood machine demonstrating Newton's second law with two connected masses over a frictionless pulley. Users can adjust mass values and observe the resulting acceleration and tension.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-15",
+  "subject": ["physics", "Newton's laws", "dynamics", "Atwood machine", "acceleration", "tension", "connected masses"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["Newton's second law", "tension", "acceleration", "equilibrium", "connected masses"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["Newton's second law", "force diagrams", "algebra"]
+}

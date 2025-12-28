@@ -81,7 +81,7 @@ function draw() {
     // Draw Atwood machine and FBDs
     drawAtwoodMachine(m1, m2, T, a, position);
     drawFBD1(20, 250, 140, 160, m1, T, a);
-    drawFBD2(canvasWidth - 190, 250, 140, 160, m2, T, a);
+    drawFBD2(canvasWidth*.55, 250, 140, 160, m2, T, a);
 
     if (showEquationsCheckbox.checked()) {
         drawEquationsPanel(canvasWidth - 250, 50, 240, 180, m1, m2, T, a, g);
@@ -142,8 +142,8 @@ function drawAtwoodMachine(m1, m2, T, a, pos) {
     stroke('#8B4513');
     strokeWeight(3);
 
-    let m1Y = 200 - pos;
-    let m2Y = 200 + pos;
+    let m1Y = 330 - pos;
+    let m2Y = 330 + pos;
 
     // Left string
     line(pulleyX - pulleyR, pulleyY, pulleyX - pulleyR - 30, m1Y - 30);
@@ -163,9 +163,9 @@ function drawAtwoodMachine(m1, m2, T, a, pos) {
     noStroke();
     textSize(14);
     textAlign(CENTER, CENTER);
-    text('m₁', m1X, m1Y - 30 + boxH1/2);
+    text('m₁', m1X, m1Y - 30 + boxH1/2 - 8);
     textSize(11);
-    text(m1.toFixed(1) + ' kg', m1X, m1Y - 30 + boxH1/2 + 15);
+    text(m1.toFixed(1) + ' kg', m1X, m1Y - 30 + boxH1/2 + 7);
 
     // Mass 2 (right, red)
     let m2X = pulleyX + pulleyR + 30;
@@ -179,9 +179,9 @@ function drawAtwoodMachine(m1, m2, T, a, pos) {
     noStroke();
     textSize(14);
     textAlign(CENTER, CENTER);
-    text('m₂', m2X, m2Y - 30 + boxH2/2);
+    text('m₂', m2X, m2Y - 30 + boxH2/2 - 8);
     textSize(11);
-    text(m2.toFixed(1) + ' kg', m2X, m2Y - 30 + boxH2/2 + 15);
+    text(m2.toFixed(1) + ' kg', m2X, m2Y - 30 + boxH2/2 + 7);
 
     // Acceleration arrows
     if (abs(a) > 0.1) {
