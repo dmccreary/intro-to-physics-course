@@ -199,18 +199,19 @@ The key to unit conversion is using **conversion factors**—fractions equal to 
 **Example:** Convert 25 meters to centimeters.
 
 We know that 1 m = 100 cm, which gives us two possible conversion factors:
-- (100 cm)/(1 m) = 1
-- (1 m)/(100 cm) = 1
+
+- $\frac{100 \text{ cm}}{1 \text{ m}} = 1$
+- $\frac{1 \text{ m}}{100 \text{ cm}} = 1$
 
 We choose the first one because it allows meters to cancel:
 
-25 m × (100 cm / 1 m) = 2,500 cm
+$$25 \text{ m} \times \frac{100 \text{ cm}}{1 \text{ m}} = 2{,}500 \text{ cm}$$
 
 Notice how "m" in the numerator and denominator cancel, leaving only "cm."
 
 **Multi-step conversions** involve applying multiple conversion factors sequentially. For example, converting miles per hour to meters per second requires converting both distance and time units:
 
-60 mi/hr × (1.609 km / 1 mi) × (1,000 m / 1 km) × (1 hr / 3,600 s) ≈ 26.8 m/s
+$$60 \frac{\text{mi}}{\text{hr}} \times \frac{1.609 \text{ km}}{1 \text{ mi}} \times \frac{1{,}000 \text{ m}}{1 \text{ km}} \times \frac{1 \text{ hr}}{3{,}600 \text{ s}} \approx 26.8 \text{ m/s}$$
 
 ## Scientific Notation: Handling Extreme Numbers
 
@@ -220,23 +221,25 @@ Physics deals with quantities spanning enormous ranges—from the diameter of an
 - A **coefficient** between 1 and 10
 - A **power of 10**
 
-**Format:** *a* × 10ⁿ, where 1 ≤ *a* < 10 and *n* is an integer
+**Format:** $a \times 10^n$, where $1 \leq a < 10$ and $n$ is an integer
 
 **Examples:**
-- 5,280 = 5.28 × 10³ (move decimal left 3 places, positive exponent)
-- 0.00042 = 4.2 × 10⁻⁴ (move decimal right 4 places, negative exponent)
-- 93,000,000 = 9.3 × 10⁷ (move decimal left 7 places)
+
+- $5{,}280 = 5.28 \times 10^3$ (move decimal left 3 places, positive exponent)
+- $0.00042 = 4.2 \times 10^{-4}$ (move decimal right 4 places, negative exponent)
+- $93{,}000{,}000 = 9.3 \times 10^7$ (move decimal left 7 places)
 
 **Why use scientific notation?**
 
-1. **Clarity:** 6.02 × 10²³ is much clearer than 602,000,000,000,000,000,000,000
+1. **Clarity:** $6.02 \times 10^{23}$ is much clearer than 602,000,000,000,000,000,000,000
 2. **Precision:** Scientific notation makes significant figures obvious
 3. **Calculation:** Multiplication and division become easier using exponent rules
 4. **Range:** It handles extremely large and small numbers equally well
 
 **Calculation rules:**
-- **Multiplication:** Multiply coefficients, add exponents: (2 × 10³) × (3 × 10⁴) = 6 × 10⁷
-- **Division:** Divide coefficients, subtract exponents: (6 × 10⁸) ÷ (2 × 10³) = 3 × 10⁵
+
+- **Multiplication:** Multiply coefficients, add exponents: $(2 \times 10^3) \times (3 \times 10^4) = 6 \times 10^7$
+- **Division:** Divide coefficients, subtract exponents: $(6 \times 10^8) \div (2 \times 10^3) = 3 \times 10^5$
 - **Addition/Subtraction:** Convert to same exponent first, then add/subtract coefficients
 
 ## Significant Figures: Communicating Precision
@@ -271,15 +274,15 @@ The fundamental principle: **valid equations must be dimensionally homogeneous**
 
 **Example:** Suppose you're verifying a proposed equation for the distance traveled by an accelerating object:
 
-*d* = *v* × *t* + ½*a* × *t*²
+$$d = vt + \frac{1}{2}at^2$$
 
-where *d* = distance, *v* = initial velocity, *a* = acceleration, *t* = time
+where $d$ = distance, $v$ = initial velocity, $a$ = acceleration, $t$ = time
 
 Let's check the dimensions (using brackets [ ] to denote "dimensions of"):
 
-- [*d*] = meters (m)
-- [*v* × *t*] = (m/s) × s = m ✓
-- [½*a* × *t*²] = (m/s²) × s² = m ✓
+- $[d] = \text{meters (m)}$
+- $[v \times t] = \text{(m/s)} \times \text{s} = \text{m}$ ✓
+- $[\frac{1}{2}a \times t^2] = \text{(m/s}^2\text{)} \times \text{s}^2 = \text{m}$ ✓
 
 Each term has dimensions of meters, so the equation is dimensionally consistent. This doesn't prove the equation is correct (the factors of ½ and 1 can't be verified this way), but it does confirm we haven't made gross errors like adding velocity to acceleration.
 
@@ -512,30 +515,32 @@ Implementation: p5.js with coordinate transformation
 
 Any vector can be broken down into perpendicular components—typically horizontal (x) and vertical (y) components in a coordinate system. This process, called **vector decomposition** or **resolution**, is fundamental to solving physics problems.
 
-For a vector **v** with magnitude *v* at angle θ measured counterclockwise from the positive x-axis:
+For a vector **v** with magnitude $v$ at angle $\theta$ measured counterclockwise from the positive x-axis:
 
-- **x-component:** *v*ₓ = *v* cos(θ)
-- **y-component:** *v*ᵧ = *v* sin(θ)
+- **x-component:** $v_x = v \cos(\theta)$
+- **y-component:** $v_y = v \sin(\theta)$
 
 **Example:** A velocity vector of 50 m/s at 30° above the horizontal has:
-- *v*ₓ = 50 cos(30°) = 50 × 0.866 = 43.3 m/s (horizontal)
-- *v*ᵧ = 50 sin(30°) = 50 × 0.5 = 25.0 m/s (vertical)
+
+- $v_x = 50 \cos(30°) = 50 \times 0.866 = 43.3$ m/s (horizontal)
+- $v_y = 50 \sin(30°) = 50 \times 0.5 = 25.0$ m/s (vertical)
 
 **Reverse process** (finding magnitude and direction from components):
 
-If you know *v*ₓ and *v*ᵧ, you can find:
-- **Magnitude:** *v* = √(*v*ₓ² + *v*ᵧ²)
-- **Direction:** θ = tan⁻¹(*v*ᵧ / *v*ₓ)
+If you know $v_x$ and $v_y$, you can find:
+
+- **Magnitude:** $v = \sqrt{v_x^2 + v_y^2}$
+- **Direction:** $\theta = \tan^{-1}\left(\frac{v_y}{v_x}\right)$
 
 ## Trigonometry for Physics: Essential Relationships
 
 Physics problems frequently involve triangles—whether analyzing forces on an incline, projectile motion, or vector components. A solid understanding of trigonometry is essential.
 
-**The three primary trigonometric functions** for a right triangle with angle θ:
+**The three primary trigonometric functions** for a right triangle with angle $\theta$:
 
-- **sin(θ)** = opposite / hypotenuse
-- **cos(θ)** = adjacent / hypotenuse
-- **tan(θ)** = opposite / adjacent
+- $\sin(\theta) = \frac{\text{opposite}}{\text{hypotenuse}}$
+- $\cos(\theta) = \frac{\text{adjacent}}{\text{hypotenuse}}$
+- $\tan(\theta) = \frac{\text{opposite}}{\text{adjacent}}$
 
 **Memory aid: SOH-CAH-TOA**
 
@@ -543,14 +548,15 @@ Physics problems frequently involve triangles—whether analyzing forces on an i
 - **C**osine = **A**djacent/**H**ypotenuse
 - **T**angent = **O**pposite/**A**djacent
 
-**Pythagorean Theorem:** For any right triangle with legs *a* and *b* and hypotenuse *c*:
+**Pythagorean Theorem:** For any right triangle with legs $a$ and $b$ and hypotenuse $c$:
 
-*c*² = *a*² + *b*²
+$$c^2 = a^2 + b^2$$
 
 **Inverse functions** (finding angles from ratios):
-- θ = sin⁻¹(opposite/hypotenuse)
-- θ = cos⁻¹(adjacent/hypotenuse)
-- θ = tan⁻¹(opposite/adjacent)
+
+- $\theta = \sin^{-1}\left(\frac{\text{opposite}}{\text{hypotenuse}}\right)$
+- $\theta = \cos^{-1}\left(\frac{\text{adjacent}}{\text{hypotenuse}}\right)$
+- $\theta = \tan^{-1}\left(\frac{\text{opposite}}{\text{adjacent}}\right)$
 
 **Important angles to memorize:**
 
@@ -578,22 +584,24 @@ When two or more vectors act on an object, we need to find their combined effect
 **Component method (more precise):**
 
 1. Break each vector into x and y components
-2. Add all x-components together: *R*ₓ = *v*₁ₓ + *v*₂ₓ + *v*₃ₓ + ...
-3. Add all y-components together: *R*ᵧ = *v*₁ᵧ + *v*₂ᵧ + *v*₃ᵧ + ...
-4. Find magnitude: *R* = √(*R*ₓ² + *R*ᵧ²)
-5. Find direction: θ = tan⁻¹(*R*ᵧ / *R*ₓ)
+2. Add all x-components together: $R_x = v_{1x} + v_{2x} + v_{3x} + ...$
+3. Add all y-components together: $R_y = v_{1y} + v_{2y} + v_{3y} + ...$
+4. Find magnitude: $R = \sqrt{R_x^2 + R_y^2}$
+5. Find direction: $\theta = \tan^{-1}\left(\frac{R_y}{R_x}\right)$
 
 **Example:** Add two vectors:
-- **v**₁ = 30 m/s east (0°)
-- **v**₂ = 40 m/s north (90°)
+
+- $\vec{v}_1 = 30$ m/s east (0°)
+- $\vec{v}_2 = 40$ m/s north (90°)
 
 Using components:
-- *v*₁ₓ = 30 m/s, *v*₁ᵧ = 0 m/s
-- *v*₂ₓ = 0 m/s, *v*₂ᵧ = 40 m/s
-- *R*ₓ = 30 + 0 = 30 m/s
-- *R*ᵧ = 0 + 40 = 40 m/s
-- *R* = √(30² + 40²) = √(900 + 1,600) = √2,500 = 50 m/s
-- θ = tan⁻¹(40/30) = tan⁻¹(1.33) = 53° north of east
+
+- $v_{1x} = 30$ m/s, $v_{1y} = 0$ m/s
+- $v_{2x} = 0$ m/s, $v_{2y} = 40$ m/s
+- $R_x = 30 + 0 = 30$ m/s
+- $R_y = 0 + 40 = 40$ m/s
+- $R = \sqrt{30^2 + 40^2} = \sqrt{900 + 1600} = \sqrt{2500} = 50$ m/s
+- $\theta = \tan^{-1}(40/30) = \tan^{-1}(1.33) = 53°$ north of east
 
 #### Diagram: Vector Addition Interactive MicroSim
 
@@ -710,16 +718,17 @@ The **negative** of a vector has the same magnitude but opposite direction. To v
 **Component method for subtraction:**
 
 1. Break each vector into components
-2. Subtract components: *R*ₓ = *A*ₓ − *B*ₓ and *R*ᵧ = *A*ᵧ − *B*ᵧ
+2. Subtract components: $R_x = A_x - B_x$ and $R_y = A_y - B_y$
 3. Find magnitude and direction using standard formulas
 
-**Example:** Subtract **B** = 20 m/s north from **A** = 50 m/s east:
-- *A*ₓ = 50 m/s, *A*ᵧ = 0 m/s
-- *B*ₓ = 0 m/s, *B*ᵧ = 20 m/s
-- *R*ₓ = 50 − 0 = 50 m/s
-- *R*ᵧ = 0 − 20 = −20 m/s
-- *R* = √(50² + (−20)²) = √(2,500 + 400) = √2,900 ≈ 53.9 m/s
-- θ = tan⁻¹(−20/50) ≈ −21.8° (below the positive x-axis, or 21.8° south of east)
+**Example:** Subtract $\vec{B} = 20$ m/s north from $\vec{A} = 50$ m/s east:
+
+- $A_x = 50$ m/s, $A_y = 0$ m/s
+- $B_x = 0$ m/s, $B_y = 20$ m/s
+- $R_x = 50 - 0 = 50$ m/s
+- $R_y = 0 - 20 = -20$ m/s
+- $R = \sqrt{50^2 + (-20)^2} = \sqrt{2500 + 400} = \sqrt{2900} \approx 53.9$ m/s
+- $\theta = \tan^{-1}(-20/50) \approx -21.8°$ (below the positive x-axis, or 21.8° south of east)
 
 Vector subtraction is particularly important in physics for calculating **changes** in vector quantities, such as change in velocity (which gives acceleration) or change in position (which gives displacement).
 
@@ -729,31 +738,32 @@ There are two distinct ways to "multiply" vectors, each serving different purpos
 
 **Definition:**
 
-**A** · **B** = *A* *B* cos(θ)
+$$\vec{A} \cdot \vec{B} = AB\cos(\theta)$$
 
-where *A* and *B* are the magnitudes and θ is the angle between the vectors.
+where $A$ and $B$ are the magnitudes and $\theta$ is the angle between the vectors.
 
 **Component formula:**
 
-If **A** = (*A*ₓ, *A*ᵧ, *A*ᵧ) and **B** = (*B*ₓ, *B*ᵧ, *B*ᵧ), then:
+If $\vec{A} = (A_x, A_y, A_z)$ and $\vec{B} = (B_x, B_y, B_z)$, then:
 
-**A** · **B** = *A*ₓ*B*ₓ + *A*ᵧ*B*ᵧ + *A*ᵧ*B*ᵧ
+$$\vec{A} \cdot \vec{B} = A_x B_x + A_y B_y + A_z B_z$$
 
 **Key properties:**
+
 - The result is a **scalar** (just a number, no direction)
-- **A** · **B** = **B** · **A** (commutative)
-- If vectors are perpendicular (θ = 90°), then **A** · **B** = 0
-- If vectors are parallel (θ = 0°), then **A** · **B** = *A* *B*
+- $\vec{A} \cdot \vec{B} = \vec{B} \cdot \vec{A}$ (commutative)
+- If vectors are perpendicular ($\theta = 90°$), then $\vec{A} \cdot \vec{B} = 0$
+- If vectors are parallel ($\theta = 0°$), then $\vec{A} \cdot \vec{B} = AB$
 
 **Physical applications:**
 
-1. **Work** in physics is defined as **W** = **F** · **d** (force dot product with displacement)
+1. **Work** in physics is defined as $W = \vec{F} \cdot \vec{d}$ (force dot product with displacement)
 2. The dot product tells us how much of one vector lies in the direction of another
-3. Used to find angles between vectors: θ = cos⁻¹(**A** · **B** / (*A* *B*))
+3. Used to find angles between vectors: $\theta = \cos^{-1}\left(\frac{\vec{A} \cdot \vec{B}}{AB}\right)$
 
-**Example:** Find the dot product of **A** = (3, 4) and **B** = (1, 2):
+**Example:** Find the dot product of $\vec{A} = (3, 4)$ and $\vec{B} = (1, 2)$:
 
-**A** · **B** = (3)(1) + (4)(2) = 3 + 8 = 11
+$$\vec{A} \cdot \vec{B} = (3)(1) + (4)(2) = 3 + 8 = 11$$
 
 ## The Cross Product: Multiplying Vectors for Vectors
 
@@ -761,35 +771,37 @@ The **cross product** (also called **vector product**) takes two vectors and pro
 
 **Definition:**
 
-**A** × **B** = (*A* *B* sin(θ)) **n̂**
+$$\vec{A} \times \vec{B} = (AB\sin\theta)\hat{n}$$
 
-where θ is the angle between **A** and **B**, and **n̂** is a unit vector perpendicular to both.
+where $\theta$ is the angle between $\vec{A}$ and $\vec{B}$, and $\hat{n}$ is a unit vector perpendicular to both.
 
-**Magnitude:** |**A** × **B**| = *A* *B* sin(θ)
+**Magnitude:** $|\vec{A} \times \vec{B}| = AB\sin(\theta)$
 
 **Direction:** Determined by the **right-hand rule**:
-1. Point fingers of your right hand along vector **A**
-2. Curl them toward vector **B**
-3. Your thumb points in the direction of **A** × **B**
+
+1. Point fingers of your right hand along vector $\vec{A}$
+2. Curl them toward vector $\vec{B}$
+3. Your thumb points in the direction of $\vec{A} \times \vec{B}$
 
 **Component formula** (for 3D vectors):
 
-If **A** = (*A*ₓ, *A*ᵧ, *A*ᵧ) and **B** = (*B*ₓ, *B*ᵧ, *B*ᵧ), then:
+If $\vec{A} = (A_x, A_y, A_z)$ and $\vec{B} = (B_x, B_y, B_z)$, then:
 
-**A** × **B** = (*A*ᵧ*B*ᵧ − *A*ᵧ*B*ᵧ, *A*ᵧ*B*ₓ − *A*ₓ*B*ᵧ, *A*ₓ*B*ᵧ − *A*ᵧ*B*ₓ)
+$$\vec{A} \times \vec{B} = (A_y B_z - A_z B_y, A_z B_x - A_x B_z, A_x B_y - A_y B_x)$$
 
 **Key properties:**
-- The result is a **vector** perpendicular to both **A** and **B**
-- **A** × **B** = −(**B** × **A**) (NOT commutative!)
-- If vectors are parallel (θ = 0°), then **A** × **B** = **0**
-- If vectors are perpendicular (θ = 90°), then |**A** × **B**| = *A* *B*
+
+- The result is a **vector** perpendicular to both $\vec{A}$ and $\vec{B}$
+- $\vec{A} \times \vec{B} = -(\vec{B} \times \vec{A})$ (NOT commutative!)
+- If vectors are parallel ($\theta = 0°$), then $\vec{A} \times \vec{B} = \vec{0}$
+- If vectors are perpendicular ($\theta = 90°$), then $|\vec{A} \times \vec{B}| = AB$
 
 **Physical applications:**
 
-1. **Torque** is defined as **τ** = **r** × **F** (position vector cross force)
-2. **Angular momentum** is **L** = **r** × **p** (position cross linear momentum)
+1. **Torque** is defined as $\vec{\tau} = \vec{r} \times \vec{F}$ (position vector cross force)
+2. **Angular momentum** is $\vec{L} = \vec{r} \times \vec{p}$ (position cross linear momentum)
 3. The cross product magnitude equals the area of the parallelogram formed by the two vectors
-4. **Magnetic force** on a moving charge: **F** = *q* **v** × **B**
+4. **Magnetic force** on a moving charge: $\vec{F} = q\vec{v} \times \vec{B}$
 
 The cross product becomes especially important when we study rotational motion, torque, and angular momentum later in the course.
 
@@ -797,29 +809,31 @@ The cross product becomes especially important when we study rotational motion, 
 
 Much of physics involves understanding how quantities relate to one another. **Proportional reasoning** helps us predict how changing one variable affects another without always requiring detailed calculations.
 
-**Direct proportionality:** If *y* is directly proportional to *x*, we write *y* ∝ *x*, meaning:
-- When *x* doubles, *y* doubles
-- When *x* triples, *y* triples
-- Mathematically: *y* = *k* *x* (where *k* is a constant)
+**Direct proportionality:** If $y$ is directly proportional to $x$, we write $y \propto x$, meaning:
 
-**Example:** Distance traveled at constant speed is directly proportional to time: *d* ∝ *t*. If you travel 60 miles in 1 hour, you'll travel 120 miles in 2 hours.
+- When $x$ doubles, $y$ doubles
+- When $x$ triples, $y$ triples
+- Mathematically: $y = kx$ (where $k$ is a constant)
 
-**Inverse proportionality:** If *y* is inversely proportional to *x*, we write *y* ∝ 1/*x*, meaning:
-- When *x* doubles, *y* is halved
-- When *x* triples, *y* becomes one-third
-- Mathematically: *y* = *k* / *x*
+**Example:** Distance traveled at constant speed is directly proportional to time: $d \propto t$. If you travel 60 miles in 1 hour, you'll travel 120 miles in 2 hours.
 
-**Example:** Gravitational force between two objects is inversely proportional to the square of their distance: *F* ∝ 1/*r*². If you double the distance, force becomes one-fourth as strong.
+**Inverse proportionality:** If $y$ is inversely proportional to $x$, we write $y \propto \frac{1}{x}$, meaning:
+
+- When $x$ doubles, $y$ is halved
+- When $x$ triples, $y$ becomes one-third
+- Mathematically: $y = \frac{k}{x}$
+
+**Example:** Gravitational force between two objects is inversely proportional to the square of their distance: $F \propto \frac{1}{r^2}$. If you double the distance, force becomes one-fourth as strong.
 
 **More complex proportions:**
 
-- *y* ∝ *x*²: When *x* doubles, *y* becomes four times larger (quadruples)
-- *y* ∝ √*x*: When *x* quadruples, *y* doubles
-- *y* ∝ 1/*x*²: When *x* doubles, *y* becomes one-fourth as large
+- $y \propto x^2$: When $x$ doubles, $y$ becomes four times larger (quadruples)
+- $y \propto \sqrt{x}$: When $x$ quadruples, $y$ doubles
+- $y \propto \frac{1}{x^2}$: When $x$ doubles, $y$ becomes one-fourth as large
 
 **Why is this useful?**
 
-Proportional reasoning allows quick predictions without plugging numbers into equations. If you know kinetic energy is proportional to the square of velocity (*KE* ∝ *v*²), you immediately know that doubling your car's speed quadruples the kinetic energy—and therefore quadruples the stopping distance!
+Proportional reasoning allows quick predictions without plugging numbers into equations. If you know kinetic energy is proportional to the square of velocity ($KE \propto v^2$), you immediately know that doubling your car's speed quadruples the kinetic energy—and therefore quadruples the stopping distance!
 
 ## Graphical Analysis: Reading the Story in Data
 
@@ -837,28 +851,28 @@ Graphs are powerful tools for visualizing relationships between variables and ex
 
 **Types of relationships visible in graphs:**
 
-1. **Linear:** Straight line, equation *y* = *mx* + *b*
-   - Slope *m* tells you rate of change
-   - Intercept *b* tells you starting value
+1. **Linear:** Straight line, equation $y = mx + b$
+   - Slope $m$ tells you rate of change
+   - Intercept $b$ tells you starting value
 
-2. **Quadratic:** Parabola, equation *y* = *ax*²
+2. **Quadratic:** Parabola, equation $y = ax^2$
    - Characteristic curved shape
    - Common in kinematics (position vs. time for accelerated motion)
 
-3. **Inverse:** Hyperbola, equation *y* = *k*/*x*
-   - Approaches zero as *x* increases
+3. **Inverse:** Hyperbola, equation $y = \frac{k}{x}$
+   - Approaches zero as $x$ increases
    - Common in force laws and energy relationships
 
-4. **Exponential:** Rapid increase or decrease, equation *y* = *a*e^(*bx*)
+4. **Exponential:** Rapid increase or decrease, equation $y = ae^{bx}$
    - Common in radioactive decay and growth processes
 
 **Extracting information from graphs:**
 
-**Finding slope:** For a linear graph, slope = (change in *y*) / (change in *x*) = Δ*y* / Δ*x*
+**Finding slope:** For a linear graph, slope = (change in $y$) / (change in $x$) = $\frac{\Delta y}{\Delta x}$
 
 Choose two points far apart on the best-fit line (NOT necessarily data points):
 
-*m* = (*y*₂ − *y*₁) / (*x*₂ − *x*₁)
+$$m = \frac{y_2 - y_1}{x_2 - x_1}$$
 
 **Units of slope:** Combine the units of *y* and *x*. For example, if *y* is distance (m) and *x* is time (s), slope has units of m/s (velocity).
 
@@ -980,8 +994,8 @@ Implementation: p5.js with chart display and interactive tools
 
 **Linearization:** Sometimes we can transform a non-linear relationship into a linear one by changing what we plot. For example:
 
-- If *y* ∝ *x*², plot *y* vs. *x*² to get a straight line
-- If *y* ∝ 1/*x*, plot *y* vs. 1/*x* to get a straight line
+- If $y \propto x^2$, plot $y$ vs. $x^2$ to get a straight line
+- If $y \propto \frac{1}{x}$, plot $y$ vs. $\frac{1}{x}$ to get a straight line
 
 This technique makes it easier to determine constants and verify theoretical relationships.
 

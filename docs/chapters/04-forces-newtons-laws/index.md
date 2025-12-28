@@ -230,13 +230,13 @@ Most physics problems assume you're viewing from Earth's surface, which is appro
 
 Now we get to the most important equation in all of classical mechanics:
 
-**F_net = ma**
+$$\vec{F}_{\text{net}} = m\vec{a}$$
 
 This is Newton's Second Law. It tells us exactly how net force relates to acceleration. Let's unpack what this means:
 
-- **F_net** is the net force (vector sum of all forces)
-- **m** is the mass of the object
-- **a** is the acceleration that results
+- $\vec{F}_{\text{net}}$ is the net force (vector sum of all forces)
+- $m$ is the mass of the object
+- $\vec{a}$ is the acceleration that results
 
 The equation reveals three crucial relationships:
 
@@ -248,16 +248,18 @@ The equation reveals three crucial relationships:
 
 Let's see this in action. A 50 kg student stands on a skateboard. You push with a force of 100 N. What's the acceleration?
 
-Using F = ma:
-- F_net = 100 N
-- m = 50 kg
-- a = F/m = 100 N / 50 kg = 2 m/s²
+Using $F = ma$:
+
+- $F_{\text{net}} = 100$ N
+- $m = 50$ kg
+- $a = \frac{F}{m} = \frac{100 \text{ N}}{50 \text{ kg}} = 2$ m/s²
 
 The skateboard accelerates at 2 m/s² in the direction you push. Every second, the velocity increases by 2 m/s.
 
 But what if friction opposes your push with 30 N? Then:
-- F_net = 100 N - 30 N = 70 N
-- a = 70 N / 50 kg = 1.4 m/s²
+
+- $F_{\text{net}} = 100 \text{ N} - 30 \text{ N} = 70$ N
+- $a = \frac{70 \text{ N}}{50 \text{ kg}} = 1.4$ m/s²
 
 The acceleration is smaller because the net force is smaller.
 
@@ -265,7 +267,7 @@ The acceleration is smaller because the net force is smaller.
 
 Newton's Second Law defines the unit of force. One **newton** (N) is the force needed to accelerate a 1 kg mass at 1 m/s². In other words:
 
-1 N = 1 kg⋅m/s²
+$$1 \text{ N} = 1 \text{ kg} \cdot \text{m/s}^2$$
 
 To get a feel for this: a typical apple weighs about 1 N. When you hold it, you're exerting an upward force of 1 N to balance gravity's downward pull.
 
@@ -476,7 +478,7 @@ Forces only cancel (produce equilibrium) when they act on the same object.
 
 An object is in **equilibrium** when the net force on it is zero. This doesn't mean no forces act on it—it means all forces balance out. From Newton's Second Law:
 
-If F_net = 0, then a = 0
+If $F_{\text{net}} = 0$, then $a = 0$
 
 Zero acceleration means the object either stays at rest or continues moving at constant velocity. We distinguish two types:
 
@@ -485,9 +487,10 @@ Zero acceleration means the object either stays at rest or continues moving at c
 **Static equilibrium** occurs when an object is at rest and remains at rest. All forces cancel perfectly.
 
 Example: A book sitting on a table
-- Weight (W = mg) pulls down
-- Normal force (N) pushes up
-- N = W, so F_net = 0
+
+- Weight ($W = mg$) pulls down
+- Normal force ($N$) pushes up
+- $N = W$, so $F_{\text{net}} = 0$
 - The book doesn't accelerate vertically
 
 ### Dynamic Equilibrium
@@ -495,9 +498,10 @@ Example: A book sitting on a table
 **Dynamic equilibrium** occurs when an object moves at constant velocity (no acceleration). All forces still cancel.
 
 Example: A car cruising at constant 60 mph on a highway
+
 - Engine force pushes forward
 - Air resistance and friction push backward
-- Forward and backward forces equal, so F_net = 0
+- Forward and backward forces equal, so $F_{\text{net}} = 0$
 - Velocity constant (no acceleration)
 
 ### Conditions for Equilibrium
@@ -508,8 +512,9 @@ For an object to be in equilibrium:
 2. **Sum of all forces in y-direction = 0**
 
 In equation form:
-- ΣF_x = 0
-- ΣF_y = 0
+
+$$\sum F_x = 0$$
+$$\sum F_y = 0$$
 
 You'll use these conditions extensively when solving statics problems.
 
@@ -592,12 +597,13 @@ Implementation: Flowchart using Mermaid.js with custom hover interactions
 
 One of the most important forces you'll encounter is **weight**—the gravitational force that Earth exerts on objects. Here's the key equation:
 
-**W = mg**
+$$W = mg$$
 
 Where:
-- W is weight (measured in newtons, N)
-- m is mass (measured in kilograms, kg)
-- g is the acceleration due to gravity (9.8 m/s² on Earth's surface)
+
+- $W$ is weight (measured in newtons, N)
+- $m$ is mass (measured in kilograms, kg)
+- $g$ is the acceleration due to gravity (9.8 m/s² on Earth's surface)
 
 ### Mass vs Weight: A Critical Distinction
 
@@ -612,9 +618,10 @@ Students often confuse mass and weight, but they're fundamentally different:
 | Measured with | Balance scale | Spring scale |
 
 Here's a mind-bending example: An astronaut with mass 70 kg has a weight of:
-- On Earth: W = (70 kg)(9.8 m/s²) = 686 N
-- On the Moon: W = (70 kg)(1.6 m/s²) = 112 N (Moon's gravity is weaker)
-- In deep space: W ≈ 0 N (no nearby gravitational source)
+
+- On Earth: $W = (70 \text{ kg})(9.8 \text{ m/s}^2) = 686$ N
+- On the Moon: $W = (70 \text{ kg})(1.6 \text{ m/s}^2) = 112$ N (Moon's gravity is weaker)
+- In deep space: $W \approx 0$ N (no nearby gravitational source)
 
 But the mass stays 70 kg in all three locations! Mass is an intrinsic property; weight depends on the gravitational environment.
 
@@ -733,26 +740,29 @@ Here are the key properties:
 ### Normal Force in Different Situations
 
 **On a horizontal surface:**
-- Object at rest: N = mg (normal force equals weight)
-- Object pushed down: N = mg + F_push (normal force increases)
-- Object pulled up partially: N = mg - F_pull (normal force decreases)
+
+- Object at rest: $N = mg$ (normal force equals weight)
+- Object pushed down: $N = mg + F_{\text{push}}$ (normal force increases)
+- Object pulled up partially: $N = mg - F_{\text{pull}}$ (normal force decreases)
 
 **On an inclined plane:**
-- Normal force = mg cos(θ), where θ is the angle of incline
+
+- Normal force $= mg\cos(\theta)$, where $\theta$ is the angle of incline
 - Normal force is less than weight (some of weight acts parallel to slope)
 - Steeper slope → smaller normal force
 
 **In an elevator:**
-- Accelerating up: N = m(g + a) (normal force greater than weight)
-- Accelerating down: N = m(g - a) (normal force less than weight)
-- Free fall: N = 0 (no contact force)
+
+- Accelerating up: $N = m(g + a)$ (normal force greater than weight)
+- Accelerating down: $N = m(g - a)$ (normal force less than weight)
+- Free fall: $N = 0$ (no contact force)
 
 ### Why Normal Force Matters
 
 The normal force is crucial because:
 
 1. It's one of the forces you'll encounter in nearly every problem
-2. Friction depends on normal force (f = μN, which you'll learn in the next chapter)
+2. Friction depends on normal force ($f = \mu N$, which you'll learn in the next chapter)
 3. It's not always equal to weight—you must calculate it from equilibrium conditions
 4. It can do no work (always perpendicular to motion)
 
