@@ -69,13 +69,16 @@ nav:
     - Centripetal Force: sims/centripetal-force-viz/index.md
     - Collisions: sims/collisions/index.md
     - Collision Types: sims/collision-types/index.md
+    - Coulombs Law: sims/coulombs-law/index.md
     - Current Animation: sims/current-animation/index.md
     - Damping Types: sims/damping-types/index.md
     - DC Motor: sims/dc-motor/index.md
     - Distance vs Displacement: sims/distance-displacement/index.md
     - Doppler Effect: sims/doppler-effect/index.md
+    - Charging by Induction: sims/charging-induction/index.md
     - Driven Oscillator: sims/driven-oscillator/index.md
     - Elasticity: sims/elasticity/index.md
+    - Electric Field Lines: sims/electric-field-lines/index.md
     - Equilibrium Workflow: sims/equilibrium-workflow/index.md
     - Energy Diagram Explorer: sims/energy-diagram-explorer/index.md
     - Energy Efficiency: sims/energy-efficiency/index.md

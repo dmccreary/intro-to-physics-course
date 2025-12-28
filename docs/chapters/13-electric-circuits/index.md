@@ -291,8 +291,8 @@ where:
 
 <details markdown="1">
     <summary>Capacitor Charging and Discharging MicroSim</summary>
-    **TODO:** human-review-needed
-
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Visualize how capacitors store and release energy, and understand the exponential charging/discharging behavior
@@ -402,8 +402,8 @@ where N is the number of turns, A is the cross-sectional area, l is the length, 
 
 <details markdown="1">
     <summary>Inductor Behavior in DC Circuits MicroSim</summary>
-    **TODO:** human-review-needed
-
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Demonstrate how inductors oppose changes in current and store energy in magnetic fields
@@ -503,8 +503,8 @@ AC is used in:
 
 <details markdown="1">
     <summary>DC vs AC Waveform Comparison MicroSim</summary>
-    **TODO:** human-review-needed
-
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Compare DC and AC power sources and understand key AC parameters (amplitude, frequency, RMS)
@@ -599,8 +599,8 @@ A 3.7 V, 2000 mAh battery stores: E = 3.7 V × 2 Ah = 7.4 Wh
 
 <details markdown="1">
     <summary>Battery Internal Structure and Operation MicroSim</summary>
-    **TODO:** human-review-needed
-
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Understand the electrochemical processes inside batteries and how they produce electric current
@@ -841,8 +841,8 @@ Real output varies with:
 
 <details markdown="1">
     <summary>Solar Cell Operation and I-V Curve MicroSim</summary>
-    **TODO:** human-review-needed
-
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Understand how solar cells generate electricity and how to interpret their characteristic curves
@@ -937,8 +937,8 @@ The charge controller:
 
 <details markdown="1">
     <summary>Solar Battery Charging System MicroSim</summary>
-    **TODO:** human-review-needed
-
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Understand how solar panels charge batteries and power loads through a complete day-night cycle
@@ -1182,8 +1182,8 @@ PWM is the most common method—by varying the duty cycle (percentage of time th
 
 <details markdown="1">
     <summary>Motor Speed Control with Variable Voltage MicroSim</summary>
-    **TODO:** human-review-needed
-
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Explore how changing voltage affects motor speed and understand the relationship between voltage, speed, current, and torque
@@ -1321,8 +1321,8 @@ A small farm needs to pump water from a well during daylight hours. The system m
 
 <details markdown="1">
     <summary>Solar Water Pump System MicroSim</summary>
-    **TODO:** human-review-needed
-
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Apply concepts of solar power, batteries, and motors to a real-world pumping application

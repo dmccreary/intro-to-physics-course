@@ -68,6 +68,8 @@ When you rub a balloon on your hair, electrons transfer from your hair to the ba
 
 <details markdown="1">
     <summary>Charge Conservation in Chemical Reactions</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: diagram
 
     Purpose: Illustrate how charge is conserved in a simple chemical reaction
@@ -177,6 +179,8 @@ The direction of electron transfer depends on each material's relative affinity 
 
 <details markdown="1">
     <summary>Triboelectric Series Interactive Infographic</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: infographic
 
     Purpose: Show the triboelectric series and demonstrate which materials become positive or negative when rubbed together
@@ -245,8 +249,11 @@ The remarkable feature of induction is that the conductor ends up with the oppos
 
 #### Diagram: Charging by Induction Animation MicroSim
 
+<iframe src="../../sims/charging-induction/main.html" height="602px" width="100%" scrolling="no" style="border: none; overflow: hidden;"></iframe>
+
 <details markdown="1">
     <summary>Charging by Induction Animation MicroSim</summary>
+    **Status:** done
     Type: microsim
 
     Learning objective: Demonstrate the step-by-step process of charging a neutral conductor by induction
@@ -355,8 +362,11 @@ The electric force is about 10^42^ times stronger than the gravitational force! 
 
 #### Diagram: Coulomb's Law Force Calculator MicroSim
 
+<iframe src="../../sims/coulombs-law/main.html" height="602px" width="100%" scrolling="no" style="border: none; overflow: hidden;"></iframe>
+
 <details markdown="1">
     <summary>Coulomb's Law Force Calculator MicroSim</summary>
+    **Status:** done
     Type: microsim
 
     Learning objective: Allow students to explore how electric force depends on charge magnitudes and separation distance
@@ -464,8 +474,11 @@ Common field line patterns:
 
 #### Diagram: Electric Field Lines Visualization MicroSim
 
+<iframe src="../../sims/electric-field-lines/main.html" height="622px" width="100%" scrolling="no" style="border: none; overflow: hidden;"></iframe>
+
 <details markdown="1">
     <summary>Electric Field Lines Visualization MicroSim</summary>
+    **Status:** done
     Type: microsim
 
     Learning objective: Demonstrate electric field line patterns for various charge configurations
@@ -591,6 +604,8 @@ This is just conservation of energy for electric systems.
 
 <details markdown="1">
     <summary>Electric Potential Energy Interactive Chart</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: chart
 
     Chart type: Line graph with multiple curves
@@ -685,6 +700,8 @@ Common voltage examples:
 
 <details markdown="1">
     <summary>Voltage and Electric Field Relationship Diagram</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: diagram
 
     Purpose: Show the relationship between electric field, potential difference, and work done on charges
