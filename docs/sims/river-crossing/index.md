@@ -8,7 +8,7 @@ description: Interactive simulation demonstrating relative velocity through a ri
 <iframe src="main.html" height="552px" width="100%" scrolling="no"></iframe>
 
 [Run the River Crossing MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
-
+[Edit the River Crossing MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/fw88NlVPQ)
 ## Description
 
 This MicroSim demonstrates relative velocity through a classic physics scenario: crossing a river with a current. A swimmer aims to reach a point directly across the river, but the current carries them downstream. The simulation shows how vector addition determines the actual path.
