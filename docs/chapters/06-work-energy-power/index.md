@@ -90,9 +90,12 @@ Let's examine how work behaves in different situations:
 | Pulling a sled at an angle | Between parallel and perpendicular | 30°-60° | Positive (reduced) |
 
 #### Diagram: Work Scenario Interactive Diagram
+
+<iframe src="../../sims/work-scenarios/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Work Scenario Interactive Diagram</summary>
-    **Status:** INCOMPLETE
+    **Status:** done
 
     Type: diagram
 
@@ -171,9 +174,12 @@ $$W = \frac{1}{2}kx^2$$
 This quadratic relationship means doubling the stretch requires four times the work.
 
 #### Diagram: Variable Force Work Calculation MicroSim
+
+<iframe src="../../sims/variable-force-work/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Variable Force Work Calculation MicroSim</summary>
-    **Status:** INCOMPLETE
+    **Status:** done
 
     Type: microsim
 
@@ -305,9 +311,12 @@ Using work-energy theorem:
 Same answer, but the energy approach is often more intuitive and requires fewer steps.
 
 #### Diagram: Work-Energy Theorem Interactive Demonstration
+
+<iframe src="../../sims/work-energy-theorem/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Work-Energy Theorem Interactive Demonstration</summary>
-    **Status:** INCOMPLETE
+    **Status:** done
 
     Type: microsim
 
@@ -445,9 +454,12 @@ Important characteristics:
 $$PE_s = \frac{1}{2}(200 \text{ N/m})(0.3 \text{ m})^2 = 9 \text{ J}$$
 
 #### Diagram: Potential Energy Comparison Chart
+
+<iframe src="../../sims/potential-energy-chart/main.html" width="100%" height="502px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Potential Energy Comparison Chart</summary>
-    **Status:** INCOMPLETE
+    **Status:** done
 
     Type: chart
 
@@ -622,9 +634,12 @@ $$v = 8.1 \text{ m/s}$$
 The "missing" 20 J was converted to thermal energy heating the air and ball.
 
 #### Diagram: Energy Conservation Roller Coaster Simulation
+
+<iframe src="../../sims/roller-coaster-energy/main.html" width="100%" height="702px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Energy Conservation Roller Coaster Simulation</summary>
-    **Status:** INCOMPLETE
+    **Status:** done
 
     Type: microsim
 
@@ -763,9 +778,12 @@ From an energy diagram, you can determine:
 - **Force direction**: Force points from higher PE toward lower PE (down the PE slope)
 
 #### Diagram: Energy Diagram Interactive Explorer
+
+<iframe src="../../sims/energy-diagram-explorer/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Energy Diagram Interactive Explorer</summary>
-    **Status:** INCOMPLETE
+    **Status:** done
 
     Type: microsim
 
@@ -996,9 +1014,12 @@ Efficiency has profound real-world implications:
 5. **Sustainability**: Efficient use of resources is essential for long-term sustainability
 
 #### Diagram: Energy Efficiency Comparison Infographic
+
+<iframe src="../../sims/energy-efficiency/main.html" width="100%" height="902px" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Energy Efficiency Comparison Infographic</summary>
-    **Status:** INCOMPLETE
+    **Status:** done
 
     Type: infographic
 

@@ -53,9 +53,13 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - 2D Collision Vectors: sims/2d-collision-vectors/index.md
     - Action Reaction: sims/action-reaction/index.md
     - Angled Projectile: sims/angled-projectile/index.md
     - Angled Tension: sims/angled-tension/index.md
+    - Angular Displacement: sims/angular-displacement/index.md
+    - Angular Momentum Vector: sims/angular-momentum-vector/index.md
+    - Angular Velocities Chart: sims/angular-velocities-chart/index.md
     - Atwood FBD: sims/atwood-fbd/index.md
     - Atwood Machine: sims/atwood-machine/index.md
     - Banked Curve Forces: sims/banked-curve-forces/index.md
@@ -64,18 +68,26 @@ nav:
     - Car on Curve: sims/car-on-curve/index.md
     - Centripetal Force: sims/centripetal-force-viz/index.md
     - Collisions: sims/collisions/index.md
+    - Collision Types: sims/collision-types/index.md
     - Current Animation: sims/current-animation/index.md
+    - Damping Types: sims/damping-types/index.md
     - DC Motor: sims/dc-motor/index.md
     - Distance vs Displacement: sims/distance-displacement/index.md
+    - Driven Oscillator: sims/driven-oscillator/index.md
     - Elasticity: sims/elasticity/index.md
     - Equilibrium Workflow: sims/equilibrium-workflow/index.md
+    - Energy Diagram Explorer: sims/energy-diagram-explorer/index.md
+    - Energy Efficiency: sims/energy-efficiency/index.md
     - Exoplanet: sims/exoplanet/index.md
+    - Figure Skater Spin: sims/figure-skater-spin/index.md
     - Fluid Dynamics: sims/fluid-dynamics/index.md
     - Free Body Diagram: sims/free-body-diagram/index.md
     - Free Fall: sims/free-fall/index.md
+    - Force Time Impulse: sims/force-time-impulse/index.md
     - Friction Coefficient Chart: sims/friction-coefficient-chart/index.md
     - Graph Analysis: sims/graph-analysis/index.md
     - Gravitational Attractor: sims/gravitational-attractor/index.md
+    - Hookes Law Demo: sims/hookes-law-demo/index.md
     - Horizontal Projection: sims/horizontal-projection/index.md
     - Inclined Plane Forces: sims/inclined-plane-forces/index.md
     - Inclined Plane Motion: sims/inclined-plane-motion/index.md
@@ -84,29 +96,51 @@ nav:
     - Learning Graph Viewer: sims/graph-viewer/index.md
     - Metric Scale Zoom: sims/metric-scale-zoom/index.md
     - Microscopic Surface Contact: sims/microscopic-surface-contact/index.md
+    - Momentum Comparison: sims/momentum-comparison/index.md
+    - Multistage Rocket: sims/multistage-rocket/index.md
     - Newtons Second Law: sims/newtons-second-law/index.md
     - Normal Force Incline: sims/normal-force-incline/index.md
     - Ohms Law Calculator: sims/ohms-law/index.md
+    - Oscillation Applications: sims/oscillation-applications/index.md
+    - Pendulum Comparison: sims/pendulum-comparison/index.md
+    - Period Frequency Relationship: sims/period-frequency-relationship/index.md
     - Position Time Analyzer: sims/position-time-analyzer/index.md
+    - Potential Energy Chart: sims/potential-energy-chart/index.md
     - Precision vs Accuracy: sims/precision-accuracy/index.md
     - Projectile Motion: sims/projectile-motion/index.md
     - Projectile Motion Gravity: sims/projectile-motion-gravity/index.md
     - Pulley Mechanical Advantage: sims/pulley-mechanical-advantage/index.md
     - Relative Velocity: sims/relative-velocity/index.md
+    - Resonance Graph: sims/resonance-graph/index.md
     - River Crossing: sims/river-crossing/index.md
+    - Rocket Propulsion: sims/rocket-propulsion/index.md
+    - Roller Coaster Energy: sims/roller-coaster-energy/index.md
+    - Rolling Energy Distribution: sims/rolling-energy-distribution/index.md
+    - Rolling Velocity Vectors: sims/rolling-velocity-vectors/index.md
+    - Rotational Applications: sims/rotational-applications/index.md
+    - Rotational Inertia Race: sims/rotational-inertia-race/index.md
+    - Rotational Kinematics Solver: sims/rotational-kinematics-solver/index.md
     - Scientific Method: sims/scientific-method/index.md
     - Series vs Parallel: sims/series-parallel/index.md
+    - SHM Energy: sims/shm-energy/index.md
+    - SHM Motion Graphs: sims/shm-motion-graphs/index.md
+    - Simple Pendulum: sims/simple-pendulum/index.md
     - Solar System: sims/solar-system/index.md
     - Static Friction: sims/static-friction/index.md
+    - Tacoma Narrows Timeline: sims/tacoma-narrows-timeline/index.md
     - Tension Force Diagram: sims/tension-force-diagram/index.md
     - Three Graph Analyzer: sims/three-graph-analyzer/index.md
+    - Torque Diagram: sims/torque-diagram/index.md
     - Uniform vs Accelerated Motion: sims/uniform-accelerated-motion/index.md
     - Vector Addition: sims/vector-addition/index.md
     - Vector Basics: sims/vector-basics/index.md
     - Vector Components: sims/vector-components/index.md
     - Velocity Speed Comparison: sims/velocity-speed-comparison/index.md
     - Velocity Time Area: sims/velocity-time-area/index.md
+    - Variable Force Work: sims/variable-force-work/index.md
     - Weight Gravity: sims/weight-gravity/index.md
+    - Work Energy Theorem: sims/work-energy-theorem/index.md
+    - Work Scenarios: sims/work-scenarios/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md

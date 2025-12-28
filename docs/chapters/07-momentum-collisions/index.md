@@ -71,9 +71,12 @@ Notice how both mass and velocity contribute to momentum. A massive freight trai
 Because momentum is a vector, we must consider its direction. An object moving east has positive momentum in the east direction. If it turns around and moves west, its momentum becomes negative (or positive in the west direction). When analyzing collisions, tracking the direction of momentum is crucial.
 
 #### Diagram: Momentum Comparison Interactive Simulator
+
+<iframe src="../../sims/momentum-comparison/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Momentum Comparison Interactive Simulator</summary>
-**Status:** INCOMPLETE
+**Status:** done
 **TODO:** human-review-needed
 
 Type: microsim
@@ -176,9 +179,12 @@ Understanding impulse explains many safety features and sports techniques:
 - **Following through**: In baseball and golf, extending contact time maximizes impulse and changes ball momentum more effectively
 
 #### Diagram: Force vs. Time: Impact Scenarios Comparison
+
+<iframe src="../../sims/force-time-impulse/main.html" width="100%" height="502px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Force vs. Time: Impact Scenarios Comparison</summary>
-**Status:** INCOMPLETE
+**Status:** done
 **TODO:** human-review-needed
 
 Type: chart
@@ -276,9 +282,12 @@ Collisions are classified based on whether kinetic energy is conserved. While mo
 | Perfectly Inelastic | Yes | No | Stick together, maximum KE loss |
 
 #### Diagram: Collision Types Comparison Diagram
+
+<iframe src="../../sims/collision-types/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Collision Types Comparison Diagram</summary>
-**Status:** INCOMPLETE
+**Status:** done
 **TODO:** human-review-needed
 
 Type: diagram
@@ -529,9 +538,12 @@ A cue ball (mass m) moving at 5 m/s strikes a stationary eight ball (mass m) at 
 Using conservation of momentum in x and y, along with energy conservation, we can determine both final speeds and the eight ball's angle.
 
 #### Diagram: 2D Collision Vector Diagram
+
+<iframe src="../../sims/2d-collision-vectors/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>2D Collision Vector Diagram</summary>
-**Status:** INCOMPLETE
+**Status:** done
 **TODO:** human-review-needed
 
 Type: diagram
@@ -677,9 +689,12 @@ Real rockets face several challenges:
 4. **Exhaust velocity limits**: Chemical rockets max out around 4-5 km/s exhaust velocity
 
 #### Diagram: Rocket Propulsion Momentum Diagram
+
+<iframe src="../../sims/rocket-propulsion/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Rocket Propulsion Momentum Diagram</summary>
-**Status:** INCOMPLETE
+**Status:** done
 **TODO:** human-review-needed
 
 Type: workflow
@@ -758,9 +773,12 @@ The Saturn V moon rocket used three stages:
 - **Third stage**: Placed spacecraft into Earth orbit, then fired again for moon trajectory
 
 #### Diagram: Multistage Rocket Efficiency Comparison
+
+<iframe src="../../sims/multistage-rocket/main.html" width="100%" height="602px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Multistage Rocket Efficiency Comparison</summary>
-**Status:** INCOMPLETE
+**Status:** done
 **TODO:** human-review-needed
 
 Type: chart

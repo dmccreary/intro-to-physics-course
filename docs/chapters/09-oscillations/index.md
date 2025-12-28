@@ -137,6 +137,8 @@ When the object reaches its farthest point from equilibrium (maximum displacemen
     - Acceleration: a(t) = -(2πf)²A cos(2πft)
     - Use frameCount for animation timing
     - Update graphs every frame with new data point
+
+**Status:** INCOMPLETE
 </details>
 
 Notice how position and acceleration are always out of phase—when one is at maximum, the other is at minimum. Velocity leads position by a quarter cycle, reaching its maximum when the object passes through equilibrium.
@@ -243,6 +245,8 @@ Where:
     - Conversion arrows: gray with formula labels
 
     Implementation: HTML/CSS/JavaScript with SVG graphics and interactive calculation updates
+
+**Status:** INCOMPLETE
 </details>
 
 ## Section 3: Springs and Hooke's Law
@@ -338,6 +342,8 @@ To measure a spring constant experimentally:
     - Number of loops constant, spacing varies with stretch
     - Oscillation uses SHM equations with damping option
     - Graph uses linear regression for best-fit line
+
+**Status:** INCOMPLETE
 </details>
 
 ### Mass-Spring Oscillators
@@ -456,6 +462,8 @@ For small angles (in radians), sin(θ) ≈ θ, which makes the restoring force p
     - For large angles: numerical integration of exact equations
     - Graph shows theoretical curve and measured points
     - Calculate percent error from theory
+
+**Status:** INCOMPLETE
 </details>
 
 ### Physical Pendulum
@@ -530,6 +538,8 @@ Physical pendulums have a special property: there exists a point on the pendulum
     - Center of mass: green
     - Annotations and labels: black
     - Formulas: highlighted in yellow boxes
+
+**Status:** INCOMPLETE
 </details>
 
 ## Section 5: Energy in Oscillating Systems
@@ -621,6 +631,8 @@ Energy distribution at different points in the oscillation:
 
     Implementation: Chart.js with custom animation synchronized to oscillation
     Update rate: 60 fps for smooth energy transitions
+
+**Status:** INCOMPLETE
 </details>
 
 ## Section 6: Real-World Oscillations - Damping
@@ -704,6 +716,8 @@ Most real-world oscillators (pendulums, springs, guitar strings) are underdamped
     - Underdamped: x(t) = A₀e^(-bt/2m) cos(ω't)
     - Critical: x(t) = (A₀ + Bt)e^(-ω₀t)
     - Overdamped: x(t) = A₁e^(-α₁t) + A₂e^(-α₂t)
+
+**Status:** INCOMPLETE
 </details>
 
 ### Applications of Damping
@@ -795,6 +809,8 @@ Resonance amplitude can be dozens or hundreds of times larger than off-resonance
 
     Implementation: Chart.js with responsive curve calculations
     Formula: A/A₀ = F₀/m / √[(ω₀² - ω_d²)² + (bω_d/m)²]
+
+**Status:** INCOMPLETE
 </details>
 
 ### Famous Examples of Resonance
@@ -855,6 +871,8 @@ Engineers must carefully analyze natural frequencies and avoid driving systems a
     - "Modern bridges include damping systems and aerodynamic designs"
 
     Implementation: HTML/CSS timeline with embedded media
+
+**Status:** INCOMPLETE
 </details>
 
 ### Controlling Resonance
@@ -935,6 +953,8 @@ To avoid destructive resonance or to exploit beneficial resonance, engineers use
     - Equation: m(d²x/dt²) + b(dx/dt) + kx = F₀cos(ω_d t)
     - Track amplitude envelope for graph
     - Calculate theoretical steady-state amplitude for comparison
+
+**Status:** INCOMPLETE
 </details>
 
 ## Section 8: Mathematical Description of SHM
@@ -1074,6 +1094,8 @@ Oscillations appear throughout modern technology:
     - "300 tons: Mass of Taipei 101 tuned mass damper"
 
     Implementation: SVG graphics with CSS animations and JavaScript interactivity
+
+**Status:** INCOMPLETE
 </details>
 
 ### Biological Oscillations

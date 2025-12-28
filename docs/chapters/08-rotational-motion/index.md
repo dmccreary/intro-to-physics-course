@@ -114,6 +114,8 @@ Implementation notes:
 - Use line() to draw arc paths as points rotate
 - Update text displays with toFixed(2) for clean numbers
 - Use lerpColor() for smooth color transitions on paths
+
+**Status:** INCOMPLETE
 </details>
 
 ## Angular Velocity: How Fast Things Spin
@@ -180,6 +182,8 @@ Annotations:
 
 Implementation: Chart.js with logarithmic x-axis
 Canvas size: 800x600px
+
+**Status:** INCOMPLETE
 </details>
 
 ## Angular Acceleration: Changing Rotational Speed
@@ -294,6 +298,8 @@ Implementation notes:
 - Use createInput() for user data entry
 - Validate inputs (no contradictory values)
 - Format output with proper units and significant figures
+
+**Status:** INCOMPLETE
 </details>
 
 ### Practice Problem
@@ -384,6 +390,8 @@ Annotations:
 - Arrow boxes explaining: "Same force, different distances"
 - Arrow boxes explaining: "Same distance, different angles"
 - Formula box showing τ = rF sin θ prominently
+
+**Status:** INCOMPLETE
 </details>
 
 ### Net Torque and Equilibrium
@@ -504,6 +512,8 @@ Implementation notes:
 - Animate smooth motion with realistic timing
 - Use color coding: red=sphere, blue=cylinder, green=disk, yellow=hoop
 - Display formulas and numerical calculations
+
+**Status:** INCOMPLETE
 </details>
 
 ## Relating Torque, Rotational Inertia, and Angular Acceleration
@@ -609,6 +619,8 @@ Stacking:
 Implementation: Chart.js with stacked bars
 Canvas size: 700x500px
 Include data table below chart showing numerical percentages
+
+**Status:** INCOMPLETE
 </details>
 
 ### Conservation of Energy with Rotation
@@ -691,6 +703,8 @@ Annotations:
 - "Larger I or larger ω increases L"
 - "Direction follows right-hand rule"
 - "L is conserved when τ_ext = 0"
+
+**Status:** INCOMPLETE
 </details>
 
 ## Conservation of Angular Momentum
@@ -781,6 +795,8 @@ Implementation notes:
 - Map arm position to *I* values between 2.0 and 5.0 kg·m²
 - Calculate ω every frame from *L*/*I*
 - Rotate skater graphic by θ += ω × dt
+
+**Status:** INCOMPLETE
 </details>
 
 ### Where Does the Extra Energy Come From?
@@ -877,6 +893,8 @@ Implementation notes:
 - Draw vectors as arrows using custom arrow function
 - Store trace path points in arrays, display with beginShape()
 - Ensure v_cm = rω always (rolling without slipping)
+
+**Status:** INCOMPLETE
 </details>
 
 ### Rolling Down Ramps
@@ -1041,6 +1059,8 @@ Visual style: Modern grid with colorful cards, icons, and hover effects
 
 Implementation: HTML/CSS/JavaScript with hover effects and modal pop-ups
 Canvas size: 1200x900px
+
+**Status:** INCOMPLETE
 </details>
 
 ## Problem-Solving Strategies for Rotational Motion
