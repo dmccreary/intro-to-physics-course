@@ -5,7 +5,7 @@ description: An interactive MicroSim demonstrating how source motion affects obs
 
 # Doppler Effect Simulation
 
-<iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="472px" width="100%" scrolling="no"></iframe>
 
 [Run the Doppler Effect MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
