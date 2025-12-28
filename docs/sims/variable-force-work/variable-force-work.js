@@ -198,6 +198,7 @@ function drawGraph(startPos, endPos, ft) {
     drawingContext.setLineDash([]);
 
     // Axis labels
+    noStroke();
     fill('black');
     textSize(14);
     textAlign(CENTER, TOP);
