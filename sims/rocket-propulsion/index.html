@@ -3452,14 +3452,14 @@
 <p>This interactive simulation demonstrates how rockets propel themselves using the conservation of momentum. As exhaust gases are expelled backward, the rocket gains momentum in the forward direction.</p>
 <h2 id="key-physics-principles">Key Physics Principles</h2>
 <h3 id="conservation-of-momentum">Conservation of Momentum</h3>
-<p>$$\vec{p}<em final="final">{initial} = \vec{p}</em>$$
-$$0 = \vec{p}<em exhaust="exhaust">{rocket} + \vec{p}</em>$$
-$$\vec{p}<em exhaust="exhaust">{rocket} = -\vec{p}</em>$$</p>
+<div class="arithmatex">\[\vec{p}_{initial} = \vec{p}_{final}$$
+$$0 = \vec{p}_{rocket} + \vec{p}_{exhaust}$$
+$$\vec{p}_{rocket} = -\vec{p}_{exhaust}\]</div>
 <h3 id="thrust-equation">Thrust Equation</h3>
-<p>$$F_{thrust} = \frac{dm}{dt} \times v_{exhaust}$$</p>
+<div class="arithmatex">\[F_{thrust} = \frac{dm}{dt} \times v_{exhaust}\]</div>
 <p>Where:
-- $\frac{dm}{dt}$ = mass flow rate of exhaust (kg/s)
-- $v_{exhaust}$ = exhaust velocity relative to rocket (m/s)</p>
+- <span class="arithmatex">\(\frac{dm}{dt}\)</span> = mass flow rate of exhaust (kg/s)
+- <span class="arithmatex">\(v_{exhaust}\)</span> = exhaust velocity relative to rocket (m/s)</p>
 <h2 id="visual-elements">Visual Elements</h2>
 <ul>
 <li><strong>Rocket</strong>: Animated spacecraft with visible exhaust</li>
@@ -3593,6 +3593,10 @@ $$\vec{p}<em exhaust="exhaust">{rocket} = -\vec{p}</em>$$</p>
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -2514,7 +2514,7 @@
 <p>When an object rotates, we need a way to describe how far it has turned. Just as displacement measures change in position for linear motion, <strong>angular displacement</strong> measures change in rotational position.</p>
 <p>Angular displacement is typically measured in radians (rad), though you might also encounter degrees or revolutions. One complete rotation equals 360° = 2π radians = 1 revolution. Radians provide the most natural unit for physics because they directly relate arc length to radius.</p>
 <p>The relationship between arc length <em>s</em> traveled by a point and angular displacement θ is:</p>
-<p>$$s = r\theta$$</p>
+<div class="arithmatex">\[s = r\theta\]</div>
 <p>where <em>r</em> is the distance from the axis of rotation. This means points farther from the axis travel greater distances for the same angular displacement—think about how the tip of a fan blade moves much faster than a point near the center.</p>
 <p><strong>Key characteristics of angular displacement:</strong></p>
 <ul>
@@ -2599,10 +2599,10 @@
 <h2 id="angular-velocity-how-fast-things-spin">Angular Velocity: How Fast Things Spin</h2>
 <p>Just as velocity describes how quickly position changes in linear motion, <strong>angular velocity</strong> describes how quickly angular position changes in rotational motion.</p>
 <p>Angular velocity ω (Greek letter omega) is defined as:</p>
-<p>$$\omega = \frac{\Delta\theta}{\Delta t}$$</p>
+<div class="arithmatex">\[\omega = \frac{\Delta\theta}{\Delta t}\]</div>
 <p>Angular velocity is measured in radians per second (rad/s), though you might also see revolutions per minute (rpm) in everyday contexts. To convert: 1 rpm = 2π/60 rad/s ≈ 0.105 rad/s.</p>
 <p>Every point on a rotating rigid object has the same angular velocity—they all rotate through the same angle in the same time. However, points farther from the axis move with greater linear velocity. The relationship between linear velocity <em>v</em> and angular velocity ω is:</p>
-<p>$$v = r\omega$$</p>
+<div class="arithmatex">\[v = r\omega\]</div>
 <p>This explains why the outer edge of a merry-go-round moves faster than positions near the center, even though everything rotates together.</p>
 <h3 id="angular-velocity-in-everyday-life">Angular Velocity in Everyday Life</h3>
 <p>Angular velocity appears everywhere in daily life:</p>
@@ -2649,10 +2649,10 @@ Canvas size: 800x600px</p>
 <h2 id="angular-acceleration-changing-rotational-speed">Angular Acceleration: Changing Rotational Speed</h2>
 <p>When an object's angular velocity changes, it experiences <strong>angular acceleration</strong>. This is the rotational analog of linear acceleration.</p>
 <p>Angular acceleration α (Greek letter alpha) is defined as:</p>
-<p>$$\alpha = \frac{\Delta\omega}{\Delta t}$$</p>
+<div class="arithmatex">\[\alpha = \frac{\Delta\omega}{\Delta t}\]</div>
 <p>Angular acceleration is measured in radians per second squared (rad/s²). Like linear acceleration, angular acceleration can be positive (speeding up) or negative (slowing down, also called angular deceleration).</p>
 <p>The relationship between linear tangential acceleration <em>a</em>_t and angular acceleration is:</p>
-<p>$$a_t = r\alpha$$</p>
+<div class="arithmatex">\[a_t = r\alpha\]</div>
 <p>This means points farther from the axis experience greater linear acceleration for the same angular acceleration—important for understanding why you feel different forces at different positions on a rotating amusement park ride.</p>
 <h3 id="signs-and-directions">Signs and Directions</h3>
 <p>Angular acceleration has sign and direction:</p>
@@ -2671,10 +2671,10 @@ Canvas size: 800x600px</p>
 <h2 id="rotational-kinematics-equations-of-angular-motion">Rotational Kinematics: Equations of Angular Motion</h2>
 <p>Just as linear kinematics provides equations relating position, velocity, acceleration, and time, <strong>rotational kinematics</strong> provides parallel equations for angular quantities.</p>
 <p>When angular acceleration is constant, we can use four fundamental rotational kinematic equations:</p>
-<p>$$\omega = \omega_0 + \alpha t$$</p>
-<p>$$\theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2$$</p>
-<p>$$\omega^2 = \omega_0^2 + 2\alpha(\theta - \theta_0)$$</p>
-<p>$$\theta = \theta_0 + \frac{1}{2}(\omega_0 + \omega)t$$</p>
+<div class="arithmatex">\[\omega = \omega_0 + \alpha t\]</div>
+<div class="arithmatex">\[\theta = \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2\]</div>
+<div class="arithmatex">\[\omega^2 = \omega_0^2 + 2\alpha(\theta - \theta_0)\]</div>
+<div class="arithmatex">\[\theta = \theta_0 + \frac{1}{2}(\omega_0 + \omega)t\]</div>
 <p>Notice the perfect correspondence with linear kinematic equations—simply replace <em>x</em> with θ, <em>v</em> with ω, and <em>a</em> with α!</p>
 <h3 id="rotational-vs-linear-kinematic-equations">Rotational vs. Linear Kinematic Equations</h3>
 <p>The parallel structure makes these equations easier to remember:</p>
@@ -2766,14 +2766,14 @@ Canvas size: 800x600px</p>
 <h2 id="torque-the-rotational-force">Torque: The Rotational Force</h2>
 <p>If force causes linear acceleration, what causes angular acceleration? The answer is <strong>torque</strong> (Greek letter tau, τ), the rotational analog of force.</p>
 <p>Torque measures the effectiveness of a force in causing rotation. It depends not only on the magnitude of the force but also on where and how the force is applied relative to the rotation axis.</p>
-<p>$$\tau = rF\sin\theta$$</p>
+<div class="arithmatex">\[\tau = rF\sin\theta\]</div>
 <p>where:
 - τ is torque (N·m)
 - <em>r</em> is the distance from the axis to where force is applied (m)
 - <em>F</em> is the magnitude of the applied force (N)
 - θ is the angle between the force vector and the position vector</p>
 <p>When the force is perpendicular to the position vector (θ = 90°), the equation simplifies to:</p>
-<p>$$\tau = rF_\perp$$</p>
+<div class="arithmatex">\[\tau = rF_\perp\]</div>
 <p>where <em>F</em>_⊥ is the component of force perpendicular to the radius.</p>
 <h3 id="understanding-torque-through-experience">Understanding Torque Through Experience</h3>
 <p>You intuitively understand torque from everyday experiences:</p>
@@ -2823,9 +2823,9 @@ Canvas size: 800x600px</p>
 </details>
 <h3 id="net-torque-and-equilibrium">Net Torque and Equilibrium</h3>
 <p>Just as net force determines linear acceleration, net torque determines angular acceleration. When multiple torques act on an object:</p>
-<p>$$\sum \tau = \tau_1 + \tau_2 + \tau_3 + ...$$</p>
+<div class="arithmatex">\[\sum \tau = \tau_1 + \tau_2 + \tau_3 + ...\]</div>
 <p>For rotational equilibrium (no angular acceleration), the sum of all torques must equal zero:</p>
-<p>$$\sum \tau = 0$$</p>
+<div class="arithmatex">\[\sum \tau = 0\]</div>
 <p>When calculating net torque, we assign signs:
 - <strong>Positive (+):</strong> Counterclockwise torques
 - <strong>Negative (−):</strong> Clockwise torques</p>
@@ -2840,9 +2840,9 @@ Canvas size: 800x600px</p>
 <p>Just as mass measures an object's resistance to linear acceleration (inertia), <strong>rotational inertia</strong> (also called moment of inertia, <em>I</em>) measures an object's resistance to angular acceleration.</p>
 <p>However, rotational inertia doesn't depend only on mass—it also depends on how that mass is distributed relative to the axis of rotation. The farther the mass is from the axis, the greater the rotational inertia.</p>
 <p>For a point mass:</p>
-<p>$$I = mr^2$$</p>
+<div class="arithmatex">\[I = mr^2\]</div>
 <p>For extended objects, we sum (or integrate) over all mass elements:</p>
-<p>$$I = \sum m_i r_i^2$$</p>
+<div class="arithmatex">\[I = \sum m_i r_i^2\]</div>
 <p>Rotational inertia is measured in kg·m². Different shapes have different rotational inertias:</p>
 <table>
 <thead>
@@ -2948,7 +2948,7 @@ Canvas size: 800x600px</p>
 </details>
 <h2 id="relating-torque-rotational-inertia-and-angular-acceleration">Relating Torque, Rotational Inertia, and Angular Acceleration</h2>
 <p>The rotational version of Newton's second law connects torque, rotational inertia, and angular acceleration:</p>
-<p>$$\sum \tau = I\alpha$$</p>
+<div class="arithmatex">\[\sum \tau = I\alpha\]</div>
 <p>This equation is the rotational analog of <em>F</em> = <em>ma</em>. It tells us:
 - Greater torque produces greater angular acceleration (just as greater force produces greater acceleration)
 - Larger rotational inertia means smaller angular acceleration for the same torque (just as larger mass means smaller acceleration)</p>
@@ -3014,10 +3014,10 @@ Canvas size: 800x600px</p>
 <p>This correspondence means you don't need to memorize an entirely new set of principles—just recognize the pattern and translate between linear and rotational domains.</p>
 <h2 id="rotational-kinetic-energy-energy-of-spinning-objects">Rotational Kinetic Energy: Energy of Spinning Objects</h2>
 <p>A rotating object possesses kinetic energy due to its motion, just like a moving object in linear motion. The <strong>rotational kinetic energy</strong> of a spinning object is:</p>
-<p>$$KE_{rot} = \frac{1}{2}I\omega^2$$</p>
+<div class="arithmatex">\[KE_{rot} = \frac{1}{2}I\omega^2\]</div>
 <p>Notice the parallel with linear kinetic energy KE = ½<em>mv</em>². The rotational version replaces mass with rotational inertia (<em>I</em>) and velocity with angular velocity (ω).</p>
 <p>When an object both translates and rotates (like a rolling ball), it has both translational and rotational kinetic energy:</p>
-<p>$$KE_{total} = KE_{trans} + KE_{rot} = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2$$</p>
+<div class="arithmatex">\[KE_{total} = KE_{trans} + KE_{rot} = \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2\]</div>
 <p>For a rolling object without slipping, <em>v</em> = <em>rω</em>, so the two types of kinetic energy are related. Energy is distributed between translation and rotation based on the object's rotational inertia.</p>
 <p><strong>Example:</strong> A solid sphere (mass 2.0 kg, radius 0.15 m) rolls without slipping at 3.0 m/s. What are its translational kinetic energy, rotational kinetic energy, and total kinetic energy?</p>
 <p><strong>Solution:</strong>
@@ -3065,18 +3065,18 @@ Include data table below chart showing numerical percentages</p>
 </details>
 <h3 id="conservation-of-energy-with-rotation">Conservation of Energy with Rotation</h3>
 <p>When solving problems involving rotating objects, remember to include rotational kinetic energy in energy conservation:</p>
-<p>$$E_{initial} = E_{final}$$
-$$PE_i + KE_{trans,i} + KE_{rot,i} = PE_f + KE_{trans,f} + KE_{rot,f}$$</p>
+<div class="arithmatex">\[E_{initial} = E_{final}$$
+$$PE_i + KE_{trans,i} + KE_{rot,i} = PE_f + KE_{trans,f} + KE_{rot,f}\]</div>
 <p>This principle explains why a hollow cylinder rolls down a ramp more slowly than a solid cylinder—more of its gravitational potential energy must be converted to rotational kinetic energy.</p>
 <h2 id="angular-momentum-the-rotational-analog-of-momentum">Angular Momentum: The Rotational Analog of Momentum</h2>
 <p>Just as moving objects have linear momentum <em>p</em> = <em>mv</em>, rotating objects have <strong>angular momentum</strong> <em>L</em> defined as:</p>
-<p>$$L = I\omega$$</p>
+<div class="arithmatex">\[L = I\omega\]</div>
 <p>Angular momentum is measured in kg·m²/s (or equivalently, J·s). Like linear momentum, angular momentum is a vector quantity with direction determined by the right-hand rule.</p>
 <p>The relationship between torque and angular momentum mirrors the relationship between force and linear momentum:</p>
-<p>$$\sum \tau = \frac{\Delta L}{\Delta t}$$</p>
+<div class="arithmatex">\[\sum \tau = \frac{\Delta L}{\Delta t}\]</div>
 <p>This means torque is the rate of change of angular momentum, just as force is the rate of change of linear momentum.</p>
 <p>For a point particle moving in a circular path, angular momentum can also be expressed as:</p>
-<p>$$L = mvr$$</p>
+<div class="arithmatex">\[L = mvr\]</div>
 <p>where <em>m</em> is mass, <em>v</em> is tangential velocity, and <em>r</em> is the radius of the circular path.</p>
 <p><strong>Key properties of angular momentum:</strong></p>
 <ul>
@@ -3126,8 +3126,8 @@ $$PE_i + KE_{trans,i} + KE_{rot,i} = PE_f + KE_{trans,f} + KE_{rot,f}$$</p>
 </details>
 <h2 id="conservation-of-angular-momentum">Conservation of Angular Momentum</h2>
 <p>One of the most powerful principles in rotational motion is the <strong>conservation of angular momentum</strong>: In the absence of external torques, the total angular momentum of a system remains constant.</p>
-<p>$$L_{initial} = L_{final}$$
-$$I_i\omega_i = I_f\omega_f$$</p>
+<div class="arithmatex">\[L_{initial} = L_{final}$$
+$$I_i\omega_i = I_f\omega_f\]</div>
 <p>This conservation law explains many fascinating phenomena:</p>
 <p><strong>Figure skater spinning:</strong> When a skater pulls their arms in, rotational inertia decreases. Since <em>L</em> = <em>I</em>ω is conserved, ω must increase—the skater spins faster! When arms extend, <em>I</em> increases and ω decreases.</p>
 <p><strong>Falling cat:</strong> A cat dropped upside-down can rotate mid-air to land on its feet by changing its body configuration to manipulate angular momentum distribution without external torques.</p>
@@ -3200,7 +3200,7 @@ $$I_i\omega_i = I_f\omega_f$$</p>
 <h2 id="rolling-motion-translation-plus-rotation">Rolling Motion: Translation Plus Rotation</h2>
 <p><strong>Rolling motion</strong> combines translational and rotational motion. When an object rolls without slipping, every point on the object has both types of motion, and there's a special relationship between the two.</p>
 <p>For rolling without slipping:</p>
-<p>$$v_{cm} = r\omega$$</p>
+<div class="arithmatex">\[v_{cm} = r\omega\]</div>
 <p>where <em>v</em>_cm is the velocity of the center of mass and ω is the angular velocity.</p>
 <p>This constraint means:
 - The contact point between rolling object and surface is instantaneously at rest
@@ -3272,12 +3272,12 @@ $$I_i\omega_i = I_f\omega_f$$</p>
 </details>
 <h3 id="rolling-down-ramps">Rolling Down Ramps</h3>
 <p>When an object rolls down a ramp without slipping, both gravity and friction affect its motion. Energy conservation gives:</p>
-<p>$$mgh = \frac{1}{2}mv_{cm}^2 + \frac{1}{2}I\omega^2$$</p>
+<div class="arithmatex">\[mgh = \frac{1}{2}mv_{cm}^2 + \frac{1}{2}I\omega^2\]</div>
 <p>For rolling without slipping (<em>v</em>_cm = <em>rω</em>), we can solve for the velocity at the bottom:</p>
-<p>$$v_{cm} = \sqrt{\frac{2gh}{1 + I/mr^2}}$$</p>
+<div class="arithmatex">\[v_{cm} = \sqrt{\frac{2gh}{1 + I/mr^2}}\]</div>
 <p>This reveals an important result: <strong>Objects with smaller <em>I</em>/<em>mr</em>² ratios roll down ramps faster.</strong> This is why a solid sphere reaches the bottom before a hollow sphere, even if they have the same mass and radius.</p>
 <p>The acceleration down a ramp of angle θ is:</p>
-<p>$$a_{cm} = \frac{g\sin\theta}{1 + I/mr^2}$$</p>
+<div class="arithmatex">\[a_{cm} = \frac{g\sin\theta}{1 + I/mr^2}\]</div>
 <p><strong>Race rankings</strong> (fastest to slowest):
 1. Solid sphere (<em>I</em>/<em>mr</em>² = 2/5)
 2. Solid cylinder (<em>I</em>/<em>mr</em>² = 1/2)
@@ -3622,6 +3622,10 @@ Canvas size: 1200x900px</p>
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -2781,12 +2781,12 @@ Implementation notes:
 <p>Frequency is closely related to the energy carried by a wave: higher frequency waves carry more energy than lower frequency waves of the same amplitude.</p>
 <h3 id="wave-period-t">Wave Period (T)</h3>
 <p><strong>Wave period</strong> is the time required for one complete wave cycle to pass a fixed point. Period is measured in seconds and is the reciprocal of frequency:</p>
-<p>$$T = \frac{1}{f}$$</p>
+<div class="arithmatex">\[T = \frac{1}{f}\]</div>
 <p>For example, a wave with a frequency of 2 Hz has a period of 0.5 seconds. During each 0.5-second interval, one complete wave cycle passes by.</p>
 <h3 id="wave-speed-v">Wave Speed (v)</h3>
 <p><strong>Wave speed</strong> is the distance a wave travels per unit time. Wave speed depends on the properties of the medium, not on the frequency or amplitude of the wave itself.</p>
 <p>The fundamental relationship connecting wave speed, frequency, and wavelength is:</p>
-<p>$$v = f\lambda$$</p>
+<div class="arithmatex">\[v = f\lambda\]</div>
 <p>This equation tells us that wave speed equals frequency times wavelength. If you know any two of these quantities, you can calculate the third.</p>
 <p>Key insight: In a given medium, wave speed is constant. This means that if frequency increases, wavelength must decrease proportionally, and vice versa.</p>
 <h4 id="diagram-wave-properties-interactive-calculator-microsim">Diagram: Wave Properties Interactive Calculator MicroSim</h4>
@@ -2942,8 +2942,8 @@ Implementation notes:
 <p>When waves encounter each other, they don't collide like solid objects. Instead, they pass through one another while temporarily combining their effects. This remarkable behavior is described by the superposition principle.</p>
 <h3 id="the-superposition-principle">The Superposition Principle</h3>
 <p>The <strong>superposition principle</strong> states that when two or more waves overlap in the same region of space, the resulting displacement at any point is the sum of the displacements that each individual wave would cause at that point.</p>
-<p>Mathematically, if wave 1 causes a displacement $y_1$ and wave 2 causes a displacement $y_2$ at a given point, the total displacement is:</p>
-<p>$$y_{total} = y_1 + y_2$$</p>
+<p>Mathematically, if wave 1 causes a displacement <span class="arithmatex">\(y_1\)</span> and wave 2 causes a displacement <span class="arithmatex">\(y_2\)</span> at a given point, the total displacement is:</p>
+<div class="arithmatex">\[y_{total} = y_1 + y_2\]</div>
 <p>This principle applies regardless of the amplitude, frequency, or direction of the individual waves. After the waves pass through each other, they continue on unchanged—as if they had never met.</p>
 <h3 id="constructive-interference">Constructive Interference</h3>
 <p><strong>Constructive interference</strong> occurs when two waves combine to produce a displacement larger than either wave alone. This happens when the waves are "in phase"—meaning their crests align with crests and troughs align with troughs.</p>
@@ -3091,7 +3091,7 @@ Implementation notes:
 <li>The simplest standing wave pattern (fundamental frequency) has nodes only at the ends and one antinode in the middle</li>
 <li>Higher harmonics have additional nodes and antinodes</li>
 </ul>
-<p>The distance between consecutive nodes (or consecutive antinodes) is half a wavelength: $\frac{\lambda}{2}$</p>
+<p>The distance between consecutive nodes (or consecutive antinodes) is half a wavelength: <span class="arithmatex">\(\frac{\lambda}{2}\)</span></p>
 <h4 id="diagram-standing-waves-on-a-string-microsim">Diagram: Standing Waves on a String MicroSim</h4>
 <iframe src="../../sims/standing-waves/main.html" height="602px" width="100%" scrolling="no"></iframe>
 
@@ -3364,7 +3364,7 @@ Implementation: HTML/CSS/JavaScript with SVG animations or p5.js
 </ul>
 <p>The Doppler effect can be quantified using these equations:</p>
 <p>For a moving source:
-$$f' = f \left(\frac{v}{v \pm v_s}\right)$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(f' = f \left(\frac{v}{v \pm v_s}\right)\)</span>\)</span></p>
 <p>Where:
 - f' is the observed frequency
 - f is the source frequency
@@ -3372,7 +3372,7 @@ $$f' = f \left(\frac{v}{v \pm v_s}\right)$$</p>
 - v_s is the source speed
 - Use minus sign when source approaches, plus sign when source recedes</p>
 <p>For a moving observer:
-$$f' = f \left(\frac{v \pm v_o}{v}\right)$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(f' = f \left(\frac{v \pm v_o}{v}\right)\)</span>\)</span></p>
 <p>Where v_o is the observer speed (plus sign when approaching, minus sign when receding).</p>
 <h4 id="diagram-doppler-effect-interactive-simulation-microsim">Diagram: Doppler Effect Interactive Simulation MicroSim</h4>
 <iframe src="../../sims/doppler-effect/main.html" height="602px" width="100%" scrolling="no"></iframe>
@@ -3512,7 +3512,7 @@ Implementation notes:
 <p>Key characteristics of shock waves:</p>
 <ul>
 <li>Occur when source speed &gt; wave speed (Mach number &gt; 1)</li>
-<li>Form a cone with half-angle: $\sin(\theta) = \frac{v}{v_s}$</li>
+<li>Form a cone with half-angle: <span class="arithmatex">\(\sin(\theta) = \frac{v}{v_s}\)</span></li>
 <li>Contain very high energy and pressure</li>
 <li>Create loud sounds (sonic booms) or destructive forces</li>
 </ul>
@@ -3544,7 +3544,7 @@ Implementation notes:
 </ul>
 <p>The speed of sound in air at 20°C (room temperature) is approximately <strong>343 m/s</strong> (about 767 mph or 1,235 km/h). This speed increases with temperature because warmer air molecules move faster and transmit vibrations more quickly.</p>
 <p>Temperature dependence in air:
-$$v = 331 + 0.6T$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(v = 331 + 0.6T\)</span>\)</span></p>
 <p>Where v is in m/s and T is temperature in degrees Celsius.</p>
 <table>
 <thead>
@@ -3583,11 +3583,11 @@ $$v = 331 + 0.6T$$</p>
 <h3 id="sound-intensity-and-the-decibel-scale">Sound Intensity and the Decibel Scale</h3>
 <p><strong>Sound intensity</strong> is the power carried by sound waves per unit area. It measures the rate at which sound energy flows through a surface and is expressed in watts per square meter (W/m²).</p>
 <p>Intensity follows an inverse square law: as you move away from a point source, intensity decreases with the square of the distance:</p>
-<p>$$I = \frac{P}{4\pi r^2}$$</p>
+<div class="arithmatex">\[I = \frac{P}{4\pi r^2}\]</div>
 <p>Where P is the power of the source and r is the distance from the source.</p>
 <p>However, our ears perceive sound intensity logarithmically, not linearly. A sound that is 10 times more intense doesn't sound "10 times louder" to us—it sounds only about twice as loud. To match human perception, we use the <strong>decibel scale</strong>.</p>
 <p>The <strong>decibel (dB) scale</strong> is a logarithmic scale for measuring sound intensity level:</p>
-<p>$$\beta = 10 \log_{10}\left(\frac{I}{I_0}\right)$$</p>
+<div class="arithmatex">\[\beta = 10 \log_{10}\left(\frac{I}{I_0}\right)\]</div>
 <p>Where:
 - β is the sound level in decibels
 - I is the sound intensity
@@ -3950,7 +3950,7 @@ Implementation: HTML/CSS/JavaScript with SVG elements and interactive controls
 <h3 id="beats">Beats</h3>
 <p><strong>Beats</strong> are the periodic variations in loudness that occur when two sound waves of slightly different frequencies interfere. The amplitude oscillates between constructive and destructive interference, creating a "wah-wah-wah" pulsing sound.</p>
 <p>The <strong>beat frequency</strong> equals the difference between the two original frequencies:</p>
-<p>$$f_{beat} = |f_1 - f_2|$$</p>
+<div class="arithmatex">\[f_{beat} = |f_1 - f_2|\]</div>
 <p>For example, if one tuning fork vibrates at 440 Hz and another at 443 Hz, you'll hear 3 beats per second.</p>
 <p>Musicians use beats to tune instruments: when two strings are perfectly in tune, the beats disappear (beat frequency = 0). If beats are heard, one string is adjusted until the beats slow down and stop, indicating the strings are now at the same frequency.</p>
 <h3 id="harmonics">Harmonics</h3>
@@ -3977,12 +3977,12 @@ Implementation: HTML/CSS/JavaScript with SVG elements and interactive controls
 </ul>
 <p>Resonance conditions for different systems:</p>
 <p><strong>String with both ends fixed</strong> (guitar, violin):
-$$f_n = \frac{n}{2L}\sqrt{\frac{T}{\mu}}$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(f_n = \frac{n}{2L}\sqrt{\frac{T}{\mu}}\)</span>\)</span></p>
 <p>Where n is the harmonic number, L is length, T is tension, and μ is mass per unit length.</p>
 <p><strong>Open pipe</strong> (flute, organ pipe open at both ends):
-$$f_n = \frac{nv}{2L}$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(f_n = \frac{nv}{2L}\)</span>\)</span></p>
 <p><strong>Closed pipe</strong> (bottle, organ pipe closed at one end):
-$$f_n = \frac{nv}{4L}$$ (only odd harmonics: n = 1, 3, 5...)</p>
+<span class="arithmatex">\(<span class="arithmatex">\(f_n = \frac{nv}{4L}\)</span>\)</span> (only odd harmonics: n = 1, 3, 5...)</p>
 <h4 id="diagram-musical-harmonics-visualizer-microsim">Diagram: Musical Harmonics Visualizer MicroSim</h4>
 <details>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -4261,47 +4261,47 @@ Implementation: Create as SVG diagram or use drawing tool with clear annotations
 <tbody>
 <tr>
 <td>Wave speed</td>
-<td>$v = f\lambda$</td>
+<td><span class="arithmatex">\(v = f\lambda\)</span></td>
 <td>v = wave speed, f = frequency, λ = wavelength</td>
 </tr>
 <tr>
 <td>Period-frequency</td>
-<td>$T = \frac{1}{f}$</td>
+<td><span class="arithmatex">\(T = \frac{1}{f}\)</span></td>
 <td>T = period, f = frequency</td>
 </tr>
 <tr>
 <td>Doppler (moving source)</td>
-<td>$f' = f\left(\frac{v}{v \pm v_s}\right)$</td>
+<td><span class="arithmatex">\(f' = f\left(\frac{v}{v \pm v_s}\right)\)</span></td>
 <td>f' = observed frequency, v = wave speed, v_s = source speed</td>
 </tr>
 <tr>
 <td>Doppler (moving observer)</td>
-<td>$f' = f\left(\frac{v \pm v_o}{v}\right)$</td>
+<td><span class="arithmatex">\(f' = f\left(\frac{v \pm v_o}{v}\right)\)</span></td>
 <td>v_o = observer speed</td>
 </tr>
 <tr>
 <td>Sound level</td>
-<td>$\beta = 10\log_{10}\left(\frac{I}{I_0}\right)$</td>
+<td><span class="arithmatex">\(\beta = 10\log_{10}\left(\frac{I}{I_0}\right)\)</span></td>
 <td>β = decibels, I = intensity, I₀ = 10⁻¹² W/m²</td>
 </tr>
 <tr>
 <td>Beat frequency</td>
-<td>$f_{beat} = |f_1 - f_2|$</td>
+<td><span class="arithmatex">\(f_{beat} = \|f_1 - f_2\|\)</span></td>
 <td>f₁, f₂ = frequencies of interfering waves</td>
 </tr>
 <tr>
 <td>String harmonics</td>
-<td>$f_n = \frac{n}{2L}\sqrt{\frac{T}{\mu}}$</td>
+<td><span class="arithmatex">\(f_n = \frac{n}{2L}\sqrt{\frac{T}{\mu}}\)</span></td>
 <td>n = harmonic number, L = length, T = tension, μ = mass/length</td>
 </tr>
 <tr>
 <td>Open pipe harmonics</td>
-<td>$f_n = \frac{nv}{2L}$</td>
+<td><span class="arithmatex">\(f_n = \frac{nv}{2L}\)</span></td>
 <td>n = 1, 2, 3... (all harmonics)</td>
 </tr>
 <tr>
 <td>Closed pipe harmonics</td>
-<td>$f_n = \frac{nv}{4L}$</td>
+<td><span class="arithmatex">\(f_n = \frac{nv}{4L}\)</span></td>
 <td>n = 1, 3, 5... (odd harmonics only)</td>
 </tr>
 </tbody>
@@ -4448,6 +4448,10 @@ Implementation: Create as SVG diagram or use drawing tool with clear annotations
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

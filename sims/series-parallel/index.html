@@ -4008,7 +4008,7 @@
 <h2 id="key-concepts">Key Concepts</h2>
 <h3 id="series-circuits">Series Circuits</h3>
 <p>Components connected end-to-end in a single path:</p>
-<p>$$R_{total} = R_1 + R_2 + R_3$$</p>
+<div class="arithmatex">\[R_{total} = R_1 + R_2 + R_3\]</div>
 <p><strong>Characteristics:</strong>
 - Current is the <strong>same</strong> through every component
 - Voltage <strong>divides</strong> among components (proportional to resistance)
@@ -4016,7 +4016,7 @@
 - If one component fails (opens), <strong>entire circuit stops</strong></p>
 <h3 id="parallel-circuits">Parallel Circuits</h3>
 <p>Components connected across the same two points:</p>
-<p>$$\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}$$</p>
+<div class="arithmatex">\[\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}\]</div>
 <p><strong>Characteristics:</strong>
 - Voltage is the <strong>same</strong> across all branches
 - Current <strong>divides</strong> among branches (more current through lower resistance)
@@ -4138,17 +4138,17 @@
 - Parallel branches for independent operation</p>
 <h2 id="formulas-reference">Formulas Reference</h2>
 <h3 id="series-circuit">Series Circuit</h3>
-<p>$$R_{total} = R_1 + R_2 + R_3 + ...$$
+<div class="arithmatex">\[R_{total} = R_1 + R_2 + R_3 + ...$$
 $$I_{total} = I_1 = I_2 = I_3$$
-$$V_{total} = V_1 + V_2 + V_3$$</p>
+$$V_{total} = V_1 + V_2 + V_3\]</div>
 <h3 id="parallel-circuit">Parallel Circuit</h3>
-<p>$$\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
+<div class="arithmatex">\[\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + ...$$
 $$I_{total} = I_1 + I_2 + I_3$$
-$$V_{total} = V_1 = V_2 = V_3$$</p>
+$$V_{total} = V_1 = V_2 = V_3\]</div>
 <h3 id="special-case-two-parallel-resistors">Special Case: Two Parallel Resistors</h3>
-<p>$$R_{total} = \frac{R_1 \times R_2}{R_1 + R_2}$$</p>
+<div class="arithmatex">\[R_{total} = \frac{R_1 \times R_2}{R_1 + R_2}\]</div>
 <h3 id="special-case-n-equal-resistors-in-parallel">Special Case: n Equal Resistors in Parallel</h3>
-<p>$$R_{total} = \frac{R}{n}$$</p>
+<div class="arithmatex">\[R_{total} = \frac{R}{n}\]</div>
 <h2 id="references">References</h2>
 <ul>
 <li>Physics Classroom: Series and Parallel Circuits</li>
@@ -4258,6 +4258,10 @@ $$V_{total} = V_1 = V_2 = V_3$$</p>
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

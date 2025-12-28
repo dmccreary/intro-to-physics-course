@@ -2160,9 +2160,9 @@
 <h2 id="kinematic-equations-in-two-dimensions">Kinematic Equations in Two Dimensions</h2>
 <p>You've already mastered the kinematic equations for motion in one dimension from Chapter 2. These same equations apply to two-dimensional motion—you just use them twice, once for each direction. The fundamental equations remain:</p>
 <ul>
-<li><strong>Position:</strong> $x = x_0 + v_0t + \frac{1}{2}at^2$</li>
-<li><strong>Velocity:</strong> $v = v_0 + at$</li>
-<li><strong>Velocity-position relationship:</strong> $v^2 = v_0^2 + 2a(x - x_0)$</li>
+<li><strong>Position:</strong> <span class="arithmatex">\(x = x_0 + v_0t + \frac{1}{2}at^2\)</span></li>
+<li><strong>Velocity:</strong> <span class="arithmatex">\(v = v_0 + at\)</span></li>
+<li><strong>Velocity-position relationship:</strong> <span class="arithmatex">\(v^2 = v_0^2 + 2a(x - x_0)\)</span></li>
 </ul>
 <p>In two dimensions, we typically use x for horizontal position and y for vertical position. The crucial principle is that <strong>horizontal and vertical motions are independent</strong>. What happens in the x-direction doesn't affect what happens in the y-direction, and vice versa. This independence allows us to analyze each dimension separately using the same kinematic equations.</p>
 <p>Consider the following comparison:</p>
@@ -2178,15 +2178,15 @@
 <tbody>
 <tr>
 <td>Horizontal (x)</td>
-<td>$x$</td>
-<td>$v_x$</td>
-<td>$a_x$</td>
+<td><span class="arithmatex">\(x\)</span></td>
+<td><span class="arithmatex">\(v_x\)</span></td>
+<td><span class="arithmatex">\(a_x\)</span></td>
 </tr>
 <tr>
 <td>Vertical (y)</td>
-<td>$y$</td>
-<td>$v_y$</td>
-<td>$a_y$</td>
+<td><span class="arithmatex">\(y\)</span></td>
+<td><span class="arithmatex">\(v_y\)</span></td>
+<td><span class="arithmatex">\(a_y\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -2253,28 +2253,28 @@ Implementation: SVG diagram or hand-drawn style illustration showing vector deco
 </details>
 <p>When a projectile is launched at an angle, you use trigonometry to find the initial velocity components:</p>
 <ul>
-<li><strong>Horizontal component:</strong> $v_{0x} = v_0\cos\theta$</li>
-<li><strong>Vertical component:</strong> $v_{0y} = v_0\sin\theta$</li>
+<li><strong>Horizontal component:</strong> <span class="arithmatex">\(v_{0x} = v_0\cos\theta\)</span></li>
+<li><strong>Vertical component:</strong> <span class="arithmatex">\(v_{0y} = v_0\sin\theta\)</span></li>
 </ul>
-<p>Where $v_0$ is the initial speed (magnitude of velocity) and $\theta$ is the launch angle measured from the horizontal.</p>
+<p>Where <span class="arithmatex">\(v_0\)</span> is the initial speed (magnitude of velocity) and <span class="arithmatex">\(\theta\)</span> is the launch angle measured from the horizontal.</p>
 <h2 id="free-fall-motion-under-gravity-alone">Free Fall: Motion Under Gravity Alone</h2>
-<p>Free fall is a special case of two-dimensional motion where an object moves only vertically under the influence of gravity, with no horizontal motion. Near Earth's surface, all objects in free fall experience a constant downward acceleration of magnitude $g = 9.8 \text{ m/s}^2$, regardless of their mass. This principle, first demonstrated by Galileo, means that a feather and a hammer would fall at the same rate in a vacuum (without air resistance).</p>
+<p>Free fall is a special case of two-dimensional motion where an object moves only vertically under the influence of gravity, with no horizontal motion. Near Earth's surface, all objects in free fall experience a constant downward acceleration of magnitude <span class="arithmatex">\(g = 9.8 \text{ m/s}^2\)</span>, regardless of their mass. This principle, first demonstrated by Galileo, means that a feather and a hammer would fall at the same rate in a vacuum (without air resistance).</p>
 <p>In free fall problems, we typically set up our coordinate system with positive y pointing upward. This means acceleration due to gravity is negative:</p>
-<p>$$a_y = -g = -9.8 \text{ m/s}^2$$</p>
+<div class="arithmatex">\[a_y = -g = -9.8 \text{ m/s}^2\]</div>
 <p>The kinematic equations for free fall become:</p>
 <ul>
-<li>$y = y_0 + v_{0y}t - \frac{1}{2}gt^2$</li>
-<li>$v_y = v_{0y} - gt$</li>
-<li>$v_y^2 = v_{0y}^2 - 2g(y - y_0)$</li>
+<li><span class="arithmatex">\(y = y_0 + v_{0y}t - \frac{1}{2}gt^2\)</span></li>
+<li><span class="arithmatex">\(v_y = v_{0y} - gt\)</span></li>
+<li><span class="arithmatex">\(v_y^2 = v_{0y}^2 - 2g(y - y_0)\)</span></li>
 </ul>
 <p>Notice the negative signs appear because gravity acts downward (negative y-direction) while we've chosen upward as positive.</p>
 <h3 id="example-scenarios">Example Scenarios</h3>
 <p>Here are common free fall situations you might encounter:</p>
 <ul>
-<li><strong>Dropped object:</strong> $v_{0y} = 0$, object starts from rest</li>
-<li><strong>Thrown upward:</strong> $v_{0y} &gt; 0$, object rises then falls</li>
-<li><strong>Thrown downward:</strong> $v_{0y} &lt; 0$, object speeds up throughout fall</li>
-<li><strong>At maximum height:</strong> $v_y = 0$ momentarily before falling back down</li>
+<li><strong>Dropped object:</strong> <span class="arithmatex">\(v_{0y} = 0\)</span>, object starts from rest</li>
+<li><strong>Thrown upward:</strong> <span class="arithmatex">\(v_{0y} &gt; 0\)</span>, object rises then falls</li>
+<li><strong>Thrown downward:</strong> <span class="arithmatex">\(v_{0y} &lt; 0\)</span>, object speeds up throughout fall</li>
+<li><strong>At maximum height:</strong> <span class="arithmatex">\(v_y = 0\)</span> momentarily before falling back down</li>
 </ul>
 <h4 id="diagram-free-fall-motion-microsim">Diagram: Free Fall Motion MicroSim</h4>
 <iframe src="../../sims/free-fall/main.html" width="100%" height="602px" scrolling="no"></iframe>
@@ -2393,8 +2393,8 @@ Implementation notes:
 <p>Projectile motion describes the curved path an object follows when launched into the air and moving under the influence of gravity alone (neglecting air resistance). Examples include a soccer ball kicked across a field, a water fountain's arc, or a basketball shot toward the hoop. The defining characteristic of projectile motion is that it combines constant horizontal velocity with accelerated vertical motion.</p>
 <p>Let's establish the key principles of projectile motion:</p>
 <ul>
-<li><strong>Horizontal motion:</strong> Constant velocity (no acceleration), so $v_x = v_{0x}$ throughout flight</li>
-<li><strong>Vertical motion:</strong> Constant downward acceleration due to gravity, so $a_y = -g$</li>
+<li><strong>Horizontal motion:</strong> Constant velocity (no acceleration), so <span class="arithmatex">\(v_x = v_{0x}\)</span> throughout flight</li>
+<li><strong>Vertical motion:</strong> Constant downward acceleration due to gravity, so <span class="arithmatex">\(a_y = -g\)</span></li>
 <li><strong>Independence:</strong> Horizontal and vertical motions occur simultaneously but don't affect each other</li>
 <li><strong>Time synchronization:</strong> Both motions share the same time variable t</li>
 </ul>
@@ -2411,17 +2411,17 @@ Implementation notes:
 <tr>
 <td>Acceleration</td>
 <td>0</td>
-<td>$-g = -9.8 \text{ m/s}^2$</td>
+<td><span class="arithmatex">\(-g = -9.8 \text{ m/s}^2\)</span></td>
 </tr>
 <tr>
 <td>Velocity</td>
-<td>Constant ($v_x$)</td>
-<td>Changes ($v_y = v_{0y} - gt$)</td>
+<td>Constant (<span class="arithmatex">\(v_x\)</span>)</td>
+<td>Changes (<span class="arithmatex">\(v_y = v_{0y} - gt\)</span>)</td>
 </tr>
 <tr>
 <td>Position equation</td>
-<td>$x = v_x t$</td>
-<td>$y = y_0 + v_{0y}t - \frac{1}{2}gt^2$</td>
+<td><span class="arithmatex">\(x = v_x t\)</span></td>
+<td><span class="arithmatex">\(y = y_0 + v_{0y}t - \frac{1}{2}gt^2\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -2517,13 +2517,13 @@ Implementation: SVG or illustration showing projectile motion with vector decomp
 </ol>
 <p>Most problems ask you to find quantities such as maximum height, range (horizontal distance), flight time, or impact velocity. Each has a characteristic approach using the equations and principles we've discussed.</p>
 <h2 id="horizontal-projection-launching-with-no-vertical-velocity">Horizontal Projection: Launching with No Vertical Velocity</h2>
-<p>Horizontal projection is a special case of projectile motion where an object is launched horizontally—meaning the initial velocity has no vertical component. Picture a ball rolling off a table, a package dropped from a moving airplane, or a stone thrown horizontally from a cliff. The initial velocity is purely horizontal: $v_{0x} = v_0$ and $v_{0y} = 0$.</p>
+<p>Horizontal projection is a special case of projectile motion where an object is launched horizontally—meaning the initial velocity has no vertical component. Picture a ball rolling off a table, a package dropped from a moving airplane, or a stone thrown horizontally from a cliff. The initial velocity is purely horizontal: <span class="arithmatex">\(v_{0x} = v_0\)</span> and <span class="arithmatex">\(v_{0y} = 0\)</span>.</p>
 <p>This scenario simplifies the mathematics considerably:</p>
 <p><strong>Horizontal motion:</strong>
-$$x = v_0 t$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(x = v_0 t\)</span>\)</span></p>
 <p><strong>Vertical motion:</strong>
-$$y = y_0 - \frac{1}{2}gt^2$$
-$$v_y = -gt$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(y = y_0 - \frac{1}{2}gt^2\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(v_y = -gt\)</span>\)</span></p>
 <p>Notice that horizontal projection problems often involve finding either the time to hit the ground or the horizontal range. The vertical motion determines the time (independent of horizontal speed), and then that time determines how far the object travels horizontally.</p>
 <h3 id="key-insights-for-horizontal-projection">Key Insights for Horizontal Projection</h3>
 <p>Consider these important observations:</p>
@@ -2658,25 +2658,25 @@ Implementation notes:
 <p>A classic example to test your understanding: if you simultaneously drop one ball and throw another horizontally from the same height, which hits the ground first? The answer—they hit simultaneously—reveals the fundamental independence of horizontal and vertical motion components.</p>
 <h2 id="angled-projection-launching-at-an-angle">Angled Projection: Launching at an Angle</h2>
 <p>Angled projection represents the most general case of projectile motion, where an object is launched at some angle above or below the horizontal. Think of a kicked football, a golf drive, or a basketball shot—these all involve angled projection. The initial velocity has both horizontal and vertical components determined by the launch angle.</p>
-<p>For an object launched at angle θ above the horizontal with initial speed $v_0$:</p>
+<p>For an object launched at angle θ above the horizontal with initial speed <span class="arithmatex">\(v_0\)</span>:</p>
 <p><strong>Initial velocity components:</strong>
-$$v_{0x} = v_0\cos\theta$$
-$$v_{0y} = v_0\sin\theta$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(v_{0x} = v_0\cos\theta\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(v_{0y} = v_0\sin\theta\)</span>\)</span></p>
 <p><strong>Position equations:</strong>
-$$x = (v_0\cos\theta)t$$
-$$y = y_0 + (v_0\sin\theta)t - \frac{1}{2}gt^2$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(x = (v_0\cos\theta)t\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(y = y_0 + (v_0\sin\theta)t - \frac{1}{2}gt^2\)</span>\)</span></p>
 <p><strong>Velocity equations:</strong>
-$$v_x = v_0\cos\theta$$ (remains constant)
-$$v_y = v_0\sin\theta - gt$$ (changes with time)</p>
+<span class="arithmatex">\(<span class="arithmatex">\(v_x = v_0\cos\theta\)</span>\)</span> (remains constant)
+<span class="arithmatex">\(<span class="arithmatex">\(v_y = v_0\sin\theta - gt\)</span>\)</span> (changes with time)</p>
 <h3 id="important-quantities-in-angled-projection">Important Quantities in Angled Projection</h3>
 <p>Several key quantities characterize angled projectile motion:</p>
 <ul>
-<li><strong>Time to maximum height:</strong> $t_{max} = \frac{v_0\sin\theta}{g}$ (when $v_y = 0$)</li>
-<li><strong>Maximum height:</strong> $y_{max} = y_0 + \frac{(v_0\sin\theta)^2}{2g}$</li>
-<li><strong>Total flight time:</strong> $t_{total} = \frac{2v_0\sin\theta}{g}$ (for level ground, $y_0 = y_f$)</li>
-<li><strong>Horizontal range:</strong> $R = \frac{v_0^2\sin(2\theta)}{g}$ (for level ground)</li>
+<li><strong>Time to maximum height:</strong> <span class="arithmatex">\(t_{max} = \frac{v_0\sin\theta}{g}\)</span> (when <span class="arithmatex">\(v_y = 0\)</span>)</li>
+<li><strong>Maximum height:</strong> <span class="arithmatex">\(y_{max} = y_0 + \frac{(v_0\sin\theta)^2}{2g}\)</span></li>
+<li><strong>Total flight time:</strong> <span class="arithmatex">\(t_{total} = \frac{2v_0\sin\theta}{g}\)</span> (for level ground, <span class="arithmatex">\(y_0 = y_f\)</span>)</li>
+<li><strong>Horizontal range:</strong> <span class="arithmatex">\(R = \frac{v_0^2\sin(2\theta)}{g}\)</span> (for level ground)</li>
 </ul>
-<p>The range equation reveals an interesting optimization: the angle that produces maximum range is 45° (since $\sin(90°) = 1$ is maximum). However, complementary angles (like 30° and 60°) produce the same range—they just have different trajectories and flight times.</p>
+<p>The range equation reveals an interesting optimization: the angle that produces maximum range is 45° (since <span class="arithmatex">\(\sin(90°) = 1\)</span> is maximum). However, complementary angles (like 30° and 60°) produce the same range—they just have different trajectories and flight times.</p>
 <table>
 <thead>
 <tr>
@@ -2894,7 +2894,7 @@ Implementation notes:
 <p>Relative velocity addresses a fundamental question: how does motion appear to different observers? Imagine you're on a train moving at 20 m/s, and you walk toward the front at 2 m/s. From your perspective, you're walking at 2 m/s. But to someone standing on the platform, you're moving at 22 m/s. Both observations are correct—they just represent different reference frames.</p>
 <p>A <strong>reference frame</strong> is the perspective from which motion is observed. Your velocity relative to one reference frame can be very different from your velocity relative to another. In two dimensions, relative velocity requires vector addition because velocities have both magnitude and direction.</p>
 <p>The fundamental equation for relative velocity is:</p>
-<p>$$\vec{v}_{AB} = \vec{v}_A - \vec{v}_B$$</p>
+<div class="arithmatex">\[\vec{v}_{AB} = \vec{v}_A - \vec{v}_B\]</div>
 <p>This reads as "the velocity of A relative to B equals the velocity of A minus the velocity of B" (where both velocities are measured in some common reference frame, like the ground).</p>
 <h3 id="common-relative-velocity-scenarios">Common Relative Velocity Scenarios</h3>
 <p>Here are typical situations involving relative velocity:</p>
@@ -2994,7 +2994,7 @@ Implementation: SVG diagram or illustration showing vector addition in river cro
 <p>Since velocity is a vector quantity, relative velocity problems require vector addition. In two dimensions, you can use either:</p>
 <ol>
 <li><strong>Component method:</strong> Break each velocity into x and y components, add components separately, then recombine</li>
-<li><strong>Pythagorean theorem and trigonometry:</strong> For perpendicular velocities, use $v = \sqrt{v_x^2 + v_y^2}$ and $\theta = \tan^{-1}(v_y/v_x)$</li>
+<li><strong>Pythagorean theorem and trigonometry:</strong> For perpendicular velocities, use <span class="arithmatex">\(v = \sqrt{v_x^2 + v_y^2}\)</span> and <span class="arithmatex">\(\theta = \tan^{-1}(v_y/v_x)\)</span></li>
 </ol>
 <p>The component method is more general and works for any angles, while the geometric method is faster for perpendicular or parallel velocities.</p>
 <h4 id="diagram-relative-velocity-problem-solver-microsim">Diagram: Relative Velocity Problem Solver MicroSim</h4>
@@ -3189,12 +3189,12 @@ Implementation notes:
 <ul>
 <li>Apply kinematic equations separately to horizontal and vertical components of 2D motion</li>
 <li>Recognize that horizontal and vertical motions are independent but synchronized by time</li>
-<li>Analyze free fall motion using constant acceleration equations with $a_y = -g$</li>
-<li>Decompose initial velocity into components using trigonometry: $v_{0x} = v_0\cos\theta$ and $v_{0y} = v_0\sin\theta$</li>
-<li>Solve horizontal projection problems where $v_{0y} = 0$</li>
+<li>Analyze free fall motion using constant acceleration equations with <span class="arithmatex">\(a_y = -g\)</span></li>
+<li>Decompose initial velocity into components using trigonometry: <span class="arithmatex">\(v_{0x} = v_0\cos\theta\)</span> and <span class="arithmatex">\(v_{0y} = v_0\sin\theta\)</span></li>
+<li>Solve horizontal projection problems where <span class="arithmatex">\(v_{0y} = 0\)</span></li>
 <li>Calculate range, maximum height, and flight time for angled projection</li>
 <li>Understand that 45° launch angle produces maximum range on level ground</li>
-<li>Apply relative velocity using vector addition: $\vec{v}_{AB} = \vec{v}_A - \vec{v}_B$</li>
+<li>Apply relative velocity using vector addition: <span class="arithmatex">\(\vec{v}_{AB} = \vec{v}_A - \vec{v}_B\)</span></li>
 <li>Recognize that motion appears different from different reference frames</li>
 <li>Use both component method and geometric method for vector addition problems</li>
 </ul>
@@ -3302,6 +3302,10 @@ Implementation notes:
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

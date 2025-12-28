@@ -2812,7 +2812,7 @@ Implementation notes:
 </ul>
 <h3 id="coulombs-law-formula">Coulomb's Law Formula</h3>
 <p><strong>Coulomb's Law</strong> gives the magnitude of the electric force between two point charges:</p>
-<p>$$F = k \frac{|q_1 q_2|}{r^2}$$</p>
+<div class="arithmatex">\[F = k \frac{|q_1 q_2|}{r^2}\]</div>
 <p>where:</p>
 <ul>
 <li>F = magnitude of electric force (in newtons, N)</li>
@@ -2821,7 +2821,7 @@ Implementation notes:
 <li>r = distance between the charges (in meters, m)</li>
 </ul>
 <p>Notice the similarity to Newton's law of gravitation:</p>
-<p>$$F_g = G \frac{m_1 m_2}{r^2}$$</p>
+<div class="arithmatex">\[F_g = G \frac{m_1 m_2}{r^2}\]</div>
 <p>Both forces follow an inverse square law—doubling the distance reduces the force to one-quarter its original value. However, there's a crucial difference: gravitational force is always attractive, while electric force can be attractive or repulsive.</p>
 <h3 id="comparing-electric-and-gravitational-forces">Comparing Electric and Gravitational Forces</h3>
 <p>How do electric and gravitational forces compare in strength? Consider two electrons:</p>
@@ -2939,7 +2939,7 @@ Implementation notes:
 <h3 id="multiple-charges-and-vector-addition">Multiple Charges and Vector Addition</h3>
 <p>When multiple charges are present, the total electric force on any charge is the vector sum of all individual forces. This principle, called the <strong>principle of superposition</strong>, allows us to analyze complex charge configurations.</p>
 <p>For example, if charge q~1~ experiences forces F~12~ (from q~2~) and F~13~ (from q~3~), the total force is:</p>
-<p>$$\vec{F}<em 12="12">{total} = \vec{F}</em>$$} + \vec{F}_{13</p>
+<div class="arithmatex">\[\vec{F}_{total} = \vec{F}_{12} + \vec{F}_{13}\]</div>
 <p>Remember that forces are vectors, so you must account for both magnitude and direction. Forces pointing in opposite directions partially cancel, while forces in the same direction add together.</p>
 <h2 id="the-electric-field">The Electric Field</h2>
 <p>The concept of electric force between charges is powerful, but it raises a puzzling question: How does one charge "know" about another charge that's some distance away? The answer lies in one of physics' most elegant ideas: the electric field.</p>
@@ -2947,10 +2947,10 @@ Implementation notes:
 <p>An <strong>electric field</strong> is a region of space around a charged object where other charged objects experience a force. Rather than thinking of charges exerting forces directly on each other across empty space, we say that a charge creates an electric field around itself, and this field then exerts a force on other charges within it.</p>
 <p>Think of it like a magnetic field around a magnet, or the gravitational field around Earth. The field exists whether or not there's another charge present to feel it. It's a property of space itself, modified by the presence of charge.</p>
 <p>Mathematically, the electric field E at any point is defined as the force per unit charge that would be experienced by a small positive test charge placed at that point:</p>
-<p>$$\vec{E} = \frac{\vec{F}}{q_0}$$</p>
+<div class="arithmatex">\[\vec{E} = \frac{\vec{F}}{q_0}\]</div>
 <p>where q~0~ is the magnitude of the test charge and F is the force it experiences.</p>
 <p>For a single point charge Q, the electric field at distance r is:</p>
-<p>$$E = k \frac{|Q|}{r^2}$$</p>
+<div class="arithmatex">\[E = k \frac{|Q|}{r^2}\]</div>
 <p>The direction of the field is:</p>
 <ul>
 <li>Away from positive charges (positive charges "push" positive test charges away)</li>
@@ -3096,7 +3096,7 @@ Implementation notes:
 <h3 id="field-strength">Field Strength</h3>
 <p><strong>Field strength</strong> (also called electric field magnitude) measures how strong the electric field is at a given location. It's measured in newtons per coulomb (N/C) or, equivalently, volts per meter (V/m).</p>
 <p>The field strength determines how much force a charge will experience:</p>
-<p>$$F = qE$$</p>
+<div class="arithmatex">\[F = qE\]</div>
 <p>A 1-coulomb charge in a field of strength 10 N/C experiences a 10-newton force. A 2-coulomb charge in the same field experiences a 20-newton force.</p>
 <p>Field strength decreases with distance from a point charge following the inverse square law:</p>
 <ul>
@@ -3142,7 +3142,7 @@ Implementation notes:
 <li>Pulling opposite charges apart against electric attraction increases electric PE</li>
 </ul>
 <p>For two point charges q~1~ and q~2~ separated by distance r, the electric potential energy is:</p>
-<p>$$U = k \frac{q_1 q_2}{r}$$</p>
+<div class="arithmatex">\[U = k \frac{q_1 q_2}{r}\]</div>
 <p>Key features of this equation:</p>
 <ul>
 <li><strong>Positive energy</strong> (U &gt; 0): Like charges (both positive or both negative) have positive PE, which increases as they get closer</li>
@@ -3152,10 +3152,10 @@ Implementation notes:
 </ul>
 <h3 id="energy-in-electric-fields">Energy in Electric Fields</h3>
 <p>When a charge moves through an electric field, the field does work on the charge, changing its kinetic energy. The work done equals the negative change in electric potential energy:</p>
-<p>$$W = -\Delta U = -(U_f - U_i)$$</p>
+<div class="arithmatex">\[W = -\Delta U = -(U_f - U_i)\]</div>
 <p>If the field does positive work (W &gt; 0), the charge's kinetic energy increases and its potential energy decreases. This is exactly what happens when you release a ball and let gravity accelerate it downward—gravitational PE converts to kinetic energy.</p>
 <p>For a charge q moving through a region where the electric field does work W, the change in kinetic energy is:</p>
-<p>$$\Delta KE = W = -\Delta U$$</p>
+<div class="arithmatex">\[\Delta KE = W = -\Delta U\]</div>
 <p>This is just conservation of energy for electric systems.</p>
 <h4 id="diagram-electric-potential-energy-interactive-chart">Diagram: Electric Potential Energy Interactive Chart</h4>
 <details>
@@ -3254,10 +3254,10 @@ Implementation: Chart.js with custom interactivity using JavaScript
 <p>While electric potential energy tells us about the energy stored in a system of charges, electric potential (often called voltage) is a property of a location in space.</p>
 <h3 id="electric-potential">Electric Potential</h3>
 <p><strong>Electric potential</strong> at a point in space is the electric potential energy per unit charge at that location. It's defined as:</p>
-<p>$$V = \frac{U}{q}$$</p>
+<div class="arithmatex">\[V = \frac{U}{q}\]</div>
 <p>where V is electric potential (in volts, V), U is potential energy (in joules, J), and q is the charge (in coulombs, C).</p>
 <p>For a single point charge Q, the electric potential at distance r is:</p>
-<p>$$V = k \frac{Q}{r}$$</p>
+<div class="arithmatex">\[V = k \frac{Q}{r}\]</div>
 <p>Note that potential is a scalar quantity (no direction), not a vector. This makes calculations much simpler than working with electric field vectors.</p>
 <p>Key points about electric potential:</p>
 <ul>
@@ -3268,9 +3268,9 @@ Implementation: Chart.js with custom interactivity using JavaScript
 </ul>
 <h3 id="voltage">Voltage</h3>
 <p><strong>Voltage</strong> (or potential difference) is the difference in electric potential between two points:</p>
-<p>$$\Delta V = V_B - V_A$$</p>
+<div class="arithmatex">\[\Delta V = V_B - V_A\]</div>
 <p>When we say a battery provides 9 volts, we mean there's a 9-volt potential difference between its terminals. If you move 1 coulomb of charge through this potential difference, 9 joules of energy is transferred:</p>
-<p>$$W = q \Delta V$$</p>
+<div class="arithmatex">\[W = q \Delta V\]</div>
 <p>This is why voltage is measured in volts (V), where 1 volt = 1 joule per coulomb.</p>
 <p>Common voltage examples:</p>
 <ul>
@@ -3362,9 +3362,9 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
 </details>
 <h3 id="the-relationship-between-field-and-potential">The Relationship Between Field and Potential</h3>
 <p>Electric field and potential are intimately related. In fact, the electric field is the negative gradient (rate of change) of the potential:</p>
-<p>$$E = -\frac{\Delta V}{\Delta d}$$</p>
+<div class="arithmatex">\[E = -\frac{\Delta V}{\Delta d}\]</div>
 <p>For a uniform field (like between parallel plates), this simplifies to:</p>
-<p>$$E = \frac{V}{d}$$</p>
+<div class="arithmatex">\[E = \frac{V}{d}\]</div>
 <p>where V is the potential difference and d is the distance.</p>
 <p>This relationship reveals a profound connection:</p>
 <ul>
@@ -3373,7 +3373,7 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
 <li><strong>Zero field</strong> exists where potential is constant (flat potential "plateau")</li>
 </ul>
 <p>For example, between parallel plates separated by 10 cm with a potential difference of 100 V:</p>
-<p>$$E = \frac{100 \text{ V}}{0.1 \text{ m}} = 1000 \text{ V/m} = 1000 \text{ N/C}$$</p>
+<div class="arithmatex">\[E = \frac{100 \text{ V}}{0.1 \text{ m}} = 1000 \text{ V/m} = 1000 \text{ N/C}\]</div>
 <p>This relationship makes problem-solving easier: sometimes it's simpler to calculate potential (a scalar) than electric field (a vector), then use the relationship to find the field.</p>
 <h2 id="connections-to-prior-knowledge">Connections to Prior Knowledge</h2>
 <p>The concepts in this chapter build on and parallel ideas you've encountered earlier in the course.</p>
@@ -3424,9 +3424,9 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
 </ul>
 <h3 id="energy-conservation">Energy Conservation</h3>
 <p>The work-energy theorem applies to electric forces just as it does to mechanical forces:</p>
-<p>$$W_{net} = \Delta KE$$</p>
+<div class="arithmatex">\[W_{net} = \Delta KE\]</div>
 <p>For conservative forces (including electric forces between static charges):</p>
-<p>$$\Delta KE + \Delta PE = 0$$</p>
+<div class="arithmatex">\[\Delta KE + \Delta PE = 0\]</div>
 <p>This means that as a charge accelerates in an electric field, it trades potential energy for kinetic energy, just as a falling object trades gravitational PE for KE.</p>
 <h3 id="vectors-and-fields">Vectors and Fields</h3>
 <p>The electric field is a vector field—it has both magnitude and direction at every point in space. Working with electric fields requires the same vector addition skills you developed earlier:</p>
@@ -3638,6 +3638,10 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

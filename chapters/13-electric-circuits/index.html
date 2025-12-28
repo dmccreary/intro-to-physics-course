@@ -2578,7 +2578,7 @@
 <h3 id="what-is-electric-current">What Is Electric Current?</h3>
 <p><strong>Electric current</strong> is the flow of electric charge through a conductor. Just as water current describes how much water flows past a point per unit time, electric current describes how much charge flows past a point per unit time.</p>
 <p>Mathematically, current is defined as:</p>
-<p>$$I = \frac{\Delta Q}{\Delta t}$$</p>
+<div class="arithmatex">\[I = \frac{\Delta Q}{\Delta t}\]</div>
 <p>where:</p>
 <ul>
 <li>I = current (in amperes, A)</li>
@@ -2701,11 +2701,11 @@ Implementation notes:
 <li><strong>Temperature</strong>: Most metals have higher resistance when hot</li>
 </ul>
 <p>The resistance of a wire is given by:</p>
-<p>$$R = \rho \frac{L}{A}$$</p>
+<div class="arithmatex">\[R = \rho \frac{L}{A}\]</div>
 <p>where ρ (rho) is the resistivity of the material, L is length, and A is cross-sectional area.</p>
 <h3 id="ohms-law">Ohm's Law</h3>
 <p><strong>Ohm's Law</strong> is the fundamental relationship governing electric circuits:</p>
-<p>$$V = IR$$</p>
+<div class="arithmatex">\[V = IR\]</div>
 <p>where:</p>
 <ul>
 <li>V = voltage (potential difference) across a component (in volts, V)</li>
@@ -2909,7 +2909,7 @@ Implementation notes:
 <h3 id="what-is-capacitance">What Is Capacitance?</h3>
 <p><strong>Capacitance</strong> is the ability of a component to store electric charge. A device with high capacitance can store more charge at a given voltage than one with low capacitance.</p>
 <p>Capacitance is defined as:</p>
-<p>$$C = \frac{Q}{V}$$</p>
+<div class="arithmatex">\[C = \frac{Q}{V}\]</div>
 <p>where:</p>
 <ul>
 <li>C = capacitance (in farads, F)</li>
@@ -2920,7 +2920,7 @@ Implementation notes:
 <h3 id="capacitors">Capacitors</h3>
 <p>A <strong>capacitor</strong> consists of two conducting plates separated by an insulating material (dielectric). When voltage is applied, positive charge accumulates on one plate and negative charge on the other, creating an electric field between the plates that stores energy.</p>
 <p>The capacitance of a parallel-plate capacitor is:</p>
-<p>$$C = \epsilon_0 \epsilon_r \frac{A}{d}$$</p>
+<div class="arithmatex">\[C = \epsilon_0 \epsilon_r \frac{A}{d}\]</div>
 <p>where:</p>
 <ul>
 <li>ε₀ = permittivity of free space (8.85 × 10⁻¹² F/m)</li>
@@ -3059,7 +3059,7 @@ Implementation notes:
 </details>
 <h3 id="energy-storage-in-capacitors">Energy Storage in Capacitors</h3>
 <p>Capacitors store energy in the electric field between their plates. The energy stored is:</p>
-<p>$$U = \frac{1}{2}CV^2 = \frac{1}{2}QV = \frac{Q^2}{2C}$$</p>
+<div class="arithmatex">\[U = \frac{1}{2}CV^2 = \frac{1}{2}QV = \frac{Q^2}{2C}\]</div>
 <p>This stored energy can be released quickly (as in camera flashes) or slowly (as in power supply filtering). Capacitors are essential in:</p>
 <ul>
 <li>Power supply smoothing</li>
@@ -3073,7 +3073,7 @@ Implementation notes:
 <p><strong>Inductance</strong> is a property of a conductor that opposes changes in current. When current through a coil changes, it creates a changing magnetic field, which in turn induces a voltage that opposes the change in current (Lenz's Law).</p>
 <p>Inductance is measured in henrys (H), named after American physicist Joseph Henry.</p>
 <p>The induced voltage across an inductor is:</p>
-<p>$$V = L\frac{dI}{dt}$$</p>
+<div class="arithmatex">\[V = L\frac{dI}{dt}\]</div>
 <p>where L is the inductance and dI/dt is the rate of change of current.</p>
 <h3 id="inductors">Inductors</h3>
 <p>An <strong>inductor</strong> is typically a coil of wire, often wound around a magnetic core. Inductors:</p>
@@ -3084,7 +3084,7 @@ Implementation notes:
 <li>Block high-frequency AC while passing DC</li>
 </ul>
 <p>The inductance of a solenoid (coil) is:</p>
-<p>$$L = \mu_0 \mu_r \frac{N^2 A}{l}$$</p>
+<div class="arithmatex">\[L = \mu_0 \mu_r \frac{N^2 A}{l}\]</div>
 <p>where N is the number of turns, A is the cross-sectional area, l is the length, and μ is the permeability.</p>
 <h4 id="diagram-inductor-behavior-in-dc-circuits-microsim">Diagram: Inductor Behavior in DC Circuits MicroSim</h4>
 <details>
@@ -3221,7 +3221,7 @@ Implementation notes:
 </ul>
 <h3 id="ac-power-sources">AC Power Sources</h3>
 <p><strong>Alternating current (AC)</strong> periodically reverses direction, typically following a sinusoidal pattern. The voltage varies as:</p>
-<p>$$V(t) = V_0 \sin(2\pi ft)$$</p>
+<div class="arithmatex">\[V(t) = V_0 \sin(2\pi ft)\]</div>
 <p>where V₀ is the peak voltage and f is the frequency (60 Hz in North America, 50 Hz in most other countries).</p>
 <p>AC advantages:</p>
 <ul>
@@ -3408,10 +3408,10 @@ Implementation notes:
 </table>
 <h3 id="battery-capacity-and-energy">Battery Capacity and Energy</h3>
 <p>Battery capacity is measured in ampere-hours (Ah) or milliampere-hours (mAh):</p>
-<p>$$\text{Capacity (Ah)} = \text{Current (A)} \times \text{Time (h)}$$</p>
+<div class="arithmatex">\[\text{Capacity (Ah)} = \text{Current (A)} \times \text{Time (h)}\]</div>
 <p>A 2000 mAh battery can theoretically deliver 2000 mA for 1 hour, or 1000 mA for 2 hours, or 500 mA for 4 hours.</p>
 <p>Energy stored is:</p>
-<p>$$E = \text{Capacity} \times \text{Voltage}$$</p>
+<div class="arithmatex">\[E = \text{Capacity} \times \text{Voltage}\]</div>
 <p>A 3.7 V, 2000 mAh battery stores: E = 3.7 V × 2 Ah = 7.4 Wh</p>
 <h4 id="diagram-battery-internal-structure-and-operation-microsim">Diagram: Battery Internal Structure and Operation MicroSim</h4>
 <details>
@@ -3539,9 +3539,9 @@ Implementation notes:
 <h2 id="electric-power">Electric Power</h2>
 <h3 id="power-in-electric-circuits">Power in Electric Circuits</h3>
 <p><strong>Electric power</strong> is the rate at which electrical energy is converted to other forms (heat, light, motion, etc.). Power is given by:</p>
-<p>$$P = IV$$</p>
+<div class="arithmatex">\[P = IV\]</div>
 <p>Using Ohm's Law, we can also write:</p>
-<p>$$P = I^2R = \frac{V^2}{R}$$</p>
+<div class="arithmatex">\[P = I^2R = \frac{V^2}{R}\]</div>
 <p>Power is measured in watts (W), where 1 watt = 1 joule per second.</p>
 <p>Examples of power consumption:</p>
 <table>
@@ -3576,9 +3576,9 @@ Implementation notes:
 </table>
 <h3 id="energy-and-cost">Energy and Cost</h3>
 <p>Electrical energy is typically billed in kilowatt-hours (kWh):</p>
-<p>$$\text{Energy (kWh)} = \text{Power (kW)} \times \text{Time (h)}$$</p>
+<div class="arithmatex">\[\text{Energy (kWh)} = \text{Power (kW)} \times \text{Time (h)}\]</div>
 <p>If electricity costs $0.15 per kWh, running a 1500 W hair dryer for 15 minutes costs:</p>
-<p>$$\text{Cost} = 1.5 \text{ kW} \times 0.25 \text{ h} \times \$0.15/\text{kWh} = \$0.056$$</p>
+<div class="arithmatex">\[\text{Cost} = 1.5 \text{ kW} \times 0.25 \text{ h} \times \$0.15/\text{kWh} = \$0.056\]</div>
 <h2 id="series-and-parallel-circuits">Series and Parallel Circuits</h2>
 <h3 id="series-circuits">Series Circuits</h3>
 <p>In a <strong>series circuit</strong>, components are connected end-to-end, so the same current flows through all components.</p>
@@ -3733,10 +3733,10 @@ Implementation notes:
 <h3 id="kirchhoffs-laws">Kirchhoff's Laws</h3>
 <p><strong>Kirchhoff's Laws</strong> provide the foundation for analyzing any circuit:</p>
 <p><strong>Kirchhoff's Current Law (KCL)</strong>: The sum of currents entering a junction equals the sum of currents leaving:</p>
-<p>$$\sum I_{in} = \sum I_{out}$$</p>
+<div class="arithmatex">\[\sum I_{in} = \sum I_{out}\]</div>
 <p>This is conservation of charge—charge doesn't accumulate at junctions.</p>
 <p><strong>Kirchhoff's Voltage Law (KVL)</strong>: The sum of voltage changes around any closed loop equals zero:</p>
-<p>$$\sum V = 0$$</p>
+<div class="arithmatex">\[\sum V = 0\]</div>
 <p>This is conservation of energy—a charge returning to its starting point has the same potential energy.</p>
 <h2 id="solar-cells-and-photovoltaics">Solar Cells and Photovoltaics</h2>
 <h3 id="how-solar-cells-work">How Solar Cells Work</h3>
@@ -4133,13 +4133,13 @@ Implementation notes:
 </ul>
 <p>Key relationships for DC motors:</p>
 <p><strong>Back-EMF</strong>: As the motor spins, it generates a voltage (back-EMF) that opposes the applied voltage:</p>
-<p>$$V = IR + E_{back}$$</p>
-<p>$$E_{back} = k\omega$$</p>
+<div class="arithmatex">\[V = IR + E_{back}\]</div>
+<div class="arithmatex">\[E_{back} = k\omega\]</div>
 <p>where k is a motor constant and ω is angular velocity.</p>
 <p><strong>Torque</strong>: The torque is proportional to current:</p>
-<p>$$\tau = k_t I$$</p>
+<div class="arithmatex">\[\tau = k_t I\]</div>
 <p><strong>Power</strong>: Mechanical power output:</p>
-<p>$$P_{mech} = \tau \omega = E_{back} \times I$$</p>
+<div class="arithmatex">\[P_{mech} = \tau \omega = E_{back} \times I\]</div>
 <h4 id="diagram-dc-motor-operation-microsim">Diagram: DC Motor Operation MicroSim</h4>
 <iframe src="../../sims/dc-motor/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
@@ -4838,6 +4838,10 @@ Implementation notes:
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

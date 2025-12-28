@@ -1,0 +1,15 @@
+{
+  "title": "Atwood Machine Free-Body Diagram",
+  "description": "Interactive visualization showing free-body diagrams for both masses in an Atwood machine, demonstrating how to set up Newton's second law equations and solve for acceleration and tension step by step.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-15",
+  "subject": ["physics", "free-body diagrams", "Newton's laws", "dynamics", "Atwood machine", "problem solving", "force analysis"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["free-body diagram", "Newton's second law", "tension", "acceleration", "string constraint", "simultaneous equations"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing", "Evaluating"],
+  "prerequisites": ["Newton's second law", "free-body diagrams", "systems of equations", "tension"]
+}

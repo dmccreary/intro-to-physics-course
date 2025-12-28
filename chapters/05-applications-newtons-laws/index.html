@@ -2451,8 +2451,8 @@
 <h3 id="static-friction">Static Friction</h3>
 <p>Static friction is remarkable because it's a responsive force. Unlike gravity, which has a fixed magnitude, static friction adjusts itself to match other forces—up to a limit. Place a book on a tilted surface, and static friction prevents it from sliding. Tilt further, and static friction increases proportionally. Eventually, at a critical angle, static friction reaches its maximum value and can no longer hold the book in place.</p>
 <p>The maximum static friction depends on two factors: the normal force pressing the surfaces together and a property called the coefficient of static friction. This relationship is expressed as:</p>
-<p>$$f_s^{max} = \mu_s N$$</p>
-<p>where $f_s^{max}$ is the maximum static friction force, $\mu_s$ is the coefficient of static friction (a dimensionless constant), and $N$ is the normal force. For actual static friction below the maximum, we write $f_s \leq \mu_s N$.</p>
+<div class="arithmatex">\[f_s^{max} = \mu_s N\]</div>
+<p>where <span class="arithmatex">\(f_s^{max}\)</span> is the maximum static friction force, <span class="arithmatex">\(\mu_s\)</span> is the coefficient of static friction (a dimensionless constant), and <span class="arithmatex">\(N\)</span> is the normal force. For actual static friction below the maximum, we write <span class="arithmatex">\(f_s \leq \mu_s N\)</span>.</p>
 <h4 id="diagram-interactive-static-friction-microsim">Diagram: Interactive Static Friction MicroSim</h4>
 <iframe src="../../sims/static-friction/main.html" height="502px" width="100%" scrolling="no"></iframe>
 
@@ -2506,8 +2506,8 @@
 <h3 id="kinetic-friction">Kinetic Friction</h3>
 <p>Once an object is moving, kinetic friction takes over. Unlike static friction, which varies with the applied force, kinetic friction has a constant magnitude for a given pair of surfaces. This makes problems involving sliding objects more straightforward—you can treat kinetic friction as a known, unchanging force.</p>
 <p>The kinetic friction force is calculated using:</p>
-<p>$$f_k = \mu_k N$$</p>
-<p>where $f_k$ is the kinetic friction force, $\mu_k$ is the coefficient of kinetic friction, and $N$ is the normal force. Notice that this equation doesn't depend on the object's velocity—an object sliding at 1 m/s experiences the same kinetic friction as one sliding at 10 m/s (though air resistance, not friction, becomes significant at high speeds).</p>
+<div class="arithmatex">\[f_k = \mu_k N\]</div>
+<p>where <span class="arithmatex">\(f_k\)</span> is the kinetic friction force, <span class="arithmatex">\(\mu_k\)</span> is the coefficient of kinetic friction, and <span class="arithmatex">\(N\)</span> is the normal force. Notice that this equation doesn't depend on the object's velocity—an object sliding at 1 m/s experiences the same kinetic friction as one sliding at 10 m/s (though air resistance, not friction, becomes significant at high speeds).</p>
 <p>Experimental observations reveal an important pattern:</p>
 <table>
 <thead>
@@ -2611,19 +2611,19 @@ Legend: Position top-right</p>
 <p>A 25 kg wooden crate sits on a wooden floor (μs = 0.5, μk = 0.3). What is the maximum horizontal force you can apply without causing the crate to slide?</p>
 <p><strong>Solution:</strong>
 First, find the normal force. Since the surface is horizontal and there are no vertical forces except weight and normal force:</p>
-<p>$$N = mg = (25 \text{ kg})(9.8 \text{ m/s}^2) = 245 \text{ N}$$</p>
+<div class="arithmatex">\[N = mg = (25 \text{ kg})(9.8 \text{ m/s}^2) = 245 \text{ N}\]</div>
 <p>Maximum static friction:</p>
-<p>$$f_s^{max} = \mu_s N = (0.5)(245 \text{ N}) = 122.5 \text{ N}$$</p>
+<div class="arithmatex">\[f_s^{max} = \mu_s N = (0.5)(245 \text{ N}) = 122.5 \text{ N}\]</div>
 <p>Therefore, you can apply up to 122.5 N horizontally without causing motion.</p>
 <p><strong>Example 2: Sliding with Friction</strong></p>
 <p>You push the same crate with a force of 150 N. What is its acceleration?</p>
 <p><strong>Solution:</strong>
 Since 150 N exceeds the maximum static friction (122.5 N), the crate slides. Now kinetic friction applies:</p>
-<p>$$f_k = \mu_k N = (0.3)(245 \text{ N}) = 73.5 \text{ N}$$</p>
+<div class="arithmatex">\[f_k = \mu_k N = (0.3)(245 \text{ N}) = 73.5 \text{ N}\]</div>
 <p>Apply Newton's second law in the horizontal direction:</p>
-<p>$$\sum F_x = F_{applied} - f_k = ma$$</p>
-<p>$$150 \text{ N} - 73.5 \text{ N} = (25 \text{ kg})a$$</p>
-<p>$$a = \frac{76.5 \text{ N}}{25 \text{ kg}} = 3.06 \text{ m/s}^2$$</p>
+<div class="arithmatex">\[\sum F_x = F_{applied} - f_k = ma\]</div>
+<div class="arithmatex">\[150 \text{ N} - 73.5 \text{ N} = (25 \text{ kg})a\]</div>
+<div class="arithmatex">\[a = \frac{76.5 \text{ N}}{25 \text{ kg}} = 3.06 \text{ m/s}^2\]</div>
 <h2 id="tension-forces-through-ropes-and-cables">Tension: Forces Through Ropes and Cables</h2>
 <h3 id="understanding-tension">Understanding Tension</h3>
 <p>Tension is the pulling force transmitted through a rope, string, cable, or similar object when forces are applied at its ends. Unlike friction or normal force, tension acts along the length of the rope, pulling equally on whatever is attached at each end. Tension forces are fundamental to understanding pulleys, elevators, towing, and countless other applications.</p>
@@ -2677,8 +2677,8 @@ Since 150 N exceeds the maximum static friction (122.5 N), the crate slides. Now
 <p>A 15 kg object hangs from a rope attached to the ceiling. What is the tension in the rope?</p>
 <p><strong>Solution:</strong>
 Draw a free-body diagram showing weight (mg) pointing down and tension (T) pointing up. Since the object is in equilibrium:</p>
-<p>$$\sum F_y = T - mg = 0$$</p>
-<p>$$T = mg = (15 \text{ kg})(9.8 \text{ m/s}^2) = 147 \text{ N}$$</p>
+<div class="arithmatex">\[\sum F_y = T - mg = 0\]</div>
+<div class="arithmatex">\[T = mg = (15 \text{ kg})(9.8 \text{ m/s}^2) = 147 \text{ N}\]</div>
 <p>The tension equals the object's weight. If the object were accelerating upward (like in an elevator), tension would exceed the weight. If accelerating downward, tension would be less than weight.</p>
 <h3 id="tension-with-connected-objects">Tension with Connected Objects</h3>
 <p>Tension becomes more interesting when multiple objects are connected. The rope transmits forces between objects, requiring careful analysis of each object separately. This technique—drawing a free-body diagram for each object and applying Newton's second law to each—is essential for solving complex problems.</p>
@@ -2689,9 +2689,9 @@ Focus on the car. Draw its free-body diagram:
 - Tension T (forward)
 - Friction fk = 300 N (backward)</p>
 <p>Apply Newton's second law horizontally:</p>
-<p>$$\sum F_x = T - f_k = ma$$</p>
-<p>$$T - 300 \text{ N} = (1500 \text{ kg})(1.2 \text{ m/s}^2)$$</p>
-<p>$$T = 1800 \text{ N} + 300 \text{ N} = 2100 \text{ N}$$</p>
+<div class="arithmatex">\[\sum F_x = T - f_k = ma\]</div>
+<div class="arithmatex">\[T - 300 \text{ N} = (1500 \text{ kg})(1.2 \text{ m/s}^2)\]</div>
+<div class="arithmatex">\[T = 1800 \text{ N} + 300 \text{ N} = 2100 \text{ N}\]</div>
 <p>The cable must provide 2100 N to overcome friction and accelerate the car.</p>
 <h3 id="angled-tension">Angled Tension</h3>
 <p>When ropes pull at angles, you must decompose the tension into components. This commonly occurs with objects supported by two angled ropes or a single rope at an angle to the vertical.</p>
@@ -2699,17 +2699,17 @@ Focus on the car. Draw its free-body diagram:
 <p>You pull a 20 kg suitcase with a force of 50 N at 30° above the horizontal. The coefficient of kinetic friction is 0.25. What is the suitcase's acceleration?</p>
 <p><strong>Solution:</strong>
 First, resolve the applied force into components:
-- Horizontal: $F_x = F \cos 30° = 50 \cos 30° = 43.3$ N
-- Vertical: $F_y = F \sin 30° = 50 \sin 30° = 25$ N</p>
+- Horizontal: <span class="arithmatex">\(F_x = F \cos 30° = 50 \cos 30° = 43.3\)</span> N
+- Vertical: <span class="arithmatex">\(F_y = F \sin 30° = 50 \sin 30° = 25\)</span> N</p>
 <p>Find the normal force (vertical equilibrium):</p>
-<p>$$N + F_y = mg$$</p>
-<p>$$N = mg - F_y = (20)(9.8) - 25 = 171 \text{ N}$$</p>
+<div class="arithmatex">\[N + F_y = mg\]</div>
+<div class="arithmatex">\[N = mg - F_y = (20)(9.8) - 25 = 171 \text{ N}\]</div>
 <p>Calculate kinetic friction:</p>
-<p>$$f_k = \mu_k N = (0.25)(171) = 42.75 \text{ N}$$</p>
+<div class="arithmatex">\[f_k = \mu_k N = (0.25)(171) = 42.75 \text{ N}\]</div>
 <p>Apply Newton's second law horizontally:</p>
-<p>$$\sum F_x = F_x - f_k = ma$$</p>
-<p>$$43.3 - 42.75 = 20a$$</p>
-<p>$$a = 0.028 \text{ m/s}^2$$</p>
+<div class="arithmatex">\[\sum F_x = F_x - f_k = ma\]</div>
+<div class="arithmatex">\[43.3 - 42.75 = 20a\]</div>
+<div class="arithmatex">\[a = 0.028 \text{ m/s}^2\]</div>
 <p>The suitcase barely accelerates because most of the applied force goes into reducing the normal force rather than providing horizontal motion.</p>
 <h4 id="diagram-angled-tension-component-microsim">Diagram: Angled Tension Component MicroSim</h4>
 <iframe src="../../sims/angled-tension/main.html" height="552px" width="100%" scrolling="no"></iframe>
@@ -2775,7 +2775,7 @@ First, resolve the applied force into components:
 <li>The normal force N acts perpendicular to the incline</li>
 <li>Friction f acts parallel to the incline (opposing motion or potential motion)</li>
 <li>Weight mg acts vertically downward</li>
-<li>Weight components: $mg \sin \theta$ (parallel to incline), $mg \cos \theta$ (perpendicular to incline)</li>
+<li>Weight components: <span class="arithmatex">\(mg \sin \theta\)</span> (parallel to incline), <span class="arithmatex">\(mg \cos \theta\)</span> (perpendicular to incline)</li>
 </ul>
 <h4 id="diagram-inclined-plane-force-decomposition-diagram">Diagram: Inclined Plane Force Decomposition Diagram</h4>
 <iframe src="../../sims/inclined-plane-forces/main.html" height="552px" width="100%" scrolling="no"></iframe>
@@ -2819,17 +2819,17 @@ First, resolve the applied force into components:
 <h3 id="objects-at-rest-on-inclines">Objects at Rest on Inclines</h3>
 <p>When an object sits motionless on an incline, it's in static equilibrium—all forces balance. This provides an excellent opportunity to practice force analysis and understand how friction prevents sliding.</p>
 <p>Consider a block at rest on an incline at angle θ. In the perpendicular direction (y-axis):</p>
-<p>$$\sum F_y = N - mg \cos \theta = 0$$</p>
-<p>$$N = mg \cos \theta$$</p>
+<div class="arithmatex">\[\sum F_y = N - mg \cos \theta = 0\]</div>
+<div class="arithmatex">\[N = mg \cos \theta\]</div>
 <p>In the parallel direction (x-axis), with static friction preventing motion:</p>
-<p>$$\sum F_x = f_s - mg \sin \theta = 0$$</p>
-<p>$$f_s = mg \sin \theta$$</p>
-<p>This reveals an important insight: as the angle increases, the required static friction increases. At a critical angle, static friction reaches its maximum value $f_s^{max} = \mu_s N$, and the object begins to slide.</p>
+<div class="arithmatex">\[\sum F_x = f_s - mg \sin \theta = 0\]</div>
+<div class="arithmatex">\[f_s = mg \sin \theta\]</div>
+<p>This reveals an important insight: as the angle increases, the required static friction increases. At a critical angle, static friction reaches its maximum value <span class="arithmatex">\(f_s^{max} = \mu_s N\)</span>, and the object begins to slide.</p>
 <p><strong>Finding the Critical Angle</strong></p>
 <p>Setting the required friction equal to maximum static friction:</p>
-<p>$$mg \sin \theta_{critical} = \mu_s (mg \cos \theta_{critical})$$</p>
-<p>$$\tan \theta_{critical} = \mu_s$$</p>
-<p>$$\theta_{critical} = \arctan(\mu_s)$$</p>
+<div class="arithmatex">\[mg \sin \theta_{critical} = \mu_s (mg \cos \theta_{critical})\]</div>
+<div class="arithmatex">\[\tan \theta_{critical} = \mu_s\]</div>
+<div class="arithmatex">\[\theta_{critical} = \arctan(\mu_s)\]</div>
 <p>This elegant result means you can experimentally determine friction coefficients by measuring the angle at which objects begin to slide. For example, if an object slides when the incline reaches 30°, the coefficient of static friction is tan 30° = 0.577.</p>
 <h3 id="objects-sliding-down-inclines">Objects Sliding Down Inclines</h3>
 <p>Once an object slides, kinetic friction takes over, and we can calculate acceleration using Newton's second law. The parallel component of weight exceeds kinetic friction, resulting in net acceleration down the slope.</p>
@@ -2837,14 +2837,14 @@ First, resolve the applied force into components:
 <p>A 5 kg block slides down a 35° incline. The coefficient of kinetic friction is 0.25. Find the block's acceleration.</p>
 <p><strong>Solution:</strong>
 Perpendicular direction (no acceleration):</p>
-<p>$$N = mg \cos \theta = (5)(9.8) \cos 35° = 40.1 \text{ N}$$</p>
+<div class="arithmatex">\[N = mg \cos \theta = (5)(9.8) \cos 35° = 40.1 \text{ N}\]</div>
 <p>Kinetic friction:</p>
-<p>$$f_k = \mu_k N = (0.25)(40.1) = 10.0 \text{ N}$$</p>
+<div class="arithmatex">\[f_k = \mu_k N = (0.25)(40.1) = 10.0 \text{ N}\]</div>
 <p>Parallel direction (down the slope is positive):</p>
-<p>$$\sum F_x = mg \sin \theta - f_k = ma$$</p>
-<p>$$(5)(9.8) \sin 35° - 10.0 = 5a$$</p>
-<p>$$28.1 - 10.0 = 5a$$</p>
-<p>$$a = 3.62 \text{ m/s}^2$$</p>
+<div class="arithmatex">\[\sum F_x = mg \sin \theta - f_k = ma\]</div>
+<div class="arithmatex">\[(5)(9.8) \sin 35° - 10.0 = 5a\]</div>
+<div class="arithmatex">\[28.1 - 10.0 = 5a\]</div>
+<div class="arithmatex">\[a = 3.62 \text{ m/s}^2\]</div>
 <p>The block accelerates down the ramp at 3.62 m/s².</p>
 <h4 id="diagram-inclined-plane-motion-microsim">Diagram: Inclined Plane Motion MicroSim</h4>
 <iframe src="../../sims/inclined-plane-motion/main.html" height="552px" width="100%" scrolling="no"></iframe>
@@ -2965,17 +2965,17 @@ Perpendicular direction (no acceleration):</p>
 <p><strong>Solution:</strong>
 Define positive directions: upward for m₁ = 5 kg, downward for m₂ = 7 kg (matching their motion directions).</p>
 <p>For m₁ (moving up):
-$$T - m_1 g = m_1 a$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(T - m_1 g = m_1 a\)</span>\)</span></p>
 <p>For m₂ (moving down):
-$$m_2 g - T = m_2 a$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(m_2 g - T = m_2 a\)</span>\)</span></p>
 <p>Add the equations to eliminate T:
-$$m_2 g - m_1 g = m_1 a + m_2 a$$</p>
-<p>$$(m_2 - m_1)g = (m_1 + m_2)a$$</p>
-<p>$$a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{(7-5)(9.8)}{5+7} = \frac{19.6}{12} = 1.63 \text{ m/s}^2$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(m_2 g - m_1 g = m_1 a + m_2 a\)</span>\)</span></p>
+<div class="arithmatex">\[(m_2 - m_1)g = (m_1 + m_2)a\]</div>
+<div class="arithmatex">\[a = \frac{(m_2 - m_1)g}{m_1 + m_2} = \frac{(7-5)(9.8)}{5+7} = \frac{19.6}{12} = 1.63 \text{ m/s}^2\]</div>
 <p>Now find tension using either equation. Using the first:
-$$T = m_1(g + a) = 5(9.8 + 1.63) = 57.2 \text{ N}$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(T = m_1(g + a) = 5(9.8 + 1.63) = 57.2 \text{ N}\)</span>\)</span></p>
 <p>Check with the second equation:
-$$T = m_2(g - a) = 7(9.8 - 1.63) = 57.2 \text{ N}$$ ✓</p>
+<span class="arithmatex">\(<span class="arithmatex">\(T = m_2(g - a) = 7(9.8 - 1.63) = 57.2 \text{ N}\)</span>\)</span> ✓</p>
 <p>Notice that tension (57.2 N) is between m₁g = 49 N and m₂g = 68.6 N, which makes physical sense.</p>
 <h4 id="diagram-interactive-atwood-machine-microsim">Diagram: Interactive Atwood Machine MicroSim</h4>
 <iframe src="../../sims/atwood-machine/main.html" height="552px" width="100%" scrolling="no"></iframe>
@@ -3054,13 +3054,13 @@ $$T = m_2(g - a) = 7(9.8 - 1.63) = 57.2 \text{ N}$$ ✓</p>
 <p><strong>Solution:</strong>
 The movable pulley is supported by 2 rope segments, so:</p>
 <p>Applied force:
-$$F = \frac{mg}{2} = \frac{(120)(9.8)}{2} = 588 \text{ N}$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(F = \frac{mg}{2} = \frac{(120)(9.8)}{2} = 588 \text{ N}\)</span>\)</span></p>
 <p>Rope distance:
-$$d_{rope} = 2 \times d_{load} = 2 \times 3 = 6 \text{ m}$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(d_{rope} = 2 \times d_{load} = 2 \times 3 = 6 \text{ m}\)</span>\)</span></p>
 <p>You apply 588 N (half the weight) but pull 6 meters of rope (twice the lifting distance).</p>
 <p>Check work (energy conservation):
-- Work input: $W_{in} = Fd_{rope} = (588)(6) = 3528$ J
-- Work output: $W_{out} = mgd_{load} = (120)(9.8)(3) = 3528$ J ✓</p>
+- Work input: <span class="arithmatex">\(W_{in} = Fd_{rope} = (588)(6) = 3528\)</span> J
+- Work output: <span class="arithmatex">\(W_{out} = mgd_{load} = (120)(9.8)(3) = 3528\)</span> J ✓</p>
 <h4 id="diagram-pulley-system-mechanical-advantage-diagram">Diagram: Pulley System Mechanical Advantage Diagram</h4>
 <iframe src="../../sims/pulley-mechanical-advantage/main.html" height="552px" width="100%" scrolling="no"></iframe>
 
@@ -3119,19 +3119,19 @@ Three side-by-side pulley configurations:</p>
 <p>Where there's acceleration, Newton's second law demands a net force. The net force causing circular motion also points toward the center and is called centripetal force. It's crucial to understand that "centripetal force" isn't a new type of force—it's simply the name we give to whatever net force (tension, friction, gravity, normal force, or a combination) points toward the center and causes the circular path.</p>
 <h3 id="centripetal-acceleration">Centripetal Acceleration</h3>
 <p>When an object moves in a circle of radius r at constant speed v, it experiences centripetal acceleration given by:</p>
-<p>$$a_c = \frac{v^2}{r}$$</p>
+<div class="arithmatex">\[a_c = \frac{v^2}{r}\]</div>
 <p>This acceleration always points toward the center of the circle. Notice that faster speeds or tighter curves (smaller radius) produce larger accelerations. A car taking a sharp turn at high speed requires much greater centripetal acceleration than a car slowly rounding a gentle curve.</p>
 <p>We can also express centripetal acceleration in terms of angular velocity ω (Greek letter omega), which measures how fast the object rotates:</p>
-<p>$$a_c = \omega^2 r$$</p>
-<p>where $\omega = v/r$ measured in radians per second. This form is particularly useful for objects like spinning wheels where angular velocity is more natural to measure than linear speed.</p>
+<div class="arithmatex">\[a_c = \omega^2 r\]</div>
+<p>where <span class="arithmatex">\(\omega = v/r\)</span> measured in radians per second. This form is particularly useful for objects like spinning wheels where angular velocity is more natural to measure than linear speed.</p>
 <p><strong>Example: Centripetal Acceleration on a Curve</strong></p>
 <p>A car travels around a circular track of radius 50 m at 20 m/s. What is its centripetal acceleration?</p>
 <p><strong>Solution:</strong>
-$$a_c = \frac{v^2}{r} = \frac{(20)^2}{50} = \frac{400}{50} = 8.0 \text{ m/s}^2$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(a_c = \frac{v^2}{r} = \frac{(20)^2}{50} = \frac{400}{50} = 8.0 \text{ m/s}^2\)</span>\)</span></p>
 <p>The car experiences acceleration of 8.0 m/s² directed toward the center of the circular track—slightly less than gravitational acceleration (9.8 m/s²) but still quite significant.</p>
 <h3 id="centripetal-force">Centripetal Force</h3>
 <p>Newton's second law applies to circular motion just as it does to linear motion. The centripetal force required to maintain circular motion is:</p>
-<p>$$F_c = ma_c = m\frac{v^2}{r}$$</p>
+<div class="arithmatex">\[F_c = ma_c = m\frac{v^2}{r}\]</div>
 <p>This force must be provided by physical forces in the problem: tension in a string, friction between tires and road, gravitational attraction, normal force, or combinations of these. The term "centripetal force" is descriptive—it tells us the direction and role of the net force, not its physical origin.</p>
 <p>Common sources of centripetal force:</p>
 <table>
@@ -3214,14 +3214,14 @@ $$a_c = \frac{v^2}{r} = \frac{(20)^2}{50} = \frac{400}{50} = 8.0 \text{ m/s}^2$$
 <p>A car rounds a flat curve of radius 80 m. The coefficient of static friction between tires and dry pavement is 0.85. What is the maximum safe speed?</p>
 <p><strong>Solution:</strong>
 The maximum centripetal force available is the maximum static friction:</p>
-<p>$$F_c^{max} = f_s^{max} = \mu_s N = \mu_s mg$$</p>
+<div class="arithmatex">\[F_c^{max} = f_s^{max} = \mu_s N = \mu_s mg\]</div>
 <p>Set this equal to required centripetal force:</p>
-<p>$$\mu_s mg = m\frac{v^2}{r}$$</p>
+<div class="arithmatex">\[\mu_s mg = m\frac{v^2}{r}\]</div>
 <p>Notice mass cancels:</p>
-<p>$$\mu_s g = \frac{v^2}{r}$$</p>
+<div class="arithmatex">\[\mu_s g = \frac{v^2}{r}\]</div>
 <p>Solve for v:</p>
-<p>$$v = \sqrt{\mu_s gr} = \sqrt{(0.85)(9.8)(80)} = \sqrt{666.4} = 25.8 \text{ m/s}$$</p>
-<p>Converting to km/h: $25.8 \times 3.6 = 93$ km/h</p>
+<div class="arithmatex">\[v = \sqrt{\mu_s gr} = \sqrt{(0.85)(9.8)(80)} = \sqrt{666.4} = 25.8 \text{ m/s}\]</div>
+<p>Converting to km/h: <span class="arithmatex">\(25.8 \times 3.6 = 93\)</span> km/h</p>
 <p>The maximum safe speed is about 93 km/h (58 mph). In wet conditions, with μs ≈ 0.5, this drops to 62 km/h (39 mph), explaining why speed limits are lower in rain.</p>
 <h4 id="diagram-car-on-curve-microsim">Diagram: Car on Curve MicroSim</h4>
 <iframe src="../../sims/car-on-curve/main.html" height="552px" width="100%" scrolling="no"></iframe>
@@ -3290,7 +3290,7 @@ The maximum centripetal force available is the maximum static friction:</p>
 <p>Banked curves—roadways or racetracks tilted at an angle—use the normal force to help provide centripetal force, reducing reliance on friction. Fighter jets bank when turning, NASCAR tracks have steeply banked corners, and highway engineers bank curves to improve safety. Banking allows higher safe speeds and prevents skidding even on slippery surfaces.</p>
 <p>When a curve is banked at angle θ, the normal force has a component pointing toward the center of the curve. This component contributes to centripetal force. At a specific "design speed," the horizontal component of the normal force provides exactly the required centripetal force, meaning the car can navigate the curve even with zero friction.</p>
 <p>For a banked curve at angle θ with radius r, the ideal speed (requiring no friction) is:</p>
-<p>$$v_{ideal} = \sqrt{rg \tan \theta}$$</p>
+<div class="arithmatex">\[v_{ideal} = \sqrt{rg \tan \theta}\]</div>
 <p>At this speed, any vehicle—regardless of mass—can take the curve without relying on friction. Below this speed, friction must point up the incline to prevent sliding down. Above this speed, friction must point down the incline to prevent sliding up and off the curve.</p>
 <h4 id="diagram-banked-curve-force-analysis-diagram">Diagram: Banked Curve Force Analysis Diagram</h4>
 <iframe src="../../sims/banked-curve-forces/main.html" height="552px" width="100%" scrolling="no"></iframe>
@@ -3342,24 +3342,24 @@ The maximum centripetal force available is the maximum static friction:</p>
 <p><strong>Example: Ideal Speed for a Banked Curve</strong></p>
 <p>A highway curve has a radius of 120 m and is banked at 15°. What is the ideal speed for this curve (no friction required)?</p>
 <p><strong>Solution:</strong>
-$$v_{ideal} = \sqrt{rg \tan \theta} = \sqrt{(120)(9.8) \tan 15°}$$</p>
-<p>$$v_{ideal} = \sqrt{(1176)(0.268)} = \sqrt{315.2} = 17.8 \text{ m/s}$$</p>
-<p>Converting to km/h: $17.8 \times 3.6 = 64$ km/h</p>
+<span class="arithmatex">\(<span class="arithmatex">\(v_{ideal} = \sqrt{rg \tan \theta} = \sqrt{(120)(9.8) \tan 15°}\)</span>\)</span></p>
+<div class="arithmatex">\[v_{ideal} = \sqrt{(1176)(0.268)} = \sqrt{315.2} = 17.8 \text{ m/s}\]</div>
+<p>Converting to km/h: <span class="arithmatex">\(17.8 \times 3.6 = 64\)</span> km/h</p>
 <p>At 64 km/h (40 mph), vehicles can take this curve safely even on ice. Highway engineers typically design banking for speeds slightly below the posted speed limit, ensuring normal driving conditions provide adequate friction for speeds above the ideal.</p>
 <p><strong>Example: Analyzing Motion Above Ideal Speed</strong></p>
 <p>Consider the same banked curve. A car travels at 25 m/s (90 km/h). What friction force is required if the car has mass 1200 kg?</p>
 <p><strong>Solution:</strong>
 The vertical component of normal force balances weight:</p>
-<p>$$N \cos 15° = mg$$</p>
-<p>$$N = \frac{mg}{\cos 15°} = \frac{(1200)(9.8)}{0.966} = 12,180 \text{ N}$$</p>
+<div class="arithmatex">\[N \cos 15° = mg\]</div>
+<div class="arithmatex">\[N = \frac{mg}{\cos 15°} = \frac{(1200)(9.8)}{0.966} = 12,180 \text{ N}\]</div>
 <p>Required centripetal force:</p>
-<p>$$F_c = \frac{mv^2}{r} = \frac{(1200)(25)^2}{120} = 6250 \text{ N}$$</p>
+<div class="arithmatex">\[F_c = \frac{mv^2}{r} = \frac{(1200)(25)^2}{120} = 6250 \text{ N}\]</div>
 <p>Normal force provides:</p>
-<p>$$N \sin 15° = (12,180)(0.259) = 3155 \text{ N}$$</p>
+<div class="arithmatex">\[N \sin 15° = (12,180)(0.259) = 3155 \text{ N}\]</div>
 <p>Friction must provide the difference:</p>
-<p>$$f = F_c - N \sin \theta = 6250 - 3155 = 3095 \text{ N}$$</p>
+<div class="arithmatex">\[f = F_c - N \sin \theta = 6250 - 3155 = 3095 \text{ N}\]</div>
 <p>Friction must point down the incline to prevent the car from sliding up and off the curve. The coefficient of friction required is:</p>
-<p>$$\mu = \frac{f}{N} = \frac{3095}{12,180} = 0.25$$</p>
+<div class="arithmatex">\[\mu = \frac{f}{N} = \frac{3095}{12,180} = 0.25\]</div>
 <p>This is reasonable for most tire-road combinations, explaining why the car can safely exceed the ideal speed.</p>
 <h4 id="diagram-banked-curve-speed-analysis-microsim">Diagram: Banked Curve Speed Analysis MicroSim</h4>
 <iframe src="../../sims/banked-curve-speed/main.html" height="552px" width="100%" scrolling="no"></iframe>
@@ -3432,11 +3432,11 @@ The vertical component of normal force balances weight:</p>
 <h2 id="chapter-summary">Chapter Summary</h2>
 <p>This chapter transformed Newton's laws from abstract principles into practical problem-solving tools. By systematically analyzing friction, tension, inclined planes, pulleys, and circular motion, you've developed the skills needed to tackle complex multi-force scenarios encountered in engineering, physics, and everyday life.</p>
 <p><strong>Key Concepts Mastered:</strong></p>
-<p><strong>Friction:</strong> You learned that friction opposes relative motion between surfaces and comes in two forms—static friction (adjustable up to a maximum) and kinetic friction (constant magnitude). The coefficient of friction characterizes how easily materials slide against each other, with $f_s^{max} = \mu_s N$ and $f_k = \mu_k N$.</p>
+<p><strong>Friction:</strong> You learned that friction opposes relative motion between surfaces and comes in two forms—static friction (adjustable up to a maximum) and kinetic friction (constant magnitude). The coefficient of friction characterizes how easily materials slide against each other, with <span class="arithmatex">\(f_s^{max} = \mu_s N\)</span> and <span class="arithmatex">\(f_k = \mu_k N\)</span>.</p>
 <p><strong>Tension:</strong> Ropes and cables transmit pulling forces called tension. For massless, inextensible ropes, tension is uniform throughout and equal on both ends. Analyzing tension problems requires drawing separate free-body diagrams for each object and applying Newton's second law systematically.</p>
-<p><strong>Inclined Planes:</strong> Objects on slopes experience weight components parallel ($mg \sin \theta$) and perpendicular ($mg \cos \theta$) to the surface. Choosing coordinate axes aligned with the incline simplifies calculations. The critical angle at which objects begin to slide relates directly to the friction coefficient: $\theta_c = \arctan(\mu_s)$.</p>
-<p><strong>Pulley Systems:</strong> Pulleys redirect forces and, when arranged properly, provide mechanical advantage. The Atwood machine demonstrates how connected masses accelerate based on their mass difference: $a = (m_2 - m_1)g / (m_1 + m_2)$. Multi-pulley systems multiply force at the cost of requiring more rope displacement, conserving energy.</p>
-<p><strong>Circular Motion:</strong> Objects moving in curved paths experience centripetal acceleration ($a_c = v^2/r$) directed toward the center. This requires a net inward force called centripetal force ($F_c = mv^2/r$), provided by physical forces like friction, tension, or gravity. Banked curves use the horizontal component of the normal force to reduce dependence on friction.</p>
+<p><strong>Inclined Planes:</strong> Objects on slopes experience weight components parallel (<span class="arithmatex">\(mg \sin \theta\)</span>) and perpendicular (<span class="arithmatex">\(mg \cos \theta\)</span>) to the surface. Choosing coordinate axes aligned with the incline simplifies calculations. The critical angle at which objects begin to slide relates directly to the friction coefficient: <span class="arithmatex">\(\theta_c = \arctan(\mu_s)\)</span>.</p>
+<p><strong>Pulley Systems:</strong> Pulleys redirect forces and, when arranged properly, provide mechanical advantage. The Atwood machine demonstrates how connected masses accelerate based on their mass difference: <span class="arithmatex">\(a = (m_2 - m_1)g / (m_1 + m_2)\)</span>. Multi-pulley systems multiply force at the cost of requiring more rope displacement, conserving energy.</p>
+<p><strong>Circular Motion:</strong> Objects moving in curved paths experience centripetal acceleration (<span class="arithmatex">\(a_c = v^2/r\)</span>) directed toward the center. This requires a net inward force called centripetal force (<span class="arithmatex">\(F_c = mv^2/r\)</span>), provided by physical forces like friction, tension, or gravity. Banked curves use the horizontal component of the normal force to reduce dependence on friction.</p>
 <p><strong>Problem-Solving Strategies:</strong></p>
 <ol>
 <li>Draw clear free-body diagrams showing all forces</li>
@@ -3580,6 +3580,10 @@ The vertical component of normal force balances weight:</p>
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

@@ -4290,7 +4290,7 @@
 </ol>
 <h3 id="back-emf-and-speed-control">Back-EMF and Speed Control</h3>
 <p>Back-EMF is the key to understanding DC motor behavior:</p>
-<p>$$\epsilon_{back} = k \cdot \omega$$</p>
+<div class="arithmatex">\[\epsilon_{back} = k \cdot \omega\]</div>
 <p>Where:
 - ε_back = back-EMF (volts)
 - k = motor constant (depends on construction)
@@ -4307,7 +4307,7 @@
 - Can damage motor if sustained!</p>
 <h3 id="efficiency-curve">Efficiency Curve</h3>
 <p>Motor efficiency varies with operating conditions:</p>
-<p>$$\eta = \frac{P_{mechanical}}{P_{electrical}} = \frac{\tau \cdot \omega}{V \cdot I}$$</p>
+<div class="arithmatex">\[\eta = \frac{P_{mechanical}}{P_{electrical}} = \frac{\tau \cdot \omega}{V \cdot I}\]</div>
 <p>Maximum efficiency typically occurs at moderate speeds, not at maximum speed or maximum torque.</p>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="learning-objectives">Learning Objectives</h3>
@@ -4435,23 +4435,23 @@
 </ul>
 <h2 id="formulas-reference">Formulas Reference</h2>
 <h3 id="motor-equations">Motor Equations</h3>
-<p>$$F = BIL$$
+<p><span class="arithmatex">\(<span class="arithmatex">\(F = BIL\)</span>\)</span>
 Force on a current-carrying conductor</p>
-<p>$$\tau = r \times F = r \cdot BIL$$
+<p><span class="arithmatex">\(<span class="arithmatex">\(\tau = r \times F = r \cdot BIL\)</span>\)</span>
 Torque on the armature</p>
-<p>$$\epsilon_{back} = k \cdot \omega$$
+<p><span class="arithmatex">\(<span class="arithmatex">\(\epsilon_{back} = k \cdot \omega\)</span>\)</span>
 Back-EMF (generator effect)</p>
-<p>$$I = \frac{V - \epsilon_{back}}{R}$$
+<p><span class="arithmatex">\(<span class="arithmatex">\(I = \frac{V - \epsilon_{back}}{R}\)</span>\)</span>
 Current considering back-EMF</p>
-<p>$$P_{in} = V \cdot I$$
+<p><span class="arithmatex">\(<span class="arithmatex">\(P_{in} = V \cdot I\)</span>\)</span>
 Electrical input power</p>
-<p>$$P_{out} = \tau \cdot \omega$$
+<p><span class="arithmatex">\(<span class="arithmatex">\(P_{out} = \tau \cdot \omega\)</span>\)</span>
 Mechanical output power</p>
-<p>$$\eta = \frac{P_{out}}{P_{in}} \times 100\%$$
+<p><span class="arithmatex">\(<span class="arithmatex">\(\eta = \frac{P_{out}}{P_{in}} \times 100\%\)</span>\)</span>
 Efficiency</p>
 <h3 id="motor-characteristic">Motor Characteristic</h3>
 <p>At steady state with constant voltage:
-$$\omega = \frac{V}{k} - \frac{R}{k^2} \cdot \tau$$</p>
+<span class="arithmatex">\(<span class="arithmatex">\(\omega = \frac{V}{k} - \frac{R}{k^2} \cdot \tau\)</span>\)</span></p>
 <p>This is the linear speed-torque relationship shown in the graph.</p>
 <h2 id="references">References</h2>
 <ul>
@@ -4563,6 +4563,10 @@ $$\omega = \frac{V}{k} - \frac{R}{k^2} \cdot \tau$$</p>
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

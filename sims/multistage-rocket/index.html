@@ -3469,12 +3469,12 @@
 <h2 id="about-this-chart">About This Chart</h2>
 <p>This interactive visualization demonstrates why rockets use multiple stages to reach orbit. Using the Tsiolkovsky rocket equation, it calculates the delta-v (change in velocity) achievable with different staging configurations.</p>
 <h2 id="the-tsiolkovsky-rocket-equation">The Tsiolkovsky Rocket Equation</h2>
-<p>$$\Delta v = v_e \times \ln\left(\frac{m_{initial}}{m_{final}}\right)$$</p>
+<div class="arithmatex">\[\Delta v = v_e \times \ln\left(\frac{m_{initial}}{m_{final}}\right)\]</div>
 <p>Where:
-- $\Delta v$ = change in velocity (m/s)
-- $v_e$ = exhaust velocity (m/s)
-- $m_{initial}$ = initial mass (with fuel)
-- $m_{final}$ = final mass (without fuel)</p>
+- <span class="arithmatex">\(\Delta v\)</span> = change in velocity (m/s)
+- <span class="arithmatex">\(v_e\)</span> = exhaust velocity (m/s)
+- <span class="arithmatex">\(m_{initial}\)</span> = initial mass (with fuel)
+- <span class="arithmatex">\(m_{final}\)</span> = final mass (without fuel)</p>
 <h2 id="why-staging-matters">Why Staging Matters</h2>
 <h3 id="the-problem-with-single-stage-rockets">The Problem with Single-Stage Rockets</h3>
 <p>A single-stage rocket must carry:
@@ -3641,6 +3641,10 @@
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

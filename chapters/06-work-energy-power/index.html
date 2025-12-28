@@ -2464,22 +2464,22 @@
 <p>If any of these conditions is missing, no work is done in the physics sense. You can push against a brick wall all day until you're exhausted, but if the wall doesn't move, you've done zero work in physics terms (though your muscles certainly expended energy!).</p>
 <h3 id="work-by-a-constant-force">Work by a Constant Force</h3>
 <p>When a constant force acts on an object that moves in a straight line, calculating work is straightforward. The <strong>work done by a constant force</strong> is given by:</p>
-<p>$$W = F \cdot d \cdot \cos(\theta)$$</p>
+<div class="arithmatex">\[W = F \cdot d \cdot \cos(\theta)\]</div>
 <p>Where:</p>
 <ul>
-<li>$W$ = work (measured in joules, J)</li>
-<li>$F$ = magnitude of the applied force (newtons, N)</li>
-<li>$d$ = displacement of the object (meters, m)</li>
-<li>$\theta$ = angle between the force vector and displacement vector</li>
+<li><span class="arithmatex">\(W\)</span> = work (measured in joules, J)</li>
+<li><span class="arithmatex">\(F\)</span> = magnitude of the applied force (newtons, N)</li>
+<li><span class="arithmatex">\(d\)</span> = displacement of the object (meters, m)</li>
+<li><span class="arithmatex">\(\theta\)</span> = angle between the force vector and displacement vector</li>
 </ul>
 <p>This equation reveals several important insights:</p>
 <ul>
-<li>When force and displacement are in the same direction ($\theta = 0°$), work is maximum: $W = Fd$</li>
-<li>When force is perpendicular to displacement ($\theta = 90°$), no work is done: $W = 0$</li>
-<li>When force opposes displacement ($\theta = 180°$), work is negative: $W = -Fd$</li>
+<li>When force and displacement are in the same direction (<span class="arithmatex">\(\theta = 0°\)</span>), work is maximum: <span class="arithmatex">\(W = Fd\)</span></li>
+<li>When force is perpendicular to displacement (<span class="arithmatex">\(\theta = 90°\)</span>), no work is done: <span class="arithmatex">\(W = 0\)</span></li>
+<li>When force opposes displacement (<span class="arithmatex">\(\theta = 180°\)</span>), work is negative: <span class="arithmatex">\(W = -Fd\)</span></li>
 </ul>
 <p><strong>Example:</strong> If you push a 20 kg box with a force of 50 N across a floor for 3 meters in the direction you're pushing, the work done is:</p>
-<p>$$W = (50 \text{ N})(3 \text{ m})\cos(0°) = 150 \text{ J}$$</p>
+<div class="arithmatex">\[W = (50 \text{ N})(3 \text{ m})\cos(0°) = 150 \text{ J}\]</div>
 <h3 id="work-in-different-scenarios">Work in Different Scenarios</h3>
 <p>Let's examine how work behaves in different situations:</p>
 <table>
@@ -2654,10 +2654,10 @@ Annotations:
 <h3 id="work-by-a-variable-force">Work by a Variable Force</h3>
 <p>Many real-world forces aren't constant—they change as an object moves. Springs are a perfect example: the more you compress or stretch a spring, the harder it pushes back. Calculating <strong>work by a variable force</strong> requires a different approach.</p>
 <p>For a force that varies with position, work is calculated using integration:</p>
-<p>$$W = \int_{x_1}^{x_2} F(x) \, dx$$</p>
+<div class="arithmatex">\[W = \int_{x_1}^{x_2} F(x) \, dx\]</div>
 <p>Graphically, this represents the area under a force-versus-position graph between the initial and final positions.</p>
-<p><strong>Spring Example:</strong> For an ideal spring following Hooke's Law ($F = kx$), the work done in stretching or compressing the spring from its natural length by a distance $x$ is:</p>
-<p>$$W = \frac{1}{2}kx^2$$</p>
+<p><strong>Spring Example:</strong> For an ideal spring following Hooke's Law (<span class="arithmatex">\(F = kx\)</span>), the work done in stretching or compressing the spring from its natural length by a distance <span class="arithmatex">\(x\)</span> is:</p>
+<div class="arithmatex">\[W = \frac{1}{2}kx^2\]</div>
 <p>This quadratic relationship means doubling the stretch requires four times the work.</p>
 <h4 id="diagram-variable-force-work-calculation-microsim">Diagram: Variable Force Work Calculation MicroSim</h4>
 <iframe src="../../sims/variable-force-work/main.html" width="100%" height="602px" scrolling="no"></iframe>
@@ -2788,12 +2788,12 @@ Implementation notes:
 <p>Now that we understand work as energy transfer, let's explore the first major form of energy: kinetic energy.</p>
 <p><strong>Kinetic energy</strong> (KE) is the energy an object possesses due to its motion. Any moving object—from a rolling ball to a speeding bullet—has kinetic energy. The faster it moves or the more massive it is, the more kinetic energy it has.</p>
 <p>The equation for kinetic energy is:</p>
-<p>$$KE = \frac{1}{2}mv^2$$</p>
+<div class="arithmatex">\[KE = \frac{1}{2}mv^2\]</div>
 <p>Where:</p>
 <ul>
-<li>$KE$ = kinetic energy (joules, J)</li>
-<li>$m$ = mass (kilograms, kg)</li>
-<li>$v$ = speed (meters per second, m/s)</li>
+<li><span class="arithmatex">\(KE\)</span> = kinetic energy (joules, J)</li>
+<li><span class="arithmatex">\(m\)</span> = mass (kilograms, kg)</li>
+<li><span class="arithmatex">\(v\)</span> = speed (meters per second, m/s)</li>
 </ul>
 <p>Notice that kinetic energy depends on the square of velocity. This means:</p>
 <ul>
@@ -2803,15 +2803,15 @@ Implementation notes:
 </ul>
 <p>This quadratic relationship has important real-world implications. A car traveling at 60 mph has four times the kinetic energy of the same car at 30 mph, which is why high-speed collisions are so much more destructive.</p>
 <p><strong>Example:</strong> A 1200 kg car traveling at 25 m/s (about 56 mph) has kinetic energy:</p>
-<p>$$KE = \frac{1}{2}(1200 \text{ kg})(25 \text{ m/s})^2 = 375,000 \text{ J}$$</p>
+<div class="arithmatex">\[KE = \frac{1}{2}(1200 \text{ kg})(25 \text{ m/s})^2 = 375,000 \text{ J}\]</div>
 <p>That's enough energy to lift the car 32 meters straight up!</p>
 <h2 id="the-work-energy-theorem">The Work-Energy Theorem</h2>
 <p>One of the most powerful tools in physics connects work and kinetic energy through a simple, elegant relationship.</p>
 <h3 id="the-fundamental-connection">The Fundamental Connection</h3>
 <p>The <strong>work-energy theorem</strong> states that the net work done on an object equals its change in kinetic energy:</p>
-<p>$$W_{net} = \Delta KE = KE_f - KE_i$$</p>
+<div class="arithmatex">\[W_{net} = \Delta KE = KE_f - KE_i\]</div>
 <p>Or expanded:</p>
-<p>$$W_{net} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2$$</p>
+<div class="arithmatex">\[W_{net} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2\]</div>
 <p>This theorem provides an alternative to using Newton's second law for solving motion problems. Instead of analyzing forces and accelerations, you can often solve problems more easily by tracking energy changes.</p>
 <h3 id="why-this-theorem-matters">Why This Theorem Matters</h3>
 <p>The work-energy theorem is powerful because:</p>
@@ -2823,14 +2823,14 @@ Implementation notes:
 </ol>
 <p><strong>Example Problem:</strong> A 5 kg block sliding at 8 m/s encounters a rough surface that exerts a friction force of 20 N. How far does the block slide before stopping?</p>
 <p>Using forces (Newton's second law):
-1. Find acceleration: $a = F/m = -20/5 = -4$ m/s²
-2. Use kinematic equation: $v_f^2 = v_i^2 + 2ad$
-3. Solve for $d$: $0 = 64 + 2(-4)d$, so $d = 8$ m</p>
+1. Find acceleration: <span class="arithmatex">\(a = F/m = -20/5 = -4\)</span> m/s²
+2. Use kinematic equation: <span class="arithmatex">\(v_f^2 = v_i^2 + 2ad\)</span>
+3. Solve for <span class="arithmatex">\(d\)</span>: <span class="arithmatex">\(0 = 64 + 2(-4)d\)</span>, so <span class="arithmatex">\(d = 8\)</span> m</p>
 <p>Using work-energy theorem:
-1. Initial KE: $\frac{1}{2}(5)(8)^2 = 160$ J
+1. Initial KE: <span class="arithmatex">\(\frac{1}{2}(5)(8)^2 = 160\)</span> J
 2. Final KE: 0 J (block stops)
-3. Work by friction: $W = -Fd = -20d$
-4. Apply theorem: $-20d = 0 - 160$, so $d = 8$ m</p>
+3. Work by friction: <span class="arithmatex">\(W = -Fd = -20d\)</span>
+4. Apply theorem: <span class="arithmatex">\(-20d = 0 - 160\)</span>, so <span class="arithmatex">\(d = 8\)</span> m</p>
 <p>Same answer, but the energy approach is often more intuitive and requires fewer steps.</p>
 <h4 id="diagram-work-energy-theorem-interactive-demonstration">Diagram: Work-Energy Theorem Interactive Demonstration</h4>
 <iframe src="../../sims/work-energy-theorem/main.html" width="100%" height="602px" scrolling="no"></iframe>
@@ -2997,43 +2997,43 @@ Implementation notes:
 <h3 id="gravitational-potential-energy">Gravitational Potential Energy</h3>
 <p><strong>Gravitational potential energy</strong> is the energy stored in an object due to its height above a reference point. Lift a book above your desk, and you've given it gravitational potential energy. Release it, and that stored energy converts to kinetic energy as it falls.</p>
 <p>The equation for gravitational potential energy near Earth's surface is:</p>
-<p>$$PE_g = mgh$$</p>
+<div class="arithmatex">\[PE_g = mgh\]</div>
 <p>Where:</p>
 <ul>
-<li>$PE_g$ = gravitational potential energy (joules, J)</li>
-<li>$m$ = mass (kg)</li>
-<li>$g$ = gravitational acceleration (9.8 m/s²)</li>
-<li>$h$ = height above reference point (m)</li>
+<li><span class="arithmatex">\(PE_g\)</span> = gravitational potential energy (joules, J)</li>
+<li><span class="arithmatex">\(m\)</span> = mass (kg)</li>
+<li><span class="arithmatex">\(g\)</span> = gravitational acceleration (9.8 m/s²)</li>
+<li><span class="arithmatex">\(h\)</span> = height above reference point (m)</li>
 </ul>
 <p>Key points about gravitational potential energy:</p>
 <ul>
-<li>The reference point (where $h = 0$) is arbitrary—choose what's convenient</li>
+<li>The reference point (where <span class="arithmatex">\(h = 0\)</span>) is arbitrary—choose what's convenient</li>
 <li>Only changes in height matter, not the absolute height</li>
 <li>Gravitational PE increases linearly with height</li>
 <li>The same amount of work is required to lift an object regardless of the path taken</li>
 </ul>
 <p><strong>Example:</strong> Lifting a 10 kg backpack from the floor to a shelf 2 meters high increases its gravitational potential energy by:</p>
-<p>$$PE_g = (10 \text{ kg})(9.8 \text{ m/s}^2)(2 \text{ m}) = 196 \text{ J}$$</p>
+<div class="arithmatex">\[PE_g = (10 \text{ kg})(9.8 \text{ m/s}^2)(2 \text{ m}) = 196 \text{ J}\]</div>
 <h3 id="elastic-potential-energy">Elastic Potential Energy</h3>
 <p><strong>Elastic potential energy</strong> is energy stored in objects that can be stretched, compressed, or deformed and then return to their original shape. Springs, rubber bands, and drawn bows all store elastic potential energy.</p>
 <p>For an ideal spring obeying Hooke's Law, the elastic potential energy is:</p>
-<p>$$PE_s = \frac{1}{2}kx^2$$</p>
+<div class="arithmatex">\[PE_s = \frac{1}{2}kx^2\]</div>
 <p>Where:</p>
 <ul>
-<li>$PE_s$ = elastic potential energy (J)</li>
-<li>$k$ = spring constant (N/m), measuring the spring's stiffness</li>
-<li>$x$ = displacement from natural length (m)</li>
+<li><span class="arithmatex">\(PE_s\)</span> = elastic potential energy (J)</li>
+<li><span class="arithmatex">\(k\)</span> = spring constant (N/m), measuring the spring's stiffness</li>
+<li><span class="arithmatex">\(x\)</span> = displacement from natural length (m)</li>
 </ul>
 <p>Notice this is the same expression we found earlier for work done on a spring. That makes sense: the work you do compressing the spring is stored as elastic potential energy.</p>
 <p>Important characteristics:</p>
 <ul>
 <li>Elastic PE depends on the square of displacement (quadratic relationship)</li>
 <li>Doubling the compression/extension quadruples the stored energy</li>
-<li>Energy is the same whether spring is compressed or stretched by distance $x$</li>
-<li>Stiffer springs (larger $k$) store more energy for the same displacement</li>
+<li>Energy is the same whether spring is compressed or stretched by distance <span class="arithmatex">\(x\)</span></li>
+<li>Stiffer springs (larger <span class="arithmatex">\(k\)</span>) store more energy for the same displacement</li>
 </ul>
-<p><strong>Example:</strong> Compressing a spring with $k = 200$ N/m by 0.3 meters stores:</p>
-<p>$$PE_s = \frac{1}{2}(200 \text{ N/m})(0.3 \text{ m})^2 = 9 \text{ J}$$</p>
+<p><strong>Example:</strong> Compressing a spring with <span class="arithmatex">\(k = 200\)</span> N/m by 0.3 meters stores:</p>
+<div class="arithmatex">\[PE_s = \frac{1}{2}(200 \text{ N/m})(0.3 \text{ m})^2 = 9 \text{ J}\]</div>
 <h4 id="diagram-potential-energy-comparison-chart">Diagram: Potential Energy Comparison Chart</h4>
 <iframe src="../../sims/potential-energy-chart/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
@@ -3170,7 +3170,7 @@ Canvas size: 800x500px
 <li>Associated with a potential energy function</li>
 <li>Mechanical energy is conserved</li>
 </ol>
-<p><strong>Path Independence Example:</strong> Whether you lift a book straight up 2 meters or carry it up a winding staircase that rises 2 meters, the work done against gravity is the same: $mgh = mg(2)$.</p>
+<p><strong>Path Independence Example:</strong> Whether you lift a book straight up 2 meters or carry it up a winding staircase that rises 2 meters, the work done against gravity is the same: <span class="arithmatex">\(mgh = mg(2)\)</span>.</p>
 <h3 id="non-conservative-forces">Non-Conservative Forces</h3>
 <p><strong>Non-conservative forces</strong> are forces for which the work done depends on the path taken. These forces convert mechanical energy to other forms (typically thermal energy) and have no associated potential energy function.</p>
 <p>Common examples of non-conservative forces:</p>
@@ -3201,11 +3201,11 @@ Canvas size: 800x500px
 <h3 id="the-law-of-conservation-of-energy">The Law of Conservation of Energy</h3>
 <p>The <strong>law of conservation of energy</strong> states that energy cannot be created or destroyed, only transformed from one form to another. The total energy of an isolated system remains constant.</p>
 <p>In equation form:</p>
-<p>$$E_{total} = E_{kinetic} + E_{potential} + E_{thermal} + E_{chemical} + ... = \text{constant}$$</p>
+<div class="arithmatex">\[E_{total} = E_{kinetic} + E_{potential} + E_{thermal} + E_{chemical} + ... = \text{constant}\]</div>
 <p>For mechanical systems where we focus on kinetic and potential energy, we often refer to <strong>conservation of mechanical energy</strong>:</p>
-<p>$$E_{mechanical} = KE + PE = \text{constant}$$</p>
+<div class="arithmatex">\[E_{mechanical} = KE + PE = \text{constant}\]</div>
 <p>Or more explicitly:</p>
-<p>$$KE_i + PE_i = KE_f + PE_f$$</p>
+<div class="arithmatex">\[KE_i + PE_i = KE_f + PE_f\]</div>
 <p>This equation is valid only when no non-conservative forces do work (or when we account for energy converted to other forms).</p>
 <h3 id="when-mechanical-energy-is-conserved">When Mechanical Energy is Conserved</h3>
 <p>Mechanical energy is conserved when:</p>
@@ -3223,17 +3223,17 @@ Canvas size: 800x500px
 </ul>
 <h3 id="when-mechanical-energy-is-not-conserved">When Mechanical Energy is Not Conserved</h3>
 <p>When non-conservative forces like friction are present, mechanical energy decreases (it's converted to thermal energy, not destroyed):</p>
-<p>$$KE_i + PE_i = KE_f + PE_f + E_{thermal}$$</p>
+<div class="arithmatex">\[KE_i + PE_i = KE_f + PE_f + E_{thermal}\]</div>
 <p>Or equivalently:</p>
-<p>$$W_{non-conservative} = \Delta KE + \Delta PE$$</p>
+<div class="arithmatex">\[W_{non-conservative} = \Delta KE + \Delta PE\]</div>
 <p>The work done by non-conservative forces equals the change in mechanical energy.</p>
 <p><strong>Example:</strong> A 2 kg ball is dropped from 5 meters. Without air resistance, it would hit the ground at:</p>
-<p>Using energy conservation: $mgh = \frac{1}{2}mv^2$</p>
-<p>$$v = \sqrt{2gh} = \sqrt{2(9.8)(5)} = 9.9 \text{ m/s}$$</p>
+<p>Using energy conservation: <span class="arithmatex">\(mgh = \frac{1}{2}mv^2\)</span></p>
+<div class="arithmatex">\[v = \sqrt{2gh} = \sqrt{2(9.8)(5)} = 9.9 \text{ m/s}\]</div>
 <p>With air resistance doing -20 J of work, the final speed is reduced:</p>
-<p>$$mgh - 20 = \frac{1}{2}mv^2$$
+<div class="arithmatex">\[mgh - 20 = \frac{1}{2}mv^2$$
 $$(2)(9.8)(5) - 20 = \frac{1}{2}(2)v^2$$
-$$v = 8.1 \text{ m/s}$$</p>
+$$v = 8.1 \text{ m/s}\]</div>
 <p>The "missing" 20 J was converted to thermal energy heating the air and ball.</p>
 <h4 id="diagram-energy-conservation-roller-coaster-simulation">Diagram: Energy Conservation Roller Coaster Simulation</h4>
 <iframe src="../../sims/roller-coaster-energy/main.html" width="100%" height="702px" scrolling="no"></iframe>
@@ -3440,7 +3440,7 @@ Implementation notes:
 <p>Key features of energy diagrams:</p>
 <ol>
 <li><strong>PE curve</strong>: Shows potential energy at each position</li>
-<li><strong>Total energy line</strong>: Horizontal line representing $E_{total} = KE + PE$</li>
+<li><strong>Total energy line</strong>: Horizontal line representing <span class="arithmatex">\(E_{total} = KE + PE\)</span></li>
 <li><strong>Allowed regions</strong>: Where total energy line is above PE curve (KE would be positive)</li>
 <li><strong>Forbidden regions</strong>: Where total energy line is below PE curve (KE would be negative—impossible!)</li>
 <li><strong>Turning points</strong>: Where total energy equals PE (KE = 0, object stops and reverses)</li>
@@ -3470,9 +3470,9 @@ Implementation notes:
 <h3 id="reading-energy-diagrams">Reading Energy Diagrams</h3>
 <p>From an energy diagram, you can determine:</p>
 <ul>
-<li><strong>Speed at any position</strong>: $KE = E_{total} - PE(x)$, so $v = \sqrt{2(E_{total} - PE)/m}$</li>
+<li><strong>Speed at any position</strong>: <span class="arithmatex">\(KE = E_{total} - PE(x)\)</span>, so <span class="arithmatex">\(v = \sqrt{2(E_{total} - PE)/m}\)</span></li>
 <li><strong>Maximum speed</strong>: Occurs where PE is minimum</li>
-<li><strong>Range of motion</strong>: Between turning points where $E_{total} = PE$</li>
+<li><strong>Range of motion</strong>: Between turning points where <span class="arithmatex">\(E_{total} = PE\)</span></li>
 <li><strong>Force direction</strong>: Force points from higher PE toward lower PE (down the PE slope)</li>
 </ul>
 <h4 id="diagram-energy-diagram-interactive-explorer">Diagram: Energy Diagram Interactive Explorer</h4>
@@ -3704,17 +3704,17 @@ Implementation notes:
 <p>Imagine two construction workers lifting identical bricks to the top of a building. One takes an hour; the other takes all day. They do the same amount of work, but one does it much faster. This rate of energy transfer is called power.</p>
 <p><strong>Power</strong> is the rate at which work is done or energy is transferred. It measures how quickly energy changes form or location.</p>
 <p>The definition of power is:</p>
-<p>$$P = \frac{W}{t} = \frac{\Delta E}{t}$$</p>
+<div class="arithmatex">\[P = \frac{W}{t} = \frac{\Delta E}{t}\]</div>
 <p>Where:</p>
 <ul>
-<li>$P$ = power (watts, W)</li>
-<li>$W$ = work done (joules, J)</li>
-<li>$\Delta E$ = energy transferred (J)</li>
-<li>$t$ = time interval (seconds, s)</li>
+<li><span class="arithmatex">\(P\)</span> = power (watts, W)</li>
+<li><span class="arithmatex">\(W\)</span> = work done (joules, J)</li>
+<li><span class="arithmatex">\(\Delta E\)</span> = energy transferred (J)</li>
+<li><span class="arithmatex">\(t\)</span> = time interval (seconds, s)</li>
 </ul>
-<p>One watt equals one joule per second: $1 \text{ W} = 1 \text{ J/s}$</p>
-<p>For constant power, the work done over time $t$ is:</p>
-<p>$$W = Pt$$</p>
+<p>One watt equals one joule per second: <span class="arithmatex">\(1 \text{ W} = 1 \text{ J/s}\)</span></p>
+<p>For constant power, the work done over time <span class="arithmatex">\(t\)</span> is:</p>
+<div class="arithmatex">\[W = Pt\]</div>
 <h3 id="power-in-different-contexts">Power in Different Contexts</h3>
 <p>Power appears in many forms:</p>
 <ul>
@@ -3724,19 +3724,19 @@ Implementation notes:
 <li><strong>Solar power</strong>: Rate of energy reception from the Sun</li>
 </ul>
 <p><strong>Example:</strong> A motor lifts a 500 kg elevator 20 meters in 10 seconds. The power output is:</p>
-<p>Work done: $W = mgh = (500)(9.8)(20) = 98,000$ J</p>
-<p>Power: $P = W/t = 98,000/10 = 9,800$ W = 9.8 kW</p>
+<p>Work done: <span class="arithmatex">\(W = mgh = (500)(9.8)(20) = 98,000\)</span> J</p>
+<p>Power: <span class="arithmatex">\(P = W/t = 98,000/10 = 9,800\)</span> W = 9.8 kW</p>
 <h3 id="instantaneous-power-and-force">Instantaneous Power and Force</h3>
 <p>When a force acts on a moving object, the instantaneous power delivered is:</p>
-<p>$$P = F \cdot v = Fv\cos(\theta)$$</p>
+<div class="arithmatex">\[P = F \cdot v = Fv\cos(\theta)\]</div>
 <p>Where:</p>
 <ul>
-<li>$F$ = force magnitude (N)</li>
-<li>$v$ = velocity magnitude (m/s)</li>
-<li>$\theta$ = angle between force and velocity vectors</li>
+<li><span class="arithmatex">\(F\)</span> = force magnitude (N)</li>
+<li><span class="arithmatex">\(v\)</span> = velocity magnitude (m/s)</li>
+<li><span class="arithmatex">\(\theta\)</span> = angle between force and velocity vectors</li>
 </ul>
-<p>When force and velocity are in the same direction ($\theta = 0°$):</p>
-<p>$$P = Fv$$</p>
+<p>When force and velocity are in the same direction (<span class="arithmatex">\(\theta = 0°\)</span>):</p>
+<div class="arithmatex">\[P = Fv\]</div>
 <p>This relationship shows that for a given power output:</p>
 <ul>
 <li>Larger forces require slower speeds</li>
@@ -3770,9 +3770,9 @@ Implementation notes:
 <h2 id="efficiency-real-vs-ideal-energy-transfer">Efficiency: Real vs. Ideal Energy Transfer</h2>
 <p>No real machine or process transfers energy perfectly. Some energy is always "lost" to non-useful forms, typically heat and sound. <strong>Efficiency</strong> quantifies how well a device converts input energy to useful output energy.</p>
 <p>Efficiency is defined as:</p>
-<p>$$\text{Efficiency} = \frac{E_{output}}{E_{input}} = \frac{P_{output}}{P_{input}}$$</p>
+<div class="arithmatex">\[\text{Efficiency} = \frac{E_{output}}{E_{input}} = \frac{P_{output}}{P_{input}}\]</div>
 <p>Often expressed as a percentage:</p>
-<p>$$\text{Efficiency} = \frac{E_{output}}{E_{input}} \times 100\%$$</p>
+<div class="arithmatex">\[\text{Efficiency} = \frac{E_{output}}{E_{input}} \times 100\%\]</div>
 <p>Key points about efficiency:</p>
 <ul>
 <li>Efficiency is always less than 100% for real devices (second law of thermodynamics)</li>
@@ -3817,7 +3817,7 @@ Implementation notes:
 </tbody>
 </table>
 <p><strong>Example:</strong> An electric motor draws 2000 W of electrical power and delivers 1600 W of mechanical power. Its efficiency is:</p>
-<p>$$\text{Efficiency} = \frac{1600}{2000} = 0.80 = 80\%$$</p>
+<div class="arithmatex">\[\text{Efficiency} = \frac{1600}{2000} = 0.80 = 80\%\]</div>
 <p>The remaining 400 W (20%) is converted to heat warming the motor and surroundings.</p>
 <h3 id="why-efficiency-matters">Why Efficiency Matters</h3>
 <p>Efficiency has profound real-world implications:</p>
@@ -4029,33 +4029,33 @@ Canvas size: 1200x900px (desktop view)
 <p>All complex machines are combinations of these basic types.</p>
 <h3 id="mechanical-advantage">Mechanical Advantage</h3>
 <p><strong>Mechanical advantage</strong> (MA) is the factor by which a simple machine multiplies force:</p>
-<p>$$MA = \frac{F_{output}}{F_{input}}$$</p>
+<div class="arithmatex">\[MA = \frac{F_{output}}{F_{input}}\]</div>
 <p>A mechanical advantage greater than 1 means the machine multiplies your input force—you can lift a heavy load with less force. However, there's always a tradeoff:</p>
 <p><strong>Work-Energy Principle for Machines:</strong></p>
-<p>$$W_{input} = W_{output}$$ (ideal, no friction)</p>
-<p>$$F_{input} \cdot d_{input} = F_{output} \cdot d_{output}$$</p>
+<p><span class="arithmatex">\(<span class="arithmatex">\(W_{input} = W_{output}\)</span>\)</span> (ideal, no friction)</p>
+<div class="arithmatex">\[F_{input} \cdot d_{input} = F_{output} \cdot d_{output}\]</div>
 <p>Therefore:</p>
-<p>$$MA = \frac{F_{output}}{F_{input}} = \frac{d_{input}}{d_{output}}$$</p>
+<div class="arithmatex">\[MA = \frac{F_{output}}{F_{input}} = \frac{d_{input}}{d_{output}}\]</div>
 <p><strong>The tradeoff</strong>: If you gain force (MA &gt; 1), you must move through a greater distance. If you gain distance (MA &lt; 1), you must apply greater force.</p>
 <h3 id="examples-of-mechanical-advantage">Examples of Mechanical Advantage</h3>
 <p><strong>Lever:</strong>
 - Fulcrum near load, far from effort → Large MA (force multiplier)
 - Example: Crowbar, wheelbarrow
-- $MA = \frac{d_{effort}}{d_{load}}$ (distances from fulcrum)</p>
+- <span class="arithmatex">\(MA = \frac{d_{effort}}{d_{load}}\)</span> (distances from fulcrum)</p>
 <p><strong>Pulley System:</strong>
 - Single fixed pulley: MA = 1 (changes direction only)
 - Single movable pulley: MA = 2 (force divided between two rope segments)
 - Multiple pulleys: MA = number of rope segments supporting load</p>
 <p><strong>Inclined Plane:</strong>
-- $MA = \frac{\text{length of ramp}}{\text{height of ramp}} = \frac{L}{h}$
+- <span class="arithmatex">\(MA = \frac{\text{length of ramp}}{\text{height of ramp}} = \frac{L}{h}\)</span>
 - Longer, more gradual ramps have higher MA (less force needed but greater distance)
 - Example: Wheelchair ramps, roads up mountains</p>
 <h3 id="real-vs-ideal-mechanical-advantage">Real vs. Ideal Mechanical Advantage</h3>
 <p><strong>Ideal Mechanical Advantage</strong> (IMA): Mechanical advantage calculated assuming no friction or energy loss</p>
 <p><strong>Actual Mechanical Advantage</strong> (AMA): Mechanical advantage measured in real conditions with friction and inefficiencies</p>
-<p>Always: $AMA &lt; IMA$</p>
+<p>Always: <span class="arithmatex">\(AMA &lt; IMA\)</span></p>
 <p>The efficiency of a simple machine relates the two:</p>
-<p>$$\text{Efficiency} = \frac{AMA}{IMA} \times 100\%$$</p>
+<div class="arithmatex">\[\text{Efficiency} = \frac{AMA}{IMA} \times 100\%\]</div>
 <h4 id="diagram-simple-machines-comparison-table">Diagram: Simple Machines Comparison Table</h4>
 <details>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -4080,7 +4080,7 @@ Purpose: Summarize the key characteristics, mechanical advantage formulas, and c
 <tr>
 <td><strong>Lever</strong></td>
 <td>Rigid bar pivots on fulcrum; effort and load at different distances from pivot</td>
-<td>$MA = \frac{d_{effort}}{d_{load}}$</td>
+<td><span class="arithmatex">\(MA = \frac{d_{effort}}{d_{load}}\)</span></td>
 <td>Crowbar, scissors, seesaw, wheelbarrow</td>
 <td>Lifting heavy objects, cutting, balancing</td>
 </tr>
@@ -4094,28 +4094,28 @@ Purpose: Summarize the key characteristics, mechanical advantage formulas, and c
 <tr>
 <td><strong>Inclined Plane</strong></td>
 <td>Flat surface at angle to horizontal; trade distance for reduced force</td>
-<td>$MA = \frac{L}{h}$ (length ÷ height)</td>
+<td><span class="arithmatex">\(MA = \frac{L}{h}\)</span> (length ÷ height)</td>
 <td>Ramps, roads, stairs</td>
 <td>Moving heavy objects to higher elevation</td>
 </tr>
 <tr>
 <td><strong>Wedge</strong></td>
 <td>Two inclined planes back-to-back; converts downward force to sideways splitting force</td>
-<td>$MA = \frac{L}{W}$ (length ÷ width)</td>
+<td><span class="arithmatex">\(MA = \frac{L}{W}\)</span> (length ÷ width)</td>
 <td>Axe, knife, chisel, doorstop</td>
 <td>Splitting, cutting, holding objects in place</td>
 </tr>
 <tr>
 <td><strong>Screw</strong></td>
 <td>Inclined plane wrapped around cylinder; rotational motion becomes linear</td>
-<td>$MA = \frac{2\pi r}{p}$ (circumference ÷ pitch)</td>
+<td><span class="arithmatex">\(MA = \frac{2\pi r}{p}\)</span> (circumference ÷ pitch)</td>
 <td>Bolts, jar lids, vise, cork screw</td>
 <td>Fastening, lifting, pressing</td>
 </tr>
 <tr>
 <td><strong>Wheel &amp; Axle</strong></td>
 <td>Larger wheel attached to smaller axle; both rotate together</td>
-<td>$MA = \frac{r_{wheel}}{r_{axle}}$</td>
+<td><span class="arithmatex">\(MA = \frac{r_{wheel}}{r_{axle}}\)</span></td>
 <td>Doorknob, steering wheel, winch, screwdriver</td>
 <td>Turning with less force, winding rope</td>
 </tr>
@@ -4410,23 +4410,23 @@ Implementation notes:
 - The problem specifically asks about forces</p>
 <h3 id="key-equations-summary">Key Equations Summary</h3>
 <p><strong>Work:</strong>
-- Constant force: $W = Fd\cos(\theta)$
-- Variable force: $W = \int F(x) \, dx$</p>
+- Constant force: <span class="arithmatex">\(W = Fd\cos(\theta)\)</span>
+- Variable force: <span class="arithmatex">\(W = \int F(x) \, dx\)</span></p>
 <p><strong>Energy:</strong>
-- Kinetic: $KE = \frac{1}{2}mv^2$
-- Gravitational potential: $PE_g = mgh$
-- Elastic potential: $PE_s = \frac{1}{2}kx^2$</p>
+- Kinetic: <span class="arithmatex">\(KE = \frac{1}{2}mv^2\)</span>
+- Gravitational potential: <span class="arithmatex">\(PE_g = mgh\)</span>
+- Elastic potential: <span class="arithmatex">\(PE_s = \frac{1}{2}kx^2\)</span></p>
 <p><strong>Conservation:</strong>
-- Mechanical energy (conservative forces only): $KE_i + PE_i = KE_f + PE_f$
-- With non-conservative forces: $KE_i + PE_i + W_{nc} = KE_f + PE_f$
-- Work-energy theorem: $W_{net} = \Delta KE$</p>
+- Mechanical energy (conservative forces only): <span class="arithmatex">\(KE_i + PE_i = KE_f + PE_f\)</span>
+- With non-conservative forces: <span class="arithmatex">\(KE_i + PE_i + W_{nc} = KE_f + PE_f\)</span>
+- Work-energy theorem: <span class="arithmatex">\(W_{net} = \Delta KE\)</span></p>
 <p><strong>Power:</strong>
-- Average power: $P = W/t = \Delta E/t$
-- Instantaneous power: $P = Fv\cos(\theta)$</p>
+- Average power: <span class="arithmatex">\(P = W/t = \Delta E/t\)</span>
+- Instantaneous power: <span class="arithmatex">\(P = Fv\cos(\theta)\)</span></p>
 <p><strong>Efficiency:</strong>
-- $\text{Efficiency} = \frac{E_{output}}{E_{input}} = \frac{P_{output}}{P_{input}}$</p>
+- <span class="arithmatex">\(\text{Efficiency} = \frac{E_{output}}{E_{input}} = \frac{P_{output}}{P_{input}}\)</span></p>
 <p><strong>Mechanical Advantage:</strong>
-- $MA = \frac{F_{output}}{F_{input}} = \frac{d_{input}}{d_{output}}$ (ideal case)</p>
+- <span class="arithmatex">\(MA = \frac{F_{output}}{F_{input}} = \frac{d_{input}}{d_{output}}\)</span> (ideal case)</p>
 <h2 id="real-world-applications">Real-World Applications</h2>
 <p>Energy principles appear everywhere in technology and nature. Understanding work, energy, and power helps explain:</p>
 <p><strong>Transportation:</strong>
@@ -4587,6 +4587,10 @@ Implementation notes:
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
