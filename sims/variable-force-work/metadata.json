@@ -1,0 +1,15 @@
+{
+  "title": "Variable Force Work Calculation",
+  "description": "An interactive MicroSim demonstrating how work is calculated for variable forces by showing the area under a force-versus-position graph. Students can experiment with different force functions and see how the integral relates to work.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-28",
+  "subject": ["work", "energy", "variable force", "integration", "calculus", "physics", "force-position graph"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["work", "variable force", "integration", "area under curve", "force-position graph", "Hooke's law"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["Basic calculus concepts", "Understanding of work and energy", "Force and displacement relationship"]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Hooke's Law Interactive Demonstration",
+  "description": "An interactive MicroSim demonstrating Hooke's Law (F = kx) with a vertical spring-mass system. Users can drag the mass, adjust spring constant and mass, collect data points, and visualize the linear relationship between force and displacement.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-28",
+  "subject": ["Hooke's Law", "springs", "elasticity", "force", "displacement", "physics", "simple harmonic motion"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["Hooke's Law", "spring constant", "restoring force", "equilibrium", "oscillation", "damping"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["Force concepts", "Linear relationships", "Basic algebra"]
+}

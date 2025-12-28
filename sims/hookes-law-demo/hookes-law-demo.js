@@ -6,7 +6,7 @@ let drawHeight = 500;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 20;
-let sliderLeftMargin = 140;
+let sliderLeftMargin = 120;
 
 // Spring parameters
 let springConstant = 50;  // N/m
@@ -37,42 +37,50 @@ function setup() {
     const canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent(document.querySelector('main'));
 
-    kSlider = createSlider(10, 200, 50, 5);
+    // Sprint Constant - make sure the minimum does not allow too much stretch to pull the mass off screen for the max mass
+    kSlider = createSlider(30, 200, 100, 5);
     kSlider.position(sliderLeftMargin, drawHeight + 15);
-    kSlider.size(120);
+    kSlider.size(canvasWidth*.25);
     kSlider.input(() => {
         springConstant = kSlider.value();
         calculateEquilibrium();
     });
 
-    massSlider = createSlider(0.1, 2.0, 0.5, 0.1);
+    massSlider = createSlider(0.1, 2.0, 1.0, 0.1);
     massSlider.position(sliderLeftMargin, drawHeight + 50);
-    massSlider.size(120);
+    massSlider.size(canvasWidth*.25);
     massSlider.input(() => {
         hangingMass = massSlider.value();
         calculateEquilibrium();
     });
 
     releaseButton = createButton('Release');
-    releaseButton.position(310, drawHeight + 15);
+    releaseButton.position(330, drawHeight + 15);
     releaseButton.size(70, 28);
+    releaseButton.style('background-color', '#4CAF50');
+    releaseButton.style('color', 'white');
     releaseButton.mousePressed(() => {
+        let equilibriumDisp = (hangingMass * g) / springConstant;
+        if (abs(displacement - equilibriumDisp) < 0.01) {
+            alert('First pull the mass down, then press Release to see it oscillate.');
+            return;
+        }
         isOscillating = true;
         isDragging = false;
     });
 
     addPointButton = createButton('Add Data Point');
-    addPointButton.position(390, drawHeight + 15);
-    addPointButton.size(100, 28);
+    addPointButton.position(410, drawHeight + 15);
+    addPointButton.size(120, 28);
     addPointButton.mousePressed(addDataPoint);
 
     clearButton = createButton('Clear Graph');
-    clearButton.position(500, drawHeight + 15);
+    clearButton.position(540, drawHeight + 15);
     clearButton.size(90, 28);
     clearButton.mousePressed(() => dataPoints = []);
 
     bestFitCheckbox = createCheckbox(' Show best-fit line', true);
-    bestFitCheckbox.position(310, drawHeight + 55);
+    bestFitCheckbox.position(320, drawHeight + 55);
     bestFitCheckbox.changed(() => showBestFit = bestFitCheckbox.checked());
 
     calculateEquilibrium();
@@ -123,11 +131,15 @@ function draw() {
     noStroke();
     text('Hooke\'s Law Interactive Demonstration', canvasWidth / 2, 10);
 
-    // Draw spring and mass
-    drawSpringMass(180, 70);
+    // Draw spring and mass - responsive positioning
+    let springX = canvasWidth * 0.16;
+    drawSpringMass(springX, 70);
 
-    // Draw graph
-    drawForceGraph(canvasWidth / 2 + 30, 70, 320, 350);
+    // Draw graph - fills remainder with margin
+    let graphX = canvasWidth * 0.32;
+    let graphMargin = canvasWidth * 0.025;
+    let graphWidth = canvasWidth - graphX - graphMargin;
+    drawForceGraph(graphX, 70, graphWidth, drawHeight - 90);
 
     // Draw formula
     drawFormula();
@@ -162,8 +174,9 @@ function drawSpringMass(x, startY) {
         }
     }
 
-    // Calculate spring length
-    let springLength = naturalLength + displacement * 100;  // Scale to pixels
+    // Calculate spring length (ruler uses 18px per 5cm = 3.6px per cm = 360px per m)
+    let pixelsPerMeter = 360;
+    let springLength = naturalLength + displacement * pixelsPerMeter;
     let massY = startY + 20 + springLength;
 
     // Spring
@@ -247,8 +260,9 @@ function drawSpringMass(x, startY) {
     noStroke();
     text('Natural length', x + 45, startY + 20 + naturalLength/2);
 
-    // Mouse interaction
-    if (mouseIsPressed && mouseX > x - 60 && mouseX < x + 60 &&
+    // Mouse interaction - only start drag if clicking in drawing area (not control area)
+    if (mouseIsPressed && mouseY < drawHeight &&
+        mouseX > x - 60 && mouseX < x + 60 &&
         mouseY > massY - 20 && mouseY < massY + massSize + 20) {
         isDragging = true;
         isOscillating = false;
@@ -257,8 +271,8 @@ function drawSpringMass(x, startY) {
     if (isDragging) {
         if (mouseIsPressed) {
             let newMassY = mouseY - massSize/2;
-            displacement = (newMassY - startY - 20 - naturalLength) / 100;
-            displacement = max(0, min(displacement, 3));
+            displacement = (newMassY - startY - 20 - naturalLength) / pixelsPerMeter;
+            displacement = max(0, min(displacement, 0.8));  // max 80cm
             velocity = 0;
         } else {
             isDragging = false;
@@ -268,8 +282,8 @@ function drawSpringMass(x, startY) {
 
 function drawForceGraph(x, y, w, h) {
     // Background
-    fill(255);
-    stroke(200);
+    fill('white');
+    stroke('silver');
     strokeWeight(1);
     rect(x, y, w, h, 5);
 
@@ -296,12 +310,13 @@ function drawForceGraph(x, y, w, h) {
 
     // Axis labels
     fill(60);
+    noStroke();
     textSize(12);
     textAlign(CENTER, TOP);
-    text('Displacement x (m)', gx + gw/2, gy + gh + 25);
+    text('Displacement x (cm)', gx + gw/2, gy + gh + 21);
 
     push();
-    translate(x + 15, gy + gh/2);
+    translate(x + 19, gy + gh/2);
     rotate(-PI/2);
     textAlign(CENTER, BOTTOM);
     text('Force F (N)', 0, 0);
@@ -313,25 +328,25 @@ function drawForceGraph(x, y, w, h) {
     fill(100);
     textSize(9);
 
-    // X-axis values
+    // X-axis values (0-80cm)
     textAlign(CENTER, TOP);
-    for (let i = 0; i <= 4; i++) {
-        let xVal = i * 0.1;
-        let px = gx + (xVal / 0.4) * gw;
+    for (let i = 0; i <= 8; i++) {
+        let xVal = i * 10;  // cm
+        let px = gx + (xVal / 80) * gw;
         line(px, gy, px, gy + gh);
         noStroke();
-        text(xVal.toFixed(1), px, gy + gh + 5);
+        text(xVal, px, gy + gh + 5);
         stroke(230);
     }
 
-    // Y-axis values
+    // Y-axis values (0-130N)
     textAlign(RIGHT, CENTER);
-    for (let i = 0; i <= 4; i++) {
-        let yVal = i * 5;
-        let py = gy + gh - (yVal / 20) * gh;
+    for (let i = 0; i <= 13; i++) {
+        let yVal = i * 10;
+        let py = gy + gh - (yVal / 130) * gh;
         line(gx, py, gx + gw, py);
         noStroke();
-        text(yVal.toFixed(0), gx - 5, py);
+        text(yVal, gx - 5, py);
         stroke(230);
     }
 
@@ -339,20 +354,24 @@ function drawForceGraph(x, y, w, h) {
     for (let pt of dataPoints) {
         fill(220, 70, 70);
         noStroke();
-        let px = gx + (pt.x / 0.4) * gw;
-        let py = gy + gh - (pt.f / 20) * gh;
-        ellipse(px, py, 10, 10);
+        let px = gx + (pt.x * 100 / 80) * gw;  // convert m to cm
+        let py = gy + gh - (pt.f / 130) * gh;
+        circle(px, py, 10);
     }
 
-    // Current point
+    // Current point - constrained to graph bounds
     let force = springConstant * displacement;
-    let cpx = gx + (displacement / 0.4) * gw;
-    let cpy = gy + gh - (force / 20) * gh;
+    let cpx = gx + (displacement * 100 / 80) * gw;  // convert m to cm
+    let cpy = gy + gh - (force / 130) * gh;
 
-    fill(70, 150, 220);
-    stroke(50, 100, 180);
-    strokeWeight(2);
-    ellipse(cpx, cpy, 14, 14);
+    // Constrain to graph area
+    cpx = constrain(cpx, gx, gx + gw);
+    cpy = constrain(cpy, gy, gy + gh);
+
+    fill('blue');
+    stroke('silver');
+    strokeWeight(1);
+    circle(cpx, cpy, 14);
 
     // Best fit line
     if (showBestFit && dataPoints.length >= 2) {
@@ -363,7 +382,7 @@ function drawForceGraph(x, y, w, h) {
         let x1 = gx;
         let y1 = gy + gh;
         let x2 = gx + gw;
-        let y2 = gy + gh - (slope * 0.4 / 20) * gh;
+        let y2 = gy + gh - (slope * 0.8 / 130) * gh;  // 80cm = 0.8m
         line(x1, y1, x2, y2);
 
         // Show calculated k
@@ -403,20 +422,21 @@ function addDataPoint() {
 }
 
 function drawFormula() {
-    let fx = 50;
-    let fy = drawHeight - 60;
+    let fx = canvasWidth * 0.85;
+    let fy = margin;;
+    let boxWidth = canvasWidth * 0.1;
 
-    fill(255, 255, 240);
-    stroke(200);
+    fill('white');
+    stroke('gray');
     strokeWeight(1);
-    rect(fx, fy, 150, 50, 8);
+    rect(fx, fy, boxWidth, 30, 8);
 
-    fill(40);
+    fill('black');
     textSize(18);
     textAlign(CENTER, CENTER);
     textStyle(BOLD);
     noStroke();
-    text('F = kx', fx + 75, fy + 25);
+    text('F = kx', fx + boxWidth / 2, fy + 15);
     textStyle(NORMAL);
 }
 
@@ -426,11 +446,9 @@ function drawControlLabels() {
     textAlign(LEFT, CENTER);
     noStroke();
 
-    text('Spring k:', 10, drawHeight + 28);
-    text(springConstant + ' N/m', sliderLeftMargin + 130, drawHeight + 28);
+    text('Spring k: ' + springConstant + ' N/m', 10, drawHeight + 28);
+    text('Mass m: ' + hangingMass.toFixed(1) + ' kg', 10, drawHeight + 63);
 
-    text('Mass m:', 10, drawHeight + 63);
-    text(hangingMass.toFixed(1) + ' kg', sliderLeftMargin + 130, drawHeight + 63);
 }
 
 function setLineDash(list) {
@@ -443,9 +461,9 @@ function windowResized() {
 
     kSlider.position(sliderLeftMargin, drawHeight + 15);
     massSlider.position(sliderLeftMargin, drawHeight + 50);
-    releaseButton.position(310, drawHeight + 15);
-    addPointButton.position(390, drawHeight + 15);
-    clearButton.position(500, drawHeight + 15);
+    releaseButton.position(330, drawHeight + 15);
+    addPointButton.position(410, drawHeight + 15);
+    clearButton.position(520, drawHeight + 15);
     bestFitCheckbox.position(310, drawHeight + 55);
 }
 
