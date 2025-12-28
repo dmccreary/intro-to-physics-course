@@ -23,8 +23,12 @@ let riverTop, riverBottom;
 
 // UI Controls
 let swimmerSlider, currentSlider;
-let swimButton, resetButton;
+let swimButton, resetButton, animateButton;
 let showVectorsCheckbox, showTrailCheckbox, aimDirectCheckbox;
+
+// River animation
+let isAnimating = false;
+let arrowOffset = 0;
 
 function setup() {
     updateCanvasSize();
@@ -47,6 +51,12 @@ function setup() {
     resetButton.style('font-size', '13px');
     resetButton.style('padding', '6px 14px');
 
+    animateButton = createButton('Start Flow');
+    animateButton.position(margin, drawHeight + 55);
+    animateButton.mousePressed(toggleAnimation);
+    animateButton.style('font-size', '13px');
+    animateButton.style('padding', '6px 14px');
+
     // Sliders
     swimmerSlider = createSlider(0.5, 4, 2, 0.1);
     swimmerSlider.position(260, drawHeight + 15);
@@ -57,16 +67,17 @@ function setup() {
     currentSlider.style('width', '90px');
 
     // Checkboxes
+    // 
     showVectorsCheckbox = createCheckbox('Show Vectors', true);
-    showVectorsCheckbox.position(450, drawHeight + 12);
+    showVectorsCheckbox.position(370, drawHeight + 12);
     showVectorsCheckbox.style('font-size', '12px');
 
     showTrailCheckbox = createCheckbox('Show Trail', true);
-    showTrailCheckbox.position(450, drawHeight + 35);
+    showTrailCheckbox.position(370, drawHeight + 35);
     showTrailCheckbox.style('font-size', '12px');
 
     aimDirectCheckbox = createCheckbox('Aim Upstream', false);
-    aimDirectCheckbox.position(450, drawHeight + 58);
+    aimDirectCheckbox.position(370, drawHeight + 58);
     aimDirectCheckbox.style('font-size', '12px');
 
     resetSimulation();
@@ -79,11 +90,9 @@ function draw() {
     riverTop = 80;
     riverBottom = drawHeight - 60;
 
-    // Update parameters
-    if (!isRunning) {
-        swimmerSpeed = swimmerSlider.value();
-        currentSpeed = currentSlider.value();
-    }
+    // Update parameters from sliders
+    currentSpeed = currentSlider.value();
+    swimmerSpeed = swimmerSlider.value();
 
     // Background
     fill('aliceblue');
@@ -111,6 +120,11 @@ function draw() {
         updatePhysics();
     }
 
+    // Update river animation (match swimmer drift: currentSpeed * dt * scale)
+    if (isAnimating) {
+        arrowOffset += currentSpeed * (1/60) * scale;
+    }
+
     // Draw controls and info
     drawControlLabels();
     drawInfoPanel();
@@ -119,8 +133,10 @@ function draw() {
 function drawScene() {
     // Calculate dimensions
     let riverPixelWidth = riverBottom - riverTop;
+    // Starting point X of the 
     let startX = 120;
-    let maxX = canvasWidth - 200;
+    // 
+    let maxX = canvasWidth - 20;
 
     // Top bank (destination side)
     fill(120, 180, 100);
@@ -135,18 +151,22 @@ function drawScene() {
     fill(100, 150, 220);
     rect(0, riverTop, canvasWidth, riverPixelWidth);
 
-    // River flow arrows
+    // River flow arrows (animated)
     stroke(80, 130, 200);
     strokeWeight(1);
+    let arrowSpacing = 80;
+    let offset = arrowOffset % arrowSpacing;
     for (let y = riverTop + 30; y < riverBottom - 20; y += 40) {
-        for (let x = 50; x < canvasWidth - 50; x += 80) {
-            drawArrow(x, y, x + 30, y, [80, 130, 200], 1);
+        for (let x = 50 - arrowSpacing + offset; x < canvasWidth - 20; x += arrowSpacing) {
+            if (x >= 20 && x < canvasWidth - 50) {
+                drawArrow(x, y, x + 30, y, [80, 130, 200], 1);
+            }
         }
     }
 
     // Current direction label
     fill(60, 100, 160);
-    textSize(12);
+    textSize(14);
     textAlign(LEFT, CENTER);
     noStroke();
     text('Current \u2192', 20, riverTop + 20);
@@ -154,16 +174,16 @@ function drawScene() {
 
     // Bank labels
     fill(60, 100, 60);
-    textSize(14);
+    textSize(16);
     textAlign(LEFT, CENTER);
-    text('FAR BANK (destination)', 20, 55);
-    text('NEAR BANK (start)', 20, riverBottom + 20);
+    text('FAR BANK (destination)', 10, 60);
+    text('NEAR BANK (start)', 10, riverBottom + 45);
 
     // Distance markers along river
-    textSize(9);
+    textSize(12);
     fill(80);
     textAlign(CENTER, TOP);
-    for (let d = 0; d <= 100; d += 10) {
+    for (let d = 0; d <= 160; d += 10) {
         let x = startX + d * scale;
         if (x < maxX) {
             stroke(150);
@@ -181,7 +201,7 @@ function drawScene() {
     strokeWeight(2);
     ellipse(startX, startY, 20, 20);
     fill(255);
-    textSize(14);
+    textSize(16);
     textAlign(CENTER, CENTER);
     noStroke();
     text('A', startX, startY);
@@ -200,7 +220,7 @@ function drawScene() {
     text('B', destX, destY);
 
     // Labels
-    textSize(10);
+    textSize(14);
     fill(0);
     textAlign(LEFT, CENTER);
     text('Start (A)', startX + 15, startY);
@@ -225,6 +245,47 @@ function drawScene() {
             vertex(px, py);
         }
         endShape();
+    }
+
+    // Show vectors at start position when no swimmer yet
+    if (!swimmer && showVectorsCheckbox.checked()) {
+        let px = startX;
+        let py = startY;
+        let vecScale = 25;
+
+        // Calculate swim velocity based on checkbox
+        let swimVx, swimVy;
+        if (aimDirectCheckbox.checked() && swimmerSpeed > currentSpeed) {
+            let angle = asin(currentSpeed / swimmerSpeed);
+            swimVx = -swimmerSpeed * sin(angle);
+            swimVy = swimmerSpeed * cos(angle);
+        } else {
+            swimVx = 0;
+            swimVy = swimmerSpeed;
+        }
+
+        // Resultant velocity
+        let resVx = swimVx + currentSpeed;
+        let resVy = swimVy;
+
+        // Swimmer velocity (relative to water) - blue
+        drawArrow(px, py, px + swimVx * vecScale, py - swimVy * vecScale, [50, 50, 255], 3);
+
+        // Current velocity - red
+        drawArrow(px, py, px + currentSpeed * vecScale, py, [255, 50, 50], 3);
+
+        // Resultant velocity - purple
+        drawArrow(px, py, px + resVx * vecScale, py - resVy * vecScale, [180, 50, 180], 3);
+
+        // Vector labels
+        textSize(12);
+        noStroke();
+        fill(50, 50, 255);
+        text('v_swim', px + swimVx * vecScale + 5, py - swimVy * vecScale);
+        fill(255, 50, 50);
+        text('v_current', px + currentSpeed * vecScale + 5, py + 5);
+        fill(180, 50, 180);
+        text('v_result', px + resVx * vecScale + 5, py - resVy * vecScale - 10);
     }
 
     // Draw swimmer
@@ -257,7 +318,7 @@ function drawScene() {
                 drawArrow(px, py, px + resVx * vecScale, py - resVy * vecScale, [180, 50, 180], 3);
 
                 // Vector labels
-                textSize(10);
+                textSize(12);
                 noStroke();
                 fill(50, 50, 255);
                 text('v_swim', px + swimVx * vecScale + 5, py - swimVy * vecScale);
@@ -279,13 +340,13 @@ function drawScene() {
         strokeWeight(2);
         ellipse(landX, landY, 20, 20);
         fill(255);
-        textSize(14);
+        textSize(16);
         textAlign(CENTER, CENTER);
         noStroke();
         text('C', landX, landY);
 
         // Label
-        textSize(10);
+        textSize(14);
         fill(200, 70, 30);
         textAlign(LEFT, CENTER);
         text('Landed (C)', landX + 15, landY);
@@ -299,14 +360,14 @@ function drawScene() {
             setLineDash([]);
 
             fill(200, 70, 30);
-            textSize(11);
+            textSize(12);
             textAlign(CENTER, BOTTOM);
             text('Drift: ' + swimmer.x.toFixed(1) + 'm', (startX + landX) / 2, landY - 25);
         }
     }
 
-    // Draw vector addition triangle (when showing vectors and not moving much)
-    if (showVectorsCheckbox.checked() && swimmer && !swimmer.landed) {
+    // Draw vector addition triangle (when showing vectors)
+    if (showVectorsCheckbox.checked() && (!swimmer || !swimmer.landed)) {
         drawVectorTriangle();
     }
 }
@@ -321,7 +382,7 @@ function drawVectorTriangle() {
     strokeWeight(1);
     rect(triX - 10, triY - 10, 170, 120, 8);
 
-    textSize(11);
+    textSize(12);
     fill(0);
     noStroke();
     textAlign(LEFT, TOP);
@@ -331,9 +392,24 @@ function drawVectorTriangle() {
     let baseY = triY + 80;
     let triScale = 20;
 
+    // Calculate swim velocity (from swimmer or from settings)
+    let swimVx, swimVy;
+    if (swimmer) {
+        swimVx = swimmer.swimVx;
+        swimVy = swimmer.swimVy;
+    } else {
+        // Calculate based on checkbox settings
+        if (aimDirectCheckbox.checked() && swimmerSpeed > currentSpeed) {
+            let angle = asin(currentSpeed / swimmerSpeed);
+            swimVx = -swimmerSpeed * sin(angle);
+            swimVy = swimmerSpeed * cos(angle);
+        } else {
+            swimVx = 0;
+            swimVy = swimmerSpeed;
+        }
+    }
+
     // Swimmer velocity (pointing up or angled)
-    let swimVx = swimmer.swimVx;
-    let swimVy = swimmer.swimVy;
     drawArrow(baseX, baseY, baseX + swimVx * triScale, baseY - swimVy * triScale, [50, 50, 255], 2);
 
     // Current (from tip of swimmer velocity)
@@ -373,10 +449,10 @@ function setLineDash(list) {
 }
 
 function drawInfoPanel() {
-    let panelX = 580;
+    let panelX = 480;
     let panelY = drawHeight + 10;
 
-    textSize(11);
+    textSize(14);
     textAlign(LEFT, TOP);
     noStroke();
 
@@ -400,7 +476,7 @@ function drawInfoPanel() {
     let crossTime = riverWidth / swimmerSpeed;
     let drift = currentSpeed * crossTime;
     fill(80);
-    textSize(10);
+    textSize(14);
     text('Theory: t = ' + crossTime.toFixed(2) + 's, drift = ' + drift.toFixed(1) + 'm', panelX, panelY + 58);
 }
 
@@ -413,20 +489,36 @@ function drawControlLabels() {
     text('Swim speed: ' + swimmerSpeed.toFixed(1) + ' m/s', 155, drawHeight + 25);
     text('Current: ' + currentSpeed.toFixed(1) + ' m/s', 155, drawHeight + 60);
 
-    // Legend
-    textSize(10);
+    // Legend (horizontal below sliders)
+    textSize(14);
     fill(50, 50, 255);
-    text('\u25CF Swimmer', 365, drawHeight + 25);
+    text('\u25CF Swimmer', 155, drawHeight + 82);
     fill(255, 50, 50);
-    text('\u25CF Current', 365, drawHeight + 42);
+    text('\u25CF Current', 230, drawHeight + 82);
     fill(180, 50, 180);
-    text('\u25CF Result', 365, drawHeight + 59);
+    text('\u25CF Result', 300, drawHeight + 82);
 }
 
 function updatePhysics() {
     let dt = 1 / 60;
 
     if (!swimmer.landed) {
+        // Recalculate swim velocity based on checkbox
+        if (aimDirectCheckbox.checked() && swimmerSpeed > currentSpeed) {
+            // Aim upstream to go straight across
+            let angle = asin(currentSpeed / swimmerSpeed);
+            swimmer.swimVx = -swimmerSpeed * sin(angle);
+            swimmer.swimVy = swimmerSpeed * cos(angle);
+        } else {
+            // Aim straight across
+            swimmer.swimVx = 0;
+            swimmer.swimVy = swimmerSpeed;
+        }
+
+        // Update resultant velocity based on current slider
+        swimmer.vx = swimmer.swimVx + currentSpeed;
+        swimmer.vy = swimmer.swimVy;
+
         // Update position using resultant velocity
         swimmer.x += swimmer.vx * dt;
         swimmer.y += swimmer.vy * dt;
@@ -497,6 +589,11 @@ function resetSimulation() {
     time = 0;
     isRunning = false;
     swimButton.html('Swim');
+}
+
+function toggleAnimation() {
+    isAnimating = !isAnimating;
+    animateButton.html(isAnimating ? 'Pause Flow' : 'Start Flow');
 }
 
 function windowResized() {
