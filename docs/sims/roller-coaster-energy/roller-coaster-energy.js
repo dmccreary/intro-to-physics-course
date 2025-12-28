@@ -6,10 +6,10 @@ let drawHeight = 450;
 let controlHeight = 150;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 20;
-let sliderLeftMargin = 140;
+let sliderLeftMargin = 30;
 
 // Controls
-let massSlider, heightSlider, frictionSlider;
+let massSlider, heightSlider, frictionSlider, speedSlider;
 let trackSelect;
 let releaseBtn, pauseBtn, resetBtn;
 
@@ -62,22 +62,21 @@ function setup() {
         resetSimulation();
     });
 
-    // Sliders
+    // Sliders - Row 1: Mass, Height
     massSlider = createSlider(0.5, 5, 2, 0.1);
-    massSlider.position(sliderLeftMargin, ctrlY + 35);
-    massSlider.size(120);
     massSlider.input(resetSimulation);
 
     heightSlider = createSlider(5, 15, 10, 0.5);
-    heightSlider.position(sliderLeftMargin + 180, ctrlY + 35);
-    heightSlider.size(120);
     heightSlider.input(resetSimulation);
 
+    // Sliders - Row 2: Friction, Speed
     frictionSlider = createSlider(0, 0.3, 0, 0.01);
-    frictionSlider.position(sliderLeftMargin + 360, ctrlY + 35);
-    frictionSlider.size(120);
     frictionSlider.input(resetSimulation);
 
+    // Speed slider: 0.2-1.2 range, 1.0 = current speed (80% position), default 0.5 (50% slower)
+    speedSlider = createSlider(0.2, 1.2, 0.5, 0.05);
+
+    updateSliderLayout();
     resetSimulation();
     describe('Roller coaster simulation showing energy conservation', LABEL);
 }
@@ -93,7 +92,7 @@ function initTracks() {
             y = baseY - h * 25 * (1 - t/0.15);
         } else if (t < 0.5) {
             let localT = (t - 0.15) / 0.35;
-            y = baseY - h * 25 * cos(localT * PI);
+            y = baseY - h * 20 * sin(localT * PI);
         } else {
             y = baseY;
         }
@@ -110,10 +109,10 @@ function initTracks() {
             y = baseY - h * 25 * (1 - t/0.1);
         } else if (t < 0.35) {
             let localT = (t - 0.1) / 0.25;
-            y = baseY - h * 25 * cos(localT * PI);
+            y = baseY - h * 20 * sin(localT * PI);
         } else if (t < 0.65) {
             let localT = (t - 0.35) / 0.3;
-            y = baseY - h * 18 * cos(localT * PI);
+            y = baseY - h * 14 * sin(localT * PI);
         } else {
             y = baseY;
         }
@@ -130,7 +129,7 @@ function initTracks() {
             y = baseY - h * 25 * (1 - t/0.1);
         } else if (t < 0.35) {
             let localT = (t - 0.1) / 0.25;
-            y = baseY - h * 25 * cos(localT * PI * 0.7);
+            y = baseY - 10 * sin(localT * PI / 2);
         } else if (t < 0.55) {
             // Loop section
             let localT = (t - 0.35) / 0.2;
@@ -141,7 +140,7 @@ function initTracks() {
             y = cy + loopR * cos(localT * TWO_PI);
         } else if (t < 0.75) {
             let localT = (t - 0.55) / 0.2;
-            y = baseY - 30 + 30 * localT;
+            y = baseY - 10 * (1 - localT);
         } else {
             y = baseY;
         }
@@ -218,8 +217,9 @@ function updatePhysics() {
     let availableKE = max(0, totalEnergy - currentPE);
     cart.v = sqrt(2 * availableKE);
 
-    // Move along track
-    let speed = cart.v * 0.0015; // Scale for animation
+    // Move along track (min speed ensures cart starts moving from rest)
+    let speedMult = speedSlider ? speedSlider.value() : 0.5;
+    let speed = max(0.00008 * speedMult, cart.v * 0.0006 * speedMult);
     cart.t += speed;
 
     // Update position
@@ -235,8 +235,8 @@ function updatePhysics() {
         energyHistory.shift();
     }
 
-    // Check if simulation complete
-    if (cart.t >= 1 || cart.v < 0.1) {
+    // Check if simulation complete (only check velocity after cart has moved past initial hill)
+    if (cart.t >= 1 || (cart.t > 0.2 && cart.v < 0.1)) {
         isRunning = false;
         pauseBtn.html('Pause');
     }
@@ -447,18 +447,26 @@ function drawControlLabels() {
     fill('black');
     noStroke();
 
-    let y = drawHeight + 50;
-    text('Mass: ' + mass.toFixed(1) + ' kg', 10, y);
-    text('Height: ' + initialHeight.toFixed(1) + ' m', sliderLeftMargin + 140, y);
-    text('Friction: ' + friction.toFixed(2), sliderLeftMargin + 320, y);
+    let col2X = sliderLeftMargin + canvasWidth * 0.5;
+    let row1Y = drawHeight + 50;
+    let row2Y = drawHeight + 85;
+
+    // Row 1: Mass, Height
+    text('Mass: ' + mass.toFixed(1) + ' kg', 10, row1Y);
+    text('Height: ' + initialHeight.toFixed(1) + ' m', col2X - 10, row1Y);
+
+    // Row 2: Friction, Speed
+    text('Friction: ' + friction.toFixed(2), 10, row2Y);
+    let speedVal = speedSlider ? speedSlider.value() : 0.5;
+    text('Speed: ' + speedVal.toFixed(2) + 'x', col2X - 10, row2Y);
 
     // Status
     if (friction > 0) {
         fill(200, 100, 0);
-        text('(Energy dissipated by friction)', sliderLeftMargin + 420, y);
+        text('(Energy dissipated by friction)', col2X + canvasWidth * 0.2, row2Y);
     } else {
         fill(0, 150, 0);
-        text('(Energy conserved!)', sliderLeftMargin + 420, y);
+        text('(Energy conserved!)', col2X + canvasWidth * 0.2, row2Y);
     }
 }
 
@@ -490,6 +498,7 @@ function resetSimulation() {
 function windowResized() {
     updateCanvasSize();
     resizeCanvas(canvasWidth, canvasHeight);
+    updateSliderLayout();
 }
 
 function updateCanvasSize() {
@@ -497,4 +506,24 @@ function updateCanvasSize() {
     if (container) {
         canvasWidth = container.offsetWidth;
     }
+}
+
+function updateSliderLayout() {
+    let ctrlY = drawHeight + 15;
+    let sliderWidth = canvasWidth * 0.45;
+    let col2X = sliderLeftMargin + canvasWidth * 0.5;
+
+    // Row 1: Mass, Height
+    massSlider.position(sliderLeftMargin, ctrlY + 40);
+    massSlider.size(sliderWidth);
+
+    heightSlider.position(col2X, ctrlY + 40);
+    heightSlider.size(sliderWidth);
+
+    // Row 2: Friction, Speed
+    frictionSlider.position(sliderLeftMargin, ctrlY + 80);
+    frictionSlider.size(sliderWidth);
+
+    speedSlider.position(col2X, ctrlY + 80);
+    speedSlider.size(sliderWidth);
 }
