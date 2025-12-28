@@ -1,0 +1,16 @@
+{
+  "title": "Types of Damping Comparison",
+  "description": "Interactive simulation showing a mass-spring system with real-time displacement graph demonstrating underdamped, critically damped, overdamped, and undamped harmonic oscillators.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-28",
+  "subject": ["damping", "harmonic oscillator", "physics", "oscillation", "spring-mass system", "differential equations"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["damping ratio", "natural frequency", "underdamped", "critically damped", "overdamped", "simple harmonic motion"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["algebra", "trigonometry", "basic physics"],
+  "educationLevel": "High School"
+}

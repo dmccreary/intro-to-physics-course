@@ -1,0 +1,54 @@
+{
+  "title": "Collision Types Comparison MicroSim",
+  "description": "Interactive physics simulation comparing elastic, inelastic, and perfectly inelastic collisions. Demonstrates conservation of momentum and kinetic energy principles through animated visualizations with real-time data displays.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-15",
+  "subject": [
+    "Physics",
+    "Collisions",
+    "Momentum",
+    "Kinetic Energy",
+    "Conservation Laws",
+    "Elastic Collision",
+    "Inelastic Collision",
+    "Mechanics"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "source": "Introduction to Physics Course",
+  "relation": "https://dmccreary.github.io/intro-to-physics-course/",
+  "coverage": "High School Physics, AP Physics 1, Introductory College Physics",
+  "educational": {
+    "level": "High School (Grades 10-12)",
+    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+    "concepts": [
+      "Elastic Collision",
+      "Inelastic Collision",
+      "Perfectly Inelastic Collision",
+      "Conservation of Momentum",
+      "Conservation of Kinetic Energy",
+      "Energy Transfer"
+    ],
+    "prerequisites": [
+      "Velocity",
+      "Mass",
+      "Kinetic Energy",
+      "Momentum"
+    ],
+    "estimatedTime": "45 minutes"
+  },
+  "technical": {
+    "library": "p5.js",
+    "libraryVersion": "1.11.10",
+    "features": [
+      "Continuous physics-based animation",
+      "Tab-based collision type selector",
+      "Real-time velocity arrows",
+      "Energy and momentum bar charts",
+      "Play/Pause/Step controls",
+      "Responsive design"
+    ]
+  }
+}
