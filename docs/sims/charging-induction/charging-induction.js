@@ -4,7 +4,7 @@
 // Canvas dimensions
 let canvasWidth = 900;
 let drawHeight = 450;
-let controlHeight = 150;
+let controlHeight = 40;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
 
@@ -38,7 +38,7 @@ function setup() {
     canvas.parent(document.querySelector('main'));
 
     // Create buttons
-    let buttonY = drawHeight + 30;
+    let buttonY = drawHeight + 10;
 
     prevButton = createButton('← Previous');
     prevButton.position(margin, buttonY);
@@ -143,7 +143,6 @@ function draw() {
 
     // Control area
     fill('white');
-    noStroke();
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Draw title
@@ -163,10 +162,17 @@ function draw() {
     drawDescription();
 
     // Update button states
-    prevButton.attribute('disabled', currentStep === 0 || animating ? true : null);
-    nextButton.attribute('disabled', currentStep === STEPS.length - 1 || animating ? true : null);
-    if (currentStep === 0 && !animating) prevButton.attribute('disabled', true);
-    if (currentStep === STEPS.length - 1 && !animating) nextButton.attribute('disabled', true);
+    if (currentStep === 0 || animating) {
+        prevButton.attribute('disabled', '');
+    } else {
+        prevButton.removeAttribute('disabled');
+    }
+
+    if (currentStep === STEPS.length - 1 || animating) {
+        nextButton.attribute('disabled', '');
+    } else {
+        nextButton.removeAttribute('disabled');
+    }
 }
 
 function updatePositions() {
@@ -422,7 +428,7 @@ function drawStepIndicator() {
 function drawDescription() {
     // Description panel
     let panelX = margin;
-    let panelY = drawHeight + 70;
+    let panelY = drawHeight - 70;
     let panelW = canvasWidth - 2 * margin;
     let panelH = 60;
 

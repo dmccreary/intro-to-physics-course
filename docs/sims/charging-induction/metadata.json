@@ -1,0 +1,15 @@
+{
+  "title": "Charging by Induction Simulation",
+  "description": "An interactive step-by-step MicroSim demonstrating how objects can be charged through electrostatic induction without direct contact. Shows electron redistribution in conductors when a charged rod approaches.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-28",
+  "subject": ["electrostatic induction", "electric charge", "conductors", "electron mobility", "charge distribution", "physics", "electrostatics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["charging by induction", "electrostatic induction", "charge polarization", "electron mobility", "conductors", "charge conservation"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["Electric charge basics", "Conductors and insulators", "Coulomb's law fundamentals"]
+}
