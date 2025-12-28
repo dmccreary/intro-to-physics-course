@@ -94,8 +94,12 @@ Key features of transverse waves:
 - Examples: waves on strings, water surface waves, electromagnetic waves
 
 #### Diagram: Transverse Wave Animation MicroSim
+
+<iframe src="../../sims/transverse-wave/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Transverse Wave Animation MicroSim</summary>
+    **Status:** done
     Type: microsim
 
     Learning objective: Demonstrate how particles in a transverse wave move perpendicular to wave propagation direction
@@ -151,8 +155,12 @@ Key features of longitudinal waves:
 - Examples: sound waves, seismic P-waves, compression waves in springs
 
 #### Diagram: Longitudinal Wave Animation MicroSim
+
+<iframe src="../../sims/longitudinal-wave/main.html" height="502px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Longitudinal Wave Animation MicroSim</summary>
+    **Status:** done
     Type: microsim
 
     Learning objective: Demonstrate how particles in a longitudinal wave move parallel to wave propagation direction, creating compressions and rarefactions
@@ -251,6 +259,8 @@ Key insight: In a given medium, wave speed is constant. This means that if frequ
 #### Diagram: Wave Properties Interactive Calculator MicroSim
 <details markdown="1">
     <summary>Wave Properties Interactive Calculator MicroSim</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Allow students to explore the relationship between wavelength, frequency, period, and wave speed through interactive calculation and visualization
@@ -359,8 +369,12 @@ Examples of destructive interference:
 **Wave interference** is the general term for the interaction of waves through the superposition principle. Interference can be constructive, destructive, or anything in between, depending on the relative phase of the combining waves.
 
 #### Diagram: Two-Source Wave Interference Simulation MicroSim
+
+<iframe src="../../sims/wave-interference/main.html" height="652px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Two-Source Wave Interference Simulation MicroSim</summary>
+    **Status:** done
     Type: microsim
 
     Learning objective: Demonstrate constructive and destructive interference patterns created by two wave sources
@@ -438,8 +452,12 @@ For a standing wave on a string of length L with both ends fixed:
 The distance between consecutive nodes (or consecutive antinodes) is half a wavelength: $\frac{\lambda}{2}$
 
 #### Diagram: Standing Waves on a String MicroSim
+
+<iframe src="../../sims/standing-waves/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Standing Waves on a String MicroSim</summary>
+    **Status:** done
     Type: microsim
 
     Learning objective: Visualize standing wave patterns and understand nodes, antinodes, and harmonics
@@ -547,6 +565,8 @@ Examples of diffraction:
 #### Diagram: Wave Behavior Comparison Infographic
 <details markdown="1">
     <summary>Wave Behavior Comparison Infographic</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: infographic
 
     Purpose: Provide a visual comparison of reflection, refraction, and diffraction with interactive examples
@@ -632,8 +652,12 @@ $$f' = f \left(\frac{v \pm v_o}{v}\right)$$
 Where v_o is the observer speed (plus sign when approaching, minus sign when receding).
 
 #### Diagram: Doppler Effect Interactive Simulation MicroSim
+
+<iframe src="../../sims/doppler-effect/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
     <summary>Doppler Effect Interactive Simulation MicroSim</summary>
+    **Status:** done
     Type: microsim
 
     Learning objective: Demonstrate how source motion affects observed frequency through wavefront compression and expansion
@@ -808,6 +832,8 @@ Key points about the decibel scale:
 #### Diagram: Sound Intensity and Decibel Calculator MicroSim
 <details markdown="1">
     <summary>Sound Intensity and Decibel Calculator MicroSim</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Help students understand the logarithmic relationship between sound intensity and decibel level
@@ -926,6 +952,8 @@ Applications of ultrasound:
 #### Diagram: Human Hearing Range Interactive Diagram
 <details markdown="1">
     <summary>Human Hearing Range Interactive Diagram</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: infographic
 
     Purpose: Visualize the human hearing range in context with infrasound, ultrasound, and various animal hearing ranges
@@ -1043,6 +1071,8 @@ $$f_n = \frac{nv}{4L}$$ (only odd harmonics: n = 1, 3, 5...)
 #### Diagram: Musical Harmonics Visualizer MicroSim
 <details markdown="1">
     <summary>Musical Harmonics Visualizer MicroSim</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: microsim
 
     Learning objective: Demonstrate how musical instruments produce multiple harmonics simultaneously and how harmonic content affects timbre
@@ -1107,6 +1137,8 @@ $$f_n = \frac{nv}{4L}$$ (only odd harmonics: n = 1, 3, 5...)
 #### Diagram: Acoustic Resonance in Pipes Diagram
 <details markdown="1">
     <summary>Acoustic Resonance in Pipes Diagram</summary>
+    **Status:** INCOMPLETE
+    TODO: human-review-needed
     Type: diagram
 
     Purpose: Illustrate standing wave patterns and resonant frequencies in open and closed pipes

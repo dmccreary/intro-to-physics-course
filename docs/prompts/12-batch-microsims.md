@@ -69,7 +69,7 @@ At the end of the session,create a report of the MicroSims you have created and 
 
 
 
-## Chapters 10 and 11
+## MicroSims for Chapters 10 and 11
 The next task it to create MicroSims for all the diagrams in chapters 10 and 11.
 
 Go into the @docs/chapters area and find all the `#### Diagram` sections that have a <details markdown="1"> within chapters 10 and 11.
@@ -89,3 +89,25 @@ If you think the microsim might not be of high quality, add a TODO: human-review
 After you think that the microsim is done, change the status to be "**Status:** done"
 
 At the end of the session, create a report of the MicroSims you have created and your confidence level it is of good quality.
+
+## MicroSims for Chapters 12 and 13
+The next task it to create MicroSims for all the diagrams in chapters 12 and 13.
+
+Go into the @docs/chapters area and find all the `#### Diagram` sections that have a <details markdown="1"> within chapters 12 and 13.
+
+I want you to find all the diagrams/microsims specifications that have NOT been worked on.  These do NOT have the Status marked as "done".
+If you find the corresponding MicroSim already present in the @docs/sims area, please add the string  "**Status:** done" in the <details>.  
+If there is an iframe following `#### Diagram` the you know that the MicroSim is done.
+
+For each diagram/details specification section that needs work do the following:
+ 
+Rule 1: If there is no evidence that the MicroSim has been created yet, Add the string "**Status:** INCOMPLETE".
+
+Rule 2: For each INCOMPLETE Diagram/details specification, run the microsim-matcher skill and then from the top candidates, run the microsim-generator skill on the best match.  Place a new link in the mkdocs.yml for each new MicroSim in alphabetical order.
+
+Do not stop to ask for any permissions.  Just do your best to create the best MicroSim for each diagram/details specification.
+If you think the microsim might not be of high quality, add a TODO: human-review-needed to each <details> section.
+After you think that the microsim is done, change the status to be "**Status:** done"
+
+At the end of the session, create a report of the MicroSims you have created and your confidence level it is of good quality.
+Write the session log to logs/microsims-12-13.md

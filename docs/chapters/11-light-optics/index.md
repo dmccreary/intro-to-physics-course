@@ -119,6 +119,8 @@ While nothing can travel faster than light in vacuum, light does slow down when 
 #### Diagram: Historical Measurements of Light Speed
 <details markdown="1">
 <summary>Historical Measurements of Light Speed</summary>
+**Status:** INCOMPLETE
+TODO: human-review-needed
 Type: timeline
 
 Purpose: Show the evolution of how scientists measured the speed of light with increasing accuracy
@@ -176,8 +178,12 @@ When light strikes a smooth surface, it reflects in a predictable way described 
 Both angles are measured from the normal to the surface, not from the surface itself. This law applies to all types of electromagnetic radiation and is fundamental to understanding mirrors, periscopes, and many optical instruments.
 
 #### Diagram: Law of Reflection Interactive Diagram
+
+<iframe src="../../sims/law-of-reflection/main.html" height="602px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Law of Reflection Interactive Diagram</summary>
+**Status:** done
 Type: microsim
 
 Learning objective: Demonstrate the law of reflection by allowing students to change the angle of incidence and observe that the angle of reflection always equals it
@@ -324,6 +330,8 @@ Magnification (M) indicates the ratio of image height to object height:
 #### Diagram: Spherical Mirror Ray Diagram Interactive MicroSim
 <details markdown="1">
 <summary>Spherical Mirror Ray Diagram Interactive MicroSim</summary>
+**Status:** INCOMPLETE
+TODO: human-review-needed
 Type: microsim
 
 Learning objective: Allow students to explore how object position affects image formation in concave and convex mirrors using ray tracing
@@ -412,8 +420,12 @@ Key refraction behaviors:
 - No bending occurs when light hits perpendicular to the surface (θ₁ = 0°)
 
 #### Diagram: Snell's Law Interactive Demonstration
+
+<iframe src="../../sims/snells-law/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Snell's Law Interactive Demonstration</summary>
+**Status:** done
 Type: microsim
 
 Learning objective: Demonstrate refraction at a boundary between two media and show how changing angle and materials affects the refracted ray
@@ -597,6 +609,8 @@ The image forms where these rays intersect (real image) or where their backward 
 #### Diagram: Lens Ray Diagram Interactive MicroSim
 <details markdown="1">
 <summary>Lens Ray Diagram Interactive MicroSim</summary>
+**Status:** INCOMPLETE
+TODO: human-review-needed
 Type: microsim
 
 Learning objective: Enable students to explore image formation by convex and concave lenses using ray tracing for different object positions
@@ -814,6 +828,8 @@ Applications:
 #### Diagram: Color Mixing Interactive MicroSim
 <details markdown="1">
 <summary>Color Mixing Interactive MicroSim</summary>
+**Status:** INCOMPLETE
+TODO: human-review-needed
 Type: microsim
 
 Learning objective: Demonstrate the difference between additive (light) and subtractive (pigment) color mixing with interactive controls
@@ -929,6 +945,8 @@ Young's experiment was revolutionary because it:
 #### Diagram: Young's Double Slit Interference Pattern MicroSim
 <details markdown="1">
 <summary>Young's Double Slit Interference Pattern MicroSim</summary>
+**Status:** INCOMPLETE
+TODO: human-review-needed
 Type: microsim
 
 Learning objective: Demonstrate how changing slit separation, wavelength, and distance to screen affects the interference pattern in Young's double slit experiment
@@ -1045,6 +1063,8 @@ Applications of diffraction gratings:
 #### Diagram: Diffraction Grating Comparison Chart
 <details markdown="1">
 <summary>Diffraction Grating Comparison Chart</summary>
+**Status:** INCOMPLETE
+TODO: human-review-needed
 Type: chart
 
 Chart type: Multiple bar chart with grouped bars
@@ -1201,6 +1221,8 @@ When two polarizers are crossed (θ = 90°), no light passes through (I = 0).
 #### Diagram: Polarization Filter Interactive MicroSim
 <details markdown="1">
 <summary>Polarization Filter Interactive MicroSim</summary>
+**Status:** INCOMPLETE
+TODO: human-review-needed
 Type: microsim
 
 Learning objective: Demonstrate Malus's Law by showing how transmitted light intensity varies as a polarizer is rotated, and illustrate crossed polarizers blocking all light

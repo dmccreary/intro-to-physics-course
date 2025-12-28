@@ -73,6 +73,7 @@ nav:
     - Damping Types: sims/damping-types/index.md
     - DC Motor: sims/dc-motor/index.md
     - Distance vs Displacement: sims/distance-displacement/index.md
+    - Doppler Effect: sims/doppler-effect/index.md
     - Driven Oscillator: sims/driven-oscillator/index.md
     - Elasticity: sims/elasticity/index.md
     - Equilibrium Workflow: sims/equilibrium-workflow/index.md
@@ -93,7 +94,9 @@ nav:
     - Inclined Plane Motion: sims/inclined-plane-motion/index.md
     - Inertia Demo: sims/inertia-demo/index.md
     - Kinematic Selector: sims/kinematic-selector/index.md
+    - Law of Reflection: sims/law-of-reflection/index.md
     - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Longitudinal Wave: sims/longitudinal-wave/index.md
     - Metric Scale Zoom: sims/metric-scale-zoom/index.md
     - Microscopic Surface Contact: sims/microscopic-surface-contact/index.md
     - Momentum Comparison: sims/momentum-comparison/index.md
@@ -125,12 +128,15 @@ nav:
     - SHM Energy: sims/shm-energy/index.md
     - SHM Motion Graphs: sims/shm-motion-graphs/index.md
     - Simple Pendulum: sims/simple-pendulum/index.md
+    - Snells Law: sims/snells-law/index.md
     - Solar System: sims/solar-system/index.md
+    - Standing Waves: sims/standing-waves/index.md
     - Static Friction: sims/static-friction/index.md
     - Tacoma Narrows Timeline: sims/tacoma-narrows-timeline/index.md
     - Tension Force Diagram: sims/tension-force-diagram/index.md
     - Three Graph Analyzer: sims/three-graph-analyzer/index.md
     - Torque Diagram: sims/torque-diagram/index.md
+    - Transverse Wave: sims/transverse-wave/index.md
     - Uniform vs Accelerated Motion: sims/uniform-accelerated-motion/index.md
     - Vector Addition: sims/vector-addition/index.md
     - Vector Basics: sims/vector-basics/index.md
@@ -138,6 +144,7 @@ nav:
     - Velocity Speed Comparison: sims/velocity-speed-comparison/index.md
     - Velocity Time Area: sims/velocity-time-area/index.md
     - Variable Force Work: sims/variable-force-work/index.md
+    - Wave Interference: sims/wave-interference/index.md
     - Weight Gravity: sims/weight-gravity/index.md
     - Work Energy Theorem: sims/work-energy-theorem/index.md
     - Work Scenarios: sims/work-scenarios/index.md
