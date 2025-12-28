@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force vs Time - Impulse Comparison</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f8fa;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin: 0 0 15px 0;
+            font-size: 18px;
+        }
+        .chart-wrapper {
+            position: relative;
+            height: 350px;
+        }
+        .info-panel {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+        .scenario {
+            text-align: center;
+            padding: 10px;
+        }
+        .scenario-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .red { color: #e74c3c; }
+        .green { color: #27ae60; }
+        .key-insight {
+            text-align: center;
+            margin-top: 12px;
+            padding: 10px;
+            background: #e8f4f8;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Force vs. Time: Why Impact Time Matters</h2>
+        <div class="chart-wrapper">
+            <canvas id="impulseChart"></canvas>
+        </div>
+        <div class="info-panel">
+            <div class="scenario red">
+                <div class="scenario-title">Concrete Wall Collision</div>
+                <div>Duration: 0.1 s</div>
+                <div>Peak Force: 60,000 N</div>
+                <div>Impulse: 6,000 N·s</div>
+            </div>
+            <div class="scenario green">
+                <div class="scenario-title">Crumple Zone + Airbag</div>
+                <div>Duration: 0.5 s</div>
+                <div>Peak Force: 12,000 N</div>
+                <div>Impulse: 6,000 N·s</div>
+            </div>
+        </div>
+        <div class="key-insight">
+            <strong>Key Insight:</strong> Both scenarios have the SAME impulse (same change in momentum),
+            but extending the collision time by 5× reduces the peak force by 5×.
+            This is why airbags and crumple zones save lives!
+        </div>
+    </div>
+    <br/>
+    <a href=".">Back to Documentation</a>
+
+    <script>
+        const ctx = document.getElementById('impulseChart').getContext('2d');
+
+        // Generate data points
+        const hardStopData = [];
+        const softStopData = [];
+        const hardImpulseData = [];
+        const softImpulseData = [];
+
+        // Hard collision (triangular pulse, 0 to 0.1s)
+        for (let t = 0; t <= 0.6; t += 0.01) {
+            let force = 0;
+            if (t <= 0.05) {
+                force = t * 1200000; // Rising to peak at 60000N
+            } else if (t <= 0.1) {
+                force = 60000 - (t - 0.05) * 1200000; // Falling from peak
+            }
+            hardStopData.push({ x: t, y: Math.max(0, force) });
+        }
+
+        // Soft collision (bell curve, 0 to 0.5s)
+        for (let t = 0; t <= 0.6; t += 0.01) {
+            let force = 0;
+            if (t <= 0.5) {
+                // Smoother curve peaking at 12000N
+                force = 12000 * Math.sin(Math.PI * t / 0.5);
+            }
+            softStopData.push({ x: t, y: Math.max(0, force) });
+        }
+
+        // Calculate cumulative impulse
+        let hardCumulative = 0;
+        let softCumulative = 0;
+        for (let t = 0; t <= 0.6; t += 0.01) {
+            // Hard stop impulse
+            let hForce = 0;
+            if (t <= 0.05) {
+                hForce = t * 1200000;
+            } else if (t <= 0.1) {
+                hForce = 60000 - (t - 0.05) * 1200000;
+            }
+            hardCumulative += Math.max(0, hForce) * 0.01;
+            hardImpulseData.push({ x: t, y: hardCumulative });
+
+            // Soft stop impulse
+            let sForce = 0;
+            if (t <= 0.5) {
+                sForce = 12000 * Math.sin(Math.PI * t / 0.5);
+            }
+            softCumulative += Math.max(0, sForce) * 0.01;
+            softImpulseData.push({ x: t, y: softCumulative });
+        }
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [
+                    {
+                        label: 'Hard Stop - Force',
+                        data: hardStopData,
+                        borderColor: 'rgba(231, 76, 60, 1)',
+                        backgroundColor: 'rgba(231, 76, 60, 0.3)',
+                        fill: true,
+                        tension: 0.1,
+                        pointRadius: 0,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: 'Soft Stop - Force',
+                        data: softStopData,
+                        borderColor: 'rgba(39, 174, 96, 1)',
+                        backgroundColor: 'rgba(39, 174, 96, 0.3)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: 'Hard Stop - Cumulative Impulse',
+                        data: hardImpulseData,
+                        borderColor: 'rgba(231, 76, 60, 1)',
+                        borderDash: [5, 5],
+                        fill: false,
+                        tension: 0.1,
+                        pointRadius: 0,
+                        yAxisID: 'y1'
+                    },
+                    {
+                        label: 'Soft Stop - Cumulative Impulse',
+                        data: softImpulseData,
+                        borderColor: 'rgba(39, 174, 96, 1)',
+                        borderDash: [5, 5],
+                        fill: false,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Same Impulse, Different Forces: Extending Time Reduces Force',
+                        font: { size: 14 }
+                    },
+                    legend: {
+                        position: 'top',
+                        labels: { font: { size: 11 } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label.includes('Force')) {
+                                    return label + ': ' + context.parsed.y.toFixed(0) + ' N';
+                                } else {
+                                    return label + ': ' + context.parsed.y.toFixed(0) + ' N·s';
+                                }
+                            }
+                        }
+                    },
+                    annotation: {
+                        annotations: {
+                            line1: {
+                                type: 'line',
+                                yMin: 6000,
+                                yMax: 6000,
+                                yScaleID: 'y1',
+                                borderColor: 'rgba(100, 100, 100, 0.5)',
+                                borderDash: [10, 5],
+                                borderWidth: 2,
+                                label: {
+                                    content: 'Same impulse: 6000 N·s',
+                                    enabled: true
+                                }
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        type: 'linear',
+                        title: {
+                            display: true,
+                            text: 'Time (seconds)',
+                            font: { size: 13 }
+                        },
+                        min: 0,
+                        max: 0.6,
+                        ticks: {
+                            stepSize: 0.1
+                        }
+                    },
+                    y: {
+                        type: 'linear',
+                        position: 'left',
+                        title: {
+                            display: true,
+                            text: 'Force (N)',
+                            font: { size: 13 }
+                        },
+                        min: 0,
+                        max: 70000,
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.1)'
+                        }
+                    },
+                    y1: {
+                        type: 'linear',
+                        position: 'right',
+                        title: {
+                            display: true,
+                            text: 'Cumulative Impulse (N·s)',
+                            font: { size: 13 }
+                        },
+                        min: 0,
+                        max: 7000,
+                        grid: {
+                            drawOnChartArea: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

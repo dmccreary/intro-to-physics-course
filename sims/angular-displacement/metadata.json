@@ -1,0 +1,51 @@
+{
+    "title": "Angular Displacement Visualization",
+    "description": "Interactive visualization showing how angular displacement affects arc length at different radii, demonstrating the s = rθ relationship",
+    "subject": "Physics",
+    "topic": "Rotational Motion",
+    "subtopic": "Angular Displacement",
+    "gradeLevel": "High School",
+    "bloomsLevel": "Understand",
+    "learningObjectives": [
+        "Understand that angular displacement is the same for all points on a rotating rigid body",
+        "Calculate arc length using s = rθ",
+        "Recognize that points farther from the axis travel greater distances",
+        "Apply the right-hand rule for angular direction"
+    ],
+    "prerequisites": [
+        "Understanding of angles in degrees and radians",
+        "Basic understanding of circular motion",
+        "Familiarity with linear displacement"
+    ],
+    "duration": "10-15 minutes",
+    "framework": "p5.js",
+    "canvasDimensions": "800x600",
+    "controls": [
+        {
+            "type": "slider",
+            "name": "Angular Displacement",
+            "min": 0,
+            "max": "2π",
+            "default": "π/4",
+            "unit": "radians"
+        },
+        {
+            "type": "button",
+            "name": "Animate",
+            "action": "Toggle continuous rotation"
+        },
+        {
+            "type": "button",
+            "name": "Reset",
+            "action": "Return to initial state"
+        },
+        {
+            "type": "checkbox",
+            "name": "Show Right-Hand Rule",
+            "action": "Display angular direction convention"
+        }
+    ],
+    "dateCreated": "2025-12-27",
+    "creator": "Claude AI",
+    "license": "CC BY-NC-SA 4.0"
+}
