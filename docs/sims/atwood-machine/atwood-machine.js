@@ -2,9 +2,10 @@
 // Two masses connected by string over pulley
 
 let canvasWidth = 800;
-let drawHeight = 450;
-let controlHeight = 100;
+let drawHeight = 470;
+let controlHeight = 80 ;
 let canvasHeight = drawHeight + controlHeight;
+let margin = 25;
 
 let m1Slider, m2Slider;
 let releaseButton, resetButton;
@@ -39,7 +40,7 @@ function setup() {
     resetButton.mousePressed(resetSim);
     resetButton.style('padding', '8px 16px');
 
-    describe('Interactive Atwood machine simulation', LABEL);
+    describe('Interactive Atwood machine simulation with sliders to adjust masses', LABEL);
 }
 
 function resetSim() {
@@ -93,27 +94,30 @@ function draw() {
     text('Atwood Machine', canvasWidth / 2, 10);
 
     // Draw setup
-    let pulleyX = canvasWidth / 2;
-    let pulleyY = 80;
-    let pulleyR = 30;
+    let pulleyX = canvasWidth * 0.35;
+    let pulleyY = 90;
+    let pulleyR = 50;
 
     // Support beam
     fill('#666');
     rect(pulleyX - 60, 50, 120, 15, 3);
 
-    // Pulley
+    // Draw the Pulley using Circles
+
+    // Outer pulley circle
     fill('#888');
     stroke('#555');
     strokeWeight(2);
-    ellipse(pulleyX, pulleyY, pulleyR * 2, pulleyR * 2);
+    circle(pulleyX, pulleyY, pulleyR * 2);
+    // Inner pulley circle
     fill('#aaa');
-    ellipse(pulleyX, pulleyY, pulleyR, pulleyR);
+    circle(pulleyX, pulleyY, pulleyR);
 
     // String and masses
-    let baseY = 200;
-    let stringLen = 150;
-    let m1Y = baseY + displacement * 80;
-    let m2Y = baseY - displacement * 80;
+    let baseY = 300;
+    let stringLen = 250;
+    let m1Y = baseY - displacement * 80;
+    let m2Y = baseY + displacement * 80;
 
     // Strings
     stroke('#8B4513');
@@ -155,24 +159,26 @@ function draw() {
 
     // Force arrows
     let forceScale = 3;
+    let m1Left = m1X - boxSize1/2;  // Left edge of m1 block
+    let m2Right = m2X + boxSize2/2;  // Right edge of m2 block
 
-    // Tension on m1
-    drawArrow(m1X - 30, m1Y - 30 + boxSize1/2, m1X - 30, m1Y - 30 + boxSize1/2 - tension * forceScale / 10, '#27AE60', 'T');
+    // Tension on m1 (left of block)
+    drawArrow(m1Left - 15, m1Y - 30 + boxSize1/2, m1Left - 15, m1Y - 30 + boxSize1/2 - tension * forceScale / 10, '#27AE60', 'T');
 
-    // Weight on m1
-    drawArrow(m1X + 30, m1Y - 30 + boxSize1/2, m1X + 30, m1Y - 30 + boxSize1/2 + m1 * g * forceScale / 10, '#9B59B6', 'W₁');
+    // Weight on m1 (left of block)
+    drawArrow(m1Left - 35, m1Y - 30 + boxSize1/2, m1Left - 35, m1Y - 30 + boxSize1/2 + m1 * g * forceScale / 10, '#9B59B6', 'W₁');
 
-    // Tension on m2
-    drawArrow(m2X + 30, m2Y - 30 + boxSize2/2, m2X + 30, m2Y - 30 + boxSize2/2 - tension * forceScale / 10, '#27AE60', 'T');
+    // Tension on m2 (right of block)
+    drawArrow(m2Right + 15, m2Y - 30 + boxSize2/2, m2Right + 15, m2Y - 30 + boxSize2/2 - tension * forceScale / 10, '#27AE60', 'T');
 
-    // Weight on m2
-    drawArrow(m2X - 30, m2Y - 30 + boxSize2/2, m2X - 30, m2Y - 30 + boxSize2/2 + m2 * g * forceScale / 10, '#F39C12', 'W₂');
+    // Weight on m2 (right of block)
+    drawArrow(m2Right + 35, m2Y - 30 + boxSize2/2, m2Right + 35, m2Y - 30 + boxSize2/2 + m2 * g * forceScale / 10, '#F39C12', 'W₂');
 
     // Acceleration arrows
     if (isReleased && Math.abs(acceleration) > 0.1) {
         let accelDir = acceleration > 0 ? 1 : -1;
-        drawArrow(m1X, m1Y + boxSize1/2 + 20, m1X, m1Y + boxSize1/2 + 20 - accelDir * 30, '#E74C3C', 'a');
-        drawArrow(m2X, m2Y + boxSize2/2 + 20, m2X, m2Y + boxSize2/2 + 20 + accelDir * 30, '#E74C3C', 'a');
+        drawArrow(m1Left - 55, m1Y - 30 + boxSize1/2, m1Left - 55, m1Y - 30 + boxSize1/2 - accelDir * 30, '#E74C3C', 'a');
+        drawArrow(m2Right + 55, m2Y - 30 + boxSize2/2, m2Right + 55, m2Y - 30 + boxSize2/2 + accelDir * 30, '#E74C3C', 'a');
     }
 
     // Info panel
@@ -188,25 +194,20 @@ function draw() {
     fill('#E74C3C');
     text('m₂: ' + m2.toFixed(1) + ' kg', 10, drawHeight + 49);
 
-    // Status
+    // Status place in the right of the control area offset from the left by margin
     textSize(14);
-    textAlign(LEFT, CENTER);
+    textAlign(RIGHT, CENTER);
     if (m1 === m2) {
         fill('#27AE60');
-        text('Equilibrium: m₁ = m₂, a = 0', 260, drawHeight + 60);
+        text('Equilibrium: m₁ = m₂, a = 0', canvasWidth-margin, drawHeight + 20);
     } else if (m2 > m1) {
         fill('#E74C3C');
-        text('m₂ > m₁: m₂ falls, m₁ rises', 260, drawHeight + 60);
+        text('m₂ > m₁: m₂ falls, m₁ rises', canvasWidth-margin, drawHeight + 20);
     } else {
         fill('#3498DB');
-        text('m₁ > m₂: m₁ falls, m₂ rises', 260, drawHeight + 60);
+        text('m₁ > m₂: m₁ falls, m₂ rises', canvasWidth-margin, drawHeight + 20);
     }
 
-    if (isReleased) {
-        fill('#666');
-        textSize(12);
-        text('t = ' + time.toFixed(2) + ' s', 260, drawHeight + 80);
-    }
 }
 
 function drawArrow(x1, y1, x2, y2, col, label) {

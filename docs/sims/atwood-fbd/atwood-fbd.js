@@ -80,11 +80,11 @@ function draw() {
 
     // Draw Atwood machine and FBDs
     drawAtwoodMachine(m1, m2, T, a, position);
-    drawFBD1(50, 250, 140, 160, m1, T, a);
+    drawFBD1(20, 250, 140, 160, m1, T, a);
     drawFBD2(canvasWidth - 190, 250, 140, 160, m2, T, a);
 
     if (showEquationsCheckbox.checked()) {
-        drawEquationsPanel(280, 50, 240, 180, m1, m2, T, a, g);
+        drawEquationsPanel(canvasWidth - 250, 50, 240, 180, m1, m2, T, a, g);
     }
 
     // Control labels
