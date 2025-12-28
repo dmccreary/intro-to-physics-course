@@ -181,6 +181,7 @@ nav:
     - prompts/10-generate-logo.md
     - prompts/11-add-level-4-diagram-links.md
     - prompts/04-book-chapter-structure-skill.md
+    - prompts/12-batch-microsims.md
   
   - Glossary: glossary.md
   - FAQs: faq.md
