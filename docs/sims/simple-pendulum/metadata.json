@@ -1,0 +1,68 @@
+{
+  "title": "Simple Pendulum Period Investigation",
+  "description": "An interactive simulation for investigating the relationship between pendulum length and period. Students can measure swing periods, collect data at various lengths, and verify the theoretical equation T = 2π√(L/g) through systematic experimentation.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-28",
+  "subject": [
+    "simple pendulum",
+    "period",
+    "oscillation",
+    "simple harmonic motion",
+    "physics",
+    "mechanics",
+    "gravity",
+    "laboratory investigation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": "Claude AI Assistant",
+  "identifier": "simple-pendulum-period-investigation",
+  "educational": {
+    "level": "High School (Grades 10-12)",
+    "bloomsLevel": [
+      "Understanding",
+      "Applying",
+      "Analyzing",
+      "Evaluating"
+    ],
+    "concepts": [
+      "Simple Pendulum",
+      "Period",
+      "Frequency",
+      "Simple Harmonic Motion",
+      "Small Angle Approximation",
+      "Data Collection",
+      "Experimental Error",
+      "Square Root Relationships"
+    ],
+    "prerequisites": [
+      "Basic algebra",
+      "Square roots",
+      "Understanding of period and frequency",
+      "Introduction to oscillations"
+    ],
+    "timeRequired": "45-90 minutes",
+    "objectives": [
+      "Explain the relationship between pendulum length and period",
+      "Predict how changing length affects period",
+      "Demonstrate proper experimental technique",
+      "Analyze data by comparing measured to theoretical values",
+      "Evaluate sources of experimental error"
+    ]
+  },
+  "technical": {
+    "library": "p5.js",
+    "libraryVersion": "1.11.10",
+    "features": [
+      "Real-time physics simulation",
+      "Automatic 10-swing period measurement",
+      "Individual period logging",
+      "Running average calculation",
+      "Interactive data graphing",
+      "Theoretical curve overlay",
+      "Responsive canvas sizing"
+    ]
+  }
+}

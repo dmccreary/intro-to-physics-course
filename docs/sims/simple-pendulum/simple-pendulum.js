@@ -97,16 +97,16 @@ function draw() {
 
         // Count swings during measurement
         if (isMeasuring && currentAngle * (currentAngle - angularVelocity) < 0 && angularVelocity > 0) {
-            let currentTime = millis();
+            let now = millis();
             if (swingCount === 0) {
                 // First crossing - start timing
-                lastCrossing = currentTime;
+                lastCrossing = now;
                 swingCount = 1;
             } else if (swingCount <= 10) {
                 // Record individual period
-                let period = (currentTime - lastCrossing) / 1000;
+                let period = (now - lastCrossing) / 1000;
                 swingPeriods.push(period);
-                lastCrossing = currentTime;
+                lastCrossing = now;
                 swingCount++;
 
                 // Calculate running average
