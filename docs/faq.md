@@ -20,7 +20,7 @@ See: [Course Description](course-description.md)
 
 You need to have successfully completed Algebra II and Geometry before taking this course. These mathematics courses provide the foundation for understanding physics concepts, working with equations, and solving problems. Specifically, you'll use algebraic manipulation, equation solving, graphing functions, trigonometric functions (sine, cosine, tangent), and geometric relationships. No prior physics knowledge is required—we start from the beginning and build up systematically.
 
-See: [Course Description](course-description.md#prerequisites)
+See: [Course Description](course-description.md)
 
 ### How long does it take to complete this course?
 
@@ -52,7 +52,7 @@ When you encounter a challenging concept, follow this systematic approach: First
 
 Bloom's Taxonomy is a framework for categorizing learning objectives into six cognitive levels: Remembering (recalling facts), Understanding (explaining concepts), Applying (using knowledge in new situations), Analyzing (drawing connections), Evaluating (making judgments), and Creating (producing original work). This course uses Bloom's Taxonomy to ensure you develop all levels of thinking, not just memorization. Assessments are distributed across these levels, with 10% Remembering, 15% Understanding, 30% Applying, 20% Analyzing, 15% Evaluating, and 10% Creating. This means you'll spend significant time solving problems, analyzing data, and designing experiments—not just recalling definitions.
 
-See: [Course Description - Assessment Framework](course-description.md#assessment--grading-framework)
+See: [Course Description](course-description.md)
 
 ### How do I navigate the textbook website?
 
@@ -66,7 +66,7 @@ You need a computer or tablet with internet access to view the online textbook a
 
 Assessments are distributed across Bloom's Taxonomy levels to evaluate comprehensive understanding. Weekly vocabulary quizzes test Remembering (10% of grade). Concept maps and exit tickets assess Understanding (15%). Problem sets and lab procedures evaluate Applying skills (30%). Lab analysis and data evaluation measure Analyzing ability (20%). Peer review and critique essays test Evaluating skills (15%). Projects and design challenges assess Creating capacity (10%). This structure ensures you demonstrate mastery at all cognitive levels, not just recall, preparing you for advanced physics courses and real-world problem-solving.
 
-See: [Course Description - Assessment Framework](course-description.md#assessment--grading-framework)
+See: [Course Description](course-description.md)
 
 ## Core Concept Questions
 
@@ -76,7 +76,7 @@ The scientific method is a systematic approach to investigating phenomena throug
 
 **Example:** Testing whether fertilizer increases plant growth involves controlled experiments comparing treated and untreated groups, measuring growth systematically, analyzing data statistically, and drawing evidence-based conclusions.
 
-See: [Chapter 1 - Scientific Method](chapters/01-scientific-foundations/index.md#the-scientific-method)
+See: [Chapter 1](chapters/01-scientific-foundations/index.md)
 
 ### What is the difference between distance and displacement?
 
