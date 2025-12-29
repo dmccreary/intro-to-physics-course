@@ -3,6 +3,7 @@ title: Precision vs Accuracy Target Diagram
 description: An interactive visualization demonstrating the difference between precision (repeatability) and accuracy (correctness) in measurements using a target/dart analogy.
 image: /sims/precision-accuracy/precision-accuracy.png
 og:image: /sims/precision-accuracy/precision-accuracy.png
+quality_score: 90
 social:
    cards: false
 ---
@@ -12,6 +13,7 @@ social:
 <iframe src="main.html" height="672px" width="100%" scrolling="no"></iframe>
 
 [Run the Precision vs Accuracy MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Edit the Precision vs Accuracy MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/bZJr3DGHW)
 
 You can include this MicroSim on your website using the following `iframe`:
 
@@ -30,10 +32,10 @@ The visualization displays four targets in a 2×2 grid, each demonstrating a dif
 
 | Target | Accuracy | Precision | What It Means |
 |--------|----------|-----------|---------------|
-| Top-Left (Green) | High | High | Measurements are correct and consistent |
-| Top-Right (Blue) | High | Low | Measurements average to correct value but vary widely |
-| Bottom-Left (Orange) | Low | High | Measurements are consistent but systematically wrong |
-| Bottom-Right (Red) | Low | Low | Measurements are neither correct nor consistent |
+| Top-Left (Blue) | High | Low | Measurements average to correct value but vary widely |
+| Top-Right (Green) | High | High | Measurements are correct and consistent |
+| Bottom-Left (Red) | Low | Low | Measurements are neither correct nor consistent |
+| Bottom-Right (Orange) | Low | High | Measurements are consistent but systematically wrong |
 
 ## How to Use
 
@@ -93,5 +95,6 @@ High School Physics (Grades 9-12)
 
 ## References
 
-- NIST Guide to the Expression of Uncertainty in Measurement
-- Physics Classroom: Accuracy and Precision
+1. [Accuracy and Precision](https://www.physicsclassroom.com/class/1DKin/Lesson-1/Accuracy-and-Precision) - Physics Classroom - Clear explanation of accuracy vs precision with examples
+2. [JCGM 200:2012 - International Vocabulary of Metrology](https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf) - BIPM - Official definitions of measurement terminology
+3. [Precision vs Accuracy](https://www.khanacademy.org/math/ap-statistics/gathering-data-ap/measuring-and-sampling/v/accuracy-vs-precision) - Khan Academy - Video tutorial on measurement concepts
