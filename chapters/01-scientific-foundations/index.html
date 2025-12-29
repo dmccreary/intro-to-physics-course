@@ -1528,6 +1528,8 @@
       
         
       
+        
+      
     
     
     
@@ -2425,35 +2427,41 @@ virus.png</p>
 <p>While SI units are standard in science, you'll often encounter other measurement systems in daily life—like miles per hour for speed or pounds for weight. <strong>Unit conversion</strong> is the process of changing a measurement from one unit to another while preserving its physical meaning.</p>
 <p>The key to unit conversion is using <strong>conversion factors</strong>—fractions equal to 1 that allow you to cancel unwanted units and introduce desired ones. Since multiplying by 1 doesn't change a quantity's value, we can strategically multiply by conversion factors to change units.</p>
 <p><strong>Example:</strong> Convert 25 meters to centimeters.</p>
-<p>We know that 1 m = 100 cm, which gives us two possible conversion factors:
-- (100 cm)/(1 m) = 1
-- (1 m)/(100 cm) = 1</p>
+<p>We know that 1 m = 100 cm, which gives us two possible conversion factors:</p>
+<ul>
+<li><span class="arithmatex">\(\frac{100 \text{ cm}}{1 \text{ m}} = 1\)</span></li>
+<li><span class="arithmatex">\(\frac{1 \text{ m}}{100 \text{ cm}} = 1\)</span></li>
+</ul>
 <p>We choose the first one because it allows meters to cancel:</p>
-<p>25 m × (100 cm / 1 m) = 2,500 cm</p>
+<div class="arithmatex">\[25 \text{ m} \times \frac{100 \text{ cm}}{1 \text{ m}} = 2{,}500 \text{ cm}\]</div>
 <p>Notice how "m" in the numerator and denominator cancel, leaving only "cm."</p>
 <p><strong>Multi-step conversions</strong> involve applying multiple conversion factors sequentially. For example, converting miles per hour to meters per second requires converting both distance and time units:</p>
-<p>60 mi/hr × (1.609 km / 1 mi) × (1,000 m / 1 km) × (1 hr / 3,600 s) ≈ 26.8 m/s</p>
+<div class="arithmatex">\[60 \frac{\text{mi}}{\text{hr}} \times \frac{1.609 \text{ km}}{1 \text{ mi}} \times \frac{1{,}000 \text{ m}}{1 \text{ km}} \times \frac{1 \text{ hr}}{3{,}600 \text{ s}} \approx 26.8 \text{ m/s}\]</div>
 <h2 id="scientific-notation-handling-extreme-numbers">Scientific Notation: Handling Extreme Numbers</h2>
 <p>Physics deals with quantities spanning enormous ranges—from the diameter of an atomic nucleus (about 0.000000000000001 meters) to the distance to the nearest star (about 40,000,000,000,000,000 meters). Writing and calculating with such numbers becomes unwieldy using standard decimal notation.</p>
 <p><strong>Scientific notation</strong> expresses numbers as a product of two parts:
 - A <strong>coefficient</strong> between 1 and 10
 - A <strong>power of 10</strong></p>
-<p><strong>Format:</strong> <em>a</em> × 10ⁿ, where 1 ≤ <em>a</em> &lt; 10 and <em>n</em> is an integer</p>
-<p><strong>Examples:</strong>
-- 5,280 = 5.28 × 10³ (move decimal left 3 places, positive exponent)
-- 0.00042 = 4.2 × 10⁻⁴ (move decimal right 4 places, negative exponent)
-- 93,000,000 = 9.3 × 10⁷ (move decimal left 7 places)</p>
+<p><strong>Format:</strong> <span class="arithmatex">\(a \times 10^n\)</span>, where <span class="arithmatex">\(1 \leq a &lt; 10\)</span> and <span class="arithmatex">\(n\)</span> is an integer</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><span class="arithmatex">\(5{,}280 = 5.28 \times 10^3\)</span> (move decimal left 3 places, positive exponent)</li>
+<li><span class="arithmatex">\(0.00042 = 4.2 \times 10^{-4}\)</span> (move decimal right 4 places, negative exponent)</li>
+<li><span class="arithmatex">\(93{,}000{,}000 = 9.3 \times 10^7\)</span> (move decimal left 7 places)</li>
+</ul>
 <p><strong>Why use scientific notation?</strong></p>
 <ol>
-<li><strong>Clarity:</strong> 6.02 × 10²³ is much clearer than 602,000,000,000,000,000,000,000</li>
+<li><strong>Clarity:</strong> <span class="arithmatex">\(6.02 \times 10^{23}\)</span> is much clearer than 602,000,000,000,000,000,000,000</li>
 <li><strong>Precision:</strong> Scientific notation makes significant figures obvious</li>
 <li><strong>Calculation:</strong> Multiplication and division become easier using exponent rules</li>
 <li><strong>Range:</strong> It handles extremely large and small numbers equally well</li>
 </ol>
-<p><strong>Calculation rules:</strong>
-- <strong>Multiplication:</strong> Multiply coefficients, add exponents: (2 × 10³) × (3 × 10⁴) = 6 × 10⁷
-- <strong>Division:</strong> Divide coefficients, subtract exponents: (6 × 10⁸) ÷ (2 × 10³) = 3 × 10⁵
-- <strong>Addition/Subtraction:</strong> Convert to same exponent first, then add/subtract coefficients</p>
+<p><strong>Calculation rules:</strong></p>
+<ul>
+<li><strong>Multiplication:</strong> Multiply coefficients, add exponents: <span class="arithmatex">\((2 \times 10^3) \times (3 \times 10^4) = 6 \times 10^7\)</span></li>
+<li><strong>Division:</strong> Divide coefficients, subtract exponents: <span class="arithmatex">\((6 \times 10^8) \div (2 \times 10^3) = 3 \times 10^5\)</span></li>
+<li><strong>Addition/Subtraction:</strong> Convert to same exponent first, then add/subtract coefficients</li>
+</ul>
 <h2 id="significant-figures-communicating-precision">Significant Figures: Communicating Precision</h2>
 <p>When you measure something in the lab, your measurement is limited by your instrument's precision. A ruler marked in millimeters lets you measure more precisely than one marked only in centimeters. <strong>Significant figures</strong> (or "sig figs") are the digits in a measurement that carry meaningful information about its precision.</p>
 <p><strong>Rules for counting significant figures:</strong></p>
@@ -2481,13 +2489,13 @@ virus.png</p>
 <p>Have you ever gotten an answer on a physics problem and wondered if it makes sense? <strong>Dimensional analysis</strong> (also called unit analysis) is a powerful technique for checking whether equations and calculations are physically reasonable by verifying that units are consistent.</p>
 <p>The fundamental principle: <strong>valid equations must be dimensionally homogeneous</strong>, meaning both sides must have the same units. You can't have meters on one side and seconds on the other—it's like saying apples equal oranges.</p>
 <p><strong>Example:</strong> Suppose you're verifying a proposed equation for the distance traveled by an accelerating object:</p>
-<p><em>d</em> = <em>v</em> × <em>t</em> + ½<em>a</em> × <em>t</em>²</p>
-<p>where <em>d</em> = distance, <em>v</em> = initial velocity, <em>a</em> = acceleration, <em>t</em> = time</p>
+<div class="arithmatex">\[d = vt + \frac{1}{2}at^2\]</div>
+<p>where <span class="arithmatex">\(d\)</span> = distance, <span class="arithmatex">\(v\)</span> = initial velocity, <span class="arithmatex">\(a\)</span> = acceleration, <span class="arithmatex">\(t\)</span> = time</p>
 <p>Let's check the dimensions (using brackets [ ] to denote "dimensions of"):</p>
 <ul>
-<li>[<em>d</em>] = meters (m)</li>
-<li>[<em>v</em> × <em>t</em>] = (m/s) × s = m ✓</li>
-<li>[½<em>a</em> × <em>t</em>²] = (m/s²) × s² = m ✓</li>
+<li><span class="arithmatex">\([d] = \text{meters (m)}\)</span></li>
+<li><span class="arithmatex">\([v \times t] = \text{(m/s)} \times \text{s} = \text{m}\)</span> ✓</li>
+<li><span class="arithmatex">\([\frac{1}{2}a \times t^2] = \text{(m/s}^2\text{)} \times \text{s}^2 = \text{m}\)</span> ✓</li>
 </ul>
 <p>Each term has dimensions of meters, so the equation is dimensionally consistent. This doesn't prove the equation is correct (the factors of ½ and 1 can't be verified this way), but it does confirm we haven't made gross errors like adding velocity to acceleration.</p>
 <p><strong>Practical tip:</strong> If your calculated answer for a velocity comes out in kg·m/s instead of m/s, you know something went wrong in your calculation!</p>
@@ -2663,25 +2671,29 @@ virus.png</p>
 </details>
 <p><strong>Vector Components:</strong></p>
 <p>Any vector can be broken down into perpendicular components—typically horizontal (x) and vertical (y) components in a coordinate system. This process, called <strong>vector decomposition</strong> or <strong>resolution</strong>, is fundamental to solving physics problems.</p>
-<p>For a vector <strong>v</strong> with magnitude <em>v</em> at angle θ measured counterclockwise from the positive x-axis:</p>
+<p>For a vector <strong>v</strong> with magnitude <span class="arithmatex">\(v\)</span> at angle <span class="arithmatex">\(\theta\)</span> measured counterclockwise from the positive x-axis:</p>
 <ul>
-<li><strong>x-component:</strong> <em>v</em>ₓ = <em>v</em> cos(θ)</li>
-<li><strong>y-component:</strong> <em>v</em>ᵧ = <em>v</em> sin(θ)</li>
+<li><strong>x-component:</strong> <span class="arithmatex">\(v_x = v \cos(\theta)\)</span></li>
+<li><strong>y-component:</strong> <span class="arithmatex">\(v_y = v \sin(\theta)\)</span></li>
 </ul>
-<p><strong>Example:</strong> A velocity vector of 50 m/s at 30° above the horizontal has:
-- <em>v</em>ₓ = 50 cos(30°) = 50 × 0.866 = 43.3 m/s (horizontal)
-- <em>v</em>ᵧ = 50 sin(30°) = 50 × 0.5 = 25.0 m/s (vertical)</p>
+<p><strong>Example:</strong> A velocity vector of 50 m/s at 30° above the horizontal has:</p>
+<ul>
+<li><span class="arithmatex">\(v_x = 50 \cos(30°) = 50 \times 0.866 = 43.3\)</span> m/s (horizontal)</li>
+<li><span class="arithmatex">\(v_y = 50 \sin(30°) = 50 \times 0.5 = 25.0\)</span> m/s (vertical)</li>
+</ul>
 <p><strong>Reverse process</strong> (finding magnitude and direction from components):</p>
-<p>If you know <em>v</em>ₓ and <em>v</em>ᵧ, you can find:
-- <strong>Magnitude:</strong> <em>v</em> = √(<em>v</em>ₓ² + <em>v</em>ᵧ²)
-- <strong>Direction:</strong> θ = tan⁻¹(<em>v</em>ᵧ / <em>v</em>ₓ)</p>
+<p>If you know <span class="arithmatex">\(v_x\)</span> and <span class="arithmatex">\(v_y\)</span>, you can find:</p>
+<ul>
+<li><strong>Magnitude:</strong> <span class="arithmatex">\(v = \sqrt{v_x^2 + v_y^2}\)</span></li>
+<li><strong>Direction:</strong> <span class="arithmatex">\(\theta = \tan^{-1}\left(\frac{v_y}{v_x}\right)\)</span></li>
+</ul>
 <h2 id="trigonometry-for-physics-essential-relationships">Trigonometry for Physics: Essential Relationships</h2>
 <p>Physics problems frequently involve triangles—whether analyzing forces on an incline, projectile motion, or vector components. A solid understanding of trigonometry is essential.</p>
-<p><strong>The three primary trigonometric functions</strong> for a right triangle with angle θ:</p>
+<p><strong>The three primary trigonometric functions</strong> for a right triangle with angle <span class="arithmatex">\(\theta\)</span>:</p>
 <ul>
-<li><strong>sin(θ)</strong> = opposite / hypotenuse</li>
-<li><strong>cos(θ)</strong> = adjacent / hypotenuse</li>
-<li><strong>tan(θ)</strong> = opposite / adjacent</li>
+<li><span class="arithmatex">\(\sin(\theta) = \frac{\text{opposite}}{\text{hypotenuse}}\)</span></li>
+<li><span class="arithmatex">\(\cos(\theta) = \frac{\text{adjacent}}{\text{hypotenuse}}\)</span></li>
+<li><span class="arithmatex">\(\tan(\theta) = \frac{\text{opposite}}{\text{adjacent}}\)</span></li>
 </ul>
 <p><strong>Memory aid: SOH-CAH-TOA</strong></p>
 <ul>
@@ -2689,12 +2701,14 @@ virus.png</p>
 <li><strong>C</strong>osine = <strong>A</strong>djacent/<strong>H</strong>ypotenuse</li>
 <li><strong>T</strong>angent = <strong>O</strong>pposite/<strong>A</strong>djacent</li>
 </ul>
-<p><strong>Pythagorean Theorem:</strong> For any right triangle with legs <em>a</em> and <em>b</em> and hypotenuse <em>c</em>:</p>
-<p><em>c</em>² = <em>a</em>² + <em>b</em>²</p>
-<p><strong>Inverse functions</strong> (finding angles from ratios):
-- θ = sin⁻¹(opposite/hypotenuse)
-- θ = cos⁻¹(adjacent/hypotenuse)
-- θ = tan⁻¹(opposite/adjacent)</p>
+<p><strong>Pythagorean Theorem:</strong> For any right triangle with legs <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> and hypotenuse <span class="arithmatex">\(c\)</span>:</p>
+<div class="arithmatex">\[c^2 = a^2 + b^2\]</div>
+<p><strong>Inverse functions</strong> (finding angles from ratios):</p>
+<ul>
+<li><span class="arithmatex">\(\theta = \sin^{-1}\left(\frac{\text{opposite}}{\text{hypotenuse}}\right)\)</span></li>
+<li><span class="arithmatex">\(\theta = \cos^{-1}\left(\frac{\text{adjacent}}{\text{hypotenuse}}\right)\)</span></li>
+<li><span class="arithmatex">\(\theta = \tan^{-1}\left(\frac{\text{opposite}}{\text{adjacent}}\right)\)</span></li>
+</ul>
 <p><strong>Important angles to memorize:</strong></p>
 <table>
 <thead>
@@ -2751,21 +2765,25 @@ virus.png</p>
 <p><strong>Component method (more precise):</strong></p>
 <ol>
 <li>Break each vector into x and y components</li>
-<li>Add all x-components together: <em>R</em>ₓ = <em>v</em>₁ₓ + <em>v</em>₂ₓ + <em>v</em>₃ₓ + ...</li>
-<li>Add all y-components together: <em>R</em>ᵧ = <em>v</em>₁ᵧ + <em>v</em>₂ᵧ + <em>v</em>₃ᵧ + ...</li>
-<li>Find magnitude: <em>R</em> = √(<em>R</em>ₓ² + <em>R</em>ᵧ²)</li>
-<li>Find direction: θ = tan⁻¹(<em>R</em>ᵧ / <em>R</em>ₓ)</li>
+<li>Add all x-components together: <span class="arithmatex">\(R_x = v_{1x} + v_{2x} + v_{3x} + ...\)</span></li>
+<li>Add all y-components together: <span class="arithmatex">\(R_y = v_{1y} + v_{2y} + v_{3y} + ...\)</span></li>
+<li>Find magnitude: <span class="arithmatex">\(R = \sqrt{R_x^2 + R_y^2}\)</span></li>
+<li>Find direction: <span class="arithmatex">\(\theta = \tan^{-1}\left(\frac{R_y}{R_x}\right)\)</span></li>
 </ol>
-<p><strong>Example:</strong> Add two vectors:
-- <strong>v</strong>₁ = 30 m/s east (0°)
-- <strong>v</strong>₂ = 40 m/s north (90°)</p>
-<p>Using components:
-- <em>v</em>₁ₓ = 30 m/s, <em>v</em>₁ᵧ = 0 m/s
-- <em>v</em>₂ₓ = 0 m/s, <em>v</em>₂ᵧ = 40 m/s
-- <em>R</em>ₓ = 30 + 0 = 30 m/s
-- <em>R</em>ᵧ = 0 + 40 = 40 m/s
-- <em>R</em> = √(30² + 40²) = √(900 + 1,600) = √2,500 = 50 m/s
-- θ = tan⁻¹(40/30) = tan⁻¹(1.33) = 53° north of east</p>
+<p><strong>Example:</strong> Add two vectors:</p>
+<ul>
+<li><span class="arithmatex">\(\vec{v}_1 = 30\)</span> m/s east (0°)</li>
+<li><span class="arithmatex">\(\vec{v}_2 = 40\)</span> m/s north (90°)</li>
+</ul>
+<p>Using components:</p>
+<ul>
+<li><span class="arithmatex">\(v_{1x} = 30\)</span> m/s, <span class="arithmatex">\(v_{1y} = 0\)</span> m/s</li>
+<li><span class="arithmatex">\(v_{2x} = 0\)</span> m/s, <span class="arithmatex">\(v_{2y} = 40\)</span> m/s</li>
+<li><span class="arithmatex">\(R_x = 30 + 0 = 30\)</span> m/s</li>
+<li><span class="arithmatex">\(R_y = 0 + 40 = 40\)</span> m/s</li>
+<li><span class="arithmatex">\(R = \sqrt{30^2 + 40^2} = \sqrt{900 + 1600} = \sqrt{2500} = 50\)</span> m/s</li>
+<li><span class="arithmatex">\(\theta = \tan^{-1}(40/30) = \tan^{-1}(1.33) = 53°\)</span> north of east</li>
+</ul>
 <h4 id="diagram-vector-addition-interactive-microsim">Diagram: Vector Addition Interactive MicroSim</h4>
 <iframe src="../../sims/vector-addition/main.html" width="100%" height="652px" scrolling="no"></iframe>
 
@@ -2876,84 +2894,96 @@ Resultant Direction:
 <p><strong>Component method for subtraction:</strong></p>
 <ol>
 <li>Break each vector into components</li>
-<li>Subtract components: <em>R</em>ₓ = <em>A</em>ₓ − <em>B</em>ₓ and <em>R</em>ᵧ = <em>A</em>ᵧ − <em>B</em>ᵧ</li>
+<li>Subtract components: <span class="arithmatex">\(R_x = A_x - B_x\)</span> and <span class="arithmatex">\(R_y = A_y - B_y\)</span></li>
 <li>Find magnitude and direction using standard formulas</li>
 </ol>
-<p><strong>Example:</strong> Subtract <strong>B</strong> = 20 m/s north from <strong>A</strong> = 50 m/s east:
-- <em>A</em>ₓ = 50 m/s, <em>A</em>ᵧ = 0 m/s
-- <em>B</em>ₓ = 0 m/s, <em>B</em>ᵧ = 20 m/s
-- <em>R</em>ₓ = 50 − 0 = 50 m/s
-- <em>R</em>ᵧ = 0 − 20 = −20 m/s
-- <em>R</em> = √(50² + (−20)²) = √(2,500 + 400) = √2,900 ≈ 53.9 m/s
-- θ = tan⁻¹(−20/50) ≈ −21.8° (below the positive x-axis, or 21.8° south of east)</p>
+<p><strong>Example:</strong> Subtract <span class="arithmatex">\(\vec{B} = 20\)</span> m/s north from <span class="arithmatex">\(\vec{A} = 50\)</span> m/s east:</p>
+<ul>
+<li><span class="arithmatex">\(A_x = 50\)</span> m/s, <span class="arithmatex">\(A_y = 0\)</span> m/s</li>
+<li><span class="arithmatex">\(B_x = 0\)</span> m/s, <span class="arithmatex">\(B_y = 20\)</span> m/s</li>
+<li><span class="arithmatex">\(R_x = 50 - 0 = 50\)</span> m/s</li>
+<li><span class="arithmatex">\(R_y = 0 - 20 = -20\)</span> m/s</li>
+<li><span class="arithmatex">\(R = \sqrt{50^2 + (-20)^2} = \sqrt{2500 + 400} = \sqrt{2900} \approx 53.9\)</span> m/s</li>
+<li><span class="arithmatex">\(\theta = \tan^{-1}(-20/50) \approx -21.8°\)</span> (below the positive x-axis, or 21.8° south of east)</li>
+</ul>
 <p>Vector subtraction is particularly important in physics for calculating <strong>changes</strong> in vector quantities, such as change in velocity (which gives acceleration) or change in position (which gives displacement).</p>
 <h2 id="the-dot-product-multiplying-vectors-for-scalars">The Dot Product: Multiplying Vectors for Scalars</h2>
 <p>There are two distinct ways to "multiply" vectors, each serving different purposes in physics. The <strong>dot product</strong> (also called <strong>scalar product</strong>) takes two vectors and produces a scalar result.</p>
 <p><strong>Definition:</strong></p>
-<p><strong>A</strong> · <strong>B</strong> = <em>A</em> <em>B</em> cos(θ)</p>
-<p>where <em>A</em> and <em>B</em> are the magnitudes and θ is the angle between the vectors.</p>
+<div class="arithmatex">\[\vec{A} \cdot \vec{B} = AB\cos(\theta)\]</div>
+<p>where <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> are the magnitudes and <span class="arithmatex">\(\theta\)</span> is the angle between the vectors.</p>
 <p><strong>Component formula:</strong></p>
-<p>If <strong>A</strong> = (<em>A</em>ₓ, <em>A</em>ᵧ, <em>A</em>ᵧ) and <strong>B</strong> = (<em>B</em>ₓ, <em>B</em>ᵧ, <em>B</em>ᵧ), then:</p>
-<p><strong>A</strong> · <strong>B</strong> = <em>A</em>ₓ<em>B</em>ₓ + <em>A</em>ᵧ<em>B</em>ᵧ + <em>A</em>ᵧ<em>B</em>ᵧ</p>
-<p><strong>Key properties:</strong>
-- The result is a <strong>scalar</strong> (just a number, no direction)
-- <strong>A</strong> · <strong>B</strong> = <strong>B</strong> · <strong>A</strong> (commutative)
-- If vectors are perpendicular (θ = 90°), then <strong>A</strong> · <strong>B</strong> = 0
-- If vectors are parallel (θ = 0°), then <strong>A</strong> · <strong>B</strong> = <em>A</em> <em>B</em></p>
+<p>If <span class="arithmatex">\(\vec{A} = (A_x, A_y, A_z)\)</span> and <span class="arithmatex">\(\vec{B} = (B_x, B_y, B_z)\)</span>, then:</p>
+<div class="arithmatex">\[\vec{A} \cdot \vec{B} = A_x B_x + A_y B_y + A_z B_z\]</div>
+<p><strong>Key properties:</strong></p>
+<ul>
+<li>The result is a <strong>scalar</strong> (just a number, no direction)</li>
+<li><span class="arithmatex">\(\vec{A} \cdot \vec{B} = \vec{B} \cdot \vec{A}\)</span> (commutative)</li>
+<li>If vectors are perpendicular (<span class="arithmatex">\(\theta = 90°\)</span>), then <span class="arithmatex">\(\vec{A} \cdot \vec{B} = 0\)</span></li>
+<li>If vectors are parallel (<span class="arithmatex">\(\theta = 0°\)</span>), then <span class="arithmatex">\(\vec{A} \cdot \vec{B} = AB\)</span></li>
+</ul>
 <p><strong>Physical applications:</strong></p>
 <ol>
-<li><strong>Work</strong> in physics is defined as <strong>W</strong> = <strong>F</strong> · <strong>d</strong> (force dot product with displacement)</li>
+<li><strong>Work</strong> in physics is defined as <span class="arithmatex">\(W = \vec{F} \cdot \vec{d}\)</span> (force dot product with displacement)</li>
 <li>The dot product tells us how much of one vector lies in the direction of another</li>
-<li>Used to find angles between vectors: θ = cos⁻¹(<strong>A</strong> · <strong>B</strong> / (<em>A</em> <em>B</em>))</li>
+<li>Used to find angles between vectors: <span class="arithmatex">\(\theta = \cos^{-1}\left(\frac{\vec{A} \cdot \vec{B}}{AB}\right)\)</span></li>
 </ol>
-<p><strong>Example:</strong> Find the dot product of <strong>A</strong> = (3, 4) and <strong>B</strong> = (1, 2):</p>
-<p><strong>A</strong> · <strong>B</strong> = (3)(1) + (4)(2) = 3 + 8 = 11</p>
+<p><strong>Example:</strong> Find the dot product of <span class="arithmatex">\(\vec{A} = (3, 4)\)</span> and <span class="arithmatex">\(\vec{B} = (1, 2)\)</span>:</p>
+<div class="arithmatex">\[\vec{A} \cdot \vec{B} = (3)(1) + (4)(2) = 3 + 8 = 11\]</div>
 <h2 id="the-cross-product-multiplying-vectors-for-vectors">The Cross Product: Multiplying Vectors for Vectors</h2>
 <p>The <strong>cross product</strong> (also called <strong>vector product</strong>) takes two vectors and produces another vector that is perpendicular to both original vectors.</p>
 <p><strong>Definition:</strong></p>
-<p><strong>A</strong> × <strong>B</strong> = (<em>A</em> <em>B</em> sin(θ)) <strong>n̂</strong></p>
-<p>where θ is the angle between <strong>A</strong> and <strong>B</strong>, and <strong>n̂</strong> is a unit vector perpendicular to both.</p>
-<p><strong>Magnitude:</strong> |<strong>A</strong> × <strong>B</strong>| = <em>A</em> <em>B</em> sin(θ)</p>
-<p><strong>Direction:</strong> Determined by the <strong>right-hand rule</strong>:
-1. Point fingers of your right hand along vector <strong>A</strong>
-2. Curl them toward vector <strong>B</strong>
-3. Your thumb points in the direction of <strong>A</strong> × <strong>B</strong></p>
+<div class="arithmatex">\[\vec{A} \times \vec{B} = (AB\sin\theta)\hat{n}\]</div>
+<p>where <span class="arithmatex">\(\theta\)</span> is the angle between <span class="arithmatex">\(\vec{A}\)</span> and <span class="arithmatex">\(\vec{B}\)</span>, and <span class="arithmatex">\(\hat{n}\)</span> is a unit vector perpendicular to both.</p>
+<p><strong>Magnitude:</strong> <span class="arithmatex">\(|\vec{A} \times \vec{B}| = AB\sin(\theta)\)</span></p>
+<p><strong>Direction:</strong> Determined by the <strong>right-hand rule</strong>:</p>
+<ol>
+<li>Point fingers of your right hand along vector <span class="arithmatex">\(\vec{A}\)</span></li>
+<li>Curl them toward vector <span class="arithmatex">\(\vec{B}\)</span></li>
+<li>Your thumb points in the direction of <span class="arithmatex">\(\vec{A} \times \vec{B}\)</span></li>
+</ol>
 <p><strong>Component formula</strong> (for 3D vectors):</p>
-<p>If <strong>A</strong> = (<em>A</em>ₓ, <em>A</em>ᵧ, <em>A</em>ᵧ) and <strong>B</strong> = (<em>B</em>ₓ, <em>B</em>ᵧ, <em>B</em>ᵧ), then:</p>
-<p><strong>A</strong> × <strong>B</strong> = (<em>A</em>ᵧ<em>B</em>ᵧ − <em>A</em>ᵧ<em>B</em>ᵧ, <em>A</em>ᵧ<em>B</em>ₓ − <em>A</em>ₓ<em>B</em>ᵧ, <em>A</em>ₓ<em>B</em>ᵧ − <em>A</em>ᵧ<em>B</em>ₓ)</p>
-<p><strong>Key properties:</strong>
-- The result is a <strong>vector</strong> perpendicular to both <strong>A</strong> and <strong>B</strong>
-- <strong>A</strong> × <strong>B</strong> = −(<strong>B</strong> × <strong>A</strong>) (NOT commutative!)
-- If vectors are parallel (θ = 0°), then <strong>A</strong> × <strong>B</strong> = <strong>0</strong>
-- If vectors are perpendicular (θ = 90°), then |<strong>A</strong> × <strong>B</strong>| = <em>A</em> <em>B</em></p>
+<p>If <span class="arithmatex">\(\vec{A} = (A_x, A_y, A_z)\)</span> and <span class="arithmatex">\(\vec{B} = (B_x, B_y, B_z)\)</span>, then:</p>
+<div class="arithmatex">\[\vec{A} \times \vec{B} = (A_y B_z - A_z B_y, A_z B_x - A_x B_z, A_x B_y - A_y B_x)\]</div>
+<p><strong>Key properties:</strong></p>
+<ul>
+<li>The result is a <strong>vector</strong> perpendicular to both <span class="arithmatex">\(\vec{A}\)</span> and <span class="arithmatex">\(\vec{B}\)</span></li>
+<li><span class="arithmatex">\(\vec{A} \times \vec{B} = -(\vec{B} \times \vec{A})\)</span> (NOT commutative!)</li>
+<li>If vectors are parallel (<span class="arithmatex">\(\theta = 0°\)</span>), then <span class="arithmatex">\(\vec{A} \times \vec{B} = \vec{0}\)</span></li>
+<li>If vectors are perpendicular (<span class="arithmatex">\(\theta = 90°\)</span>), then <span class="arithmatex">\(|\vec{A} \times \vec{B}| = AB\)</span></li>
+</ul>
 <p><strong>Physical applications:</strong></p>
 <ol>
-<li><strong>Torque</strong> is defined as <strong>τ</strong> = <strong>r</strong> × <strong>F</strong> (position vector cross force)</li>
-<li><strong>Angular momentum</strong> is <strong>L</strong> = <strong>r</strong> × <strong>p</strong> (position cross linear momentum)</li>
+<li><strong>Torque</strong> is defined as <span class="arithmatex">\(\vec{\tau} = \vec{r} \times \vec{F}\)</span> (position vector cross force)</li>
+<li><strong>Angular momentum</strong> is <span class="arithmatex">\(\vec{L} = \vec{r} \times \vec{p}\)</span> (position cross linear momentum)</li>
 <li>The cross product magnitude equals the area of the parallelogram formed by the two vectors</li>
-<li><strong>Magnetic force</strong> on a moving charge: <strong>F</strong> = <em>q</em> <strong>v</strong> × <strong>B</strong></li>
+<li><strong>Magnetic force</strong> on a moving charge: <span class="arithmatex">\(\vec{F} = q\vec{v} \times \vec{B}\)</span></li>
 </ol>
 <p>The cross product becomes especially important when we study rotational motion, torque, and angular momentum later in the course.</p>
 <h2 id="proportional-reasoning-understanding-relationships">Proportional Reasoning: Understanding Relationships</h2>
 <p>Much of physics involves understanding how quantities relate to one another. <strong>Proportional reasoning</strong> helps us predict how changing one variable affects another without always requiring detailed calculations.</p>
-<p><strong>Direct proportionality:</strong> If <em>y</em> is directly proportional to <em>x</em>, we write <em>y</em> ∝ <em>x</em>, meaning:
-- When <em>x</em> doubles, <em>y</em> doubles
-- When <em>x</em> triples, <em>y</em> triples
-- Mathematically: <em>y</em> = <em>k</em> <em>x</em> (where <em>k</em> is a constant)</p>
-<p><strong>Example:</strong> Distance traveled at constant speed is directly proportional to time: <em>d</em> ∝ <em>t</em>. If you travel 60 miles in 1 hour, you'll travel 120 miles in 2 hours.</p>
-<p><strong>Inverse proportionality:</strong> If <em>y</em> is inversely proportional to <em>x</em>, we write <em>y</em> ∝ 1/<em>x</em>, meaning:
-- When <em>x</em> doubles, <em>y</em> is halved
-- When <em>x</em> triples, <em>y</em> becomes one-third
-- Mathematically: <em>y</em> = <em>k</em> / <em>x</em></p>
-<p><strong>Example:</strong> Gravitational force between two objects is inversely proportional to the square of their distance: <em>F</em> ∝ 1/<em>r</em>². If you double the distance, force becomes one-fourth as strong.</p>
+<p><strong>Direct proportionality:</strong> If <span class="arithmatex">\(y\)</span> is directly proportional to <span class="arithmatex">\(x\)</span>, we write <span class="arithmatex">\(y \propto x\)</span>, meaning:</p>
+<ul>
+<li>When <span class="arithmatex">\(x\)</span> doubles, <span class="arithmatex">\(y\)</span> doubles</li>
+<li>When <span class="arithmatex">\(x\)</span> triples, <span class="arithmatex">\(y\)</span> triples</li>
+<li>Mathematically: <span class="arithmatex">\(y = kx\)</span> (where <span class="arithmatex">\(k\)</span> is a constant)</li>
+</ul>
+<p><strong>Example:</strong> Distance traveled at constant speed is directly proportional to time: <span class="arithmatex">\(d \propto t\)</span>. If you travel 60 miles in 1 hour, you'll travel 120 miles in 2 hours.</p>
+<p><strong>Inverse proportionality:</strong> If <span class="arithmatex">\(y\)</span> is inversely proportional to <span class="arithmatex">\(x\)</span>, we write <span class="arithmatex">\(y \propto \frac{1}{x}\)</span>, meaning:</p>
+<ul>
+<li>When <span class="arithmatex">\(x\)</span> doubles, <span class="arithmatex">\(y\)</span> is halved</li>
+<li>When <span class="arithmatex">\(x\)</span> triples, <span class="arithmatex">\(y\)</span> becomes one-third</li>
+<li>Mathematically: <span class="arithmatex">\(y = \frac{k}{x}\)</span></li>
+</ul>
+<p><strong>Example:</strong> Gravitational force between two objects is inversely proportional to the square of their distance: <span class="arithmatex">\(F \propto \frac{1}{r^2}\)</span>. If you double the distance, force becomes one-fourth as strong.</p>
 <p><strong>More complex proportions:</strong></p>
 <ul>
-<li><em>y</em> ∝ <em>x</em>²: When <em>x</em> doubles, <em>y</em> becomes four times larger (quadruples)</li>
-<li><em>y</em> ∝ √<em>x</em>: When <em>x</em> quadruples, <em>y</em> doubles</li>
-<li><em>y</em> ∝ 1/<em>x</em>²: When <em>x</em> doubles, <em>y</em> becomes one-fourth as large</li>
+<li><span class="arithmatex">\(y \propto x^2\)</span>: When <span class="arithmatex">\(x\)</span> doubles, <span class="arithmatex">\(y\)</span> becomes four times larger (quadruples)</li>
+<li><span class="arithmatex">\(y \propto \sqrt{x}\)</span>: When <span class="arithmatex">\(x\)</span> quadruples, <span class="arithmatex">\(y\)</span> doubles</li>
+<li><span class="arithmatex">\(y \propto \frac{1}{x^2}\)</span>: When <span class="arithmatex">\(x\)</span> doubles, <span class="arithmatex">\(y\)</span> becomes one-fourth as large</li>
 </ul>
 <p><strong>Why is this useful?</strong></p>
-<p>Proportional reasoning allows quick predictions without plugging numbers into equations. If you know kinetic energy is proportional to the square of velocity (<em>KE</em> ∝ <em>v</em>²), you immediately know that doubling your car's speed quadruples the kinetic energy—and therefore quadruples the stopping distance!</p>
+<p>Proportional reasoning allows quick predictions without plugging numbers into equations. If you know kinetic energy is proportional to the square of velocity (<span class="arithmatex">\(KE \propto v^2\)</span>), you immediately know that doubling your car's speed quadruples the kinetic energy—and therefore quadruples the stopping distance!</p>
 <h2 id="graphical-analysis-reading-the-story-in-data">Graphical Analysis: Reading the Story in Data</h2>
 <p>Graphs are powerful tools for visualizing relationships between variables and extracting quantitative information from experimental data. <strong>Graphical analysis</strong> involves creating, interpreting, and extracting meaning from graphs—a critical skill for both laboratory work and problem-solving.</p>
 <p><strong>Key graph elements:</strong></p>
@@ -2968,34 +2998,34 @@ Resultant Direction:
 </ul>
 <p><strong>Types of relationships visible in graphs:</strong></p>
 <ol>
-<li><strong>Linear:</strong> Straight line, equation <em>y</em> = <em>mx</em> + <em>b</em></li>
-<li>Slope <em>m</em> tells you rate of change</li>
+<li><strong>Linear:</strong> Straight line, equation <span class="arithmatex">\(y = mx + b\)</span></li>
+<li>Slope <span class="arithmatex">\(m\)</span> tells you rate of change</li>
 <li>
-<p>Intercept <em>b</em> tells you starting value</p>
+<p>Intercept <span class="arithmatex">\(b\)</span> tells you starting value</p>
 </li>
 <li>
-<p><strong>Quadratic:</strong> Parabola, equation <em>y</em> = <em>ax</em>²</p>
+<p><strong>Quadratic:</strong> Parabola, equation <span class="arithmatex">\(y = ax^2\)</span></p>
 </li>
 <li>Characteristic curved shape</li>
 <li>
 <p>Common in kinematics (position vs. time for accelerated motion)</p>
 </li>
 <li>
-<p><strong>Inverse:</strong> Hyperbola, equation <em>y</em> = <em>k</em>/<em>x</em></p>
+<p><strong>Inverse:</strong> Hyperbola, equation <span class="arithmatex">\(y = \frac{k}{x}\)</span></p>
 </li>
-<li>Approaches zero as <em>x</em> increases</li>
+<li>Approaches zero as <span class="arithmatex">\(x\)</span> increases</li>
 <li>
 <p>Common in force laws and energy relationships</p>
 </li>
 <li>
-<p><strong>Exponential:</strong> Rapid increase or decrease, equation <em>y</em> = <em>a</em>e^(<em>bx</em>)</p>
+<p><strong>Exponential:</strong> Rapid increase or decrease, equation <span class="arithmatex">\(y = ae^{bx}\)</span></p>
 </li>
 <li>Common in radioactive decay and growth processes</li>
 </ol>
 <p><strong>Extracting information from graphs:</strong></p>
-<p><strong>Finding slope:</strong> For a linear graph, slope = (change in <em>y</em>) / (change in <em>x</em>) = Δ<em>y</em> / Δ<em>x</em></p>
+<p><strong>Finding slope:</strong> For a linear graph, slope = (change in <span class="arithmatex">\(y\)</span>) / (change in <span class="arithmatex">\(x\)</span>) = <span class="arithmatex">\(\frac{\Delta y}{\Delta x}\)</span></p>
 <p>Choose two points far apart on the best-fit line (NOT necessarily data points):</p>
-<p><em>m</em> = (<em>y</em>₂ − <em>y</em>₁) / (<em>x</em>₂ − <em>x</em>₁)</p>
+<div class="arithmatex">\[m = \frac{y_2 - y_1}{x_2 - x_1}\]</div>
 <p><strong>Units of slope:</strong> Combine the units of <em>y</em> and <em>x</em>. For example, if <em>y</em> is distance (m) and <em>x</em> is time (s), slope has units of m/s (velocity).</p>
 <p><strong>Area under a curve:</strong> For many physics graphs, the area between the curve and the x-axis has physical meaning:
 - Area under velocity-time graph = displacement
@@ -3107,8 +3137,8 @@ Resultant Direction:
 </details>
 <p><strong>Linearization:</strong> Sometimes we can transform a non-linear relationship into a linear one by changing what we plot. For example:</p>
 <ul>
-<li>If <em>y</em> ∝ <em>x</em>², plot <em>y</em> vs. <em>x</em>² to get a straight line</li>
-<li>If <em>y</em> ∝ 1/<em>x</em>, plot <em>y</em> vs. 1/<em>x</em> to get a straight line</li>
+<li>If <span class="arithmatex">\(y \propto x^2\)</span>, plot <span class="arithmatex">\(y\)</span> vs. <span class="arithmatex">\(x^2\)</span> to get a straight line</li>
+<li>If <span class="arithmatex">\(y \propto \frac{1}{x}\)</span>, plot <span class="arithmatex">\(y\)</span> vs. <span class="arithmatex">\(\frac{1}{x}\)</span> to get a straight line</li>
 </ul>
 <p>This technique makes it easier to determine constants and verify theoretical relationships.</p>
 <h2 id="bringing-it-all-together-problem-solving-framework">Bringing It All Together: Problem-Solving Framework</h2>

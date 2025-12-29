@@ -1528,6 +1528,8 @@
       
         
       
+        
+      
     
     
     
@@ -2630,12 +2632,12 @@ Canvas background: Light gray with measurement grid
 </details>
 <h2 id="newtons-second-law-force-and-acceleration">Newton's Second Law: Force and Acceleration</h2>
 <p>Now we get to the most important equation in all of classical mechanics:</p>
-<p><strong>F_net = ma</strong></p>
+<div class="arithmatex">\[\vec{F}_{\text{net}} = m\vec{a}\]</div>
 <p>This is Newton's Second Law. It tells us exactly how net force relates to acceleration. Let's unpack what this means:</p>
 <ul>
-<li><strong>F_net</strong> is the net force (vector sum of all forces)</li>
-<li><strong>m</strong> is the mass of the object</li>
-<li><strong>a</strong> is the acceleration that results</li>
+<li><span class="arithmatex">\(\vec{F}_{\text{net}}\)</span> is the net force (vector sum of all forces)</li>
+<li><span class="arithmatex">\(m\)</span> is the mass of the object</li>
+<li><span class="arithmatex">\(\vec{a}\)</span> is the acceleration that results</li>
 </ul>
 <p>The equation reveals three crucial relationships:</p>
 <ol>
@@ -2645,18 +2647,22 @@ Canvas background: Light gray with measurement grid
 </ol>
 <h3 id="working-with-newtons-second-law">Working with Newton's Second Law</h3>
 <p>Let's see this in action. A 50 kg student stands on a skateboard. You push with a force of 100 N. What's the acceleration?</p>
-<p>Using F = ma:
-- F_net = 100 N
-- m = 50 kg
-- a = F/m = 100 N / 50 kg = 2 m/s²</p>
+<p>Using <span class="arithmatex">\(F = ma\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\(F_{\text{net}} = 100\)</span> N</li>
+<li><span class="arithmatex">\(m = 50\)</span> kg</li>
+<li><span class="arithmatex">\(a = \frac{F}{m} = \frac{100 \text{ N}}{50 \text{ kg}} = 2\)</span> m/s²</li>
+</ul>
 <p>The skateboard accelerates at 2 m/s² in the direction you push. Every second, the velocity increases by 2 m/s.</p>
-<p>But what if friction opposes your push with 30 N? Then:
-- F_net = 100 N - 30 N = 70 N
-- a = 70 N / 50 kg = 1.4 m/s²</p>
+<p>But what if friction opposes your push with 30 N? Then:</p>
+<ul>
+<li><span class="arithmatex">\(F_{\text{net}} = 100 \text{ N} - 30 \text{ N} = 70\)</span> N</li>
+<li><span class="arithmatex">\(a = \frac{70 \text{ N}}{50 \text{ kg}} = 1.4\)</span> m/s²</li>
+</ul>
 <p>The acceleration is smaller because the net force is smaller.</p>
 <h3 id="the-unit-of-force-the-newton">The Unit of Force: The Newton</h3>
 <p>Newton's Second Law defines the unit of force. One <strong>newton</strong> (N) is the force needed to accelerate a 1 kg mass at 1 m/s². In other words:</p>
-<p>1 N = 1 kg⋅m/s²</p>
+<div class="arithmatex">\[1 \text{ N} = 1 \text{ kg} \cdot \text{m/s}^2\]</div>
 <p>To get a feel for this: a typical apple weighs about 1 N. When you hold it, you're exerting an upward force of 1 N to balance gravity's downward pull.</p>
 <h3 id="problem-solving-strategy">Problem-Solving Strategy</h3>
 <p>When solving Newton's Second Law problems, follow these steps:</p>
@@ -2975,31 +2981,35 @@ Size: 1000px × 800px
 </details>
 <h2 id="equilibrium-when-forces-balance">Equilibrium: When Forces Balance</h2>
 <p>An object is in <strong>equilibrium</strong> when the net force on it is zero. This doesn't mean no forces act on it—it means all forces balance out. From Newton's Second Law:</p>
-<p>If F_net = 0, then a = 0</p>
+<p>If <span class="arithmatex">\(F_{\text{net}} = 0\)</span>, then <span class="arithmatex">\(a = 0\)</span></p>
 <p>Zero acceleration means the object either stays at rest or continues moving at constant velocity. We distinguish two types:</p>
 <h3 id="static-equilibrium">Static Equilibrium</h3>
 <p><strong>Static equilibrium</strong> occurs when an object is at rest and remains at rest. All forces cancel perfectly.</p>
-<p>Example: A book sitting on a table
-- Weight (W = mg) pulls down
-- Normal force (N) pushes up
-- N = W, so F_net = 0
-- The book doesn't accelerate vertically</p>
+<p>Example: A book sitting on a table</p>
+<ul>
+<li>Weight (<span class="arithmatex">\(W = mg\)</span>) pulls down</li>
+<li>Normal force (<span class="arithmatex">\(N\)</span>) pushes up</li>
+<li><span class="arithmatex">\(N = W\)</span>, so <span class="arithmatex">\(F_{\text{net}} = 0\)</span></li>
+<li>The book doesn't accelerate vertically</li>
+</ul>
 <h3 id="dynamic-equilibrium">Dynamic Equilibrium</h3>
 <p><strong>Dynamic equilibrium</strong> occurs when an object moves at constant velocity (no acceleration). All forces still cancel.</p>
-<p>Example: A car cruising at constant 60 mph on a highway
-- Engine force pushes forward
-- Air resistance and friction push backward
-- Forward and backward forces equal, so F_net = 0
-- Velocity constant (no acceleration)</p>
+<p>Example: A car cruising at constant 60 mph on a highway</p>
+<ul>
+<li>Engine force pushes forward</li>
+<li>Air resistance and friction push backward</li>
+<li>Forward and backward forces equal, so <span class="arithmatex">\(F_{\text{net}} = 0\)</span></li>
+<li>Velocity constant (no acceleration)</li>
+</ul>
 <h3 id="conditions-for-equilibrium">Conditions for Equilibrium</h3>
 <p>For an object to be in equilibrium:</p>
 <ol>
 <li><strong>Sum of all forces in x-direction = 0</strong></li>
 <li><strong>Sum of all forces in y-direction = 0</strong></li>
 </ol>
-<p>In equation form:
-- ΣF_x = 0
-- ΣF_y = 0</p>
+<p>In equation form:</p>
+<div class="arithmatex">\[\sum F_x = 0$$
+$$\sum F_y = 0\]</div>
 <p>You'll use these conditions extensively when solving statics problems.</p>
 <h4 id="diagram-equilibrium-classification-workflow">Diagram: Equilibrium Classification Workflow</h4>
 <iframe src="../../sims/equilibrium-workflow/main.html" height="552px" width="100%" scrolling="no"></iframe>
@@ -3060,11 +3070,13 @@ Size: 1000px × 800px
 </details>
 <h2 id="weight-a-special-force">Weight: A Special Force</h2>
 <p>One of the most important forces you'll encounter is <strong>weight</strong>—the gravitational force that Earth exerts on objects. Here's the key equation:</p>
-<p><strong>W = mg</strong></p>
-<p>Where:
-- W is weight (measured in newtons, N)
-- m is mass (measured in kilograms, kg)
-- g is the acceleration due to gravity (9.8 m/s² on Earth's surface)</p>
+<div class="arithmatex">\[W = mg\]</div>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\(W\)</span> is weight (measured in newtons, N)</li>
+<li><span class="arithmatex">\(m\)</span> is mass (measured in kilograms, kg)</li>
+<li><span class="arithmatex">\(g\)</span> is the acceleration due to gravity (9.8 m/s² on Earth's surface)</li>
+</ul>
 <h3 id="mass-vs-weight-a-critical-distinction">Mass vs Weight: A Critical Distinction</h3>
 <p>Students often confuse mass and weight, but they're fundamentally different:</p>
 <table>
@@ -3103,10 +3115,12 @@ Size: 1000px × 800px
 </tr>
 </tbody>
 </table>
-<p>Here's a mind-bending example: An astronaut with mass 70 kg has a weight of:
-- On Earth: W = (70 kg)(9.8 m/s²) = 686 N
-- On the Moon: W = (70 kg)(1.6 m/s²) = 112 N (Moon's gravity is weaker)
-- In deep space: W ≈ 0 N (no nearby gravitational source)</p>
+<p>Here's a mind-bending example: An astronaut with mass 70 kg has a weight of:</p>
+<ul>
+<li>On Earth: <span class="arithmatex">\(W = (70 \text{ kg})(9.8 \text{ m/s}^2) = 686\)</span> N</li>
+<li>On the Moon: <span class="arithmatex">\(W = (70 \text{ kg})(1.6 \text{ m/s}^2) = 112\)</span> N (Moon's gravity is weaker)</li>
+<li>In deep space: <span class="arithmatex">\(W \approx 0\)</span> N (no nearby gravitational source)</li>
+</ul>
 <p>But the mass stays 70 kg in all three locations! Mass is an intrinsic property; weight depends on the gravitational environment.</p>
 <h3 id="weight-and-apparent-weight">Weight and Apparent Weight</h3>
 <p>When you stand on a scale, it doesn't actually measure your weight directly. It measures the normal force it exerts on you. Normally these are equal, but not always.</p>
@@ -3197,23 +3211,29 @@ Earth:
 <li><strong>Symbol:</strong> Usually written as N or F_N</li>
 </ul>
 <h3 id="normal-force-in-different-situations">Normal Force in Different Situations</h3>
-<p><strong>On a horizontal surface:</strong>
-- Object at rest: N = mg (normal force equals weight)
-- Object pushed down: N = mg + F_push (normal force increases)
-- Object pulled up partially: N = mg - F_pull (normal force decreases)</p>
-<p><strong>On an inclined plane:</strong>
-- Normal force = mg cos(θ), where θ is the angle of incline
-- Normal force is less than weight (some of weight acts parallel to slope)
-- Steeper slope → smaller normal force</p>
-<p><strong>In an elevator:</strong>
-- Accelerating up: N = m(g + a) (normal force greater than weight)
-- Accelerating down: N = m(g - a) (normal force less than weight)
-- Free fall: N = 0 (no contact force)</p>
+<p><strong>On a horizontal surface:</strong></p>
+<ul>
+<li>Object at rest: <span class="arithmatex">\(N = mg\)</span> (normal force equals weight)</li>
+<li>Object pushed down: <span class="arithmatex">\(N = mg + F_{\text{push}}\)</span> (normal force increases)</li>
+<li>Object pulled up partially: <span class="arithmatex">\(N = mg - F_{\text{pull}}\)</span> (normal force decreases)</li>
+</ul>
+<p><strong>On an inclined plane:</strong></p>
+<ul>
+<li>Normal force <span class="arithmatex">\(= mg\cos(\theta)\)</span>, where <span class="arithmatex">\(\theta\)</span> is the angle of incline</li>
+<li>Normal force is less than weight (some of weight acts parallel to slope)</li>
+<li>Steeper slope → smaller normal force</li>
+</ul>
+<p><strong>In an elevator:</strong></p>
+<ul>
+<li>Accelerating up: <span class="arithmatex">\(N = m(g + a)\)</span> (normal force greater than weight)</li>
+<li>Accelerating down: <span class="arithmatex">\(N = m(g - a)\)</span> (normal force less than weight)</li>
+<li>Free fall: <span class="arithmatex">\(N = 0\)</span> (no contact force)</li>
+</ul>
 <h3 id="why-normal-force-matters">Why Normal Force Matters</h3>
 <p>The normal force is crucial because:</p>
 <ol>
 <li>It's one of the forces you'll encounter in nearly every problem</li>
-<li>Friction depends on normal force (f = μN, which you'll learn in the next chapter)</li>
+<li>Friction depends on normal force (<span class="arithmatex">\(f = \mu N\)</span>, which you'll learn in the next chapter)</li>
 <li>It's not always equal to weight—you must calculate it from equilibrium conditions</li>
 <li>It can do no work (always perpendicular to motion)</li>
 </ol>

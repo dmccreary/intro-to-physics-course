@@ -1528,6 +1528,8 @@
       
         
       
+        
+      
     
     
     
@@ -2192,9 +2194,9 @@
 </tr>
 </tbody>
 </table>
-<p>The Greek letter delta (Δ) means "change in," so Δx represents the change in position. Mathematically, displacement is calculated as:</p>
-<p><strong>Δx = x_final - x_initial</strong></p>
-<p>where x_final is your ending position and x_initial is your starting position.</p>
+<p>The Greek letter delta (Δ) means "change in," so <span class="arithmatex">\(\Delta x\)</span> represents the change in position. Mathematically, displacement is calculated as:</p>
+<div class="arithmatex">\[\Delta x = x_{\text{final}} - x_{\text{initial}}\]</div>
+<p>where <span class="arithmatex">\(x_{\text{final}}\)</span> is your ending position and <span class="arithmatex">\(x_{\text{initial}}\)</span> is your starting position.</p>
 <h4 id="diagram-distance-vs-displacement-interactive-visualization">Diagram: Distance vs Displacement Interactive Visualization</h4>
 <iframe src="../../sims/distance-displacement/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
@@ -2242,12 +2244,12 @@
 <p>Now that we can describe where something moves, let's describe how fast it moves. Just as we have two ways to describe position change, we have two ways to describe how quickly that change happens: speed and velocity.</p>
 <p><strong>Speed</strong> tells us how fast an object is moving but doesn't specify direction. It's the rate at which distance is covered over time. When your car's speedometer reads 60 km/h, that's speed—it doesn't tell you whether you're going north, south, or in circles.</p>
 <p><strong>Average speed</strong> is calculated as:</p>
-<p><strong>Average speed = Total distance / Total time</strong></p>
+<div class="arithmatex">\[\text{Average speed} = \frac{\text{Total distance}}{\text{Total time}}\]</div>
 <p><strong>Velocity</strong>, like displacement, includes direction. It's the rate of change of position (displacement) with respect to time. Velocity is a vector quantity that tells both how fast and in which direction an object is moving.</p>
 <p><strong>Average velocity</strong> is calculated as:</p>
-<p><strong>Average velocity = Displacement / Time interval</strong></p>
-<p>or mathematically: <strong>v_avg = Δx / Δt</strong></p>
-<p>where Δt represents the change in time.</p>
+<div class="arithmatex">\[\text{Average velocity} = \frac{\text{Displacement}}{\text{Time interval}}\]</div>
+<p>or mathematically: <span class="arithmatex">\(v_{\text{avg}} = \frac{\Delta x}{\Delta t}\)</span></p>
+<p>where <span class="arithmatex">\(\Delta t\)</span> represents the change in time.</p>
 <p>The distinction between speed and velocity becomes important when direction changes. Imagine you drive around a circular track at a constant speed of 100 km/h. Your speed remains 100 km/h throughout, but your velocity constantly changes because your direction changes. At each moment, your velocity vector points in a different direction.</p>
 <p>Here are some key points about speed and velocity:</p>
 <ul>
@@ -2269,7 +2271,7 @@
 <p>This example illustrates an important principle: you can have a high average speed but zero average velocity if you return to your starting point.</p>
 <h2 id="instantaneous-velocity-motion-at-a-single-moment">Instantaneous Velocity: Motion at a Single Moment</h2>
 <p>Average velocity tells us about motion over a time interval, but what about velocity at a specific instant? When you glance at your car's speedometer, you're reading instantaneous speed—your speed at that exact moment, not averaged over your trip.</p>
-<p><strong>Instantaneous velocity</strong> is the velocity of an object at a specific moment in time. Conceptually, it's the average velocity over an infinitesimally small time interval. Mathematically, if you've taken calculus, instantaneous velocity is the derivative of position with respect to time: <strong>v = dx/dt</strong>.</p>
+<p><strong>Instantaneous velocity</strong> is the velocity of an object at a specific moment in time. Conceptually, it's the average velocity over an infinitesimally small time interval. Mathematically, if you've taken calculus, instantaneous velocity is the derivative of position with respect to time: <span class="arithmatex">\(v = \frac{dx}{dt}\)</span>.</p>
 <p>For those without calculus background, think of it this way: to find instantaneous velocity at time t, calculate the average velocity over a very small time interval centered on t. The smaller the time interval, the closer you get to the true instantaneous velocity. It's like taking a snapshot of motion—freezing time and asking "how fast and in what direction right now?"</p>
 <p>On a position-time graph (which we'll explore in detail later), the instantaneous velocity at any point is the slope of the tangent line to the curve at that point. A steeper slope indicates higher velocity. We can determine several things from the slope:</p>
 <ul>
@@ -2344,8 +2346,8 @@
 <h2 id="acceleration-the-rate-of-change-of-velocity">Acceleration: The Rate of Change of Velocity</h2>
 <p>So far, we've described position (where something is) and velocity (how fast and in what direction it's moving). But motion isn't always constant—cars speed up and slow down, balls thrown upward slow as they rise, then speed up as they fall. <strong>Acceleration</strong> describes how velocity changes over time.</p>
 <p>Acceleration is the rate of change of velocity with respect to time. Like velocity, acceleration is a vector quantity—it has both magnitude and direction. The average acceleration is calculated as:</p>
-<p><strong>a_avg = Δv / Δt = (v_final - v_initial) / (t_final - t_initial)</strong></p>
-<p><strong>Instantaneous acceleration</strong> is the acceleration at a specific moment, which is the derivative of velocity with respect to time (or the second derivative of position): <strong>a = dv/dt = d²x/dt²</strong>.</p>
+<div class="arithmatex">\[a_{\text{avg}} = \frac{\Delta v}{\Delta t} = \frac{v_{\text{final}} - v_{\text{initial}}}{t_{\text{final}} - t_{\text{initial}}}\]</div>
+<p><strong>Instantaneous acceleration</strong> is the acceleration at a specific moment, which is the derivative of velocity with respect to time (or the second derivative of position): <span class="arithmatex">\(a = \frac{dv}{dt} = \frac{d^2x}{dt^2}\)</span>.</p>
 <p>The SI unit for acceleration is meters per second squared (m/s²), which can be read as "meters per second, per second." This unit tells us how much the velocity changes (in m/s) each second. For example, an acceleration of 5 m/s² means the velocity increases by 5 m/s every second.</p>
 <p>Here's a crucial point that often confuses students: <strong>acceleration can be positive or negative, regardless of whether the object is speeding up or slowing down</strong>. The sign of acceleration tells you its direction, not whether the object is gaining or losing speed. Let's clarify:</p>
 <ul>
@@ -2391,12 +2393,14 @@
 </table>
 <p>The term <strong>deceleration</strong> is sometimes used to describe slowing down, but it's not a technical physics term. In physics, we simply say an object has acceleration opposite to its velocity direction.</p>
 <p><strong>Example:</strong> A car traveling at 20 m/s to the right (positive direction) applies brakes and comes to a stop in 4 seconds. Calculate the acceleration.</p>
-<p><strong>Solution:</strong>
-- v_initial = +20 m/s
-- v_final = 0 m/s
-- Δt = 4 s
-- a = (0 - 20) / 4 = -5 m/s²</p>
-<p>The acceleration is -5 m/s², meaning the car accelerates in the negative direction (opposite its motion), causing it to slow down. Each second, the velocity decreases by 5 m/s: 20 m/s → 15 m/s → 10 m/s → 5 m/s → 0 m/s.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li><span class="arithmatex">\(v_{\text{initial}} = +20\)</span> m/s</li>
+<li><span class="arithmatex">\(v_{\text{final}} = 0\)</span> m/s</li>
+<li><span class="arithmatex">\(\Delta t = 4\)</span> s</li>
+<li><span class="arithmatex">\(a = \frac{0 - 20}{4} = -5\)</span> m/s²</li>
+</ul>
+<p>The acceleration is <span class="arithmatex">\(-5\)</span> m/s², meaning the car accelerates in the negative direction (opposite its motion), causing it to slow down. Each second, the velocity decreases by 5 m/s: 20 m/s → 15 m/s → 10 m/s → 5 m/s → 0 m/s.</p>
 <h2 id="types-of-linear-motion">Types of Linear Motion</h2>
 <p>Now that we've defined the fundamental quantities—position, velocity, and acceleration—let's examine different categories of one-dimensional motion. Understanding these categories will help you quickly identify which equations and analysis techniques to apply.</p>
 <p><strong>Linear motion</strong> (also called rectilinear motion) is motion along a straight line. This is the simplest type of motion to analyze because we only need to track one spatial dimension. All motion can be described using just one coordinate axis, with positive and negative values indicating direction. Examples include a train on a straight track, an elevator moving up and down, or a ball rolling across a flat floor.</p>
@@ -2416,8 +2420,8 @@
 <li>A satellite in orbit (though the orbit is circular, each small segment approximates uniform motion)</li>
 </ul>
 <p>The equation describing uniform motion is simple:</p>
-<p><strong>x = x₀ + vt</strong></p>
-<p>where x₀ is the initial position, v is the constant velocity, and t is time.</p>
+<div class="arithmatex">\[x = x_0 + vt\]</div>
+<p>where <span class="arithmatex">\(x_0\)</span> is the initial position, <span class="arithmatex">\(v\)</span> is the constant velocity, and <span class="arithmatex">\(t\)</span> is time.</p>
 <h3 id="uniformly-accelerated-motion">Uniformly Accelerated Motion</h3>
 <p><strong>Uniformly accelerated motion</strong> (also called constant acceleration motion) occurs when an object's velocity changes at a constant rate. In this type of motion:</p>
 <ul>
@@ -2913,22 +2917,30 @@ a-t graph: Positive rectangle, then zero, then negative rectangle</p>
 <li><strong>t</strong> = time elapsed</li>
 </ul>
 <p>Here are the four kinematic equations:</p>
-<p><strong>1. v = v₀ + at</strong>
-   - Relates: velocity, initial velocity, acceleration, time
-   - Missing: position
-   - Use when: You know acceleration and want to find velocity at a certain time</p>
-<p><strong>2. x = x₀ + v₀t + ½at²</strong>
-   - Relates: position, initial position, initial velocity, acceleration, time
-   - Missing: final velocity
-   - Use when: You want to find position at a certain time</p>
-<p><strong>3. v² = v₀² + 2a(x - x₀)</strong>
-   - Relates: velocities, acceleration, displacement
-   - Missing: time
-   - Use when: Time is unknown or irrelevant</p>
-<p><strong>4. x = x₀ + ½(v₀ + v)t</strong>
-   - Relates: positions, velocities, time
-   - Missing: acceleration
-   - Use when: You know both velocities and want position or time</p>
+<p><strong>1.</strong> <span class="arithmatex">\(v = v_0 + at\)</span></p>
+<ul>
+<li>Relates: velocity, initial velocity, acceleration, time</li>
+<li>Missing: position</li>
+<li>Use when: You know acceleration and want to find velocity at a certain time</li>
+</ul>
+<p><strong>2.</strong> <span class="arithmatex">\(x = x_0 + v_0 t + \frac{1}{2}at^2\)</span></p>
+<ul>
+<li>Relates: position, initial position, initial velocity, acceleration, time</li>
+<li>Missing: final velocity</li>
+<li>Use when: You want to find position at a certain time</li>
+</ul>
+<p><strong>3.</strong> <span class="arithmatex">\(v^2 = v_0^2 + 2a(x - x_0)\)</span></p>
+<ul>
+<li>Relates: velocities, acceleration, displacement</li>
+<li>Missing: time</li>
+<li>Use when: Time is unknown or irrelevant</li>
+</ul>
+<p><strong>4.</strong> <span class="arithmatex">\(x = x_0 + \frac{1}{2}(v_0 + v)t\)</span></p>
+<ul>
+<li>Relates: positions, velocities, time</li>
+<li>Missing: acceleration</li>
+<li>Use when: You know both velocities and want position or time</li>
+</ul>
 <p><strong>Important notes:</strong></p>
 <ul>
 <li>These equations ONLY apply when acceleration is constant</li>
@@ -2948,36 +2960,36 @@ a-t graph: Positive rectangle, then zero, then negative rectangle</p>
 </ol>
 <p>Let's work through some examples:</p>
 <p><strong>Example 1:</strong> A car accelerates from rest at 3.0 m/s² for 5.0 seconds. How fast is it going, and how far has it traveled?</p>
-<p><strong>Solution:</strong>
-Given: v₀ = 0 m/s, a = 3.0 m/s², t = 5.0 s, x₀ = 0 m (assume starting at origin)
-Find: v and x</p>
-<p>For velocity, use equation 1:
-v = v₀ + at = 0 + (3.0)(5.0) = 15 m/s</p>
-<p>For position, use equation 2:
-x = x₀ + v₀t + ½at² = 0 + 0 + ½(3.0)(5.0)² = ½(3.0)(25) = 37.5 m</p>
+<p><strong>Solution:</strong></p>
+<p>Given: <span class="arithmatex">\(v_0 = 0\)</span> m/s, <span class="arithmatex">\(a = 3.0\)</span> m/s², <span class="arithmatex">\(t = 5.0\)</span> s, <span class="arithmatex">\(x_0 = 0\)</span> m (assume starting at origin)</p>
+<p>Find: <span class="arithmatex">\(v\)</span> and <span class="arithmatex">\(x\)</span></p>
+<p>For velocity, use equation 1:</p>
+<div class="arithmatex">\[v = v_0 + at = 0 + (3.0)(5.0) = 15 \text{ m/s}\]</div>
+<p>For position, use equation 2:</p>
+<div class="arithmatex">\[x = x_0 + v_0 t + \frac{1}{2}at^2 = 0 + 0 + \frac{1}{2}(3.0)(5.0)^2 = \frac{1}{2}(3.0)(25) = 37.5 \text{ m}\]</div>
 <p><strong>Example 2:</strong> A plane needs to reach 80 m/s to take off and has a runway 1200 m long. What minimum acceleration is required?</p>
-<p><strong>Solution:</strong>
-Given: v₀ = 0 m/s, v = 80 m/s, x - x₀ = 1200 m
-Find: a
-Note: Time is not given and not asked for, so use equation 3</p>
-<p>v² = v₀² + 2a(x - x₀)
-(80)² = 0² + 2a(1200)
-6400 = 2400a
-a = 6400/2400 = 2.67 m/s²</p>
+<p><strong>Solution:</strong></p>
+<p>Given: <span class="arithmatex">\(v_0 = 0\)</span> m/s, <span class="arithmatex">\(v = 80\)</span> m/s, <span class="arithmatex">\(x - x_0 = 1200\)</span> m</p>
+<p>Find: <span class="arithmatex">\(a\)</span></p>
+<p>Note: Time is not given and not asked for, so use equation 3</p>
+<div class="arithmatex">\[v^2 = v_0^2 + 2a(x - x_0)$$
+$$(80)^2 = 0^2 + 2a(1200)$$
+$$6400 = 2400a$$
+$$a = \frac{6400}{2400} = 2.67 \text{ m/s}^2\]</div>
 <p><strong>Example 3:</strong> A ball rolling at 5.0 m/s slows down at -0.50 m/s² until it stops. How long does this take, and how far does it roll?</p>
-<p><strong>Solution:</strong>
-Given: v₀ = 5.0 m/s, v = 0 m/s (comes to rest), a = -0.50 m/s²
-Find: t and x - x₀</p>
-<p>For time, use equation 1:
-v = v₀ + at
-0 = 5.0 + (-0.50)t
-0.50t = 5.0
-t = 10 s</p>
-<p>For displacement, use equation 3:
-v² = v₀² + 2a(x - x₀)
-0² = (5.0)² + 2(-0.50)(x - x₀)
-0 = 25 - 1.0(x - x₀)
-x - x₀ = 25 m</p>
+<p><strong>Solution:</strong></p>
+<p>Given: <span class="arithmatex">\(v_0 = 5.0\)</span> m/s, <span class="arithmatex">\(v = 0\)</span> m/s (comes to rest), <span class="arithmatex">\(a = -0.50\)</span> m/s²</p>
+<p>Find: <span class="arithmatex">\(t\)</span> and <span class="arithmatex">\(x - x_0\)</span></p>
+<p>For time, use equation 1:</p>
+<div class="arithmatex">\[v = v_0 + at$$
+$$0 = 5.0 + (-0.50)t$$
+$$0.50t = 5.0$$
+$$t = 10 \text{ s}\]</div>
+<p>For displacement, use equation 3:</p>
+<div class="arithmatex">\[v^2 = v_0^2 + 2a(x - x_0)$$
+$$0^2 = (5.0)^2 + 2(-0.50)(x - x_0)$$
+$$0 = 25 - 1.0(x - x_0)$$
+$$x - x_0 = 25 \text{ m}\]</div>
 <p>The kinematic equations are tools you'll use throughout your physics education and beyond. Mastering them now will make dynamics, projectile motion, and many other topics much easier to understand.</p>
 <h4 id="diagram-kinematic-equation-selector-tool">Diagram: Kinematic Equation Selector Tool</h4>
 <iframe src="../../sims/kinematic-selector/main.html" width="100%" height="602px" scrolling="no"></iframe>
@@ -3028,13 +3040,14 @@ x - x₀ = 25 m</p>
 </details>
 <h2 id="special-case-free-fall">Special Case: Free Fall</h2>
 <p>One of the most important examples of uniformly accelerated motion is <strong>free fall</strong>—the motion of an object falling under the influence of gravity alone, with no air resistance. Near Earth's surface, all objects fall with the same constant acceleration, called the <strong>acceleration due to gravity</strong>:</p>
-<p><strong>g = 9.8 m/s²</strong> (or approximately 10 m/s² for quick estimates)</p>
+<div class="arithmatex">\[g = 9.8 \text{ m/s}^2\]</div>
+<p>(or approximately 10 m/s² for quick estimates)</p>
 <p>This acceleration always points downward, toward the center of the Earth. When setting up free fall problems, we need to establish a coordinate system. Two common choices are:</p>
 <ul>
-<li><strong>Positive upward, negative downward:</strong> With this choice, g = -9.8 m/s² (negative because it points down)</li>
-<li><strong>Positive downward, negative upward:</strong> With this choice, g = +9.8 m/s² (positive because it points down)</li>
+<li><strong>Positive upward, negative downward:</strong> With this choice, <span class="arithmatex">\(g = -9.8\)</span> m/s² (negative because it points down)</li>
+<li><strong>Positive downward, negative upward:</strong> With this choice, <span class="arithmatex">\(g = +9.8\)</span> m/s² (positive because it points down)</li>
 </ul>
-<p>Most physics courses use the first convention (positive upward), which we'll adopt here. This means <strong>a = -9.8 m/s²</strong> for all free fall problems.</p>
+<p>Most physics courses use the first convention (positive upward), which we'll adopt here. This means <span class="arithmatex">\(a = -9.8\)</span> m/s² for all free fall problems.</p>
 <p>Key insights about free fall:</p>
 <ul>
 <li>Objects fall at the same rate regardless of mass (in the absence of air resistance)</li>
@@ -3044,20 +3057,20 @@ x - x₀ = 25 m</p>
 <li>An object returns to its launch height with the same speed it had when launched (but opposite direction)</li>
 </ul>
 <p><strong>Example:</strong> You throw a ball upward at 15 m/s from the ground. How high does it go, and when does it return to your hand?</p>
-<p><strong>Solution:</strong>
-Given: v₀ = +15 m/s (upward), a = -9.8 m/s², x₀ = 0 m
-At maximum height: v = 0 m/s (momentarily stops before falling)</p>
-<p>Find maximum height using equation 3:
-v² = v₀² + 2a(x - x₀)
-0² = (15)² + 2(-9.8)(x - 0)
-0 = 225 - 19.6x
-x = 225/19.6 ≈ 11.5 m</p>
-<p>Find time to return using equation 2 with x = 0 (back to starting position):
-x = x₀ + v₀t + ½at²
-0 = 0 + 15t + ½(-9.8)t²
-0 = 15t - 4.9t²
-0 = t(15 - 4.9t)</p>
-<p>This gives t = 0 (initial throw) or t = 15/4.9 ≈ 3.06 s (return to hand)</p>
+<p><strong>Solution:</strong></p>
+<p>Given: <span class="arithmatex">\(v_0 = +15\)</span> m/s (upward), <span class="arithmatex">\(a = -9.8\)</span> m/s², <span class="arithmatex">\(x_0 = 0\)</span> m</p>
+<p>At maximum height: <span class="arithmatex">\(v = 0\)</span> m/s (momentarily stops before falling)</p>
+<p>Find maximum height using equation 3:</p>
+<div class="arithmatex">\[v^2 = v_0^2 + 2a(x - x_0)$$
+$$0^2 = (15)^2 + 2(-9.8)(x - 0)$$
+$$0 = 225 - 19.6x$$
+$$x = \frac{225}{19.6} \approx 11.5 \text{ m}\]</div>
+<p>Find time to return using equation 2 with <span class="arithmatex">\(x = 0\)</span> (back to starting position):</p>
+<div class="arithmatex">\[x = x_0 + v_0 t + \frac{1}{2}at^2$$
+$$0 = 0 + 15t + \frac{1}{2}(-9.8)t^2$$
+$$0 = 15t - 4.9t^2$$
+$$0 = t(15 - 4.9t)\]</div>
+<p>This gives <span class="arithmatex">\(t = 0\)</span> (initial throw) or <span class="arithmatex">\(t = \frac{15}{4.9} \approx 3.06\)</span> s (return to hand)</p>
 <p>Free fall problems directly apply the kinematic equations with a = -9.8 m/s², making them excellent practice for mastering these concepts.</p>
 <h2 id="putting-it-all-together-problem-solving-framework">Putting It All Together: Problem-Solving Framework</h2>
 <p>You've now learned the fundamental concepts, graphical representations, and mathematical equations for one-dimensional motion. Let's consolidate this knowledge with a systematic problem-solving approach you can apply to any kinematics problem:</p>
@@ -3137,11 +3150,13 @@ Verify with car: (20 m/s)(18 s) = 360 m ✓</p>
 <li><strong>Acceleration-time graphs:</strong> Area = velocity change</li>
 </ul>
 <p><strong>Mathematical Tools:</strong></p>
-<p>The four kinematic equations for constant acceleration:
-1. v = v₀ + at
-2. x = x₀ + v₀t + ½at²
-3. v² = v₀² + 2a(x - x₀)
-4. x = x₀ + ½(v₀ + v)t</p>
+<p>The four kinematic equations for constant acceleration:</p>
+<ol>
+<li><span class="arithmatex">\(v = v_0 + at\)</span></li>
+<li><span class="arithmatex">\(x = x_0 + v_0 t + \frac{1}{2}at^2\)</span></li>
+<li><span class="arithmatex">\(v^2 = v_0^2 + 2a(x - x_0)\)</span></li>
+<li><span class="arithmatex">\(x = x_0 + \frac{1}{2}(v_0 + v)t\)</span></li>
+</ol>
 <p><strong>Problem-Solving Strategy:</strong></p>
 <ol>
 <li>Visualize and sketch</li>
