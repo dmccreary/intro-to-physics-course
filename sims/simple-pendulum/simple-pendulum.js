@@ -20,13 +20,15 @@ let swingCount = 0;
 let swingStartTime = 0;
 let measuredPeriod = 0;
 let lastCrossing = 0;
+let isMeasuring = false;
+let swingPeriods = [];  // Array to store individual swing periods
 
 // Graph data
 let dataPoints = [];
 
 // UI elements
 let lengthSlider, massSlider, angleSlider;
-let releaseButton, measureButton, addPointButton, clearButton;
+let releaseButton, measureButton, clearButton;
 let showTheoryCheckbox;
 
 function setup() {
@@ -36,17 +38,19 @@ function setup() {
 
     currentAngle = radians(initialAngle);
 
+    let sliderSize = 140;
     lengthSlider = createSlider(0.2, 2.0, 1.0, 0.1);
     lengthSlider.position(100, drawHeight + 15);
-    lengthSlider.size(120);
+    lengthSlider.size(sliderSize);
     lengthSlider.input(() => {
         pendulumLength = lengthSlider.value();
         resetPendulum();
     });
 
+   
     massSlider = createSlider(0.1, 2.0, 0.5, 0.1);
     massSlider.position(100, drawHeight + 50);
-    massSlider.size(120);
+    massSlider.size(sliderSize);
     massSlider.input(() => {
         bobMass = massSlider.value();
     });
@@ -59,27 +63,23 @@ function setup() {
         resetPendulum();
     });
 
+    let buttonHeight = 40;
     releaseButton = createButton('Release');
     releaseButton.position(280, drawHeight + 50);
-    releaseButton.size(70, 25);
+    releaseButton.size(70, buttonHeight);
     releaseButton.mousePressed(releasePendulum);
 
     measureButton = createButton('Measure Period');
     measureButton.position(360, drawHeight + 50);
-    measureButton.size(100, 25);
+    measureButton.size(100, buttonHeight);
     measureButton.mousePressed(startMeasurement);
 
-    addPointButton = createButton('Add to Graph');
-    addPointButton.position(470, drawHeight + 50);
-    addPointButton.size(90, 25);
-    addPointButton.mousePressed(addDataPoint);
-
-    clearButton = createButton('Clear');
-    clearButton.position(570, drawHeight + 50);
-    clearButton.size(60, 25);
+    clearButton = createButton('Clear Measurements');
+    clearButton.position(470, drawHeight + 50);
+    clearButton.size(130, buttonHeight);
     clearButton.mousePressed(() => dataPoints = []);
 
-    showTheoryCheckbox = createCheckbox(' Show theoretical curve', true);
+    showTheoryCheckbox = createCheckbox(' Show theoretical curve', false);
     showTheoryCheckbox.position(470, drawHeight + 15);
 
     describe('Simple pendulum simulation to investigate the relationship between length and period', LABEL);
@@ -90,21 +90,38 @@ function draw() {
 
     // Physics update
     if (isSwinging) {
-        let angularAcceleration = -(g / (pendulumLength * 100)) * sin(currentAngle);
+        let angularAcceleration = -(g / (pendulumLength * 3600)) * sin(currentAngle);
         angularVelocity += angularAcceleration;
         angularVelocity *= 0.9995;  // Slight damping
         currentAngle += angularVelocity;
 
-        // Count swings
-        if (swingCount > 0 && currentAngle * (currentAngle - angularVelocity) < 0 && angularVelocity > 0) {
-            let currentTime = millis();
-            if (swingCount === 1) {
-                lastCrossing = currentTime;
-            } else if (swingCount === 11) {
-                measuredPeriod = (currentTime - swingStartTime) / 10000;
-                isSwinging = false;
+        // Count swings during measurement
+        if (isMeasuring && currentAngle * (currentAngle - angularVelocity) < 0 && angularVelocity > 0) {
+            let now = millis();
+            if (swingCount === 0) {
+                // First crossing - start timing
+                lastCrossing = now;
+                swingCount = 1;
+            } else if (swingCount <= 10) {
+                // Record individual period
+                let period = (now - lastCrossing) / 1000;
+                swingPeriods.push(period);
+                lastCrossing = now;
+                swingCount++;
+
+                // Calculate running average
+                let sum = swingPeriods.reduce((a, b) => a + b, 0);
+                measuredPeriod = sum / swingPeriods.length;
+
+                if (swingCount > 10) {
+                    // Measurement complete - auto add to graph
+                    dataPoints.push({ L: pendulumLength, T: measuredPeriod });
+                    isMeasuring = false;
+                    isSwinging = false;
+                    releaseButton.html('Release');
+                    measureButton.html('Measure Period');
+                }
             }
-            swingCount++;
         }
     }
 
@@ -130,10 +147,10 @@ function draw() {
     drawPendulum(200, 80);
 
     // Draw graph
-    drawPeriodGraph(canvasWidth / 2 + 20, 60, 320, 280);
+    drawPeriodGraph(canvasWidth / 2 + 20, 40, 320, 280);
 
     // Draw info panel
-    drawInfoPanel(canvasWidth / 2 + 20, 360, 320, 110);
+    drawInfoPanel(canvasWidth / 2 + 20, 340, 320, 145);
 
     // Control labels
     drawControlLabels();
@@ -243,8 +260,10 @@ function drawPeriodGraph(x, y, w, h) {
     textStyle(NORMAL);
 
     // Graph area
-    let gx = x + 50;
+    // upper left 
+    let gx = x + 30;
     let gy = y + 40;
+    // width and height of graph area
     let gw = w - 70;
     let gh = h - 70;
 
@@ -256,12 +275,13 @@ function drawPeriodGraph(x, y, w, h) {
 
     // Labels
     fill(60);
+    noStroke();
     textSize(11);
     textAlign(CENTER, TOP);
-    text('Length L (m)', gx + gw/2, gy + gh + 20);
+    text('Length L (m)', gx + gw/2, gy + gh + 14);
 
     push();
-    translate(x + 12, gy + gh/2);
+    translate(x + 20, gy + gh/2);
     rotate(-PI/2);
     textAlign(CENTER, BOTTOM);
     text('Period T (s)', 0, 0);
@@ -349,20 +369,54 @@ function drawInfoPanel(x, y, w, h) {
 
     let theoreticalT = 2 * PI * sqrt(pendulumLength / g);
 
-    text('Theoretical Period: T = 2π√(L/g) = ' + theoreticalT.toFixed(3) + ' s', x + 15, y + 15);
+    text('Theoretical: T = 2π√(L/g) = ' + theoreticalT.toFixed(3) + ' s', x + 15, y + 12);
 
-    if (measuredPeriod > 0) {
-        text('Measured Period: T = ' + measuredPeriod.toFixed(3) + ' s', x + 15, y + 40);
+    let textWidth = w - 30;
+
+    if (isMeasuring) {
+        // Show measurement in progress
+        let completed = swingPeriods.length;
+        fill(70, 70, 200);
+        textSize(14);
+        text('Measuring: Swing ' + (completed + 1) + ' of 10', x + 15, y + 32);
+
+        // Show individual periods
+        if (swingPeriods.length > 0) {
+            fill(60);
+            textSize(11);
+            let periodsStr = swingPeriods.map(p => p.toFixed(2)).join(', ');
+            text('Periods: ' + periodsStr + ' s', x + 15, y + 54, textWidth, 30);
+
+            // Show sum and running average
+            let sum = swingPeriods.reduce((a, b) => a + b, 0);
+            fill(40);
+            textSize(12);
+            text('Sum: ' + sum.toFixed(3) + ' s ÷ ' + swingPeriods.length + ' = Average: ' + measuredPeriod.toFixed(3) + ' s', x + 15, y + 90);
+        }
+    } else if (measuredPeriod > 0) {
+        // Show completed measurement
+        let sum = swingPeriods.reduce((a, b) => a + b, 0);
+        fill(40);
+        textSize(12);
+        text('Sum: ' + sum.toFixed(3) + ' s ÷ 10 = Average: ' + measuredPeriod.toFixed(3) + ' s', x + 15, y + 32);
         let error = abs(measuredPeriod - theoreticalT) / theoreticalT * 100;
-        text('Percent Error: ' + error.toFixed(1) + '%', x + 15, y + 65);
+        text('Percent Error: ' + error.toFixed(1) + '%', x + 15, y + 52);
+
+        // Show individual periods if available
+        if (swingPeriods.length > 0) {
+            fill(80);
+            textSize(10);
+            let periodsStr = swingPeriods.map(p => p.toFixed(2)).join(', ');
+            text('Individual: ' + periodsStr + ' s', x + 15, y + 72, textWidth, 40);
+        }
     } else {
         fill(100);
-        text('Click "Measure Period" to time 10 swings', x + 15, y + 40);
+        text('Click "Measure Period" to time 10 swings', x + 15, y + 35);
     }
 
     fill(80);
     textSize(11);
-    text('Note: Period is independent of mass!', x + 15, y + 90);
+    text('Note: Period is independent of mass!', x + 15, y + 125);
 }
 
 function drawControlLabels() {
@@ -371,44 +425,54 @@ function drawControlLabels() {
     textAlign(LEFT, CENTER);
     noStroke();
 
-    text('Length L:', 10, drawHeight + 28);
-    text(pendulumLength.toFixed(1) + ' m', 230, drawHeight + 28);
-
-    text('Mass m:', 10, drawHeight + 63);
-    text(bobMass.toFixed(1) + ' kg', 230, drawHeight + 63);
-
-    text('Angle:', 280, drawHeight + 28);
-    text(initialAngle + '°', 450, drawHeight + 28);
+    // draw the labels with the values concatenated
+    text('Length L: ' + pendulumLength.toFixed(1) + ' m', 10, drawHeight + 28);
+    text('Mass m: '+ bobMass.toFixed(1) + ' kg', 10, drawHeight + 63);
+    text('Angle: ' +initialAngle + '°', 280, drawHeight + 28);
 }
 
 function resetPendulum() {
     currentAngle = radians(initialAngle);
     angularVelocity = 0;
     isSwinging = false;
+    isMeasuring = false;
     swingCount = 0;
     measuredPeriod = 0;
+    swingPeriods = [];
+    releaseButton.html('Release');
+    measureButton.html('Measure Period');
 }
 
 function releasePendulum() {
-    currentAngle = radians(initialAngle);
-    angularVelocity = 0;
-    isSwinging = true;
-    swingCount = 0;
+    if (isSwinging) {
+        // Pause the pendulum
+        isSwinging = false;
+        if (isMeasuring) {
+            isMeasuring = false;
+            measureButton.html('Measure Period');
+        }
+        releaseButton.html('Release');
+    } else {
+        // Release from initial angle
+        currentAngle = radians(initialAngle);
+        angularVelocity = 0;
+        isSwinging = true;
+        swingCount = 0;
+        releaseButton.html('Pause');
+    }
 }
 
 function startMeasurement() {
     currentAngle = radians(initialAngle);
     angularVelocity = 0;
     isSwinging = true;
-    swingCount = 1;
+    isMeasuring = true;
+    swingCount = 0;
     swingStartTime = millis();
     measuredPeriod = 0;
-}
-
-function addDataPoint() {
-    if (measuredPeriod > 0) {
-        dataPoints.push({ L: pendulumLength, T: measuredPeriod });
-    }
+    swingPeriods = [];
+    releaseButton.html('Pause');
+    measureButton.html('Measuring...');
 }
 
 function setLineDash(list) {
