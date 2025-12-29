@@ -40,11 +40,11 @@ let displayX = 660, displayY = 20, displayW = 220, displayH = 280;
 let graphX = 20, graphY = 320, graphW = 860, graphH = 280;
 
 function updateCanvasSize() {
-    let container = select('#canvas-container');
+    let container = select('main');
     if (container) {
-        canvasWidth = max(600, container.width - 20);
+        canvasWidth = container.width;
     } else {
-        canvasWidth = max(600, windowWidth - 40);
+        canvasWidth = windowWidth;
     }
 
     // Update layout regions for responsive design
@@ -70,29 +70,33 @@ function setup() {
 
     // Create controls - sliders positioned below labels
     let controlY = drawHeight + 25;  // Below the labels
-    let xPos = 80;
+    let sliderWidth = canvasWidth * 0.28;
 
-    // Voltage slider (centered under "Voltage" label at x=120)
+    // Evenly space 3 sliders across canvas width
+    // Each slider is 28% wide, leaving 16% for margins/gaps (4% each for 4 spaces)
+    let slider1X = canvasWidth * 0.04;
+    let slider2X = canvasWidth * 0.36;
+    let slider3X = canvasWidth * 0.68;
+
+    // Voltage slider
     fill(0);
     voltageSlider = createSlider(1, 12, voltage, 0.5);
-    voltageSlider.position(xPos, controlY);
-    voltageSlider.size(80);
-    xPos += 130;
+    voltageSlider.position(slider1X, controlY);
+    voltageSlider.size(sliderWidth);
 
-    // Resistance slider (centered under "R" label at x=250)
+    // Resistance slider
     resistanceSlider = createSlider(100, 100000, resistance, 100);
-    resistanceSlider.position(xPos, controlY);
-    resistanceSlider.size(80);
-    xPos += 130;
+    resistanceSlider.position(slider2X, controlY);
+    resistanceSlider.size(sliderWidth);
 
-    // Capacitance slider (centered under "C" label at x=380)
+    // Capacitance slider
     capacitanceSlider = createSlider(1, 1000, capacitance * 1e6, 1);
-    capacitanceSlider.position(xPos, controlY);
-    capacitanceSlider.size(80);
+    capacitanceSlider.position(slider3X, controlY);
+    capacitanceSlider.size(sliderWidth);
 
     // Switch buttons on second row below sliders
     let buttonY = controlY + 30;
-    let buttonX = 80;
+    let buttonX = 10;
 
     chargeBtn = createButton('Start Charging');
     chargeBtn.position(buttonX, buttonY);
@@ -103,14 +107,17 @@ function setup() {
     });
     buttonX += 110;
 
-    pauseBtn = createButton('Pause');
+    pauseBtn = createButton('Pause Simulation');
     pauseBtn.position(buttonX, buttonY);
     pauseBtn.mousePressed(() => {
-        switchState = 0;
-        isRunning = false;
+        // Toggle pause - don't change switchState so circuit diagram stays the same
+        isRunning = !isRunning;
+        if (isRunning) {
+            lastFrameTime = millis(); // Reset time tracking to avoid jump
+        }
         updateButtonStyles();
     });
-    buttonX += 65;
+    buttonX += 130;
 
     dischargeBtn = createButton('Start Discharging');
     dischargeBtn.position(buttonX, buttonY);
@@ -148,23 +155,40 @@ function resetSimulation() {
 
 // Visual feedback for active button state
 function updateButtonStyles() {
-    // Default style for all buttons
+    // Default style for buttons
     let defaultStyle = 'background-color: #e0e0e0; color: black; border: 2px solid #999; font-weight: normal;';
-    let activeChargeStyle = 'background-color: #4CAF50; color: white; border: 2px solid #2E7D32; font-weight: bold;';
+    let disabledStyle = 'background-color: #ccc; color: #888; border: 2px solid #aaa; font-weight: normal; cursor: not-allowed;';
+    let greenStyle = 'background-color: #4CAF50; color: white; border: 2px solid #2E7D32; font-weight: normal;';
+    let activeChargeStyle = 'background-color: #2E7D32; color: white; border: 2px solid #1B5E20; font-weight: bold;';
     let activePauseStyle = 'background-color: #FF9800; color: white; border: 2px solid #E65100; font-weight: bold;';
     let activeDischargeStyle = 'background-color: #f44336; color: white; border: 2px solid #c62828; font-weight: bold;';
 
-    // Reset all to default
-    chargeBtn.style(defaultStyle);
+    // Reset to defaults - charge button is always green
+    chargeBtn.style(greenStyle);
     pauseBtn.style(defaultStyle);
     dischargeBtn.style(defaultStyle);
 
-    // Highlight active button
-    if (switchState === 1) {
+    // Disable pause button at startup (nothing to pause yet)
+    if (simTime === 0 && !isRunning) {
+        pauseBtn.style(disabledStyle);
+        pauseBtn.attribute('disabled', '');
+        pauseBtn.html('Pause Simulation');
+    } else {
+        pauseBtn.removeAttribute('disabled');
+        // Change label based on running state
+        if (isRunning) {
+            pauseBtn.html('Pause Simulation');
+            pauseBtn.style(defaultStyle);
+        } else {
+            pauseBtn.html('Continue Simulation');
+            pauseBtn.style(activePauseStyle);
+        }
+    }
+
+    // Highlight active button with darker/bolder style
+    if (switchState === 1 && isRunning) {
         chargeBtn.style(activeChargeStyle);
-    } else if (switchState === 0) {
-        pauseBtn.style(activePauseStyle);
-    } else if (switchState === -1) {
+    } else if (switchState === -1 && isRunning) {
         dischargeBtn.style(activeDischargeStyle);
     }
 }
@@ -247,41 +271,62 @@ function drawCircuitDiagram() {
     textAlign(CENTER, TOP);
     text("RC Circuit", circuitX + circuitW/2, circuitY + 5);
 
-    // Circuit dimensions
-    let cx = circuitX + 50;
-    let cy = circuitY + 60;
-    let cw = circuitW - 100;
-    let ch = circuitH - 100;
+    // Circuit layout dimensions
+    let cx = circuitX + 30;
+    let cy = circuitY + 40;
+    let cw = circuitW - 60;
+    let ch = circuitH - 60;
 
-    stroke(0);
-    strokeWeight(2);
+    // Component sizes
+    let batteryW = 40;
+    let batteryH = 100;
+    let resistorW = 40;
+    let resistorH = 80;
+    let capacitorW = 50;
+    let capacitorH = 70;
+    let lineW = 2;
 
-    // Draw battery (left side)
-    let batteryX = cx + 30;
-    let batteryY = cy + ch/2;
+    // Position battery on left side (VERTICAL)
+    let batteryX = cx + 20;
+    let batteryY = cy + (ch - batteryH) / 2;
 
-    // Battery symbol
-    line(batteryX, batteryY - 20, batteryX, batteryY + 20);
-    strokeWeight(4);
-    line(batteryX + 8, batteryY - 12, batteryX + 8, batteryY + 12);
-    strokeWeight(2);
+    // Draw battery using library function
+    let batteryLevel = map(voltage, 1, 12, 20, 100);
+    drawBatterySymbol(batteryX, batteryY, batteryW, batteryH, VERTICAL, batteryLevel);
 
-    // + and - labels
+    // Voltage label
     noStroke();
-    textSize(12);
-    textAlign(CENTER, CENTER);
-    text("+", batteryX + 20, batteryY - 15);
-    text("-", batteryX - 10, batteryY - 15);
-    text(voltage.toFixed(1) + "V", batteryX + 5, batteryY + 35);
+    fill(0);
+    textSize(11);
+    textAlign(CENTER, TOP);
+    text(voltage.toFixed(1) + " V", batteryX + batteryW/2, batteryY + batteryH + 5);
 
+    // Position resistor and capacitor on right side (VERTICAL)
+    // Resistor above capacitor
+    let rightX = cx + cw - 60;
+    let resistorY = cy + 20;
+    let capacitorY = resistorY + resistorH + 30;
+
+    // Draw resistor using library function
+    drawResistorSymbol(rightX, resistorY, resistorW, resistorH, lineW, VERTICAL, formatResistance(resistance), RIGHT);
+
+    // Draw capacitor using library function
+    drawCapacitorSymbol(rightX-5, capacitorY, capacitorW, capacitorH, lineW, VERTICAL, formatCapacitance(capacitance), RIGHT);
+
+    // Draw wires connecting components
     stroke(0);
-    strokeWeight(2);
+    strokeWeight(lineW);
 
-    // Top wire from battery to switch
-    line(batteryX + 8, batteryY - 12, batteryX + 8, cy);
-    line(batteryX + 8, cy, cx + cw/3, cy);
+    // Top wire: battery top to switch to resistor top
+    let batteryTopY = batteryY;
+    let batteryMidX = batteryX + batteryW / 2;
+    let resistorMidX = rightX + resistorW / 2;
 
-    // Switch
+    // Wire from battery top
+    line(batteryMidX, batteryTopY, batteryMidX, cy);
+    line(batteryMidX, cy, cx + cw/3, cy);
+
+    // Switch position
     let switchX = cx + cw/3;
     let switchY = cy;
 
@@ -289,93 +334,51 @@ function drawCircuitDiagram() {
     fill(100);
     noStroke();
     ellipse(switchX, switchY, 8, 8);
-    ellipse(switchX + 40, switchY - 5, 8, 8);
-    ellipse(switchX + 40, switchY + 15, 8, 8);
+    ellipse(switchX + 50, switchY - 8, 8, 8);
+    ellipse(switchX + 50, switchY + 12, 8, 8);
 
     stroke(0);
     strokeWeight(3);
     if (switchState === 1) {
         // Charging position
-        line(switchX, switchY, switchX + 38, switchY - 3);
+        line(switchX, switchY, switchX + 48, switchY - 6);
         fill(0, 150, 0);
     } else if (switchState === -1) {
         // Discharging position
-        line(switchX, switchY, switchX + 38, switchY + 13);
+        line(switchX, switchY, switchX + 48, switchY + 10);
         fill(150, 0, 0);
     } else {
         // Off position (middle)
-        line(switchX, switchY, switchX + 30, switchY + 5);
+        line(switchX, switchY, switchX + 40, switchY + 2);
         fill(100);
     }
 
-    strokeWeight(2);
+    strokeWeight(lineW);
 
-    // Continue top wire to resistor
-    line(switchX + 40, switchY - 5, switchX + 80, cy);
+    // Wire from switch to resistor top
+    line(switchX + 50, switchY - 8, resistorMidX, switchY - 8);
+    line(resistorMidX, switchY - 8, resistorMidX, resistorY);
 
-    // Resistor
-    let resistorX = switchX + 80;
-    drawResistor(resistorX, cy, 60);
+    // Wire from resistor bottom to capacitor top
+    line(resistorMidX, resistorY + resistorH, resistorMidX, capacitorY);
 
-    // Label resistor
-    noStroke();
-    fill(0);
-    textSize(10);
-    textAlign(CENTER, TOP);
-    text(formatResistance(resistance), resistorX + 30, cy + 15);
+    // Bottom wire: capacitor bottom to battery bottom
+    let batteryBottomY = batteryY + batteryH;
+    let capacitorBottomY = capacitorY + capacitorH;
+    let bottomWireY = cy + ch - 10;
 
-    stroke(0);
-    strokeWeight(2);
+    line(resistorMidX, capacitorBottomY, resistorMidX, bottomWireY);
+    line(resistorMidX, bottomWireY, batteryMidX, bottomWireY);
+    line(batteryMidX, bottomWireY, batteryMidX, batteryBottomY);
 
-    // Wire from resistor to capacitor
-    line(resistorX + 60, cy, cx + cw - 30, cy);
-    line(cx + cw - 30, cy, cx + cw - 30, cy + ch/3);
-
-    // Capacitor
-    let capX = cx + cw - 30;
-    let capY = cy + ch/3 + 20;
-
-    // Capacitor plates
-    strokeWeight(3);
-    line(capX - 15, capY, capX + 15, capY);
-    line(capX - 15, capY + 15, capX + 15, capY + 15);
-
-    // Draw charges on plates
-    let chargeLevel = map(capacitorVoltage, 0, voltage, 0, 5);
-    for (let i = 0; i < chargeLevel; i++) {
-        let px = capX - 10 + i * 5;
-        fill(0, 0, 200);
-        noStroke();
-        textSize(10);
-        text("-", px, capY - 5);
-        fill(200, 0, 0);
-        text("+", px, capY + 25);
-    }
-
-    stroke(0);
-    strokeWeight(2);
-
-    // Label capacitor
-    noStroke();
-    fill(0);
-    textSize(10);
-    textAlign(LEFT, CENTER);
-    text(formatCapacitance(capacitance), capX + 20, capY + 7);
-
-    stroke(0);
-    strokeWeight(2);
-
-    // Bottom wire back to battery
-    line(capX, capY + 15, capX, cy + ch);
-    line(capX, cy + ch, batteryX, cy + ch);
-    line(batteryX, cy + ch, batteryX, batteryY + 20);
-
-    // Discharge path (parallel)
+    // Discharge path indicator
     if (switchState === -1) {
         stroke(150, 0, 0);
         strokeWeight(1);
-        line(switchX + 40, switchY + 15, switchX + 40, cy + ch/2);
-        line(switchX + 40, cy + ch/2, cx + cw - 30, cy + ch/2);
+        setLineDash([5, 5]);
+        line(switchX + 50, switchY + 12, switchX + 50, bottomWireY - 30);
+        line(switchX + 50, bottomWireY - 30, resistorMidX - 20, bottomWireY - 30);
+        setLineDash([]);
     }
 
     // Draw current flow animation
@@ -384,22 +387,9 @@ function drawCircuitDiagram() {
     }
 }
 
-function drawResistor(x, y, w) {
-    let zigzags = 6;
-    let amplitude = 8;
-    stroke(0);
-    strokeWeight(2);
-
-    beginShape();
-    noFill();
-    vertex(x, y);
-    for (let i = 0; i <= zigzags; i++) {
-        let px = x + (i / zigzags) * w;
-        let py = y + (i % 2 === 0 ? -amplitude : amplitude);
-        vertex(px, py);
-    }
-    vertex(x + w, y);
-    endShape();
+// Helper function for dashed lines
+function setLineDash(pattern) {
+    drawingContext.setLineDash(pattern);
 }
 
 function drawCapacitorDetail() {
@@ -682,21 +672,26 @@ function drawCurrentFlow() {
 function drawControlLabels() {
 
     fill('black');
-    textSize(11);
+    textSize(16);
     textAlign(CENTER, TOP);
 
     let labelY = drawHeight + 5;  // Labels at top of control area
 
+    // Labels centered above each slider (slider center = sliderX + 0.14 * canvasWidth)
+    let label1X = canvasWidth * 0.18;  // 0.04 + 0.14
+    let label2X = canvasWidth * 0.50;  // 0.36 + 0.14
+    let label3X = canvasWidth * 0.82;  // 0.68 + 0.14
+
     // Labels above sliders with current values - expanded for clarity
-    text("Voltage: " + voltage.toFixed(1) + " V", 120, labelY);
-    text("Resistance: " + formatResistance(resistance), 250, labelY);
-    text("Capacitance: " + formatCapacitance(capacitance), 380, labelY);
+    text("Voltage: " + voltage.toFixed(1) + " V", label1X, labelY);
+    text("Resistance: " + formatResistance(resistance), label2X, labelY);
+    text("Capacitance: " + formatCapacitance(capacitance), label3X, labelY);
 
     // Instruction prompt when in standby - helps novice users (to the right of buttons)
     textAlign(LEFT, CENTER);
-    textSize(10);
+    textSize(14);
     let promptY = drawHeight + 60;
-    let promptX = 450;  // After the buttons
+    let promptX = canvasWidth * 0.6;  // After the buttons, responsive positioning
     if (switchState === 0 && simTime === 0) {
         // Initial state - show getting started instruction
         fill(0, 100, 150);
@@ -727,13 +722,232 @@ function windowResized() {
     // Reposition controls - sliders on first row, buttons on second row
     let controlY = drawHeight + 25;
     let buttonY = controlY + 30;
+    let sliderWidth = canvasWidth * 0.28;
 
-    voltageSlider.position(80, controlY);
-    resistanceSlider.position(210, controlY);
-    capacitanceSlider.position(340, controlY);
+    // Evenly space 3 sliders across canvas width
+    let slider1X = canvasWidth * 0.04;
+    let slider2X = canvasWidth * 0.36;
+    let slider3X = canvasWidth * 0.68;
 
-    chargeBtn.position(80, buttonY);
-    pauseBtn.position(190, buttonY);
-    dischargeBtn.position(255, buttonY);
-    resetBtn.position(375, buttonY);
+    voltageSlider.position(slider1X, controlY);
+    voltageSlider.size(sliderWidth);
+    resistanceSlider.position(slider2X, controlY);
+    resistanceSlider.size(sliderWidth);
+    capacitanceSlider.position(slider3X, controlY);
+    capacitanceSlider.size(sliderWidth);
+
+    // Position buttons using percentage-based spacing
+    let buttonStartX = canvasWidth * 0.04;
+    chargeBtn.position(buttonStartX, buttonY);
+    pauseBtn.position(buttonStartX + 110, buttonY);
+    dischargeBtn.position(buttonStartX + 175, buttonY);
+    resetBtn.position(buttonStartX + 295, buttonY);
+}
+
+// ============================================
+// Circuit Component Library Functions
+// From p5-circuit-lib.js - copied here for p5.js editor testing
+// ============================================
+
+// Define orientation constants
+const HORIZONTAL = 0;
+const VERTICAL = 1;
+
+// Draw a battery with level indicator
+function drawBatterySymbol(x, y, width, height, orientation, level) {
+    push();
+
+    if (orientation === HORIZONTAL) {
+        translate(x + height, y);
+        rotate(PI/2);
+        x = 0;
+        y = 0;
+        let temp = width;
+        width = height;
+        height = temp;
+    } else {
+        translate(x, y);
+        x = 0;
+        y = 0;
+    }
+
+    let terminalHeight = height * 0.1;
+    let bodyHeight = height - terminalHeight;
+    let goldPercent = 0.4;
+    let goldHeight = bodyHeight * goldPercent;
+    let blackHeight = bodyHeight * (1 - goldPercent);
+    let batteryBorder = width * 0.1;
+    let innerWidth = width - (batteryBorder * 2);
+
+    // Draw battery outline
+    strokeWeight(2);
+    stroke(100);
+    fill(240);
+    rect(0, 0, width, height, 5, 5, 5, 5);
+
+    // Positive terminal
+    fill(220);
+    noStroke();
+    rect(width * 0.3, -terminalHeight, width * 0.4, terminalHeight);
+
+    // Positive electrode (gold)
+    fill('gold');
+    rect(batteryBorder, batteryBorder, innerWidth, goldHeight);
+
+    // Negative electrode (black)
+    fill('black');
+    rect(batteryBorder, batteryBorder + goldHeight, innerWidth, blackHeight);
+
+    // Battery level
+    let levelHeight = map(level, 0, 100, 0, bodyHeight - batteryBorder * 2);
+    let levelColor;
+    if (level < 20) {
+        levelColor = color(255, 0, 0);
+    } else if (level < 50) {
+        levelColor = color(255, 165, 0);
+    } else {
+        levelColor = color(0, 255, 0);
+    }
+
+    fill(levelColor);
+    rect(batteryBorder * 1.5, height - batteryBorder - levelHeight, innerWidth - batteryBorder, levelHeight);
+
+    // Terminal symbols
+    strokeWeight(2);
+    stroke(50);
+    let centerX = width / 2;
+    let plusY = batteryBorder + goldHeight / 2;
+    line(centerX - 10, plusY, centerX + 10, plusY);
+    line(centerX, plusY - 10, centerX, plusY + 10);
+
+    let minusY = batteryBorder + goldHeight + blackHeight / 2;
+    stroke('gray');
+    line(centerX - 10, minusY * 1.2, centerX + 10, minusY * 1.2);
+
+    pop();
+}
+
+// Draw a schematic resistor symbol
+function drawResistorSymbol(x, y, rwidth, rheight, lw, orientation, label, labelPosition) {
+    strokeWeight(lw);
+    stroke(0);
+    noFill();
+
+    let endWirePercent = 0.15;
+    let peaks = 6;
+
+    if (orientation === HORIZONTAL) {
+        let halfHeight = y + rheight / 2;
+        let endWireLength = rwidth * endWirePercent;
+        let peakWidth = (rwidth - 2 * endWireLength) / peaks;
+        let peakHeight = rheight / 3;
+
+        line(x, halfHeight, x + endWireLength, halfHeight);
+        line(x + rwidth - endWireLength, halfHeight, x + rwidth, halfHeight);
+
+        beginShape();
+        vertex(x + endWireLength, halfHeight);
+        for (let i = 0; i <= peaks - 1; i++) {
+            let xPos = x + endWireLength + i * peakWidth + peakWidth / 2;
+            let yPos = (i % 2 === 0) ? halfHeight - peakHeight : halfHeight + peakHeight;
+            vertex(xPos, yPos);
+        }
+        vertex(x + rwidth - endWireLength, halfHeight);
+        endShape();
+    } else if (orientation === VERTICAL) {
+        let halfWidth = x + rwidth / 2;
+        let endWireLength = rheight * endWirePercent;
+        let peakHeight = rwidth / 3;
+        let peakWidth = (rheight - 2 * endWireLength) / peaks;
+
+        beginShape();
+        vertex(halfWidth, y);
+        vertex(halfWidth, y + endWireLength);
+        for (let i = 0; i <= peaks - 1; i++) {
+            let yPos = y + endWireLength + i * peakWidth + peakWidth / 2;
+            let xPos = (i % 2 === 0) ? halfWidth - peakHeight : halfWidth + peakHeight;
+            vertex(xPos, yPos);
+        }
+        vertex(halfWidth, y + rheight - endWireLength);
+        vertex(halfWidth, y + rheight);
+        endShape();
+    }
+
+    // Draw label
+    if (label) {
+        push();
+        noStroke();
+        fill(0);
+        let fontSize = Math.max(8, Math.min(14, (orientation === HORIZONTAL ? rwidth : rheight) * 0.12));
+        textSize(fontSize);
+
+        let centerX = x + rwidth / 2;
+        let centerY = y + rheight / 2;
+        let padding = fontSize * 1.2;
+
+        if (orientation === VERTICAL) {
+            textAlign(LEFT, CENTER);
+            text(label, centerX + rwidth / 3 + padding, centerY);
+        } else {
+            textAlign(CENTER, TOP);
+            text(label, centerX, centerY + rheight / 3 + padding);
+        }
+        pop();
+    }
+}
+
+// Draw a schematic capacitor symbol
+function drawCapacitorSymbol(x, y, cwidth, cheight, lw, orientation, label, labelPosition) {
+    strokeWeight(lw);
+    stroke(0);
+    noFill();
+
+    let endWirePercent = 0.35;
+    let plateSizePercent = 0.5;
+
+    if (orientation === HORIZONTAL) {
+        let halfHeight = y + cheight / 2;
+        let endWireLength = cwidth * endWirePercent;
+        let plateHeight = cheight * plateSizePercent;
+        let plateX1 = x + endWireLength;
+        let plateX2 = x + cwidth - endWireLength;
+
+        line(x, halfHeight, plateX1, halfHeight);
+        line(plateX2, halfHeight, x + cwidth, halfHeight);
+        line(plateX1, halfHeight - plateHeight / 2, plateX1, halfHeight + plateHeight / 2);
+        line(plateX2, halfHeight - plateHeight / 2, plateX2, halfHeight + plateHeight / 2);
+    } else if (orientation === VERTICAL) {
+        let halfWidth = x + cwidth / 2;
+        let endWireLength = cheight * endWirePercent;
+        let plateWidth = cwidth * plateSizePercent;
+        let plateY1 = y + endWireLength;
+        let plateY2 = y + cheight - endWireLength;
+
+        line(halfWidth, y, halfWidth, plateY1);
+        line(halfWidth, plateY2, halfWidth, y + cheight);
+        line(halfWidth - plateWidth / 2, plateY1, halfWidth + plateWidth / 2, plateY1);
+        line(halfWidth - plateWidth / 2, plateY2, halfWidth + plateWidth / 2, plateY2);
+    }
+
+    // Draw label
+    if (label) {
+        push();
+        noStroke();
+        fill(0);
+        let fontSize = Math.max(8, Math.min(14, (orientation === HORIZONTAL ? cwidth : cheight) * 0.12));
+        textSize(fontSize);
+
+        let centerX = x + cwidth / 2;
+        let centerY = y + cheight / 2;
+        let padding = fontSize * 1.2;
+
+        if (orientation === VERTICAL) {
+            textAlign(LEFT, CENTER);
+            text(label, centerX + cwidth * plateSizePercent / 2 + padding, centerY);
+        } else {
+            textAlign(CENTER, TOP);
+            text(label, centerX, centerY + cheight * plateSizePercent / 2 + padding);
+        }
+        pop();
+    }
 }
