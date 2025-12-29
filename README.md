@@ -5,6 +5,7 @@
 [![GitHub Pages](https://img.shields.io/badge/View%20on-GitHub%20Pages-blue?logo=github)](https://dmccreary.github.io/intro-to-physics-course/)
 [![GitHub](https://img.shields.io/badge/GitHub-dmccreary%2Fintro--to--physics--course-blue?logo=github)](https://github.com/dmccreary/intro-to-physics-course/)
 [![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-DA7857?logo=anthropic)](https://claude.ai/code)
+[![Claude Skills](https://img.shields.io/badge/Uses-Claude%20Skills-DA7857?logo=anthropic)](https://github.com/dmccreary/claude-skills)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![p5.js](https://img.shields.io/badge/p5.js-ED225D?logo=p5.js&logoColor=white)](https://p5js.org/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -27,22 +28,54 @@ Whether you're a student learning physics for the first time, an educator lookin
 |--------|-------|
 | **Concepts in Learning Graph** | 200 |
 | **Quality Score** | 86/100 |
-| **Chapters** | 12 |
-| **Markdown Files** | 46 |
-| **Total Words** | 135,586 |
-| **MicroSims** | 4 |
-| **Glossary Terms** | 200 |
-| **FAQ Questions** | 6 |
-| **References** | 9 |
-| **Images** | 7 |
+| **Chapters** | 13 |
+| **Glossary Terms** | 389 |
+| **FAQ Questions** | 158 |
+| **Quiz Questions** | 123 |
+| **MicroSims** | 98 |
+| **Diagrams** | 118 |
+| **Equations** | 765 |
+| **Total Words** | 186,113 |
+| **References** | 20 |
+| **Equivalent Pages** | 822 |
 
-**Completion Status:** Approximately 75% complete (content generation and refinement phase)
+**Completion Status:** Approximately 90% complete (content refinement phase)
+
+**Visual Elements in Chapters:**
+
+| Category | Count |
+|----------|-------|
+| Total Visual Elements | 116 |
+| Diagrams | 29 |
+| MicroSims (in chapters) | 68 |
+| Easy Difficulty | 30 |
+| Medium Difficulty | 19 |
+| Hard Difficulty | 40 |
+| Very Hard Difficulty | 27 |
 
 **Learning Graph Characteristics:**
 - Foundational concepts (no dependencies): 7
 - Maximum dependency chain length: 17
 - Average dependencies per concept: 1.48
 - Connected as single directed acyclic graph (DAG)
+
+**Chapter Metrics Summary:**
+
+| Chapter | Name | Sections | Diagrams | Equations | Words |
+|---------|------|----------|----------|-----------|-------|
+| 1 | Scientific Foundations | 25 | 7 | 152 | 8,188 |
+| 2 | Motion in One Dimension | 19 | 7 | 76 | 9,745 |
+| 3 | Motion in Two Dimensions | 19 | 7 | 70 | 6,170 |
+| 4 | Forces and Newton's Laws | 35 | 7 | 36 | 7,018 |
+| 5 | Applications of Newton's Laws | 34 | 14 | 82 | 11,199 |
+| 6 | Work, Energy, and Power | 44 | 9 | 105 | 9,454 |
+| 7 | Momentum and Collisions | 43 | 7 | 51 | 6,670 |
+| 8 | Rotational Motion | 47 | 10 | 29 | 8,669 |
+| 9 | Oscillations | 46 | 11 | 0 | 8,340 |
+| 10 | Waves and Sound | 46 | 11 | 25 | 9,506 |
+| 11 | Light and Optics | 48 | 9 | 0 | 9,882 |
+| 12 | Electric Charge and Fields | 44 | 7 | 18 | 7,631 |
+| 13 | Electric Circuits | 50 | 12 | 21 | 9,118 |
 
 ## Key Features
 
@@ -52,22 +85,25 @@ Whether you're a student learning physics for the first time, an educator lookin
 - Bloom's Taxonomy alignment from remembering to creating
 - Clear learning paths from foundational concepts to advanced applications
 
-**Interactive MicroSims**
+**Interactive MicroSims (98 simulations)**
 - Standalone p5.js simulations for hands-on exploration
-- Branches of Physics visualization
-- Scientific Method workflow diagram
 - Interactive Learning Graph Viewer with search and filtering
 - Projectile Motion Simulator with customizable parameters
+- Collision and momentum visualizers
+- Wave and sound demonstrations
+- Electric field and circuit simulators
 
 **Comprehensive Educational Resources**
-- ISO 11179-compliant glossary with 200 precise definitions
-- 6 frequently asked questions addressing common student queries
-- Curated references for further study
+- ISO 11179-compliant glossary with 389 precise definitions
+- 158 frequently asked questions addressing common student queries
+- 123 quiz questions with multiple choice assessment
+- 20 curated references for further study
 - Quality metrics and validation reports for learning graph
 
 **Modern Web Experience**
 - Responsive Material Design theme
 - Full-text search across all content
+- LaTeX equation rendering (765 equations)
 - Code syntax highlighting
 - Navigation breadcrumbs and table of contents
 - Mobile-friendly interface
@@ -159,32 +195,32 @@ This builds the site and pushes it to the `gh-pages` branch. Note: This does NOT
 ```
 intro-to-physics-course/
 ├── docs/                                  # MkDocs documentation source
-│   ├── chapters/                          # Chapter content (12 chapters)
+│   ├── chapters/                          # Chapter content (13 chapters)
 │   │   ├── index.md                       # Chapter overview
 │   │   ├── 01-scientific-foundations/
-│   │   │   └── index.md                   # Chapter markdown content
+│   │   │   ├── index.md                   # Chapter markdown content
+│   │   │   └── quiz.md                    # Chapter quiz
 │   │   ├── 02-motion-one-dimension/
 │   │   └── ...
-│   ├── sims/                              # Interactive p5.js MicroSims
-│   │   ├── branches-of-physics/
-│   │   │   ├── main.html                  # Standalone simulation
-│   │   │   └── index.md                   # Documentation and iframe embed
-│   │   ├── graph-viewer/                  # Interactive learning graph visualization
+│   ├── sims/                              # Interactive p5.js MicroSims (98)
+│   │   ├── graph-viewer/                  # Interactive learning graph
 │   │   ├── projectile-motion/
-│   │   └── scientific-method/
+│   │   ├── collisions/
+│   │   └── ...
 │   ├── learning-graph/                    # Learning graph data and analysis
-│   │   ├── learning-graph.json            # Concept dependencies (vis-network format)
+│   │   ├── learning-graph.json            # Concept dependencies (vis-network)
 │   │   ├── concept-list.md                # Complete list of 200 concepts
-│   │   ├── concept-taxonomy.md            # Taxonomy categorization
-│   │   ├── quality-metrics.md             # Graph validation report
+│   │   ├── book-metrics.md                # Site metrics report
+│   │   ├── chapter-metrics.md             # Per-chapter metrics
+│   │   ├── list-equations.md              # All 765 equations
 │   │   └── *.py                           # Python analysis scripts
-│   ├── prompts/                           # AI generation prompts and documentation
-│   ├── glossary.md                        # 200 ISO 11179-compliant definitions
-│   ├── references.md                      # Curated educational resources
+│   ├── prompts/                           # AI generation prompts
+│   ├── glossary.md                        # 389 ISO 11179-compliant definitions
+│   ├── faq.md                             # 158 frequently asked questions
+│   ├── references.md                      # 20 curated educational resources
 │   ├── course-description.md              # Complete course specification
-│   ├── checklist.md                       # Development progress tracking
 │   └── index.md                           # Site homepage
-├── .vscode/                               # VS Code configuration
+├── .claude/skills/                        # Claude AI skills for content generation
 ├── mkdocs.yml                             # MkDocs site configuration
 ├── CLAUDE.md                              # Instructions for Claude Code
 └── README.md                              # This file
@@ -217,6 +253,8 @@ intro-to-physics-course/
 **Optics** (32 concepts): Reflection, mirrors, refraction, Snell's Law, lenses, focal length, magnification, ray diagrams, diffraction, polarization
 
 **Electricity** (20 concepts): Electric charge, Coulomb's Law, electric field, electric potential, voltage, conductors, insulators, charging methods
+
+**Electric Circuits** (10 concepts): Current, Ohm's Law, capacitors, inductors, power, batteries, solar cells, motors
 
 ### Concepts NOT Covered
 
@@ -334,10 +372,12 @@ This project stands on the shoulders of giants in the open source and educationa
 - **[p5.js](https://p5js.org/)** - Creative coding library from NYU ITP for educational simulations
 - **[vis-network](https://visjs.org/)** - Network visualization library for learning graph exploration
 - **[Mermaid](https://mermaid.js.org/)** - Diagram and flowchart generation
+- **[MathJax](https://www.mathjax.org/)** - LaTeX equation rendering
 
 **AI-Assisted Development:**
 - **[Claude AI](https://claude.ai)** by Anthropic - AI-assisted content generation and quality assurance
 - **[Claude Code](https://claude.ai/code)** - Development environment for educational content creation
+- **[Claude Skills](https://github.com/dmccreary/claude-skills)** - Reusable AI skills for intelligent textbook development
 
 **Inspiration and Resources:**
 Special thanks to the educators, physicists, and developers who contribute to making quality physics education accessible and engaging. This project draws inspiration from open educational resources (OER) movements, the Physics Education Research community, and innovative uses of technology in STEM education.
@@ -381,4 +421,4 @@ GitHub. https://github.com/dmccreary/intro-to-physics-course
 
 ---
 
-**Built with MkDocs Material, p5.js, and Claude AI** | **Structured on Bloom's Taxonomy** | **200 Concepts, 12 Chapters, 4 MicroSims**
+**Built with MkDocs Material, p5.js, and Claude AI** | **Structured on Bloom's Taxonomy** | **200 Concepts, 13 Chapters, 98 MicroSims**
