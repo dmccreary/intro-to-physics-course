@@ -289,71 +289,11 @@ where:
 
 #### Diagram: Capacitor Charging and Discharging MicroSim
 
-<details markdown="1">
-    <summary>Capacitor Charging and Discharging MicroSim</summary>
-    **Status:** INCOMPLETE
-    TODO: human-review-needed
-    Type: microsim
+<iframe src="../../sims/capacitor-charging-discharging/main.html" width="100%" height="740px" scrolling="no"></iframe>
 
-    Learning objective: Visualize how capacitors store and release energy, and understand the exponential charging/discharging behavior
+[Open Capacitor Charging MicroSim in Fullscreen](../../sims/capacitor-charging-discharging/main.html){ .md-button .md-button--primary }
 
-    Canvas layout (900x700px):
-    - Circuit view (600x400): RC circuit with switch
-    - Capacitor detail view (300x400): Shows charge accumulation on plates
-    - Graph area (900x300): Voltage and current vs. time plots
-
-    Visual elements:
-    - Battery (adjustable voltage)
-    - Resistor (adjustable resistance)
-    - Capacitor shown as two parallel plates with gap
-    - Three-position switch: Charge / Off / Discharge
-    - Animated electrons flowing in circuit
-    - Charge buildup on capacitor plates (+ and - symbols accumulating)
-    - Electric field lines between plates (density shows field strength)
-
-    Interactive controls:
-    - Slider: Battery voltage (1 to 12 V)
-    - Slider: Resistance (100 Ω to 100 kΩ)
-    - Slider: Capacitance (1 μF to 1000 μF)
-    - Three-way toggle: Charge / Off / Discharge
-    - Button: Reset
-    - Display: Time constant τ = RC
-    - Display: Current charge Q and voltage Vc
-
-    Graph features:
-    - Upper plot: Capacitor voltage Vc vs. time
-    - Lower plot: Circuit current I vs. time
-    - Vertical line showing current time
-    - Markers at τ, 2τ, 3τ, 4τ, 5τ (63%, 86%, 95%, 98%, 99% charged)
-    - Exponential curve fitting
-
-    Animation behavior:
-    - Charging: Electrons flow from battery negative terminal to capacitor plate
-    - Electrons accumulate on one plate, creating negative charge
-    - Opposite plate loses electrons (becomes positive)
-    - Current starts high, decreases exponentially
-    - Voltage starts at 0, increases exponentially toward battery voltage
-    - Discharging: Reverse process, electrons flow from negative plate through resistor to positive plate
-    - Time constant τ = RC determines speed of charging/discharging
-
-    Equations displayed:
-    - Charging: Vc(t) = V₀(1 - e^(-t/RC))
-    - Discharging: Vc(t) = V₀e^(-t/RC)
-    - Current: I(t) = (V₀/R)e^(-t/RC)
-
-    Default parameters:
-    - Voltage: 9 V
-    - Resistance: 10 kΩ
-    - Capacitance: 100 μF
-    - τ = 1 second
-
-    Implementation notes:
-    - Use p5.js with frameCount for timing
-    - Store simulation time, update exponential equations each frame
-    - Draw charges as small circles, number proportional to Q
-    - Field lines density proportional to voltage
-    - Graph uses scrolling time axis or fixed window
-</details>
+This simulation demonstrates the exponential charging and discharging behavior of capacitors in RC circuits. Use the sliders to adjust voltage (1-12V), resistance (100Ω-100kΩ), and capacitance (1-1000μF). Click "Charge" or "Discharge" to observe how the time constant τ = RC determines the rate of voltage and current changes.
 
 ### Energy Storage in Capacitors
 

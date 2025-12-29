@@ -1,0 +1,76 @@
+{
+  "title": "Capacitor Charging and Discharging",
+  "description": "Interactive simulation showing how capacitors store and release energy in RC circuits, demonstrating exponential charging and discharging behavior with adjustable voltage, resistance, and capacitance parameters.",
+  "creator": "Dan McCreary",
+  "date": "2025-12-29",
+  "subject": ["Physics", "Electricity", "Capacitors", "RC Circuits", "Time Constant"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": "Claude AI Assistant",
+  "identifier": "capacitor-charging-discharging-v1",
+  "educationalLevel": "High School (Grades 9-12)",
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "concepts": [
+    "capacitance",
+    "resistance",
+    "time-constant",
+    "exponential-decay",
+    "energy-storage",
+    "electric-field",
+    "charge",
+    "current",
+    "voltage"
+  ],
+  "prerequisites": [
+    "Basic understanding of electric circuits",
+    "Familiarity with voltage and current",
+    "Introduction to capacitors"
+  ],
+  "library": "p5.js",
+  "version": "1.0.0",
+  "controls": [
+    {
+      "name": "Voltage Slider",
+      "type": "slider",
+      "range": "1-12 V",
+      "default": "9 V",
+      "description": "Adjusts battery voltage"
+    },
+    {
+      "name": "Resistance Slider",
+      "type": "slider",
+      "range": "100 Ω - 100 kΩ",
+      "default": "10 kΩ",
+      "description": "Adjusts circuit resistance"
+    },
+    {
+      "name": "Capacitance Slider",
+      "type": "slider",
+      "range": "1-1000 μF",
+      "default": "100 μF",
+      "description": "Adjusts capacitor value"
+    },
+    {
+      "name": "Charge Button",
+      "type": "button",
+      "description": "Connects battery to charge capacitor"
+    },
+    {
+      "name": "Off Button",
+      "type": "button",
+      "description": "Disconnects circuit"
+    },
+    {
+      "name": "Discharge Button",
+      "type": "button",
+      "description": "Discharges capacitor through resistor"
+    },
+    {
+      "name": "Reset Button",
+      "type": "button",
+      "description": "Resets simulation to initial state"
+    }
+  ]
+}

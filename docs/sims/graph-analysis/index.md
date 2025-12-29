@@ -3,15 +3,18 @@ title: Interactive Graph Analysis MicroSim
 description: An interactive tool for analyzing physics graphs, extracting slope, intercepts, and area under curve with physical interpretations.
 image: /sims/graph-analysis/graph-analysis.png
 og:image: /sims/graph-analysis/graph-analysis.png
+quality_score: 100
 social:
    cards: false
 ---
 
 # Interactive Graph Analysis MicroSim
 
-<iframe src="main.html" height="702px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="615px" width="100%" scrolling="no"></iframe>
 
 [Run the Graph Analysis MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+
+[Edit the Graph Analysis MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/oQsEAC2h_)
 
 You can include this MicroSim on your website using the following `iframe`:
 
@@ -207,6 +210,10 @@ Use the Force vs 1/r² graph to understand linearization:
 
 ## References
 
-- Physics Classroom: Position-Time Graphs
-- Khan Academy: Interpreting Motion Graphs
-- OpenStax Physics: Graphical Analysis of Motion
+1. [Position-Time Graphs](https://www.physicsclassroom.com/class/1DKin/Lesson-3/The-Meaning-of-Shape-for-a-p-t-Graph) - The Physics Classroom - Comprehensive tutorial on interpreting position-time graph shapes and their physical meaning.
+
+2. [Interpreting Motion Graphs](https://www.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/position-vs-time-graphs) - Khan Academy - Video lessons on reading and analyzing position vs. time graphs.
+
+3. [Graphical Analysis of Motion](https://openstax.org/books/physics/pages/2-4-velocity-vs-time-graphs) - OpenStax Physics - Free textbook chapter covering velocity-time graphs and calculating displacement from area under the curve.
+
+4. [Curve Fitting and Linearization](https://www.physicsclassroom.com/class/1DKin/Lesson-4/Determining-the-Slope-on-a-p-t-Graph) - The Physics Classroom - Tutorial on calculating slope from physics graphs with proper units.
