@@ -12,6 +12,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[2D Collision Vector Diagram](./2d-collision-vectors/index.md)**
 
+    ![2D Collision Vector Diagram](./2d-collision-vectors/2d-collision-vectors.png)
     Interactive visualization showing momentum vector conservation in two dimensions before and after collision.
 
 - **[Action-Reaction Pairs](./action-reaction/index.md)**
@@ -20,7 +21,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Angled Projectile Explorer](./angled-projectile/index.md)**
 
-    ![ngled Projectile Explorer](./angled-projectile/angled-projectile.png)
+    ![Angled Projectile Explorer](./angled-projectile/angled-projectile.png)
     Interactive simulation exploring how launch angle and speed affect projectile trajectory, range, and maximum height.
 
 - **[Angled Tension Components](./angled-tension/index.md)**

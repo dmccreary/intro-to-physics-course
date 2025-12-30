@@ -7,7 +7,8 @@ description: Interactive visualization showing momentum vector conservation in t
 
 <iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
 
-[Run Fullscreen](./main.html){ .md-button .md-button--primary }
+[Run 2D Collision Vector Diagram MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+[Edit the 2D Collision Vector Diagram MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/zFDOXO17J)
 
 ## About This Diagram
 
