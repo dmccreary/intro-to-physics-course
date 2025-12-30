@@ -1,0 +1,122 @@
+{
+  "microsim": {
+    "dublinCore": {
+      "title": "Action-Reaction Pairs Simulation",
+      "creator": ["Claude Code", "Dan McCreary"],
+      "subject": ["Physics", "Dynamics", "Newton's Laws", "Classical Mechanics"],
+      "description": "Interactive simulation demonstrating Newton's Third Law through six real-world scenarios: book on table, hammer and nail, rocket propulsion, swimming, Earth-Moon gravitation, and car acceleration. Each scenario visualizes action-reaction force pairs with animated graphics and explanatory panels.",
+      "date": "2025-12-27",
+      "type": "Interactive Simulation",
+      "format": "text/html",
+      "language": "en",
+      "rights": "CC BY 4.0"
+    },
+    "educational": {
+      "gradeLevel": "High School (9-12)",
+      "subjectArea": "Physics",
+      "topic": "Newton's Third Law, Action-Reaction Pairs, Force Interactions",
+      "learningObjectives": [
+        "Identify action-reaction force pairs in various physical situations",
+        "Explain why action-reaction pairs do not cancel each other out",
+        "Distinguish between contact forces and gravitational forces",
+        "Apply Newton's Third Law to explain rocket propulsion",
+        "Recognize that action-reaction pairs act on different objects",
+        "Understand that action-reaction forces are equal in magnitude and opposite in direction"
+      ],
+      "bloomsTaxonomyLevels": ["Understand", "Apply", "Analyze"],
+      "duration": "15-20 minutes",
+      "prerequisites": "Basic understanding of forces, Newton's First and Second Laws"
+    },
+    "technical": {
+      "framework": "p5.js",
+      "version": "1.11.10",
+      "canvasDimensions": {
+        "width": "responsive (max 900)",
+        "drawHeight": 520,
+        "controlHeight": 80,
+        "totalHeight": 600
+      },
+      "responsive": "Width-responsive, height-fixed",
+      "dependencies": ["p5.js CDN"],
+      "accessibility": ["Screen reader support via describe()", "Button-based scenario selection"]
+    },
+    "userInterface": {
+      "controls": [
+        {
+          "type": "button",
+          "name": "Book",
+          "description": "Shows book on table scenario with gravity and normal force pairs"
+        },
+        {
+          "type": "button",
+          "name": "Hammer",
+          "description": "Shows hammer and nail scenario demonstrating equal forces, different accelerations"
+        },
+        {
+          "type": "button",
+          "name": "Rocket",
+          "description": "Shows rocket propulsion through gas exhaust reaction"
+        },
+        {
+          "type": "button",
+          "name": "Swim",
+          "description": "Shows swimmer pushing water to move forward"
+        },
+        {
+          "type": "button",
+          "name": "Gravity",
+          "description": "Shows Earth-Moon gravitational attraction as mutual"
+        },
+        {
+          "type": "button",
+          "name": "Car",
+          "description": "Shows car acceleration through tire-ground interaction"
+        },
+        {
+          "type": "checkbox",
+          "name": "Highlight Action-Reaction Pairs",
+          "description": "Toggle visibility of force vector arrows"
+        }
+      ]
+    },
+    "simulation": {
+      "modelType": "Conceptual physics demonstration",
+      "scenarios": [
+        "Book on Table: Two action-reaction pairs (gravity, contact)",
+        "Hammer and Nail: Equal forces, different masses",
+        "Rocket in Space: Propulsion via momentum conservation",
+        "Swimming: Push water back, move forward",
+        "Earth-Moon: Mutual gravitational attraction",
+        "Car Accelerating: Tire pushes ground, ground pushes tire"
+      ],
+      "keyPrinciples": [
+        "Action-reaction pairs are always equal in magnitude",
+        "Action-reaction pairs always act on different objects",
+        "Action-reaction pairs are always the same type of force",
+        "Weight and normal force are NOT an action-reaction pair"
+      ]
+    },
+    "pedagogicalContext": {
+      "researchBasis": "Newton's Third Law of Motion",
+      "commonMisconceptions": [
+        "Action-reaction forces cancel out (they act on different objects)",
+        "Larger objects exert larger forces (forces are always equal)",
+        "Weight and normal force are an action-reaction pair (they're not)",
+        "You need something to push against to move (rockets work in vacuum)"
+      ],
+      "assessmentOpportunities": [
+        "Identify the two objects involved in each action-reaction pair",
+        "Explain why a hammer drives a nail despite equal forces",
+        "Describe how a rocket moves in the vacuum of space",
+        "Distinguish between action-reaction pairs and balanced forces"
+      ],
+      "realWorldApplications": [
+        "Rocket and jet propulsion",
+        "Swimming and walking locomotion",
+        "Vehicle acceleration and braking",
+        "Gravitational interactions between celestial bodies",
+        "Sports: pushing off in running, jumping, skating"
+      ]
+    }
+  }
+}

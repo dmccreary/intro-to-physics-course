@@ -1,5 +1,7 @@
 // Action-Reaction Pairs MicroSim
 // Demonstrates Newton's Third Law through interactive scenarios
+/// <reference types="p5/global" />
+// @ts-nocheck
 
 let canvasWidth = 900;
 let drawHeight = 520;
@@ -97,40 +99,54 @@ function draw() {
 }
 
 function drawBookOnTable(showPairs) {
-    let cx = canvasWidth / 3;
+    let cx = canvasWidth / 3 - 130;
     let cy = 280;
+    let tableWidth = 200;
 
     // Table
     fill('#8B4513');
     noStroke();
-    rect(cx - 120, cy + 35, 240, 30, 5);
+    // Table top
+    rect(cx - 120, cy + 35, tableWidth, 30, 5);
+    // Table legs slightly lighter color
     fill('#A0522D');
+    // Left leg
     rect(cx - 100, cy + 65, 30, 100);
-    rect(cx + 70, cy + 65, 30, 100);
+    // Right leg
+    rect(cx + 30, cy + 65, 30, 100);
 
     // Book
     fill('#4169E1');
     stroke('#2c3e80');
     strokeWeight(2);
-    rect(cx - 50, cy - 30, 100, 60, 5);
+    // blue book
+    rect(cx - 60, cy - 30, 100, 60, 5);
     fill('white');
     noStroke();
     textSize(14);
     textAlign(CENTER, CENTER);
     text('Book', cx, cy);
 
-    // Forces
+    // Forces - positioned to the right of the table/book
+    let vx = cx + 160; // Vector x position to the right
     if (showPairs) {
-        // Pair 1: Book-Earth (gravity)
-        drawForceArrow(cx - 20, cy, cx - 20, cy + 80, '#E74C3C', 'Earth pulls book');
-        drawForceArrow(cx - 20, cy + 140, cx - 20, cy + 60, '#E74C3C', 'Book pulls Earth');
+        // Pair 1: Book-Earth (gravity) 80 px long
+        drawForceArrow(vx, cy-45, vx, cy + 35, '#E74C3C', '');
+        textAlign(CENTER, CENTER);
+        text("Earth's gravity pulls the book down", vx-10, cy-55);
 
+        // Reaction force upward on the book
+        drawForceArrow(vx, cy + 120, vx, cy + 40, '#E74C3C', '');
+        text("Book's gravity pulls Earth up", vx, cy+128);
+        
         // Pair 2: Book-Table (contact)
-        drawForceArrow(cx + 20, cy + 30, cx + 20, cy + 80, '#3498DB', 'Book pushes table');
-        drawForceArrow(cx + 20, cy + 30, cx + 20, cy - 20, '#3498DB', 'Table pushes book');
+        drawForceArrow(vx + 50, cy + 30, vx + 50, cy + 80, '#3498DB', '');
+        text('Book pushes table', vx + 60, cy + 90);
+        drawForceArrow(vx + 50, cy + 30, vx + 50, cy - 20, '#3498DB', '');
+        text('Table pushes book', vx + 60, cy - 30);
     } else {
-        drawForceArrow(cx, cy, cx, cy + 60, '#E74C3C', 'Weight');
-        drawForceArrow(cx, cy + 30, cx, cy - 30, '#3498DB', 'Normal');
+        drawForceArrow(vx, cy, vx, cy + 60, '#E74C3C', 'Weight');
+        drawForceArrow(vx + 50, cy + 30, vx + 50, cy - 30, '#3498DB', 'Normal');
     }
 
     // Explanation panel
@@ -151,10 +167,13 @@ function drawBookOnTable(showPairs) {
 }
 
 function drawHammerNail(showPairs) {
-    let cx = canvasWidth / 3;
+    let cx = canvasWidth * .33;
+    // Hammer position in y
     let cy = 280;
     let hitOffset = sin(animPhase * 2) * 5;
 
+    push();
+    translate(-80, 0);
     // Wood block
     fill('#DEB887');
     stroke('#A0522D');
@@ -168,18 +187,32 @@ function drawHammerNail(showPairs) {
     rect(cx - 5, cy - 40 + hitOffset, 10, 70);
     triangle(cx - 5, cy + 30 + hitOffset, cx + 5, cy + 30 + hitOffset, cx, cy + 45 + hitOffset);
 
-    // Hammer
-    fill('#8B4513');
-    noStroke();
-    rect(cx - 8, cy - 120 + hitOffset, 16, 80);
+    // Hammer - rotated so handle is to the LEFT side
+    // Hammer head (vertical, on top of nail)
     fill('#666');
     stroke('#444');
     strokeWeight(2);
-    rect(cx - 35, cy - 140 + hitOffset, 70, 30, 3);
+    rect(cx - 20, cy - 90 + hitOffset, 40, 50, 3);
+
+    // Hammer handle (horizontal, extending to the left)
+    fill('#8B4513');
+    noStroke();
+    rect(cx - 120, cy - 75 + hitOffset, 100, 16);
+    pop();
 
     if (showPairs) {
-        drawForceArrow(cx + 50, cy - 80, cx + 50, cy - 20, '#E74C3C', 'Hammer pushes nail');
-        drawForceArrow(cx + 50, cy - 30, cx + 50, cy - 90, '#3498DB', 'Nail pushes hammer');
+        // vertical length for arrows
+        let vectorLength = 80;
+
+        push();
+            translate(0, -40);
+            // Force arrows near hammer/nail
+            drawForceArrow(cx + 50, cy, cx + 50, cy - vectorLength, '#3498DB', '');
+            text('Nail pushes hammer up', cx + 80, cy - 80);
+
+            drawForceArrow(cx + 50, cy, cx + 50, cy + vectorLength, '#E74C3C', '');
+            text('Hammer pushes nail down', cx + 80, cy + vectorLength + 10);
+        pop();
     }
 
     drawExplanationPanel(
@@ -215,6 +248,8 @@ function drawRocket(showPairs) {
     }
 
     // Rocket body
+    push();
+    translate(-100, 0);
     fill('#ddd');
     stroke('#999');
     strokeWeight(2);
@@ -253,10 +288,17 @@ function drawRocket(showPairs) {
         let py = rocketY + 80 + random(50) + (animPhase * 20) % 100;
         ellipse(px, py, 10 + random(10), 10 + random(10));
     }
+    pop();
 
     if (showPairs) {
-        drawForceArrow(cx + 60, rocketY + 80, cx + 60, rocketY + 140, '#E74C3C', 'Rocket pushes gas');
-        drawForceArrow(cx + 60, rocketY + 30, cx + 60, rocketY - 30, '#3498DB', 'Gas pushes rocket');
+        // blue arrow upwards (gas pushes rocket)
+        cx -= 20;
+        drawForceArrow(cx, rocketY + 30, cx, rocketY - 30, '#3498DB', '');
+        text('Gas pushes rocket up', cx + 90, rocketY - 10);
+
+        // red arrow downwards (rocket pushes gas)
+        drawForceArrow(cx, rocketY + 80, cx, rocketY + 140, '#E74C3C', '');
+        text('Rocket pushes gas down', cx + 90, rocketY + 120);
     }
 
     drawExplanationPanel(
@@ -276,9 +318,10 @@ function drawRocket(showPairs) {
 }
 
 function drawSwimming(showPairs) {
-    let cx = canvasWidth / 3;
+    let cx = canvasWidth / 3 - 100;
     let cy = 280;
-    let swimX = (animPhase * 30) % 200 - 50;
+    // Slowed animation by 2x (was animPhase * 30, now * 15)
+    let swimX = (animPhase * 15) % 200 - 50;
 
     // Water
     fill('#87CEEB');
@@ -292,42 +335,53 @@ function drawSwimming(showPairs) {
     for (let y = 160; y < 400; y += 30) {
         beginShape();
         for (let x = 50; x < canvasWidth / 2 + 20; x += 10) {
-            vertex(x, y + sin((x + animPhase * 30) * 0.05) * 5);
+            vertex(x, y + sin((x + animPhase * 15) * 0.05) * 5);
         }
         endShape();
     }
 
-    // Swimmer
+    // Swimmer - using push/translate/pop for easy position management
     let sx = cx + swimX;
+    push();
+    translate(sx, cy);
+
+    // Head
     fill('#FFB74D');
     noStroke();
-    ellipse(sx + 30, cy - 10, 30, 25); // Head
+    ellipse(30, -10, 30, 25);
 
+    // Body
     fill('#2196F3');
     beginShape();
-    vertex(sx - 40, cy);
-    vertex(sx + 20, cy - 15);
-    vertex(sx + 20, cy + 15);
-    vertex(sx - 40, cy + 10);
+    vertex(-40, 0);
+    vertex(20, -15);
+    vertex(20, 15);
+    vertex(-40, 10);
     endShape(CLOSE);
 
-    // Arm
+    // Arm - slowed by 2x (was animPhase * 3, now * 1.5)
     stroke('#FFB74D');
     strokeWeight(8);
-    let armAngle = sin(animPhase * 3) * 0.5;
-    line(sx, cy, sx - 30 * cos(armAngle), cy + 30 * sin(armAngle));
+    let armAngle = sin(animPhase * 1.5) * 0.5;
+    line(0, 0, -30 * cos(armAngle), 30 * sin(armAngle));
 
-    // Water particles being pushed back
+    // Water particles being pushed back - slowed by 2x (was * 10, now * 5)
     fill('#5DA9E940');
     noStroke();
     for (let i = 0; i < 5; i++) {
-        let px = sx - 50 - i * 20 - (animPhase * 10) % 50;
-        ellipse(px, cy + random(-20, 20), 15, 15);
+        let px = -50 - i * 20 - (animPhase * 5) % 50;
+        ellipse(px, random(-20, 20), 15, 15);
     }
 
+    pop();
+
     if (showPairs) {
-        drawForceArrow(sx - 30, cy + 50, sx - 80, cy + 50, '#E74C3C', 'Hand pushes water back');
-        drawForceArrow(sx - 30, cy - 40, sx + 20, cy - 40, '#3498DB', 'Water pushes swimmer forward');
+
+        // Force arrows above the swimmer
+        drawForceArrow(sx - 30, cy - 80, sx + 20, cy - 80, '#3498DB', 'Water pushes swimmer forward');
+
+        // Arrow below the swimmer
+        drawForceArrow(sx - 30, cy + 80, sx - 80, cy + 80, '#E74C3C', 'Hand pushes water back');
     }
 
     drawExplanationPanel(
@@ -425,14 +479,15 @@ function drawCar(showPairs) {
     let carX = (animPhase * 20) % 200 - 50;
 
     // Road
-    fill('#444');
+    fill('black');
     noStroke();
-    rect(50, cy + 30, canvasWidth / 2 - 30, 80);
+    // a black road from the left edge to middle of canvas
+    rect(5, cy + 30, canvasWidth*.6, 80);
 
-    // Road lines
+    // Yellow dashed road lines
     stroke('#FFD700');
     strokeWeight(3);
-    for (let x = 50; x < canvasWidth / 2 + 20; x += 40) {
+    for (let x = 5; x <  canvasWidth*.6 + 20; x += 40) {
         line(x + (animPhase * 20) % 40, cy + 70, x + 20 + (animPhase * 20) % 40, cy + 70);
     }
 
@@ -463,8 +518,13 @@ function drawCar(showPairs) {
 
     if (showPairs) {
         // Wheel-ground interaction
-        drawForceArrow(carCx - 35, cy + 50, carCx - 75, cy + 50, '#E74C3C', 'Tire pushes ground back');
-        drawForceArrow(carCx - 35, cy + 15, carCx + 5, cy + 15, '#3498DB', 'Ground pushes tire forward');
+        // red arrow backward (tire pushes ground back)
+        drawForceArrow(carCx - 120, cy, carCx - 160, cy, '#E74C3C', 'Tire pushes ground back');
+
+        // blue arrow forward (ground pushes tire forward)
+        // place light arrows on the darker road area
+        drawForceArrow(carCx - 35, cy + 45, carCx + 5, cy + 45, '#6496b8ff', '');
+        text('Ground pushes tire forward', carCx - 100, cy + 55);
     }
 
     drawExplanationPanel(
@@ -510,10 +570,10 @@ function drawForceArrow(x1, y1, x2, y2, col, label) {
 }
 
 function drawExplanationPanel(title, lines, borderColor) {
-    let px = canvasWidth / 2 + 50;
+    let px = canvasWidth * .6;
     let py = 80;
-    let pw = canvasWidth - px - 30;
-    let ph = 380;
+    let pw = canvasWidth *.35;
+    let ph = canvasHeight*.55;
 
     fill(255, 255, 255, 245);
     stroke(borderColor);
@@ -536,7 +596,7 @@ function drawExplanationPanel(title, lines, borderColor) {
     fill('#FFF3CD');
     stroke('#FFC107');
     strokeWeight(1);
-    rect(px + 10, py + ph - 80, pw - 20, 65, 5);
+    rect(px + 10, py + ph - 80, pw - 20, 75, 5);
 
     fill('#856404');
     textSize(12);
