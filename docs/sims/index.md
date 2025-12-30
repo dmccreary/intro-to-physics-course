@@ -17,7 +17,9 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Action-Reaction Pairs](./action-reaction/index.md)**
 
-    Interactive demonstration of Newton's Third Law through six real-world scenarios showing action-reaction force pairs.
+    ![Action-Reaction Pairs](./action-reaction/action-reaction.png)
+    Interactive demonstration of Newton's Third Law through six real-world scenarios showing action-reaction force pairs.  We have an example of a book on a table, a hammer and
+    a nail, a rocket in space, a swimmer and tires on a car.
 
 - **[Angled Projectile Explorer](./angled-projectile/index.md)**
 
