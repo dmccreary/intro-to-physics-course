@@ -5,7 +5,7 @@ description: Interactive simulation exploring how launch angle and speed affect 
 
 # Angled Projectile Motion Explorer
 
-<iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="582px" width="100%" scrolling="no"></iframe>
 
 [Run the Angled Projectile MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 

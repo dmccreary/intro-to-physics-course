@@ -6,51 +6,39 @@ image: /sims/angular-displacement/angular-displacement.png
 
 # Angular Displacement Visualization
 
-<iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="552px" width="100%" scrolling="no"></iframe>
 
 [Run the Angular Displacement MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
 ## About This MicroSim
 
-This interactive simulation helps students understand angular displacement by visualizing how different points on a rotating object move through the same angle but travel different arc lengths. The key relationship demonstrated is **s = rθ**, where arc length depends on both the radius and angular displacement.
+This simulation teaches one concept clearly: **arc length depends on radius** (s = rθ). Two colored points at different radii rotate through the same angle, making it visually obvious that the outer point travels a longer arc.
 
 ## How to Use
 
-1. **Angular Displacement Slider**: Adjust the angle θ from 0 to 2π radians (360°)
-2. **Animate Button**: Watch the disk rotate continuously at constant angular velocity
-3. **Reset Button**: Return to the initial position (45°)
-4. **Show Right-Hand Rule**: Display the convention for angular direction
+1. **Drag the slider** to change the angular displacement θ
+2. **Observe** how both points rotate through the same angle
+3. **Compare** the arc lengths (shown as thick colored arcs)
+4. **Check the ratio** in the info panel - it equals the ratio of the radii
 
-## Key Observations
+## Key Insight
 
-- **All points rotate through the same angle θ** - this is the defining property of angular displacement
-- **Arc length increases with radius** - the outer green point travels farther than the inner red point
-- **The s = rθ formula** - arc length is directly proportional to both radius and angle
-- **Units matter** - angle must be in radians for the formula to work
+Both points always rotate through the **same angle θ**, but the outer point (green, r=180) travels **3 times farther** than the inner point (red, r=60) because arc length is proportional to radius:
+
+**s = r × θ**
 
 ## Iframe Embed Code
 
 ```html
 <iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/angular-displacement/main.html"
-        height="602px"
+        height="552px"
         width="100%"
         scrolling="no">
 </iframe>
 ```
 
-## Lesson Plan
+## Discussion Questions
 
-### Learning Objectives
-- Define angular displacement as the angle through which an object rotates
-- Calculate arc length using s = rθ
-- Explain why points at different radii travel different distances for the same rotation
-- Apply the right-hand rule to determine angular direction
-
-### Discussion Questions
 1. If you double the radius, what happens to the arc length for the same angle?
 2. Why must we use radians (not degrees) in the s = rθ formula?
 3. How does this explain why the outer edge of a merry-go-round moves faster than the center?
-
-### Extensions
-- Calculate the linear velocity at each radius when the disk rotates at constant angular velocity
-- Explore the relationship between angular and linear quantities
