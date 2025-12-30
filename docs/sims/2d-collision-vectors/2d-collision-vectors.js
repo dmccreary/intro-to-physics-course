@@ -6,6 +6,8 @@ let drawHeight = 500;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 20;
+// this should be calculated based on the number of characters in the label and the font size
+let sliderLeftMargin = 270;
 
 // Control sliders
 let angle1Slider, angle2Slider;
@@ -24,17 +26,28 @@ function setup() {
 
     // Angle sliders
     angle1Slider = createSlider(0, 360, 30, 5);
-    angle1Slider.position(150, drawHeight + 20);
-    angle1Slider.size(150);
+    angle1Slider.position(sliderLeftMargin, drawHeight + 20);
     angle1Slider.input(updateVelocities);
 
     angle2Slider = createSlider(0, 360, 210, 5);
-    angle2Slider.position(150, drawHeight + 55);
-    angle2Slider.size(150);
+    angle2Slider.position(sliderLeftMargin, drawHeight + 55);
     angle2Slider.input(updateVelocities);
+    resizeSliders();
 
     updateVelocities();
     describe('2D collision vector diagram showing momentum conservation in x and y', LABEL);
+}
+
+function resizeSliders() {
+    // Slider width = total width - left margin - right text width - gaps
+    // sliderLeftMargin: where slider starts (270)
+    // rightTextWidth: ~300px for "Before: p = (-12.5, -12.5) kg·m/s" at textSize 16
+    // gaps: 20px margin on right + 20px gap between slider and text
+    let rightTextWidth = 220;
+    let gaps = 20;
+    let sliderWidth = canvasWidth - sliderLeftMargin - rightTextWidth - gaps;
+    angle1Slider.size(sliderWidth);
+    angle2Slider.size(sliderWidth);
 }
 
 function updateVelocities() {
@@ -88,11 +101,13 @@ function draw() {
 
     // Draw before and after panels
     let panelWidth = (canvasWidth - 60) / 2;
-    drawCollisionPanel(20, 45, panelWidth, drawHeight - 65, 'BEFORE', true);
-    drawCollisionPanel(40 + panelWidth, 45, panelWidth, drawHeight - 65, 'AFTER', false);
+    let panelHeight = drawHeight - 90;
+    drawCollisionPanel(20, 45, panelWidth, panelHeight, 'BEFORE', true);
+    drawCollisionPanel(40 + panelWidth, 45, panelWidth, panelHeight, 'AFTER', false);
 
     // Central annotation
     fill(0, 150, 0);
+    noStroke();
     textSize(14);
     textAlign(CENTER, CENTER);
     text('p_total conserved!', canvasWidth/2, drawHeight - 30);
@@ -128,6 +143,7 @@ function drawCollisionPanel(x, y, w, h, title, isBefore) {
 
     // Axis labels
     fill(100);
+    noStroke();
     textSize(10);
     textAlign(CENTER, TOP);
     text('x', originX + axisLen + 10, originY - 5);
@@ -191,48 +207,15 @@ function drawCollisionPanel(x, y, w, h, title, isBefore) {
     fill(220, 100, 100);
     text('v₂ = (' + v2x.toFixed(1) + ', ' + v2y.toFixed(1) + ') m/s', v2EndX + 5, v2EndY);
 
-    // Momentum calculations
-    let p1x = obj1.m * v1x;
-    let p1y = obj1.m * v1y;
-    let p2x = obj2.m * v2x;
-    let p2y = obj2.m * v2y;
-    let pTotalX = p1x + p2x;
-    let pTotalY = p1y + p2y;
+    // Draw momentum info box
+    drawMomentumInfo(x + 10, y + h - 110, w - 20, v1x, v1y, v2x, v2y);
 
-    // Momentum info box
-    let infoY = y + h - 140;
-    fill(250, 250, 255);
-    stroke(200);
-    strokeWeight(1);
-    rect(x + 10, infoY, w - 20, 130, 5);
-
-    fill('black');
-    textSize(11);
-    textAlign(LEFT, TOP);
-    let textX = x + 20;
-    let textY = infoY + 10;
-
-    text('Momentum Calculations:', textX, textY);
-    textY += 18;
-
-    fill(70, 130, 200);
-    text('p₁ = m₁v₁ = 2(' + v1x.toFixed(1) + ', ' + v1y.toFixed(1) + ') = (' + p1x.toFixed(1) + ', ' + p1y.toFixed(1) + ')', textX, textY);
-    textY += 15;
-
-    fill(220, 100, 100);
-    text('p₂ = m₂v₂ = 3(' + v2x.toFixed(1) + ', ' + v2y.toFixed(1) + ') = (' + p2x.toFixed(1) + ', ' + p2y.toFixed(1) + ')', textX, textY);
-    textY += 20;
-
-    fill(100, 50, 150);
-    text('p_total = p₁ + p₂', textX, textY);
-    textY += 15;
-    textSize(12);
-    text('= (' + pTotalX.toFixed(1) + ', ' + pTotalY.toFixed(1) + ') kg·m/s', textX + 20, textY);
-
-    // Draw total momentum vector (purple)
-    stroke(100, 50, 150);
+    // Draw total momentum vector (green)
+    let pTotalX = obj1.m * v1x + obj2.m * v2x;
+    let pTotalY = obj1.m * v1y + obj2.m * v2y;
+    stroke(0, 150, 0);
     strokeWeight(2);
-    fill(100, 50, 150);
+    fill(0, 150, 0);
     let pScale = 5;
     let pEndX = originX + pTotalX * pScale;
     let pEndY = originY - pTotalY * pScale;
@@ -249,8 +232,54 @@ function drawArrowhead(x1, y1, x2, y2, size) {
     pop();
 }
 
-function drawControlLabels() {
+function drawMomentumInfo(px, py, boxWidth, v1x, v1y, v2x, v2y) {
+    // Calculate momentum values
+    let p1x = obj1.m * v1x;
+    let p1y = obj1.m * v1y;
+    let p2x = obj2.m * v2x;
+    let p2y = obj2.m * v2y;
+    let pTotalX = p1x + p2x;
+    let pTotalY = p1y + p2y;
+
+    push();
+    translate(px, py);
+
+    // Box background
+    fill(250, 250, 255);
+    stroke(200);
+    strokeWeight(1);
+    rect(0, 0, boxWidth, 100, 5);
+
+    // Text content
+    fill('black');
+    noStroke();
     textSize(11);
+    textAlign(LEFT, TOP);
+
+    let ty = 10;
+    text('Momentum Calculations:', 10, ty);
+    ty += 18;
+
+    fill(70, 130, 200);
+    text('p₁ = m₁v₁ = 2(' + v1x.toFixed(1) + ', ' + v1y.toFixed(1) + ') = (' + p1x.toFixed(1) + ', ' + p1y.toFixed(1) + ')', 10, ty);
+    ty += 15;
+
+    fill(220, 100, 100);
+    text('p₂ = m₂v₂ = 3(' + v2x.toFixed(1) + ', ' + v2y.toFixed(1) + ') = (' + p2x.toFixed(1) + ', ' + p2y.toFixed(1) + ')', 10, ty);
+    ty += 20;
+
+    fill(0, 150, 0);
+    text('p_total = p₁ + p₂', 10, ty);
+    ty += 15;
+    textSize(12);
+    text('= (' + pTotalX.toFixed(1) + ', ' + pTotalY.toFixed(1) + ') kg·m/s', 30, ty);
+
+    pop();
+}
+
+function drawControlLabels() {
+    // make the text labels readable for students in the back of the classroom
+    textSize(16);
     textAlign(LEFT, CENTER);
     fill('black');
     noStroke();
@@ -265,7 +294,7 @@ function drawControlLabels() {
     let py_f = obj1.m * obj1_f.vy + obj2.m * obj2_f.vy;
 
     textAlign(RIGHT, CENTER);
-    fill(100, 50, 150);
+    fill(0, 150, 0);
     text('Before: p = (' + px_i.toFixed(1) + ', ' + py_i.toFixed(1) + ') kg·m/s', canvasWidth - 20, drawHeight + 30);
     text('After: p = (' + px_f.toFixed(1) + ', ' + py_f.toFixed(1) + ') kg·m/s', canvasWidth - 20, drawHeight + 65);
 
@@ -284,5 +313,8 @@ function updateCanvasSize() {
     const container = document.querySelector('main');
     if (container) {
         canvasWidth = container.offsetWidth;
+        if (angle1Slider && angle2Slider) {
+            resizeSliders();
+        }
     }
 }
