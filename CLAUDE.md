@@ -119,13 +119,21 @@ export DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib  # Add to ~/.zshrc
 
 ### Skills Available
 
-The project includes several Claude Code skills for intelligent textbook development (see `.claude/skills/`):
+These projects are created using an extensive library of skills found here:
+
+[Intelligent Textbook and MicroSim Claude Code Skills Library](https://github.com/dmccreary/claude-skills/tree/main/skills)
+
+There is an install script that should be run to place symbolic links in the `~/.claude/skills/` directory.
+
+The project includes several Claude Code skills for intelligent textbook development (see `~/.claude/skills/`):
+- `microsim-generator` - this is a wrapper skill for the dozen subtypes of MicroSims such as p5.js, Mermaid, vis-network.js and vis-timeline.js, chartJS etc.
+- `microsim-util` - has skills that work on all MicroSims and the standardization guide will add the proper metadata, links and lesson plans to a MicroSim
 - `learning-graph-generator` - Generates learning graphs from course descriptions
 - `course-description-analyzer` - Validates course descriptions for completeness
 - `chapter-content-generator` - Generates chapter content from concept lists
 - `glossary-generator` - Creates ISO 11179-compliant glossaries
 - `quiz-generator` - Builds Bloom-aligned quizzes
-- Various MicroSim generators (p5.js, vis-network, mermaid, timeline, venn diagrams, bubble charts)
+
 
 Use skills when appropriate via the Skill tool.
 
@@ -140,3 +148,11 @@ Add the following line to the end of the setup() function
 ```
 
 This allows you to not have to maintain the height parameter in each iframe reference.
+
+## Tips and Tricks
+
+When you draw test using the p5.js text() function, always place a `noStroke()` before the text.
+
+The drawing area should always have an `aliceblue` background and the controls area should always have a `white` background.
+
+In the index.md file, always put in a placeholder for the [Edit SIMNAME Using the p5.js Editor](https://editor.p5js.org/) after the fullscreen link.

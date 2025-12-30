@@ -27,7 +27,7 @@ This section contains interactive MicroSims covering topics in high school physi
     Interactive simulation exploring how launch angle and speed affect projectile trajectory, range, and maximum height.
 
 - **[Angled Tension Components](./angled-tension/index.md)**
-
+    ![Angled Tension Components Screen image](./angled-tension/angled-tension.png)
     Interactive visualization showing how the angle of an applied force affects its horizontal and vertical components.
 
 - **[Angular Displacement Visualization](./angular-displacement/index.md)**
