@@ -25,12 +25,12 @@ function setup() {
     canvas.parent(document.querySelector('main'));
 
     // Angle sliders
-    angle1Slider = createSlider(0, 360, 30, 5);
+    angle1Slider = createSlider(0, 360, 20, 5);
     angle1Slider.position(sliderLeftMargin, drawHeight + 20);
     angle1Slider.input(updateVelocities);
 
-    angle2Slider = createSlider(0, 360, 210, 5);
-    angle2Slider.position(sliderLeftMargin, drawHeight + 55);
+    angle2Slider = createSlider(0, 360, 75, 5);
+    angle2Slider.position(sliderLeftMargin, drawHeight + 45);
     angle2Slider.input(updateVelocities);
     resizeSliders();
 
@@ -108,9 +108,9 @@ function draw() {
     // Central annotation
     fill(0, 150, 0);
     noStroke();
-    textSize(14);
+    textSize(16);
     textAlign(CENTER, CENTER);
-    text('p_total conserved!', canvasWidth/2, drawHeight - 30);
+    text('Total Momentum (p_total) is Conserved!', canvasWidth/2, drawHeight - 25);
 
     // Control labels
     drawControlLabels();
@@ -285,7 +285,7 @@ function drawControlLabels() {
     noStroke();
 
     text('Object 1 (2 kg, 4 m/s): Angle = ' + angle1Slider.value() + '°', 10, drawHeight + 30);
-    text('Object 2 (3 kg, 3 m/s): Angle = ' + angle2Slider.value() + '°', 10, drawHeight + 65);
+    text('Object 2 (3 kg, 3 m/s): Angle = ' + angle2Slider.value() + '°', 10, drawHeight + 55);
 
     // Show total momentum is conserved
     let px_i = obj1.m * obj1.vx_i + obj2.m * obj2.vx_i;
@@ -296,7 +296,7 @@ function drawControlLabels() {
     textAlign(RIGHT, CENTER);
     fill(0, 150, 0);
     text('Before: p = (' + px_i.toFixed(1) + ', ' + py_i.toFixed(1) + ') kg·m/s', canvasWidth - 20, drawHeight + 30);
-    text('After: p = (' + px_f.toFixed(1) + ', ' + py_f.toFixed(1) + ') kg·m/s', canvasWidth - 20, drawHeight + 65);
+    text('After: p = (' + px_f.toFixed(1) + ', ' + py_f.toFixed(1) + ') kg·m/s', canvasWidth - 20, drawHeight + 55);
 
     if (abs(px_i - px_f) < 0.1 && abs(py_i - py_f) < 0.1) {
         fill(0, 150, 0);
