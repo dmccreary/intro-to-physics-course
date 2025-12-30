@@ -776,6 +776,10 @@
           
         
       
+        
+          
+        
+      
     
     
     
@@ -971,9 +975,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-observations" class="md-nav__link">
+  <a href="#key-insight" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Observations
+      Key Insight
     </span>
   </a>
   
@@ -989,44 +993,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lesson-plan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lesson Plan
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lesson Plan">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      Learning Objectives
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#discussion-questions" class="md-nav__link">
     <span class="md-ellipsis">
       Discussion Questions
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Extensions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1198,6 +1169,27 @@
   
   <span class="md-ellipsis">
     Car on Curve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capacitor-charging-discharging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Capacitor Charging Discharging
   </span>
   
 
@@ -3348,9 +3340,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-observations" class="md-nav__link">
+  <a href="#key-insight" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Observations
+      Key Insight
     </span>
   </a>
   
@@ -3366,44 +3358,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lesson-plan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lesson Plan
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Lesson Plan">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      Learning Objectives
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#discussion-questions" class="md-nav__link">
     <span class="md-ellipsis">
       Discussion Questions
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#extensions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Extensions
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -3431,55 +3390,38 @@
 
 
 <h1 id="angular-displacement-visualization">Angular Displacement Visualization</h1>
-<iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="552px" width="100%" scrolling="no"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Angular Displacement MicroSim Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>This interactive simulation helps students understand angular displacement by visualizing how different points on a rotating object move through the same angle but travel different arc lengths. The key relationship demonstrated is <strong>s = rθ</strong>, where arc length depends on both the radius and angular displacement.</p>
+<p>This simulation teaches one concept clearly: <strong>arc length depends on radius</strong> (s = rθ). Two colored points at different radii rotate through the same angle, making it visually obvious that the outer point travels a longer arc.</p>
 <h2 id="how-to-use">How to Use</h2>
 <ol>
-<li><strong>Angular Displacement Slider</strong>: Adjust the angle θ from 0 to 2π radians (360°)</li>
-<li><strong>Animate Button</strong>: Watch the disk rotate continuously at constant angular velocity</li>
-<li><strong>Reset Button</strong>: Return to the initial position (45°)</li>
-<li><strong>Show Right-Hand Rule</strong>: Display the convention for angular direction</li>
+<li><strong>Drag the slider</strong> to change the angular displacement θ</li>
+<li><strong>Observe</strong> how both points rotate through the same angle</li>
+<li><strong>Compare</strong> the arc lengths (shown as thick colored arcs)</li>
+<li><strong>Check the ratio</strong> in the info panel - it equals the ratio of the radii</li>
 </ol>
-<h2 id="key-observations">Key Observations</h2>
-<ul>
-<li><strong>All points rotate through the same angle θ</strong> - this is the defining property of angular displacement</li>
-<li><strong>Arc length increases with radius</strong> - the outer green point travels farther than the inner red point</li>
-<li><strong>The s = rθ formula</strong> - arc length is directly proportional to both radius and angle</li>
-<li><strong>Units matter</strong> - angle must be in radians for the formula to work</li>
-</ul>
+<h2 id="key-insight">Key Insight</h2>
+<p>Both points always rotate through the <strong>same angle θ</strong>, but the outer point (green, r=180) travels <strong>3 times farther</strong> than the inner point (red, r=60) because arc length is proportional to radius:</p>
+<p><strong>s = r × θ</strong></p>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/intro-to-physics-course/sims/angular-displacement/main.html&quot;</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">&quot;602px&quot;</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">&quot;552px&quot;</span>
         <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="lesson-plan">Lesson Plan</h2>
-<h3 id="learning-objectives">Learning Objectives</h3>
-<ul>
-<li>Define angular displacement as the angle through which an object rotates</li>
-<li>Calculate arc length using s = rθ</li>
-<li>Explain why points at different radii travel different distances for the same rotation</li>
-<li>Apply the right-hand rule to determine angular direction</li>
-</ul>
-<h3 id="discussion-questions">Discussion Questions</h3>
+<h2 id="discussion-questions">Discussion Questions</h2>
 <ol>
 <li>If you double the radius, what happens to the arc length for the same angle?</li>
 <li>Why must we use radians (not degrees) in the s = rθ formula?</li>
 <li>How does this explain why the outer edge of a merry-go-round moves faster than the center?</li>
 </ol>
-<h3 id="extensions">Extensions</h3>
-<ul>
-<li>Calculate the linear velocity at each radius when the disk rotates at constant angular velocity</li>
-<li>Explore the relationship between angular and linear quantities</li>
-</ul>
 
 
 

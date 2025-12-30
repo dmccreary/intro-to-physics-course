@@ -1,0 +1,15 @@
+{
+  "title": "Comparative Angular Velocities Chart",
+  "description": "An interactive horizontal bar chart comparing angular velocities of common rotating objects on a logarithmic scale, from Earth's rotation to dental drills.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-27",
+  "subject": ["angular velocity", "rotational motion", "logarithmic scale", "physics", "RPM", "radians per second"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["angular-velocity", "rotational-motion", "logarithmic-scale", "unit-conversion"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["basic-algebra", "understanding-of-rotation"]
+}

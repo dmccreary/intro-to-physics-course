@@ -4,10 +4,10 @@
 // Canvas dimensions
 let canvasWidth = 900;
 let drawHeight = 500;
-let controlHeight = 120;
+let controlHeight = 110;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
-let sliderLeftMargin = 120;
+let sliderLeftMargin = 30;
 
 // Charges array
 let charges = [];
@@ -31,37 +31,27 @@ function setup() {
     charges.push({ x: canvasWidth/2 + 120, y: drawHeight/2, q: -5 });
 
     // Create sliders
-    let sliderY = drawHeight + 20;
-    let sliderWidth = 140;
-
     q1Slider = createSlider(-10, 10, 5, 1);
-    q1Slider.position(sliderLeftMargin, sliderY);
-    q1Slider.size(sliderWidth);
     q1Slider.input(() => { if (charges.length > 0) charges[0].q = q1Slider.value(); });
 
     q2Slider = createSlider(-10, 10, -5, 1);
-    q2Slider.position(sliderLeftMargin + 200, sliderY);
-    q2Slider.size(sliderWidth);
     q2Slider.input(() => { if (charges.length > 1) charges[1].q = q2Slider.value(); });
 
     numLinesSlider = createSlider(6, 24, 12, 2);
-    numLinesSlider.position(sliderLeftMargin + 400, sliderY);
-    numLinesSlider.size(sliderWidth);
     numLinesSlider.input(() => numLines = numLinesSlider.value());
 
     // Buttons
-    let buttonY = drawHeight + 65;
     resetButton = createButton('Reset Dipole');
-    resetButton.position(margin, buttonY);
     resetButton.mousePressed(resetDipole);
 
     clearButton = createButton('Clear All');
-    clearButton.position(margin + 110, buttonY);
     clearButton.mousePressed(clearCharges);
 
     showVectorsCheckbox = createCheckbox(' Show field vectors', false);
-    showVectorsCheckbox.position(margin + 200, buttonY + 3);
     showVectorsCheckbox.changed(() => showVectors = showVectorsCheckbox.checked());
+
+    // Position all controls based on canvas size
+    updateControlPositions();
 
     // Instructions
     describe('Electric field lines visualization around point charges', LABEL);
@@ -123,15 +113,17 @@ function draw() {
 
     // Control area
     fill('white');
-    noStroke();
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Draw title
     fill('black');
     noStroke();
-    textSize(22);
+    textSize(32);
     textAlign(CENTER, TOP);
     text("Electric Field Lines", canvasWidth / 2, 12);
+    textSize(16);
+    text("Drag Charges to Reposition", canvasWidth / 2, 45);
+
 
     // Draw field lines
     if (charges.length > 0) {
@@ -233,6 +225,9 @@ function drawFieldLine(startX, startY, direction) {
     let stepSize = 3;
     let maxSteps = 500;
 
+    // Store path points for arrowhead placement
+    let pathPoints = [{x: x, y: y}];
+
     beginShape();
     vertex(x, y);
 
@@ -260,6 +255,9 @@ function drawFieldLine(startX, startY, direction) {
                 break;
             }
         }
+
+        pathPoints.push({x: x, y: y});
+
         if (hitCharge) {
             vertex(x, y);
             break;
@@ -270,15 +268,15 @@ function drawFieldLine(startX, startY, direction) {
 
     endShape();
 
-    // Draw arrowhead at midpoint
-    if (charges.length >= 1) {
-        let midX = (startX + x) / 2;
-        let midY = (startY + y) / 2;
-        let field = getElectricField(midX, midY);
+    // Draw arrowhead at actual midpoint of path
+    if (pathPoints.length > 2) {
+        let midIndex = floor(pathPoints.length / 2);
+        let midPoint = pathPoints[midIndex];
+        let field = getElectricField(midPoint.x, midPoint.y);
         let angle = atan2(field.y, field.x);
 
         push();
-        translate(midX, midY);
+        translate(midPoint.x, midPoint.y);
         rotate(angle);
         fill('#4CAF50');
         noStroke();
@@ -353,24 +351,45 @@ function drawFieldVectors() {
 function drawSliderLabels() {
     fill('black');
     noStroke();
-    textSize(13);
-    textAlign(LEFT, CENTER);
+    textSize(16);
+    textAlign(CENTER, CENTER);
 
-    let labelY = drawHeight + 30;
+    // Use same spacing as updateControlPositions
+    let sliderWidth = canvasWidth * 0.25;
+    let sliderSpacing = canvasWidth * 0.29;
 
-    // Q1 label
+    // Labels above sliders
+    let labelY = drawHeight + 10;
+    // Labels below sliders
+    let labelY2 = drawHeight + 45;
+
+    // Q1 label - centered over first slider
     let q1 = charges.length > 0 ? charges[0].q : 0;
+    let q1CenterX = sliderLeftMargin + sliderWidth / 2;
     fill(q1 > 0 ? '#E53935' : (q1 < 0 ? '#2196F3' : '#666'));
-    text('q₁: ' + (q1 > 0 ? '+' : '') + q1 + ' μC', margin, labelY);
+    text('q₁: ' + (q1 > 0 ? '+' : '') + q1 + ' μC', q1CenterX, labelY);
+    // Plus and minus signs under the slider
+    textSize(24);
+    text('—', sliderLeftMargin + 10, labelY2);
+    text('+', sliderLeftMargin + sliderWidth - 10, labelY2);
 
-    // Q2 label
+    // Q2 label - centered over second slider
+    textSize(16);
     let q2 = charges.length > 1 ? charges[1].q : 0;
+    let q2CenterX = sliderLeftMargin + sliderSpacing + sliderWidth / 2;
     fill(q2 > 0 ? '#E53935' : (q2 < 0 ? '#2196F3' : '#666'));
-    text('q₂: ' + (q2 > 0 ? '+' : '') + q2 + ' μC', margin + 200, labelY);
+    text('q₂: ' + (q2 > 0 ? '+' : '') + q2 + ' μC', q2CenterX, labelY);
 
-    // Field lines label
+    // Plus and minus signs under the slider
+    textSize(24);
+    text('—', sliderLeftMargin + sliderSpacing + 10, labelY2);
+    text('+', sliderLeftMargin + sliderSpacing + sliderWidth - 10, labelY2);
+
+    // Field lines label - centered over third slider
     fill('black');
-    text('Lines: ' + numLines, margin + 400, labelY);
+    textSize(16);
+    let linesCenterX = sliderLeftMargin + sliderSpacing * 2 + sliderWidth / 2;
+    text('Lines: ' + numLines, linesCenterX, labelY);
 }
 
 function drawLegend() {
@@ -402,9 +421,34 @@ function updateCanvasSize() {
     if (container) {
         canvasWidth = min(container.offsetWidth, 900);
     }
+    canvasHeight = drawHeight + controlHeight;
+}
+
+function updateControlPositions() {
+    // Calculate responsive positions and sizes
+    let sliderY = drawHeight + 20;
+    let sliderWidth = canvasWidth * 0.25;
+    let sliderSpacing = canvasWidth * 0.29;
+
+    // Position sliders
+    q1Slider.position(sliderLeftMargin, sliderY);
+    q1Slider.size(sliderWidth);
+
+    q2Slider.position(sliderLeftMargin + sliderSpacing, sliderY);
+    q2Slider.size(sliderWidth);
+
+    numLinesSlider.position(sliderLeftMargin + sliderSpacing * 2, sliderY);
+    numLinesSlider.size(sliderWidth);
+
+    // Position buttons and checkbox
+    let buttonY = drawHeight + 65;
+    resetButton.position(margin, buttonY);
+    clearButton.position(margin + 110, buttonY);
+    showVectorsCheckbox.position(margin + 200, buttonY + 3);
 }
 
 function windowResized() {
     updateCanvasSize();
     resizeCanvas(canvasWidth, canvasHeight);
+    updateControlPositions();
 }

@@ -9,7 +9,7 @@ let canvasHeight = drawHeight + controlHeight;
 let margin = 20;
 
 // Target configuration
-let targetRadius = 120;
+let targetRadius = 90;  // 10% smaller to give more room for labels
 let targetCenterX, targetCenterY;
 let ringCount = 5;
 
@@ -38,7 +38,7 @@ function setup() {
 
     // Create regenerate button
     regenerateButton = createButton('Regenerate Darts');
-    regenerateButton.position(canvasWidth/2 - 70, drawHeight + 12);
+    regenerateButton.position(20, drawHeight + 12);
     regenerateButton.mousePressed(generateAllDarts);
 
     describe('Four targets showing precision vs accuracy: accurate and precise (green), accurate but imprecise (blue), precise but inaccurate (orange), neither (red)', LABEL);
@@ -48,14 +48,13 @@ function draw() {
     updateCanvasSize();
 
     // Drawing area background
-    fill('white');
+    fill('aliceblue');
     stroke('silver');
     strokeWeight(1);
     rect(0, 0, canvasWidth, drawHeight);
 
     // Control area background
-    fill('aliceblue');
-    noStroke();
+    fill('white');
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Draw title
@@ -66,8 +65,8 @@ function draw() {
     text('Precision vs. Accuracy in Measurements', canvasWidth/2, 10);
 
     // Draw axis labels
-    textSize(14);
-    fill('#666666');
+    textSize(20);
+    fill('black');
 
     // PRECISION label (horizontal, bottom)
     textAlign(CENTER, TOP);
@@ -77,21 +76,21 @@ function draw() {
 
     // ACCURACY label (vertical, left side)
     push();
-    translate(15, drawHeight/2 - 20);
+    translate(35, drawHeight/2 - 20);
     rotate(-PI/2);
     textAlign(CENTER, BOTTOM);
     text('ACCURACY →', 0, 0);
     pop();
 
     push();
-    translate(15, drawHeight/4 + 30);
+    translate(35, drawHeight/4 + 30);
     rotate(-PI/2);
     textAlign(CENTER, BOTTOM);
     text('High', 0, 0);
     pop();
 
     push();
-    translate(15, 3*drawHeight/4 - 30);
+    translate(35, 3*drawHeight/4 - 30);
     rotate(-PI/2);
     textAlign(CENTER, BOTTOM);
     text('Low', 0, 0);
@@ -103,20 +102,20 @@ function draw() {
     let topY = 175;
     let bottomY = 445;
 
-    // Draw all four targets
-    drawTarget(leftX, topY, 'Accurate & Precise', colors.accurate_precise, targets[0], 'Measurements close to true value\nand tightly grouped');
-    drawTarget(rightX, topY, 'Accurate but Imprecise', colors.accurate_imprecise, targets[1], 'Measurements average to true value\nbut widely spread');
-    drawTarget(leftX, bottomY, 'Precise but Inaccurate', colors.inaccurate_precise, targets[2], 'Measurements tightly grouped\nbut offset (systematic error)');
-    drawTarget(rightX, bottomY, 'Neither Accurate nor Precise', colors.inaccurate_imprecise, targets[3], 'Measurements scattered\nand offset from true value');
+    // Draw all four targets (left=low precision, right=high precision, top=high accuracy, bottom=low accuracy)
+    drawTarget(leftX, topY, 'Accurate but Imprecise', colors.accurate_imprecise, targets[1], 'Measurements average to true value\nbut widely spread');
+    drawTarget(rightX, topY, 'Accurate & Precise', colors.accurate_precise, targets[0], 'Measurements close to true value\nand tightly grouped');
+    drawTarget(leftX, bottomY, 'Neither Accurate nor Precise', colors.inaccurate_imprecise, targets[3], 'Measurements scattered\nand offset from true value');
+    drawTarget(rightX, bottomY, 'Precise but Inaccurate', colors.inaccurate_precise, targets[2], 'Measurements tightly grouped\nbut offset (systematic error)');
 
     // Draw legend
     drawLegend();
 
-    // Draw "True Value" label on first target
+    // Draw "True Value" label on Accurate & Precise target
     fill('black');
     textSize(10);
     textAlign(CENTER, CENTER);
-    text('True Value', leftX, topY);
+    text('True Value', rightX, topY);
 }
 
 function drawTarget(cx, cy, label, dotColor, darts, caption) {
@@ -163,26 +162,19 @@ function drawTarget(cx, cy, label, dotColor, darts, caption) {
 }
 
 function drawLegend() {
-    let legendX = 40;
-    let legendY = 42;
-    let boxSize = 14;
-    let spacing = 20;
+    let legendX = 150;
+    let legendY = drawHeight + 10;
 
-    fill(240, 240, 240, 220);
-    stroke('#CCCCCC');
-    strokeWeight(1);
-    rect(legendX - 10, legendY - 5, 220, 55, 5);
-
+    fill('black');
     noStroke();
-    textSize(11);
+    textSize(14);
     textAlign(LEFT, CENTER);
 
     // Accuracy definition
-    fill('#333333');
     text('Accuracy: How close to TRUE VALUE', legendX, legendY + 10);
 
     // Precision definition
-    text('Precision: How close to EACH OTHER', legendX, legendY + 30);
+    text('Precision: How close to EACH OTHER', legendX + 280, legendY + 10);
 }
 
 function generateAllDarts() {
@@ -229,13 +221,13 @@ function windowResized() {
     updateCanvasSize();
     resizeCanvas(canvasWidth, canvasHeight);
     if (regenerateButton) {
-        regenerateButton.position(canvasWidth/2 - 70, drawHeight + 12);
+        regenerateButton.position(15, drawHeight + 12);
     }
 }
 
 function updateCanvasSize() {
     const container = document.querySelector('main');
     if (container) {
-        canvasWidth = min(container.offsetWidth, 700);
+        canvasWidth = container.offsetWidth;
     }
 }

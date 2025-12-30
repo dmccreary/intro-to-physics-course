@@ -3,8 +3,8 @@
 
 // Canvas dimensions
 let canvasWidth = 900;
-let drawHeight = 580;
-let controlHeight = 120;
+let drawHeight = 510;
+let controlHeight = 110;
 let canvasHeight = drawHeight + controlHeight;
 
 // Graph area
@@ -15,7 +15,7 @@ let graphHeight = 420;
 
 // Panel dimensions
 let panelX = 560;
-let panelWidth = 320;
+let panelWidth = 250;
 
 // Graph data
 let dataPoints = [];
@@ -124,7 +124,7 @@ function createControls() {
 
     // Graph type selector
     graphTypeSelect = createSelect();
-    graphTypeSelect.position(col1 + 80, y);
+    graphTypeSelect.position(col1 + 110, y);
     graphTypeSelect.option('Position vs Time (Const. Vel.)', 0);
     graphTypeSelect.option('Position vs Time (Const. Accel.)', 1);
     graphTypeSelect.option('Velocity vs Time (Const. Accel.)', 2);
@@ -133,35 +133,35 @@ function createControls() {
         graphType = parseInt(graphTypeSelect.value());
         generateData();
     });
-    graphTypeSelect.style('font-size', '12px');
+    graphTypeSelect.style('font-size', '16px');
 
     // Checkboxes row 1
     y += 30;
     showDataCheckbox = createCheckbox(' Data Points', true);
     showDataCheckbox.position(col1, y);
-    showDataCheckbox.style('font-size', '12px');
+    showDataCheckbox.style('font-size', '16px');
 
     showFitCheckbox = createCheckbox(' Best-Fit Line', true);
     showFitCheckbox.position(col2, y);
-    showFitCheckbox.style('font-size', '12px');
+    showFitCheckbox.style('font-size', '16px');
 
     showSlopeCheckbox = createCheckbox(' Slope Tool', true);
     showSlopeCheckbox.position(col3, y);
-    showSlopeCheckbox.style('font-size', '12px');
+    showSlopeCheckbox.style('font-size', '16px');
 
     showAreaCheckbox = createCheckbox(' Area Under Curve', false);
     showAreaCheckbox.position(col4, y);
-    showAreaCheckbox.style('font-size', '12px');
+    showAreaCheckbox.style('font-size', '16px');
 
     showGridCheckbox = createCheckbox(' Grid', true);
     showGridCheckbox.position(col5, y);
-    showGridCheckbox.style('font-size', '12px');
+    showGridCheckbox.style('font-size', '16px');
 
     // Noise slider and buttons
     y += 28;
     noiseSlider = createSlider(0, 20, 5, 1);
     noiseSlider.position(col1 + 90, y + 3);
-    noiseSlider.size(100);
+    noiseSlider.size(200);
     noiseSlider.input(() => {
         dataNoise = noiseSlider.value();
         generateData();
@@ -294,12 +294,17 @@ function draw() {
     let config = graphConfigs[graphType];
 
     // Background
-    background(250);
+    fill('aliceblue');
+    stroke('sliver');
+    strokeWeight(1);
+    rect(0, 0, canvasWidth, drawHeight);
+    fill('white');
+    rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Draw title
-    fill(30);
+    fill('black');
     noStroke();
-    textSize(18);
+    textSize(24);
     textAlign(CENTER, TOP);
     text('Interactive Graph Analysis', canvasWidth / 2, 8);
 
@@ -308,11 +313,6 @@ function draw() {
 
     // Draw info panel
     drawInfoPanel(config);
-
-    // Control area background
-    fill(245);
-    noStroke();
-    rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Control labels
     drawControlLabels();
@@ -579,16 +579,17 @@ function setLineDash(pattern) {
 
 function drawInfoPanel(config) {
     // Panel background
-    fill(255);
-    stroke(180);
+    fill('white');
+    stroke('gray');
     strokeWeight(1);
-    rect(panelX, graphY, panelWidth, graphHeight, 5);
+    rect(panelX, graphY, panelWidth-20, graphHeight, 5);
 
     let x = panelX + 15;
     let y = graphY + 15;
     let lineHeight = 18;
 
     // Title
+    noStroke();
     fill(30);
     textSize(14);
     textAlign(LEFT, TOP);
@@ -677,12 +678,12 @@ function drawInfoPanel(config) {
 
 function drawControlLabels() {
     fill(60);
-    textSize(12);
+    textSize(16);
     textAlign(LEFT, CENTER);
     noStroke();
 
     text('Graph Type:', 10, drawHeight + 24);
-    text('Noise: ' + dataNoise + '%', 10, drawHeight + 73);
+    text('Noise: ' + dataNoise + '%', 10, drawHeight + 83);
 }
 
 function handleDragging(config) {

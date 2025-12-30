@@ -3,7 +3,7 @@
 
 let canvasWidth = 900;
 let drawHeight = 450;
-let controlHeight = 150;
+let controlHeight = 110;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 15;
 
@@ -58,34 +58,34 @@ function setup() {
 
     // Angle slider
     angleSlider = createSlider(5, 85, 45, 1);
-    angleSlider.position(310, drawHeight + 15);
-    angleSlider.style('width', '100px');
+    angleSlider.position(340, drawHeight + 15);
+    angleSlider.size(200);
 
     // Speed slider
     speedSlider = createSlider(5, 40, 20, 1);
-    speedSlider.position(310, drawHeight + 45);
-    speedSlider.style('width', '100px');
+    speedSlider.position(340, drawHeight + 45);
+    speedSlider.size(200);
 
     // Height slider
     heightSlider = createSlider(0, 20, 0, 1);
-    heightSlider.position(310, drawHeight + 75);
-    heightSlider.style('width', '100px');
+    heightSlider.position(340, drawHeight + 75);
+    heightSlider.size(200);
 
     // Checkboxes
     showPredictedCheckbox = createCheckbox('Predicted Path', true);
-    showPredictedCheckbox.position(520, drawHeight + 12);
+    showPredictedCheckbox.position(570, drawHeight + 12);
     showPredictedCheckbox.style('font-size', '12px');
 
     showComponentsCheckbox = createCheckbox('Velocity Components', false);
-    showComponentsCheckbox.position(520, drawHeight + 34);
+    showComponentsCheckbox.position(570, drawHeight + 34);
     showComponentsCheckbox.style('font-size', '12px');
 
     showMultipleCheckbox = createCheckbox('Keep Trails', false);
-    showMultipleCheckbox.position(520, drawHeight + 56);
+    showMultipleCheckbox.position(570, drawHeight + 56);
     showMultipleCheckbox.style('font-size', '12px');
 
     showComplementaryCheckbox = createCheckbox('Complementary Angle', false);
-    showComplementaryCheckbox.position(520, drawHeight + 78);
+    showComplementaryCheckbox.position(570, drawHeight + 78);
     showComplementaryCheckbox.style('font-size', '12px');
 
     resetSimulation();
@@ -112,7 +112,6 @@ function draw() {
 
     // Control area
     fill('white');
-    noStroke();
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Title
@@ -427,9 +426,9 @@ function drawControlLabels() {
     textAlign(LEFT, CENTER);
     noStroke();
 
-    text('Angle: ' + launchAngle + '\u00B0', 240, drawHeight + 25);
-    text('Speed: ' + initialSpeed + ' m/s', 240, drawHeight + 55);
-    text('Height: ' + launchHeight + ' m', 240, drawHeight + 85);
+    text('Angle: ' + launchAngle + '\u00B0', 270, drawHeight + 25);
+    text('Speed: ' + initialSpeed + ' m/s', 270, drawHeight + 55);
+    text('Height: ' + launchHeight + ' m', 270, drawHeight + 85);
 
     // Status
     textSize(12);

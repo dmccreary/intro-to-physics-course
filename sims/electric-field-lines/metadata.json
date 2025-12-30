@@ -1,0 +1,41 @@
+{
+  "title": "Electric Field Lines Visualization",
+  "description": "Interactive simulation visualizing electric field patterns around point charges. Users can adjust charge magnitudes, drag charges to reposition them, and observe how field lines represent direction and strength of electric fields in dipole, like-charge, and single-charge configurations.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-29",
+  "subject": [
+    "Electric Fields",
+    "Electrostatics",
+    "Field Lines",
+    "Point Charges",
+    "Electric Dipole",
+    "Coulomb's Law",
+    "Physics Simulation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": "Claude AI Assistant",
+  "identifier": "electric-field-lines-v1",
+  "educational": {
+    "level": "High School (Grades 10-12)",
+    "bloomsLevel": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"],
+    "concepts": [
+      "Electric Field",
+      "Field Lines",
+      "Point Charge",
+      "Electric Dipole",
+      "Superposition",
+      "Test Charge",
+      "Field Strength",
+      "Coulomb's Law"
+    ],
+    "prerequisites": [
+      "Coulomb's Law",
+      "Vector Concepts",
+      "Electric Charge"
+    ],
+    "library": "p5.js"
+  }
+}

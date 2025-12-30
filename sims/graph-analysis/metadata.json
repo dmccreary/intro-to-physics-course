@@ -1,0 +1,44 @@
+{
+  "title": "Interactive Graph Analysis MicroSim",
+  "description": "An interactive tool for analyzing physics graphs, extracting slope, intercepts, and area under curve with physical interpretations. Teaches students to interpret position-time, velocity-time, and force graphs.",
+  "creator": "Dan McCreary",
+  "date": "2025-12-29",
+  "subject": [
+    "graph analysis",
+    "physics graphs",
+    "slope",
+    "y-intercept",
+    "area under curve",
+    "kinematics",
+    "position-time graphs",
+    "velocity-time graphs",
+    "data analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": "Claude AI",
+  "educationalLevel": "High School (Grades 9-12)",
+  "concepts": [
+    "slope",
+    "y-intercept",
+    "area under curve",
+    "linear relationships",
+    "quadratic relationships",
+    "coefficient of determination",
+    "data noise",
+    "linearization"
+  ],
+  "prerequisites": [
+    "basic graphing skills",
+    "algebraic slope concept",
+    "motion concepts"
+  ],
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
+  "library": "p5.js"
+}
