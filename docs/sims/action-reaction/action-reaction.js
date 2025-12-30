@@ -97,7 +97,7 @@ function draw() {
 }
 
 function drawBookOnTable(showPairs) {
-    let cx = canvasWidth / 3;
+    let cx = canvasWidth / 3 - 100;
     let cy = 280;
 
     // Table
@@ -119,18 +119,19 @@ function drawBookOnTable(showPairs) {
     textAlign(CENTER, CENTER);
     text('Book', cx, cy);
 
-    // Forces
+    // Forces - positioned to the right of the table/book
+    let vx = cx + 160; // Vector x position to the right
     if (showPairs) {
         // Pair 1: Book-Earth (gravity)
-        drawForceArrow(cx - 20, cy, cx - 20, cy + 80, '#E74C3C', 'Earth pulls book');
-        drawForceArrow(cx - 20, cy + 140, cx - 20, cy + 60, '#E74C3C', 'Book pulls Earth');
+        drawForceArrow(vx, cy, vx, cy + 80, '#E74C3C', 'Earth pulls book');
+        drawForceArrow(vx, cy + 140, vx, cy + 60, '#E74C3C', 'Book pulls Earth');
 
         // Pair 2: Book-Table (contact)
-        drawForceArrow(cx + 20, cy + 30, cx + 20, cy + 80, '#3498DB', 'Book pushes table');
-        drawForceArrow(cx + 20, cy + 30, cx + 20, cy - 20, '#3498DB', 'Table pushes book');
+        drawForceArrow(vx + 50, cy + 30, vx + 50, cy + 80, '#3498DB', 'Book pushes table');
+        drawForceArrow(vx + 50, cy + 30, vx + 50, cy - 20, '#3498DB', 'Table pushes book');
     } else {
-        drawForceArrow(cx, cy, cx, cy + 60, '#E74C3C', 'Weight');
-        drawForceArrow(cx, cy + 30, cx, cy - 30, '#3498DB', 'Normal');
+        drawForceArrow(vx, cy, vx, cy + 60, '#E74C3C', 'Weight');
+        drawForceArrow(vx + 50, cy + 30, vx + 50, cy - 30, '#3498DB', 'Normal');
     }
 
     // Explanation panel

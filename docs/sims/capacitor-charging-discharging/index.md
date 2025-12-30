@@ -9,14 +9,14 @@ quality_score: 85
 
 # Capacitor Charging and Discharging
 
-<iframe src="main.html" width="100%" height="740px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="720px" scrolling="no"></iframe>
 
 [Run Capacitor Charging and Discharging MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
 You can include this MicroSim on your website using the following iframe:
 
 ```html
-<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/capacitor-charging-discharging/main.html" width="100%" height="740px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/capacitor-charging-discharging/main.html" width="100%" height="720px" scrolling="no"></iframe>
 ```
 
 ## About This MicroSim
