@@ -5,7 +5,7 @@ description: Visualize angular momentum as a vector quantity showing the right-h
 
 # Angular Momentum Vector Visualization
 
-<iframe src="main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="530px" width="100%" scrolling="no"></iframe>
 
 [Run Fullscreen](./main.html){ .md-button .md-button--primary }
 

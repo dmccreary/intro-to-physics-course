@@ -20,6 +20,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Angled Projectile Explorer](./angled-projectile/index.md)**
 
+    ![ngled Projectile Explorer](./angled-projectile/angled-projectile.png)
     Interactive simulation exploring how launch angle and speed affect projectile trajectory, range, and maximum height.
 
 - **[Angled Tension Components](./angled-tension/index.md)**
@@ -28,10 +29,12 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Angular Displacement Visualization](./angular-displacement/index.md)**
 
+    ![Angular Displacement Visualization](./angular-displacement/angular-displacement.png)
     An interactive MicroSim demonstrating angular displacement with a rotating disk showing how different points at various radii travel different arc lengths.
 
 - **[Angular Momentum Vector Visualization](./angular-momentum-vector/index.md)**
 
+    ![Angular Momentum Vector Visualization](./angular-momentum-vector/angular-momentum-vector.png)
     Visualize angular momentum as a vector quantity showing the right-hand rule for determining direction.
 
 - **[Comparative Angular Velocities Chart](./angular-velocities-chart/index.md)**
