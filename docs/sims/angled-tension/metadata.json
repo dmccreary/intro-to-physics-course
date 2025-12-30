@@ -1,0 +1,16 @@
+{
+  "title": "Angled Tension Components",
+  "description": "Interactive visualization showing how the angle of an applied force affects its horizontal and vertical components, normal force, friction, and resulting acceleration.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-30",
+  "subject": ["physics", "forces", "tension", "friction", "trigonometry", "Newton's laws", "vector components"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["force components", "angle of applied force", "normal force", "kinetic friction", "acceleration"],
+  "bloomsLevel": "Applying",
+  "prerequisites": ["trigonometry basics", "Newton's second law", "friction concepts"],
+  "educationalLevel": "High School Physics"
+}

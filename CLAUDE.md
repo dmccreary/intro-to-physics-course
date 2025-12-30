@@ -128,3 +128,15 @@ The project includes several Claude Code skills for intelligent textbook develop
 - Various MicroSim generators (p5.js, vis-network, mermaid, timeline, venn diagrams, bubble charts)
 
 Use skills when appropriate via the Skill tool.
+
+## Automatically Notify the Parent of the iframe height
+
+Add the following line to the end of the setup() function
+
+```js
+// notify parent frame of initial size so we don't have to modify the height is each iframe 
+    // Requires add addition to the js/extra.js file to listen for the message
+    window.parent.postMessage({ type: 'microsim-resize', height: canvasHeight }, '*');
+```
+
+This allows you to not have to maintain the height parameter in each iframe reference.

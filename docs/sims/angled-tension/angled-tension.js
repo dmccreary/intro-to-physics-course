@@ -18,30 +18,33 @@ function setup() {
     canvas.parent(document.querySelector('main'));
 
     forceSlider = createSlider(0, 200, 100, 5);
-    forceSlider.position(100, drawHeight + 12);
-    forceSlider.size(130);
+    forceSlider.position(120, drawHeight + 12);
+    forceSlider.size(120);
 
     angleSlider = createSlider(0, 90, 30, 1);
-    angleSlider.position(100, drawHeight + 42);
-    angleSlider.size(130);
+    angleSlider.position(120, drawHeight + 42);
+    angleSlider.size(120);
 
     massSlider = createSlider(5, 50, 20, 1);
-    massSlider.position(100, drawHeight + 72);
-    massSlider.size(130);
+    massSlider.position(120, drawHeight + 72);
+    massSlider.size(120);
 
     muSlider = createSlider(0, 1, 0.25, 0.05);
-    muSlider.position(350, drawHeight + 12);
-    muSlider.size(130);
+    muSlider.position(400, drawHeight + 12);
+    muSlider.size(120);
 
     showComponentsCheckbox = createCheckbox(' Show components', true);
-    showComponentsCheckbox.position(350, drawHeight + 45);
+    showComponentsCheckbox.position(540, drawHeight + 12);
     showComponentsCheckbox.style('font-size', '13px');
 
     animateCheckbox = createCheckbox(' Animate motion', false);
-    animateCheckbox.position(350, drawHeight + 70);
+    animateCheckbox.position(540, drawHeight + 42);
     animateCheckbox.style('font-size', '13px');
 
     describe('Interactive visualization of force components when pulling at an angle', LABEL);
+    // notify parent frame of initial size so we don't have to modify the height is each iframe 
+    // Requires add addition to the js/extra.js file to listen for the message
+    window.parent.postMessage({ type: 'microsim-resize', height: canvasHeight }, '*');
 }
 
 function draw() {
@@ -100,17 +103,17 @@ function draw() {
     drawScene(F, theta, Fx, Fy, W, N, fk, showComponentsCheckbox.checked());
 
     // Draw info panel
-    drawInfoPanel(canvasWidth - 250, 50, 230, 280, F, theta, Fx, Fy, W, N, fk, netFx, a, m);
+    drawInfoPanel(canvasWidth - 215, 50, 200, 280, F, theta, Fx, Fy, W, N, fk, netFx, a, m);
 
     // Control labels
     fill('black');
     noStroke();
     textSize(12);
     textAlign(LEFT, CENTER);
-    text('Force: ' + F + ' N', 10, drawHeight + 19);
+    text('Applied Force: ' + F + ' N', 10, drawHeight + 19);
     text('Angle: ' + theta + '°', 10, drawHeight + 49);
     text('Mass: ' + m + ' kg', 10, drawHeight + 79);
-    text('μk: ' + mu.toFixed(2), 260, drawHeight + 19);
+    text('Friction (μk): ' + mu.toFixed(2), 280, drawHeight + 19);
 }
 
 function drawScene(F, theta, Fx, Fy, W, N, fk, showComponents) {
@@ -123,12 +126,12 @@ function drawScene(F, theta, Fx, Fy, W, N, fk, showComponents) {
     // Ground
     fill('#D4B896');
     noStroke();
-    rect(30, groundY, canvasWidth - 280, 40);
+    rect(30, groundY, canvasWidth - 250, 40);
 
     // Ground texture
     stroke('#B8A082');
     strokeWeight(1);
-    for (let x = 40; x < canvasWidth - 260; x += 15) {
+    for (let x = 40; x < canvasWidth - 230; x += 15) {
         line(x, groundY + 5, x + 8, groundY + 25);
     }
 
@@ -237,7 +240,7 @@ function drawInfoPanel(x, y, w, h, F, theta, Fx, Fy, W, N, fk, netFx, a, m) {
     let spacing = 20;
 
     fill('#E74C3C');
-    text('Applied Force Analysis', 10, lineY);
+    text('Force Analysis', 10, lineY);
     lineY += spacing + 5;
 
     textSize(11);
@@ -261,7 +264,7 @@ function drawInfoPanel(x, y, w, h, F, theta, Fx, Fy, W, N, fk, netFx, a, m) {
     fill('#333');
     text('N = mg - Fy', 10, lineY);
     lineY += spacing - 3;
-    text('N = ' + W.toFixed(1) + ' - ' + Fy.toFixed(1) + ' = ' + N.toFixed(1) + ' N', 10, lineY);
+    text('N = ' + N.toFixed(1) + ' N', 10, lineY);
     lineY += spacing + 8;
 
     fill('#8B4513');
@@ -271,7 +274,7 @@ function drawInfoPanel(x, y, w, h, F, theta, Fx, Fy, W, N, fk, netFx, a, m) {
 
     textSize(11);
     fill('#333');
-    text('fk = μk·N = ' + fk.toFixed(1) + ' N', 10, lineY);
+    text('Friction fk = μk·N = ' + fk.toFixed(1) + ' N', 10, lineY);
     lineY += spacing;
 
     text('Net Fx = ' + netFx.toFixed(1) + ' N', 10, lineY);
