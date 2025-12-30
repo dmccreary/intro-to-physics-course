@@ -2,7 +2,7 @@
 // Horizontal bar chart with logarithmic scale showing everyday rotating objects
 
 let canvasWidth = 800;
-let drawHeight = 500;
+let drawHeight = 595;
 let controlHeight = 50;
 let canvasHeight = drawHeight + controlHeight;
 
@@ -13,15 +13,15 @@ const rotatingObjects = [
     { name: "Minute hand of clock", omega: 1.75e-3, rpm: 0.017, icon: "🕐" },
     { name: "Second hand of clock", omega: 0.105, rpm: 1, icon: "🕐" },
     { name: "Ceiling fan (low)", omega: 10.5, rpm: 100, icon: "🌀" },
-    { name: "Bicycle wheel (casual)", omega: 20, rpm: 191, icon: "🚲" },
-    { name: "Helicopter rotor", omega: 40, rpm: 382, icon: "🚁" },
-    { name: "Car tire (highway)", omega: 70, rpm: 668, icon: "🚗" },
-    { name: "Car engine (idle)", omega: 90, rpm: 859, icon: "⚙️" },
-    { name: "Washing machine spin", omega: 130, rpm: 1241, icon: "🌀" },
-    { name: "Computer CPU fan", omega: 250, rpm: 2387, icon: "💨" },
-    { name: "Hard disk drive", omega: 650, rpm: 6207, icon: "💾" },
-    { name: "Jet engine turbine", omega: 3000, rpm: 28648, icon: "✈️" },
-    { name: "Dental drill", omega: 50000, rpm: 477465, icon: "🦷" }
+    { name: "Bicycle wheel (casual)", omega: 20, rpm: 150, icon: "🚲" },
+    { name: "Helicopter rotor", omega: 40, rpm: 400, icon: "🚁" },
+    { name: "Car tire (highway)", omega: 70, rpm: 600, icon: "🚗" },
+    { name: "Car engine (idle)", omega: 90, rpm: 800, icon: "⚙️" },
+    { name: "Washing machine spin", omega: 130, rpm: 1200, icon: "🌀" },
+    { name: "Computer CPU fan", omega: 250, rpm: 2500, icon: "💨" },
+    { name: "Hard disk drive", omega: 650, rpm: 6000, icon: "💾" },
+    { name: "Jet engine turbine", omega: 3000, rpm: 30000, icon: "✈️" },
+    { name: "Dental drill", omega: 50000, rpm: 500000, icon: "🦷" }
 ];
 
 // Chart configuration
@@ -30,8 +30,8 @@ let barSpacing = 34;
 let chartLeft = 220;
 let chartRight;
 let chartTop = 60;
-let logMin = -5;
-let logMax = 5;
+let logMin = -4;
+let logMax = 6;
 
 function setup() {
     updateCanvasSize();
@@ -53,7 +53,6 @@ function draw() {
 
     // Control area
     fill('white');
-    noStroke();
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Title
@@ -64,20 +63,26 @@ function draw() {
     text('Angular Velocities in Everyday Life', canvasWidth / 2, 15);
 
     // Draw chart
-    drawLogAxis();
-    drawBars();
-    drawLegend();
+    push();
+        translate(-50, 0);
+        scale(1.1, 1);
+        drawLogAxis();
+        drawBars();
+        drawLegend();
+    pop();
 
     // Draw control area text
     fill('black');
     textSize(14);
     textAlign(CENTER, CENTER);
-    text('Hover over bars to see detailed values | Logarithmic scale: 10⁻⁵ to 10⁵ rad/s', canvasWidth / 2, drawHeight + 25);
+    text('Hover over bars to see RPM values | Logarithmic scale: 10⁻⁴ to 10⁶ RPM', canvasWidth / 2, drawHeight + 25);
 }
 
 function drawLogAxis() {
     let chartWidth = chartRight - chartLeft;
 
+    push();
+    translate(0, -10)
     // Axis line
     stroke(100);
     strokeWeight(2);
@@ -112,7 +117,7 @@ function drawLogAxis() {
     textSize(14);
     textAlign(CENTER, CENTER);
     fill(60);
-    text('Angular Velocity (rad/s)', (chartLeft + chartRight) / 2, drawHeight - 8);
+    text('Rotation Speed (RPM)', (chartLeft + chartRight) / 2, drawHeight - 2);
 
     // Grid lines
     stroke(230);
@@ -122,9 +127,11 @@ function drawLogAxis() {
         line(x, chartTop, x, drawHeight - 40);
     }
 
-    // Highlight human-scale range
-    let humanMin = map(0, logMin, logMax, chartLeft, chartRight);
-    let humanMax = map(3, logMin, logMax, chartLeft, chartRight);
+    pop();
+
+    // Highlight human-scale range (10 - 10,000 RPM)
+    let humanMin = map(1, logMin, logMax, chartLeft, chartRight);
+    let humanMax = map(4, logMin, logMax, chartLeft, chartRight);
 
     fill(200, 230, 200, 80);
     noStroke();
@@ -134,7 +141,7 @@ function drawLogAxis() {
     fill(80, 130, 80);
     textSize(10);
     textAlign(CENTER, TOP);
-    text('Human-scale (1-1000 rad/s)', (humanMin + humanMax) / 2, chartTop + 2);
+    text('Human-scale (10-10,000 RPM)', (humanMin + humanMax) / 2, chartTop + 2);
 }
 
 function drawBars() {
@@ -144,9 +151,9 @@ function drawBars() {
         let obj = rotatingObjects[i];
         let y = chartTop + 18 + i * barSpacing;
 
-        // Calculate bar width based on log scale
-        let logOmega = Math.log10(obj.omega);
-        let barWidth = map(logOmega, logMin, logMax, 0, chartWidth);
+        // Calculate bar width based on log scale (using RPM)
+        let logRPM = Math.log10(obj.rpm);
+        let barWidth = map(logRPM, logMin, logMax, 0, chartWidth);
         barWidth = max(2, barWidth); // Minimum visible width
 
         // Color based on angular velocity (gradient from slow to fast)
@@ -157,9 +164,10 @@ function drawBars() {
             lerp(200, 50, i / (rotatingObjects.length - 1))
         );
 
-        // Check if mouse is over this bar
+        // Check if mouse is over this bar (account for translate(-50,0) and scale(1.1,1) transforms)
+        let adjustedMouseX = (mouseX + 50) / 1.1;
         let isHovered = mouseY > y - barHeight/2 && mouseY < y + barHeight/2 &&
-                        mouseX > chartLeft && mouseX < chartLeft + barWidth;
+                        adjustedMouseX > chartLeft && adjustedMouseX < chartLeft + barWidth;
 
         // Draw bar
         if (isHovered) {
@@ -181,35 +189,43 @@ function drawBars() {
 
         // Show value on hover
         if (isHovered) {
-            fill(0);
             textSize(11);
-            textAlign(LEFT, CENTER);
-            let valueText = obj.omega.toExponential(2) + ' rad/s (' + formatRPM(obj.rpm) + ' rpm)';
+            let valueText = formatRPM(obj.rpm) + ' RPM';
+            let textW = textWidth(valueText);
 
-            // Background for text
-            let textX = chartLeft + barWidth + 5;
-            let textW = textWidth(valueText) + 10;
+            // Check if text fits inside the bar (with padding)
+            if (textW + 16 < barWidth) {
+                // Center text inside the bar
+                fill(0);
+                noStroke();
+                textAlign(CENTER, CENTER);
+                text(valueText, chartLeft + barWidth / 2, y);
+            } else {
+                // Place text to the right of the bar with background
+                textAlign(LEFT, CENTER);
+                let textX = chartLeft + barWidth + 5;
 
-            fill(255, 255, 220);
-            stroke(200);
-            rect(textX, y - 10, textW, 20, 3);
+                fill(255, 255, 220);
+                stroke(200);
+                rect(textX, y - 10, textW + 10, 20, 3);
 
-            fill(0);
-            noStroke();
-            text(valueText, textX + 5, y);
+                fill(0);
+                noStroke();
+                text(valueText, textX + 5, y);
+            }
         }
     }
 }
 
 function formatRPM(rpm) {
-    if (rpm < 1) {
+    if (rpm < 0.01) {
         return rpm.toFixed(4);
+    } else if (rpm < 1) {
+        return rpm.toFixed(2);
     } else if (rpm < 100) {
         return rpm.toFixed(1);
-    } else if (rpm < 10000) {
-        return Math.round(rpm).toLocaleString();
     } else {
-        return rpm.toExponential(1);
+        return Math.round(rpm).toLocaleString();
     }
 }
 
