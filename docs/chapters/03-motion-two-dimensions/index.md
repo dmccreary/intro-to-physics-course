@@ -51,7 +51,7 @@ For each dimension, you can write separate kinematic equations. Time (t) is the 
 
 #### Diagram: Vector Components Diagram
 
-<iframe src="../../sims/vector-components/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/vector-components/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/vector-components/index.md)
 
@@ -119,7 +119,7 @@ Here are common free fall situations you might encounter:
 
 #### Diagram: Free Fall Motion MicroSim
 
-<iframe src="../../sims/free-fall/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/free-fall/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/free-fall/index.md)
 
@@ -202,7 +202,7 @@ The trajectory—the path traced by the projectile—forms a parabola. This eleg
 
 #### Diagram: Projectile Motion Trajectory Diagram
 
-<iframe src="../../sims/projectile-motion/main.html" height="482px" scrolling="no"></iframe>
+<iframe src="../../sims/projectile-motion/main.html" height="482px" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
     <summary>Projectile Motion Trajectory Diagram</summary>
@@ -283,7 +283,7 @@ Consider these important observations:
 
 #### Diagram: Horizontal Projection Interactive Comparison
 
-<iframe src="../../sims/horizontal-projection/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/horizontal-projection/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/horizontal-projection/index.md)
 
@@ -388,7 +388,7 @@ The range equation reveals an interesting optimization: the angle that produces 
 
 #### Diagram: Angled Projectile Motion Explorer MicroSim
 
-<iframe src="../../sims/angled-projectile/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/angled-projectile/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/angled-projectile/index.md)
 
@@ -510,7 +510,7 @@ Here are typical situations involving relative velocity:
 
 #### Diagram: River Crossing Relative Velocity Diagram
 
-<iframe src="../../sims/river-crossing/main.html" width="100%" height="552px" scrolling="no"></iframe>
+<iframe src="../../sims/river-crossing/main.html" width="100%" height="552px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/river-crossing/index.md)
 
@@ -568,7 +568,7 @@ The component method is more general and works for any angles, while the geometr
 
 #### Diagram: Relative Velocity Problem Solver MicroSim
 
-<iframe src="../../sims/relative-velocity/main.html" width="100%" height="552px" scrolling="no"></iframe>
+<iframe src="../../sims/relative-velocity/main.html" width="100%" height="552px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/relative-velocity/index.md)
 

@@ -74,7 +74,7 @@ The key principle: **Only the net force determines how an object's motion change
 
 #### Diagram: Free-Body Diagram Tutorial
 
-<iframe src="../../sims/free-body-diagram/main.html" height="652px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/free-body-diagram/main.html" height="652px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run the Free-Body Diagram Tutorial Fullscreen](../../sims/free-body-diagram/main.html){ .md-button .md-button--primary }
 
@@ -163,7 +163,7 @@ Most physics problems assume you're viewing from Earth's surface, which is appro
 
 #### Diagram: Inertia Demonstration MicroSim
 
-<iframe src="../../sims/inertia-demo/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/inertia-demo/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run the Inertia Demonstration Fullscreen](../../sims/inertia-demo/main.html){ .md-button .md-button--primary }
 
@@ -283,7 +283,7 @@ When solving Newton's Second Law problems, follow these steps:
 
 #### Diagram: Force and Acceleration Relationship Chart
 
-<iframe src="../../sims/newtons-second-law/main.html" height="582px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/newtons-second-law/main.html" height="582px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/newtons-second-law/main.html){ .md-button .md-button--primary }
 
@@ -385,7 +385,7 @@ Forces only cancel (produce equilibrium) when they act on the same object.
 
 #### Diagram: Action-Reaction Pairs Interactive Diagram
 
-<iframe src="../../sims/action-reaction/main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/action-reaction/main.html" height="602px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/action-reaction/main.html){ .md-button .md-button--primary }
 
@@ -520,7 +520,7 @@ You'll use these conditions extensively when solving statics problems.
 
 #### Diagram: Equilibrium Classification Workflow
 
-<iframe src="../../sims/equilibrium-workflow/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/equilibrium-workflow/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/equilibrium-workflow/main.html){ .md-button .md-button--primary }
 
@@ -638,7 +638,7 @@ This "apparent weight" is what causes the stomach-drop feeling on roller coaster
 
 #### Diagram: Weight in Different Gravitational Fields MicroSim
 
-<iframe src="../../sims/weight-gravity/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/weight-gravity/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/weight-gravity/main.html){ .md-button .md-button--primary }
 
@@ -768,7 +768,7 @@ The normal force is crucial because:
 
 #### Diagram: Normal Force on Inclined Planes Diagram
 
-<iframe src="../../sims/normal-force-incline/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/normal-force-incline/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/normal-force-incline/main.html){ .md-button .md-button--primary }
 

@@ -59,7 +59,7 @@ Let's consider a real-world example. Suppose you notice that when you drop diffe
 
 #### Diagram: The Scientific Method
 
-<iframe src="../../sims/scientific-method/main.html" width="100%" height="1600px" scrolling="no"></iframe>
+<iframe src="../../sims/scientific-method/main.html" width="100%" height="1600px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/scientific-method/index.md)
 
@@ -121,7 +121,7 @@ Notice the pattern: each prefix represents a specific power of ten. This makes c
 
 #### Drawing: Metric Scale Zoom
 
-<iframe src="../../sims/metric-scale-zoom/main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/metric-scale-zoom/main.html" height="450px" width="100%" scrolling="no" loading="lazy"></iframe>
 [Run the Metric Scale Zoom Fullscreen](../../sims/metric-scale-zoom/main.html)
 
 
@@ -326,7 +326,7 @@ This means the true value likely falls between 2.43 m and 2.47 m.
 
 #### Diagram: Precision vs Accuracy Target Diagram
 
-<iframe src="../../sims/precision-accuracy/main.html" width="100%" height="672px" scrolling="no"></iframe>
+<iframe src="../../sims/precision-accuracy/main.html" width="100%" height="672px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/precision-accuracy/index.md)
 
@@ -442,7 +442,7 @@ We represent vectors graphically as arrows, where:
 
 #### Diagram: Vector Basics Interactive MicroSim
 
-<iframe src="../../sims/vector-basics/main.html" width="100%" height="652px" scrolling="no"></iframe>
+<iframe src="../../sims/vector-basics/main.html" width="100%" height="652px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/vector-basics/index.md)
 
@@ -605,7 +605,7 @@ Using components:
 
 #### Diagram: Vector Addition Interactive MicroSim
 
-<iframe src="../../sims/vector-addition/main.html" width="100%" height="652px" scrolling="no"></iframe>
+<iframe src="../../sims/vector-addition/main.html" width="100%" height="652px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/vector-addition/index.md)
 
@@ -883,7 +883,7 @@ $$m = \frac{y_2 - y_1}{x_2 - x_1}$$
 
 #### Diagram: Interactive Graph Analysis MicroSim
 
-<iframe src="../../sims/graph-analysis/main.html" width="100%" height="702px" scrolling="no"></iframe>
+<iframe src="../../sims/graph-analysis/main.html" width="100%" height="702px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/graph-analysis/index.md)
 

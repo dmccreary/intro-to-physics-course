@@ -48,7 +48,7 @@ Friction arises from microscopic interactions between surface irregularities. Ev
 
 #### Diagram: Microscopic View of Surface Contact
 
-<iframe src="../../sims/microscopic-surface-contact/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/microscopic-surface-contact/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/microscopic-surface-contact/main.html){ .md-button .md-button--primary }
 
@@ -111,7 +111,7 @@ where $f_s^{max}$ is the maximum static friction force, $\mu_s$ is the coefficie
 
 #### Diagram: Interactive Static Friction MicroSim
 
-<iframe src="../../sims/static-friction/main.html" height="502px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/static-friction/main.html" height="502px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/static-friction/main.html){ .md-button .md-button--primary }
 
@@ -210,7 +210,7 @@ The independence from surface area seems counterintuitive. A brick lying flat ex
 
 #### Diagram: Friction Coefficient Comparison Chart
 
-<iframe src="../../sims/friction-coefficient-chart/main.html" height="520px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/friction-coefficient-chart/main.html" height="520px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/friction-coefficient-chart/main.html){ .md-button .md-button--primary }
 
@@ -313,7 +313,7 @@ When analyzing tension problems, remember these key principles:
 
 #### Diagram: Tension Force Diagram
 
-<iframe src="../../sims/tension-force-diagram/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/tension-force-diagram/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/tension-force-diagram/main.html){ .md-button .md-button--primary }
 
@@ -432,7 +432,7 @@ The suitcase barely accelerates because most of the applied force goes into redu
 
 #### Diagram: Angled Tension Component MicroSim
 
-<iframe src="../../sims/angled-tension/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/angled-tension/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/angled-tension/main.html){ .md-button .md-button--primary }
 
@@ -513,7 +513,7 @@ For an incline at angle θ above the horizontal:
 
 #### Diagram: Inclined Plane Force Decomposition Diagram
 
-<iframe src="../../sims/inclined-plane-forces/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/inclined-plane-forces/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/inclined-plane-forces/main.html){ .md-button .md-button--primary }
 
@@ -622,7 +622,7 @@ The block accelerates down the ramp at 3.62 m/s².
 
 #### Diagram: Inclined Plane Motion MicroSim
 
-<iframe src="../../sims/inclined-plane-motion/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/inclined-plane-motion/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/inclined-plane-motion/main.html){ .md-button .md-button--primary }
 
@@ -710,7 +710,7 @@ Consider an Atwood machine with masses m₁ and m₂ (where m₂ > m₁) connect
 
 #### Diagram: Atwood Machine Free-Body Diagram
 
-<iframe src="../../sims/atwood-fbd/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/atwood-fbd/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/atwood-fbd/main.html){ .md-button .md-button--primary }
 
@@ -798,7 +798,7 @@ Notice that tension (57.2 N) is between m₁g = 49 N and m₂g = 68.6 N, which m
 
 #### Diagram: Interactive Atwood Machine MicroSim
 
-<iframe src="../../sims/atwood-machine/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/atwood-machine/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/atwood-machine/main.html){ .md-button .md-button--primary }
 
@@ -904,7 +904,7 @@ Check work (energy conservation):
 
 #### Diagram: Pulley System Mechanical Advantage Diagram
 
-<iframe src="../../sims/pulley-mechanical-advantage/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/pulley-mechanical-advantage/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/pulley-mechanical-advantage/main.html){ .md-button .md-button--primary }
 
@@ -1020,7 +1020,7 @@ Common sources of centripetal force:
 
 #### Diagram: Centripetal Force and Acceleration Visualization
 
-<iframe src="../../sims/centripetal-force-viz/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/centripetal-force-viz/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/centripetal-force-viz/main.html){ .md-button .md-button--primary }
 
@@ -1106,7 +1106,7 @@ The maximum safe speed is about 93 km/h (58 mph). In wet conditions, with μs �
 
 #### Diagram: Car on Curve MicroSim
 
-<iframe src="../../sims/car-on-curve/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/car-on-curve/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/car-on-curve/main.html){ .md-button .md-button--primary }
 
@@ -1193,7 +1193,7 @@ At this speed, any vehicle—regardless of mass—can take the curve without rel
 
 #### Diagram: Banked Curve Force Analysis Diagram
 
-<iframe src="../../sims/banked-curve-forces/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/banked-curve-forces/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/banked-curve-forces/main.html){ .md-button .md-button--primary }
 
@@ -1295,7 +1295,7 @@ This is reasonable for most tire-road combinations, explaining why the car can s
 
 #### Diagram: Banked Curve Speed Analysis MicroSim
 
-<iframe src="../../sims/banked-curve-speed/main.html" height="552px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/banked-curve-speed/main.html" height="552px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 [Run Fullscreen](../../sims/banked-curve-speed/main.html){ .md-button .md-button--primary }
 

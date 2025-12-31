@@ -63,7 +63,7 @@ where $x_{\text{final}}$ is your ending position and $x_{\text{initial}}$ is you
 
 #### Diagram: Distance vs Displacement Interactive Visualization
 
-<iframe src="../../sims/distance-displacement/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/distance-displacement/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/distance-displacement/index.md)
 
@@ -177,7 +177,7 @@ In everyday conversation, when people say "velocity" or "speed," they usually me
 
 #### Diagram: Velocity vs Speed Comparison Table
 
-<iframe src="../../sims/velocity-speed-comparison/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/velocity-speed-comparison/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/velocity-speed-comparison/index.md)
 
@@ -322,7 +322,7 @@ This is one of the most important types of motion to master because many real-wo
 
 #### Diagram: Comparison of Uniform vs Uniformly Accelerated Motion
 
-<iframe src="../../sims/uniform-accelerated-motion/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/uniform-accelerated-motion/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/uniform-accelerated-motion/index.md)
 
@@ -443,7 +443,7 @@ Let's examine some example scenarios:
 
 #### Diagram: Position-Time Graph Interactive Analyzer
 
-<iframe src="../../sims/position-time-analyzer/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/position-time-analyzer/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/position-time-analyzer/index.md)
 
@@ -574,7 +574,7 @@ Let's connect v-t graphs to x-t graphs with an example:
 
 #### Diagram: Velocity-Time Graph Area Calculator MicroSim
 
-<iframe src="../../sims/velocity-time-area/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/velocity-time-area/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/velocity-time-area/index.md)
 
@@ -700,7 +700,7 @@ Let's see how all three graph types connect:
 
 #### Diagram: Three-Graph Motion Analyzer: Connecting x-t, v-t, and a-t Graphs
 
-<iframe src="../../sims/three-graph-analyzer/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/three-graph-analyzer/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/three-graph-analyzer/index.md)
 
@@ -927,7 +927,7 @@ The kinematic equations are tools you'll use throughout your physics education a
 
 #### Diagram: Kinematic Equation Selector Tool
 
-<iframe src="../../sims/kinematic-selector/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/kinematic-selector/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/kinematic-selector/index.md)
 

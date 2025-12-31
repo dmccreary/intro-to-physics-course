@@ -75,7 +75,7 @@ Both descriptions are valid and give the same results for circuit analysis. Most
 
 #### Diagram: Current Flow Animation MicroSim
 
-<iframe src="../../sims/current-animation/main.html" width="100%" height="502px" scrolling="no"></iframe>
+<iframe src="../../sims/current-animation/main.html" width="100%" height="502px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/current-animation/index.md)
 
@@ -171,7 +171,7 @@ Ohm's Law tells us that for a given resistance, the current is directly proporti
 
 #### Diagram: Ohm's Law Interactive Calculator MicroSim
 
-<iframe src="../../sims/ohms-law/main.html" width="100%" height="652px" scrolling="no"></iframe>
+<iframe src="../../sims/ohms-law/main.html" width="100%" height="652px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/ohms-law/index.md)
 
@@ -289,7 +289,7 @@ where:
 
 #### Diagram: Capacitor Charging and Discharging MicroSim
 
-<iframe src="../../sims/capacitor-charging-discharging/main.html" width="100%" height="740px" scrolling="no"></iframe>
+<iframe src="../../sims/capacitor-charging-discharging/main.html" width="100%" height="740px" scrolling="no" loading="lazy"></iframe>
 
 [Open Capacitor Charging MicroSim in Fullscreen](../../sims/capacitor-charging-discharging/main.html){ .md-button .md-button--primary }
 
@@ -662,7 +662,7 @@ If one component fails, other branches continue operating—like modern house wi
 
 #### Diagram: Series vs Parallel Circuit Comparison MicroSim
 
-<iframe src="../../sims/series-parallel/main.html" width="100%" height="652px" scrolling="no"></iframe>
+<iframe src="../../sims/series-parallel/main.html" width="100%" height="652px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/series-parallel/index.md)
 
@@ -1027,7 +1027,7 @@ $$P_{mech} = \tau \omega = E_{back} \times I$$
 
 #### Diagram: DC Motor Operation MicroSim
 
-<iframe src="../../sims/dc-motor/main.html" width="100%" height="502px" scrolling="no"></iframe>
+<iframe src="../../sims/dc-motor/main.html" width="100%" height="502px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/dc-motor/index.md)
 

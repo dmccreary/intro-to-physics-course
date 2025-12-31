@@ -95,7 +95,7 @@ Key features of transverse waves:
 
 #### Diagram: Transverse Wave Animation MicroSim
 
-<iframe src="../../sims/transverse-wave/main.html" height="502px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/transverse-wave/main.html" height="502px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
     <summary>Transverse Wave Animation MicroSim</summary>
@@ -156,7 +156,7 @@ Key features of longitudinal waves:
 
 #### Diagram: Longitudinal Wave Animation MicroSim
 
-<iframe src="../../sims/longitudinal-wave/main.html" height="502px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/longitudinal-wave/main.html" height="502px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
     <summary>Longitudinal Wave Animation MicroSim</summary>
@@ -370,7 +370,7 @@ Examples of destructive interference:
 
 #### Diagram: Two-Source Wave Interference Simulation MicroSim
 
-<iframe src="../../sims/wave-interference/main.html" height="652px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/wave-interference/main.html" height="652px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
     <summary>Two-Source Wave Interference Simulation MicroSim</summary>
@@ -453,7 +453,7 @@ The distance between consecutive nodes (or consecutive antinodes) is half a wave
 
 #### Diagram: Standing Waves on a String MicroSim
 
-<iframe src="../../sims/standing-waves/main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/standing-waves/main.html" height="602px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
     <summary>Standing Waves on a String MicroSim</summary>
@@ -653,7 +653,7 @@ Where v_o is the observer speed (plus sign when approaching, minus sign when rec
 
 #### Diagram: Doppler Effect Interactive Simulation MicroSim
 
-<iframe src="../../sims/doppler-effect/main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="../../sims/doppler-effect/main.html" height="602px" width="100%" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
     <summary>Doppler Effect Interactive Simulation MicroSim</summary>

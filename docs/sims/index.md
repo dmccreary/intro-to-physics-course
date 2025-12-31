@@ -136,7 +136,9 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Energy Diagram Explorer](./energy-diagram-explorer/index.md)**
 
-    Interactive tool to explore potential energy curves, turning points, and equilibrium positions.
+    ![Energy Diagram Explorer](./energy-diagram-explorer/energy-diagram-explorer.png)
+    Interactive tool to explore potential energy curves, turning points, and equilibrium positions for four different energy
+    diagrams: Harmonic Oscillator, Gravity Valley, Double Well and Gaussian Barrier.
 
 - **[Energy Efficiency Comparison](./energy-efficiency/index.md)**
 

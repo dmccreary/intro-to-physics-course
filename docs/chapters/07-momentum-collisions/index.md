@@ -72,7 +72,7 @@ Because momentum is a vector, we must consider its direction. An object moving e
 
 #### Diagram: Momentum Comparison Interactive Simulator
 
-<iframe src="../../sims/momentum-comparison/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/momentum-comparison/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
 <summary>Momentum Comparison Interactive Simulator</summary>
@@ -180,7 +180,7 @@ Understanding impulse explains many safety features and sports techniques:
 
 #### Diagram: Force vs. Time: Impact Scenarios Comparison
 
-<iframe src="../../sims/force-time-impulse/main.html" width="100%" height="502px" scrolling="no"></iframe>
+<iframe src="../../sims/force-time-impulse/main.html" width="100%" height="502px" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
 <summary>Force vs. Time: Impact Scenarios Comparison</summary>
@@ -283,7 +283,7 @@ Collisions are classified based on whether kinetic energy is conserved. While mo
 
 #### Diagram: Collision Types Comparison Diagram
 
-<iframe src="../../sims/collision-types/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/collision-types/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
 <summary>Collision Types Comparison Diagram</summary>
@@ -418,7 +418,7 @@ For perfectly inelastic collisions, the fraction of kinetic energy lost depends 
 
 #### Diagram: Interactive Collision Simulator
 
-<iframe src="../../sims/collisions/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/collisions/main.html" width="100%" height="550px" scrolling="no" loading="lazy"></iframe>
 
 [View detailed explanation and educational context](../../sims/collisions/index.md)
 
@@ -539,7 +539,7 @@ Using conservation of momentum in x and y, along with energy conservation, we ca
 
 #### Diagram: 2D Collision Vector Diagram
 
-<iframe src="../../sims/2d-collision-vectors/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/2d-collision-vectors/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
 <summary>2D Collision Vector Diagram</summary>
@@ -690,7 +690,7 @@ Real rockets face several challenges:
 
 #### Diagram: Rocket Propulsion Momentum Diagram
 
-<iframe src="../../sims/rocket-propulsion/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/rocket-propulsion/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
 <summary>Rocket Propulsion Momentum Diagram</summary>
@@ -774,7 +774,7 @@ The Saturn V moon rocket used three stages:
 
 #### Diagram: Multistage Rocket Efficiency Comparison
 
-<iframe src="../../sims/multistage-rocket/main.html" width="100%" height="602px" scrolling="no"></iframe>
+<iframe src="../../sims/multistage-rocket/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
 
 <details markdown="1">
 <summary>Multistage Rocket Efficiency Comparison</summary>
