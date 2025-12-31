@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Inertia Demonstration
 description: An interactive MicroSim demonstrating how mass affects inertia by comparing how different objects respond to identical forces.
 ---

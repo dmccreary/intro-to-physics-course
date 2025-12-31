@@ -3,7 +3,7 @@ title: Hooke's Law Interactive Demonstration
 description: Explore the relationship between force, displacement, and spring constant according to Hooke's Law with an interactive spring and mass system.
 image: /sims/hookes-law-demo/hookes-law-demo.png
 og:image: /sims/hookes-law-demo/hookes-law-demo.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Hooke's Law Interactive Demonstration

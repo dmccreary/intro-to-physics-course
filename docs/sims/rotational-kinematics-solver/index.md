@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Rotational Kinematics Problem Solver
 description: Interactive tool for solving rotational kinematics problems with animated visualization and real-time graphs.
 ---

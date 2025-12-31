@@ -1,4 +1,5 @@
 ---
+quality_score: 65
 title: Potential Energy Comparison Chart
 description: Grouped bar chart comparing gravitational and elastic potential energy across different scenarios
 ---

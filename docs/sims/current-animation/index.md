@@ -3,7 +3,7 @@ title: Circuit Current Simulation
 description: An interactive simulation demonstrating electric current flow through a circuit with battery and resistor. Switch between conventional current and electron flow, and explore Ohm's Law.
 image: /sims/current-animation/current-animation.png
 og:image: /sims/current-animation/current-animation.png
-quality_score: 100
+quality_score: 95
 social:
    cards: false
 ---

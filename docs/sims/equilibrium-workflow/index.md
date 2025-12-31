@@ -3,7 +3,7 @@ title: Equilibrium Classification Workflow
 description: Interactive decision tree to classify objects as in static equilibrium, dynamic equilibrium, or not in equilibrium.
 image: /sims/equilibrium-workflow/equilibrium-workflow.png
 og:image: /sims/equilibrium-workflow/equilibrium-workflow.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Equilibrium Classification Workflow

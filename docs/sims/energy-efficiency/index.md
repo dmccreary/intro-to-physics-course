@@ -3,7 +3,7 @@ title: Energy Efficiency Comparison
 description: Interactive infographic comparing energy efficiency across common devices and processes
 image: /sims/energy-efficiency/energy-efficiency.png
 og:image: /sims/energy-efficiency/energy-efficiency.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Energy Efficiency Comparison

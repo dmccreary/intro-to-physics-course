@@ -3,7 +3,7 @@ title: Interactive Graph Analysis MicroSim
 description: An interactive tool for analyzing physics graphs, extracting slope, intercepts, and area under curve with physical interpretations.
 image: /sims/graph-analysis/graph-analysis.png
 og:image: /sims/graph-analysis/graph-analysis.png
-quality_score: 100
+quality_score: 95
 social:
    cards: false
 ---

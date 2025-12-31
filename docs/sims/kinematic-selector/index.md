@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Kinematic Equation Selector
 description: Interactive decision tool to help students select the appropriate kinematic equation based on known and unknown variables.
 ---

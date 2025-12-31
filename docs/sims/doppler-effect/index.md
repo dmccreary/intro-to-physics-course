@@ -3,7 +3,7 @@ title: Doppler Effect Simulation
 description: An interactive MicroSim demonstrating how source motion affects observed frequency through wavefront compression and expansion.
 image: /sims/doppler-effect/doppler-effect.png
 og:image: /sims/doppler-effect/doppler-effect.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Doppler Effect Simulation

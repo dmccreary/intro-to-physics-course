@@ -3,7 +3,7 @@ title: Distance vs Displacement
 description: An interactive MicroSim that helps students understand the difference between distance (total path length) and displacement (straight-line change in position).
 image: /sims/distance-displacement/distance-displacement.png
 og:image: /sims/distance-displacement/distance-displacement.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Distance vs Displacement

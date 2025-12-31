@@ -110,6 +110,50 @@ python plot_similarity_interactive.py --method pca
 python plot_similarity_interactive.py --output similarity-map.png
 ```
 
+### Calculate Quality Scores
+
+Calculate and update quality scores for all MicroSims based on the standardization rubric:
+
+```bash
+python calculate_quality_scores.py
+```
+
+This evaluates each MicroSim against a 100-point rubric:
+
+| Criterion | Points |
+|-----------|--------|
+| Title in index.md (level 1 header) | 2 |
+| main.html present | 10 |
+| YAML metadata (title & description) | 3 |
+| Social preview images in YAML | 5 |
+| metadata.json present | 10 |
+| metadata.json valid (Dublin Core) | 20 |
+| iframe with src="main.html" | 10 |
+| Fullscreen link button | 5 |
+| Copy-paste iframe example | 5 |
+| Screenshot image present | 5 |
+| Overview/Description section | 5 |
+| Lesson Plan section | 10 |
+| References section | 5 |
+| Type-specific (p5.js editor link) | 5 |
+
+**Options:**
+
+```bash
+# Preview changes without modifying files
+python calculate_quality_scores.py --dry-run
+
+# Show detailed breakdown for each MicroSim
+python calculate_quality_scores.py --verbose
+
+# Only update MicroSims missing a quality_score
+python calculate_quality_scores.py --only-missing
+
+# Filter by score range
+python calculate_quality_scores.py --max-score 50  # Show only low-quality
+python calculate_quality_scores.py --min-score 85  # Show only high-quality
+```
+
 ### Find Similar MicroSims
 
 Find the most similar MicroSims to a specific one:
@@ -154,6 +198,7 @@ claude
 | `generate_embeddings.py` | Generates embeddings from MicroSim metadata |
 | `plot_similarity.py` | Static matplotlib visualization and CLI similarity finder |
 | `plot_similarity_interactive.py` | Interactive Plotly visualization with hover metrics |
+| `calculate_quality_scores.py` | Calculates and updates quality scores based on rubric |
 | `requirements.txt` | Python dependencies |
 | `microsim-embeddings.json` | Generated embeddings (created by running scripts) |
 

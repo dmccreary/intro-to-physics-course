@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Longitudinal Wave Animation
 description: An interactive MicroSim demonstrating how particles in a longitudinal wave move parallel to the wave propagation direction, creating compressions and rarefactions.
 ---

@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Static Friction
 description: Interactive demonstration of static friction responding to applied force and transitioning to kinetic friction.
 ---

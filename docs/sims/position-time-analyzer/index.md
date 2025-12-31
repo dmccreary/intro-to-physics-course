@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Position-Time Graph Analyzer
 description: Interactive tool for learning to interpret position-time graphs with animated objects and tangent line analysis.
 ---

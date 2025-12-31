@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Rocket Propulsion Diagram
 description: Interactive visualization showing momentum conservation in rocket propulsion with exhaust gases
 ---

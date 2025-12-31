@@ -1,4 +1,5 @@
 ---
+quality_score: 85
 title: Ohm's Law Interactive Calculator MicroSim
 description: An interactive visualization exploring the relationship between voltage, current, and resistance with animated circuit and V-I characteristic curves.
 image: /sims/ohms-law/ohms-law.png

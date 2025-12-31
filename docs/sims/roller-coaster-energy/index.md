@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Roller Coaster Energy Conservation
 description: Interactive simulation showing energy transformation between kinetic and potential energy on a roller coaster
 ---

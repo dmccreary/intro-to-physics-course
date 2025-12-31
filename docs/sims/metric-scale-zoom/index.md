@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Metric Scale Zoom
 description: An interactive MicroSim that helps students visualize the relative scale of metric prefixes and practice conversions between different orders of magnitude.
 image: /sims/metric-scale-zoom/metric-scale-zoom.png

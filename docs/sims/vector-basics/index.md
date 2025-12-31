@@ -1,4 +1,5 @@
 ---
+quality_score: 85
 title: Vector Basics Interactive MicroSim
 description: An interactive visualization teaching how vectors are represented graphically with magnitude, direction, and component decomposition.
 image: /sims/vector-basics/vector-basics.png

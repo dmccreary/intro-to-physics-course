@@ -1,4 +1,5 @@
 ---
+quality_score: 65
 title: Friction Coefficient Comparison Chart
 description: Interactive chart comparing static and kinetic friction coefficients for common material pairs.
 ---

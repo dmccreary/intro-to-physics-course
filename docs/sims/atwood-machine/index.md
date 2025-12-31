@@ -3,7 +3,7 @@ title: Atwood Machine
 description: Interactive simulation of the classic Atwood machine with adjustable masses.
 image: /sims/atwood-machine/atwood-machine.png
 og:image: /sims/atwood-machine/atwood-machine.png
-quality_score: 90
+quality_score: 95
 ---
 
 # Atwood Machine

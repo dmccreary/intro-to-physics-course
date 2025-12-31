@@ -3,7 +3,7 @@ title: Collision Types Comparison
 description: Interactive simulation comparing elastic, inelastic, and perfectly inelastic collisions demonstrating conservation of momentum and kinetic energy principles.
 image: /sims/collision-types/collision-types.png
 og:image: /sims/collision-types/collision-types.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Collision Types Comparison

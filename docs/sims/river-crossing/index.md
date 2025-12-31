@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: River Crossing
 description: Interactive simulation demonstrating relative velocity through a river crossing scenario with current and swimmer velocities.
 ---

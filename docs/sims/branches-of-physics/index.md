@@ -3,7 +3,7 @@ title: Branches of Physics Dependency Graph
 description: Interactive vis-network visualization showing 11 major physics branches and 33 subbranches with their prerequisite dependencies
 image: /sims/branches-of-physics/branches-of-physics.png
 og:image: /sims/branches-of-physics/branches-of-physics.png
-quality_score: 95
+quality_score: 100
 ---
 
 # Branches of Physics Dependency Graph

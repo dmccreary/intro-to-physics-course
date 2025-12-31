@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Real-World Rotational Applications
 description: Interactive infographic showing 12 real-world applications of rotational motion across engineering, sports, and natural phenomena.
 ---

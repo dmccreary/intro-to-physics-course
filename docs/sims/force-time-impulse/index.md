@@ -1,4 +1,5 @@
 ---
+quality_score: 65
 title: Force vs Time Impact Comparison
 description: Chart comparing how extending impact time reduces peak force while maintaining the same impulse
 ---

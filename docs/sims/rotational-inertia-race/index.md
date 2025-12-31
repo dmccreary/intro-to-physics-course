@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Rotational Inertia Race
 description: Race different shaped objects down a ramp to see how rotational inertia affects acceleration.
 ---

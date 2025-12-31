@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Figure Skater Angular Momentum Conservation
 description: Interactive simulation showing how a figure skater's spin speed changes when pulling arms in or extending them out while conserving angular momentum.
 ---

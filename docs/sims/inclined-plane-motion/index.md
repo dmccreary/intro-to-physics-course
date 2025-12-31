@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Inclined Plane Motion
 description: Interactive simulation of a block on an inclined plane with adjustable angle and friction.
 ---

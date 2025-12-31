@@ -1,4 +1,5 @@
 ---
+quality_score: 85
 title: Series vs Parallel Circuit Comparison MicroSim
 description: An interactive side-by-side comparison of series and parallel circuits showing current flow, voltage distribution, and component failure behavior.
 image: /sims/series-parallel/series-parallel.png

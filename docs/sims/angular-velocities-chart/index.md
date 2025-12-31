@@ -3,7 +3,7 @@ title: Comparative Angular Velocities Chart
 description: An interactive horizontal bar chart comparing angular velocities of common rotating objects on a logarithmic scale.
 image: /sims/angular-velocities-chart/angular-velocities-chart.png
 og:image: /sims/angular-velocities-chart/angular-velocities-chart.png
-quality_score: 100
+quality_score: 85
 ---
 
 # Comparative Angular Velocities Chart

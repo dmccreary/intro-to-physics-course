@@ -3,7 +3,7 @@ title: Types of Damping Comparison
 description: Interactive simulation showing a mass-spring system with real-time displacement graph for underdamped, critically damped, and overdamped oscillators.
 image: /sims/damping-types/damping-types.png
 og:image: /sims/damping-types/damping-types.png
-quality_score: 85
+quality_score: 90
 ---
 
 # Types of Damping Comparison

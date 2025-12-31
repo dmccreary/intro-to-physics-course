@@ -3,7 +3,7 @@ title: Precision vs Accuracy Target Diagram
 description: An interactive visualization demonstrating the difference between precision (repeatability) and accuracy (correctness) in measurements using a target/dart analogy.
 image: /sims/precision-accuracy/precision-accuracy.png
 og:image: /sims/precision-accuracy/precision-accuracy.png
-quality_score: 90
+quality_score: 95
 social:
    cards: false
 ---

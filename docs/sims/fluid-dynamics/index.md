@@ -3,7 +3,7 @@ title: Fluid Dynamics
 description: Interactive simulation demonstrating fluid flow around an obstacle with particle collisions, adjustable flow parameters, and real-time collision statistics.
 image: /sims/fluid-dynamics/fluid-dynamics.png
 og:image: /sims/fluid-dynamics/fluid-dynamics.png
-quality_score: 90
+quality_score: 95
 ---
 
 # Fluid Dynamics

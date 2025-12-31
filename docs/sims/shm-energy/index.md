@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Energy Transformation in SHM
 description: Animated bar chart showing how kinetic and potential energy transform during oscillation while total energy remains constant.
 ---

@@ -3,7 +3,7 @@ title: Solar System
 description: Interactive simulation of the inner solar system demonstrating Newtonian gravity, orbital mechanics, and Kepler's laws with real astronomical data for the Sun, Mercury, Venus, Earth, and Mars.
 image: /sims/solar-system/solar-system.png
 og:image: /sims/solar-system/solar-system.png
-quality_score: 90
+quality_score: 100
 ---
 
 # Solar System

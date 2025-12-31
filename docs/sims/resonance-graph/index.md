@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Resonance Amplitude vs. Driving Frequency
 description: Interactive graph showing how oscillation amplitude depends on driving frequency and damping level, illustrating the resonance phenomenon.
 ---

@@ -385,21 +385,23 @@ def create_interactive_plot(
             # Get all items in this category
             cat_items = [p for p in plot_data if p["category"] == cat]
 
-            # Create hover text
+            # Create compact hover text
             hover_texts = []
             for p in cat_items:
+                # Truncate concepts to first 3
+                concepts_short = p['concepts']
+                if len(concepts_short) > 40:
+                    concepts_short = concepts_short[:37] + "..."
+
+                # Use compact format with symbols
+                quality_indicator = "●" * (p['quality_score'] // 20) + "○" * (5 - p['quality_score'] // 20) if p['quality_score'] > 0 else "—"
+
                 hover_text = (
-                    f"<b>{p['title']}</b><br>"
-                    f"<b>ID:</b> {p['id']}<br>"
-                    f"<b>Category:</b> {p['category']}<br>"
-                    f"<b>Quality Score:</b> {p['quality_score']}<br>"
-                    f"<b>Lines of Code:</b> {p['lines_of_code']}<br>"
-                    f"<b>Controls:</b> {p['num_controls']}<br>"
-                    f"<b>Library:</b> {p['library']}<br>"
-                    f"<b>Screenshot:</b> {p['has_screenshot']}<br>"
-                    f"<b>Lesson Plan:</b> {p['has_lesson_plan']}<br>"
-                    f"<b>Concepts:</b> {p['concepts']}<br>"
-                    f"<b>Description:</b> {p['description']}"
+                    f"<b>{p['id']}</b><br>"
+                    f"Quality: {p['quality_score']} {quality_indicator}<br>"
+                    f"LOC: {p['lines_of_code']} | Controls: {p['num_controls']}<br>"
+                    f"Lib: {p['library']}<br>"
+                    f"Img: {p['has_screenshot']} | Lesson: {p['has_lesson_plan']}"
                 )
                 hover_texts.append(hover_text)
 
@@ -419,13 +421,17 @@ def create_interactive_plot(
                 hoverinfo='text',
                 hoverlabel=dict(
                     bgcolor='white',
-                    font_size=12,
-                    font_family="Arial"
+                    bordercolor='#333',
+                    font_size=14,
+                    font_color='#111',
+                    font_family="Arial, sans-serif",
+                    align="left",
+                    namelength=-1
                 )
             ))
             categories_added.add(cat)
 
-    # Update layout
+    # Update layout - use autosize to fill screen
     fig.update_layout(
         title=dict(
             text=f"MicroSim Similarity Map ({method.upper()} Projection)",
@@ -449,16 +455,18 @@ def create_interactive_plot(
             yanchor="top",
             y=0.99,
             xanchor="left",
-            x=1.02,
-            bgcolor="rgba(255, 255, 255, 0.9)",
-            bordercolor="lightgray",
-            borderwidth=1
+            x=1.01,
+            bgcolor="rgba(255, 255, 255, 0.95)",
+            bordercolor="#333",
+            borderwidth=1,
+            font=dict(size=12)
         ),
         hovermode='closest',
+        hoverdistance=30,
         plot_bgcolor='aliceblue',
-        width=1200,
-        height=800,
-        margin=dict(r=200)
+        autosize=True,
+        height=900,
+        margin=dict(l=60, r=180, t=60, b=60)
     )
 
     # Add annotation with stats
@@ -478,12 +486,12 @@ def create_interactive_plot(
             f"Avg Quality: {avg_quality:.1f}"
         ),
         showarrow=False,
-        font=dict(size=11),
+        font=dict(size=13, color='#111'),
         align="left",
-        bgcolor="rgba(255, 255, 255, 0.9)",
-        bordercolor="lightgray",
+        bgcolor="white",
+        bordercolor="#333",
         borderwidth=1,
-        borderpad=8
+        borderpad=10
     )
 
     # Save or show

@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Pulley Mechanical Advantage
 description: Interactive comparison of three pulley configurations showing how mechanical advantage increases with system complexity.
 ---

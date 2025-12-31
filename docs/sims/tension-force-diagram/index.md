@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Tension Force Diagram
 description: Interactive visualization demonstrating how tension forces act within a rope and on connected objects.
 ---

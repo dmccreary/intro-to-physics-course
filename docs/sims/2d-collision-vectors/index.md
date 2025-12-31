@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: 2D Collision Vector Diagram
 description: Interactive visualization showing momentum vector conservation in two dimensions before and after collision
 ---

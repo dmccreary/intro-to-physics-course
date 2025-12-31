@@ -3,7 +3,7 @@ title: Energy Diagram Explorer
 description: Interactive simulation exploring potential energy curves, kinetic energy, turning points, equilibrium positions, and conservation of energy with four different potential functions
 image: /sims/energy-diagram-explorer/energy-diagram-explorer.png
 og:image: /sims/energy-diagram-explorer/energy-diagram-explorer.png
-quality_score: 92
+quality_score: 100
 ---
 
 # Energy Diagram Explorer

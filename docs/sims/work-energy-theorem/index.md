@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Work-Energy Theorem
 description: Interactive demonstration showing how net work equals change in kinetic energy
 ---

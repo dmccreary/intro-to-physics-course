@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Applications of Oscillations Across Fields
 description: Interactive radial infographic showing how oscillation principles apply across medicine, architecture, music, transportation, electronics, and sports.
 ---

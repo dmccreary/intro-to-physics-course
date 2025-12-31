@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Work Scenarios
 description: Interactive diagram showing how the angle between force and displacement affects work done
 ---

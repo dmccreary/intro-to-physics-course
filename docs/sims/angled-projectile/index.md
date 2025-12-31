@@ -1,4 +1,5 @@
 ---
+quality_score: 65
 title: Angled Projectile Explorer
 description: Interactive simulation exploring how launch angle and speed affect projectile trajectory, range, and maximum height.
 ---

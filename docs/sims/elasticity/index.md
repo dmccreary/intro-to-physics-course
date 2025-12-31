@@ -1,4 +1,5 @@
 ---
+quality_score: 85
 title: Elasticity
 description: A MicroSim demonstrating how elasticity affects energy loss when a ball bounces off surfaces.
 image: /sims/elasticity/elasticity.png

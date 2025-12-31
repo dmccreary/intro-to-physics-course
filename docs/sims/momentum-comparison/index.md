@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Momentum Comparison
 description: Interactive visualization showing how mass and velocity combine to determine momentum as a vector quantity
 ---

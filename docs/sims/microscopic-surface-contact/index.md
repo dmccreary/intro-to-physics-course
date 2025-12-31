@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Microscopic View of Surface Contact
 description: Interactive visualization showing how microscopic surface irregularities create friction between two surfaces.
 ---

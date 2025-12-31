@@ -3,7 +3,7 @@ title: Centripetal Force Visualization
 description: Interactive visualization showing the relationship between velocity, centripetal acceleration, and centripetal force in circular motion.
 image: /sims/centripetal-force-viz/centripetal-force-viz.png
 og:image: /sims/centripetal-force-viz/centripetal-force-viz.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Centripetal Force Visualization

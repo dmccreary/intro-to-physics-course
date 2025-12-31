@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Snell's Law Refraction
 description: An interactive MicroSim demonstrating refraction at a boundary between two media using Snell's Law.
 ---

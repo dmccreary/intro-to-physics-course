@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Interactive Torque Diagram
 description: Explore how torque depends on force magnitude, position, and angle with this interactive lever simulation.
 ---

@@ -3,7 +3,7 @@ title: Car on Curve MicroSim
 description: Interactive simulation showing centripetal force requirements for a car navigating a curve.
 image: /sims/car-on-curve/car-on-curve.png
 og:image: /sims/car-on-curve/car-on-curve.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Car on Curve MicroSim

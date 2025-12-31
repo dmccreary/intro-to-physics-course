@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Normal Force on Inclined Planes
 description: Interactive visualization showing how normal force changes with incline angle and how weight decomposes into components.
 ---

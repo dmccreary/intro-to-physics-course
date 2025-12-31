@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Uniform vs Accelerated Motion
 description: Side-by-side comparison of position, velocity, and acceleration graphs for uniform and uniformly accelerated motion.
 ---

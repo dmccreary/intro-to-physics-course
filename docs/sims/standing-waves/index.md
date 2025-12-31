@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Standing Waves on a String
 description: An interactive MicroSim visualizing standing wave patterns, nodes, antinodes, and harmonics on a vibrating string.
 ---

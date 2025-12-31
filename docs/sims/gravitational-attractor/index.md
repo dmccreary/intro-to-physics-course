@@ -3,7 +3,7 @@ title: Gravitational Attractor
 description: Interactive simulation demonstrating gravitational attraction between particles and a central attractor, with collision physics and path tracing.
 image: /sims/gravitational-attractor/gravitational-attractor.png
 og:image: /sims/gravitational-attractor/gravitational-attractor.png
-quality_score: 90
+quality_score: 95
 ---
 
 # Gravitational Attractor

@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Velocity vs Speed Comparison
 description: An interactive comparison showing scenarios where speed and velocity differ, helping students distinguish between these fundamental concepts.
 ---

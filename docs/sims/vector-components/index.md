@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Vector Components
 description: Interactive diagram showing how 2D vectors decompose into horizontal and vertical components using trigonometry.
 ---

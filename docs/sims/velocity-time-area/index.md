@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Velocity-Time Graph Area Calculator
 description: Interactive tool demonstrating that the area under a velocity-time curve equals displacement.
 ---
