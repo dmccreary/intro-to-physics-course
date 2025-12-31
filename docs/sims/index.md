@@ -42,6 +42,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Comparative Angular Velocities Chart](./angular-velocities-chart/index.md)**
 
+    ![](./angular-velocities-chart/angular-velocities-chart.png)
     An interactive horizontal bar chart comparing angular velocities of common rotating objects on a logarithmic scale.
 
 - **[Atwood Machine Free-Body Diagram](./atwood-fbd/index.md)**
