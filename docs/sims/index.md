@@ -62,6 +62,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Banked Curve Speed Analysis](./banked-curve-speed/index.md)**
 
+    ![Banked Curve Speed Analysis](./banked-curve-speed/banked-curve-speed.png)
     Interactive exploration of how vehicle speed relative to ideal speed determines friction requirements on banked curves.
 
 - **[Branches of Physics](./branches-of-physics/index.md)**
