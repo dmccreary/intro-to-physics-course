@@ -69,6 +69,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Capacitor Charging and Discharging](./capacitor-charging-discharging/index.md)**
 
+    ![](./capacitor-charging-discharging/capacitor-charging-discharging.png)
     Interactive simulation showing how capacitors store and release energy in RC circuits with exponential charging/discharging behavior.
 
 - **[Car on Curve](./car-on-curve/index.md)**
@@ -91,6 +92,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Elastic Collisions](./collisions/index.md)**
 
+    ![](./collisions/collisions.png)
     Interactive simulation demonstrating elastic collisions between particles of varying masses, showing momentum and energy conservation.
 
 - **[Coulomb's Law Force Calculator](./coulombs-law/index.md)**
