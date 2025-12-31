@@ -2441,7 +2441,7 @@
 <p>Key properties of electric charge:</p>
 <ul>
 <li>Charge is quantized (comes in discrete units)</li>
-<li>The fundamental unit of charge is the electron charge: e = 1.6 × 10^-19^ coulombs (C)</li>
+<li>The fundamental unit of charge is the electron charge: <span class="arithmatex">\(e = 1.6 \times 10^{-19}\)</span> coulombs (C)</li>
 <li>Opposite charges attract; like charges repel</li>
 <li>Charge can be transferred but never created or destroyed</li>
 </ul>
@@ -2576,7 +2576,7 @@ Color scheme: Blue for atoms/ions, gold for electron in motion, green for charge
 </tr>
 <tr>
 <td>Superconductor</td>
-<td>Infinite (below T~c~)</td>
+<td>Infinite (below <span class="arithmatex">\(T_c\)</span>)</td>
 <td>Zero resistance</td>
 <td>Niobium-titanium</td>
 </tr>
@@ -2823,10 +2823,10 @@ Implementation notes:
 <div class="arithmatex">\[F = k \frac{|q_1 q_2|}{r^2}\]</div>
 <p>where:</p>
 <ul>
-<li>F = magnitude of electric force (in newtons, N)</li>
-<li>k = Coulomb's constant = 8.99 × 10^9^ N·m^2^/C^2^</li>
-<li>q~1~ and q~2~ = magnitudes of the two charges (in coulombs, C)</li>
-<li>r = distance between the charges (in meters, m)</li>
+<li><span class="arithmatex">\(F\)</span> = magnitude of electric force (in newtons, N)</li>
+<li><span class="arithmatex">\(k\)</span> = Coulomb's constant = <span class="arithmatex">\(8.99 \times 10^9\)</span> N·m²/C²</li>
+<li><span class="arithmatex">\(q_1\)</span> and <span class="arithmatex">\(q_2\)</span> = magnitudes of the two charges (in coulombs, C)</li>
+<li><span class="arithmatex">\(r\)</span> = distance between the charges (in meters, m)</li>
 </ul>
 <p>Notice the similarity to Newton's law of gravitation:</p>
 <div class="arithmatex">\[F_g = G \frac{m_1 m_2}{r^2}\]</div>
@@ -2834,11 +2834,11 @@ Implementation notes:
 <h3 id="comparing-electric-and-gravitational-forces">Comparing Electric and Gravitational Forces</h3>
 <p>How do electric and gravitational forces compare in strength? Consider two electrons:</p>
 <ul>
-<li>Electric repulsion: F~e~ ≈ 2.3 × 10^-8^ N</li>
-<li>Gravitational attraction: F~g~ ≈ 5.5 × 10^-71^ N</li>
-<li>Ratio: F~e~/F~g~ ≈ 4.2 × 10^42^</li>
+<li>Electric repulsion: <span class="arithmatex">\(F_e \approx 2.3 \times 10^{-8}\)</span> N</li>
+<li>Gravitational attraction: <span class="arithmatex">\(F_g \approx 5.5 \times 10^{-71}\)</span> N</li>
+<li>Ratio: <span class="arithmatex">\(F_e/F_g \approx 4.2 \times 10^{42}\)</span></li>
 </ul>
-<p>The electric force is about 10^42^ times stronger than the gravitational force! This enormous difference explains why electric forces dominate at atomic scales, determining the structure of atoms, molecules, and materials. Gravity only becomes significant for large objects, where the huge number of atoms provides enough mass to generate noticeable gravitational effects.</p>
+<p>The electric force is about <span class="arithmatex">\(10^{42}\)</span> times stronger than the gravitational force! This enormous difference explains why electric forces dominate at atomic scales, determining the structure of atoms, molecules, and materials. Gravity only becomes significant for large objects, where the huge number of atoms provides enough mass to generate noticeable gravitational effects.</p>
 <h4 id="diagram-coulombs-law-force-calculator-microsim">Diagram: Coulomb's Law Force Calculator MicroSim</h4>
 <iframe src="../../sims/coulombs-law/main.html" height="602px" width="100%" scrolling="no" style="border: none; overflow: hidden;"></iframe>
 
@@ -2939,14 +2939,14 @@ Additional features:
 
 Implementation notes:
 - Use p5.js for rendering
-- Coulomb constant k = 8.99 × 10⁹ N·m²/C²
+- Coulomb constant $k = 8.99 \times 10^9$ N·m²/C²
 - Vector arrow scaling: Use logarithmic scale for large force ranges
 - Graph: Plot F vs. r with current q₁ and q₂ values, mark current position
 </code></pre></div></td></tr></table></div>
 </details>
 <h3 id="multiple-charges-and-vector-addition">Multiple Charges and Vector Addition</h3>
 <p>When multiple charges are present, the total electric force on any charge is the vector sum of all individual forces. This principle, called the <strong>principle of superposition</strong>, allows us to analyze complex charge configurations.</p>
-<p>For example, if charge q~1~ experiences forces F~12~ (from q~2~) and F~13~ (from q~3~), the total force is:</p>
+<p>For example, if charge <span class="arithmatex">\(q_1\)</span> experiences forces <span class="arithmatex">\(\vec{F}_{12}\)</span> (from <span class="arithmatex">\(q_2\)</span>) and <span class="arithmatex">\(\vec{F}_{13}\)</span> (from <span class="arithmatex">\(q_3\)</span>), the total force is:</p>
 <div class="arithmatex">\[\vec{F}_{total} = \vec{F}_{12} + \vec{F}_{13}\]</div>
 <p>Remember that forces are vectors, so you must account for both magnitude and direction. Forces pointing in opposite directions partially cancel, while forces in the same direction add together.</p>
 <h2 id="the-electric-field">The Electric Field</h2>
@@ -2956,7 +2956,7 @@ Implementation notes:
 <p>Think of it like a magnetic field around a magnet, or the gravitational field around Earth. The field exists whether or not there's another charge present to feel it. It's a property of space itself, modified by the presence of charge.</p>
 <p>Mathematically, the electric field E at any point is defined as the force per unit charge that would be experienced by a small positive test charge placed at that point:</p>
 <div class="arithmatex">\[\vec{E} = \frac{\vec{F}}{q_0}\]</div>
-<p>where q~0~ is the magnitude of the test charge and F is the force it experiences.</p>
+<p>where <span class="arithmatex">\(q_0\)</span> is the magnitude of the test charge and <span class="arithmatex">\(\vec{F}\)</span> is the force it experiences.</p>
 <p>For a single point charge Q, the electric field at distance r is:</p>
 <div class="arithmatex">\[E = k \frac{|Q|}{r^2}\]</div>
 <p>The direction of the field is:</p>
@@ -3108,11 +3108,11 @@ Implementation notes:
 <p>A 1-coulomb charge in a field of strength 10 N/C experiences a 10-newton force. A 2-coulomb charge in the same field experiences a 20-newton force.</p>
 <p>Field strength decreases with distance from a point charge following the inverse square law:</p>
 <ul>
-<li>At distance r: E = k Q/r^2^</li>
-<li>At distance 2r: E = k Q/(2r)^2^ = E~0~/4</li>
-<li>At distance 3r: E = k Q/(3r)^2^ = E~0~/9</li>
+<li>At distance <span class="arithmatex">\(r\)</span>: <span class="arithmatex">\(E = kQ/r^2\)</span></li>
+<li>At distance <span class="arithmatex">\(2r\)</span>: <span class="arithmatex">\(E = kQ/(2r)^2 = E_0/4\)</span></li>
+<li>At distance <span class="arithmatex">\(3r\)</span>: <span class="arithmatex">\(E = kQ/(3r)^2 = E_0/9\)</span></li>
 </ul>
-<p>Near the surface of everyday charged objects, field strengths typically range from 10^3^ to 10^6^ N/C. However, air breaks down (ionizes) at about 3 × 10^6^ N/C, creating a conducting path—this is what happens in lightning bolts and sparks.</p>
+<p>Near the surface of everyday charged objects, field strengths typically range from <span class="arithmatex">\(10^3\)</span> to <span class="arithmatex">\(10^6\)</span> N/C. However, air breaks down (ionizes) at about <span class="arithmatex">\(3 \times 10^6\)</span> N/C, creating a conducting path—this is what happens in lightning bolts and sparks.</p>
 <table>
 <thead>
 <tr>
@@ -3123,19 +3123,19 @@ Implementation notes:
 <tbody>
 <tr>
 <td>Near rubbed balloon</td>
-<td>10^3^ - 10^4^</td>
+<td><span class="arithmatex">\(10^3\)</span> - <span class="arithmatex">\(10^4\)</span></td>
 </tr>
 <tr>
 <td>Inside typical thundercloud</td>
-<td>10^4^ - 10^5^</td>
+<td><span class="arithmatex">\(10^4\)</span> - <span class="arithmatex">\(10^5\)</span></td>
 </tr>
 <tr>
 <td>Air breakdown threshold</td>
-<td>3 × 10^6^</td>
+<td><span class="arithmatex">\(3 \times 10^6\)</span></td>
 </tr>
 <tr>
 <td>Inside atoms</td>
-<td>10^11^</td>
+<td><span class="arithmatex">\(10^{11}\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -3149,20 +3149,20 @@ Implementation notes:
 <li>Pushing like charges together against electric repulsion increases electric PE</li>
 <li>Pulling opposite charges apart against electric attraction increases electric PE</li>
 </ul>
-<p>For two point charges q~1~ and q~2~ separated by distance r, the electric potential energy is:</p>
+<p>For two point charges <span class="arithmatex">\(q_1\)</span> and <span class="arithmatex">\(q_2\)</span> separated by distance <span class="arithmatex">\(r\)</span>, the electric potential energy is:</p>
 <div class="arithmatex">\[U = k \frac{q_1 q_2}{r}\]</div>
 <p>Key features of this equation:</p>
 <ul>
-<li><strong>Positive energy</strong> (U &gt; 0): Like charges (both positive or both negative) have positive PE, which increases as they get closer</li>
-<li><strong>Negative energy</strong> (U &lt; 0): Opposite charges have negative PE, which becomes more negative as they get closer</li>
-<li><strong>Zero energy</strong>: U = 0 when charges are infinitely far apart (our reference point)</li>
-<li><strong>1/r dependence</strong>: Unlike force (1/r^2^), energy depends on 1/r</li>
+<li><strong>Positive energy</strong> (<span class="arithmatex">\(U &gt; 0\)</span>): Like charges (both positive or both negative) have positive PE, which increases as they get closer</li>
+<li><strong>Negative energy</strong> (<span class="arithmatex">\(U &lt; 0\)</span>): Opposite charges have negative PE, which becomes more negative as they get closer</li>
+<li><strong>Zero energy</strong>: <span class="arithmatex">\(U = 0\)</span> when charges are infinitely far apart (our reference point)</li>
+<li><strong>1/r dependence</strong>: Unlike force (<span class="arithmatex">\(1/r^2\)</span>), energy depends on <span class="arithmatex">\(1/r\)</span></li>
 </ul>
 <h3 id="energy-in-electric-fields">Energy in Electric Fields</h3>
 <p>When a charge moves through an electric field, the field does work on the charge, changing its kinetic energy. The work done equals the negative change in electric potential energy:</p>
 <div class="arithmatex">\[W = -\Delta U = -(U_f - U_i)\]</div>
-<p>If the field does positive work (W &gt; 0), the charge's kinetic energy increases and its potential energy decreases. This is exactly what happens when you release a ball and let gravity accelerate it downward—gravitational PE converts to kinetic energy.</p>
-<p>For a charge q moving through a region where the electric field does work W, the change in kinetic energy is:</p>
+<p>If the field does positive work (<span class="arithmatex">\(W &gt; 0\)</span>), the charge's kinetic energy increases and its potential energy decreases. This is exactly what happens when you release a ball and let gravity accelerate it downward—gravitational PE converts to kinetic energy.</p>
+<p>For a charge <span class="arithmatex">\(q\)</span> moving through a region where the electric field does work <span class="arithmatex">\(W\)</span>, the change in kinetic energy is:</p>
 <div class="arithmatex">\[\Delta KE = W = -\Delta U\]</div>
 <p>This is just conservation of energy for electric systems.</p>
 <h4 id="diagram-electric-potential-energy-interactive-chart">Diagram: Electric Potential Energy Interactive Chart</h4>
@@ -3398,8 +3398,8 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
 <tbody>
 <tr>
 <td>Formula</td>
-<td>F = G m₁m₂/r²</td>
-<td>F = k q₁q₂/r²</td>
+<td><span class="arithmatex">\(F = G \frac{m_1 m_2}{r^2}\)</span></td>
+<td><span class="arithmatex">\(F = k \frac{q_1 q_2}{r^2}\)</span></td>
 </tr>
 <tr>
 <td>Nature</td>
@@ -3413,8 +3413,8 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
 </tr>
 <tr>
 <td>Constant</td>
-<td>G = 6.67 × 10^-11^</td>
-<td>k = 8.99 × 10^9^</td>
+<td><span class="arithmatex">\(G = 6.67 \times 10^{-11}\)</span></td>
+<td><span class="arithmatex">\(k = 8.99 \times 10^9\)</span></td>
 </tr>
 <tr>
 <td>Units</td>
@@ -3425,7 +3425,7 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
 </table>
 <p>Both forces:</p>
 <ul>
-<li>Follow inverse square laws (1/r^2^)</li>
+<li>Follow inverse square laws (<span class="arithmatex">\(1/r^2\)</span>)</li>
 <li>Act at a distance</li>
 <li>Can be described using field concepts</li>
 <li>Have associated potential energy</li>
@@ -3448,7 +3448,7 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
 <p>Understanding electric charge and fields is essential for countless technologies.</p>
 <h3 id="lightning-and-lightning-protection">Lightning and Lightning Protection</h3>
 <p>Lightning is one of nature's most dramatic demonstrations of electric charge in action. Inside thunderclouds, rising and falling air currents cause ice particles and water droplets to collide, transferring electrons and separating charge. The bottom of the cloud becomes negatively charged, while the top becomes positive.</p>
-<p>This charge separation creates an enormous electric field—up to millions of volts per meter. When the field becomes strong enough to ionize air (about 3 × 10^6^ N/C), a conducting channel forms, allowing electrons to rush from cloud to ground (or ground to cloud, or cloud to cloud) in a fraction of a second.</p>
+<p>This charge separation creates an enormous electric field—up to millions of volts per meter. When the field becomes strong enough to ionize air (about <span class="arithmatex">\(3 \times 10^6\)</span> N/C), a conducting channel forms, allowing electrons to rush from cloud to ground (or ground to cloud, or cloud to cloud) in a fraction of a second.</p>
 <p>Lightning rods protect buildings by providing a preferred, low-resistance path to ground. The rod is typically copper or aluminum, mounted at the highest point of a structure, and connected via thick cables to grounding rods buried deep in the earth. When lightning strikes, the enormous current (typically 20,000 to 200,000 amperes) flows through the conductor system rather than through the building, preventing fire and structural damage.</p>
 <h3 id="electrostatic-applications">Electrostatic Applications</h3>
 <p>Many everyday technologies exploit electrostatic principles:</p>
@@ -3513,16 +3513,16 @@ Color scheme: Positive plate in red, negative plate in blue, field lines in gold
 <p>Two charges of +3.0 μC and -5.0 μC are separated by 0.40 m. Calculate the magnitude of the electric force between them.</p>
 </li>
 <li>
-<p>A plastic rod rubbed with wool acquires a charge of -2.0 × 10^-7^ C. How many electrons were transferred to the rod?</p>
+<p>A plastic rod rubbed with wool acquires a charge of <span class="arithmatex">\(-2.0 \times 10^{-7}\)</span> C. How many electrons were transferred to the rod?</p>
 </li>
 <li>
 <p>The electric field between two parallel plates separated by 5.0 cm is 4000 N/C. What is the potential difference between the plates?</p>
 </li>
 <li>
-<p>An electron (charge -1.6 × 10^-19^ C, mass 9.1 × 10^-31^ kg) is accelerated from rest through a potential difference of 100 V. What is its final kinetic energy? What is its final speed?</p>
+<p>An electron (charge <span class="arithmatex">\(-1.6 \times 10^{-19}\)</span> C, mass <span class="arithmatex">\(9.1 \times 10^{-31}\)</span> kg) is accelerated from rest through a potential difference of 100 V. What is its final kinetic energy? What is its final speed?</p>
 </li>
 <li>
-<p>Three charges are arranged at the corners of an equilateral triangle with sides of 0.30 m. The charges are: q~1~ = +4.0 μC, q~2~ = +4.0 μC, and q~3~ = -4.0 μC. Calculate the net electric force on q~3~.</p>
+<p>Three charges are arranged at the corners of an equilateral triangle with sides of 0.30 m. The charges are: <span class="arithmatex">\(q_1\)</span> = +4.0 μC, <span class="arithmatex">\(q_2\)</span> = +4.0 μC, and <span class="arithmatex">\(q_3\)</span> = -4.0 μC. Calculate the net electric force on <span class="arithmatex">\(q_3\)</span>.</p>
 </li>
 </ol>
 <h2 id="further-reading">Further Reading</h2>
