@@ -54,7 +54,7 @@ Have you ever felt a shock when touching a doorknob after walking across a carpe
 Key properties of electric charge:
 
 - Charge is quantized (comes in discrete units)
-- The fundamental unit of charge is the electron charge: e = 1.6 × 10^-19^ coulombs (C)
+- The fundamental unit of charge is the electron charge: $e = 1.6 \times 10^{-19}$ coulombs (C)
 - Opposite charges attract; like charges repel
 - Charge can be transferred but never created or destroyed
 
@@ -156,7 +156,7 @@ The challenge with superconductors is that most require extremely low temperatur
 | Conductor | High | Free electrons | Copper wire |
 | Insulator | Very low | Electrons tightly bound | Rubber |
 | Semiconductor | Variable | Controllable conductivity | Silicon |
-| Superconductor | Infinite (below T~c~) | Zero resistance | Niobium-titanium |
+| Superconductor | Infinite (below $T_c$) | Zero resistance | Niobium-titanium |
 
 ## Methods of Charging Objects
 
@@ -339,10 +339,10 @@ $$F = k \frac{|q_1 q_2|}{r^2}$$
 
 where:
 
-- F = magnitude of electric force (in newtons, N)
-- k = Coulomb's constant = 8.99 × 10^9^ N·m^2^/C^2^
-- q~1~ and q~2~ = magnitudes of the two charges (in coulombs, C)
-- r = distance between the charges (in meters, m)
+- $F$ = magnitude of electric force (in newtons, N)
+- $k$ = Coulomb's constant = $8.99 \times 10^9$ N·m²/C²
+- $q_1$ and $q_2$ = magnitudes of the two charges (in coulombs, C)
+- $r$ = distance between the charges (in meters, m)
 
 Notice the similarity to Newton's law of gravitation:
 
@@ -354,11 +354,11 @@ Both forces follow an inverse square law—doubling the distance reduces the for
 
 How do electric and gravitational forces compare in strength? Consider two electrons:
 
-- Electric repulsion: F~e~ ≈ 2.3 × 10^-8^ N
-- Gravitational attraction: F~g~ ≈ 5.5 × 10^-71^ N
-- Ratio: F~e~/F~g~ ≈ 4.2 × 10^42^
+- Electric repulsion: $F_e \approx 2.3 \times 10^{-8}$ N
+- Gravitational attraction: $F_g \approx 5.5 \times 10^{-71}$ N
+- Ratio: $F_e/F_g \approx 4.2 \times 10^{42}$
 
-The electric force is about 10^42^ times stronger than the gravitational force! This enormous difference explains why electric forces dominate at atomic scales, determining the structure of atoms, molecules, and materials. Gravity only becomes significant for large objects, where the huge number of atoms provides enough mass to generate noticeable gravitational effects.
+The electric force is about $10^{42}$ times stronger than the gravitational force! This enormous difference explains why electric forces dominate at atomic scales, determining the structure of atoms, molecules, and materials. Gravity only becomes significant for large objects, where the huge number of atoms provides enough mass to generate noticeable gravitational effects.
 
 #### Diagram: Coulomb's Law Force Calculator MicroSim
 
@@ -412,7 +412,7 @@ The electric force is about 10^42^ times stronger than the gravitational force! 
 
     Implementation notes:
     - Use p5.js for rendering
-    - Coulomb constant k = 8.99 × 10⁹ N·m²/C²
+    - Coulomb constant $k = 8.99 \times 10^9$ N·m²/C²
     - Vector arrow scaling: Use logarithmic scale for large force ranges
     - Graph: Plot F vs. r with current q₁ and q₂ values, mark current position
 </details>
@@ -421,7 +421,7 @@ The electric force is about 10^42^ times stronger than the gravitational force! 
 
 When multiple charges are present, the total electric force on any charge is the vector sum of all individual forces. This principle, called the **principle of superposition**, allows us to analyze complex charge configurations.
 
-For example, if charge q~1~ experiences forces F~12~ (from q~2~) and F~13~ (from q~3~), the total force is:
+For example, if charge $q_1$ experiences forces $\vec{F}_{12}$ (from $q_2$) and $\vec{F}_{13}$ (from $q_3$), the total force is:
 
 $$\vec{F}_{total} = \vec{F}_{12} + \vec{F}_{13}$$
 
@@ -441,7 +441,7 @@ Mathematically, the electric field E at any point is defined as the force per un
 
 $$\vec{E} = \frac{\vec{F}}{q_0}$$
 
-where q~0~ is the magnitude of the test charge and F is the force it experiences.
+where $q_0$ is the magnitude of the test charge and $\vec{F}$ is the force it experiences.
 
 For a single point charge Q, the electric field at distance r is:
 
@@ -548,18 +548,18 @@ A 1-coulomb charge in a field of strength 10 N/C experiences a 10-newton force. 
 
 Field strength decreases with distance from a point charge following the inverse square law:
 
-- At distance r: E = k Q/r^2^
-- At distance 2r: E = k Q/(2r)^2^ = E~0~/4
-- At distance 3r: E = k Q/(3r)^2^ = E~0~/9
+- At distance $r$: $E = kQ/r^2$
+- At distance $2r$: $E = kQ/(2r)^2 = E_0/4$
+- At distance $3r$: $E = kQ/(3r)^2 = E_0/9$
 
-Near the surface of everyday charged objects, field strengths typically range from 10^3^ to 10^6^ N/C. However, air breaks down (ionizes) at about 3 × 10^6^ N/C, creating a conducting path—this is what happens in lightning bolts and sparks.
+Near the surface of everyday charged objects, field strengths typically range from $10^3$ to $10^6$ N/C. However, air breaks down (ionizes) at about $3 \times 10^6$ N/C, creating a conducting path—this is what happens in lightning bolts and sparks.
 
 | Location | Typical Field Strength (N/C) |
 |----------|------------------------------|
-| Near rubbed balloon | 10^3^ - 10^4^ |
-| Inside typical thundercloud | 10^4^ - 10^5^ |
-| Air breakdown threshold | 3 × 10^6^ |
-| Inside atoms | 10^11^ |
+| Near rubbed balloon | $10^3$ - $10^4$ |
+| Inside typical thundercloud | $10^4$ - $10^5$ |
+| Air breakdown threshold | $3 \times 10^6$ |
+| Inside atoms | $10^{11}$ |
 
 ## Electric Potential Energy
 
@@ -575,16 +575,16 @@ The concept is directly analogous to gravitational potential energy:
 - Pushing like charges together against electric repulsion increases electric PE
 - Pulling opposite charges apart against electric attraction increases electric PE
 
-For two point charges q~1~ and q~2~ separated by distance r, the electric potential energy is:
+For two point charges $q_1$ and $q_2$ separated by distance $r$, the electric potential energy is:
 
 $$U = k \frac{q_1 q_2}{r}$$
 
 Key features of this equation:
 
-- **Positive energy** (U > 0): Like charges (both positive or both negative) have positive PE, which increases as they get closer
-- **Negative energy** (U < 0): Opposite charges have negative PE, which becomes more negative as they get closer
-- **Zero energy**: U = 0 when charges are infinitely far apart (our reference point)
-- **1/r dependence**: Unlike force (1/r^2^), energy depends on 1/r
+- **Positive energy** ($U > 0$): Like charges (both positive or both negative) have positive PE, which increases as they get closer
+- **Negative energy** ($U < 0$): Opposite charges have negative PE, which becomes more negative as they get closer
+- **Zero energy**: $U = 0$ when charges are infinitely far apart (our reference point)
+- **1/r dependence**: Unlike force ($1/r^2$), energy depends on $1/r$
 
 ### Energy in Electric Fields
 
@@ -592,9 +592,9 @@ When a charge moves through an electric field, the field does work on the charge
 
 $$W = -\Delta U = -(U_f - U_i)$$
 
-If the field does positive work (W > 0), the charge's kinetic energy increases and its potential energy decreases. This is exactly what happens when you release a ball and let gravity accelerate it downward—gravitational PE converts to kinetic energy.
+If the field does positive work ($W > 0$), the charge's kinetic energy increases and its potential energy decreases. This is exactly what happens when you release a ball and let gravity accelerate it downward—gravitational PE converts to kinetic energy.
 
-For a charge q moving through a region where the electric field does work W, the change in kinetic energy is:
+For a charge $q$ moving through a region where the electric field does work $W$, the change in kinetic energy is:
 
 $$\Delta KE = W = -\Delta U$$
 
@@ -773,15 +773,15 @@ Coulomb's Law for electric force has the same mathematical form as Newton's law 
 
 | Property | Gravitational Force | Electric Force |
 |----------|-------------------|----------------|
-| Formula | F = G m₁m₂/r² | F = k q₁q₂/r² |
+| Formula | $F = G \frac{m_1 m_2}{r^2}$ | $F = k \frac{q_1 q_2}{r^2}$ |
 | Nature | Always attractive | Attractive or repulsive |
 | Relative strength | Extremely weak | Very strong |
-| Constant | G = 6.67 × 10^-11^ | k = 8.99 × 10^9^ |
+| Constant | $G = 6.67 \times 10^{-11}$ | $k = 8.99 \times 10^9$ |
 | Units | N | N |
 
 Both forces:
 
-- Follow inverse square laws (1/r^2^)
+- Follow inverse square laws ($1/r^2$)
 - Act at a distance
 - Can be described using field concepts
 - Have associated potential energy
@@ -815,7 +815,7 @@ Understanding electric charge and fields is essential for countless technologies
 
 Lightning is one of nature's most dramatic demonstrations of electric charge in action. Inside thunderclouds, rising and falling air currents cause ice particles and water droplets to collide, transferring electrons and separating charge. The bottom of the cloud becomes negatively charged, while the top becomes positive.
 
-This charge separation creates an enormous electric field—up to millions of volts per meter. When the field becomes strong enough to ionize air (about 3 × 10^6^ N/C), a conducting channel forms, allowing electrons to rush from cloud to ground (or ground to cloud, or cloud to cloud) in a fraction of a second.
+This charge separation creates an enormous electric field—up to millions of volts per meter. When the field becomes strong enough to ionize air (about $3 \times 10^6$ N/C), a conducting channel forms, allowing electrons to rush from cloud to ground (or ground to cloud, or cloud to cloud) in a fraction of a second.
 
 Lightning rods protect buildings by providing a preferred, low-resistance path to ground. The rod is typically copper or aluminum, mounted at the highest point of a structure, and connected via thick cables to grounding rods buried deep in the earth. When lightning strikes, the enormous current (typically 20,000 to 200,000 amperes) flows through the conductor system rather than through the building, preventing fire and structural damage.
 
@@ -889,13 +889,13 @@ These concepts form the foundation for understanding electricity and all electri
 
 1. Two charges of +3.0 μC and -5.0 μC are separated by 0.40 m. Calculate the magnitude of the electric force between them.
 
-2. A plastic rod rubbed with wool acquires a charge of -2.0 × 10^-7^ C. How many electrons were transferred to the rod?
+2. A plastic rod rubbed with wool acquires a charge of $-2.0 \times 10^{-7}$ C. How many electrons were transferred to the rod?
 
 3. The electric field between two parallel plates separated by 5.0 cm is 4000 N/C. What is the potential difference between the plates?
 
-4. An electron (charge -1.6 × 10^-19^ C, mass 9.1 × 10^-31^ kg) is accelerated from rest through a potential difference of 100 V. What is its final kinetic energy? What is its final speed?
+4. An electron (charge $-1.6 \times 10^{-19}$ C, mass $9.1 \times 10^{-31}$ kg) is accelerated from rest through a potential difference of 100 V. What is its final kinetic energy? What is its final speed?
 
-5. Three charges are arranged at the corners of an equilateral triangle with sides of 0.30 m. The charges are: q~1~ = +4.0 μC, q~2~ = +4.0 μC, and q~3~ = -4.0 μC. Calculate the net electric force on q~3~.
+5. Three charges are arranged at the corners of an equilateral triangle with sides of 0.30 m. The charges are: $q_1$ = +4.0 μC, $q_2$ = +4.0 μC, and $q_3$ = -4.0 μC. Calculate the net electric force on $q_3$.
 
 ## Further Reading
 

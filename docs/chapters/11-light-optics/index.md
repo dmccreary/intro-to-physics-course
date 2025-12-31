@@ -68,11 +68,11 @@ Light is a type of electromagnetic wave—a disturbance that travels through spa
 
 The fundamental properties of light waves include:
 
-- **Wavelength** (λ): The distance between successive wave crests
-- **Frequency** (f): The number of wave cycles passing a point per second
-- **Speed** (c): The speed at which light travels in a vacuum
+- **Wavelength** ($\lambda$): The distance between successive wave crests
+- **Frequency** ($f$): The number of wave cycles passing a point per second
+- **Speed** ($c$): The speed at which light travels in a vacuum
 
-These properties are related by the wave equation: **c = λf**, where c = 3.00 × 10⁸ m/s in vacuum.
+These properties are related by the wave equation: $c = \lambda f$, where $c = 3.00 \times 10^8$ m/s in vacuum.
 
 ### The Electromagnetic Spectrum
 
@@ -107,14 +107,14 @@ White light, such as sunlight, contains all wavelengths of visible light mixed t
 
 ### Speed of Light
 
-The speed of light in vacuum, denoted by the symbol c, is one of the most fundamental constants in physics: **c = 299,792,458 m/s**, commonly rounded to 3.00 × 10⁸ m/s for calculations. This incredible speed means light can travel around Earth's equator approximately 7.5 times in just one second.
+The speed of light in vacuum, denoted by the symbol $c$, is one of the most fundamental constants in physics: $c = 299{,}792{,}458$ m/s, commonly rounded to $3.00 \times 10^8$ m/s for calculations. This incredible speed means light can travel around Earth's equator approximately 7.5 times in just one second.
 
 While nothing can travel faster than light in vacuum, light does slow down when passing through transparent materials. The speed of light in a material depends on the material's optical properties, described by its index of refraction (which we'll discuss in the refraction section). For example:
 
-- Light in air: ~3.00 × 10⁸ m/s (nearly the same as vacuum)
-- Light in water: ~2.25 × 10⁸ m/s (75% of c)
-- Light in glass: ~2.00 × 10⁸ m/s (67% of c)
-- Light in diamond: ~1.24 × 10⁸ m/s (41% of c)
+- Light in air: ~$3.00 \times 10^8$ m/s (nearly the same as vacuum)
+- Light in water: ~$2.25 \times 10^8$ m/s (75% of $c$)
+- Light in glass: ~$2.00 \times 10^8$ m/s (67% of $c$)
+- Light in diamond: ~$1.24 \times 10^8$ m/s (41% of $c$)
 
 #### Diagram: Historical Measurements of Light Speed
 <details markdown="1">
@@ -173,7 +173,7 @@ For example, a typical candle has a luminous intensity of about 1 candela, while
 When light strikes a smooth surface, it reflects in a predictable way described by the law of reflection. This law states two fundamental principles:
 
 1. The incident ray, reflected ray, and normal (perpendicular line) to the surface all lie in the same plane
-2. The angle of incidence equals the angle of reflection: **θᵢ = θᵣ**
+2. The angle of incidence equals the angle of reflection: $\theta_i = \theta_r$
 
 Both angles are measured from the normal to the surface, not from the surface itself. This law applies to all types of electromagnetic radiation and is fundamental to understanding mirrors, periscopes, and many optical instruments.
 
@@ -263,7 +263,7 @@ Important terminology for spherical mirrors:
 - **Principal axis**: Line passing through C and the center of the mirror
 - **Vertex (V)**: Center point on the mirror surface
 - **Focal point (F)**: Point where parallel rays converge (concave) or appear to diverge from (convex)
-- **Focal length (f)**: Distance from vertex to focal point; f = R/2
+- **Focal length (f)**: Distance from vertex to focal point; $f = R/2$
 
 ### Concave Mirrors
 
@@ -307,25 +307,25 @@ The common warning on car mirrors, "Objects in mirror are closer than they appea
 
 ### Mirror Equation and Magnification
 
-The mirror equation relates object distance (dₒ), image distance (dᵢ), and focal length (f) for spherical mirrors:
+The mirror equation relates object distance ($d_o$), image distance ($d_i$), and focal length ($f$) for spherical mirrors:
 
-**1/f = 1/dₒ + 1/dᵢ**
+$$\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}$$
 
 Sign conventions:
 
-- Focal length f is positive for concave mirrors, negative for convex mirrors
-- Object distance dₒ is positive when object is in front of mirror (real object)
-- Image distance dᵢ is positive when image is in front of mirror (real image), negative when behind (virtual image)
+- Focal length $f$ is positive for concave mirrors, negative for convex mirrors
+- Object distance $d_o$ is positive when object is in front of mirror (real object)
+- Image distance $d_i$ is positive when image is in front of mirror (real image), negative when behind (virtual image)
 
-Magnification (M) indicates the ratio of image height to object height:
+Magnification ($M$) indicates the ratio of image height to object height:
 
-**M = -dᵢ/dₒ = hᵢ/hₒ**
+$$M = -\frac{d_i}{d_o} = \frac{h_i}{h_o}$$
 
-- M > 1: Image is magnified (larger than object)
-- M = 1: Image is same size as object
-- M < 1: Image is reduced (smaller than object)
-- Negative M: Image is inverted
-- Positive M: Image is upright
+- $M > 1$: Image is magnified (larger than object)
+- $M = 1$: Image is same size as object
+- $M < 1$: Image is reduced (smaller than object)
+- Negative $M$: Image is inverted
+- Positive $M$: Image is upright
 
 #### Diagram: Spherical Mirror Ray Diagram Interactive MicroSim
 <details markdown="1">
@@ -390,34 +390,34 @@ Implementation notes:
 
 ### Snell's Law and Index of Refraction
 
-Refraction is the bending of light as it passes from one transparent medium to another. This bending occurs because light travels at different speeds in different materials. The index of refraction (n) of a material describes how much light slows down in that material compared to vacuum:
+Refraction is the bending of light as it passes from one transparent medium to another. This bending occurs because light travels at different speeds in different materials. The index of refraction ($n$) of a material describes how much light slows down in that material compared to vacuum:
 
-**n = c/v**
+$$n = \frac{c}{v}$$
 
-where c is the speed of light in vacuum and v is the speed in the material.
+where $c$ is the speed of light in vacuum and $v$ is the speed in the material.
 
 Common indices of refraction:
 
-- Vacuum: n = 1.00 (exactly, by definition)
-- Air: n = 1.0003 (essentially 1.00)
-- Water: n = 1.33
-- Glass: n = 1.5 to 1.9 (depending on type)
-- Diamond: n = 2.42
+- Vacuum: $n = 1.00$ (exactly, by definition)
+- Air: $n = 1.0003$ (essentially 1.00)
+- Water: $n = 1.33$
+- Glass: $n = 1.5$ to $1.9$ (depending on type)
+- Diamond: $n = 2.42$
 
 Snell's Law describes how light bends when crossing a boundary between two materials with different indices of refraction:
 
-**n₁ sin θ₁ = n₂ sin θ₂**
+$$n_1 \sin \theta_1 = n_2 \sin \theta_2$$
 
 where:
-- n₁ and n₂ are the indices of refraction of the two materials
-- θ₁ is the angle of incidence (measured from normal)
-- θ₂ is the angle of refraction (measured from normal)
+- $n_1$ and $n_2$ are the indices of refraction of the two materials
+- $\theta_1$ is the angle of incidence (measured from normal)
+- $\theta_2$ is the angle of refraction (measured from normal)
 
 Key refraction behaviors:
 
-- Light bends toward the normal when entering a denser medium (higher n)
-- Light bends away from the normal when entering a less dense medium (lower n)
-- No bending occurs when light hits perpendicular to the surface (θ₁ = 0°)
+- Light bends toward the normal when entering a denser medium (higher $n$)
+- Light bends away from the normal when entering a less dense medium (lower $n$)
+- No bending occurs when light hits perpendicular to the surface ($\theta_1 = 0°$)
 
 #### Diagram: Snell's Law Interactive Demonstration
 
@@ -485,13 +485,13 @@ When light travels from a denser medium to a less dense medium (e.g., water to a
 
 At angles greater than the critical angle, refraction cannot occur. Instead, all the light reflects back into the denser medium—a phenomenon called total internal reflection.
 
-The critical angle is calculated from Snell's Law by setting θ₂ = 90°:
+The critical angle is calculated from Snell's Law by setting $\theta_2 = 90°$:
 
-**sin θc = n₂/n₁** (where n₁ > n₂)
+$$\sin \theta_c = \frac{n_2}{n_1}$$ (where $n_1 > n_2$)
 
-For water-to-air: sin θc = 1.00/1.33, so θc ≈ 48.8°
-For glass-to-air: sin θc = 1.00/1.50, so θc ≈ 41.8°
-For diamond-to-air: sin θc = 1.00/2.42, so θc ≈ 24.4°
+For water-to-air: $\sin \theta_c = 1.00/1.33$, so $\theta_c \approx 48.8°$
+For glass-to-air: $\sin \theta_c = 1.00/1.50$, so $\theta_c \approx 41.8°$
+For diamond-to-air: $\sin \theta_c = 1.00/2.42$, so $\theta_c \approx 24.4°$
 
 Applications of total internal reflection:
 
@@ -568,27 +568,27 @@ Applications of concave lenses:
 
 ### Lens Equation and Thin Lens Formula
 
-The thin lens equation relates object distance (dₒ), image distance (dᵢ), and focal length (f):
+The thin lens equation relates object distance ($d_o$), image distance ($d_i$), and focal length ($f$):
 
-**1/f = 1/dₒ + 1/dᵢ**
+$$\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}$$
 
 This equation applies to both converging and diverging lenses when using proper sign conventions:
 
 Sign conventions for lenses:
-- Focal length f is positive for convex lenses, negative for concave lenses
-- Object distance dₒ is positive for real objects (on the incoming light side)
-- Image distance dᵢ is positive for real images (on the opposite side from object), negative for virtual images (same side as object)
+- Focal length $f$ is positive for convex lenses, negative for concave lenses
+- Object distance $d_o$ is positive for real objects (on the incoming light side)
+- Image distance $d_i$ is positive for real images (on the opposite side from object), negative for virtual images (same side as object)
 
 Magnification for lenses follows the same formula as mirrors:
 
-**M = -dᵢ/dₒ = hᵢ/hₒ**
+$$M = -\frac{d_i}{d_o} = \frac{h_i}{h_o}$$
 
 The power of a lens, measured in diopters (D), is the reciprocal of focal length in meters:
 
-**P = 1/f**
+$$P = \frac{1}{f}$$
 
-A lens with f = 0.5 m has power P = +2.0 D (converging)
-A lens with f = -0.25 m has power P = -4.0 D (diverging)
+A lens with $f = 0.5$ m has power $P = +2.0$ D (converging)
+A lens with $f = -0.25$ m has power $P = -4.0$ D (diverging)
 
 ### Ray Diagrams for Lenses
 
@@ -683,9 +683,9 @@ The focal length of a lens or mirror is the distance from the optical center to 
 
 For thin lenses, the lensmaker's equation relates focal length to the lens material and curvature:
 
-**1/f = (n-1)(1/R₁ - 1/R₂)**
+$$\frac{1}{f} = (n-1)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$$
 
-where n is the index of refraction and R₁, R₂ are the radii of curvature of the two surfaces.
+where $n$ is the index of refraction and $R_1$, $R_2$ are the radii of curvature of the two surfaces.
 
 In practical applications:
 - Short focal length (wide-angle): Captures broad scenes (f = 18-35 mm in photography)
@@ -922,19 +922,19 @@ This interference pattern results from:
 
 The condition for bright fringes (constructive interference):
 
-**d sin θ = mλ**
+$$d \sin \theta = m\lambda$$
 
 where:
-- d = distance between slits
-- θ = angle to the bright fringe
-- m = order number (0, ±1, ±2, ...)
-- λ = wavelength of light
+- $d$ = distance between slits
+- $\theta$ = angle to the bright fringe
+- $m$ = order number (0, ±1, ±2, ...)
+- $\lambda$ = wavelength of light
 
 The condition for dark fringes (destructive interference):
 
-**d sin θ = (m + ½)λ**
+$$d \sin \theta = \left(m + \frac{1}{2}\right)\lambda$$
 
-where m = 0, ±1, ±2, ...
+where $m$ = 0, ±1, ±2, ...
 
 Young's experiment was revolutionary because it:
 - Provided strong evidence for the wave nature of light
@@ -1011,13 +1011,13 @@ When light passes through a single narrow slit, it diffracts and creates an inte
 
 The condition for dark fringes (minima) in single slit diffraction:
 
-**a sin θ = mλ**
+$$a \sin \theta = m\lambda$$
 
 where:
-- a = width of the slit
-- θ = angle to the minimum
-- m = ±1, ±2, ±3, ... (m ≠ 0)
-- λ = wavelength
+- $a$ = width of the slit
+- $\theta$ = angle to the minimum
+- $m$ = ±1, ±2, ±3, ... ($m \neq 0$)
+- $\lambda$ = wavelength
 
 Key differences from double slit:
 - Central maximum is twice as wide as other maxima
@@ -1035,7 +1035,7 @@ A diffraction grating is an optical element with many parallel, closely-spaced s
 
 When light passes through a diffraction grating, the condition for bright fringes is:
 
-**d sin θ = mλ**
+$$d \sin \theta = m\lambda$$
 
 (same form as double slit, but with many slits reinforcing the pattern)
 
@@ -1209,14 +1209,14 @@ Polarization has numerous practical applications:
 
 **Malus's Law** describes intensity when polarized light passes through a polarizer:
 
-**I = I₀ cos² θ**
+$$I = I_0 \cos^2 \theta$$
 
 where:
-- I = transmitted intensity
-- I₀ = initial intensity
-- θ = angle between polarization direction and polarizer axis
+- $I$ = transmitted intensity
+- $I_0$ = initial intensity
+- $\theta$ = angle between polarization direction and polarizer axis
 
-When two polarizers are crossed (θ = 90°), no light passes through (I = 0).
+When two polarizers are crossed ($\theta = 90°$), no light passes through ($I = 0$).
 
 #### Diagram: Polarization Filter Interactive MicroSim
 <details markdown="1">
@@ -1291,7 +1291,7 @@ Implementation notes:
 
 ## Summary and Key Takeaways
 
-This chapter explored the fascinating world of light and optics, revealing both the wave and particle nature of electromagnetic radiation. You've learned that light is just a small portion of the electromagnetic spectrum, capable of traveling through empty space at an incredible 3.00 × 10⁸ m/s.
+This chapter explored the fascinating world of light and optics, revealing both the wave and particle nature of electromagnetic radiation. You've learned that light is just a small portion of the electromagnetic spectrum, capable of traveling through empty space at an incredible $3.00 \times 10^8$ m/s.
 
 **Key concepts covered:**
 
@@ -1306,10 +1306,10 @@ This chapter explored the fascinating world of light and optics, revealing both 
 - Plane mirrors create virtual, upright images at equal distance behind the mirror
 - Concave mirrors can create real or virtual images depending on object position
 - Convex mirrors always create reduced, virtual, upright images with wide field of view
-- The mirror equation (1/f = 1/dₒ + 1/dᵢ) and magnification (M = -dᵢ/dₒ) predict image characteristics
+- The mirror equation ($1/f = 1/d_o + 1/d_i$) and magnification ($M = -d_i/d_o$) predict image characteristics
 
 **Refraction:**
-- Snell's Law (n₁ sin θ₁ = n₂ sin θ₂) describes bending at material boundaries
+- Snell's Law ($n_1 \sin \theta_1 = n_2 \sin \theta_2$) describes bending at material boundaries
 - Light bends toward the normal entering denser media, away when entering less dense media
 - Total internal reflection occurs when light cannot refract out of a denser medium (beyond critical angle)
 - Applications include fiber optics, diamond brilliance, and reflective prisms
@@ -1339,7 +1339,7 @@ This chapter explored the fascinating world of light and optics, revealing both 
 - Polarization demonstrates light's transverse wave nature
 - Unpolarized light has electric fields oscillating in all perpendicular directions
 - Polarizing filters, reflection, scattering, and birefringence create polarized light
-- Malus's Law (I = I₀ cos² θ) describes intensity through crossed polarizers
+- Malus's Law ($I = I_0 \cos^2 \theta$) describes intensity through crossed polarizers
 - Applications include sunglasses, LCD screens, 3D movies, and scientific instruments
 
 ## Connecting to Real-World Applications

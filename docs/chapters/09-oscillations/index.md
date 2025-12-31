@@ -62,7 +62,7 @@ The restoring force is the force that brings an oscillating object back toward i
 
 Mathematically, we express this as:
 
-**F = -kx**
+$$F = -kx$$
 
 Where:
 - F is the restoring force (in newtons, N)
@@ -165,7 +165,7 @@ The frequency (f) is the number of complete cycles per second. Frequency is meas
 
 Period and frequency are reciprocals:
 
-**T = 1/f** and **f = 1/T**
+$$T = \frac{1}{f} \quad \text{and} \quad f = \frac{1}{T}$$
 
 If a pendulum completes 5 swings in 10 seconds, its period is T = 10 s / 5 = 2 s per swing. The frequency is f = 1/T = 1/2 = 0.5 Hz.
 
@@ -182,7 +182,7 @@ Here's a comparison of different oscillating systems:
 
 While frequency tells us oscillations per second, angular frequency (ω, Greek letter omega) tells us radians per second. Angular frequency connects oscillatory motion to circular motion—a powerful mathematical relationship.
 
-**ω = 2πf = 2π/T**
+$$\omega = 2\pi f = \frac{2\pi}{T}$$
 
 Angular frequency is measured in radians per second (rad/s). Since there are 2π radians in a complete circle, and frequency counts complete cycles per second, multiplying by 2π converts between them.
 
@@ -190,13 +190,13 @@ For example, if f = 2 Hz, then ω = 2π(2) = 4π rad/s ≈ 12.57 rad/s.
 
 Angular frequency appears naturally in the equations describing SHM. The position of an object in SHM can be written as:
 
-**x(t) = A cos(ωt + φ)**
+$$x(t) = A \cos(\omega t + \phi)$$
 
 Where:
-- x(t) is position at time t
-- A is amplitude
-- ω is angular frequency
-- φ is the phase constant (initial angle), which depends on where the object started
+- $x(t)$ is position at time $t$
+- $A$ is amplitude
+- $\omega$ is angular frequency
+- $\phi$ is the phase constant (initial angle), which depends on where the object started
 
 #### Diagram: Period, Frequency, and Angular Frequency Relationship Diagram
 <details markdown="1">
@@ -255,12 +255,12 @@ Where:
 
 When you stretch or compress a spring, it exerts a force trying to return to its natural length. Robert Hooke discovered that this force is proportional to the displacement—double the stretch, double the force. This relationship, known as Hooke's Law, is fundamental to understanding oscillations.
 
-**F = -kx**
+$$F = -kx$$
 
 Where:
-- F is the spring force (N)
-- k is the spring constant (N/m)
-- x is the displacement from the natural length (m)
+- $F$ is the spring force (N)
+- $k$ is the spring constant (N/m)
+- $x$ is the displacement from the natural length (m)
 - The negative sign means the force opposes the displacement
 
 The spring constant k characterizes the stiffness of the spring. A larger k means a stiffer spring that requires more force to stretch or compress a given distance.
@@ -350,16 +350,16 @@ To measure a spring constant experimentally:
 
 When a mass attached to a spring is displaced and released, it oscillates in SHM. The period of oscillation depends on both the mass and the spring constant:
 
-**T = 2π√(m/k)**
+$$T = 2\pi\sqrt{\frac{m}{k}}$$
 
 Where:
-- T is the period (s)
-- m is the mass (kg)
-- k is the spring constant (N/m)
+- $T$ is the period (s)
+- $m$ is the mass (kg)
+- $k$ is the spring constant (N/m)
 
 From this, we can also find frequency:
 
-**f = (1/2π)√(k/m)**
+$$f = \frac{1}{2\pi}\sqrt{\frac{k}{m}}$$
 
 Notice that:
 - Increasing mass increases the period (slower oscillation)
@@ -386,25 +386,25 @@ A simple pendulum consists of a point mass (the bob) suspended by a massless, in
 
 For a simple pendulum with small amplitude oscillations, the period is:
 
-**T = 2π√(L/g)**
+$$T = 2\pi\sqrt{\frac{L}{g}}$$
 
 Where:
-- T is the period (s)
-- L is the length of the pendulum (m)
-- g is the gravitational acceleration (9.8 m/s²)
+- $T$ is the period (s)
+- $L$ is the length of the pendulum (m)
+- $g$ is the gravitational acceleration (9.8 m/s²)
 
 Key observations:
 
 - Period depends on length but not on mass of the bob
 - Longer pendulums have longer periods
 - Period is independent of amplitude (for small angles)
-- Doubling the length increases the period by a factor of √2
+- Doubling the length increases the period by a factor of $\sqrt{2}$
 
 The restoring force for a pendulum comes from the component of gravity tangent to the arc of swing:
 
-**F = -mg sin(θ)**
+$$F = -mg \sin(\theta)$$
 
-For small angles (in radians), sin(θ) ≈ θ, which makes the restoring force proportional to angular displacement—the condition for SHM.
+For small angles (in radians), $\sin(\theta) \approx \theta$, which makes the restoring force proportional to angular displacement—the condition for SHM.
 
 #### Diagram: Simple Pendulum Period vs. Length Investigation
 <details markdown="1">
@@ -472,15 +472,15 @@ A physical pendulum is any rigid body that can oscillate about a fixed axis. Unl
 
 For a physical pendulum, the period depends on the moment of inertia and the distance from the pivot to the center of mass:
 
-**T = 2π√(I/mgd)**
+$$T = 2\pi\sqrt{\frac{I}{mgd}}$$
 
 Where:
-- I is the moment of inertia about the pivot point (kg·m²)
-- m is the total mass (kg)
-- g is gravitational acceleration (9.8 m/s²)
-- d is the distance from pivot to center of mass (m)
+- $I$ is the moment of inertia about the pivot point (kg·m²)
+- $m$ is the total mass (kg)
+- $g$ is gravitational acceleration (9.8 m/s²)
+- $d$ is the distance from pivot to center of mass (m)
 
-The physical pendulum reduces to the simple pendulum formula when the object is a point mass at distance L from the pivot (I = mL² and d = L).
+The physical pendulum reduces to the simple pendulum formula when the object is a point mass at distance $L$ from the pivot ($I = mL^2$ and $d = L$).
 
 Examples of physical pendulums:
 
@@ -556,20 +556,20 @@ For a mass-spring system:
 
 The total mechanical energy in a mass-spring system is:
 
-**E = (1/2)kA²**
+$$E = \frac{1}{2}kA^2$$
 
 Where:
-- E is total mechanical energy (J)
-- k is spring constant (N/m)
-- A is amplitude (m)
+- $E$ is total mechanical energy (J)
+- $k$ is spring constant (N/m)
+- $A$ is amplitude (m)
 
 Notice that energy depends on the square of the amplitude. Doubling the amplitude quadruples the energy.
 
-At any position x:
+At any position $x$:
 
-- Potential energy: PE = (1/2)kx²
-- Kinetic energy: KE = (1/2)mv²
-- Total energy: E = KE + PE = (1/2)kA²
+- Potential energy: $PE = \frac{1}{2}kx^2$
+- Kinetic energy: $KE = \frac{1}{2}mv^2$
+- Total energy: $E = KE + PE = \frac{1}{2}kA^2$
 
 For a pendulum, potential energy is gravitational and kinetic energy is rotational or translational depending on how you analyze it.
 
@@ -643,11 +643,11 @@ In the real world, no oscillation lasts forever. Friction, air resistance, and o
 
 The damping force typically depends on velocity:
 
-**F_damping = -bv**
+$$F_{\text{damping}} = -bv$$
 
 Where:
-- b is the damping coefficient (kg/s or N·s/m)
-- v is the velocity
+- $b$ is the damping coefficient (kg/s or N·s/m)
+- $v$ is the velocity
 - The negative sign indicates the force opposes motion
 
 Damping affects oscillations in three ways:
@@ -749,18 +749,18 @@ Examples of driven oscillations:
 
 The driving force can be represented as:
 
-**F_drive = F₀ cos(ω_d t)**
+$$F_{\text{drive}} = F_0 \cos(\omega_d t)$$
 
 Where:
-- F₀ is the amplitude of the driving force
-- ω_d is the angular frequency of the driving force
-- This is separate from the natural frequency ω₀ of the system
+- $F_0$ is the amplitude of the driving force
+- $\omega_d$ is the angular frequency of the driving force
+- This is separate from the natural frequency $\omega_0$ of the system
 
-After initial transients die away, the system oscillates at the driving frequency ω_d, not its natural frequency ω₀. However, the amplitude of oscillation depends strongly on how close ω_d is to ω₀.
+After initial transients die away, the system oscillates at the driving frequency $\omega_d$, not its natural frequency $\omega_0$. However, the amplitude of oscillation depends strongly on how close $\omega_d$ is to $\omega_0$.
 
 ### Resonance: The Dramatic Effect
 
-Resonance occurs when the driving frequency matches the natural frequency of the system (ω_d ≈ ω₀). At resonance, even a small driving force can produce very large amplitude oscillations. Energy is transferred most efficiently from the driver to the oscillator at the resonant frequency.
+Resonance occurs when the driving frequency matches the natural frequency of the system ($\omega_d \approx \omega_0$). At resonance, even a small driving force can produce very large amplitude oscillations. Energy is transferred most efficiently from the driver to the oscillator at the resonant frequency.
 
 The amplitude at resonance depends on damping:
 
@@ -963,29 +963,29 @@ To avoid destructive resonance or to exploit beneficial resonance, engineers use
 
 For an object undergoing simple harmonic motion, its position as a function of time follows a sinusoidal pattern. Using cosine as our reference:
 
-**Position: x(t) = A cos(ωt + φ)**
+**Position:** $x(t) = A \cos(\omega t + \phi)$
 
 Where:
-- x(t) is position at time t
-- A is amplitude
-- ω is angular frequency
-- φ is phase constant (initial phase)
+- $x(t)$ is position at time $t$
+- $A$ is amplitude
+- $\omega$ is angular frequency
+- $\phi$ is phase constant (initial phase)
 
 Taking the derivative gives velocity:
 
-**Velocity: v(t) = -Aω sin(ωt + φ)**
+**Velocity:** $v(t) = -A\omega \sin(\omega t + \phi)$
 
 Taking another derivative gives acceleration:
 
-**Acceleration: a(t) = -Aω² cos(ωt + φ) = -ω²x(t)**
+**Acceleration:** $a(t) = -A\omega^2 \cos(\omega t + \phi) = -\omega^2 x(t)$
 
 Notice that acceleration is proportional to position but opposite in direction—the defining characteristic of SHM.
 
-The phase constant φ depends on initial conditions:
+The phase constant $\phi$ depends on initial conditions:
 
-- If released from maximum positive displacement at t = 0: φ = 0
-- If released from equilibrium while moving in positive direction at t = 0: φ = -π/2
-- If released from maximum negative displacement at t = 0: φ = π
+- If released from maximum positive displacement at $t = 0$: $\phi = 0$
+- If released from equilibrium while moving in positive direction at $t = 0$: $\phi = -\pi/2$
+- If released from maximum negative displacement at $t = 0$: $\phi = \pi$
 
 ### Maximum Values
 
@@ -993,15 +993,15 @@ From the equations above, we can identify maximum values:
 
 | Quantity | Maximum Value | When It Occurs |
 |----------|---------------|----------------|
-| Displacement | A | At turning points (v = 0) |
-| Velocity | Aω | At equilibrium (x = 0) |
-| Acceleration | Aω² | At maximum displacement |
+| Displacement | $A$ | At turning points ($v = 0$) |
+| Velocity | $A\omega$ | At equilibrium ($x = 0$) |
+| Acceleration | $A\omega^2$ | At maximum displacement |
 
 These maximums relate to energy:
 
-- Maximum KE = (1/2)m(v_max)² = (1/2)m(Aω)² = (1/2)kA²
-- Maximum PE = (1/2)kA²
-- Total energy = (1/2)kA²
+- Maximum KE = $\frac{1}{2}m(v_{\text{max}})^2 = \frac{1}{2}m(A\omega)^2 = \frac{1}{2}kA^2$
+- Maximum PE = $\frac{1}{2}kA^2$
+- Total energy = $\frac{1}{2}kA^2$
 
 ## Section 9: Real-World Applications
 
@@ -1185,7 +1185,7 @@ Engineers constantly deal with oscillation challenges:
 Oscillations represent one of the most fundamental types of motion in physics. Key takeaways from this chapter:
 
 **Simple Harmonic Motion:**
-- Restoring force proportional to displacement: F = -kx
+- Restoring force proportional to displacement: $F = -kx$
 - Motion described by sinusoidal functions
 - Period independent of amplitude
 - Energy continuously transforms between kinetic and potential
@@ -1194,16 +1194,16 @@ Oscillations represent one of the most fundamental types of motion in physics. K
 - Amplitude: maximum displacement from equilibrium
 - Period: time for one complete cycle
 - Frequency: cycles per second
-- Angular frequency: ω = 2πf, connects to circular motion
+- Angular frequency: $\omega = 2\pi f$, connects to circular motion
 
 **Springs:**
-- Hooke's Law: F = -kx
-- Spring constant k measures stiffness
-- Period: T = 2π√(m/k)
-- Energy stored: E = (1/2)kA²
+- Hooke's Law: $F = -kx$
+- Spring constant $k$ measures stiffness
+- Period: $T = 2\pi\sqrt{m/k}$
+- Energy stored: $E = \frac{1}{2}kA^2$
 
 **Pendulums:**
-- Simple pendulum: T = 2π√(L/g)
+- Simple pendulum: $T = 2\pi\sqrt{L/g}$
 - Period independent of mass
 - Only approximates SHM for small angles
 - Physical pendulums have distributed mass
@@ -1232,30 +1232,30 @@ Understanding oscillations prepares you for the next chapter on waves, where osc
 
 | Concept | Equation | Variables |
 |---------|----------|-----------|
-| Restoring force | F = -kx | k = constant, x = displacement |
-| Hooke's Law | F = -kx | k = spring constant |
-| Period-frequency | T = 1/f | T = period, f = frequency |
-| Angular frequency | ω = 2πf = 2π/T | ω in rad/s |
-| Mass-spring period | T = 2π√(m/k) | m = mass, k = spring constant |
-| Simple pendulum period | T = 2π√(L/g) | L = length, g = gravity |
-| SHM position | x(t) = A cos(ωt + φ) | A = amplitude, φ = phase |
-| SHM velocity | v(t) = -Aω sin(ωt + φ) | Maximum at equilibrium |
-| SHM acceleration | a(t) = -ω²x(t) | Proportional to displacement |
-| Total energy | E = (1/2)kA² | For mass-spring system |
-| Potential energy | PE = (1/2)kx² | Spring at displacement x |
-| Kinetic energy | KE = (1/2)mv² | Mass with velocity v |
+| Restoring force | $F = -kx$ | $k$ = constant, $x$ = displacement |
+| Hooke's Law | $F = -kx$ | $k$ = spring constant |
+| Period-frequency | $T = \frac{1}{f}$ | $T$ = period, $f$ = frequency |
+| Angular frequency | $\omega = 2\pi f = \frac{2\pi}{T}$ | $\omega$ in rad/s |
+| Mass-spring period | $T = 2\pi\sqrt{\frac{m}{k}}$ | $m$ = mass, $k$ = spring constant |
+| Simple pendulum period | $T = 2\pi\sqrt{\frac{L}{g}}$ | $L$ = length, $g$ = gravity |
+| SHM position | $x(t) = A \cos(\omega t + \phi)$ | $A$ = amplitude, $\phi$ = phase |
+| SHM velocity | $v(t) = -A\omega \sin(\omega t + \phi)$ | Maximum at equilibrium |
+| SHM acceleration | $a(t) = -\omega^2 x(t)$ | Proportional to displacement |
+| Total energy | $E = \frac{1}{2}kA^2$ | For mass-spring system |
+| Potential energy | $PE = \frac{1}{2}kx^2$ | Spring at displacement $x$ |
+| Kinetic energy | $KE = \frac{1}{2}mv^2$ | Mass with velocity $v$ |
 
 ## Vocabulary
 
 - **Amplitude**: Maximum displacement from equilibrium position in an oscillation
-- **Angular frequency**: Rate of oscillation in radians per second (ω = 2πf)
+- **Angular frequency**: Rate of oscillation in radians per second ($\omega = 2\pi f$)
 - **Critical damping**: Damping level that returns system to equilibrium as quickly as possible without oscillation
 - **Damping**: Energy loss in an oscillating system due to non-conservative forces
 - **Driving frequency**: Frequency at which an external force is applied to an oscillator
 - **Equilibrium position**: Position where net force on oscillating object is zero
 - **Forced oscillation**: Oscillation driven by periodic external force
 - **Frequency**: Number of complete oscillation cycles per second, measured in hertz (Hz)
-- **Hooke's Law**: Spring force proportional to displacement: F = -kx
+- **Hooke's Law**: Spring force proportional to displacement: $F = -kx$
 - **Oscillation**: Repetitive back-and-forth motion about an equilibrium position
 - **Overdamping**: Heavy damping causing slow return to equilibrium without oscillation
 - **Pendulum**: Mass suspended from pivot that swings under gravity
