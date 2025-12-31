@@ -1,0 +1,15 @@
+{
+  "title": "Banked Curve Force Analysis",
+  "description": "Interactive force analysis diagram for a vehicle on a banked curve showing how the normal force provides centripetal force. Users can adjust bank angle, curve radius, and vehicle speed to explore ideal banking conditions and friction requirements.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-15",
+  "subject": ["physics", "circular motion", "centripetal force", "banked curves", "normal force", "friction", "dynamics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["centripetal force", "normal force", "friction", "banked curves", "circular motion", "force decomposition"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["Newton's laws", "force diagrams", "trigonometry", "circular motion basics"]
+}
