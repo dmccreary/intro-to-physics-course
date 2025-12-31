@@ -1,0 +1,34 @@
+{
+  "title": "Circuit Current Simulation",
+  "description": "An interactive simulation demonstrating electric current flow through a circuit with a battery and resistor. Users can switch between conventional current and electron flow views, and adjust voltage and resistance to see how current speed changes according to Ohm's Law (I = V/R).",
+  "creator": "Dan McCreary",
+  "date": "2025-12-31",
+  "subject": [
+    "Electric Current",
+    "Ohm's Law",
+    "Circuits",
+    "Voltage",
+    "Resistance",
+    "Electron Flow",
+    "Conventional Current",
+    "Physics",
+    "Electricity"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": [
+    "Electric Current",
+    "Ohm's Law",
+    "Voltage",
+    "Resistance",
+    "Conventional Current vs Electron Flow"
+  ],
+  "bloomsLevel": "Understanding",
+  "prerequisites": [
+    "Basic understanding of electricity",
+    "Familiarity with circuit components"
+  ]
+}

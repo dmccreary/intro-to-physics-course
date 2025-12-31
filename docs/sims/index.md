@@ -102,11 +102,16 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Coulomb's Law Force Calculator](./coulombs-law/index.md)**
 
+    ![Coulomb's Law Force Calculator](./coulombs-law/coulombs-law.png)
     Interactive simulation demonstrating Coulomb's Law, which describes the electrostatic force between two point charges.
 
-- **[Current Animation Test](./current-animation/index.md)**
+- **[Current Animation](./current-animation/index.md)**
 
-    A MicroSim demonstrating the animation of current in wires with animated electron flow representation.
+    ![Current Animation](./current-animation/current-animation.png)
+    A MicroSim demonstrating the animation of current in wires with animated electron flow representation.  Illustrates how the current increases with higher
+    voltage from a battery and how current decreases with higher resistance in
+    the resistor.  Also shows the difference between standard current flow
+    and electron flow.
 
 - **[Types of Damping Comparison](./damping-types/index.md)**
 
