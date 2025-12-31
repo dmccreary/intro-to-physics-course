@@ -249,7 +249,7 @@ The remarkable feature of induction is that the conductor ends up with the oppos
 
 #### Diagram: Charging by Induction Animation MicroSim
 
-<iframe src="../../sims/charging-induction/main.html" height="602px" width="100%" scrolling="no" loading="lazy" style="border: none; overflow: hidden;"></iframe>
+<iframe src="../../sims/charging-induction/main.html" height="602px" width="100%" scrolling="no" style="border: none; overflow: hidden;"></iframe>
 
 <details markdown="1">
     <summary>Charging by Induction Animation MicroSim</summary>
@@ -362,7 +362,7 @@ The electric force is about 10^42^ times stronger than the gravitational force! 
 
 #### Diagram: Coulomb's Law Force Calculator MicroSim
 
-<iframe src="../../sims/coulombs-law/main.html" height="602px" width="100%" scrolling="no" loading="lazy" style="border: none; overflow: hidden;"></iframe>
+<iframe src="../../sims/coulombs-law/main.html" height="602px" width="100%" scrolling="no" style="border: none; overflow: hidden;"></iframe>
 
 <details markdown="1">
     <summary>Coulomb's Law Force Calculator MicroSim</summary>
@@ -474,7 +474,7 @@ Common field line patterns:
 
 #### Diagram: Electric Field Lines Visualization MicroSim
 
-<iframe src="../../sims/electric-field-lines/main.html" height="622px" width="100%" scrolling="no" loading="lazy" style="border: none; overflow: hidden;"></iframe>
+<iframe src="../../sims/electric-field-lines/main.html" height="622px" width="100%" scrolling="no" style="border: none; overflow: hidden;"></iframe>
 
 <details markdown="1">
     <summary>Electric Field Lines Visualization MicroSim</summary>

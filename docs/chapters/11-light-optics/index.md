@@ -179,7 +179,7 @@ Both angles are measured from the normal to the surface, not from the surface it
 
 #### Diagram: Law of Reflection Interactive Diagram
 
-<iframe src="../../sims/law-of-reflection/main.html" height="602px" width="100%" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/law-of-reflection/main.html" height="602px" width="100%" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Law of Reflection Interactive Diagram</summary>
@@ -421,7 +421,7 @@ Key refraction behaviors:
 
 #### Diagram: Snell's Law Interactive Demonstration
 
-<iframe src="../../sims/snells-law/main.html" height="702px" width="100%" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/snells-law/main.html" height="702px" width="100%" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Snell's Law Interactive Demonstration</summary>

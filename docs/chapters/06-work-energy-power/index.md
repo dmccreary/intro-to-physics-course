@@ -91,7 +91,7 @@ Let's examine how work behaves in different situations:
 
 #### Diagram: Work Scenario Interactive Diagram
 
-<iframe src="../../sims/work-scenarios/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/work-scenarios/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
     <summary>Work Scenario Interactive Diagram</summary>
@@ -175,7 +175,7 @@ This quadratic relationship means doubling the stretch requires four times the w
 
 #### Diagram: Variable Force Work Calculation MicroSim
 
-<iframe src="../../sims/variable-force-work/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/variable-force-work/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
     <summary>Variable Force Work Calculation MicroSim</summary>
@@ -312,7 +312,7 @@ Same answer, but the energy approach is often more intuitive and requires fewer 
 
 #### Diagram: Work-Energy Theorem Interactive Demonstration
 
-<iframe src="../../sims/work-energy-theorem/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/work-energy-theorem/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
     <summary>Work-Energy Theorem Interactive Demonstration</summary>
@@ -455,7 +455,7 @@ $$PE_s = \frac{1}{2}(200 \text{ N/m})(0.3 \text{ m})^2 = 9 \text{ J}$$
 
 #### Diagram: Potential Energy Comparison Chart
 
-<iframe src="../../sims/potential-energy-chart/main.html" width="100%" height="502px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/potential-energy-chart/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
     <summary>Potential Energy Comparison Chart</summary>
@@ -635,7 +635,7 @@ The "missing" 20 J was converted to thermal energy heating the air and ball.
 
 #### Diagram: Energy Conservation Roller Coaster Simulation
 
-<iframe src="../../sims/roller-coaster-energy/main.html" width="100%" height="702px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/roller-coaster-energy/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <details markdown="1">
     <summary>Energy Conservation Roller Coaster Simulation</summary>
@@ -779,7 +779,7 @@ From an energy diagram, you can determine:
 
 #### Diagram: Energy Diagram Interactive Explorer
 
-<iframe src="../../sims/energy-diagram-explorer/main.html" width="100%" height="602px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/energy-diagram-explorer/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
     <summary>Energy Diagram Interactive Explorer</summary>
@@ -1015,7 +1015,7 @@ Efficiency has profound real-world implications:
 
 #### Diagram: Energy Efficiency Comparison Infographic
 
-<iframe src="../../sims/energy-efficiency/main.html" width="100%" height="902px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/energy-efficiency/main.html" width="100%" height="902px" scrolling="no"></iframe>
 
 <details markdown="1">
     <summary>Energy Efficiency Comparison Infographic</summary>
@@ -1195,7 +1195,7 @@ $$\text{Efficiency} = \frac{AMA}{IMA} \times 100\%$$
 
 #### Diagram: Pulley System Mechanical Advantage Simulator
 
-<iframe src="../../sims/pulley-mechanical-advantage/main.html" width="100%" height="560px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/pulley-mechanical-advantage/main.html" width="100%" height="560px" scrolling="no"></iframe>
 
 <details markdown="1">
     <summary>Pulley System Mechanical Advantage Simulator</summary>
