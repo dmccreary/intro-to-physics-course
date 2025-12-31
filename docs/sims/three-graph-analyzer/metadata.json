@@ -1,0 +1,15 @@
+{
+  "title": "Three Graph Analyzer",
+  "description": "Interactive tool showing the relationships between position-time, velocity-time, and acceleration-time graphs. Demonstrates how each graph derives from the previous.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "graphs", "physics", "calculus"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["motion graphs", "position-time", "velocity-time", "acceleration-time", "derivatives", "integrals"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Position", "Velocity", "Acceleration", "Graph interpretation"]
+}

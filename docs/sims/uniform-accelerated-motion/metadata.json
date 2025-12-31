@@ -1,0 +1,15 @@
+{
+  "title": "Uniform Accelerated Motion",
+  "description": "Interactive simulation demonstrating motion with constant acceleration. Visualize position, velocity, and acceleration relationships over time.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "acceleration", "physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["uniform acceleration", "constant acceleration", "kinematic equations", "velocity-time relationship"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Velocity", "Acceleration", "Kinematic equations"]
+}

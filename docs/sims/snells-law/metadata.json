@@ -1,0 +1,15 @@
+{
+  "title": "Snell's Law",
+  "description": "Interactive simulation demonstrating Snell's law of refraction. Adjust incident angle and refractive indices to observe how light bends when passing between media.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["optics", "refraction", "light", "physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["Snell's law", "refraction", "refractive index", "angle of incidence", "angle of refraction", "critical angle"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Light", "Angles", "Wave properties"]
+}

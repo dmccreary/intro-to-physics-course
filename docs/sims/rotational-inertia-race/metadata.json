@@ -1,0 +1,15 @@
+{
+  "title": "Rotational Inertia Race",
+  "description": "Interactive simulation racing objects with different moments of inertia down an incline. Demonstrates why solid spheres beat hollow spheres and cylinders.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["rotation", "moment of inertia", "physics", "rolling motion"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["moment of inertia", "rolling race", "rotational kinetic energy", "solid vs hollow objects"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Moment of inertia", "Kinetic energy", "Rolling motion"]
+}

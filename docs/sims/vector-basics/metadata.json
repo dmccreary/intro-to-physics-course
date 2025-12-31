@@ -1,0 +1,15 @@
+{
+  "title": "Vector Basics",
+  "description": "Interactive introduction to vectors showing magnitude, direction, and representation. Learn to distinguish vectors from scalars.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["vectors", "mathematics", "physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["vectors", "magnitude", "direction", "scalars vs vectors", "vector notation"],
+  "bloomsLevel": ["Remember", "Understand"],
+  "prerequisites": ["Basic algebra", "Coordinate systems"]
+}

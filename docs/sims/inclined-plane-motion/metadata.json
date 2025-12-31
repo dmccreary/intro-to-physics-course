@@ -1,0 +1,15 @@
+{
+  "title": "Inclined Plane Motion",
+  "description": "Interactive simulation showing a block sliding down an incline with friction. Adjust angle, friction coefficient, and mass to observe the motion dynamics.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "inclined plane", "friction", "physics", "dynamics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["inclined plane motion", "acceleration on slopes", "friction", "kinetic friction", "net force"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Forces", "Acceleration", "Friction", "Newton's second law"]
+}

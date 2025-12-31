@@ -1,0 +1,15 @@
+{
+  "title": "Torque Diagram",
+  "description": "Interactive diagram demonstrating torque as the rotational effect of force. Shows how force magnitude, lever arm, and angle affect torque.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["rotation", "torque", "physics", "statics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["torque", "lever arm", "moment arm", "τ = rF sin θ", "rotational equilibrium"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Force", "Rotation", "Trigonometry"]
+}

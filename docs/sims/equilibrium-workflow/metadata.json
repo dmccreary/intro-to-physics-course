@@ -1,0 +1,15 @@
+{
+  "title": "Equilibrium Classification Workflow",
+  "description": "Interactive decision tree to classify objects as in static equilibrium, dynamic equilibrium, or not in equilibrium based on net force and velocity conditions.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["physics", "equilibrium", "static equilibrium", "dynamic equilibrium", "Newton's first law", "net force", "decision tree"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["equilibrium", "static equilibrium", "dynamic equilibrium", "net force", "velocity", "acceleration"],
+  "educationalLevel": "High School",
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"]
+}

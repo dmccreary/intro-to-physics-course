@@ -1,0 +1,17 @@
+# Dependencies for MicroSim similarity analysis
+# Install with: pip install -r requirements.txt
+
+# Core embedding library
+sentence-transformers>=2.2.0
+
+# Visualization and analysis
+# Pin numpy<2 for compatibility with torch/sentence-transformers
+numpy>=1.21.0,<2.0.0
+matplotlib>=3.5.0
+scikit-learn>=1.0.0
+
+# Interactive visualization
+plotly>=5.0.0
+
+# Optional: UMAP for alternative dimensionality reduction
+# umap-learn>=0.5.0

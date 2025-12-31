@@ -1,0 +1,15 @@
+{
+  "title": "Tacoma Narrows Timeline",
+  "description": "Interactive timeline showing the history of the Tacoma Narrows Bridge collapse, a famous example of resonance-induced structural failure.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["resonance", "engineering", "physics", "history"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "vis-timeline",
+  "concepts": ["resonance", "structural failure", "aeroelastic flutter", "bridge engineering", "oscillation"],
+  "bloomsLevel": ["Remember", "Understand", "Analyze"],
+  "prerequisites": ["Resonance", "Oscillations"]
+}

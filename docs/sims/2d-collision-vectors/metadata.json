@@ -1,0 +1,15 @@
+{
+  "title": "2D Collision Vectors",
+  "description": "Interactive simulation demonstrating momentum conservation in two dimensions. Shows vector diagrams of momentum before and after collision with adjustable collision angles.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["momentum", "collisions", "vectors", "physics", "2D motion"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["momentum conservation", "2D collisions", "vector addition", "momentum vectors", "elastic collisions"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Vector addition", "Momentum", "Conservation laws"]
+}

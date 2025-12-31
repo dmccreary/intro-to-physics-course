@@ -1,0 +1,15 @@
+{
+  "title": "Pulley Mechanical Advantage",
+  "description": "Interactive simulation demonstrating mechanical advantage in pulley systems. Shows how multiple pulleys reduce the force needed to lift loads while increasing the rope distance pulled.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["simple machines", "pulleys", "physics", "mechanical advantage"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["mechanical advantage", "pulley systems", "force reduction", "work", "simple machines"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Force", "Work", "Simple machines"]
+}

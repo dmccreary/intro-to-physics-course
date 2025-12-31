@@ -1,0 +1,15 @@
+{
+  "title": "Angled Projectile Motion Explorer",
+  "description": "Interactive simulation exploring how launch angle and initial speed affect projectile trajectory. Features trajectory prediction, velocity components, complementary angles comparison, and multiple trajectory display.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["projectile motion", "kinematics", "physics", "trajectories"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["projectile motion", "launch angle", "trajectory", "velocity components", "complementary angles", "range equation"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze", "Evaluate"],
+  "prerequisites": ["Velocity", "Acceleration", "Gravity", "Trigonometry"]
+}

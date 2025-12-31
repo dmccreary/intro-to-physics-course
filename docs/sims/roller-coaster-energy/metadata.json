@@ -1,0 +1,15 @@
+{
+  "title": "Roller Coaster Energy",
+  "description": "Interactive simulation showing energy transformations in a roller coaster. Demonstrates conservation of mechanical energy with PE to KE conversions.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["energy", "conservation", "physics", "mechanics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["conservation of energy", "kinetic energy", "potential energy", "energy transformation", "mechanical energy"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Kinetic energy", "Potential energy", "Conservation of energy"]
+}

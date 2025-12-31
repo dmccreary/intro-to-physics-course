@@ -1,0 +1,15 @@
+{
+  "title": "Multistage Rocket Efficiency",
+  "description": "Interactive simulation demonstrating why multistage rockets are more efficient than single-stage rockets. Shows stage separation and the advantage of discarding empty fuel tanks.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["rockets", "momentum", "physics", "space science"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["multistage rockets", "rocket propulsion", "momentum conservation", "staging", "rocket efficiency", "Tsiolkovsky equation"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Momentum", "Conservation of momentum", "Thrust"]
+}

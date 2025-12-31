@@ -1,0 +1,15 @@
+{
+  "title": "Longitudinal Wave Animation",
+  "description": "Interactive simulation demonstrating how particles in a longitudinal wave move parallel to the wave propagation direction. Shows compressions and rarefactions with adjustable amplitude, speed, and wavelength.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["waves", "sound", "physics", "longitudinal waves"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["longitudinal wave", "compression", "rarefaction", "wavelength", "amplitude", "wave speed"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Wave properties", "Particle motion"]
+}

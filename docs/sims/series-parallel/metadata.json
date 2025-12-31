@@ -1,0 +1,15 @@
+{
+  "title": "Series and Parallel Circuits",
+  "description": "Interactive simulation comparing series and parallel circuit configurations. Shows how current and voltage distribute differently in each type.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["electricity", "circuits", "physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["series circuits", "parallel circuits", "equivalent resistance", "current division", "voltage division"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Ohm's law", "Current", "Voltage", "Resistance"]
+}

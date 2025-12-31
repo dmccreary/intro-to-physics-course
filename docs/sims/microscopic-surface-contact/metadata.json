@@ -1,0 +1,15 @@
+{
+  "title": "Microscopic View of Surface Contact",
+  "description": "Interactive visualization showing the microscopic view of surface contact between materials, illustrating why friction occurs at the atomic/molecular level.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["friction", "surfaces", "physics", "materials science"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["surface contact", "microscopic friction", "surface roughness", "contact points", "atomic interaction"],
+  "bloomsLevel": ["Understand", "Analyze"],
+  "prerequisites": ["Friction", "Atomic structure"]
+}

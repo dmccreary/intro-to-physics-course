@@ -1,0 +1,15 @@
+{
+  "title": "Transverse Wave Animation",
+  "description": "Interactive simulation showing transverse wave motion where particles oscillate perpendicular to the wave propagation direction. Adjust amplitude, wavelength, and frequency.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["waves", "physics", "transverse waves"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["transverse wave", "amplitude", "wavelength", "frequency", "wave speed", "particle motion"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Wave properties", "Oscillation"]
+}

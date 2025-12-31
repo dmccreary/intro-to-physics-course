@@ -1,0 +1,15 @@
+{
+  "title": "Simple vs. Physical Pendulum Comparison",
+  "description": "Interactive simulation comparing simple pendulums (point mass on massless string) with physical pendulums (extended mass objects). Demonstrates differences in period and motion.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["pendulum", "oscillations", "physics", "rotational motion"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["simple pendulum", "physical pendulum", "period", "moment of inertia", "center of mass"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Simple harmonic motion", "Moment of inertia", "Gravity"]
+}

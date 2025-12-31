@@ -1,0 +1,15 @@
+{
+  "title": "Position-Time Graph Analyzer",
+  "description": "Interactive tool for analyzing position-time graphs. Identify motion characteristics including velocity, direction changes, and rest periods from graph features.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "graphs", "physics", "motion analysis"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["position-time graph", "slope as velocity", "graph interpretation", "motion analysis"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Position", "Velocity", "Graph interpretation"]
+}

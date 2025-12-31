@@ -103,7 +103,8 @@ This section contains interactive MicroSims covering topics in high school physi
 - **[Coulomb's Law Force Calculator](./coulombs-law/index.md)**
 
     ![Coulomb's Law Force Calculator](./coulombs-law/coulombs-law.png)
-    Interactive simulation demonstrating Coulomb's Law, which describes the electrostatic force between two point charges.
+    Interactive simulation demonstrating Coulomb's Law, which describes the electrostatic force between two point charges.  Users can change the polarity and strength of each change and change the distance between the
+    charges.
 
 - **[Current Animation](./current-animation/index.md)**
 
@@ -135,11 +136,15 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Driven Oscillator](./driven-oscillator/index.md)**
 
+    ![Driven Oscillator](./driven-oscillator/driven-oscillator.png)
     Interactive simulation showing how a driven oscillator responds to different driving frequencies, demonstrating resonance.
 
 - **[Elasticity](./elasticity/index.md)**
 
+    ![Elasticity](./elasticity/elasticity.png)
     A MicroSim demonstrating how elasticity affects energy loss when a ball bounces off surfaces.
+    The user can change the elasticity of the ball and see how this change effects the bouncing of
+    the ball.
 
 - **[Electric Field Lines Visualization](./electric-field-lines/index.md)**
 
@@ -154,10 +159,12 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Energy Efficiency Comparison](./energy-efficiency/index.md)**
 
+    ![Energy Efficiency Comparison](./energy-efficiency/energy-efficiency.png)
     Interactive infographic comparing energy efficiency across common devices and processes.
 
 - **[Equilibrium Classification Workflow](./equilibrium-workflow/index.md)**
 
+    ![Equilibrium Classification Workflow](./equilibrium-workflow/equilibrium-workflow.png)
     Interactive decision tree to classify objects as in static equilibrium, dynamic equilibrium, or not in equilibrium.
 
 - **[Exoplanet Transit Detection](./exoplanet/index.md)**
@@ -176,6 +183,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Force vs Time Impact Comparison](./force-time-impulse/index.md)**
 
+    ![](./force-time-impulse/force-time-impulse.png)
     Chart comparing how extending impact time reduces peak force while maintaining the same impulse.
 
 - **[Free-Body Diagram Tutorial](./free-body-diagram/index.md)**

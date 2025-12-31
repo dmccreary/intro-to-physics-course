@@ -47,15 +47,18 @@ function setup() {
 
     initNodes();
     describe('Interactive decision tree for classifying equilibrium states', LABEL);
+
+    // Notify parent frame of initial size for iframe resizing
+    window.parent.postMessage({ type: 'microsim-resize', height: canvasHeight+10 }, '*');
 }
 
 function initNodes() {
     nodes = [
-        { id: 0, x: 450, y: 100, text: "Is net force zero?", type: "decision", width: 180, height: 50 },
-        { id: 1, x: 250, y: 200, text: "NOT Equilibrium", type: "result-red", width: 150, height: 45 },
-        { id: 2, x: 650, y: 200, text: "Is velocity zero?", type: "decision", width: 160, height: 50 },
-        { id: 3, x: 500, y: 320, text: "STATIC\nEquilibrium", type: "result-blue", width: 140, height: 60 },
-        { id: 4, x: 800, y: 320, text: "DYNAMIC\nEquilibrium", type: "result-green", width: 140, height: 60 }
+        { id: 0, x: 340, y: 100, text: "Is net force zero?", type: "decision", width: 180, height: 50 },
+        { id: 1, x: 115, y: 200, text: "NOT Equilibrium", type: "result-red", width: 150, height: 45 },
+        { id: 2, x: 465, y: 200, text: "Is velocity zero?", type: "decision", width: 160, height: 50 },
+        { id: 3, x: 365, y: 320, text: "STATIC\nEquilibrium", type: "result-blue", width: 140, height: 60 },
+        { id: 4, x: 565, y: 320, text: "DYNAMIC\nEquilibrium", type: "result-green", width: 140, height: 60 }
     ];
 }
 
@@ -296,7 +299,7 @@ function drawLegend() {
 
 function drawExampleInfo() {
     let ex = examples[selectedExample];
-    let ix = canvasWidth - 280;
+    let ix = canvasWidth - 300;
     let iy = 400;
 
     fill(255, 255, 255, 240);

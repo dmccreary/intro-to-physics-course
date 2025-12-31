@@ -1,0 +1,15 @@
+{
+  "title": "Horizontal Projection",
+  "description": "Interactive simulation demonstrating that objects with different horizontal velocities but same initial height hit the ground simultaneously, illustrating independence of horizontal and vertical motion.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["projectile motion", "kinematics", "physics", "horizontal projection"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["horizontal projection", "independence of motion", "projectile motion", "gravity", "velocity components"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Velocity", "Acceleration", "Gravity", "Vector components"]
+}

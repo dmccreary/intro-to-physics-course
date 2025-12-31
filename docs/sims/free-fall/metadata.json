@@ -1,0 +1,15 @@
+{
+  "title": "Free Fall Motion",
+  "description": "Interactive simulation visualizing objects falling under gravity. Adjust initial height and velocity to explore free fall kinematics with optional velocity vectors and motion trails.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "free fall", "gravity", "physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["free fall", "gravitational acceleration", "velocity", "position-time relationship", "kinematic equations"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Velocity", "Acceleration", "Gravity"]
+}
