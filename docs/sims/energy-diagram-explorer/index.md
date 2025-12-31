@@ -16,7 +16,7 @@ quality_score: 92
 
 [Run Energy Diagram Explorer in Fullscreen](main.html){ .md-button .md-button--primary }
 
-[Edit This MicroSim Using the p5.js Editor](https://editor.p5js.org/){ .md-button }
+[Edit This MicroSim Using the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/iafzLZQdr){ .md-button }
 
 ## About This MicroSim
 
