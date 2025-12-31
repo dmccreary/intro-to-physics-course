@@ -1,13 +1,24 @@
 ---
 title: Distance vs Displacement
 description: An interactive MicroSim that helps students understand the difference between distance (total path length) and displacement (straight-line change in position).
+image: /sims/distance-displacement/distance-displacement.png
+og:image: /sims/distance-displacement/distance-displacement.png
+quality_score: 100
 ---
 
 # Distance vs Displacement
 
-<iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="612px" width="100%" scrolling="no"></iframe>
 
 [Run the Distance vs Displacement MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+
+[Edit Distance vs Displacement in the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/Rr6vCm33i){ .md-button .md-button--secondary }
+
+Copy this iframe to embed this MicroSim in your website:
+
+```html
+<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/distance-displacement/main.html" width="100%" height="650px"></iframe>
+```
 
 ## Description
 
@@ -65,3 +76,9 @@ High School Physics (Grades 9-12)
 - Walking around a track vs. running across a field
 - Road trip distance vs. "as the crow flies" distance
 - GPS navigation: total route distance vs. straight-line distance to destination
+
+## References
+
+1. [Distance and Displacement](https://www.physicsclassroom.com/class/1DKin/Lesson-1/Distance-and-Displacement) - The Physics Classroom - Comprehensive tutorial on the difference between distance and displacement with examples
+2. [Scalars and Vectors](https://www.khanacademy.org/science/physics/one-dimensional-motion/displacement-velocity-time/v/introduction-to-vectors-and-scalars) - Khan Academy - Video introduction to scalar and vector quantities
+3. [p5.js Reference](https://p5js.org/reference/) - p5.js Documentation - JavaScript library used to create this interactive simulation

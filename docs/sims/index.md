@@ -120,10 +120,12 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[DC Motor Operation](./dc-motor/index.md)**
 
+    ![DC Motor Operation](./dc-motor/dc-motor.png)
     An interactive visualization demonstrating how DC motors convert electrical energy to mechanical rotation through electromagnetic forces.
 
 - **[Distance vs Displacement](./distance-displacement/index.md)**
 
+    ![Distance vs Displacement](./distance-displacement/distance-displacement.png)
     An interactive MicroSim that helps students understand the difference between distance (total path length) and displacement (straight-line change in position).
 
 - **[Doppler Effect Simulation](./doppler-effect/index.md)**

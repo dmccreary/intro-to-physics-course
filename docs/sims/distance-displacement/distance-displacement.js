@@ -5,7 +5,7 @@
 // Canvas dimensions - REQUIRED structure
 let canvasWidth = 800;
 let drawHeight = 500;
-let controlHeight = 100;
+let controlHeight = 130;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 20;
 let sliderLeftMargin = 140;
@@ -49,14 +49,15 @@ function setup() {
     resetButton.style('font-size', '14px');
     resetButton.style('padding', '8px 16px');
 
-    completeButton = createButton('Complete Journey');
+    completeButton = createButton('Analyze Journey');
     completeButton.position(margin + 80, drawHeight + 15);
     completeButton.mousePressed(completeJourney);
     completeButton.style('font-size', '14px');
     completeButton.style('padding', '8px 16px');
+    completeButton.attribute('disabled', '');
 
     showVectorCheckbox = createCheckbox('Show Displacement Vector', true);
-    showVectorCheckbox.position(margin + 230, drawHeight + 15);
+    showVectorCheckbox.position(margin + 250, drawHeight + 20);
     showVectorCheckbox.style('font-size', '14px');
 
     describe('Interactive visualization where users draw paths to understand distance vs displacement. Distance is the total path length while displacement is the straight-line distance from start to end.', LABEL);
@@ -82,17 +83,22 @@ function draw() {
     // Draw coordinate axes
     drawAxes();
 
-    // Draw title
-    fill('black');
+    // Draw title with background
+    fill('aliceblue');
     noStroke();
+    rect(canvasWidth / 2 - 150, 5, 300, 32, 5);
+    fill('black');
     textSize(24);
     textAlign(CENTER, TOP);
     text('Distance vs Displacement', canvasWidth / 2, 10);
 
-    // Draw instructions
+    // Draw instructions with background
+    fill('aliceblue');
+    noStroke();
+    rect(margin - 5, 38, 620, 22, 5);
+    fill(80);
     textSize(14);
     textAlign(LEFT, TOP);
-    fill(80);
     text('Click and drag to draw a path. See how distance (total path) differs from displacement (straight line).', margin, 40);
 
     // Draw the path
@@ -126,6 +132,9 @@ function draw() {
 
     // Draw example tip
     if (!journeyComplete && path.length < 3) {
+        fill('aliceblue');
+        noStroke();
+        rect(canvasWidth / 2 - 320, drawHeight - 28, 640, 22, 5);
         fill(100, 100, 150);
         textSize(13);
         textAlign(CENTER, BOTTOM);
@@ -140,13 +149,13 @@ function drawGrid() {
     stroke(220);
     strokeWeight(1);
 
-    // Vertical lines
-    for (let x = 0; x <= canvasWidth; x += gridSize) {
+    // Vertical lines - offset to align with y-axis
+    for (let x = 18; x <= canvasWidth; x += gridSize) {
         line(x, 0, x, drawHeight);
     }
 
-    // Horizontal lines
-    for (let y = 0; y <= drawHeight; y += gridSize) {
+    // Horizontal lines - offset to align with x-axis
+    for (let y = 10; y <= drawHeight; y += gridSize) {
         line(0, y, canvasWidth, y);
     }
 }
@@ -272,10 +281,10 @@ function calculateMetrics() {
 
 function drawMetrics() {
     // Draw metrics panel on right side
-    let panelX = canvasWidth - 200;
+    let panelX = canvasWidth - 160;
     let panelY = 70;
-    let panelW = 180;
-    let panelH = 140;
+    let panelW = 140;
+    let panelH = 150;
 
     // Panel background
     fill(255, 255, 255, 230);
@@ -339,24 +348,21 @@ function drawControlLabels() {
 
         // Final summary
         fill(80);
-        textSize(13);
+        textSize(16);
         let summaryText = 'You traveled ' + totalDistance.toFixed(1) + ' m but ended up only ' +
                          displacement.toFixed(1) + ' m from your starting point.';
         text(summaryText, margin, drawHeight + 90);
-    } else {
-        fill(80);
-        text('Drawing path...', margin, drawHeight + 70);
     }
 
     // Legend
-    textSize(12);
+    textSize(16);
     textAlign(RIGHT, CENTER);
 
     fill(0, 100, 255);
-    text('Blue line = Path (Distance)', canvasWidth - margin, drawHeight + 60);
+    text('Blue line = Path (Distance)', canvasWidth - margin, drawHeight + 20);
 
     fill(220, 50, 50);
-    text('Red arrow = Displacement', canvasWidth - margin, drawHeight + 80);
+    text('Red arrow = Displacement', canvasWidth - margin, drawHeight + 45);
 }
 
 function mousePressed() {
@@ -378,6 +384,10 @@ function mouseDragged() {
         let d = dist(mouseX, mouseY, lastPoint.x, lastPoint.y);
         if (d > 5) {
             path.push(createVector(mouseX, mouseY));
+            // Enable analyze button once path has been drawn
+            if (path.length > 1) {
+                completeButton.removeAttribute('disabled');
+            }
         }
     }
 }
@@ -393,6 +403,7 @@ function resetPath() {
     displacement = 0;
     displacementAngle = 0;
     journeyComplete = false;
+    completeButton.attribute('disabled', '');
 }
 
 function completeJourney() {
