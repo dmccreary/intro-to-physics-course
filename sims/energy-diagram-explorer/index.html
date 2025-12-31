@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive tool to explore potential energy curves, turning points, and equilibrium positions">
+        <meta name="description" content="Interactive simulation exploring potential energy curves, kinetic energy, turning points, equilibrium positions, and conservation of energy with four different potential functions">
       
       
         <meta name="author" content="Dan McCreary">
@@ -75,9 +75,9 @@
       
         <meta  property="og:title"  content="Energy Diagram Explorer - Introduction to Physics" >
       
-        <meta  property="og:description"  content="Interactive tool to explore potential energy curves, turning points, and equilibrium positions" >
+        <meta  property="og:description"  content="Interactive simulation exploring potential energy curves, kinetic energy, turning points, equilibrium positions, and conservation of energy with four different potential functions" >
       
-        <meta  property="og:image"  content="https://dmccreary.github.io/intro-to-physics-course/assets/images/social/sims/energy-diagram-explorer/index.png" >
+        <meta property="og:image" content="https://dmccreary.github.io/intro-to-physics-course/sims/energy-diagram-explorer/energy-diagram-explorer.png">
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -91,9 +91,9 @@
       
         <meta  name="twitter:title"  content="Energy Diagram Explorer - Introduction to Physics" >
       
-        <meta  name="twitter:description"  content="Interactive tool to explore potential energy curves, turning points, and equilibrium positions" >
+        <meta  name="twitter:description"  content="Interactive simulation exploring potential energy curves, kinetic energy, turning points, equilibrium positions, and conservation of energy with four different potential functions" >
       
-        <meta  name="twitter:image"  content="https://dmccreary.github.io/intro-to-physics-course/assets/images/social/sims/energy-diagram-explorer/index.png" >
+        <meta name="twitter:image" content="https://dmccreary.github.io/intro-to-physics-course/sims/energy-diagram-explorer/energy-diagram-explorer.png">
       
     
     
@@ -1500,6 +1500,66 @@
   <a href="#reading-the-diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Reading the Diagram
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plans
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-1-harmonic-oscillator-12kx2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan 1: Harmonic Oscillator (½kx²)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-2-gravity-valley-mgh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan 2: Gravity Valley (mg|h|)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-3-double-well-ax4-bx2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan 3: Double Well (ax⁴-bx²)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-4-gaussian-barrier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan 4: Gaussian Barrier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -3366,6 +3426,66 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#lesson-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plans
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Plans">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-1-harmonic-oscillator-12kx2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan 1: Harmonic Oscillator (½kx²)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-2-gravity-valley-mgh" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan 2: Gravity Valley (mg|h|)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-3-double-well-ax4-bx2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan 3: Double Well (ax⁴-bx²)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lesson-plan-4-gaussian-barrier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Plan 4: Gaussian Barrier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3390,46 +3510,334 @@
 
 
 <h1 id="energy-diagram-explorer">Energy Diagram Explorer</h1>
-<iframe src="main.html" height="602px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="600px"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run Fullscreen</a></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/intro-to-physics-course/sims/energy-diagram-explorer/main.html&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;600px&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p><a class="md-button md-button--primary" href="main.html">Run Energy Diagram Explorer in Fullscreen</a></p>
+<p><a class="md-button" href="https://editor.p5js.org/dmccreary/sketches/iafzLZQdr">Edit This MicroSim Using the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>Energy diagrams show potential energy as a function of position. By adjusting the total energy line, you can determine where an object can move, where it reverses direction (turning points), and where equilibrium positions occur.</p>
+<p>Energy diagrams are one of the most powerful tools in physics for understanding motion without solving differential equations. This interactive simulation shows potential energy as a function of position for four different physical systems. By adjusting the total energy line, you can visually determine where an object can move, where it reverses direction (turning points), and where equilibrium positions occur.</p>
+<p>The simulation demonstrates the fundamental principle that <strong>total mechanical energy is conserved</strong> in the absence of friction. At any position, the kinetic energy equals the difference between total energy and potential energy: KE = E - PE.</p>
 <h2 id="key-concepts">Key Concepts</h2>
 <ul>
-<li><strong>PE Curve</strong>: Shows potential energy at each position</li>
-<li><strong>Total Energy Line</strong>: Horizontal line representing E = KE + PE</li>
-<li><strong>Allowed Region</strong>: Where total energy exceeds PE (KE &gt; 0)</li>
-<li><strong>Forbidden Region</strong>: Where PE exceeds total energy (KE would be negative - impossible!)</li>
-<li><strong>Turning Points</strong>: Where E_total = PE (KE = 0, object reverses)</li>
-<li><strong>Equilibrium</strong>: Where PE slope is zero (no force)</li>
+<li><strong>PE Curve (Blue)</strong>: Shows potential energy at each position</li>
+<li><strong>Total Energy Line (Red)</strong>: Horizontal line representing E = KE + PE (constant)</li>
+<li><strong>Allowed Region (White)</strong>: Where total energy exceeds PE (particle can exist here)</li>
+<li><strong>Forbidden Region (Gray)</strong>: Where PE exceeds total energy (classically forbidden - KE would be negative)</li>
+<li><strong>Turning Points (Red dots)</strong>: Where E_total = PE (KE = 0, velocity = 0, object reverses)</li>
+<li><strong>Stable Equilibrium (Green ▲)</strong>: PE minimum - restoring force returns object to equilibrium</li>
+<li><strong>Unstable Equilibrium (Orange ▼)</strong>: PE maximum - small displacement causes object to accelerate away</li>
 </ul>
 <h2 id="pe-function-types">PE Function Types</h2>
 <ol>
-<li><strong>Harmonic (½kx²)</strong>: Parabolic well - simple harmonic oscillator</li>
-<li><strong>Gravitational (mgh)</strong>: Linear increase with position</li>
-<li><strong>Double Well (ax⁴-bx²)</strong>: Two valleys with barrier between</li>
-<li><strong>Barrier (Gaussian)</strong>: Peak that particles can get trapped by</li>
+<li><strong>Harmonic (½kx²)</strong>: Parabolic potential well modeling springs, pendulums, and molecular bonds</li>
+<li><strong>Gravity Valley (mg|h|)</strong>: V-shaped potential representing a ball in a valley under gravity</li>
+<li><strong>Double Well (ax⁴-bx²)</strong>: Two stable states with energy barrier - models phase transitions</li>
+<li><strong>Barrier (Gaussian)</strong>: Energy barrier that particles must overcome or be reflected by</li>
 </ol>
 <h2 id="controls">Controls</h2>
 <ul>
-<li><strong>PE Type</strong>: Select potential energy function</li>
-<li><strong>Mass</strong>: Adjust particle mass (0.5-5 kg)</li>
-<li><strong>Parameter</strong>: Adjust function parameter (k, slope, depth, height)</li>
-<li><strong>Total Energy</strong>: Drag slider to change total energy level</li>
-<li><strong>Animate</strong>: Show particle oscillating between turning points</li>
-<li><strong>Show Force</strong>: Display force arrow (F = -dPE/dx)</li>
-<li><strong>Show KE</strong>: Highlight the kinetic energy region (green)</li>
+<li><strong>PE Type</strong>: Select one of four potential energy functions</li>
+<li><strong>Mass</strong>: Adjust particle mass (0.5-5 kg) - ball size changes to reflect mass</li>
+<li><strong>Parameter Slider</strong>: Adjust function-specific parameter (k, slope, depth, or height)</li>
+<li><strong>Energy Slider</strong>: Set total mechanical energy level</li>
+<li><strong>Animate</strong>: Toggle particle animation showing real-time oscillation</li>
+<li><strong>Show Force</strong>: Display force vector (green arrow) showing F = -dPE/dx</li>
+<li><strong>Show KE</strong>: Highlight kinetic energy region in green</li>
 </ul>
 <h2 id="reading-the-diagram">Reading the Diagram</h2>
 <ul>
-<li><strong>Speed at any position</strong>: KE = E_total - PE, so v = √(2KE/m)</li>
-<li><strong>Maximum speed</strong>: Occurs where PE is minimum</li>
-<li><strong>Range of motion</strong>: Between the turning points</li>
-<li><strong>Force direction</strong>: Points from high PE to low PE (down the slope)</li>
-<li><strong>Green triangle (▲)</strong>: Stable equilibrium (restoring force)</li>
-<li><strong>Orange triangle (▼)</strong>: Unstable equilibrium (destabilizing force)</li>
+<li><strong>Speed at any position</strong>: v = √(2(E - PE)/m)</li>
+<li><strong>Maximum speed</strong>: Occurs at PE minimum (all energy is kinetic)</li>
+<li><strong>Range of motion</strong>: Particle oscillates between turning points</li>
+<li><strong>Force direction</strong>: Always points "downhill" on PE curve (from high PE to low PE)</li>
+<li><strong>Acceleration</strong>: Proportional to PE curve slope; steeper slope = greater acceleration</li>
 </ul>
+<hr />
+<h2 id="lesson-plans">Lesson Plans</h2>
+<h3 id="lesson-plan-1-harmonic-oscillator-12kx2">Lesson Plan 1: Harmonic Oscillator (½kx²)</h3>
+<p><strong>Grade Level:</strong> High School Physics (Grades 10-12)</p>
+<p><strong>Duration:</strong> 45-50 minutes</p>
+<p><strong>Learning Objectives:</strong></p>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li>Explain how a parabolic potential energy curve produces simple harmonic motion</li>
+<li>Predict turning points and maximum velocity positions using energy diagrams</li>
+<li>Describe how changing spring constant (k) affects oscillation amplitude and frequency</li>
+<li>Apply conservation of energy to calculate velocity at any position</li>
+</ol>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Understanding of kinetic and potential energy</li>
+<li>Basic algebra (solving for variables)</li>
+<li>Familiarity with Hooke's Law (F = -kx)</li>
+</ul>
+<p><strong>Materials:</strong></p>
+<ul>
+<li>Energy Diagram Explorer MicroSim</li>
+<li>Student worksheet</li>
+<li>Physical spring and mass (optional demonstration)</li>
+</ul>
+<p><strong>Lesson Procedure:</strong></p>
+<p><strong>Introduction (10 minutes):</strong></p>
+<ol>
+<li>Review Hooke's Law and spring potential energy PE = ½kx²</li>
+<li>Demonstrate with physical spring if available</li>
+<li>Introduce the energy diagram as a tool for analyzing motion</li>
+</ol>
+<p><strong>Guided Exploration (20 minutes):</strong></p>
+<ol>
+<li>Open the MicroSim in Harmonic mode</li>
+<li>Set Energy to 10 J and k to 0.5</li>
+<li><strong>Discuss:</strong> Where are the turning points? (Where red line crosses blue curve)</li>
+<li>Click "Animate" - observe the ball oscillating</li>
+<li><strong>Question:</strong> Where is the ball moving fastest? (At x = 0, the PE minimum)</li>
+<li>Enable "Show KE" - green region shows kinetic energy at each position</li>
+<li><strong>Experiment:</strong> Increase k to 1.5. What happens to turning points? (They move closer)</li>
+<li><strong>Experiment:</strong> Increase mass. What happens to speed? (Slower, same turning points)</li>
+</ol>
+<p><strong>Independent Practice (10 minutes):</strong></p>
+<p>Students complete worksheet:</p>
+<ul>
+<li>Calculate turning point positions for given E and k values</li>
+<li>Predict maximum velocity using v = √(2E/m)</li>
+<li>Sketch expected motion for different parameter combinations</li>
+</ul>
+<p><strong>Assessment Questions:</strong></p>
+<ol>
+<li>If total energy doubles, how does the amplitude change? (Increases by √2)</li>
+<li>Why does the ball slow down as it approaches the turning point? (KE converts to PE)</li>
+<li>A spring with k = 2 N/m holds a 0.5 kg mass with total energy 4 J. Find the amplitude and maximum speed.</li>
+</ol>
+<p><strong>Extension Activities:</strong></p>
+<ul>
+<li>Compare to pendulum motion (also approximately harmonic for small angles)</li>
+<li>Investigate how mass affects period but not amplitude</li>
+<li>Graph position vs. time and compare to sine wave</li>
+</ul>
+<hr />
+<h3 id="lesson-plan-2-gravity-valley-mgh">Lesson Plan 2: Gravity Valley (mg|h|)</h3>
+<p><strong>Grade Level:</strong> High School Physics (Grades 10-12)</p>
+<p><strong>Duration:</strong> 40-45 minutes</p>
+<p><strong>Learning Objectives:</strong></p>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li>Analyze motion of a ball rolling in a V-shaped valley</li>
+<li>Explain why the V-shaped potential produces constant-magnitude acceleration</li>
+<li>Compare and contrast parabolic (harmonic) and V-shaped (constant force) potentials</li>
+<li>Predict how changing the slope affects the period of oscillation</li>
+</ol>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Understanding of gravitational potential energy (mgh)</li>
+<li>Newton's Second Law (F = ma)</li>
+<li>Conservation of mechanical energy</li>
+</ul>
+<p><strong>Materials:</strong></p>
+<ul>
+<li>Energy Diagram Explorer MicroSim</li>
+<li>Inclined plane demonstration (optional)</li>
+<li>Graph paper for sketching</li>
+</ul>
+<p><strong>Lesson Procedure:</strong></p>
+<p><strong>Introduction (8 minutes):</strong></p>
+<ol>
+<li>Discuss gravitational PE on an inclined plane: PE = mgh</li>
+<li>Draw a V-shaped valley on the board</li>
+<li><strong>Question:</strong> How is motion in a V-valley different from a spring?</li>
+</ol>
+<p><strong>Guided Exploration (20 minutes):</strong></p>
+<ol>
+<li>Select "Gravity Valley (mg|h|)" mode</li>
+<li>Set slope to 0.3 and Energy to 10 J</li>
+<li><strong>Observe:</strong> The PE curve is a "V" shape, not a parabola</li>
+<li>Click "Animate" and enable "Show Force"</li>
+<li><strong>Key observation:</strong> Force magnitude is CONSTANT (same arrow length everywhere)</li>
+<li><strong>Compare:</strong> In Harmonic mode, force varies with position</li>
+<li><strong>Experiment:</strong> Change slope. What happens to:</li>
+<li>The steepness of the V? (Increases)</li>
+<li>The turning point positions? (Move closer together)</li>
+<li>The force magnitude? (Increases)</li>
+</ol>
+<p><strong>Conceptual Discussion (10 minutes):</strong></p>
+<ol>
+<li>Why is the force constant? (Because dPE/dx = constant for a linear PE)</li>
+<li>How does this differ from a spring? (Spring force increases with displacement)</li>
+<li>What real-world system behaves this way? (Ball on inclined planes, air track)</li>
+</ol>
+<p><strong>Assessment Questions:</strong></p>
+<ol>
+<li>Sketch the velocity vs. position graph for motion in a V-valley</li>
+<li>If slope doubles, what happens to the acceleration?</li>
+<li>Why do we call harmonic motion "isochronous" but V-valley motion is not?</li>
+</ol>
+<p><strong>Extension Activities:</strong></p>
+<ul>
+<li>Derive the period of oscillation for the V-valley (it depends on amplitude!)</li>
+<li>Compare to the harmonic oscillator where period is independent of amplitude</li>
+<li>Investigate what happens at the vertex of the V (instantaneous change in acceleration direction)</li>
+</ul>
+<hr />
+<h3 id="lesson-plan-3-double-well-ax4-bx2">Lesson Plan 3: Double Well (ax⁴-bx²)</h3>
+<p><strong>Grade Level:</strong> AP Physics or Introductory College Physics</p>
+<p><strong>Duration:</strong> 50-55 minutes</p>
+<p><strong>Learning Objectives:</strong></p>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li>Identify stable and unstable equilibrium positions on a potential energy curve</li>
+<li>Explain how total energy determines whether a particle is "trapped" in one well or can access both</li>
+<li>Relate the double well potential to real physical systems (molecular configurations, phase transitions)</li>
+<li>Analyze the concept of an energy barrier and activation energy</li>
+</ol>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Strong understanding of potential energy curves</li>
+<li>Familiarity with equilibrium concepts</li>
+<li>Basic calculus helpful but not required</li>
+</ul>
+<p><strong>Materials:</strong></p>
+<ul>
+<li>Energy Diagram Explorer MicroSim</li>
+<li>Diagrams of molecular potential energy surfaces</li>
+<li>Ball and double-valley track demonstration (optional)</li>
+</ul>
+<p><strong>Lesson Procedure:</strong></p>
+<p><strong>Introduction (10 minutes):</strong></p>
+<ol>
+<li>Introduce the concept of multiple equilibrium positions</li>
+<li>Real-world examples: molecular isomers, magnetic domains, protein folding</li>
+<li><strong>Key question:</strong> What determines which equilibrium state a system occupies?</li>
+</ol>
+<p><strong>Guided Exploration (25 minutes):</strong></p>
+<ol>
+<li>Select "Double Well (ax⁴-bx²)" mode</li>
+<li>Set depth to 0.5 and Energy to about 3 J (below the barrier)</li>
+<li>Click "Animate" - observe ball trapped in one well</li>
+<li><strong>Discuss:</strong> Why can't the ball reach the other well? (Insufficient energy to cross barrier)</li>
+<li>Note the equilibrium markers:</li>
+<li>Green triangles (▲) at well bottoms = stable equilibria</li>
+<li>Orange triangle (▼) at center barrier = unstable equilibrium</li>
+<li><strong>Experiment:</strong> Slowly increase Energy until ball can cross the barrier</li>
+<li><strong>Critical energy:</strong> The barrier height (where ball can just reach x = 0)</li>
+<li>Above critical energy: Ball oscillates through BOTH wells</li>
+</ol>
+<p><strong>Conceptual Discussion (10 minutes):</strong></p>
+<ol>
+<li><strong>Activation Energy:</strong> Energy needed to escape one well and reach the other</li>
+<li><strong>Metastable States:</strong> Particle trapped in local (not global) minimum</li>
+<li><strong>Thermal Fluctuations:</strong> In real systems, temperature provides energy to cross barriers</li>
+<li><strong>Applications:</strong></li>
+<li>Chemical reactions (reactants → products)</li>
+<li>Phase transitions (solid ↔ liquid)</li>
+<li>Protein folding (misfolded vs. correctly folded states)</li>
+</ol>
+<p><strong>Assessment Questions:</strong></p>
+<ol>
+<li>At what energy does the particle first access both wells? How can you determine this from the diagram?</li>
+<li>If a particle starts at rest at x = -2, what is the minimum energy needed to reach x = +2?</li>
+<li>Explain why the center point (x = 0) is an unstable equilibrium even though the force is zero there.</li>
+</ol>
+<p><strong>Extension Activities:</strong></p>
+<ul>
+<li>Research how quantum tunneling allows particles to cross barriers without having sufficient energy</li>
+<li>Investigate how changing the "depth" parameter affects barrier height</li>
+<li>Relate to Landau theory of phase transitions</li>
+</ul>
+<hr />
+<h3 id="lesson-plan-4-gaussian-barrier">Lesson Plan 4: Gaussian Barrier</h3>
+<p><strong>Grade Level:</strong> AP Physics or Introductory College Physics</p>
+<p><strong>Duration:</strong> 45-50 minutes</p>
+<p><strong>Learning Objectives:</strong></p>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li>Analyze particle motion near a potential energy barrier</li>
+<li>Predict whether a particle will be transmitted or reflected based on energy</li>
+<li>Explain the classical vs. quantum mechanical behavior at barriers</li>
+<li>Calculate the minimum energy required to overcome a barrier</li>
+</ol>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Conservation of mechanical energy</li>
+<li>Understanding of kinetic and potential energy relationships</li>
+<li>Familiarity with equilibrium concepts</li>
+</ul>
+<p><strong>Materials:</strong></p>
+<ul>
+<li>Energy Diagram Explorer MicroSim</li>
+<li>Diagrams of nuclear fusion barriers</li>
+<li>Optional: quantum tunneling simulation for comparison</li>
+</ul>
+<p><strong>Lesson Procedure:</strong></p>
+<p><strong>Introduction (10 minutes):</strong></p>
+<ol>
+<li>Introduce the concept of an energy barrier</li>
+<li>Examples: Nuclear fusion (Coulomb barrier), chemical activation energy, escape velocity</li>
+<li><strong>Key question:</strong> What happens when a particle encounters a barrier?</li>
+</ol>
+<p><strong>Guided Exploration (20 minutes):</strong></p>
+<ol>
+<li>Select "Barrier (Gaussian)" mode</li>
+<li>Set height to 1 and Energy to 15 J (below the barrier peak)</li>
+<li><strong>Observe:</strong> The particle approaches the barrier, slows down, and reverses</li>
+<li>This is <strong>classical reflection</strong> - insufficient energy to cross</li>
+<li>Enable "Show Force" - note force always points away from the barrier peak</li>
+<li><strong>Experiment:</strong> Increase Energy above 20 J</li>
+<li>Now the particle crosses over the barrier - <strong>classical transmission</strong></li>
+<li><strong>Critical observation:</strong> Right at E = barrier height, particle would take infinite time to cross (approaches asymptotically)</li>
+</ol>
+<p><strong>Physics Discussion (10 minutes):</strong></p>
+<ol>
+<li><strong>Classical Prediction:</strong> Particle either crosses (E &gt; barrier) or reflects (E &lt; barrier)</li>
+<li><strong>Threshold Energy:</strong> Equal to barrier height (peak of Gaussian)</li>
+<li><strong>Real Applications:</strong></li>
+<li>Nuclear fusion: Protons need ~1 MeV to overcome Coulomb repulsion</li>
+<li>Chemical reactions: Activation energy determines reaction rate</li>
+<li>Escape velocity: Earth's gravitational potential barrier</li>
+</ol>
+<p><strong>Quantum Mechanics Preview (5 minutes):</strong></p>
+<ol>
+<li>In quantum mechanics, particles can "tunnel" through barriers even with E &lt; barrier height</li>
+<li>Probability decreases exponentially with barrier width and height</li>
+<li>Essential for: nuclear decay, scanning tunneling microscope, flash memory</li>
+</ol>
+<p><strong>Assessment Questions:</strong></p>
+<ol>
+<li>A particle with 15 J approaches a 20 J barrier. Describe its motion.</li>
+<li>What is the speed of a 1 kg particle at the barrier peak if E = barrier height exactly?</li>
+<li>Why does the particle slow down as it approaches the barrier, even though there's no physical wall?</li>
+</ol>
+<p><strong>Extension Activities:</strong></p>
+<ul>
+<li>Research quantum tunneling and calculate tunneling probability for simple barriers</li>
+<li>Investigate how barrier width affects both classical and quantum behavior</li>
+<li>Relate to nuclear fusion in stars (pp-chain reaction)</li>
+</ul>
+<hr />
+<h2 id="references">References</h2>
+<ol>
+<li>
+<p><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html">HyperPhysics - Energy Diagrams</a> - Georgia State University - Comprehensive physics reference with interactive diagrams explaining potential energy concepts</p>
+</li>
+<li>
+<p><a href="https://ocw.mit.edu/courses/physics/">MIT OpenCourseWare - Classical Mechanics</a> - MIT - Free course materials covering energy methods in mechanics</p>
+</li>
+<li>
+<p><a href="https://phet.colorado.edu/en/simulations/filter?subjects=physics&amp;type=html&amp;sort=alpha&amp;view=grid">PhET Interactive Simulations - Energy</a> - University of Colorado Boulder - Research-based interactive simulations for physics education</p>
+</li>
+<li>
+<p><a href="https://www.physicsclassroom.com/class/energy">The Physics Classroom - Work, Energy, and Power</a> - Comprehensive tutorials on energy concepts for high school physics</p>
+</li>
+<li>
+<p><a href="https://www.khanacademy.org/science/physics/work-and-energy">Khan Academy - Work and Energy</a> - Free video lessons and practice problems on mechanical energy</p>
+</li>
+<li>
+<p>Halliday, D., Resnick, R., &amp; Walker, J. (2013). <em>Fundamentals of Physics</em>. Wiley. - Standard university physics textbook with excellent coverage of energy diagrams</p>
+</li>
+<li>
+<p><a href="https://p5js.org/reference/">p5.js Reference</a> - Documentation for the JavaScript library used to create this simulation</p>
+</li>
+</ol>
 
 
 

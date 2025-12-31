@@ -1,0 +1,44 @@
+{
+  "title": "Energy Diagram Explorer",
+  "description": "Interactive simulation for exploring potential energy curves, kinetic energy, turning points, equilibrium positions, and conservation of mechanical energy. Features four potential energy functions: Harmonic oscillator (spring), Gravity Valley (V-shaped), Double Well (bistable), and Gaussian Barrier.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-30",
+  "subject": [
+    "potential energy",
+    "kinetic energy",
+    "conservation of energy",
+    "harmonic oscillator",
+    "turning points",
+    "equilibrium",
+    "classical mechanics",
+    "physics simulation",
+    "energy diagrams"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": "Claude AI Assistant",
+  "identifier": "energy-diagram-explorer-v1",
+  "educationalLevel": "High School, AP Physics, Introductory College",
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "concepts": [
+    "potential energy curves",
+    "kinetic energy",
+    "total mechanical energy",
+    "turning points",
+    "stable equilibrium",
+    "unstable equilibrium",
+    "forbidden regions",
+    "harmonic motion",
+    "energy barriers",
+    "double well potential"
+  ],
+  "prerequisites": [
+    "kinetic energy",
+    "potential energy",
+    "conservation of energy",
+    "force and acceleration"
+  ],
+  "library": "p5.js"
+}
