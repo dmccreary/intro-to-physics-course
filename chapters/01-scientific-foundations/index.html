@@ -1909,15 +1909,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#diagram-metric-prefix-visualization-microsim" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagram: Metric Prefix Visualization MicroSim
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#drawing-metric-scale-zoom" class="md-nav__link">
     <span class="md-ellipsis">
       Drawing: Metric Scale Zoom
@@ -2228,7 +2219,7 @@
 </ol>
 <p>Let's consider a real-world example. Suppose you notice that when you drop different objects from the same height, some seem to fall faster than others. You might hypothesize: "Heavier objects fall faster than lighter objects." To test this, you could design an experiment dropping objects of different masses from the same height and timing their fall. After collecting data, you'd analyze whether the results support your hypothesis.</p>
 <h4 id="diagram-the-scientific-method">Diagram: The Scientific Method</h4>
-<iframe src="../../sims/scientific-method/main.html" width="100%" height="1600px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/scientific-method/main.html" width="100%" height="1600px" scrolling="no"></iframe>
 
 <p><a href="../../sims/scientific-method/">View detailed explanation and educational context</a></p>
 <p><strong>Key Insight:</strong> The scientific method is iterative, meaning we cycle through these steps multiple times. Even when results don't support our initial hypothesis, we learn valuable information that helps refine our understanding.</p>
@@ -2359,9 +2350,8 @@
 </tbody>
 </table>
 <p>Notice the pattern: each prefix represents a specific power of ten. This makes conversions within the metric system straightforward compared to other systems (like converting inches to feet to miles).</p>
-<h4 id="diagram-metric-prefix-visualization-microsim">Diagram: Metric Prefix Visualization MicroSim</h4>
 <h4 id="drawing-metric-scale-zoom">Drawing: Metric Scale Zoom</h4>
-<iframe src="../../sims/metric-scale-zoom/main.html" height="450px" width="100%" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/metric-scale-zoom/main.html" height="450px" width="100%" scrolling="no"></iframe>
 <p><a href="../../sims/metric-scale-zoom/main.html">Run the Metric Scale Zoom Fullscreen</a></p>
 <h4 id="diagram-metric-scale-zoom">Diagram: Metric Scale Zoom</h4>
 <details>
@@ -2425,7 +2415,88 @@ solar.png
 state.png
 textbook.png
 virus.png</p>
-<p>Implementation: p5.js with custom canvas controls</p>
+<p>Implementation: p5.js with custom canvas controls.
+We have reduced the size of the images to be 256x256 which is find for this application.  The sizes are about 1/8 of their original sizes.</p>
+<p>Done! Images resized from 2.4MB → 397KB (83% reduction):</p>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Before</th>
+<th>After</th>
+<th>Savings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>earth.png</td>
+<td>238K</td>
+<td>28K</td>
+<td>88%</td>
+</tr>
+<tr>
+<td>fingernail.png</td>
+<td>284K</td>
+<td>23K</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>football-field.png</td>
+<td>175K</td>
+<td>48K</td>
+<td>73%</td>
+</tr>
+<tr>
+<td>galaxy.png</td>
+<td>228K</td>
+<td>37K</td>
+<td>84%</td>
+</tr>
+<tr>
+<td>hair.png</td>
+<td>281K</td>
+<td>22K</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>person.png</td>
+<td>299K</td>
+<td>25K</td>
+<td>92%</td>
+</tr>
+<tr>
+<td>solar.png</td>
+<td>243K</td>
+<td>40K</td>
+<td>84%</td>
+</tr>
+<tr>
+<td>state.png</td>
+<td>189K</td>
+<td>52K</td>
+<td>72%</td>
+</tr>
+<tr>
+<td>textbook.png</td>
+<td>203K</td>
+<td>58K</td>
+<td>71%</td>
+</tr>
+<tr>
+<td>virus.png</td>
+<td>227K</td>
+<td>64K</td>
+<td>72%</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>2.4MB</td>
+<td>397KB</td>
+<td>83%</td>
+</tr>
+</tbody>
+</table>
+<p>All images are now 256×256px, which is plenty for the 200×200px display size in the MicroSim.</p>
 </details>
 <h2 id="unit-conversion-translating-between-systems">Unit Conversion: Translating Between Systems</h2>
 <p>While SI units are standard in science, you'll often encounter other measurement systems in daily life—like miles per hour for speed or pounds for weight. <strong>Unit conversion</strong> is the process of changing a measurement from one unit to another while preserving its physical meaning.</p>
@@ -2530,7 +2601,7 @@ virus.png</p>
 <li><strong>Standard deviation:</strong> A statistical measure of the spread in repeated measurements</li>
 </ul>
 <h4 id="diagram-precision-vs-accuracy-target-diagram">Diagram: Precision vs Accuracy Target Diagram</h4>
-<iframe src="../../sims/precision-accuracy/main.html" width="100%" height="672px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/precision-accuracy/main.html" width="100%" height="672px" scrolling="no"></iframe>
 
 <p><a href="../../sims/precision-accuracy/">View detailed explanation and educational context</a></p>
 <details>
@@ -2616,7 +2687,7 @@ virus.png</p>
 - The <strong>length</strong> of the arrow represents the magnitude
 - The <strong>direction</strong> the arrow points represents the direction of the vector</p>
 <h4 id="diagram-vector-basics-interactive-microsim">Diagram: Vector Basics Interactive MicroSim</h4>
-<iframe src="../../sims/vector-basics/main.html" width="100%" height="652px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/vector-basics/main.html" width="100%" height="652px" scrolling="no"></iframe>
 
 <p><a href="../../sims/vector-basics/">View detailed explanation and educational context</a></p>
 <details>
@@ -2789,7 +2860,7 @@ virus.png</p>
 <li><span class="arithmatex">\(\theta = \tan^{-1}(40/30) = \tan^{-1}(1.33) = 53°\)</span> north of east</li>
 </ul>
 <h4 id="diagram-vector-addition-interactive-microsim">Diagram: Vector Addition Interactive MicroSim</h4>
-<iframe src="../../sims/vector-addition/main.html" width="100%" height="652px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/vector-addition/main.html" width="100%" height="652px" scrolling="no"></iframe>
 
 <p><a href="../../sims/vector-addition/">View detailed explanation and educational context</a></p>
 <details>
@@ -3036,7 +3107,7 @@ Resultant Direction:
 - Area under force-distance graph = work
 - Area under power-time graph = energy</p>
 <h4 id="diagram-interactive-graph-analysis-microsim">Diagram: Interactive Graph Analysis MicroSim</h4>
-<iframe src="../../sims/graph-analysis/main.html" width="100%" height="702px" scrolling="no" loading="lazy"></iframe>
+<iframe src="../../sims/graph-analysis/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <p><a href="../../sims/graph-analysis/">View detailed explanation and educational context</a></p>
 <details>
