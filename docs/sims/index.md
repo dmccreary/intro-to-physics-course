@@ -67,6 +67,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Branches of Physics](./branches-of-physics/index.md)**
 
+    ![Branches of Physics](./branches-of-physics/branches-of-physics.png)
     Overview of 11 major branches of physics and their subbranches as an interactive dependency graph visualization.
 
 - **[Capacitor Charging and Discharging](./capacitor-charging-discharging/index.md)**
