@@ -2,9 +2,16 @@
 // Explores friction requirements at different speeds
 
 let canvasWidth = 800;
-let drawHeight = 450;
-let controlHeight = 100;
+let drawHeight = 420;
+let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
+
+// Panel layout
+let panelWidth = 350;
+
+// Slider layout constants
+let sliderLeftMargin = 100;
+let sliderRightMargin = 100;
 
 let angleSlider, radiusSlider, speedSlider, muSlider;
 
@@ -13,23 +20,38 @@ function setup() {
     const canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent(document.querySelector('main'));
 
-    angleSlider = createSlider(5, 45, 15, 1);
-    angleSlider.position(100, drawHeight + 12);
-    angleSlider.size(120);
+    // Row 1: Angle and Radius
+    angleSlider = createSlider(0, 45, 15, 1);
+    angleSlider.position(sliderLeftMargin, drawHeight + 12);
 
     radiusSlider = createSlider(50, 200, 120, 10);
-    radiusSlider.position(100, drawHeight + 42);
-    radiusSlider.size(120);
+    // Position will be set in calculateSliderWidths()
 
+    // Row 2: Speed and Friction coefficient
     speedSlider = createSlider(5, 40, 18, 1);
-    speedSlider.position(100, drawHeight + 72);
-    speedSlider.size(120);
+    speedSlider.position(sliderLeftMargin, drawHeight + 42);
 
     muSlider = createSlider(0.1, 1.0, 0.5, 0.05);
-    muSlider.position(380, drawHeight + 12);
-    muSlider.size(120);
+    // Position will be set in calculateSliderWidths()
+
+    // Adjust slider widths based on canvas size
+    calculateSliderWidths();
 
     describe('Interactive exploration of friction requirements on banked curves at different speeds', LABEL);
+}
+
+function calculateSliderWidths() {
+    // Calculate slider width - each slider takes about 35% of canvas width
+    let sliderWidth = canvasWidth * 0.30;
+    let col2X = canvasWidth / 2 + 110;
+
+    angleSlider.size(sliderWidth);
+    radiusSlider.size(sliderWidth);
+    radiusSlider.position(col2X, drawHeight + 12);
+
+    speedSlider.size(sliderWidth);
+    muSlider.size(sliderWidth);
+    muSlider.position(col2X, drawHeight + 42);
 }
 
 function draw() {
@@ -43,7 +65,6 @@ function draw() {
 
     // Control area
     fill('white');
-    noStroke();
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Title
@@ -79,31 +100,47 @@ function draw() {
     }
 
     // Draw friction vs speed graph
-    drawFrictionGraph(50, 60, 350, 200, theta, radius, speed, idealSpeed, mu, m, g);
+    drawFrictionGraph(25, 45, panelWidth, 200, theta, radius, speed, idealSpeed, mu, m, g);
 
     // Draw side view with forces
-    drawSideView(450, 60, 300, 200, theta, speed, idealSpeed, frictionNeeded);
+    drawSideView(25 + panelWidth + 20, 45, panelWidth, 200, theta, speed, idealSpeed, frictionNeeded);
 
     // Draw status panel
-    drawStatusPanel(50, 280, 320, 140, speed, idealSpeed, frictionNeeded, muRequired, mu, maxSpeed, minSpeed);
+    drawStatusPanel(25, 265, panelWidth, 140, speed, idealSpeed, frictionNeeded, muRequired, mu, maxSpeed, minSpeed);
 
     // Draw equations panel
-    drawEquationsPanel(400, 280, 350, 140, theta, radius, idealSpeed, maxSpeed);
+    drawEquationsPanel(25 + panelWidth + 20, 265, panelWidth, 140, theta, radius, idealSpeed, maxSpeed);
 
-    // Control labels
+    // Control labels - 2 rows x 2 columns
+    let col2X = canvasWidth / 2 + 30;
     fill('black');
     noStroke();
-    textSize(11);
+    textSize(12);
     textAlign(LEFT, CENTER);
-    text('Angle: ' + theta + '°', 10, drawHeight + 19);
-    text('Radius: ' + radius + ' m', 10, drawHeight + 49);
-    text('Speed: ' + speed + ' m/s', 10, drawHeight + 79);
-    text('μs (max): ' + mu.toFixed(2), 260, drawHeight + 19);
 
-    // Speed in km/h
+    // Row 1
+    text('Angle: ' + theta + '°', 10, drawHeight + 19);
+    text('Radius: ' + radius + ' m', col2X, drawHeight + 19);
+
+    // Row 2
+    text('Speed: ' + (speed * 2.237).toFixed(0) + ' mph', 10, drawHeight + 49);
+    text('μs (max): ' + mu.toFixed(2), col2X, drawHeight + 49);
+
+    // Speed conversions under the speed label
     textSize(10);
     fill('#666');
-    text('(' + (speed * 3.6).toFixed(0) + ' km/h)', 230, drawHeight + 79);
+    text('(' + speed + ' m/s, ' + (speed * 3.6).toFixed(0) + ' km/h)', 10, drawHeight + 65);
+
+    // Friction reference labels under the μ slider
+    let sliderWidth = canvasWidth * 0.30;
+    let muSliderX = canvasWidth / 2 + 110;
+    textSize(12);
+    fill('#3498DB');
+    textAlign(LEFT, CENTER);
+    text('ice on road', muSliderX, drawHeight + 65);
+    fill('#E74C3C');
+    textAlign(RIGHT, CENTER);
+    text('dry road', muSliderX + sliderWidth, drawHeight + 65);
 }
 
 function drawFrictionGraph(x, y, w, h, theta, r, currentSpeed, idealSpeed, mu, m, g) {
@@ -142,6 +179,7 @@ function drawFrictionGraph(x, y, w, h, theta, r, currentSpeed, idealSpeed, mu, m
     push();
     translate(gx - 30, gy + gh/2);
     rotate(-PI/2);
+    noStroke();
     textAlign(CENTER, BOTTOM);
     text('Friction needed', 0, 0);
     pop();
@@ -177,8 +215,10 @@ function drawFrictionGraph(x, y, w, h, theta, r, currentSpeed, idealSpeed, mu, m
     line(gx, gy + gh/2, gx + gw, gy + gh/2);
     drawingContext.setLineDash([]);
 
-    fill('#666');
-    textSize(9);
+    // draw the theta
+    fill('black');
+    noStroke();
+    textSize(14);
     textAlign(RIGHT, CENTER);
     text('f = 0', gx - 5, gy + gh/2);
 
@@ -193,6 +233,7 @@ function drawFrictionGraph(x, y, w, h, theta, r, currentSpeed, idealSpeed, mu, m
     drawingContext.setLineDash([]);
 
     fill('#E74C3C');
+    noStroke();
     textSize(8);
     textAlign(LEFT, CENTER);
     text('+μN', gx + gw + 3, maxFy);
@@ -205,6 +246,7 @@ function drawFrictionGraph(x, y, w, h, theta, r, currentSpeed, idealSpeed, mu, m
     line(idealX, gy, idealX, gy + gh);
 
     fill('#27AE60');
+    noStroke();
     textSize(9);
     textAlign(CENTER, BOTTOM);
     text('v_ideal', idealX, gy - 2);
@@ -256,28 +298,54 @@ function drawSideView(x, y, w, h, theta, speed, idealSpeed, friction) {
     text('Side View: Friction Direction', w/2, 5);
 
     let thetaRad = radians(theta);
-    let bankCenterX = w/2;
-    let bankCenterY = h/2 + 30;
-    let bankW = 180;
+    let bankCenterX = w/2 - 20;
+    let bankCenterY = h/2 + 20;
+    let bankW = 160;
+    let roadThickness = 20;
 
-    // Banked surface
     push();
     translate(bankCenterX, bankCenterY);
 
+    // Horizontal reference line
+    stroke('#666');
+    strokeWeight(1);
+    drawingContext.setLineDash([4, 4]);
+    line(-bankW/2 - 15, 30, bankW/2 + 15, 30);
+    drawingContext.setLineDash([]);
+
+    // Angle arc at pivot point
+    noFill();
+    stroke('#333');
+    arc(-bankW/2, 30, 40, 40, -thetaRad, 0);
+    fill('#333');
+    noStroke();
+    textSize(14);
+    text('θ=' + theta + '°', -bankW/2 - 35, 25);
+
+    // Surface - rotating rectangle around left edge pivot
+    push();
+    translate(-bankW/2, 30);
+    rotate(-thetaRad);
     fill('#8B7355');
     stroke('#5D4E37');
     strokeWeight(2);
-    beginShape();
-    vertex(-bankW/2, 30);
-    vertex(bankW/2 * cos(thetaRad), 30 - bankW/2 * sin(thetaRad));
-    vertex(bankW/2 * cos(thetaRad), 50 - bankW/2 * sin(thetaRad));
-    vertex(-bankW/2, 50);
-    endShape(CLOSE);
+    rect(0, 0, bankW, roadThickness);
+    pop();
 
-    // Car
-    let carX = bankW/4 * cos(thetaRad);
-    let carY = 30 - bankW/4 * sin(thetaRad) - 25;
+    // Car position on bank - constant perpendicular distance from road
+    let carPosOnRoad = 0.5;
+    let carDistAlongRoad = carPosOnRoad * bankW;
 
+    // Position along the rotated road
+    let roadX = -bankW/2 + carDistAlongRoad * cos(thetaRad);
+    let roadY = 30 - carDistAlongRoad * sin(thetaRad);
+
+    // Offset perpendicular to road surface (up from road)
+    let carOffset = 15;
+    let carX = roadX - carOffset * sin(thetaRad);
+    let carY = roadY - carOffset * cos(thetaRad);
+
+    // Car (rectangle rotated with bank)
     push();
     translate(carX, carY);
     rotate(-thetaRad);
@@ -296,7 +364,18 @@ function drawSideView(x, y, w, h, theta, speed, idealSpeed, friction) {
 
     strokeWeight(2);
     rectMode(CENTER);
-    rect(0, 0, 40, 20, 3);
+    rect(0, 0, 45, 22, 4);
+
+    // Windshield
+    fill('#87CEEB');
+    noStroke();
+    rect(0, -4, 35, 8, 2);
+
+    // Wheels
+    fill('black');
+    rect(-16, 11, 8, 8, 2);
+    rect(16, 11, 8, 8, 2);
+
     pop();
 
     // Friction arrow
@@ -306,11 +385,9 @@ function drawSideView(x, y, w, h, theta, speed, idealSpeed, friction) {
 
         stroke('#8B4513');
         strokeWeight(3);
-        let fStartX = carX;
-        let fStartY = carY;
         let fEndX = carX + fLen * cos(fAngle);
         let fEndY = carY + fLen * sin(fAngle);
-        line(fStartX, fStartY, fEndX, fEndY);
+        line(carX, carY, fEndX, fEndY);
 
         // Arrow head
         fill('#8B4513');
@@ -323,25 +400,28 @@ function drawSideView(x, y, w, h, theta, speed, idealSpeed, friction) {
 
         // Label
         fill('#8B4513');
+        noStroke();
         textSize(10);
         textAlign(CENTER, CENTER);
         if (friction > 0) {
-            text('f ↓', carX + 50, carY);
-            text('(prevents sliding up)', carX + 50, carY + 12);
+            text('f ↓', carX + 155, carY);
+            text('(down slope)', carX + 155, carY + 12);
         } else {
-            text('f ↑', carX - 50, carY);
-            text('(prevents sliding down)', carX - 50, carY + 12);
+            text('f ↑', carX - 55, carY);
+            text('(up slope)', carX - 55, carY + 12);
         }
     } else {
         fill('#27AE60');
+        noStroke();
         textSize(10);
         textAlign(CENTER, CENTER);
-        text('f ≈ 0', carX, carY + 35);
-        text('(ideal speed!)', carX, carY + 47);
+        text('f ≈ 0', carX, carY + 55);
+        text('(ideal!)', carX, carY + 67);
     }
 
     // Center direction
     fill('#E74C3C');
+    noStroke();
     textSize(9);
     textAlign(RIGHT, CENTER);
     text('← Center', -bankW/2 - 5, 0);
@@ -464,6 +544,10 @@ function windowResized() {
 function updateCanvasSize() {
     const container = document.querySelector('main');
     if (container) {
-        canvasWidth = Math.min(container.offsetWidth, 800);
+        canvasWidth = container.offsetWidth;
+    }
+    // Recalculate slider widths if they exist
+    if (angleSlider && radiusSlider && speedSlider && muSlider) {
+        calculateSliderWidths();
     }
 }

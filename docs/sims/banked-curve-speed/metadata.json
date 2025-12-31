@@ -1,0 +1,15 @@
+{
+  "title": "Banked Curve Speed Analysis",
+  "description": "Interactive exploration of how vehicle speed relative to ideal speed determines friction requirements on banked curves. Features a friction vs speed graph, side view with friction direction indicators, and real-time status showing safe speed ranges.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-15",
+  "subject": ["physics", "circular motion", "centripetal force", "banked curves", "friction", "dynamics", "safe driving"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["centripetal force", "friction", "banked curves", "ideal speed", "coefficient of friction", "safe speed range"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["Newton's laws", "force diagrams", "trigonometry", "circular motion basics", "friction"]
+}

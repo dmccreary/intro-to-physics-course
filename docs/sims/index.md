@@ -57,6 +57,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Banked Curve Force Analysis](./banked-curve-forces/index.md)**
 
+    ![Banked Curve Force Analysis](./banked-curve-forces/banked-curve-forces.png)
     Interactive force analysis diagram for a vehicle on a banked curve showing how the normal force provides centripetal force.
 
 - **[Banked Curve Speed Analysis](./banked-curve-speed/index.md)**
