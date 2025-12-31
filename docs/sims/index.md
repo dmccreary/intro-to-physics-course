@@ -77,6 +77,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Car on Curve](./car-on-curve/index.md)**
 
+    ![Car on Curve](./car-on-curve/car-on-curve.png)
     Interactive simulation showing centripetal force requirements for a car navigating a curve.
 
 - **[Centripetal Force Visualization](./centripetal-force-viz/index.md)**
