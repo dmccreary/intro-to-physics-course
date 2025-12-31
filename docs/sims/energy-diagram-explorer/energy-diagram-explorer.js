@@ -25,14 +25,15 @@ let mass = 1;
 let animating = false;
 let showForce = true;
 let showKE = false;
-let mouseOverCanvas = false;
 
-// PE function types
+// PE function types with parameter ranges and y-axis scaling
+// fixedY: true means don't auto-expand y-axis (for functions that blow up at edges)
+// speed: multiplier for animation speed (default 1)
 let peTypes = [
-    { name: 'Harmonic (½kx²)', func: (x, k) => 0.5 * k * x * x, param: 5, paramName: 'k' },
-    { name: 'Gravitational (mgh)', func: (x, m) => m * 9.8 * (x + 5), param: 1, paramName: 'slope' },
-    { name: 'Double Well (ax⁴-bx²)', func: (x, a) => a * (Math.pow(x, 4) - 6 * x * x + 9), param: 0.5, paramName: 'depth' },
-    { name: 'Barrier (Gaussian)', func: (x, h) => h * 20 * Math.exp(-x * x / 4), param: 1, paramName: 'height' }
+    { name: 'Harmonic (½kx²)', func: (x, k) => 0.5 * k * x * x, param: 0.5, paramName: 'k', min: 0.1, max: 2, yMax: 50, fixedY: false, speed: 1 },
+    { name: 'Gravity Valley (mg|h|)', func: (x, m) => m * 9.8 * abs(x), param: 0.3, paramName: 'slope', min: 0.1, max: 1, yMax: 60, fixedY: false, speed: 1 },
+    { name: 'Double Well (ax⁴-bx²)', func: (x, a) => a * (Math.pow(x, 4) - 6 * x * x + 9), param: 0.5, paramName: 'depth', min: 0.2, max: 1.5, yMax: 25, fixedY: true, speed: 1 },
+    { name: 'Barrier (Gaussian)', func: (x, h) => h * 20 * Math.exp(-x * x / 4), param: 1, paramName: 'height', min: 0.1, max: 2, yMax: 50, fixedY: false, speed: 4 }
 ];
 let currentPE = 0;
 
@@ -40,9 +41,6 @@ function setup() {
     updateCanvasSize();
     const canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent(document.querySelector('main'));
-
-    canvas.mouseOver(() => mouseOverCanvas = true);
-    canvas.mouseOut(() => mouseOverCanvas = false);
 
     let ctrlY = drawHeight + 15;
 
@@ -54,46 +52,79 @@ function setup() {
     }
     peTypeSelect.changed(() => {
         currentPE = peTypes.findIndex(p => p.name === peTypeSelect.value());
-        paramSlider.value(peTypes[currentPE].param);
+        let pe = peTypes[currentPE];
+        // Update slider range and value for new PE type
+        paramSlider.elt.min = pe.min;
+        paramSlider.elt.max = pe.max;
+        paramSlider.value(pe.param);
         resetParticle();
     });
 
     // Mass slider
     massSlider = createSlider(0.5, 5, 1, 0.1);
-    massSlider.position(sliderLeftMargin + 160, ctrlY);
-    massSlider.size(100);
+    massSlider.position(sliderLeftMargin + 220, ctrlY);
+    massSlider.size(80);
+    massSlider.input(() => {
+        // Update mass and recalculate velocity from energy conservation
+        mass = massSlider.value();
+        if (animating) {
+            let pe = peTypes[currentPE];
+            let param = paramSlider.value();
+            let currentPEval = pe.func(particleX, param);
+            let ke = max(0, totalEnergy - currentPEval);
+            let speed = sqrt(2 * ke / mass);
+            let dir = particleV >= 0 ? 1 : -1;
+            particleV = dir * max(speed, 0.1);
+        }
+    });
 
-    // Parameter slider
-    paramSlider = createSlider(0.1, 3, 5, 0.1);
-    paramSlider.position(sliderLeftMargin + 310, ctrlY);
-    paramSlider.size(100);
+    // Parameter slider - use first PE type's range
+    let firstPE = peTypes[0];
+    paramSlider = createSlider(firstPE.min, firstPE.max, firstPE.param, 0.01);
+    paramSlider.position(sliderLeftMargin + 400, ctrlY);
+    paramSlider.size(80);
+    paramSlider.input(() => {
+        // When param changes, check if particle is still in valid region
+        if (animating) {
+            let pe = peTypes[currentPE];
+            let param = paramSlider.value();
+            let currentPEval = pe.func(particleX, param);
+            if (currentPEval > totalEnergy) {
+                // Move particle to valid position
+                resetParticle();
+            }
+        }
+    });
 
-    // Checkboxes
+    // Energy slider (second row, left side)
+    energySlider = createSlider(1, 30, 10, 0.5);
+    energySlider.position(sliderLeftMargin - 60, ctrlY + 35);
+    energySlider.size(140);
+    energySlider.input(() => {
+        totalEnergy = energySlider.value();
+        resetParticle();
+    });
+
+    // Checkboxes (second row, right side)
     animateCheckbox = createCheckbox('Animate', false);
-    animateCheckbox.position(10, ctrlY + 35);
+    animateCheckbox.position(sliderLeftMargin + 120, ctrlY + 35);
     animateCheckbox.changed(() => {
         animating = animateCheckbox.checked();
         if (animating) resetParticle();
     });
 
     forceCheckbox = createCheckbox('Show Force', true);
-    forceCheckbox.position(100, ctrlY + 35);
+    forceCheckbox.position(sliderLeftMargin + 210, ctrlY + 35);
     forceCheckbox.changed(() => showForce = forceCheckbox.checked());
 
     keCheckbox = createCheckbox('Show KE', false);
-    keCheckbox.position(200, ctrlY + 35);
+    keCheckbox.position(sliderLeftMargin + 320, ctrlY + 35);
     keCheckbox.changed(() => showKE = keCheckbox.checked());
 
-    // Energy slider
-    energySlider = createSlider(1, 30, 10, 0.5);
-    energySlider.position(sliderLeftMargin + 80, ctrlY + 35);
-    energySlider.size(200);
-    energySlider.input(() => {
-        totalEnergy = energySlider.value();
-        resetParticle();
-    });
-
     describe('Energy diagram explorer showing potential energy curves and particle motion', LABEL);
+
+    // Notify parent frame of initial size
+    window.parent.postMessage({ type: 'microsim-resize', height: canvasHeight }, '*');
 }
 
 function draw() {
@@ -124,8 +155,14 @@ function draw() {
     noStroke();
     text('Energy Diagram Explorer', canvasWidth * 0.35, 15);
 
+    // Note about fixed energy
+    fill(100);
+    textSize(12);
+    textAlign(LEFT, TOP);
+    text('(Energy is fixed)', canvasWidth * 0.35 + 120, 18);
+
     // Update physics if animating
-    if (animating && mouseOverCanvas) {
+    if (animating) {
         updateParticle(param);
     }
 
@@ -136,8 +173,8 @@ function draw() {
 }
 
 function updateParticle(param) {
-    let dt = 0.05;
     let pe = peTypes[currentPE];
+    let dt = 0.03 * (pe.speed || 1);  // Use PE type's speed multiplier
 
     // Calculate force (F = -dPE/dx)
     let dx = 0.01;
@@ -145,19 +182,28 @@ function updateParticle(param) {
     let peR = pe.func(particleX + dx, param);
     let force = -(peR - peL) / (2 * dx);
 
-    // Update velocity and position
-    particleV += (force / mass) * dt;
-    particleX += particleV * dt;
+    // Update velocity and position using Verlet-like integration
+    let newV = particleV + (force / mass) * dt;
+    let newX = particleX + newV * dt;
 
-    // Check boundaries and turning points
-    let currentPE = pe.func(particleX, param);
-    if (currentPE > totalEnergy) {
-        // Hit turning point, reverse
-        particleV = -particleV * 0.99;
-        // Find turning point
-        while (pe.func(particleX, param) > totalEnergy && abs(particleX) < 10) {
-            particleX -= 0.1 * Math.sign(particleV);
-        }
+    // Check if new position would exceed energy (turning point)
+    let newPE = pe.func(newX, param);
+    if (newPE > totalEnergy) {
+        // At turning point - reverse direction
+        // Use energy conservation to set velocity magnitude
+        let currentPEval = pe.func(particleX, param);
+        let ke = max(0, totalEnergy - currentPEval);
+        let speed = sqrt(2 * ke / mass);
+
+        // Reverse direction (handle zero velocity case)
+        let dir = particleV >= 0 ? -1 : 1;
+        particleV = dir * max(speed * 0.98, 0.1);
+
+        // Small nudge away from turning point
+        particleX += particleV * dt;
+    } else {
+        particleX = newX;
+        particleV = newV;
     }
 
     // Keep in bounds
@@ -190,14 +236,18 @@ function drawEnergyDiagram(param) {
     rect(graphX, graphY, graphWidth, graphHeight);
 
     // Find PE range for scaling
-    let minPE = Infinity, maxPE = -Infinity;
-    for (let x = -10; x <= 10; x += 0.5) {
-        let y = pe.func(x, param);
-        minPE = min(minPE, y);
-        maxPE = max(maxPE, y);
+    // Use PE type's fixed yMax so parameter changes are visually apparent
+    let minPE = -5;
+    let maxPE = pe.yMax;
+
+    // Only auto-expand if not a fixed Y-axis type
+    if (!pe.fixedY) {
+        for (let x = -10; x <= 10; x += 0.5) {
+            let y = pe.func(x, param);
+            if (y > maxPE) maxPE = y * 1.1;
+        }
     }
     maxPE = max(maxPE, totalEnergy * 1.2);
-    minPE = min(minPE, -2);
 
     // Grid
     stroke(230);
@@ -278,37 +328,56 @@ function drawEnergyDiagram(param) {
     // Find and mark turning points and equilibria
     markSpecialPoints(param, minPE, maxPE);
 
-    // Draw particle
+    // Draw particle - always visible, size scales with mass
+    let ballSize = map(mass, 0.5, 5, 14, 36);
+    let partPx, partPE, partPy;
+
     if (animating) {
-        let partPx = map(particleX, -10, 10, 0, graphWidth);
-        let partPE = pe.func(particleX, param);
-        let partPy = map(partPE, minPE, maxPE, graphHeight, 0);
+        // Use animated position
+        partPx = map(particleX, -10, 10, 0, graphWidth);
+        partPE = pe.func(particleX, param);
+    } else {
+        // Show at equilibrium (x=0 for most PE types)
+        let eqX = 0;
+        partPx = map(eqX, -10, 10, 0, graphWidth);
+        partPE = pe.func(eqX, param);
+    }
+    partPy = map(partPE, minPE, maxPE, graphHeight, 0);
+    partPy = constrain(partPy, 0, graphHeight);
 
-        // Particle on PE curve
-        fill(255, 100, 100);
-        stroke(150, 50, 50);
-        strokeWeight(2);
-        ellipse(graphX + partPx, graphY + partPy, 16, 16);
+    // Particle on PE curve - size based on mass
+    fill(255, 100, 100);
+    stroke(150, 50, 50);
+    strokeWeight(2);
+    ellipse(graphX + partPx, graphY + partPy, ballSize, ballSize);
 
-        // Force arrow
-        if (showForce) {
-            let dx = 0.01;
-            let peL = pe.func(particleX - dx, param);
-            let peR = pe.func(particleX + dx, param);
-            let force = -(peR - peL) / (2 * dx);
-            let arrowLen = constrain(force * 5, -50, 50);
+    // Force arrow (only when animating)
+    if (animating && showForce) {
+        let dx = 0.01;
+        let peL = pe.func(particleX - dx, param);
+        let peR = pe.func(particleX + dx, param);
+        let force = -(peR - peL) / (2 * dx);
+        let arrowLen = constrain(force * 15, -80, 80);
 
-            stroke(0, 180, 0);
-            strokeWeight(3);
-            fill(0, 180, 0);
+        if (abs(arrowLen) > 8) {
+            stroke(0, 160, 0);
+            strokeWeight(4);
+            fill(0, 160, 0);
             let arrowY = graphY + partPy;
-            line(graphX + partPx, arrowY, graphX + partPx + arrowLen, arrowY);
-            if (abs(arrowLen) > 5) {
-                let dir = arrowLen > 0 ? 1 : -1;
-                triangle(graphX + partPx + arrowLen, arrowY,
-                         graphX + partPx + arrowLen - 8*dir, arrowY - 4,
-                         graphX + partPx + arrowLen - 8*dir, arrowY + 4);
-            }
+
+            // Start arrow from edge of ball, not center
+            let ballRadius = ballSize / 2;
+            let startX = graphX + partPx + (arrowLen > 0 ? ballRadius : -ballRadius);
+            let endX = startX + arrowLen;
+
+            // Draw arrow shaft
+            line(startX, arrowY, endX, arrowY);
+
+            // Draw larger arrowhead
+            let dir = arrowLen > 0 ? 1 : -1;
+            triangle(endX, arrowY,
+                     endX - 12*dir, arrowY - 6,
+                     endX - 12*dir, arrowY + 6);
         }
     }
 
@@ -429,9 +498,7 @@ function drawInfoPanel(param) {
     text('Mass: ' + mass.toFixed(1) + ' kg', panelX + 10, y);
 
     y += 25;
-    text('Parameter ' + pe.paramName + ':', panelX + 10, y);
-    y += 18;
-    text(param.toFixed(2), panelX + 10, y);
+    text(pe.paramName + ' = ' + param.toFixed(2), panelX + 10, y);
 
     if (animating) {
         y += 30;
@@ -488,12 +555,17 @@ function drawControlLabels() {
     fill('black');
     noStroke();
 
+    // First row labels
     let y = drawHeight + 25;
     text('PE Type:', 10, y);
-    text('Mass: ' + mass.toFixed(1) + ' kg', sliderLeftMargin + 110, y);
-    text('Param: ' + paramSlider.value().toFixed(2), sliderLeftMargin + 265, y);
+    text('Mass: ' + mass.toFixed(1) + ' kg', sliderLeftMargin + 130, y);
 
-    text('Total Energy: ' + totalEnergy.toFixed(1) + ' J', 300, drawHeight + 50);
+    // Show parameter name specific to current PE type with value
+    let pe = peTypes[currentPE];
+    text(pe.paramName + ': ' + paramSlider.value().toFixed(2), sliderLeftMargin + 320, y);
+
+    // Second row label
+    text('Energy: ' + totalEnergy.toFixed(1) + ' J', 10, drawHeight + 55);
 }
 
 function windowResized() {
