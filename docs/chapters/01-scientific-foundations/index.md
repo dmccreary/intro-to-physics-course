@@ -117,13 +117,10 @@ The metric system uses prefixes to express very large or very small quantities c
 
 Notice the pattern: each prefix represents a specific power of ten. This makes conversions within the metric system straightforward compared to other systems (like converting inches to feet to miles).
 
-#### Diagram: Metric Prefix Visualization MicroSim
-
 #### Drawing: Metric Scale Zoom
 
 <iframe src="../../sims/metric-scale-zoom/main.html" height="450px" width="100%" scrolling="no"></iframe>
 [Run the Metric Scale Zoom Fullscreen](../../sims/metric-scale-zoom/main.html)
-
 
 #### Diagram: Metric Scale Zoom
 <details markdown="1">
@@ -187,7 +184,28 @@ state.png
 textbook.png
 virus.png
 
-Implementation: p5.js with custom canvas controls
+Implementation: p5.js with custom canvas controls.
+We have reduced the size of the images to be 256x256 which is find for this application.  The sizes are about 1/8 of their original sizes.
+
+Done! Images resized from 2.4MB → 397KB (83% reduction):
+
+  | Image              | Before | After | Savings |
+  |--------------------|--------|-------|---------|
+  | earth.png          | 238K   | 28K   | 88%     |
+  | fingernail.png     | 284K   | 23K   | 92%     |
+  | football-field.png | 175K   | 48K   | 73%     |
+  | galaxy.png         | 228K   | 37K   | 84%     |
+  | hair.png           | 281K   | 22K   | 92%     |
+  | person.png         | 299K   | 25K   | 92%     |
+  | solar.png          | 243K   | 40K   | 84%     |
+  | state.png          | 189K   | 52K   | 72%     |
+  | textbook.png       | 203K   | 58K   | 71%     |
+  | virus.png          | 227K   | 64K   | 72%     |
+  | Total              | 2.4MB  | 397KB | 83%     |
+
+  All images are now 256×256px, which is plenty for the 200×200px display size in the MicroSim.
+
+
 </details>
 
 ## Unit Conversion: Translating Between Systems
