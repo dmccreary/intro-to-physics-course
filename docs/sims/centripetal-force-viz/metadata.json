@@ -1,0 +1,15 @@
+{
+  "title": "Centripetal Force Visualization",
+  "description": "Interactive visualization showing the relationship between velocity, centripetal acceleration, and centripetal force in circular motion. Demonstrates how velocity is tangent to the path while acceleration and force point toward the center.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["physics", "circular motion", "centripetal force", "centripetal acceleration", "velocity", "vectors", "Newton's laws"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["centripetal force", "centripetal acceleration", "angular velocity", "circular motion", "tangential velocity"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["vectors", "Newton's second law", "basic trigonometry"]
+}

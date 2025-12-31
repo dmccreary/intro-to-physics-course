@@ -82,6 +82,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Centripetal Force Visualization](./centripetal-force-viz/index.md)**
 
+    ![](./centripetal-force-viz/centripetal-force-viz.png)
     Interactive visualization showing the relationship between velocity, centripetal acceleration, and centripetal force in circular motion.
 
 - **[Charging by Induction](./charging-induction/index.md)**
