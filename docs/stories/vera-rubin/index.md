@@ -322,3 +322,17 @@ The universe still has secrets. The question is: **will you look up and ask?**
 *"In a spiral galaxy, the weights of gravity and centrifugal force must balance at every point in the disk. Here is a wonderful equilibrium for a physicist to explore."*
 —Vera Rubin
 
+---
+
+## References
+
+1. [Vera Rubin on Dark Matter: A Factor of Ten](https://www.amnh.org/learn-teach/curriculum-collections/cosmic-horizons-book/vera-rubin-dark-matter) - American Museum of Natural History - An accessible educational article explaining Rubin's discovery that galaxies contain ten times more mass than visible, written for students and teachers.
+
+2. [Vera Rubin Biography](https://www.womenshistory.org/education-resources/biographies/vera-rubin) - National Women's History Museum - A comprehensive biography covering her life from childhood stargazing to groundbreaking discoveries, highlighting her role as a trailblazer for women in science.
+
+3. [How Vera Rubin Confirmed Dark Matter](https://www.astronomy.com/science/how-vera-rubin-confirmed-dark-matter/) - 2020 - Astronomy Magazine - Detailed account of her galaxy rotation research and the evidence that led to confirming dark matter's existence, with accessible explanations of the science.
+
+4. [Vera Rubin: Opening Doors to Dark Matter and Women in STEM](https://carnegiescience.edu/news/vera-rubin-opening-doors-dark-matter-and-women-stem) - Carnegie Science - A tribute from the institution where Rubin conducted her groundbreaking research, including personal anecdotes and her legacy of mentoring young scientists.
+
+5. [Who Was Vera Rubin? What to Know About the Astronomer Behind Dark Matter](https://www.nationalgeographic.com/science/article/vera-rubin-dark-matter-legacy-astronomy) - National Geographic - An engaging profile exploring her personality, persistence through discrimination, and how her curiosity about galaxy rotation curves revealed the universe's hidden mass.
+
