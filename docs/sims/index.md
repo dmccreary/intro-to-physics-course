@@ -133,6 +133,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
     ![Doppler Effect](./doppler-effect/doppler-effect.png)
     An interactive MicroSim demonstrating how source motion affects observed frequency through wavefront compression and expansion.
+    The user can change the speed of motion as a percent of the speed of sound and and the frequency of the sound.
 
 - **[Driven Oscillator](./driven-oscillator/index.md)**
 
@@ -161,6 +162,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
     ![Energy Efficiency Comparison](./energy-efficiency/energy-efficiency.png)
     Interactive infographic comparing energy efficiency across common devices and processes.
+    Users can filter by device type and click on a specific device to see additional details.
 
 - **[Equilibrium Classification Workflow](./equilibrium-workflow/index.md)**
 
@@ -326,11 +328,13 @@ This section contains interactive MicroSims covering topics in high school physi
 
     ![Projectile Motion](./projectile-motion/projectile-motion.png)
     A MicroSim demonstrating parabolic trajectories of projectiles with controls for launch angle and power.
+    Users can explore the impact that changing the initial angle of projectile has on the distance traveled.
 
 - **[Projectile Motion with Gravity](./projectile-motion-gravity/index.md)**
 
     ![Projectile Motion](./projectile-motion-gravity/projectile-motion-gravity.png)
     A MicroSim demonstrating the effect of gravity on projectile motion with adjustable gravity control and trajectory visualization.
+    User can see the impact of gravity on how far a projectile will travel.
 
 - **[Pulley Mechanical Advantage](./pulley-mechanical-advantage/index.md)**
 
