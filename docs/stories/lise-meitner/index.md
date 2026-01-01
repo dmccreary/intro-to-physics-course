@@ -10,7 +10,28 @@ social:
 
 # The Fission Escape: The Untold Story of Lise Meitner
 
-![](./cover.jpg)
+![](./cover.png)
+
+<details>
+    <summary>Cover Image Prompt</summary>
+Please generate a new wide-landscape cover illustration in 16:9 format.
+
+A dramatic, colorful wide-landscape illustration capturing the historic moment of December 1938 when Lise Meitner discovered nuclear fission. The scene is set in the snow-covered Swedish countryside near Kungälv. Lise Meitner, a dignified woman in her late fifties with graying hair pulled back, sits on a fallen snow-dusted log, intensely focused on calculations she's scribbling on scraps of paper. She wears a heavy dark winter coat with a fur collar—the coat she fled Germany in—and her breath is visible in the frigid air.
+
+Her nephew Otto Frisch stands beside her, leaning over her shoulder, pointing at the equations with growing excitement. Between them, a letter from Otto Hahn lies partially visible—the letter that contained the puzzling experimental results. Scattered around them are more papers with atomic diagrams and mathematical formulas, some weighed down by small stones against the winter wind.
+
+The Swedish winter landscape stretches behind them: snow-laden pine and birch forests, a frozen lake in the middle distance reflecting the pale winter sky, and gentle hills fading into a cold blue haze. The lighting is that unique Scandinavian winter light—soft, diffused, with the sun low on the horizon casting long blue shadows across the pristine snow while bathing the figures in a warm golden glow.
+
+In the center of Lise's papers, visible to the viewer, is a simple diagram: a large circle (uranium nucleus) splitting into two smaller circles (barium and krypton), with small dots (neutrons) flying outward and the equation "E = mc²" connecting them—the moment she realized the nucleus was splitting and releasing Einstein's energy.
+
+The composition should feel intimate yet monumental—two exiled scientists in a frozen wilderness, working out on scraps of paper one of the most consequential discoveries in human history. Lise's expression shows the "eureka" moment: wonder, certainty, and perhaps a shadow of concern about what this discovery might mean.
+
+At the top of the image, display the title "THE FISSION ESCAPE" in bold, stark lettering that evokes both 1930s typography and the splitting of an atom—perhaps with a subtle crack or split running through one of the letters. Below it, in elegant smaller text: "The Untold Story of Lise Meitner". The typography should feel period-appropriate to the late 1930s, with clean Art Deco influences, rendered in colors that stand out against the snowy background—perhaps deep navy blue with gold accents, or white text with dark shadows.
+
+In the distant background, barely visible through the trees, hint at a small Swedish village with warm lights in windows—representing the safety of exile but also her isolation from the scientific community she built in Germany. A single set of footprints in the snow leads to where they sit, emphasizing their journey to this moment.
+
+The overall mood should balance scientific triumph with melancholy—this is a refugee making one of history's greatest discoveries in exile, knowing her former colleagues and country have betrayed her, yet still driven by the pure joy of understanding nature's secrets.
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>

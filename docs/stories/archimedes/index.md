@@ -10,7 +10,43 @@ social:
 
 # Eureka! The Genius of Archimedes
 
-![](./cover.jpg)
+![](./cover.png)
+
+<details>
+    <summary>Cover Image Prompt</summary>
+Version 1:
+Please generate a new wide-landscape cover illustration in 16:9 format.
+
+A vibrant, colorful wide-landscape illustration in a classical Mediterranean style capturing the legendary "Eureka" moment. Archimedes, a bearded Greek man in his fifties with wild, wet hair, bursts upward from an ornate marble bath, water exploding dramatically around him in a spectacular splash. His arms are raised triumphantly toward the sky, mouth open in a jubilant shout, eyes wide with the unmistakable fire of sudden understanding. Droplets of water catch the warm Mediterranean sunlight like scattered diamonds.  **Only the top half of his body is visible.**
+
+The bathhouse setting features beautiful classical Greek architecture: fluted marble columns, decorative friezes depicting geometric patterns and ocean waves, terracotta roof tiles, and a mosaic floor visible through the crystal-clear bath water. An overturned bronze vessel floats in the disturbed water—the visual trigger for his revelation about displacement. His discarded robes lie draped over a marble bench nearby.
+
+Through an arched opening behind him, the sun-drenched city of ancient Syracuse is visible: white marble temples on hillsides, the blue Mediterranean harbor filled with trading ships, and the distant peak of Mount Etna with a wisp of smoke. Olive trees and cypress frame the view. The lighting is warm and golden, characteristic of the ancient Mediterranean world—late afternoon sun streaming in from the left, casting long shadows and making the water droplets glow.
+
+At the top of the image, prominently display the title "EUREKA!" in large, bold letters styled to look like ancient Greek inscriptions carved in marble—perhaps with subtle gold leaf accents catching the light. Below it, in elegant but smaller complementary text: "The Genius of Archimedes". The typography should evoke classical antiquity while remaining highly readable, perhaps incorporating subtle Greek key pattern borders or laurel leaf decorations around the letters.
+
+In the foreground corners, include subtle references to his other achievements: a small lever and fulcrum diagram scratched into the stone floor on one side, and the spiral of an Archimedes screw carved into a column base on the other—easter eggs for attentive viewers.
+
+The overall mood should be one of pure intellectual joy and triumph—the exact instant when confusion transforms into understanding, when a problem that seemed impossible suddenly becomes obvious. This is the moment that gave us the word "eureka" and changed science forever.
+
+!!! Note:
+    I had to add the following to get around the image censorship problem: Only the top half of his body is visible.
+
+Version 2:
+Please generate a new wide-landscape cover illustration in 16:9 format.
+
+A vibrant, colorful wide-landscape illustration in a classical Mediterranean style showing Archimedes in his workshop, surrounded by his greatest inventions. Archimedes, a bearded Greek man in his fifties wearing a white toga with a blue border, stands at a large wooden worktable covered with scrolls, geometric instruments, and bronze mechanisms. His arms are spread wide in a gesture of triumph, his face lit with intellectual joy as he shouts his famous word to the heavens.
+
+The workshop is filled with visual references to his legendary achievements: a working model of the Archimedes screw for lifting water stands in one corner, water spiraling upward through its helical chamber. A large lever and fulcrum demonstration sits nearby, with a small weight lifting a massive stone block—illustrating his famous boast about moving the Earth. Geometric diagrams of circles, spheres, and parabolas cover scrolls pinned to the walls. A golden crown sits prominently on the table—the crown that started the famous density puzzle.
+
+On the table before him, a bronze vessel sits in a basin of water, water spilling over the edges—the displacement experiment that solved King Hiero's mystery. Archimedes points at it triumphantly, the "eureka" moment captured forever.
+
+Through large arched windows behind him, the sun-drenched city of ancient Syracuse is visible: white marble temples on hillsides, the blue Mediterranean harbor filled with trading ships, and the distant peak of Mount Etna with a wisp of smoke. Roman warships are visible in the far harbor—a hint of the siege to come. The lighting is warm and golden, characteristic of the ancient Mediterranean world, with dramatic rays of sunlight streaming through the windows and illuminating dust motes in the air.
+
+At the top of the image, prominently display the title "EUREKA!" in large, bold letters styled to look like ancient Greek inscriptions carved in marble—perhaps with subtle gold leaf accents catching the light. Below it, in elegant but smaller complementary text: "The Genius of Archimedes". The typography should evoke classical antiquity while remaining highly readable, perhaps incorporating subtle Greek key pattern borders or laurel leaf decorations around the letters.
+
+The overall mood should be one of pure intellectual joy and triumph—a genius surrounded by the fruits of his brilliant mind, in the moment of his greatest discovery. This is the man who said "Give me a place to stand and I shall move the Earth"—and meant it.
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>
@@ -154,7 +190,7 @@ He leaped from the bath and ran through the streets of Syracuse, completely nake
 
 The goldsmith was doomed.
 
-![](image-07.png)
+![](image-07.jpg)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -311,3 +347,4 @@ The universe is full of circles waiting to be drawn, principles waiting to be di
 
 5. [Archimedes - Windows to the Universe](https://www.windows2universe.org/people/ancient_epoch/archimedes.html) - 2024 - UCAR/Windows to the Universe - Student-friendly overview connecting Archimedes' discoveries to modern physics, including his war machines and the legend of the burning mirrors.
 
+6. [ChatGPT Session Log](https://chatgpt.com/share/69569388-6698-8001-b4f0-ec3e81c3e10a) - December 31, 2025 - A full recap of the prompts and resulting images from the OpenAI system.  I thought it was interesting about how the bathtub images triggered the censor classification.

@@ -11,6 +11,24 @@ social:
 # Breaking Parity: Chien-Shiung Wu and the Fall of a Law
 
 ![](./cover.jpg)
+<details>
+<summary>Cover Prompt</summary>
+  Create a colorful, bright wide-landscape 16:9 cover illustration in a mid-20th century scientific style bridging Chinese and American visual traditions.
+
+  Title Text: Place the title "Breaking Parity: Chien-Shiung Wu and the Fall of a Law" prominently at the top of the image in elegant serif typography with a subtle golden glow against a darker background area.
+
+  Central Figure: Chien-Shiung Wu stands confidently in the center, wearing her signature white lab coat over an elegant qipao-style dress. She is in her 40s, poised and commanding, one hand resting on her famous cobalt-60 cryogenic apparatus.
+
+  Visual Metaphor: Behind her, the image is dramatically split—on the left, a mirror reflection that should be symmetric, and on the right, the reflection is "broken" or distorted, with electrons streaming asymmetrically. This visually represents parity violation.
+
+  Scientific Elements: The gleaming copper and silver cryogenic equipment of her experiment anchors the foreground. Cobalt-60 decay diagrams and electron trajectory arrows flow through the composition like calligraphy.
+
+  Cultural Bridge: Subtle Chinese design elements (cherry blossoms, traditional cloud patterns) blend with American 1950s atomic-age imagery (clean geometric shapes, optimistic color palette). The Columbia University dome is faintly visible in the background.
+
+  Color Palette: Deep cobalt blue, warm copper, scientific silver, cherry blossom pink, and gold accents. Rich but not garish—conveying both scientific precision and artistic elegance.
+
+  Mood: Triumphant yet bittersweet—capturing both the breakthrough discovery and the quiet dignity of a woman whose experimental genius changed physics forever.
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>
@@ -44,6 +62,18 @@ experimental genius is so often overlooked in favor of theoretical work.
 When you describe an image, make sure to mention that it should be a colorful,
 bright wide-landscape illustration in a mid-20th century scientific style with
 elements bridging Chinese and American visual traditions.
+
+-- preamble prompt
+I am going to ask you to create a set of wide-landscape 16:9 images for a graphic novel about Chien-Shiung Wu
+and her groundbreaking parity violation experiment.
+
+All images MUST have a width to height ratio of 16:9.
+
+The target audience is high school students studying introductory physics.
+
+When you generate any image, the style it should be a colorful,
+bright wide-landscape illustrations in a mid-20th century scientific style with
+elements bridging Chinese and American visual traditions.  Make the images interesting to a high-school audience.
 </details>
 
 ### Prologue – A Father's Revolutionary Gift
@@ -317,4 +347,6 @@ What will *you* prove?
 4. [Chien-Shiung Wu | The First Lady of Physics](https://www.thematildaproject.com/scientists/chien-shiung-wu) - 2024 - The Matilda Project - Illustrated story about Wu's life and the Nobel Prize controversy, part of a project highlighting women overlooked for scientific recognition.
 
 5. [Chien-Shiung Wu](https://oumnh.ox.ac.uk/learn-chien-shiung-wu) - 2024 - Oxford University Museum of Natural History - Learn about Wu's meticulous experimental techniques that made her one of the most respected physicists of her generation.
+
+6. [ChatGPT Transcript](https://chatgpt.com/share/6956a1d4-6e38-8001-9a19-c87471a69b50) - January 1st, 2026 - Dan McCreary - A full transcript of the Image Generation Process for this Story.
 

@@ -10,7 +10,28 @@ social:
 
 # The Bookbinder's Apprentice: Michael Faraday's Impossible Rise
 
-![](./cover.jpg)
+![Cover image](./cover.png)
+<details>
+<summary>Cover Image Prompt</summary>
+  Create a colorful, bright wide-landscape 16:9 cover illustration in an early 19th century English Regency/Victorian style with warm lighting and period-accurate details.
+
+  Title Text: Place the title "The Bookbinder's Apprentice: Michael Faraday's Impossible Rise" prominently at the top of the image in elegant Victorian-era serif typography, perhaps with subtle gold leaf embellishment, against a darker vignette area to ensure readability.
+
+  Central Figure: Michael Faraday stands at the center, depicted at two ages blended together—the young apprentice in a leather apron holding bookbinding tools transitions into the mature scientist in a tailored coat holding electromagnetic apparatus. His expression shows determined curiosity.
+
+  Visual Journey: The composition flows from left to right showing his transformation:
+  - Left side: A humble bookbinder's workshop with leather, paper, books (including "Conversations on Chemistry"), candlelight, and the young Faraday reading secretly at night
+  - Center: The transition point—his famous hand-bound 300-page notebook of Davy's lectures, the key that opened the door to science
+  - Right side: The Royal Institution laboratory with gleaming copper coils, his rotating wire motor, iron filings revealing magnetic field lines, and electrical sparks
+
+  Background Elements: The London skyline transitions from the cramped slums of his birth (left) to the elegant spires of the Royal Institution (right). Subtle magnetic field lines arc across the entire scene like a visual motif, connecting past to future.
+
+  Lighting: Warm candlelight on the left gradually blends into the bright electrical glow on the right—literally illuminating his journey from darkness to enlightenment.
+
+  Color Palette: Rich browns and burgundies of leather and wood, warm golds of candlelight, copper and brass of scientific instruments, and electric blue-white sparks. The overall tone is warm, inviting, and inspiring.
+
+  Mood: Triumphant and inspirational—capturing the impossible journey from poverty to greatness through curiosity, persistence, and self-education.
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>
@@ -39,6 +60,20 @@ anti-Newton: humble, kind, generous with credit, and beloved by everyone.
 When you describe an image, make sure to mention that it should be a colorful,
 bright wide-landscape illustration in an early 19th century English Regency/
 Victorian style with warm lighting and period-accurate details.
+
+---
+Image preamble
+
+In this session our goal is to create images for a graphic novel about Michael Faraday
+that is engaging and inspiring for teenagers.  The target audience is high school
+students studying introductory physics.
+
+Image Format: Each image must be rendered in a wide-landscape format with a width:height ration of 16:9.
+
+Image style: Each image should be a colorful,
+bright wide-landscape illustration in an early 19th century English 
+Regency/Victorian style with warm lighting and period-accurate details.
+
 </details>
 
 ### Prologue – The Boy from the Slums
