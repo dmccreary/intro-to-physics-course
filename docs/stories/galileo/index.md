@@ -54,7 +54,7 @@ Galileo did not stop asking questions. He would never stop asking questions. And
 
 He would lose almost everything. But he would change the world.
 
-![](01-young-galileo.jpg)
+![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -73,7 +73,7 @@ During a boring lecture, Galileo noticed a chandelier swinging in the cathedral.
 
 His father was not pleased. But Galileo had found his calling: figuring out how the universe actually worked, not how old books *said* it worked.
 
-![](02-chandelier.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -92,7 +92,7 @@ Did this actually happen? Historians aren't sure. But Galileo definitely did exp
 
 Galileo learned an important lesson: some people would rather be wrong than change their minds.
 
-![](03-tower-of-pisa.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -113,7 +113,7 @@ Galileo moved to the University of Padua, where the atmosphere was more open. Fo
 
 He also built things: military compasses, thermometers, and various gadgets he sold to make extra money. Galileo was brilliant, but he was also always broke.
 
-![](04-professor-galileo.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -130,7 +130,7 @@ Without ever seeing one, he figured out how telescopes worked and built his own�
 
 What he saw shattered 2,000 years of assumptions.
 
-![](05-building-telescope.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -149,7 +149,7 @@ He was right. The idea that the heavens were made of the same stuff as Earth thr
 
 Galileo published his observations anyway. Upsetting people, he figured, was not his problem. Truth was.
 
-![](06-moon-craters.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -168,7 +168,7 @@ Galileo quickly published *Starry Messenger*, a short book describing his discov
 
 The professors were not so happy.
 
-![](07-jupiter-moons.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -189,7 +189,7 @@ Galileo was stunned. They wouldn't even *look*.
 
 Some things never change.
 
-![](08-refusing-to-look.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -208,7 +208,7 @@ This was only possible if Venus orbited the *Sun*, sometimes between us and the 
 
 Copernicus had proposed this decades earlier, but Galileo now had proof you could *see*. The old model was dead. The question was: would anyone accept it?
 
-![](09-venus-phases.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -227,7 +227,7 @@ The Pope was not amused. He'd been a friend of Galileo's. Now he felt publicly m
 
 In 1632, Galileo was summoned to Rome.
 
-![](10-dialogue-book.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -246,7 +246,7 @@ Legend says that as he rose, he muttered under his breath: **"Eppur si muove"—
 
 Did he really say it? Probably not—it would have been suicide. But it *should* have been true. Because the Earth does move. And no amount of forced confessions can change that.
 
-![](11-trial.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -265,7 +265,7 @@ Partially blind and in failing health, Galileo wrote his greatest work: *Two New
 
 He also kept observing the heavens—even after going completely blind. His assistants described what they saw through the telescope, and Galileo analyzed the data.
 
-![](12-house-arrest.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
@@ -286,7 +286,7 @@ He was arrogant. He was stubborn. He picked unnecessary fights.
 
 And he was right.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -306,7 +306,7 @@ Galileo's life is a blueprint for changing the world—even when the world doesn
 | **Locked in house arrest** | Wrote his greatest work in captivity | Your mind is always free |
 | **Tried to be erased** | 350 years later, NASA named a spacecraft after him | Truth outlasts censorship |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -344,4 +344,18 @@ And if they can't answer with evidence—maybe it's time to find out for yoursel
 
 *"I do not feel obliged to believe that the same God who has endowed us with sense, reason, and intellect has intended us to forgo their use."*
 —Also Galileo, being awesome
+
+---
+
+## References
+
+1. [Galileo | Biography, Discoveries, Inventions, & Facts](https://www.britannica.com/biography/Galileo-Galilei) - Updated 2024 - Britannica - Comprehensive encyclopedia article covering Galileo's life, scientific discoveries, conflict with the Church, and lasting influence on the scientific method. Excellent starting point for research papers.
+
+2. [Museo Galileo - Virtual Exhibitions](https://www.museogalileo.it/en/) - Ongoing - Museo Galileo, Florence - The official museum housing Galileo's actual telescopes, instruments, and even his preserved finger. Explore virtual exhibits and see the real tools he used to discover Jupiter's moons.
+
+3. [Galileo Mission - NASA Science](https://science.nasa.gov/mission/galileo/) - 1989-2003 - NASA - Learn about the spacecraft named in Galileo's honor that orbited Jupiter for eight years, discovered possible oceans on Europa, and proved Galileo's discoveries were just the beginning.
+
+4. [Galileo Galilei | The Schools' Observatory](https://www.schoolsobservatory.org/learn/history/biographies/galileo) - 2024 - National Schools' Observatory (UK) - Student-friendly biography explaining Galileo's key discoveries and why his work matters for modern astronomy. Includes links to related telescope activities.
+
+5. [Galileo Galilei (1564–1642)](https://www2.hao.ucar.edu/education/scientists/galileo-galilei-1564-1642) - 2024 - High Altitude Observatory, UCAR - Educational resource from a real observatory explaining how Galileo's work connects to modern solar and atmospheric science research.
 

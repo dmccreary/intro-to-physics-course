@@ -54,7 +54,7 @@ In a comfortable Viennese apartment, eight-year-old **Lise Meitner** lay in bed,
 
 She could not know that her restless curiosity would one day unlock the secret of the atom itself—or that the world would try to forget her name.
 
-![](01-young-lise.jpg)
+![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -69,7 +69,7 @@ Her professor, Ludwig Boltzmann—one of the founders of statistical mechanics�
 
 But a doctorate meant nothing without a laboratory. No institution in Vienna would hire a woman physicist.
 
-![](02-university-vienna.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -86,7 +86,7 @@ That chemist was **Otto Hahn**, a young researcher studying radioactive elements
 
 For years, she worked unpaid. But she worked.
 
-![](03-basement-lab.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -103,7 +103,7 @@ She was finally respected. She was finally home.
 
 Then the Nazis came to power.
 
-![](04-success.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -120,7 +120,7 @@ Still, Lise stayed. The laboratory was her life. The work was too important. And
 
 She was wrong.
 
-![](05-shadow.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -135,7 +135,7 @@ Her passport was confiscated. The borders were watched. Colleagues who had once 
 
 Otto Hahn and other friends began secretly planning her escape. They had only weeks before the Gestapo would act.
 
-![](06-anschluss.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -152,7 +152,7 @@ Then they waved her through.
 
 "I left Germany forever with 10 marks in my purse," she later wrote. "It was like a dream—or a nightmare I couldn't wake from."
 
-![](07-escape.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -169,7 +169,7 @@ She lived in a small hotel room, struggling with the language, far from everythi
 
 But her scientific mind never stopped working.
 
-![](08-exile.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -188,7 +188,7 @@ Lise was staying with Swedish friends for Christmas. Her nephew, physicist **Ott
 
 Lise stared at the numbers. "Unless..." she said slowly, "unless you can."
 
-![](09-letter.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -207,7 +207,7 @@ Lise pulled out a scrap of paper. Using Einstein's famous equation **E = mc²**,
 
 They named it **fission**, after the biological term for cell division.
 
-![](10-snow-walk.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -222,7 +222,7 @@ The discovery she made while fleeing Nazi persecution would become the foundatio
 
 "I have done nothing for which I must be ashamed," she said. Understanding nature was not the same as weaponizing it.
 
-![](11-aftermath.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -239,7 +239,7 @@ It was a theft hidden in plain sight. The physics community knew the truth; the 
 
 "I am not bitter," she told friends. But her letters reveal the wound never healed.
 
-![](12-nobel-denied.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
@@ -256,7 +256,7 @@ On her gravestone, at her request, is inscribed: "Lise Meitner: A physicist who 
 
 She never did receive the Nobel Prize. But history, eventually, remembers.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -276,7 +276,7 @@ Lise Meitner's life teaches us that doing great science is not always enough—a
 | **Called "mother of the bomb"** | Refused to participate in weapons; maintained ethical stance | Scientists have moral responsibilities |
 | **Denied Nobel Prize** | Lived with dignity; now recognized by element 109 | Official recognition is not the only validation |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -302,4 +302,18 @@ The next discovery awaits. Will you have the courage to make it—and the integr
 
 *"Science makes people reach selflessly for truth and objectivity; it teaches people to accept reality, with wonder and admiration."*
 —Lise Meitner
+
+---
+
+## References
+
+1. [Lise Meitner | Biography & Facts](https://www.britannica.com/biography/Lise-Meitner) - Updated 2024 - Britannica - Complete biography of the physicist who explained nuclear fission but was denied the Nobel Prize that went to her collaborator Otto Hahn.
+
+2. [Lise Meitner](https://ahf.nuclearmuseum.org/ahf/profile/lise-meitner/) - 2024 - Atomic Heritage Foundation/Nuclear Museum - Detailed account of Meitner's escape from Nazi Germany and her Christmas 1938 walk in the snow where she worked out the physics of fission.
+
+3. [Women in Radiation History: Lise Meitner](https://www.epa.gov/radtown/women-radiation-history-lise-meitner) - 2024 - U.S. Environmental Protection Agency - Learn how Meitner's work on radioactivity and fission connects to modern nuclear science and radiation safety.
+
+4. [December 1938: Discovery of Nuclear Fission](https://www.aps.org/apsnews/2007/12/december-1938-discovery-nuclear-fission) - 2007 - American Physical Society - The scientific story of how Meitner and Frisch explained Hahn and Strassmann's puzzling experimental results.
+
+5. [Women of the Manhattan Project: Lise Meitner](https://www.nps.gov/people/women-of-the-manhattan-project-lise-meitner.htm) - 2024 - U.S. National Park Service - Explores Meitner's refusal to work on the atomic bomb and her complex feelings about how her discovery was used.
 

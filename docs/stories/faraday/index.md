@@ -51,7 +51,7 @@ He had no formal education. He couldn't do advanced mathematics. He never attend
 
 This is the story of how a bookbinder's apprentice became the greatest experimental physicist who ever lived.
 
-![](01-poverty.jpg)
+![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -70,7 +70,7 @@ Late at night, after his work was done, Michael devoured everything: chemistry, 
 
 He started keeping notebooks, conducting small experiments in the back of the shop, and dreaming of something more.
 
-![](02-bookbinder.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -87,7 +87,7 @@ Then he did something audacious: he sent the book to Davy with a letter asking f
 
 "I want to work in science," he wrote. "I will do anything. Please give me a chance."
 
-![](03-davy-lecture.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -104,7 +104,7 @@ There was a catch: Michael would also serve as Davy's personal valet during a Eu
 
 Michael endured it all. He knew this was his only chance.
 
-![](04-assistant.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -121,7 +121,7 @@ But Davy was also jealous. As Faraday's skills grew, Davy sometimes blocked his 
 
 Faraday didn't complain. He just kept working.
 
-![](05-laboratory.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -138,7 +138,7 @@ He had invented the **electric motor**.
 
 It was primitive, but it proved the principle. Electricity could create motion. The industrial world would never be the same.
 
-![](06-motor.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -157,7 +157,7 @@ Other scientists gave up on the idea. Faraday didn't.
 
 He kept meticulous notes of every attempt, believing that even failures taught something. And he kept trying.
 
-![](07-failure.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -174,7 +174,7 @@ The key wasn't steady magnetism—it was *changing* magnetism. Moving a magnet t
 
 He had discovered **electromagnetic induction**—the principle behind every electrical generator, transformer, and power plant in the world.
 
-![](08-induction.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -191,7 +191,7 @@ This was the concept of the **field**—one of the most important ideas in all o
 
 He saw what he couldn't calculate.
 
-![](09-field-lines.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -206,7 +206,7 @@ He was a spellbinding speaker. He demonstrated electricity and magnetism with dr
 
 "A scientist should be a person of no class," he believed. Science wasn't just for the wealthy. It was for everyone.
 
-![](10-christmas-lectures.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -223,7 +223,7 @@ He continued living in simple apartments at the Royal Institution. He gave away 
 
 When scientists asked how he achieved so much without mathematical training, he said: "I kept working. I kept questioning. I kept believing that nature would reveal her secrets if I was patient enough."
 
-![](11-humble.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -238,7 +238,7 @@ He wrote: "My memory wearies me greatly in working; for I cannot remember from d
 
 But even as his mind dimmed, his legacy blazed brighter. Electrical power stations were rising across Europe and America, all based on his discovery of induction. The electric age he'd started was transforming civilization.
 
-![](12-final-years.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
@@ -259,7 +259,7 @@ But his true monument is everywhere:
 
 From a blacksmith's son who couldn't afford school to the inventor of the electrical age—all because he read the books he was supposed to bind, asked questions nobody thought he had the right to ask, and never stopped believing that understanding was for everyone.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -279,7 +279,7 @@ Faraday succeeded where many with more advantages failed. Here's what we can lea
 | **Failed for ten years** | Kept detailed notes; kept trying | Persistence beats talent over time |
 | **Became famous** | Stayed humble; taught everyone; refused honors | Success doesn't require ego |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -315,4 +315,18 @@ What's your starting point? And where will curiosity take you?
 
 *"The lecturer should give the audience full reason to believe that all his powers have been exerted for their pleasure and instruction."*
 —Faraday on teaching
+
+---
+
+## References
+
+1. [Michael Faraday | Biography, Inventions, & Facts](https://www.britannica.com/biography/Michael-Faraday) - Updated 2024 - Britannica - Complete biography of Faraday's rise from bookbinder's apprentice to one of history's greatest experimental scientists.
+
+2. [Michael Faraday](https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/pioneers/michael-faraday/) - 2024 - National MagLab/Magnet Academy - Detailed explanation of Faraday's electromagnetic discoveries with interactive diagrams showing how motors and generators work.
+
+3. [Faraday (1791)](https://www.eia.gov/kids/history-of-energy/famous-people/faraday.php) - 2024 - U.S. Energy Information Administration - Student-friendly overview of how Faraday's discoveries power our modern world, from electric cars to smartphones.
+
+4. [The Genius of Michael Faraday](https://www.aaas.org/taxonomy/term/10/genius-michael-faraday) - 2024 - American Association for the Advancement of Science - Explores why Faraday, despite having no formal education, is considered one of the greatest experimentalists in history.
+
+5. [Michael Faraday: Scientist and Nonconformist](http://silas.psfc.mit.edu/Faraday/) - Ongoing - MIT Plasma Science and Fusion Center - Academic resource exploring Faraday's scientific method and his religious beliefs that shaped his view of nature's unity.
 

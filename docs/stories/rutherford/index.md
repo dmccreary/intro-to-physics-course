@@ -49,7 +49,7 @@ In 1871, on a farm in rural New Zealand—literally the opposite side of the wor
 
 His name was **Ernest Rutherford**. And he would discover what atoms are actually made of—by shooting things at them and seeing what happened.
 
-![](01-new-zealand.jpg)
+![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -66,7 +66,7 @@ He arrived at Cambridge's Cavendish Laboratory just as the scientific world was 
 
 Ernest planned to solve it.
 
-![](02-cambridge.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -88,7 +88,7 @@ But what fascinated Rutherford most were alpha particles. They were tiny, fast, 
 
 What if he shot them at something?
 
-![](03-radioactivity.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -107,7 +107,7 @@ He gave the project to two younger scientists: Hans Geiger and Ernest Marsden.
 
 What happened next shocked everyone.
 
-![](04-plum-pudding.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -124,7 +124,7 @@ But then Marsden noticed something impossible: occasional flashes coming from th
 
 He ran to tell Rutherford.
 
-![](05-experiment.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -143,7 +143,7 @@ Rutherford spent months working through the mathematics. Finally, he understood.
 
 The atom was mostly empty space. Almost all its mass was concentrated in a tiny **nucleus** at the center—10,000 times smaller than the atom itself. The electrons orbited far away, like planets around a distant sun.
 
-![](06-incredible.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -162,7 +162,7 @@ This explained everything. Most alpha particles passed through because they neve
 
 The scientific world was transformed. Atoms weren't solid balls or puddings—they were miniature solar systems, almost entirely empty, with all their mass packed into an impossibly small center.
 
-![](07-nuclear-model.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -181,7 +181,7 @@ He later famously declared: "All science is either physics or stamp collecting."
 
 (The chemists were not amused.)
 
-![](08-nobel.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -198,7 +198,7 @@ He had **split the atom**—the first artificial nuclear reaction in history.
 
 "Playing with marbles," he called it dismissively. But this "playing" would eventually lead to nuclear power and, unfortunately, nuclear weapons.
 
-![](09-splitting.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -215,7 +215,7 @@ But he was also generous, inspiring, and brilliant at spotting talent. Eleven of
 
 "We're like children playing on a beach," he told them.  "The great ocean of truth lies before us, unexplored."
 
-![](10-cavendish.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -230,7 +230,7 @@ Around the same time, Rutherford's "boys" John Cockcroft and Ernest Walton becam
 
 Rutherford, now elderly but still energetic, celebrated with his team. The atom he'd explored was now yielding its deepest secrets.
 
-![](11-neutron.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -245,7 +245,7 @@ He loved rugby, gardening, and good-natured arguments. He distrusted "fancy" mat
 
 He made enemies too—especially among scientists who felt his "stamp collecting" comments were insulting. But he made far more friends and disciples who would carry his methods into the future.
 
-![](12-personality.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
@@ -265,7 +265,7 @@ His legacy is the atom itself—or rather, our understanding of it. Because of t
 
 And it all started because some particles bounced backward—and Rutherford was smart enough to be surprised.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -284,7 +284,7 @@ Rutherford's gold foil experiment teaches the most important lesson in science: 
 | Only big labs do important work | A farm boy changed physics | Background doesn't determine contribution |
 | Rutherford won Physics Nobel | He won Chemistry Nobel | Even prizes can surprise you |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -318,4 +318,18 @@ What will surprise you?
 
 *"All science is either physics or stamp collecting."*
 —Also Rutherford (the chemists still haven't forgiven him)
+
+---
+
+## References
+
+1. [Ernest Rutherford | Accomplishments, Atomic Theory, & Facts](https://www.britannica.com/biography/Ernest-Rutherford) - Updated 2024 - Britannica - Complete biography of the New Zealand-born physicist who discovered the atomic nucleus and is called the "father of nuclear physics."
+
+2. [May 1911: Rutherford and the Discovery of the Atomic Nucleus](https://www.aps.org/apsnews/2006/05/rutherford-discovery-atomic-nucleus) - 2006 - American Physical Society - Detailed account of how Rutherford's gold foil experiment overturned the "plum pudding" model and revealed atoms are mostly empty space.
+
+3. [Rutherford's Experiment: The Nuclear Model of the Atom](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Chemistry_for_Changing_Times_(Hill_and_McCreary)/03:_Atomic_Structure/3.04:_Rutherford's_Experiment-_The_Nuclear_Model_of_the_Atom) - 2024 - Chemistry LibreTexts - Free online textbook chapter explaining the gold foil experiment with diagrams and the math behind calculating nuclear size.
+
+4. [Rutherford's Nuclear World](https://history.aip.org/exhibits/rutherford/) - Ongoing - American Institute of Physics - Virtual exhibit exploring Rutherford's lab, his experiments, and the personalities of his research team including Geiger and Marsden.
+
+5. [Gold Foil Experiment](https://chem.libretexts.org/Bookshelves/Introductory_Chemistry/Introductory_Chemistry_(CK-12)/04:_Atomic_Structure/4.14:_Gold_Foil_Experiment) - 2024 - CK-12/Chemistry LibreTexts - Step-by-step explanation of the experiment with interactive simulations you can try yourself.
 

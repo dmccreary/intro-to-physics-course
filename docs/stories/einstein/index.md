@@ -56,7 +56,7 @@ His questions would eventually overturn everything we thought we knew about spac
 
 But first, he had to fail spectacularly.
 
-![](01-young-einstein.jpg)
+![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -71,7 +71,7 @@ At ETH Zurich, Einstein spent more time reading physics books on his own than at
 
 After graduating in 1900, Einstein applied for academic positions across Europe. Every single one rejected him. The young genius couldn't even get a job as a teaching assistant.
 
-![](02-eth-zurich.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -88,7 +88,7 @@ The work was easy enough that Einstein finished his daily tasks quickly. That le
 
 The patent office became his private physics laboratory—no equipment needed, just thought.
 
-![](03-patent-office.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -107,7 +107,7 @@ Einstein turned the question around: what if the speed of light was the same for
 
 The answer would shatter centuries of assumptions.
 
-![](04-thought-experiment.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -127,7 +127,7 @@ Einstein was 26 years old. He still worked at the patent office.
 
 No laboratory. No research team. No academic position. Just a clerk with ideas.
 
-![](05-miracle-year.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -146,7 +146,7 @@ At the end of his paper, he added a short note: a moving object's mass is relate
 
 E = mc².
 
-![](06-special-relativity.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -161,7 +161,7 @@ How much? If you could convert one kilogram of matter entirely into energy, you 
 
 Einstein didn't set out to create weapons. He was just following the logic of his equations. But the implications would eventually change world history.
 
-![](07-emc2.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -178,7 +178,7 @@ This "happiest thought of my life" became the **equivalence principle**—the fo
 
 Mass bends space. And objects follow the curves.
 
-![](08-falling-elevator.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -197,7 +197,7 @@ Headlines exploded worldwide: **NEWTON OVERTHROWN**
 
 Einstein, the patent clerk, was suddenly the most famous scientist on Earth.
 
-![](09-eclipse.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -212,7 +212,7 @@ He used his fame for causes he believed in: pacifism, civil rights, Jewish cause
 
 But fame had costs. Privacy vanished. Cranks and critics multiplied. And the Nazis were rising in Germany, singling out "Jewish physics" for attack.
 
-![](10-celebrity.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -229,7 +229,7 @@ But Einstein spent his later years frustrated. He never accepted quantum mechani
 
 "I have become a lonely old man," he wrote, "who is displayed as a curiosity."
 
-![](11-princeton.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -246,7 +246,7 @@ When Hiroshima was destroyed, Einstein reportedly said: "Woe is me."
 
 He spent his remaining years advocating for nuclear disarmament and world government—trying to contain the forces his physics had helped unleash.
 
-![](12-letter.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
@@ -267,7 +267,7 @@ Einstein wasn't a genius because he was born special. He was a genius because he
 
 A patent clerk who daydreamed about light beams—and rewrote the laws of the universe.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -287,7 +287,7 @@ Einstein didn't fit the mold—and that was his greatest advantage:
 | **Stayed curious** | Kept asking questions into old age | Wonder doesn't have an expiration date |
 | **Admitted mistakes** | Eventually accepted quantum mechanics was correct | Being wrong is part of being right eventually |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -324,4 +324,18 @@ What's your weird question?
 
 *"I have no special talents. I am only passionately curious."*
 —Also Einstein (probably being modest)
+
+---
+
+## References
+
+1. [Albert Einstein | Biography, Education, Discoveries, & Facts](https://www.britannica.com/biography/Albert-Einstein) - Updated 2024 - Britannica - Comprehensive biography from his struggles in school to becoming the world's most famous scientist, including his work on relativity and the photoelectric effect.
+
+2. [Case Files: Albert Einstein](https://fi.edu/en/news/case-files-albert-einstein) - 2024 - The Franklin Institute - Explore Einstein's notebooks, letters, and the story of how a patent clerk revolutionized our understanding of space, time, and energy.
+
+3. [10 Facts About Albert Einstein](https://www.natgeokids.com/uk/discover/science/general-science/albert-einstein-facts/) - 2024 - National Geographic Kids - Fun, student-friendly facts about Einstein's life, including his love of music, his quirky habits, and his most famous equation.
+
+4. [Albert Einstein - From Graduation to the Miracle Year](https://www.britannica.com/biography/Albert-Einstein/From-graduation-to-the-miracle-year-of-scientific-theories) - Updated 2024 - Britannica - Detailed look at 1905, when Einstein published four papers that transformed physics while working as a patent clerk.
+
+5. [Albert Einstein: Biography](https://www.biography.com/scientists/albert-einstein) - Updated 2024 - Biography.com - Accessible overview of Einstein's life, from his escape from Nazi Germany to his later years at Princeton and his complicated legacy with nuclear weapons.
 

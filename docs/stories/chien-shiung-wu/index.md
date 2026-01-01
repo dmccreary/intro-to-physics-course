@@ -56,7 +56,7 @@ While most Chinese families mourned the birth of daughters, Wu Zhongyi founded a
 
 She would spend her life proving him right—and discovering that the laws of society were another matter entirely.
 
-![](01-father-school.jpg)
+![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -73,7 +73,7 @@ Her parents waved from the dock. She promised to come back soon.
 
 She never saw them again.
 
-![](02-ship-departure.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -88,7 +88,7 @@ At Berkeley, her brilliance was immediately recognized. When the Manhattan Proje
 
 She helped build the atomic bomb, though she was not permitted at Los Alamos because of her Chinese nationality. Like many women in wartime science, her contribution was vital and largely invisible.
 
-![](03-manhattan-project.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -103,7 +103,7 @@ But being the best experimentalist in the world didn't protect her from discrimi
 
 Wu kept working. The data, she believed, would speak for itself.
 
-![](04-columbia-lab.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -120,7 +120,7 @@ Most physicists thought they were crazy. Why would nature have a preference?
 
 Lee and Yang needed an experimentalist brilliant enough to test their wild idea. They went to Chien-Shiung Wu.
 
-![](05-parity-concept.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -137,7 +137,7 @@ The experiment was extraordinarily difficult. It required temperatures just frac
 
 Wu worked through Christmas and New Year's, sleeping in the laboratory while others celebrated.
 
-![](06-experiment-setup.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -156,7 +156,7 @@ Wu immediately called Lee and Yang with the results. Lee called other physicists
 
 "I was shocked," said physicist I.I. Rabi. "It was as if we had learned that a house we had lived in for years had suddenly dissolved."
 
-![](07-discovery-moment.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -173,7 +173,7 @@ The theorists had proposed the idea. Wu had *proven* it. Without her experiment,
 
 Lee and Yang were gracious. They publicly acknowledged Wu's essential contribution. But the Nobel Prize—the highest honor in science—excluded her.
 
-![](08-nobel-announcement.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -190,7 +190,7 @@ Wu continued her work, making more fundamental contributions to physics. She rec
 
 "Maybe I'm a black box," she once said with a wry smile. "The Nobel Committee can't see inside."
 
-![](09-dignified-response.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -209,7 +209,7 @@ That one extra particle in a billion is everything we see: galaxies, stars, plan
 
 Wu's experiment helped explain why we exist.
 
-![](10-cosmic-implications.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -224,7 +224,7 @@ But her parents were gone. The world she had left no longer existed. She walked 
 
 She returned to America knowing she belonged to both countries and fully to neither. Her exile had been the price of her science.
 
-![](11-return-china.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -239,7 +239,7 @@ More importantly, she proved—again and again—that experimental physics is no
 
 That someone was Chien-Shiung Wu.
 
-![](12-teaching-legacy.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
@@ -256,7 +256,7 @@ But her greatest memorial is the physics itself. Every textbook chapter on parit
 
 The "First Lady of Physics" proved that nature distinguishes left from right. History should learn to distinguish experiment from theory.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -276,7 +276,7 @@ Chien-Shiung Wu's life teaches us that proving an idea is as important as having
 | **Denied the Nobel Prize** | Continued working; received every other major honor | Let history judge; keep working |
 | **Separated from homeland** | Built bridges between Chinese and American science | Science transcends borders |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -303,4 +303,18 @@ What will *you* prove?
 
 *"There is only one thing worse than coming home after a day in the lab to find that dinner is not ready—and that is not to have a lab to go to at all."*
 —Chien-Shiung Wu
+
+---
+
+## References
+
+1. [Chien-Shiung Wu | Biography, Accomplishments, Importance, & Facts](https://www.britannica.com/biography/Chien-Shiung-Wu) - Updated 2024 - Britannica - Complete biography of the "First Lady of Physics" who designed the experiment that proved parity violation and changed our understanding of the universe.
+
+2. [Chien-Shiung Wu](https://ahf.nuclearmuseum.org/ahf/profile/chien-shiung-wu/) - 2024 - Atomic Heritage Foundation/Nuclear Museum - Detailed account of Wu's work on the Manhattan Project and her groundbreaking parity experiment at near absolute zero temperatures.
+
+3. [Biography: Dr. Chien-Shiung Wu](https://www.womenshistory.org/education-resources/biographies/chien-shiung-wu) - 2024 - National Women's History Museum - Educational biography highlighting Wu's journey from China to becoming the first female president of the American Physical Society.
+
+4. [Chien-Shiung Wu | The First Lady of Physics](https://www.thematildaproject.com/scientists/chien-shiung-wu) - 2024 - The Matilda Project - Illustrated story about Wu's life and the Nobel Prize controversy, part of a project highlighting women overlooked for scientific recognition.
+
+5. [Chien-Shiung Wu](https://oumnh.ox.ac.uk/learn-chien-shiung-wu) - 2024 - Oxford University Museum of Natural History - Learn about Wu's meticulous experimental techniques that made her one of the most respected physicists of her generation.
 

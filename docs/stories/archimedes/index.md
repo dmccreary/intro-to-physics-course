@@ -253,7 +253,7 @@ But Archimedes' true monument is not stone. Every time you:
 
 ...you stand on foundations Archimedes laid twenty-three centuries ago. He showed that nature follows mathematical laws—and that a single curious mind, asking the right questions, can illuminate the universe.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -272,7 +272,7 @@ Archimedes' legacy is more than formulas; it is a way of seeing the world as a p
 | **Practical Application** | Turned theory into war machines and irrigation | Build things; test your ideas in the real world |
 | **Fearless Curiosity** | Asked questions others thought answered | Challenge assumptions, even from authorities |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -296,4 +296,18 @@ The universe is full of circles waiting to be drawn, principles waiting to be di
 
 *"Give me a place to stand, and I shall move the Earth."*
 —Archimedes of Syracuse
+
+---
+
+## References
+
+1. [Archimedes | Facts & Biography](https://www.britannica.com/biography/Archimedes) - Updated 2024 - Britannica - Comprehensive article covering Archimedes' life, mathematical discoveries, inventions, and the legendary stories surrounding him including the "Eureka" moment and his war machines.
+
+2. [The History of Archimedes](https://archimedespalimpsest.org/about/history/archimedes.php) - Ongoing - The Archimedes Palimpsest Project - Learn about the remarkable discovery of a hidden medieval manuscript containing Archimedes' lost mathematical writings, erased and overwritten by monks.
+
+3. [Archimedes' Principle | Description & Facts](https://www.britannica.com/science/Archimedes-principle) - Updated 2024 - Britannica - Detailed explanation of the principle of buoyancy with diagrams and real-world applications from ships to hot air balloons.
+
+4. [Eureka! Or Buoyancy and Archimedes' Principle](https://www.teachengineering.org/activities/view/wsu_eureka_activity) - 2024 - TeachEngineering - Hands-on activity where you can recreate Archimedes' density experiments using household objects and water displacement.
+
+5. [Archimedes - Windows to the Universe](https://www.windows2universe.org/people/ancient_epoch/archimedes.html) - 2024 - UCAR/Windows to the Universe - Student-friendly overview connecting Archimedes' discoveries to modern physics, including his war machines and the legend of the burning mirrors.
 

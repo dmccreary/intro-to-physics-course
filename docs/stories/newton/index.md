@@ -10,7 +10,20 @@ social:
 
 # The Plague Year: Isaac Newton's Impossible Summer
 
-![](./cover.jpg)
+![](./cover.png)
+
+<details>
+    <summary>Cover Image Prompt</summary>
+Please generate a new wide-landscape cover illustration in 16:9 format.
+
+A colorful, dramatic wide-landscape illustration in a 17th century English Baroque style showing Isaac Newton during his "miracle year" of 1665-1666. Newton, a young man of 23 with long dark hair, sits under an apple tree in the garden of Woolsthorpe Manor. He's surrounded by the symbols of his discoveries: a glass prism splits a beam of sunlight into a rainbow spectrum across the scene, mathematical equations float in the air around him, and a red apple hangs prominently from the branch above his head, about to fall.
+
+In his hands, Newton holds a notebook filled with calculations. His expression is intense—genius mixed with something slightly unsettling, hinting at his difficult personality. The background shows the modest stone manor house under dramatic Baroque lighting: dark storm clouds part to reveal golden sunlight streaming down onto Newton, suggesting divine inspiration or the "light" of understanding breaking through.
+
+Scattered around him are objects representing his discoveries: a small telescope, compass, and ink pot. In the far distance, barely visible, the spires of Cambridge University rise—closed due to plague, forcing Newton into this productive isolation.
+
+The color palette combines warm golden light against cooler shadows, with the prismatic rainbow providing vivid color accents. The overall mood should be "brilliant but brooding"—capturing both Newton's world-changing genius and his intense, obsessive nature. Text space should be available at the top for the title "The Plague Year."
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>
@@ -43,9 +56,13 @@ Key story elements:
 The tone should be fun and engaging while showing that genius doesn't require
 being a nice person—and that even weird, difficult people can change the world.
 
+I am going to request a series of image for a new graphic novel about Isaac Newton for high school students.  
+All the images must be generated using a wide-landscape format where the width to height ration is 16:9.
+
 When you describe an image, make sure to mention that it should be a colorful,
 bright wide-landscape illustration in a 17th century English style with dramatic
 Baroque lighting and period-accurate details.
+
 </details>
 
 ### Prologue – The Boy Nobody Wanted
@@ -58,7 +75,7 @@ He was probably right. Isaac Newton would grow up to become the greatest scienti
 
 But first, there was a plague to survive.
 
-![](01-baby-newton.jpg)
+![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -75,7 +92,7 @@ The good news? He channeled all that anger into something productive: understand
 
 At the King's School in Grantham, Isaac was initially a terrible student—until a bully kicked him. Isaac challenged the boy to a fight, won, and then decided to beat him academically too. He rose to top of the class out of pure spite.
 
-![](02-lonely-childhood.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -94,7 +111,7 @@ By age 22, Isaac Newton had already surpassed every mathematician in Europe.
 
 Nobody knew it yet. Newton didn't tell anyone.
 
-![](03-cambridge-student.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -111,7 +128,7 @@ He returned to Woolsthorpe Manor—the same farmhouse where he'd been born—and
 
 What he accomplished in those 18 months would take other scientists *centuries* to match.
 
-![](04-plague-lockdown.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -132,7 +149,7 @@ He didn't publish it. Didn't tell anyone. Just kept working.
 
 (This would cause MASSIVE problems later. But we'll get there.)
 
-![](05-inventing-calculus.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -149,7 +166,7 @@ The same gravity that pulls an apple down holds planets in their orbits. Everyth
 
 Newton was 24.
 
-![](06-apple.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -168,7 +185,7 @@ Then came the genius move. Newton put a *second* prism in the path of just the b
 
 Newton had discovered that **rainbows had been hiding in sunlight all along**.
 
-![](07-prism-experiment.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -185,7 +202,7 @@ He did eventually publish his work on light and colors. The response? Robert Hoo
 
 Newton was FURIOUS. He swore he would never publish again. And he developed a grudge against Hooke that would last for *decades*.
 
-![](08-return-cambridge.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -206,7 +223,7 @@ Halley was stunned. "Can you show me the proof?"
 
 Newton couldn't find his notes. He promised to redo the calculations—and ended up writing the most important scientific book ever published.
 
-![](09-hooke-feud.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -228,7 +245,7 @@ The "shoulders of giants" quote that Newton became famous for? Some historians t
 
 Newton held grudges *forever*.
 
-![](10-principia.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -247,7 +264,7 @@ The feud damaged both men's reputations and set back mathematics for years, as E
 
 Newton had become exactly the kind of petty, vindictive authority figure he'd once rebelled against.
 
-![](11-leibniz-war.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -268,7 +285,7 @@ Newton watched.
 
 The man who unlocked the secrets of the universe also had a taste for vengeance.
 
-![](12-mint-warden.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
@@ -287,7 +304,7 @@ Yet his discoveries form the foundation of physics. Every engineer, every astron
 
 Genius doesn't require being nice. But maybe, just maybe, Newton's lonely childhood and burning resentments were part of what drove him to understand the universe—and to care more about being *right* than being *loved*.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -309,7 +326,7 @@ Newton's life teaches us that greatness is complicated:
 
 **Bottom line:** You don't have to be a nice person to change the world. But Newton might have been happier—and done even more—if he'd learned to trust people.
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -351,4 +368,18 @@ The apple fell. Newton asked *why*. And nothing was ever the same.
 
 *"I can calculate the motion of heavenly bodies, but not the madness of people."*
 —Also Newton, after losing money in a stock market crash
+
+---
+
+## References
+
+1. [Isaac Newton | Biography, Facts, Discoveries, Laws, & Inventions](https://www.britannica.com/biography/Isaac-Newton) - Updated 2024 - Britannica - Comprehensive biography covering Newton's difficult childhood, his "miracle year" of discoveries, his feuds, and his later work at the Royal Mint.
+
+2. [Isaac Newton: Who He Was, Why Apples Are Falling](https://education.nationalgeographic.org/resource/isaac-newton-who-he-was-why-apples-are-falling/) - 2024 - National Geographic Education - Student-friendly explanation of Newton's laws of motion and universal gravitation with the famous apple story.
+
+3. [Newton's Life and Work at a Glance](https://www.pbs.org/wgbh/nova/newton/) - Ongoing - PBS NOVA - Interactive timeline and resources from the NOVA documentary about Newton's life, including his secret interests in alchemy and biblical prophecy.
+
+4. [Isaac Newton](https://www.eia.gov/kids/history-of-energy/famous-people/newton.php) - 2024 - U.S. Energy Information Administration - Learn how Newton's discoveries about motion and gravity laid the foundation for understanding energy and how things move.
+
+5. [Isaac Newton and the Laws of Motion](https://phys.libretexts.org/Courses/HACC_Central_Pennsylvania's_Community_College/Astronomy_103:_Introduction_to_Planetary_Astronomy/03:_The_Copernican_Revolution/3.05:_Isaac_Newton_(1642-1724)_and_the_Laws_of_Motion) - 2024 - Physics LibreTexts - Free online textbook explaining how Newton's laws revolutionized our understanding of planetary motion.
 

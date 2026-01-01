@@ -130,7 +130,7 @@ Vera found paper, scissors, and tape. She cut out a figure wearing a skirt and t
 
 She had no intention of leaving.
 
-![](05-palomar.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -181,7 +181,7 @@ At first, astronomers were skeptical. But as more observations confirmed Rubin's
 
 Vera Rubin had discovered that 85% of the matter in the universe was invisible.
 
-![](08-dark-matter-halo.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -200,7 +200,7 @@ Today we know:
 
 Vera Rubin revealed that everything humanity had ever seen was just the foam on a vast dark ocean.
 
-![](09-cosmic-pie.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -269,7 +269,7 @@ Vera Rubin never received the Nobel Prize, but her name is written in the cosmos
 
 More importantly, every girl who looks through a telescope today stands on Vera Rubin's shoulders. She proved that the universe doesn't care who asks the questions—only that they're the right questions, asked persistently.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -289,7 +289,7 @@ Vera Rubin's life teaches us that the most important discoveries often reveal wh
 | **Data contradicted expectations** | Trusted her measurements over tradition | Evidence outweighs authority |
 | **Never won Nobel Prize** | Mentored the next generation; let history judge | Recognition isn't the goal; understanding is |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
