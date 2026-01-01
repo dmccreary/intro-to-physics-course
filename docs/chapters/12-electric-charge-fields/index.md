@@ -916,3 +916,17 @@ In the next chapter, we'll explore what happens when charges move continuously t
 - Real-world circuit analysis
 
 The concepts of electric potential and voltage you've learned here will become essential tools for understanding how energy flows through electrical circuits and powers the devices we use every day.
+
+---
+
+## The Story Behind the Science
+
+<div class="grid cards" markdown>
+
+- [![Ernest Rutherford](../../stories/rutherford/cover.png)](../../stories/rutherford/index.md)
+
+    **[The Gold Foil Surprise](../../stories/rutherford/index.md)**
+
+    Everyone "knew" atoms were like plum pudding—positive charge spread evenly with electrons scattered throughout. Then Ernest Rutherford shot charged particles at gold foil and some bounced straight back. "It was as if you fired a cannon shell at tissue paper and it came back and hit you." The electric forces you just learned revealed that atoms are mostly empty space with a tiny, dense, charged nucleus.
+
+</div>

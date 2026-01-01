@@ -1082,3 +1082,17 @@ Let's summarize the essential concepts from this foundational chapter:
 13. **Graphical Analysis:** Extract quantitative information from graphs including slope, intercepts, and area under curves.
 
 With these tools firmly in your toolkit, you're ready to explore the fascinating world of physics. Every concept we study—from motion and forces to energy and electricity—will build on these foundations. The mathematical and scientific practices you've learned here will empower you to analyze, understand, and predict physical phenomena with confidence and precision.
+
+---
+
+## The Story Behind the Science
+
+<div class="grid cards" markdown>
+
+- [![Archimedes](../../stories/archimedes/cover.png)](../../stories/archimedes/index.md)
+
+    **[Eureka! The Story of Archimedes](../../stories/archimedes/index.md)**
+
+    A king suspects his crown is fake gold. A mathematician takes a bath. What happens next changes science forever. Discover how Archimedes invented the scientific method 2,000 years before anyone gave it a name—using observation, measurement, and brilliant reasoning to solve problems everyone else thought were impossible.
+
+</div>

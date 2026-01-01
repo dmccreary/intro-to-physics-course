@@ -961,3 +961,17 @@ Before moving on, make sure you can confidently explain these concepts:
 - **Normal Force:** Support force perpendicular to a surface (adjusts to prevent penetration)
 
 If any of these feel unclear, review the relevant section before continuing. These concepts form the foundation for all of dynamics!
+
+---
+
+## The Story Behind the Science
+
+<div class="grid cards" markdown>
+
+- [![Isaac Newton](../../stories/newton/cover.png)](../../stories/newton/index.md)
+
+    **[The Plague Year](../../stories/newton/index.md)**
+
+    Cambridge University closed due to plague. A 23-year-old student went home with nothing to do. In 18 months, Isaac Newton invented calculus, discovered the laws of motion you just learned, figured out gravity, and cracked the code of light and color. Oh, and he was also incredibly petty and held grudges forever. Genius doesn't require being nice.
+
+</div>

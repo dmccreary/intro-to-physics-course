@@ -1436,3 +1436,17 @@ As you continue in physics and related sciences, you'll discover that light serv
 
 This chapter has equipped you with a comprehensive understanding of light and optics, from fundamental principles to advanced applications. These concepts bridge classical physics and modern physics, revealing nature's elegant behaviors at the intersection of waves, particles, and electromagnetic radiation.
 
+---
+
+## The Story Behind the Science
+
+<div class="grid cards" markdown>
+
+- [![Albert Einstein](../../stories/einstein/cover.png)](../../stories/einstein/index.md)
+
+    **[The Patent Clerk's Daydream](../../stories/einstein/index.md)**
+
+    He failed his college entrance exam. He couldn't get an academic job. So Albert Einstein worked at a patent office—and in his spare time, he asked "What would it be like to ride a beam of light?" That question led to relativity, E=mc², and a complete reimagining of space, time, and the nature of light itself. The optics you just learned was about to get very strange.
+
+</div>
+

@@ -10,7 +10,22 @@ social:
 
 # Glowing in the Dark: The Radiant Life of Marie Curie
 
-![](./cover.jpg)
+![](./cover.png)
+
+<details>
+    <summary>Cover Image Prompt</summary>
+Please generate a new wide-landscape cover illustration in 16:9 format.
+
+A dramatic, colorful wide-landscape illustration in a late Victorian/early modern scientific style showing Marie Curie in her converted shed laboratory around 1902. Marie stands at a wooden workbench in near-darkness, her face illuminated by the ethereal blue-green glow of radium samples in glass vials and dishes before her. She wears a simple dark work dress, now slightly luminous from years of radioactive contamination, her hair pinned up practically. Her expression shows wonder, exhaustion, and fierce determination—a scientist witnessing something no human has ever seen before.
+
+The cramped laboratory is filled with period-accurate details: large iron cauldrons used to process pitchblende ore, glass distillation equipment, handwritten labels in French, a worn notebook open to chemical equations, and burlap sacks of raw ore stacked in the shadows. Through a grimy window, the dim lights of Paris are visible in the distance. Rain streaks the glass—the shed's leaky roof is evident from a bucket catching drips.
+
+The radium's glow is the dominant light source, casting dramatic shadows and giving the entire scene an otherworldly quality. The blue-green luminescence reflects off Marie's face and hands, highlighting both the beauty and the danger of her discovery. Small glowing traces appear on her fingers, her notebook, even floating dust particles—everywhere the radium has touched now glows.
+
+At the top of the image, leave space for the title "GLOWING IN THE DARK" in elegant Art Nouveau-style lettering that appears to emit the same soft radium glow. Below it, in smaller text: "The Radiant Life of Marie Curie". The typography should evoke early 1900s Paris—perhaps similar to Mucha poster designs—with the letters seeming to illuminate from within.
+
+The overall mood should balance scientific triumph with haunting foreshadowing—this glow that fascinates Marie will eventually kill her. The beauty is dangerous. The color palette centers on deep shadows punctuated by the signature blue-green radium luminescence, with warm amber touches from a distant oil lamp and the cool blue of the Paris night through the window.
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>

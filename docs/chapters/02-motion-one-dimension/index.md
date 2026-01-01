@@ -1189,3 +1189,17 @@ Test your understanding with these problems (answers and detailed solutions woul
 9. A rocket accelerates vertically from rest at 20 m/s² for 3 seconds, then shuts off its engines. Calculate (a) maximum height, (b) total time in air, (c) velocity when it hits the ground.
 
 These problems will help solidify your understanding of motion in one dimension. Work through them systematically, use the problem-solving framework, and check your work carefully. Kinematics is a skill that improves with practice!
+
+---
+
+## The Story Behind the Science
+
+<div class="grid cards" markdown>
+
+- [![Galileo Galilei](../../stories/galileo/cover.png)](../../stories/galileo/index.md)
+
+    **[The Troublemaker of Pisa](../../stories/galileo/index.md)**
+
+    What happens when you prove your professors wrong? You get fired. Galileo invented the science of motion by actually *measuring* how objects fall—something nobody had bothered to do in 2,000 years. He dropped balls off towers, rolled them down ramps, and made the Church so angry they put him on trial. The kinematics equations you just learned? Galileo discovered them.
+
+</div>

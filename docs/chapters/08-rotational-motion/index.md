@@ -1163,3 +1163,17 @@ A turntable (rotational inertia 0.030 kg·m²) rotates freely at 45 rpm. A small
 **Next Chapter:** [Chapter 9: Simple Harmonic Motion and Oscillations](../09-oscillations/index.md)
 
 You now have the tools to analyze spinning wheels, rolling objects, rotating planets, and any other system involving rotational motion. The principles you've learned form the foundation for understanding oscillations, waves, and many other phenomena in the chapters ahead.
+
+---
+
+## The Story Behind the Science
+
+<div class="grid cards" markdown>
+
+- [![Vera Rubin](../../stories/vera-rubin/cover.png)](../../stories/vera-rubin/index.md)
+
+    **[The Missing Universe](../../stories/vera-rubin/index.md)**
+
+    Galaxies are spinning too fast. According to the rotational physics you just learned, they should fly apart—but they don't. Vera Rubin measured galaxy after galaxy and proved that most of the universe is made of something we can't see: dark matter. The angular momentum equations work perfectly; we just couldn't see what was providing the mass.
+
+</div>

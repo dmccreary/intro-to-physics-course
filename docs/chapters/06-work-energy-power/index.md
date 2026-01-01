@@ -1443,3 +1443,23 @@ As you complete this chapter, keep these essential ideas in mind:
 10. **Energy analysis often simplifies problems**: Many situations difficult to solve with forces become straightforward using energy methods.
 
 Energy concepts will reappear throughout the rest of this course—in momentum, rotation, oscillations, waves, and even electricity. Mastering these principles now will pay dividends as you continue your physics journey.
+
+---
+
+## The Stories Behind the Science
+
+<div class="grid cards" markdown>
+
+- [![Marie Curie](../../stories/marie-curie/cover.png)](../../stories/marie-curie/index.md)
+
+    **[Glowing in the Dark](../../stories/marie-curie/index.md)**
+
+    She couldn't go to university because she was a woman. So Marie Curie moved to Paris, nearly starved, and worked in a leaky shed for four years. She discovered two new elements and proved that atoms contain vast amounts of hidden energy—the same E=mc² energy that powers the sun. The radiation that made her famous also killed her.
+
+- [![Lise Meitner](../../stories/lise-meitner/cover.png)](../../stories/lise-meitner/index.md)
+
+    **[The Fission Escape](../../stories/lise-meitner/index.md)**
+
+    She did the work. She made the discovery. Her partner got the Nobel Prize. Lise Meitner was the first to explain how splitting an atom releases energy—the science behind nuclear power. She figured it out while literally fleeing Nazi Germany, calculating on scraps of paper in the snow. E=mc² went from equation to reality.
+
+</div>

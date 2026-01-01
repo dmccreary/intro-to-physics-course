@@ -1399,3 +1399,17 @@ In future physics courses, you'll explore more advanced electrical concepts:
 - Power systems and renewable energy technology
 
 The circuit fundamentals you've learned here provide the essential foundation for understanding how electricity powers and connects our modern world.
+
+---
+
+## The Story Behind the Science
+
+<div class="grid cards" markdown>
+
+- [![Michael Faraday](../../stories/faraday/cover.png)](../../stories/faraday/index.md)
+
+    **[The Bookbinder's Apprentice](../../stories/faraday/index.md)**
+
+    No money. No education. No connections. Michael Faraday had every reason to fail. But he taught himself science from the books he was binding, talked his way into a lab assistant job, and discovered how to turn magnetism into electricity. Every motor, generator, and transformer on Earth—every circuit that uses electromagnetic induction—exists because of him.
+
+</div>
