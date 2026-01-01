@@ -1,0 +1,15 @@
+{
+  "title": "Kinematic Equation Selector",
+  "description": "Interactive tool to help students choose the right kinematic equation based on known and unknown variables. Highlights applicable equations for position, velocity, acceleration, and time.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "equations", "physics", "problem-solving"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["kinematic equations", "position", "velocity", "acceleration", "time", "problem-solving strategy"],
+  "bloomsLevel": ["Remember", "Understand", "Apply", "Analyze"],
+  "prerequisites": ["Position", "Velocity", "Acceleration", "Algebra"]
+}

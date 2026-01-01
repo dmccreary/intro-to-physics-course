@@ -1,0 +1,15 @@
+{
+  "title": "Force vs Time - Impulse Comparison",
+  "description": "Interactive chart comparing hard stop vs soft stop collisions, demonstrating how extending collision time reduces peak force while maintaining the same impulse. Shows real-world application of airbags and crumple zones.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["impulse", "momentum", "force", "physics", "safety"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "Chart.js",
+  "concepts": ["impulse", "force-time relationship", "momentum change", "collision duration", "airbag physics", "crumple zones"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze", "Evaluate"],
+  "prerequisites": ["Force", "Momentum", "Impulse-momentum theorem"]
+}

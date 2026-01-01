@@ -4,7 +4,7 @@
 // Canvas dimensions
 let canvasWidth = 900;
 let drawHeight = 350;
-let controlHeight = 150;
+let controlHeight = 120;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
 
@@ -69,8 +69,8 @@ function updateSliderPositions() {
 
     // Position buttons and checkbox
     let buttonY = drawHeight + 80;
-    resetButton.position(margin, buttonY);
-    showGraphCheckbox.position(margin + 80, buttonY + 3);
+    resetButton.position(margin*.6, buttonY);
+    showGraphCheckbox.position(margin + 55, buttonY + 2);
 }
 
 function resetSimulation() {
@@ -331,7 +331,7 @@ function drawInverseSquareGraph(currentForce) {
     noStroke();
     textSize(10);
     textAlign(CENTER, TOP);
-    text('Distance r (m)', plotX + plotW / 2, plotY + plotH + 5);
+    text('Distance r (m)', plotX + plotW / 2, plotY + plotH + 10);
 
     push();
     translate(plotX - 25, plotY + plotH / 2);
@@ -431,20 +431,21 @@ function drawSliderLabels() {
     textAlign(RIGHT, CENTER);
     text('3.0', col3Center + sliderWidth / 2 - trackOffset + horizontalShift, polarityY);
 
-    // Legend
-    textSize(11);
+    // Legend (to the right of the checkbox)
+    textSize(16);
     textAlign(LEFT, CENTER);
-    let legendY = drawHeight + 115;
+    let legendY = drawHeight + 92;
+    let legendX = 250;
 
     fill('#4CAF50');
-    circle(canvasWidth / 2 - 150, legendY, 12);
+    circle(legendX, legendY, 12);
     fill('black');
-    text('Attractive (opposite)', canvasWidth / 2 - 140, legendY);
+    text('Attractive (opposite charges)', legendX + 10, legendY);
 
     fill('#F44336');
-    circle(canvasWidth / 2 + 50, legendY, 12);
+    circle(legendX + 240, legendY, 12);
     fill('black');
-    text('Repulsive (like)', canvasWidth / 2 + 60, legendY);
+    text('Repulsive (like charges)', legendX + 250, legendY);
 }
 
 function setLineDash(pattern) {

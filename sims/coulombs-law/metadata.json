@@ -1,0 +1,35 @@
+{
+  "title": "Coulomb's Law Force Calculator",
+  "description": "Interactive simulation demonstrating Coulomb's Law - explore how electric force depends on charge magnitudes and separation distance between two point charges. Visualizes attractive and repulsive forces with real-time calculations.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": [
+    "Coulomb's Law",
+    "Electric Force",
+    "Electrostatics",
+    "Physics",
+    "Inverse Square Law",
+    "Point Charges"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": [
+    "Coulomb's Law",
+    "Electric Force",
+    "Electric Charge",
+    "Inverse Square Law",
+    "Coulomb's Constant"
+  ],
+  "bloomsLevel": "Applying",
+  "prerequisites": [
+    "Electric Charge",
+    "Scientific Notation",
+    "Basic Algebra"
+  ],
+  "educationalLevel": "High School",
+  "interactivityType": "active",
+  "learningResourceType": "simulation"
+}

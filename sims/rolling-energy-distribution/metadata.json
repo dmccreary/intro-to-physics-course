@@ -1,0 +1,15 @@
+{
+  "title": "Rolling Energy Distribution",
+  "description": "Interactive simulation showing how kinetic energy is distributed between translational and rotational components in rolling objects with different moments of inertia.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["rotation", "energy", "physics", "rolling motion"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["rolling motion", "translational kinetic energy", "rotational kinetic energy", "moment of inertia", "energy distribution"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Kinetic energy", "Rotational kinetic energy", "Moment of inertia"]
+}

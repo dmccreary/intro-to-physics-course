@@ -1,0 +1,15 @@
+{
+  "title": "Weight and Gravity",
+  "description": "Interactive simulation showing the relationship between mass, gravitational field strength, and weight (W = mg). Compare weights on different planets.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["gravity", "weight", "physics", "forces"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["weight", "gravity", "mass", "W = mg", "gravitational field strength", "planetary gravity"],
+  "bloomsLevel": ["Understand", "Apply"],
+  "prerequisites": ["Mass", "Force", "Gravity"]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Vector Components",
+  "description": "Interactive simulation showing how vectors decompose into x and y components. Demonstrates the relationship between vector magnitude, angle, and components.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["vectors", "mathematics", "physics", "trigonometry"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["vector components", "x-component", "y-component", "trigonometry", "Vx = V cos θ", "Vy = V sin θ"],
+  "bloomsLevel": ["Understand", "Apply"],
+  "prerequisites": ["Vectors", "Trigonometry", "Sine and cosine"]
+}

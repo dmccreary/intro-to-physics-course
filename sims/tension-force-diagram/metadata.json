@@ -1,0 +1,15 @@
+{
+  "title": "Tension Force Diagram",
+  "description": "Interactive diagram showing tension forces in ropes and strings. Demonstrates how tension distributes in various configurations including pulleys and angled supports.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["forces", "tension", "physics", "statics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["tension", "force diagrams", "equilibrium", "rope forces", "pulley systems"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Forces", "Free-body diagrams", "Equilibrium"]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Resonance Graph",
+  "description": "Interactive graph showing amplitude vs driving frequency for oscillating systems. Demonstrates resonance peak and how damping affects the response curve.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["oscillations", "resonance", "physics", "waves"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["resonance", "natural frequency", "driving frequency", "amplitude response", "damping"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Oscillations", "Frequency", "Damping"]
+}

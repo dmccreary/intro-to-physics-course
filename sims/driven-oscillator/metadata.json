@@ -1,0 +1,15 @@
+{
+  "title": "Driven Oscillator Interactive MicroSim",
+  "description": "Interactive simulation showing how a driven oscillator responds to different driving frequencies, demonstrating resonance when the driving frequency matches the natural frequency. Users can adjust driving frequency, force amplitude, and damping to observe steady-state amplitude and phase relationships.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["physics", "oscillations", "resonance", "driven harmonic motion", "damping", "frequency response"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["driven-oscillator", "resonance", "damping", "natural-frequency", "steady-state-amplitude", "phase-lag"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["simple-harmonic-motion", "damped-oscillations", "angular-frequency"]
+}

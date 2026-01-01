@@ -1,0 +1,15 @@
+{
+  "title": "Work Scenarios",
+  "description": "Interactive simulation showing different scenarios where work is done or not done. Demonstrates that work requires force component in direction of displacement.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["energy", "work", "physics", "mechanics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["work", "W = Fd cos θ", "positive work", "negative work", "zero work", "force direction"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Force", "Displacement", "Trigonometry"]
+}

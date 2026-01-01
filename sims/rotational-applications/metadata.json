@@ -1,0 +1,15 @@
+{
+  "title": "Rotational Motion Applications",
+  "description": "Interactive simulation showing real-world applications of rotational motion concepts including gears, flywheels, gyroscopes, and spinning tops.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["rotation", "applications", "physics", "engineering"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["rotational motion applications", "gears", "flywheels", "gyroscopes", "angular momentum"],
+  "bloomsLevel": ["Understand", "Analyze", "Evaluate"],
+  "prerequisites": ["Angular velocity", "Torque", "Angular momentum"]
+}

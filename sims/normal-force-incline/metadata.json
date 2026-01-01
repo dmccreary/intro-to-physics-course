@@ -1,0 +1,15 @@
+{
+  "title": "Normal Force on Inclined Planes",
+  "description": "Interactive simulation showing how normal force varies on inclined planes. Demonstrates that normal force equals weight times cosine of the incline angle.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["forces", "inclined plane", "physics", "dynamics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["normal force", "inclined plane", "weight components", "force decomposition", "N = mg cos θ"],
+  "bloomsLevel": ["Understand", "Apply"],
+  "prerequisites": ["Forces", "Trigonometry", "Weight"]
+}

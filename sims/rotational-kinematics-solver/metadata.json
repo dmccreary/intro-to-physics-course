@@ -1,0 +1,15 @@
+{
+  "title": "Rotational Kinematics Solver",
+  "description": "Interactive tool helping students solve rotational kinematics problems. Select known variables to find the appropriate rotational equation.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["rotation", "kinematics", "physics", "problem-solving"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["rotational kinematics", "angular velocity", "angular acceleration", "rotational equations"],
+  "bloomsLevel": ["Remember", "Understand", "Apply"],
+  "prerequisites": ["Angular velocity", "Angular acceleration", "Kinematic equations"]
+}

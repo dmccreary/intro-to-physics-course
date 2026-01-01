@@ -1,0 +1,116 @@
+{
+  "devices": [
+    {
+      "name": "LED Bulb",
+      "icon": "💡",
+      "efficiency": 85,
+      "category": "lighting",
+      "detail": "Converts 85% of electrical energy to light. Only 15% becomes heat."
+    },
+    {
+      "name": "CFL Bulb",
+      "icon": "💡",
+      "efficiency": 70,
+      "category": "lighting",
+      "detail": "Compact fluorescent: 70% to light, 30% to heat."
+    },
+    {
+      "name": "Incandescent",
+      "icon": "💡",
+      "efficiency": 5,
+      "category": "lighting",
+      "detail": "Only 5% becomes light! 95% wasted as heat."
+    },
+    {
+      "name": "Electric Motor",
+      "icon": "⚡",
+      "efficiency": 80,
+      "category": "other",
+      "detail": "Converts electrical to mechanical energy. 20% lost to heat/friction."
+    },
+    {
+      "name": "Gasoline Engine",
+      "icon": "🚗",
+      "efficiency": 25,
+      "category": "engines",
+      "detail": "Burns fuel: 75% lost to heat, exhaust, and friction."
+    },
+    {
+      "name": "Diesel Engine",
+      "icon": "🚚",
+      "efficiency": 35,
+      "category": "engines",
+      "detail": "More efficient than gasoline due to higher compression."
+    },
+    {
+      "name": "Human Muscles",
+      "icon": "💪",
+      "efficiency": 25,
+      "category": "other",
+      "detail": "Chemical energy from food → mechanical work. 75% becomes body heat."
+    },
+    {
+      "name": "Coal Plant",
+      "icon": "🏭",
+      "efficiency": 35,
+      "category": "power",
+      "detail": "Burns coal to make steam. Most energy lost in cooling towers."
+    },
+    {
+      "name": "Natural Gas Plant",
+      "icon": "🔥",
+      "efficiency": 45,
+      "category": "power",
+      "detail": "Combined cycle plants achieve higher efficiency than coal."
+    },
+    {
+      "name": "Solar Panel",
+      "icon": "☀️",
+      "efficiency": 20,
+      "category": "power",
+      "detail": "Photovoltaic cells: Most sunlight becomes heat, not electricity."
+    },
+    {
+      "name": "Wind Turbine",
+      "icon": "🌬️",
+      "efficiency": 40,
+      "category": "power",
+      "detail": "Betz limit caps max at 59%. Real turbines reach ~40%."
+    },
+    {
+      "name": "Hydroelectric Dam",
+      "icon": "💧",
+      "efficiency": 90,
+      "category": "power",
+      "detail": "Gravity-driven water: Very efficient energy conversion."
+    },
+    {
+      "name": "Bicycle",
+      "icon": "🚲",
+      "efficiency": 95,
+      "category": "other",
+      "detail": "Almost all pedaling force becomes forward motion."
+    },
+    {
+      "name": "Steam Engine",
+      "icon": "🚂",
+      "efficiency": 10,
+      "category": "engines",
+      "detail": "Historical engines were very inefficient by modern standards."
+    },
+    {
+      "name": "Electric Heater",
+      "icon": "🔌",
+      "efficiency": 100,
+      "category": "other",
+      "detail": "100% of electricity becomes heat - the desired output!"
+    },
+    {
+      "name": "Heat Pump",
+      "icon": "❄️",
+      "efficiency": 300,
+      "category": "other",
+      "detail": "Moves 3J of heat for every 1J electricity. COP > 1 possible!"
+    }
+  ]
+}
