@@ -42,6 +42,22 @@ Key elements:
 When you describe an image, make sure to mention that it should be a colorful,
 bright wide-landscape illustration in an early 20th century European modernist
 style with elements of Swiss precision and playful imagination.
+
+---
+Image preamble
+
+This session is to generate wide-landscape 16:9 ratio images for my
+new graphic novel about Albert Einstein
+that is engaging and inspiring for teenagers. The target audience is high school
+students studying introductory physics.
+
+All images MUST have a wide-landscape 16:9 width:height ratio.
+
+The style of each image should be a colorful, bright illustrations in an early 20th century 
+European modernist style with elements of Swiss precision and playful imagination.
+Make the images fun when appropriate.  This should not be a serious a story.  It
+is about how Einstein's ability to visualize thought experiments gave him a unique superpower.
+
 </details>
 
 ### Prologue – The Kid Who Questioned Everything
