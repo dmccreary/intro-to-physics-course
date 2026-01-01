@@ -10,7 +10,7 @@ social:
 
 # The Missing Universe: Vera Rubin and Dark Matter
 
-![](./cover.jpg)
+![](./cover.png)
 
 <details>
     <summary>Narrative Prompt</summary>
@@ -58,7 +58,7 @@ Her father, an electrical engineer, encouraged her curiosity. Together, they bui
 
 She decided, at age ten, that she would spend her life understanding the universe. The universe, unfortunately, was not ready for her.
 
-![](01-young-vera.jpg)
+![](image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -77,7 +77,7 @@ She graduated in 1948 as the only astronomy major in her class. Everyone told he
 
 They were wrong.
 
-![](02-guidance-counselor.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -94,7 +94,7 @@ When she presented her results at the American Astronomical Society in 1950, the
 
 Vera kept her data. Forty years later, astronomers would confirm she was right all along.
 
-![](03-masters-thesis.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -111,7 +111,7 @@ Her PhD research studied the motions of galaxies in clusters—more evidence of 
 
 But Vera was learning patience. The universe reveals its secrets slowly—and so would her career.
 
-![](04-georgetown.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -147,7 +147,7 @@ Everyone expected stars at the galaxy's edge to move slowly—far from the gravi
 
 Vera pointed the spectrograph at the Andromeda Galaxy and began measuring.
 
-![](06-spectrograph.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -164,7 +164,7 @@ Vera checked her instruments. She checked her math. She observed galaxy after ga
 
 Either Newton was wrong, or something enormous and invisible was out there.
 
-![](07-rotation-curves.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -215,7 +215,7 @@ Vera never became bitter about the obstacles she faced. Instead, she became a fi
 
 Her four children all earned PhDs in science or mathematics—a family legacy of curiosity she cultivated with the same care she brought to her galaxies.
 
-![](10-mentoring.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -232,7 +232,7 @@ Vera rarely complained publicly. "Fame is fleeting," she said. "My numbers are r
 
 But many in the scientific community felt the injustice keenly. When she died on Christmas Day 2016 at age 88, obituaries mourned not only a great scientist but a Nobel Prize scandal.
 
-![](11-no-nobel.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -252,7 +252,7 @@ Leading candidates include:
 
 Every experiment that fails to find dark matter particles deepens the mystery. The invisible universe Vera discovered remains invisible—and irresistible.
 
-![](12-dark-matter-hunt.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
