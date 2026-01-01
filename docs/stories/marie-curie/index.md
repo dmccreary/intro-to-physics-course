@@ -1,9 +1,9 @@
 ---
 title: Glowing in the Dark - The Radiant Life of Marie Curie
 description: A graphic-novel story of how Marie Curie discovered radioactivity and became the first person to win two Nobel Prizes.
-image: /stories/marie-curie/cover.jpg
-og:image: /stories/marie-curie/cover.jpg
-twitter:image: /stories/marie-curie/cover.jpg
+image: /stories/marie-curie/cover.png
+og:image: /stories/marie-curie/cover.png
+twitter:image: /stories/marie-curie/cover.png
 social:
    cards: false
 ---

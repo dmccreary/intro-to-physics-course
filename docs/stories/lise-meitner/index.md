@@ -1,9 +1,9 @@
 ---
 title: The Fission Escape - The Untold Story of Lise Meitner
 description: A graphic-novel story of how Lise Meitner discovered nuclear fission while fleeing Nazi persecution, only to be denied the Nobel Prize.
-image: /stories/lise-meitner/cover.jpg
-og:image: /stories/lise-meitner/cover.jpg
-twitter:image: /stories/lise-meitner/cover.jpg
+image: /stories/lise-meitner/cover.png
+og:image: /stories/lise-meitner/cover.png
+twitter:image: /stories/lise-meitner/cover.png
 social:
    cards: false
 ---

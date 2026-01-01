@@ -1,16 +1,16 @@
 ---
 title: The Gold Foil Surprise - Ernest Rutherford Discovers the Atom
 description: A graphic-novel story of how a New Zealand farm boy shot particles at gold and discovered that atoms are mostly empty space.
-image: /stories/rutherford/cover.jpg
-og:image: /stories/rutherford/cover.jpg
-twitter:image: /stories/rutherford/cover.jpg
+image: /stories/rutherford/cover.png
+og:image: /stories/rutherford/cover.png
+twitter:image: /stories/rutherford/cover.png
 social:
    cards: false
 ---
 
 # The Gold Foil Surprise: Ernest Rutherford Discovers the Atom
 
-![](./cover.jpg)
+![](./cover.png)
 
 <details>
     <summary>Narrative Prompt</summary>

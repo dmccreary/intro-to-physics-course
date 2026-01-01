@@ -1,9 +1,9 @@
 ---
 title: The Plague Year - Isaac Newton's Impossible Summer
 description: A graphic-novel story of how Isaac Newton invented modern physics during a pandemic lockdown, then spent decades feuding with everyone.
-image: /stories/newton/cover.jpg
-og:image: /stories/newton/cover.jpg
-twitter:image: /stories/newton/cover.jpg
+image: /stories/newton/cover.png
+og:image: /stories/newton/cover.png
+twitter:image: /stories/newton/cover.png
 social:
    cards: false
 ---

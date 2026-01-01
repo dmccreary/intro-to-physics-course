@@ -1,16 +1,16 @@
 ---
 title: The Troublemaker of Pisa - Galileo's War on Nonsense
 description: A graphic-novel story of how Galileo Galilei fought against 2,000 years of wrong ideas with experiments, telescopes, and world-class sarcasm.
-image: /stories/galileo/cover.jpg
-og:image: /stories/galileo/cover.jpg
-twitter:image: /stories/galileo/cover.jpg
+image: /stories/galileo/cover.png
+og:image: /stories/galileo/cover.png
+twitter:image: /stories/galileo/cover.png
 social:
    cards: false
 ---
 
 # The Troublemaker of Pisa: Galileo's War on Nonsense
 
-![](./cover.jpg)
+![](./cover.png)
 
 <details>
     <summary>Narrative Prompt</summary>

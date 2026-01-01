@@ -1,9 +1,9 @@
 ---
 title: The Missing Universe - Vera Rubin and Dark Matter
 description: A graphic-novel story of how Vera Rubin discovered that most of the universe is invisible, revolutionizing our understanding of gravity and galaxies.
-image: /stories/vera-rubin/cover.jpg
-og:image: /stories/vera-rubin/cover.jpg
-twitter:image: /stories/vera-rubin/cover.jpg
+image: /stories/vera-rubin/cover.png
+og:image: /stories/vera-rubin/cover.png
+twitter:image: /stories/vera-rubin/cover.png
 social:
    cards: false
 ---

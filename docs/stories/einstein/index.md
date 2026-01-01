@@ -1,16 +1,16 @@
 ---
 title: The Patent Clerk's Daydream - Einstein's Miracle Year
 description: A graphic-novel story of how a failed academic who couldn't get a teaching job revolutionized physics while examining patent applications.
-image: /stories/einstein/cover.jpg
-og:image: /stories/einstein/cover.jpg
-twitter:image: /stories/einstein/cover.jpg
+image: /stories/einstein/cover.png
+og:image: /stories/einstein/cover.png
+twitter:image: /stories/einstein/cover.png
 social:
    cards: false
 ---
 
 # The Patent Clerk's Daydream: Einstein's Miracle Year
 
-![](./cover.jpg)
+![](./cover.png)
 
 <details>
     <summary>Narrative Prompt</summary>

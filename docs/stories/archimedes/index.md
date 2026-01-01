@@ -1,9 +1,9 @@
 ---
 title: Eureka! - The Genius of Archimedes
 description: A graphic-novel story of how Archimedes discovered the principles of buoyancy and density while solving a royal mystery.
-image: /stories/archimedes/cover.jpg
-og:image: /stories/archimedes/cover.jpg
-twitter:image: /stories/archimedes/cover.jpg
+image: /stories/archimedes/cover.png
+og:image: /stories/archimedes/cover.png
+twitter:image: /stories/archimedes/cover.png
 social:
    cards: false
 ---
@@ -190,7 +190,7 @@ He leaped from the bath and ran through the streets of Syracuse, completely nake
 
 The goldsmith was doomed.
 
-![](image-07.jpg)
+![](image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.

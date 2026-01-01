@@ -1,9 +1,9 @@
 ---
 title: The Bookbinder's Apprentice - Michael Faraday's Impossible Rise
 description: A graphic-novel story of how a poor, self-taught bookbinder's apprentice became the greatest experimental physicist in history and invented the electric age.
-image: /stories/faraday/cover.jpg
-og:image: /stories/faraday/cover.jpg
-twitter:image: /stories/faraday/cover.jpg
+image: /stories/faraday/cover.png
+og:image: /stories/faraday/cover.png
+twitter:image: /stories/faraday/cover.png
 social:
    cards: false
 ---

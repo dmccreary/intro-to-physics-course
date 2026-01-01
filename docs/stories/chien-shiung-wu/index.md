@@ -1,16 +1,16 @@
 ---
 title: Breaking Parity - Chien-Shiung Wu and the Fall of a Law
 description: A graphic-novel story of how Chien-Shiung Wu's brilliant experiment overturned a fundamental law of physics, only to be denied the Nobel Prize.
-image: /stories/chien-shiung-wu/cover.jpg
-og:image: /stories/chien-shiung-wu/cover.jpg
-twitter:image: /stories/chien-shiung-wu/cover.jpg
+image: /stories/chien-shiung-wu/cover.png
+og:image: /stories/chien-shiung-wu/cover.png
+twitter:image: /stories/chien-shiung-wu/cover.png
 social:
    cards: false
 ---
 
 # Breaking Parity: Chien-Shiung Wu and the Fall of a Law
 
-![](./cover.jpg)
+![](./cover.png)
 <details>
 <summary>Cover Prompt</summary>
   Create a colorful, bright wide-landscape 16:9 cover illustration in a mid-20th century scientific style bridging Chinese and American visual traditions.
