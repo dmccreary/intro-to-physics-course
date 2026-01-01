@@ -294,22 +294,27 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Applications of Oscillations](./oscillation-applications/index.md)**
 
+    ![Applications of Oscillations](./oscillation-applications/oscillation-applications.png)
     Interactive radial infographic showing how oscillation principles apply across medicine, architecture, music, transportation, electronics, and sports.
 
 - **[Simple vs Physical Pendulum](./pendulum-comparison/index.md)**
 
+    ![Simple vs Physical Pendulum](./pendulum-comparison/pendulum-comparison.png)
     Side-by-side animated comparison showing the differences between simple and physical pendulums.
 
 - **[Period, Frequency, and Angular Frequency](./period-frequency-relationship/index.md)**
 
+    ![Period, Frequency, and Angular Frequency](./period-frequency-relationship/period-frequency-relationship.png)
     Interactive infographic showing the mathematical relationships between period, frequency, and angular frequency with live calculations.
 
 - **[Position-Time Graph Analyzer](./position-time-analyzer/index.md)**
 
+    ![Position-Time Graph Analyzer](./position-time-analyzer/position-time-analyzer.png)
     Interactive tool for learning to interpret position-time graphs with animated objects and tangent line analysis.
 
 - **[Potential Energy Comparison Chart](./potential-energy-chart/index.md)**
 
+    ![Potential Energy Comparison Chart](./potential-energy-chart/potential-energy-chart.png)
     Grouped bar chart comparing gravitational and elastic potential energy across different scenarios.
 
 - **[Precision vs Accuracy](./precision-accuracy/index.md)**
@@ -319,6 +324,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Projectile Motion](./projectile-motion/index.md)**
 
+    ![Projectile Motion](./projectile-motion/projectile-motion.png)
     A MicroSim demonstrating parabolic trajectories of projectiles with controls for launch angle and power.
 
 - **[Projectile Motion with Gravity](./projectile-motion-gravity/index.md)**
@@ -328,14 +334,17 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Pulley Mechanical Advantage](./pulley-mechanical-advantage/index.md)**
 
+    ![Pulley Mechanical Advantage](./pulley-mechanical-advantage/pulley-mechanical-advantage.png)
     Interactive comparison of three pulley configurations showing how mechanical advantage increases with system complexity.
 
 - **[Relative Velocity Solver](./relative-velocity/index.md)**
 
+    ![Relative Velocity Solver](./relative-velocity/relative-velocity.png)
     Interactive tool for visualizing and solving relative velocity problems with two moving objects in 2D.
 
 - **[Resonance Amplitude vs Frequency](./resonance-graph/index.md)**
 
+    ![Resonance Amplitude vs Frequency](./resonance-graph/resonance-graph.png)
     Interactive graph showing how oscillation amplitude depends on driving frequency and damping level.
 
 - **[River Crossing Relative Velocity](./river-crossing/index.md)**
@@ -345,46 +354,57 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Rocket Propulsion Diagram](./rocket-propulsion/index.md)**
 
+    ![Rocket Propulsion Diagram](./rocket-propulsion/rocket-propulsion.png)
     Interactive visualization showing momentum conservation in rocket propulsion with exhaust gases.
 
 - **[Roller Coaster Energy Conservation](./roller-coaster-energy/index.md)**
 
+    ![Roller Coaster Energy Conservation](./roller-coaster-energy/roller-coaster-energy.png)
     Interactive simulation showing energy transformation between kinetic and potential energy on a roller coaster.
 
 - **[Energy Distribution in Rolling Objects](./rolling-energy-distribution/index.md)**
 
+    ![Energy Distribution in Rolling Objects](./rolling-energy-distribution/rolling-energy-distribution.png)
     Stacked bar chart showing how kinetic energy is split between translational and rotational components for different rolling objects.
 
 - **[Rolling Motion Velocity Vectors](./rolling-velocity-vectors/index.md)**
 
+    ![Rolling Motion Velocity Vectors](./rolling-velocity-vectors/rolling-velocity-vectors.png)
     Visualize how velocity vectors at different points on a rolling wheel combine translational and rotational motion.
 
 - **[Real-World Rotational Applications](./rotational-applications/index.md)**
 
+    ![Real-World Rotational Applications](./rotational-applications/rotational-applications.png)
     Interactive infographic showing 12 real-world applications of rotational motion across engineering, sports, and natural phenomena.
 
 - **[Rotational Inertia Race](./rotational-inertia-race/index.md)**
 
+    ![Rotational Inertia Race](./rotational-inertia-race/rotational-inertia-race.png)
     Race different shaped objects down a ramp to see how rotational inertia affects acceleration.
 
 - **[Rotational Kinematics Solver](./rotational-kinematics-solver/index.md)**
 
+    ![Rotational Kinematics Solver](./rotational-kinematics-solver/rotational-kinematics-solver.png)
     Interactive tool for solving rotational kinematics problems with animated visualization and real-time graphs.
 
 - **[Scientific Method Workflow](./scientific-method/index.md)**
 
+    ![Scientific Method Workflow](./scientific-method/scientific-method.png)
     Overview of the scientific method as an interactive flowchart showing all steps and decision points.
 
 - **[Series vs Parallel Circuit Comparison](./series-parallel/index.md)**
 
+    ![Series vs Parallel Circuit Comparison](./series-parallel/series-parallel.png)
     An interactive side-by-side comparison of series and parallel circuits showing current flow, voltage distribution, and failure behavior.
 
 - **[Energy Transformation in SHM](./shm-energy/index.md)**
 
+    ![Energy Transformation in SHM](./shm-energy/shm-energy.png)
     Animated bar chart showing how kinetic and potential energy transform during oscillation while total energy remains constant.
 
 - **[Position, Velocity, and Acceleration in SHM](./shm-motion-graphs/index.md)**
 
+    ![Position, Velocity, and Acceleration in SHM](./shm-motion-graphs/shm-motion-graphs.png)
     Visualize how position, velocity, and acceleration change during simple harmonic motion and understand their phase relationships.
 
 - **[Simple Pendulum Period Investigation](./simple-pendulum/index.md)**
@@ -394,6 +414,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Snell's Law Refraction](./snells-law/index.md)**
 
+    ![Snell's Law Refraction](./snells-law/snells-law.png)
     An interactive MicroSim demonstrating refraction at a boundary between two media using Snell's Law.
 
 - **[Solar System](./solar-system/index.md)**
@@ -403,34 +424,42 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Standing Waves on a String](./standing-waves/index.md)**
 
+    ![Standing Waves on a String](./standing-waves/standing-waves.png)
     An interactive MicroSim visualizing standing wave patterns, nodes, antinodes, and harmonics on a vibrating string.
 
 - **[Static Friction](./static-friction/index.md)**
 
+    ![Static Friction](./static-friction/static-friction.png)
     Interactive demonstration of static friction responding to applied force and transitioning to kinetic friction.
 
 - **[Tacoma Narrows Bridge Timeline](./tacoma-narrows-timeline/index.md)**
 
+    ![Tacoma Narrows Bridge Timeline](./tacoma-narrows-timeline/tacoma-narrows-timeline.png)
     Interactive timeline showing the sequence of events on November 7, 1940 when resonance destroyed the Tacoma Narrows Bridge.
 
 - **[Tension Force Diagram](./tension-force-diagram/index.md)**
 
+    ![Tension Force Diagram](./tension-force-diagram/tension-force-diagram.png)
     Interactive visualization demonstrating how tension forces act within a rope and on connected objects.
 
 - **[Three-Graph Motion Analyzer](./three-graph-analyzer/index.md)**
 
+    ![Three-Graph Motion Analyzer](./three-graph-analyzer/three-graph-analyzer.png)
     Shows synchronized position, velocity, and acceleration graphs demonstrating their mathematical relationships.
 
 - **[Interactive Torque Diagram](./torque-diagram/index.md)**
 
+    ![Interactive Torque Diagram](./torque-diagram/torque-diagram.png)
     Explore how torque depends on force magnitude, position, and angle with this interactive lever simulation.
 
 - **[Transverse Wave Animation](./transverse-wave/index.md)**
 
+    ![Transverse Wave Animation](./transverse-wave/transverse-wave.png)
     An interactive MicroSim demonstrating how particles in a transverse wave move perpendicular to the wave propagation direction.
 
 - **[Uniform vs Accelerated Motion](./uniform-accelerated-motion/index.md)**
 
+    ![Uniform vs Accelerated Motion](./uniform-accelerated-motion/uniform-accelerated-motion.png)
     Side-by-side comparison of position, velocity, and acceleration graphs for uniform and uniformly accelerated motion.
 
 - **[Variable Force Work Calculation](./variable-force-work/index.md)**
@@ -440,38 +469,47 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Vector Addition](./vector-addition/index.md)**
 
+    ![Vector Addition](./vector-addition/vector-addition.png)
     An interactive visualization demonstrating both graphical (tip-to-tail) and component methods of vector addition.
 
 - **[Vector Basics](./vector-basics/index.md)**
 
+    ![Vector Basics](./vector-basics/vector-basics.png)
     An interactive visualization teaching how vectors are represented graphically with magnitude, direction, and component decomposition.
 
 - **[Vector Components](./vector-components/index.md)**
 
+    ![Vector Components](./vector-components/vector-components.png)
     Interactive diagram showing how 2D vectors decompose into horizontal and vertical components using trigonometry.
 
 - **[Velocity vs Speed Comparison](./velocity-speed-comparison/index.md)**
 
+    ![Velocity vs Speed Comparison](./velocity-speed-comparison/velocity-speed-comparison.png)
     An interactive comparison showing scenarios where speed and velocity differ, helping students distinguish between these concepts.
 
 - **[Velocity-Time Graph Area Calculator](./velocity-time-area/index.md)**
 
+    ![Velocity-Time Graph Area Calculator](./velocity-time-area/velocity-time-area.png)
     Interactive tool demonstrating that the area under a velocity-time curve equals displacement.
 
 - **[Two-Source Wave Interference](./wave-interference/index.md)**
 
+    ![Two-Source Wave Interference](./wave-interference/wave-interference.png)
     An interactive MicroSim demonstrating constructive and destructive interference patterns from two coherent wave sources.
 
 - **[Weight in Different Gravitational Fields](./weight-gravity/index.md)**
 
+    ![Weight in Different Gravitational Fields](./weight-gravity/weight-gravity.png)
     Interactive comparison of how weight changes while mass stays constant across different celestial bodies.
 
 - **[Work-Energy Theorem](./work-energy-theorem/index.md)**
 
+    ![Work-Energy Theorem](./work-energy-theorem/work-energy-theorem.png)
     Interactive demonstration showing how net work equals change in kinetic energy.
 
 - **[Work Scenarios](./work-scenarios/index.md)**
 
+    ![Work Scenarios](./work-scenarios/work-scenarios.png)
     Interactive diagram showing how the angle between force and displacement affects work done.
 
 </div>
