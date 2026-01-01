@@ -1,0 +1,15 @@
+{
+  "title": "Rolling Velocity Vectors",
+  "description": "Interactive simulation showing velocity vectors at different points on a rolling wheel. Demonstrates how linear and rotational velocities combine.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["rotation", "velocity", "physics", "rolling motion"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["rolling motion", "tangential velocity", "center of mass velocity", "velocity addition", "instantaneous velocity"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Angular velocity", "Linear velocity", "Vector addition"]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Energy Efficiency Comparison",
+  "description": "Interactive infographic comparing energy efficiency across 16 common devices and processes, demonstrating how different technologies convert input energy to useful output.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["physics", "energy", "efficiency", "thermodynamics", "power generation", "heat transfer", "conservation of energy"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "Vanilla JavaScript",
+  "concepts": ["energy efficiency", "energy conversion", "heat loss", "coefficient of performance", "second law of thermodynamics"],
+  "educationalLevel": "High School",
+  "bloomsLevel": ["Understanding", "Analyzing", "Evaluating"]
+}

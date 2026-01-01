@@ -1,0 +1,15 @@
+{
+  "title": "Law of Reflection",
+  "description": "Interactive diagram demonstrating the law of reflection where the angle of incidence equals the angle of reflection. Adjust incident angle and observe reflected ray behavior.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["optics", "reflection", "light", "physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["law of reflection", "angle of incidence", "angle of reflection", "normal line", "ray diagrams"],
+  "bloomsLevel": ["Understand", "Apply"],
+  "prerequisites": ["Light", "Angles", "Geometry"]
+}

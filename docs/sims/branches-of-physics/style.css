@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: aliceblue;
+  font-family: Arial, sans-serif;
+}
+#network {
+  width: 100%;
+  height: calc(100% - 60px);
+  background: #fff;
+}
+#titlebar {
+  padding: 10px 16px;
+  background: aliceblue;
+  color: black;
+  font-size: 16px;
+}
+#subtitle {
+  font-size: 12px;
+  color: black;
+}
+
+/* Navigation button styles for vis-network */
+div.vis-network div.vis-navigation div.vis-button {
+  background-color: aliceblue;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+div.vis-network div.vis-navigation div.vis-button:hover {
+  background-color: #e0e0e0;
+}
+div.vis-network div.vis-navigation div.vis-button:active {
+  background-color: #d0d0d0;
+}

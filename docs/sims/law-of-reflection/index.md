@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Law of Reflection
 description: An interactive MicroSim demonstrating that the angle of incidence equals the angle of reflection.
 ---

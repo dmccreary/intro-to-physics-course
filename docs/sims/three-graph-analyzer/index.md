@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Three-Graph Motion Analyzer
 description: Shows synchronized position, velocity, and acceleration graphs demonstrating their mathematical relationships.
 ---

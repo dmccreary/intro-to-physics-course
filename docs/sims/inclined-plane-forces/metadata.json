@@ -1,0 +1,15 @@
+{
+  "title": "Inclined Plane Force Decomposition",
+  "description": "Interactive diagram showing how to properly decompose weight into parallel and perpendicular components on an inclined plane. Adjust angle, mass, and friction coefficient.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["forces", "inclined plane", "physics", "dynamics", "trigonometry"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["force decomposition", "inclined plane", "normal force", "parallel component", "perpendicular component", "friction"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Forces", "Trigonometry", "Friction", "Vector components"]
+}

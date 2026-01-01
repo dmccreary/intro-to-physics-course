@@ -5,11 +5,16 @@ let canvasWidth = 850;
 let drawHeight = 450;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
+let margin = 20;
 
 // Sliders
 let drivingFreqSlider;
 let drivingForceSlider;
 let dampingSlider;
+
+// Buttons
+let startButton;
+let resetButton;
 
 // System parameters
 let mass = 1.0;
@@ -42,20 +47,24 @@ function setup() {
     naturalFrequency = omega0 / (2 * PI);
 
     // Create sliders
-    let sliderY = drawHeight + 25;
-    drivingFreqSlider = createSlider(0.1, 3.0, 1.0, 0.05);
-    drivingFreqSlider.position(100, sliderY);
-    drivingFreqSlider.size(120);
-
-    drivingForceSlider = createSlider(1, 20, 5, 1);
-    drivingForceSlider.position(350, sliderY);
-    drivingForceSlider.size(120);
-
+    drivingFreqSlider = createSlider(0, 3.0, 1.0, 0.05);
+    drivingForceSlider = createSlider(0, 20, 5, 1);
     dampingSlider = createSlider(0.1, 2.0, 0.5, 0.1);
-    dampingSlider.position(600, sliderY);
-    dampingSlider.size(120);
+
+    // Create buttons
+    startButton = createButton('Start');
+    startButton.mousePressed(toggleRunning);
+
+    resetButton = createButton('Reset');
+    resetButton.mousePressed(resetSimulation);
+
+    // Position sliders and buttons responsively
+    positionControls();
 
     describe('Interactive driven oscillator simulation showing resonance when driving frequency matches natural frequency', LABEL);
+
+    // Notify parent frame of initial size
+    window.parent.postMessage({ type: 'microsim-resize', height: canvasHeight }, '*');
 }
 
 function draw() {
@@ -84,17 +93,33 @@ function draw() {
     noStroke();
     text('Driven Oscillator: Exploring Resonance', canvasWidth / 2, 10);
 
-    // Draw oscillator visualization
-    drawOscillator(150, 180);
+    // Calculate responsive panel dimensions
+    let leftPanelX = margin;
+    let leftPanelY = 40;
+    let leftPanelW = canvasWidth / 3 - margin - margin / 2;
+    let leftPanelH = drawHeight - leftPanelY - margin;
 
-    // Draw amplitude graph
-    drawAmplitudeGraph(450, 50, 350, 200);
+    let rightPanelX = canvasWidth / 3 + margin / 2;
+    let rightPanelW = 2 * canvasWidth / 3 - margin - margin / 2;
+    let rightPanelY = 40;
+    let rightAvailableH = drawHeight - rightPanelY - margin;
 
-    // Draw resonance indicator
-    drawResonanceIndicator(450, 280, 350, 100);
+    // Right panel heights (proportional)
+    let graphH = rightAvailableH * 0.5;
+    let resonanceH = rightAvailableH * 0.3;
+    let infoH = rightAvailableH * 0.2 - margin;
 
-    // Draw info panel
-    drawInfoPanel(450, 390, 350, 50);
+    // Draw oscillator visualization (left panel - 1/3)
+    drawOscillator(leftPanelX, leftPanelY, leftPanelW, leftPanelH);
+
+    // Draw amplitude graph (right panel top - 2/3)
+    drawAmplitudeGraph(rightPanelX, rightPanelY, rightPanelW, graphH);
+
+    // Draw resonance indicator (right panel middle)
+    drawResonanceIndicator(rightPanelX, rightPanelY + graphH + margin / 2, rightPanelW, resonanceH);
+
+    // Draw info panel (right panel bottom)
+    drawInfoPanel(rightPanelX, rightPanelY + graphH + resonanceH + margin, rightPanelW, infoH);
 
     // Update physics if running
     if (isRunning) {
@@ -105,37 +130,42 @@ function draw() {
     drawControlLabels();
 }
 
-function drawOscillator(cx, cy) {
-    let springX = 50;
-    let equilibriumX = cx;
-    let displacement = x * 50; // Scale for display
-
+function drawOscillator(px, py, pw, ph) {
     // Background panel
     fill(255);
     stroke(200);
     strokeWeight(1);
-    rect(30, 50, 280, 280, 8);
+    rect(px, py, pw, ph, 8);
+
+    // Calculate positions relative to panel
+    let centerY = py + ph * 0.45;
+    let springX = px + 20;
+    let equilibriumX = px + pw * 0.55;
+    let displacementScale = pw * 0.15;
+    let displacement = x * displacementScale;
+    let massSize = min(50, pw * 0.18);
 
     // Wall
     fill(100);
     noStroke();
-    rect(springX - 10, cy - 60, 15, 120);
+    rect(springX - 10, centerY - 60, 15, 120);
 
     // Equilibrium line (dashed)
     stroke(150);
     strokeWeight(1);
     setLineDash([5, 5]);
-    line(equilibriumX, cy - 50, equilibriumX, cy + 50);
+    line(equilibriumX, centerY - 50, equilibriumX, centerY + 50);
     setLineDash([]);
 
     // Label
     fill(120);
+    noStroke();
     textSize(9);
     textAlign(CENTER, TOP);
-    text('equilibrium', equilibriumX, cy + 55);
+    text('equilibrium', equilibriumX, centerY + 55);
 
     // Spring
-    drawSpring(springX, cy, equilibriumX + displacement - 25, cy);
+    drawSpring(springX, centerY, equilibriumX + displacement - massSize / 2, centerY);
 
     // Mass
     let massX = equilibriumX + displacement;
@@ -143,7 +173,7 @@ function drawOscillator(cx, cy) {
     stroke(50, 100, 180);
     strokeWeight(2);
     rectMode(CENTER);
-    rect(massX, cy, 50, 50, 5);
+    rect(massX, centerY, massSize, massSize, 5);
     rectMode(CORNER);
 
     // Driving force arrow
@@ -155,42 +185,42 @@ function drawOscillator(cx, cy) {
         if (abs(arrowLength) > 5) {
             stroke(230, 100, 50);
             strokeWeight(3);
-            let arrowStart = massX + 30;
+            let arrowStart = massX + massSize / 2 + 5;
             let arrowEnd = arrowStart + arrowLength;
-            line(arrowStart, cy, arrowEnd, cy);
+            line(arrowStart, centerY, arrowEnd, centerY);
 
             // Arrowhead
             fill(230, 100, 50);
             noStroke();
             if (arrowLength > 0) {
-                triangle(arrowEnd, cy, arrowEnd - 8, cy - 5, arrowEnd - 8, cy + 5);
+                triangle(arrowEnd, centerY, arrowEnd - 8, centerY - 5, arrowEnd - 8, centerY + 5);
             } else {
-                triangle(arrowEnd, cy, arrowEnd + 8, cy - 5, arrowEnd + 8, cy + 5);
+                triangle(arrowEnd, centerY, arrowEnd + 8, centerY - 5, arrowEnd + 8, centerY + 5);
             }
         }
     }
 
     // Force label
     fill(230, 100, 50);
+    noStroke();
     textSize(10);
     textAlign(CENTER, TOP);
-    text('Driving Force', equilibriumX + 50, cy + 35);
+    text('Driving Force', equilibriumX + 30, centerY + 35);
 
     // Natural frequency display
     fill(60);
+    noStroke();
     textSize(11);
     textAlign(LEFT, TOP);
-    text('Natural frequency:', 40, 60);
-    text('ω₀ = ' + omega0.toFixed(1) + ' rad/s', 40, 75);
-    text('f₀ = ' + naturalFrequency.toFixed(2) + ' Hz', 40, 90);
+    let textX = px + 10;
+    let textY = py + 10;
+    text('Natural frequency:', textX, textY);
+    text('ω₀ = ' + omega0.toFixed(1) + ' rad/s', textX, textY + 15);
+    text('f₀ = ' + naturalFrequency.toFixed(2) + ' Hz', textX, textY + 30);
 
     // Current state
-    text('Displacement: ' + x.toFixed(3) + ' m', 40, 115);
-    text('Velocity: ' + v.toFixed(3) + ' m/s', 40, 130);
-
-    // Buttons
-    drawButton(70, 280, 80, 30, isRunning ? 'Pause' : 'Start', color(70, 130, 220));
-    drawButton(170, 280, 80, 30, 'Reset', color(150));
+    text('Displacement: ' + x.toFixed(3) + ' m', textX, textY + 55);
+    text('Velocity: ' + v.toFixed(3) + ' m/s', textX, textY + 70);
 }
 
 function drawSpring(x1, y1, x2, y2) {
@@ -259,6 +289,7 @@ function drawAmplitudeGraph(gx, gy, gw, gh) {
 
     // Labels
     fill(100);
+    noStroke();
     textSize(9);
     textAlign(CENTER, TOP);
     text('Time', gx + gw/2, gy + gh - 15);
@@ -266,11 +297,13 @@ function drawAmplitudeGraph(gx, gy, gw, gh) {
     push();
     translate(gx + 15, gy + gh/2);
     rotate(-PI/2);
+    noStroke();
     textAlign(CENTER, BOTTOM);
     text('x (m)', 0, 0);
     pop();
 
     // Max amplitude indicator
+    noStroke();
     textAlign(RIGHT, TOP);
     text('Max: ' + maxAmplitude.toFixed(3) + ' m', gx + gw - 15, gy + 25);
 }
@@ -319,6 +352,7 @@ function drawResonanceIndicator(rx, ry, rw, rh) {
     line(resonanceX, barY - 5, resonanceX, barY + barHeight + 5);
 
     fill(0);
+    noStroke();
     textSize(9);
     textAlign(CENTER, BOTTOM);
     text('Resonance', resonanceX, barY - 6);
@@ -343,6 +377,7 @@ function drawResonanceIndicator(rx, ry, rw, rh) {
     // Warning if near resonance
     if (drivingFreqRatio > 0.85 && drivingFreqRatio < 1.15) {
         fill(200, 50, 50);
+        noStroke();
         textSize(12);
         textAlign(RIGHT, CENTER);
         text('⚠ Near Resonance!', rx + rw - 10, ry + 35);
@@ -369,47 +404,59 @@ function drawInfoPanel(ix, iy, iw, ih) {
 
     // Phase info
     let phase = atan2(2*zeta*r, 1 - r*r);
+    noStroke();
     textAlign(RIGHT, CENTER);
     text('Phase lag: ' + (phase * 180 / PI).toFixed(1) + '°', ix + iw - 15, iy + ih/2);
 }
 
 function drawControlLabels() {
+    // Update button text
+    startButton.html(isRunning ? 'Pause' : 'Start');
+
+    // Calculate slider positions (distribute across remaining width)
+    let sliderAreaStart = margin + 100;
+    let sliderAreaWidth = canvasWidth - sliderAreaStart - margin;
+    let sliderSpacing = sliderAreaWidth / 3;
+
+    let slider1X = sliderAreaStart + sliderSpacing * 0.5;
+    let slider2X = sliderAreaStart + sliderSpacing * 1.5;
+    let slider3X = sliderAreaStart + sliderSpacing * 2.5;
+
     fill(60);
     textSize(11);
     textAlign(CENTER, TOP);
     noStroke();
 
     // Driving frequency
-    text('Driving Frequency', 160, drawHeight + 8);
-    text('ωd/ω₀ = ' + drivingFreqRatio.toFixed(2), 160, drawHeight + 50);
+    text('Driving Frequency', slider1X, drawHeight + 8);
+    text('ωd/ω₀ = ' + drivingFreqRatio.toFixed(2), slider1X, drawHeight + 50);
 
     // Driving force
-    text('Driving Force F₀', 410, drawHeight + 8);
-    text(drivingForce + ' N', 410, drawHeight + 50);
+    text('Driving Force F₀', slider2X, drawHeight + 8);
+    text(drivingForce + ' N', slider2X, drawHeight + 50);
 
     // Damping
-    text('Damping b', 660, drawHeight + 8);
-    text(damping.toFixed(1) + ' kg/s', 660, drawHeight + 50);
+    text('Damping b', slider3X, drawHeight + 8);
+    text(damping.toFixed(1) + ' kg/s', slider3X, drawHeight + 50);
 
     // Instructions
     fill(100);
+    noStroke();
     textSize(10);
-    text('Adjust sliders and click Start to observe driven oscillation', canvasWidth/2, drawHeight + 75);
+    text('Adjust sliders and click Start to observe driven oscillation', canvasWidth / 2, drawHeight + 75);
 }
 
-function drawButton(bx, by, bw, bh, label, col) {
-    let isHovered = mouseX > bx && mouseX < bx + bw && mouseY > by && mouseY < by + bh;
+function toggleRunning() {
+    isRunning = !isRunning;
+}
 
-    fill(isHovered ? lerpColor(col, color(255), 0.2) : col);
-    stroke(100);
-    strokeWeight(1);
-    rect(bx, by, bw, bh, 5);
-
-    fill(255);
-    textSize(12);
-    textAlign(CENTER, CENTER);
-    noStroke();
-    text(label, bx + bw/2, by + bh/2);
+function resetSimulation() {
+    x = 0;
+    v = 0;
+    t = 0;
+    amplitudeHistory = [];
+    maxAmplitude = 0;
+    isRunning = false;
 }
 
 function updatePhysics() {
@@ -442,23 +489,6 @@ function updatePhysics() {
     maxAmplitude = recentMax;
 }
 
-function mousePressed() {
-    // Check Start/Pause button
-    if (mouseX > 70 && mouseX < 150 && mouseY > 280 && mouseY < 310) {
-        isRunning = !isRunning;
-    }
-
-    // Check Reset button
-    if (mouseX > 170 && mouseX < 250 && mouseY > 280 && mouseY < 310) {
-        x = 0;
-        v = 0;
-        t = 0;
-        amplitudeHistory = [];
-        maxAmplitude = 0;
-        isRunning = false;
-    }
-}
-
 function setLineDash(list) {
     drawingContext.setLineDash(list);
 }
@@ -466,11 +496,39 @@ function setLineDash(list) {
 function windowResized() {
     updateCanvasSize();
     resizeCanvas(canvasWidth, canvasHeight);
+    positionControls();
+}
 
+function positionControls() {
+    // Position buttons
+    let buttonWidth = 80;
+    startButton.position(margin, drawHeight + 20);
+    startButton.size(buttonWidth, 30);
+
+    resetButton.position(margin, drawHeight + 55);
+    resetButton.size(buttonWidth, 30);
+
+    // Position sliders
     let sliderY = drawHeight + 25;
-    drivingFreqSlider.position(100, sliderY);
-    drivingForceSlider.position(350, sliderY);
-    dampingSlider.position(600, sliderY);
+    let sliderWidth = 200;
+
+    // Calculate slider positions (distribute across remaining width after buttons)
+    let sliderAreaStart = margin + 100;
+    let sliderAreaWidth = canvasWidth - sliderAreaStart - margin;
+    let sliderSpacing = sliderAreaWidth / 3;
+
+    let slider1X = sliderAreaStart + sliderSpacing * 0.5 - sliderWidth / 2;
+    let slider2X = sliderAreaStart + sliderSpacing * 1.5 - sliderWidth / 2;
+    let slider3X = sliderAreaStart + sliderSpacing * 2.5 - sliderWidth / 2;
+
+    drivingFreqSlider.position(slider1X, sliderY);
+    drivingFreqSlider.size(sliderWidth);
+
+    drivingForceSlider.position(slider2X, sliderY);
+    drivingForceSlider.size(sliderWidth);
+
+    dampingSlider.position(slider3X, sliderY);
+    dampingSlider.size(sliderWidth);
 }
 
 function updateCanvasSize() {

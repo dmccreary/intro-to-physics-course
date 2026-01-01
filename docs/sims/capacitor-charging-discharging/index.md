@@ -4,7 +4,7 @@ description: Interactive simulation showing how capacitors store and release ene
 image: /sims/capacitor-charging-discharging/capacitor-charging-discharging.png
 og:image: /sims/capacitor-charging-discharging/capacitor-charging-discharging.png
 twitter:image: /sims/capacitor-charging-discharging/capacitor-charging-discharging.png
-quality_score: 85
+quality_score: 90
 ---
 
 # Capacitor Charging and Discharging

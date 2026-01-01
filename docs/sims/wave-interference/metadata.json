@@ -1,0 +1,15 @@
+{
+  "title": "Wave Interference",
+  "description": "Interactive simulation demonstrating constructive and destructive wave interference. Shows how waves superpose based on their relative phases.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["waves", "interference", "physics", "superposition"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["wave interference", "constructive interference", "destructive interference", "superposition", "phase difference"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Wave properties", "Amplitude", "Phase"]
+}

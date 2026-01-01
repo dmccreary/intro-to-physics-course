@@ -3,7 +3,7 @@ title: Elastic Collisions
 description: Interactive simulation demonstrating elastic collisions between particles of varying masses, showing momentum and energy conservation with velocity vectors and collision visualization.
 image: /sims/collisions/collisions.png
 og:image: /sims/collisions/collisions.png
-quality_score: 90
+quality_score: 95
 ---
 
 # Elastic Collisions

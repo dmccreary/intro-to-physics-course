@@ -1,3 +1,7 @@
+---
+quality_score: 67
+---
+
 # Scientific Method Workflow
 
 ## Overview

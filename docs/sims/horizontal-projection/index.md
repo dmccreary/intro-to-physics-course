@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Horizontal Projection
 description: Interactive simulation demonstrating that objects with different horizontal velocities but same initial height hit the ground simultaneously.
 ---

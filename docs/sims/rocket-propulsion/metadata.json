@@ -1,0 +1,15 @@
+{
+  "title": "Rocket Propulsion",
+  "description": "Interactive simulation demonstrating rocket propulsion through conservation of momentum. Shows how exhaust velocity and mass flow rate affect thrust.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["momentum", "propulsion", "physics", "rockets"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["rocket propulsion", "thrust", "momentum conservation", "exhaust velocity", "mass flow rate"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Momentum", "Conservation of momentum", "Newton's third law"]
+}

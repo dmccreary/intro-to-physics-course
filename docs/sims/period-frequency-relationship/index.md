@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Period, Frequency, and Angular Frequency Relationships
 description: Interactive infographic showing the mathematical relationships between period, frequency, and angular frequency with live calculations.
 ---

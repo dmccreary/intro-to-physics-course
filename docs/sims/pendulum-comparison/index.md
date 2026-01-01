@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Simple vs. Physical Pendulum Comparison
 description: Side-by-side animated comparison showing the differences between simple and physical pendulums.
 ---

@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Rolling Motion Velocity Vectors
 description: Visualize how velocity vectors at different points on a rolling wheel combine translational and rotational motion.
 ---

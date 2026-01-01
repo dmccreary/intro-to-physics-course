@@ -1,3 +1,11 @@
+---
+title: Branches of Physics Dependency Graph
+description: Interactive vis-network visualization showing 11 major physics branches and 33 subbranches with their prerequisite dependencies
+image: /sims/branches-of-physics/branches-of-physics.png
+og:image: /sims/branches-of-physics/branches-of-physics.png
+quality_score: 100
+---
+
 # Branches of Physics Dependency Graph
 
 ## Overview
@@ -6,12 +14,14 @@ Physics is a vast discipline organized into interconnected branches, each focusi
 
 ## Interactive Visualization
 
-<iframe src="main.html" width="100%" height="1000px" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="800px" scrolling="no"></iframe>
 
-[View Fullscreen](./main.html)
+[Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
+
+Copy this iframe to your website:
 
 ```html
-<iframe src="main.html" width="100%" height="1000px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/branches-of-physics/main.html" width="100%" height="600px"></iframe>
 ```
 
 ## Understanding the Graph
@@ -165,3 +175,60 @@ Consider these questions:
 3. Why does Biophysics depend on three major branches (Classical, Electromagnetic, and Quantum)? What aspects of living systems require each type of physics?
 
 Use the interactive graph to trace these dependency paths and explore the relationships between different areas of physics.
+
+## Lesson Plan
+
+### Learning Objectives
+
+By the end of this lesson, students will be able to:
+
+1. Identify the 11 major branches of physics and their primary focus areas
+2. Explain why classical mechanics and electromagnetism serve as foundational prerequisites
+3. Trace dependency paths between different physics branches
+4. Recognize cross-disciplinary connections in modern physics research
+
+### Target Audience
+
+- High school physics students (grades 10-12)
+- Students beginning undergraduate physics studies
+- Anyone interested in understanding how physics is organized as a discipline
+
+### Prerequisites
+
+- Basic understanding of what physics studies
+- Familiarity with terms like mechanics, electricity, and waves
+
+### Activities
+
+**Activity 1: Foundation Exploration (10 minutes)**
+
+1. Click on "Classical Mechanics" and observe all branches that depend on it
+2. Count how many direct and indirect dependencies exist
+3. Discuss: Why is classical mechanics so fundamental?
+
+**Activity 2: Path Tracing (15 minutes)**
+
+1. Find the path from Classical Mechanics to Cosmology
+2. Identify all prerequisite branches needed
+3. Create a learning roadmap for someone interested in cosmology
+
+**Activity 3: Cross-Disciplinary Analysis (10 minutes)**
+
+1. Find branches that depend on multiple major areas (e.g., Quantum Optics)
+2. Discuss why these fields require diverse knowledge
+3. Research one cross-disciplinary field and present its applications
+
+### Assessment
+
+- **Formative**: Students sketch their own simplified dependency diagram from memory
+- **Summative**: Written reflection on which physics branch interests them most and what prerequisites they would need to study
+
+## References
+
+1. [Physics Portal - Wikipedia](https://en.wikipedia.org/wiki/Portal:Physics) - Comprehensive overview of physics branches and their relationships
+
+2. [vis-network Documentation](https://visjs.github.io/vis-network/docs/network/) - JavaScript library used for the interactive network visualization
+
+3. [Branches of Physics - HyperPhysics](http://hyperphysics.phy-astr.gsu.edu/hbase/hframe.html) - Georgia State University - Educational physics reference with branch organization
+
+4. [The Structure of Scientific Disciplines](https://plato.stanford.edu/entries/physics-structuralism/) - Stanford Encyclopedia of Philosophy - Philosophical analysis of how physics is organized

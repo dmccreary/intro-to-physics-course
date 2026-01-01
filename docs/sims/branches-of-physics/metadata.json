@@ -1,0 +1,15 @@
+{
+  "title": "Branches of Physics Dependency Graph",
+  "description": "Interactive vis-network visualization showing 11 major physics branches and 33 subbranches with their prerequisite dependencies. Users can explore how different areas of physics build upon foundational concepts like classical mechanics and electromagnetism.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["physics", "dependency graph", "vis-network", "education", "classical mechanics", "electromagnetism", "quantum physics", "relativity", "astrophysics", "condensed matter", "nuclear physics", "biophysics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "vis-network",
+  "concepts": ["physics branches", "prerequisite dependencies", "disciplinary structure", "foundational knowledge"],
+  "educational_level": "High School",
+  "blooms_level": "Understanding"
+}

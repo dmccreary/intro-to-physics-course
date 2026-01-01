@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Newton's Second Law
 description: Interactive visualization of the relationship between force, mass, and acceleration (F = ma).
 ---

@@ -3,7 +3,7 @@ title: Simple Pendulum Period Investigation
 description: Investigate how pendulum length affects period and verify the T = 2π√(L/g) relationship through hands-on measurement and data collection.
 image: /sims/simple-pendulum/simple-pendulum.png
 og:image: /sims/simple-pendulum/simple-pendulum.png
-quality_score: 85
+quality_score: 100
 ---
 
 # Simple Pendulum Period Investigation

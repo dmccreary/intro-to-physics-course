@@ -1,0 +1,15 @@
+{
+  "title": "Ohm's Law Interactive Calculator",
+  "description": "Interactive calculator demonstrating Ohm's Law (V=IR). Adjust voltage, current, or resistance to see how they relate and affect each other in electrical circuits.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["electricity", "circuits", "physics", "Ohm's law"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["Ohm's law", "voltage", "current", "resistance", "V=IR", "electrical circuits"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Voltage", "Current", "Resistance"]
+}

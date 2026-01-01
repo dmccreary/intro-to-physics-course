@@ -5,45 +5,81 @@ let canvasWidth = 800;
 let drawHeight = 450;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
+let startButtonWidth;
+let sliderLeftMargin = 200;
+let margin = 20
 
 let speedSlider, radiusSlider, massSlider;
 let showGhostsCheckbox;
+let startPauseButton;
 let angle = 0;
+let isPaused = true;
 
 function setup() {
     updateCanvasSize();
     const canvas = createCanvas(canvasWidth, canvasHeight);
     canvas.parent(document.querySelector('main'));
 
-    speedSlider = createSlider(2, 15, 8, 0.5);
-    speedSlider.position(100, drawHeight + 12);
-    speedSlider.size(130);
+    speedSlider = createSlider(2, 40, 30, 0.5);
+    speedSlider.position(sliderLeftMargin, drawHeight + 12);
 
     radiusSlider = createSlider(50, 150, 100, 10);
-    radiusSlider.position(100, drawHeight + 42);
-    radiusSlider.size(130);
+    radiusSlider.position(sliderLeftMargin, drawHeight + 42);
 
     massSlider = createSlider(1, 10, 2, 0.5);
-    massSlider.position(100, drawHeight + 72);
-    massSlider.size(130);
+    massSlider.position(sliderLeftMargin, drawHeight + 72);
 
-    showGhostsCheckbox = createCheckbox(' Show path positions', true);
-    showGhostsCheckbox.position(260, drawHeight + 20);
-    showGhostsCheckbox.style('font-size', '13px');
+    showGhostsCheckbox = createCheckbox(' Show path positions', false);
+    showGhostsCheckbox.style('font-size', '16px');
+
+
+    startPauseButton = createButton('Start');
+    startPauseButton.position(10, drawHeight + 12);
+    startPauseButton.mousePressed(togglePause);
+    // set the global variable for button width
+    startButtonWidth = startPauseButton.size().width;
+
+
+    updateSliderWidths();
 
     describe('Visualization of velocity, centripetal acceleration, and force for circular motion', LABEL);
+
+    // notify parent frame of initial size
+    window.parent.postMessage({ type: 'microsim-resize', height: canvasHeight }, '*');
+}
+
+function updateSliderWidths() {
+    let checkboxX = canvasWidth - 190;
+    let gap = 10;
+    let sliderWidth = checkboxX - sliderLeftMargin - gap;
+    speedSlider.size(sliderWidth);
+    radiusSlider.size(sliderWidth);
+    massSlider.size(sliderWidth);
+    showGhostsCheckbox.position(checkboxX, drawHeight + 10);
+}
+
+function togglePause() {
+    isPaused = !isPaused;
+    startPauseButton.html(isPaused ? 'Start' : 'Pause');
 }
 
 function draw() {
+    let prevWidth = canvasWidth;
     updateCanvasSize();
+    if (canvasWidth !== prevWidth) {
+        resizeCanvas(canvasWidth, canvasHeight);
+        updateSliderWidths();
+    }
 
-    let speed = speedSlider.value();
+    let vel = speedSlider.value();
     let radius = radiusSlider.value();
     let mass = massSlider.value();
 
     // Update angle
-    let omega = speed / radius;
-    angle += omega * 0.02;
+    let omega = vel / radius;
+    if (!isPaused) {
+        angle += omega * 0.02;
+    }
 
     // Drawing area
     fill('aliceblue');
@@ -53,37 +89,41 @@ function draw() {
 
     // Control area
     fill('white');
-    noStroke();
     rect(0, drawHeight, canvasWidth, controlHeight);
 
     // Title
     fill('black');
     noStroke();
-    textSize(18);
+    textSize(30);
     textAlign(CENTER, TOP);
     text('Centripetal Force and Acceleration', canvasWidth * 0.35, 10);
 
     // Calculate physics
-    let ac = speed * speed / radius;
+    let ac = vel * vel / radius;
     let Fc = mass * ac;
 
     // Draw circular path and object
-    drawCircularMotion(speed, radius, mass, ac, Fc, showGhostsCheckbox.checked());
+    drawCircularMotion(vel, radius, mass, ac, Fc, showGhostsCheckbox.checked());
 
     // Draw info panel
-    drawInfoPanel(canvasWidth - 240, 50, 220, 280, speed, radius, mass, ac, Fc, omega);
+    // position at top right
+    // parameters: x, y, width, height, v, r, m, ac, Fc, omega
+    // width is 160 and the distance from right edge is margin 20 + width
+    drawInfoPanel(canvasWidth - 180, margin, 160, 280, vel, radius, mass, ac, Fc, omega);
 
     // Control labels
     fill('black');
     noStroke();
-    textSize(12);
-    textAlign(LEFT, CENTER);
-    text('Speed: ' + speed.toFixed(1) + ' m/s', 10, drawHeight + 19);
-    text('Radius: ' + radius + ' m', 10, drawHeight + 49);
-    text('Mass: ' + mass.toFixed(1) + ' kg', 10, drawHeight + 79);
+    textSize(16);
+    textAlign(RIGHT, CENTER);
+    // position labels to the left of the sliders but after the button
+    let labelXoffset = startButtonWidth + 150;
+    text('Speed: ' + vel.toFixed(1) + ' m/s', labelXoffset, drawHeight + 20);
+    text('Radius: ' + radius + ' m', labelXoffset, drawHeight + 50);
+    text('Mass: ' + mass.toFixed(1) + ' kg', labelXoffset, drawHeight + 80);
 }
 
-function drawCircularMotion(speed, radius, mass, ac, Fc, showGhosts) {
+function drawCircularMotion(vel, radius, mass, ac, Fc, showGhosts) {
     let centerX = 280;
     let centerY = 240;
     let displayRadius = radius * 1.2;
@@ -127,7 +167,7 @@ function drawCircularMotion(speed, radius, mass, ac, Fc, showGhosts) {
 
             // Velocity vector (tangent)
             let tangent = ga + PI/2;
-            let vLen = min(speed * 4, 50);
+            let vLen = min(vel * 4, 50);
             drawArrow(gx, gy, gx + vLen * cos(tangent), gy + vLen * sin(tangent), '#27AE6080');
 
             // Acceleration/Force toward center
@@ -141,11 +181,12 @@ function drawCircularMotion(speed, radius, mass, ac, Fc, showGhosts) {
     let objX = centerX + displayRadius * cos(angle);
     let objY = centerY + displayRadius * sin(angle);
 
-    // Object (ball)
+    // Object (ball) - size scales with mass
+    let ballSize = 15 + mass * 2;
     fill('#E74C3C');
     stroke('#C0392B');
     strokeWeight(2);
-    ellipse(objX, objY, 25, 25);
+    ellipse(objX, objY, ballSize, ballSize);
 
     // Radius line
     stroke('#666');
@@ -165,7 +206,7 @@ function drawCircularMotion(speed, radius, mass, ac, Fc, showGhosts) {
 
     // Velocity vector (tangent to circle)
     let tangentAngle2 = angle + PI/2;
-    let vLen = min(speed * 5, 70);
+    let vLen = min(vel * 5, 70);
     let vEndX = objX + vLen * cos(tangentAngle2);
     let vEndY = objY + vLen * sin(tangentAngle2);
     drawArrow(objX, objY, vEndX, vEndY, '#27AE60');
@@ -202,26 +243,38 @@ function drawCircularMotion(speed, radius, mass, ac, Fc, showGhosts) {
     text('Fc', fEndX + offset * cos(offsetAngle) + 15 * cos(toCenter),
                fEndY + offset * sin(offsetAngle) + 15 * sin(toCenter));
 
-    // Key insight box
-    fill(255, 255, 255, 240);
+    // Key insights box in the lower right
+    // the panel is 180 wide and needs a 20 margin from right and bottom
+    drawKeyInsights(canvasWidth - 200, 320);
+}
+
+function drawKeyInsights(x, y) {
+    push();
+    translate(x, y);
+
+    fill('white');
     stroke('#27AE60');
     strokeWeight(2);
-    rect(30, 40, 200, 100, 10);
+    rect(0, 0, 180, 110, 10);
 
     fill('#27AE60');
     noStroke();
-    textSize(12);
+    textSize(16);
     textAlign(LEFT, TOP);
-    text('Key Insights:', 40, 50);
+    text('Key Insights:', 10, 10);
 
     textSize(10);
     fill('#333');
-    text('• Velocity v is tangent to path', 40, 70);
-    text('• ac and Fc point toward center', 40, 85);
-    text('• v ⊥ ac (perpendicular)', 40, 100);
-    text('• Constant |v|, changing direction', 40, 115);
+    let lineHeight = 15;
+    text('• Velocity v is tangent to path', 10, 10 + lineHeight*2);
+    text('• ac and Fc point toward center', 10, 10 + lineHeight*3);
+    text('• v ⊥ ac (perpendicular)', 10, 10 + lineHeight*4);
+    text('• Constant |v|, changing direction', 10, 10 + lineHeight*5);
+
+    pop();
 }
 
+// Draws the info panel with calculations
 function drawInfoPanel(x, y, w, h, v, r, m, ac, Fc, omega) {
     push();
     translate(x, y);
@@ -326,11 +379,12 @@ function drawSmallArrow(x1, y1, x2, y2, col) {
 function windowResized() {
     updateCanvasSize();
     resizeCanvas(canvasWidth, canvasHeight);
+    updateSliderWidths();
 }
 
 function updateCanvasSize() {
     const container = document.querySelector('main');
     if (container) {
-        canvasWidth = Math.min(container.offsetWidth, 800);
+        canvasWidth = container.offsetWidth;
     }
 }

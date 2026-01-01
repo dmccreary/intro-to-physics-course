@@ -1,4 +1,5 @@
 ---
+quality_score: 75
 title: Tacoma Narrows Bridge Collapse Timeline
 description: Interactive timeline showing the sequence of events on November 7, 1940 when resonance destroyed the Tacoma Narrows Bridge.
 ---

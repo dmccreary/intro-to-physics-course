@@ -1,4 +1,5 @@
 ---
+quality_score: 85
 title: Vector Addition Interactive MicroSim
 description: An interactive visualization demonstrating both graphical (tip-to-tail) and component methods of vector addition side by side.
 image: /sims/vector-addition/vector-addition.png

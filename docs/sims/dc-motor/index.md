@@ -1,4 +1,5 @@
 ---
+quality_score: 90
 title: DC Motor Operation MicroSim
 description: An interactive visualization demonstrating how DC motors convert electrical energy to mechanical rotation through electromagnetic forces, showing back-EMF, torque, and efficiency relationships.
 image: /sims/dc-motor/dc-motor.png

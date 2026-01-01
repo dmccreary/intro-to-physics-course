@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Energy Distribution in Rolling Objects
 description: Stacked bar chart showing how kinetic energy is split between translational and rotational components for different rolling objects.
 ---

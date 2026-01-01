@@ -1,3 +1,7 @@
+---
+quality_score: 52
+---
+
 # Learning Graph Viewer
 
 [Run the Learning Graph Viewer](main.html){ .md-button .md-button--primary }

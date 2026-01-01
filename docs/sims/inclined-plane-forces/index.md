@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Inclined Plane Force Decomposition
 description: Interactive diagram showing how to decompose weight into components parallel and perpendicular to an inclined plane.
 ---

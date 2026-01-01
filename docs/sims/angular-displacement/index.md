@@ -1,4 +1,5 @@
 ---
+quality_score: 55
 title: Angular Displacement Visualization
 description: An interactive MicroSim demonstrating angular displacement with a rotating disk showing how different points at various radii travel different arc lengths for the same angle (s = rθ).
 image: /sims/angular-displacement/angular-displacement.png

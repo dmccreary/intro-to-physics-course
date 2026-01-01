@@ -1,0 +1,15 @@
+{
+  "title": "DC Motor Operation",
+  "description": "Interactive simulation demonstrating how DC motors convert electrical energy to mechanical rotation. Shows voltage control, back EMF, torque, current flow, and motor efficiency with animated armature rotation.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["electricity", "motors", "electromagnetism", "physics", "energy conversion"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["DC motor", "back EMF", "electromagnetic induction", "torque", "electrical power", "mechanical power", "motor efficiency"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Electric current", "Voltage", "Magnetism", "Electromagnetic force"]
+}

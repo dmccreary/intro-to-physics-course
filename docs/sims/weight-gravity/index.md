@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Weight in Different Gravitational Fields
 description: Interactive comparison of how weight changes while mass stays constant across different celestial bodies.
 ---

@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Relative Velocity Solver
 description: Interactive tool for visualizing and solving relative velocity problems with two moving objects in 2D.
 ---

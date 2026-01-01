@@ -1,0 +1,15 @@
+{
+  "title": "Simple Harmonic Motion Energy",
+  "description": "Interactive simulation showing energy transformations in simple harmonic motion. Visualizes kinetic and potential energy exchange throughout the oscillation cycle.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["oscillations", "energy", "physics", "SHM"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["simple harmonic motion", "energy conservation", "kinetic energy", "potential energy", "total mechanical energy"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Simple harmonic motion", "Kinetic energy", "Potential energy"]
+}

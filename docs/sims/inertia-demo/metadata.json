@@ -1,0 +1,15 @@
+{
+  "title": "Inertia Demonstration",
+  "description": "Interactive simulation showing how mass affects inertia by comparing objects with different masses responding to identical forces. Demonstrates Newton's first and second laws.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["inertia", "mass", "Newton's laws", "physics", "dynamics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["inertia", "mass", "Newton's first law", "Newton's second law", "F=ma", "acceleration"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Force", "Mass", "Acceleration"]
+}

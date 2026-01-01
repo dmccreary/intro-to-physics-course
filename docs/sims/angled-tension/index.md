@@ -3,7 +3,7 @@ title: Angled Tension Components
 description: Interactive visualization showing how the angle of an applied force affects its horizontal and vertical components.
 image: /sims/angled-tension/angled-tension.png
 og:image: /sims/angled-tension/angled-tension.png
-quality_score: 100
+quality_score: 95
 ---
 
 # Angled Tension Components

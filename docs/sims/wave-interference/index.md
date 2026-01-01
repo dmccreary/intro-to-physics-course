@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Two-Source Wave Interference
 description: An interactive MicroSim demonstrating constructive and destructive interference patterns from two coherent wave sources.
 ---

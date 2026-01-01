@@ -75,14 +75,13 @@ Both descriptions are valid and give the same results for circuit analysis. Most
 
 #### Diagram: Current Flow Animation MicroSim
 
-<iframe src="../../sims/current-animation/main.html" width="100%" height="502px" scrolling="no"></iframe>
+<iframe src="../../sims/current-animation/main.html" width="100%" height="520px" scrolling="no"></iframe>
 
 [View detailed explanation and educational context](../../sims/current-animation/index.md)
 
 <details markdown="1">
     <summary>Current Flow Animation MicroSim</summary>
     **Status:** done
-    **TODO:** human-review-needed (existing sim is simpler than specification - lacks conventional vs electron flow toggle)
 
     Type: microsim
 

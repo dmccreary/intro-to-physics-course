@@ -3,7 +3,7 @@ title: Charging by Induction
 description: An interactive step-by-step simulation demonstrating how objects can be charged through electrostatic induction without direct contact.
 image: /sims/charging-induction/charging-induction.png
 og:image: /sims/charging-induction/charging-induction.png
-quality_score: 92
+quality_score: 95
 ---
 
 # Charging by Induction

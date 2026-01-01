@@ -1,0 +1,15 @@
+{
+  "title": "Velocity-Time Graph Area",
+  "description": "Interactive simulation demonstrating that the area under a velocity-time graph equals displacement. Visualize integration through geometric areas.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "graphs", "physics", "calculus"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["velocity-time graph", "area under curve", "displacement", "integration", "positive and negative areas"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Velocity", "Displacement", "Graph interpretation"]
+}

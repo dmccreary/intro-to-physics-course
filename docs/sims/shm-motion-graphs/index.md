@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Position, Velocity, and Acceleration in SHM
 description: Visualize how position, velocity, and acceleration change during simple harmonic motion and understand their phase relationships.
 ---

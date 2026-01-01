@@ -1,0 +1,15 @@
+{
+  "title": "Period, Frequency, and Angular Frequency Relationships",
+  "description": "Interactive simulation demonstrating the relationships between period (T), frequency (f), and angular frequency (ω). Shows that T = 1/f and ω = 2πf.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["oscillations", "waves", "physics", "frequency"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["period", "frequency", "angular frequency", "T = 1/f", "ω = 2πf", "hertz"],
+  "bloomsLevel": ["Understand", "Apply"],
+  "prerequisites": ["Periodic motion", "Radians"]
+}

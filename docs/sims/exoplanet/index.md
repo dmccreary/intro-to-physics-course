@@ -3,7 +3,7 @@ title: Exoplanet Transit Detection
 description: Interactive simulation demonstrating how astronomers detect exoplanets using the transit method, showing brightness dips as a planet passes in front of its star.
 image: /sims/exoplanet/exoplanet.png
 og:image: /sims/exoplanet/exoplanet.png
-quality_score: 90
+quality_score: 100
 ---
 
 # Exoplanet Transit Detection

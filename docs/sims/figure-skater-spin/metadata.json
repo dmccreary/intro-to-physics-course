@@ -1,0 +1,15 @@
+{
+  "title": "Figure Skater Angular Momentum Conservation",
+  "description": "Interactive simulation demonstrating conservation of angular momentum through a figure skater spin. Control arm position to observe how moment of inertia changes affect angular velocity while angular momentum remains constant.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["angular momentum", "rotation", "physics", "conservation laws"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["angular momentum conservation", "moment of inertia", "angular velocity", "rotational kinetic energy", "L = Iω"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Angular velocity", "Moment of inertia", "Conservation of angular momentum"]
+}

@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Free Fall Motion
 description: Interactive simulation of objects falling under gravity with adjustable initial conditions.
 ---

@@ -1,0 +1,15 @@
+{
+  "title": "Relative Velocity",
+  "description": "Interactive simulation demonstrating relative velocity concepts. Shows how velocity measurements depend on the reference frame of the observer.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "relative motion", "physics", "reference frames"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["relative velocity", "reference frame", "vector subtraction", "observer motion"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Velocity", "Vectors", "Reference frames"]
+}

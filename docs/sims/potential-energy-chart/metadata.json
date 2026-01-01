@@ -1,0 +1,15 @@
+{
+  "title": "Potential Energy Comparison Chart",
+  "description": "Interactive bar chart comparing gravitational potential energy (mgh) with elastic potential energy (½kx²) across different scenarios with varying masses, heights, spring constants, and displacements.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["energy", "potential energy", "physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "Chart.js",
+  "concepts": ["gravitational potential energy", "elastic potential energy", "PE = mgh", "PE = ½kx²", "energy comparison"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Energy", "Gravitational potential energy", "Springs"]
+}

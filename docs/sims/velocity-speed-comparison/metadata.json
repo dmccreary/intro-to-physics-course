@@ -1,0 +1,15 @@
+{
+  "title": "Velocity vs Speed Comparison",
+  "description": "Interactive simulation comparing velocity (vector) and speed (scalar). Demonstrates why these differ for motion with direction changes.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["kinematics", "velocity", "physics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["velocity", "speed", "vectors vs scalars", "direction", "average vs instantaneous"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Position", "Displacement", "Vectors"]
+}

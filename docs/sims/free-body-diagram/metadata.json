@@ -1,0 +1,15 @@
+{
+  "title": "Free-Body Diagram Tutorial",
+  "description": "Interactive tutorial teaching students how to draw and interpret free-body diagrams through four scenarios: book on table, book pushed with friction, inclined plane, and elevator accelerating up.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["forces", "free-body diagrams", "physics", "dynamics", "Newton's laws"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["free-body diagram", "normal force", "friction", "weight", "force decomposition", "static equilibrium", "apparent weight"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Force", "Newton's laws", "Gravity", "Friction"]
+}

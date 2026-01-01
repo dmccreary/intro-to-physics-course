@@ -1,0 +1,15 @@
+{
+  "title": "Work-Energy Theorem",
+  "description": "Interactive simulation demonstrating the work-energy theorem: net work equals change in kinetic energy (W = ΔKE).",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["energy", "work", "physics", "mechanics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["work-energy theorem", "work", "kinetic energy", "net work", "W = ΔKE"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Work", "Kinetic energy", "Force"]
+}

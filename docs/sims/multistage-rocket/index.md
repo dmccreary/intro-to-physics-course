@@ -1,4 +1,5 @@
 ---
+quality_score: 60
 title: Multistage Rocket Efficiency Chart
 description: Interactive chart comparing delta-v achieved by single-stage vs multi-stage rockets using the Tsiolkovsky rocket equation
 ---

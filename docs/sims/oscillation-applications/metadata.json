@@ -1,0 +1,15 @@
+{
+  "title": "Applications of Oscillations Across Fields",
+  "description": "Interactive simulation showing real-world applications of oscillatory motion across different fields including engineering, biology, electronics, and music.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["oscillations", "applications", "physics", "waves"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["oscillation applications", "simple harmonic motion", "resonance", "vibrations", "periodic motion"],
+  "bloomsLevel": ["Understand", "Analyze", "Evaluate"],
+  "prerequisites": ["Simple harmonic motion", "Period", "Frequency"]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Distance vs Displacement",
+  "description": "An interactive MicroSim that helps students understand the difference between distance (total path length) and displacement (straight-line change in position). Students draw paths and observe real-time calculations of both quantities.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["physics", "kinematics", "distance", "displacement", "vectors", "scalars", "motion"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["distance", "displacement", "vectors", "scalars", "position"],
+  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "prerequisites": ["basic algebra", "coordinate systems"],
+  "educationalLevel": "High School (Grades 9-12)"
+}

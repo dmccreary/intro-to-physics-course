@@ -1,4 +1,5 @@
 ---
+quality_score: 70
 title: Free-Body Diagram Tutorial
 description: An interactive tutorial teaching students how to draw and interpret free-body diagrams through four progressively complex scenarios.
 ---

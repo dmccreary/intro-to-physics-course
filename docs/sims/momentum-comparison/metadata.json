@@ -1,0 +1,15 @@
+{
+  "title": "Momentum Comparison",
+  "description": "Interactive simulation comparing momentum of different objects with varying masses and velocities. Demonstrates that momentum equals mass times velocity (p=mv).",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["momentum", "physics", "dynamics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["momentum", "mass", "velocity", "p=mv", "momentum comparison"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Mass", "Velocity"]
+}

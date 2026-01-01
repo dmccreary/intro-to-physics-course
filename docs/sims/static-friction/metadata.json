@@ -1,0 +1,15 @@
+{
+  "title": "Static Friction",
+  "description": "Interactive simulation demonstrating static friction behavior. Shows how static friction adjusts to match applied force up to the maximum value before sliding begins.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-01",
+  "subject": ["friction", "forces", "physics", "dynamics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "p5.js",
+  "concepts": ["static friction", "coefficient of static friction", "maximum static friction", "normal force", "fs ≤ μsN"],
+  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "prerequisites": ["Forces", "Normal force", "Friction"]
+}

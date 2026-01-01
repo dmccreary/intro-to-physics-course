@@ -1,4 +1,5 @@
 ---
+quality_score: 75
 title: Transverse Wave Animation
 description: An interactive MicroSim demonstrating how particles in a transverse wave move perpendicular to the wave propagation direction.
 ---
