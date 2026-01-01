@@ -185,6 +185,15 @@ nav:
     - prompts/04-book-chapter-structure-skill.md
     - prompts/12-batch-microsims.md
   
+  - Stories:
+    - Overview: stories/index.md
+    - Archimedes - Eureka: stories/archimedes/index.md
+    - Galileo - The Troublemaker: stories/galileo/index.md
+    - Marie Curie - Glowing in the Dark: stories/marie-curie/index.md
+    - Lise Meitner - The Fission Escape: stories/lise-meitner/index.md
+    - Chien-Shiung Wu - Breaking Parity: stories/chien-shiung-wu/index.md
+    - Vera Rubin - The Missing Universe: stories/vera-rubin/index.md
+
   - Glossary: glossary.md
   - FAQs: faq.md
   - References: references.md
