@@ -174,6 +174,7 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Figure Skater Angular Momentum](./figure-skater-spin/index.md)**
 
+    ![Figure Skater Angular Momentum](./figure-skater-spin/figure-skater-spin.png)
     Interactive simulation showing how a figure skater's spin speed changes when pulling arms in or extending them out.
 
 - **[Fluid Dynamics](./fluid-dynamics/index.md)**
@@ -188,14 +189,17 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Free-Body Diagram Tutorial](./free-body-diagram/index.md)**
 
+    ![Free-Body Diagram Tutorial](./free-body-diagram/free-body-diagram.png)
     An interactive tutorial teaching students how to draw and interpret free-body diagrams through progressively complex scenarios.
 
 - **[Free Fall Motion](./free-fall/index.md)**
 
+    ![Free Fall Motion](./free-fall/free-fall.png)
     Interactive simulation of objects falling under gravity with adjustable initial conditions.
 
 - **[Friction Coefficient Chart](./friction-coefficient-chart/index.md)**
 
+    ![Friction Coefficient Chart](./friction-coefficient-chart/friction-coefficient-chart.png)
     Interactive chart comparing static and kinetic friction coefficients for common material pairs.
 
 - **[Interactive Graph Analysis](./graph-analysis/index.md)**
@@ -205,10 +209,12 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Learning Graph Viewer](./graph-viewer/index.md)**
 
+    ![Learning Graph Viewer](./graph-viewer/graph-viewer.png)
     Viewer that reads a learning graph and provides search functionality and taxonomy legend controls.
 
 - **[Gravitational Attractor](./gravitational-attractor/index.md)**
 
+    ![Gravitational Attractor](./gravitational-attractor/gravitational-attractor.png)
     Interactive simulation demonstrating gravitational attraction between particles and a central attractor showing orbital motion.
 
 - **[Hooke's Law Interactive](./hookes-law-demo/index.md)**
@@ -218,58 +224,72 @@ This section contains interactive MicroSims covering topics in high school physi
 
 - **[Horizontal Projection](./horizontal-projection/index.md)**
 
+    ![Horizontal Projection](./horizontal-projection/horizontal-projection.png)
     Interactive simulation demonstrating that objects with different horizontal velocities but same initial height hit the ground simultaneously.
 
 - **[Inclined Plane Force Decomposition](./inclined-plane-forces/index.md)**
 
+    ![Inclined Plane Force Decomposition](./inclined-plane-forces/inclined-plane-forces.png)
     Interactive diagram showing how to decompose weight into components parallel and perpendicular to an inclined plane.
 
 - **[Inclined Plane Motion](./inclined-plane-motion/index.md)**
 
+    ![Inclined Plane Motion](./inclined-plane-motion/inclined-plane-motion.png)
     Interactive simulation of a block on an inclined plane with adjustable angle and friction.
 
 - **[Inertia Demonstration](./inertia-demo/index.md)**
 
+    ![Inertia Demonstration](./inertia-demo/inertia-demo.png)
     An interactive MicroSim demonstrating how mass affects inertia by comparing how different objects respond to identical forces.
 
 - **[Kinematic Equation Selector](./kinematic-selector/index.md)**
 
+    ![Kinematic Equation Selector](./kinematic-selector/kinematic-selector.png)
     Interactive decision tool to help students select the appropriate kinematic equation based on known and unknown variables.
 
 - **[Law of Reflection](./law-of-reflection/index.md)**
 
+    ![Law of Reflection](./law-of-reflection/law-of-reflection.png)
     An interactive MicroSim demonstrating that the angle of incidence equals the angle of reflection.
 
 - **[Longitudinal Wave Animation](./longitudinal-wave/index.md)**
 
+    ![Longitudinal Wave Animation](./longitudinal-wave/longitudinal-wave.png)
     An interactive MicroSim demonstrating how particles in a longitudinal wave move parallel to the wave propagation direction.
 
 - **[Metric Scale Zoom](./metric-scale-zoom/index.md)**
 
+    ![Metric Scale Zoom](./metric-scale-zoom/metric-scale-zoom.png)
     An interactive MicroSim that helps students visualize the relative scale of metric prefixes and practice conversions.
 
 - **[Microscopic Surface Contact](./microscopic-surface-contact/index.md)**
 
+    ![Microscopic Surface Contact](./microscopic-surface-contact/microscopic-surface-contact.png)
     Interactive visualization showing how microscopic surface irregularities create friction between two surfaces.
 
 - **[Momentum Comparison](./momentum-comparison/index.md)**
 
+    ![Momentum Comparison](./momentum-comparison/momentum-comparison.png)
     Interactive visualization showing how mass and velocity combine to determine momentum as a vector quantity.
 
 - **[Multistage Rocket Efficiency](./multistage-rocket/index.md)**
 
+    ![Multistage Rocket Efficiency](./multistage-rocket/multistage-rocket.png)
     Interactive chart comparing delta-v achieved by single-stage vs multi-stage rockets using the Tsiolkovsky rocket equation.
 
 - **[Newton's Second Law](./newtons-second-law/index.md)**
 
+    ![Newton's Second Law](./newtons-second-law/newtons-second-law.png)
     Interactive visualization of the relationship between force, mass, and acceleration (F = ma).
 
 - **[Normal Force on Inclined Planes](./normal-force-incline/index.md)**
 
+    ![Normal Force on Inclined Planes](./normal-force-incline/normal-force-incline.png)
     Interactive visualization showing how normal force changes with incline angle and how weight decomposes into components.
 
 - **[Ohm's Law Interactive Calculator](./ohms-law/index.md)**
 
+    ![Ohm's Law Interactive Calculator](./ohms-law/ohms-law.png)
     An interactive visualization exploring the relationship between voltage, current, and resistance with animated circuit and V-I curves.
 
 - **[Applications of Oscillations](./oscillation-applications/index.md)**
