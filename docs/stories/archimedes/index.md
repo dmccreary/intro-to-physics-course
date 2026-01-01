@@ -154,7 +154,7 @@ He leaped from the bath and ran through the streets of Syracuse, completely nake
 
 The goldsmith was doomed.
 
-![](07-eureka-run.jpg)
+![](image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -171,7 +171,7 @@ Before the court, Archimedes announced his verdict: "The crown contains silver, 
 
 The goldsmith confessed on the spot. King Hiero had him executed—and rewarded Archimedes handsomely. But for Archimedes, the real prize was the principle he had discovered: what we now call **Archimedes' Principle** of buoyancy.
 
-![](08-crown-test.jpg)
+![](image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -188,7 +188,7 @@ To prove his point, he rigged a system of pulleys and levers that allowed a sing
 
 The secret was **mechanical advantage**: a small force applied over a long distance could move a great weight over a short distance.
 
-![](09-lever-ship.jpg)
+![](image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -201,7 +201,7 @@ Among his many inventions, Archimedes created a device to lift water from rivers
 
 Egyptian farmers used it to irrigate the Nile delta. Greek ships used it to pump out bilge water. Today, variants of his screw still move grain in silos and wastewater in treatment plants—twenty-three centuries after Archimedes first sketched it in the sand.
 
-![](10-archimedes-screw.jpg)
+![](image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -216,7 +216,7 @@ The old mathematician turned his genius to war. He designed **catapults** that h
 
 For two years, Roman soldiers lived in terror of the old man's inventions. "We are fighting a geometrical monster," Marcellus reportedly said, "who uses our ships like toys."
 
-![](11-war-machines.jpg)
+![](image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -233,7 +233,7 @@ But in the chaos of the sack, a Roman soldier burst into a courtyard where an ol
 
 The soldier, enraged at being ignored, drew his sword and killed the greatest scientist of the ancient world. Marcellus, they say, wept when he heard the news.
 
-![](12-death-scene.jpg)
+![](image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.

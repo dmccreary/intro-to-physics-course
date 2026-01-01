@@ -15,17 +15,14 @@ These stories are designed to:
 |-------|-----------|--------------|-----|
 | [Eureka!](archimedes/index.md) | Archimedes | Buoyancy, Density, Levers | Ancient Greece (250 BCE) |
 | [The Troublemaker of Pisa](galileo/index.md) | Galileo Galilei | Free Fall, Kinematics, Scientific Method | 1600s |
+| [The Plague Year](newton/index.md) | Isaac Newton | Motion, Gravity, Optics, Calculus | 1660s-1720s |
+| [The Bookbinder's Apprentice](faraday/index.md) | Michael Faraday | Electromagnetism, Motors, Induction | 1800s |
 | [Glowing in the Dark](marie-curie/index.md) | Marie Curie | Radioactivity, Atomic Structure, Energy | 1890s-1930s |
+| [The Gold Foil Surprise](rutherford/index.md) | Ernest Rutherford | Atomic Structure, Nuclear Physics | 1900s-1930s |
+| [The Patent Clerk's Daydream](einstein/index.md) | Albert Einstein | Relativity, E=mc², Photoelectric Effect | 1900s-1950s |
 | [The Fission Escape](lise-meitner/index.md) | Lise Meitner | Nuclear Fission, E=mc², Energy | 1900s-1960s |
 | [Breaking Parity](chien-shiung-wu/index.md) | Chien-Shiung Wu | Conservation Laws, Symmetry, Nuclear Physics | 1940s-1990s |
 | [The Missing Universe](vera-rubin/index.md) | Vera Rubin | Dark Matter, Gravity, Galaxy Rotation | 1960s-2010s |
-
-## Planned Stories
-
-1. **Newton: The Plague Year** - Mechanics, optics, universal gravitation
-2. **Faraday: The Bookbinder's Apprentice** - Electromagnetism, electromagnetic induction
-3. **Rutherford: The Gold Foil Surprise** - Atomic structure, the nuclear model
-4. **Einstein: The Patent Clerk's Daydream** - Special relativity, the photoelectric effect
 
 ## Course Alignment
 
