@@ -91,8 +91,9 @@ This is the story of how a penniless immigrant with impossible dreams defeated t
 ![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
-Please generate a new wide-landscape illustration.
-A colorful, bright wide-landscape illustration in a mid-19th century Eastern European village style showing Tesla's dramatic birth in Smiljan in 1856. A small stone house during a violent thunderstorm—lightning fills the sky, illuminating the village. Inside, visible through a window, a baby is being born. The midwife looks frightened at the storm, but the mother gazes at her newborn with fierce love. Outside, lightning strikes repeatedly, as if announcing something momentous. The scene should blend the humble village setting with supernatural electrical drama. Young Nikola seems to glow faintly even as an infant, connected somehow to the storm outside.
+Please generate a new 16:9 w:h ratio illustration.
+A colorful, bright illustration of a room of mid-19th century Eastern European village showing Tesla's dramatic birth in Smiljan in 1856. The scene is a bedroom in a small stone house with a large window. Outside, through the window, we see a violent thunderstorm—lightning fills the sky, illuminating the village. In the bedroom a baby has just been born and is being
+held by his mother. The midwife looks out the window, frightened at the storm, but the mother gazes at her newborn with fierce love. Outside, lightning strikes repeatedly, as if announcing something momentous. The scene should blend the humble village setting with supernatural electrical drama. Young Nikola seems to glow faintly even as an infant, connected somehow to the storm outside.
 </details>
 
 ## Chapter 1 – A Mind Like No Other
@@ -234,6 +235,27 @@ They needed a dramatic demonstration.
 Image 8:
 Please generate a new wide-landscape illustration.
 A colorful, bright wide-landscape illustration in a late 19th century American propaganda style showing the War of Currents. The image is split dramatically: On Edison's side, dark and sinister, crowds watch in horror as electrical demonstrations go wrong—sparks, danger, frightened faces. Edison himself orchestrates the fear campaign like a showman. On Tesla's side, calm and bright, Tesla works in his laboratory, surrounded by harmless-looking AC equipment. Newspaper headlines float between them: "DEATH CURRENT!" vs "THE FUTURE OF POWER." The visual style should suggest competing propaganda, with Edison's side looking like fear-mongering and Tesla's side looking like quiet truth. The battle lines are drawn.
+
+Note this got the following error from OpenAI ChatGPT:
+We’re so sorry, but the prompt may violate our guardrails around nudity, sexuality, or erotic content. If you think we got it wrong, please retry or edit your prompt.
+
+Please generate a new colorful bright illustration using a 16:9 width:height ratio.
+Do not place any nudity in this image.
+Do not place any people having sex in this image.
+Do not place any erotic content in this image.
+The image has two side-by-side panels showing the contrast in approaches to promoting new technology.
+On the left is the "FUD" approach - sowing fear, uncertainty and doubt.
+On the right is the analytical fact based approach.
+The images uses a late 19th century American propaganda style showing the War of Currents. 
+The image is split dramatically: On the left is the Edison's side showing the FUD strategy.
+It has the faces of crowds watching in shock as electrical demonstrations go wrong—sparks, danger, frightened faces. 
+Edison himself orchestrates the fear campaign like a showman. 
+
+On right is Tesla's side, calm and bright, Tesla works in his laboratory, surrounded by harmless-looking AC equipment. 
+Newspaper headlines float between them: "DEATH CURRENT!" vs "THE FUTURE OF POWER." 
+The visual style should suggest competing propaganda, with Edison's side looking like fear-mongering and Tesla's side looking like quiet truth. The battle lines are drawn.
+
+
 </details>
 
 ## Chapter 8 – The White City

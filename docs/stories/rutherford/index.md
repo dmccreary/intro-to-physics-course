@@ -11,6 +11,50 @@ social:
 # The Gold Foil Surprise: Ernest Rutherford Discovers the Atom
 
 ![](./cover.png)
+<details>
+<summary>Cover Image Prompt</summary>
+Create a colorful, bright wide-landscape 16:9 cover illustration in an early 20th century British scientific/academic style with energetic composition, dramatic lighting, and period-accurate laboratory details.
+
+**Title Text:** Place the title "The Gold Foil Surprise: Ernest Rutherford Discovers the Atom" prominently at the top of the image in bold Edwardian-era serif typography with a slight metallic gold accent on "Gold Foil." The text should be set against a darker area (perhaps deep green or navy) to ensure readability, with subtle atomic imagery woven into the lettering.
+
+**Central Figure:** Ernest Rutherford stands at the center, a large, energetic man in his late 30s with a thick mustache and commanding presence. He wears a rumpled lab coat over a waistcoat and rolled-up sleeves—a man of action, not ceremony. His expression shows genuine shock and delight, mouth open mid-exclamation, arms spread wide in astonishment. This is the moment of discovery.
+
+**The Gold Foil Experiment:** The famous apparatus dominates the middle ground:
+- A thin sheet of gold foil (glowing golden, almost translucent) mounted in the center
+- A radioactive source (lead-shielded, with an ominous glow) shooting alpha particles at the foil
+- Most particles pass straight through (shown as faint golden streaks continuing forward)
+- BUT—dramatically—some particles bounce STRAIGHT BACK toward the source (bright, shocking red/orange streaks reversing direction)
+- A zinc sulfide detection screen curves around the setup, with small flash marks where particles hit
+
+**The Revelation Visual:** Above or behind Rutherford, two atomic models appear as ghostly overlays:
+- LEFT (crossed out or fading): Thomson's "plum pudding" model—a blob of positive charge with electrons scattered like raisins
+- RIGHT (glowing, triumphant): Rutherford's nuclear model—a tiny, dense nucleus at the center with vast empty space around it, electrons orbiting at great distance
+
+**Background Elements:**
+- Left side: Hints of Rutherford's journey—misty New Zealand hills, sheep, a distant farmhouse fading into the background
+- Center: The grand Victorian architecture of Manchester University's physics laboratory—brick walls, tall windows, gas lamps
+- Right side: The future his discovery enables—faint atomic imagery, the promise of nuclear physics
+- His assistants Geiger and Marsden visible in the shadows, peering at detection screens
+
+**Visual Motifs:**
+- Golden light emanating from the gold foil (the material that revealed the secret)
+- Alpha particle tracks shown as dynamic streaks—most going forward, some dramatically reversing
+- The contrast between the expected (straight paths) and the actual (bouncing back)
+- His famous quote could appear subtly: "...like firing a cannon at tissue paper..."
+
+**Color Palette:**
+- Rich golds and ambers (the gold foil, discovery, light of understanding)
+- Deep laboratory greens and browns (Victorian scientific atmosphere)
+- Shocking reds and oranges for the bouncing particles (the surprise)
+- Cool blues for the empty space within atoms
+- Warm skin tones emphasizing Rutherford's ruddy, energetic complexion
+
+**Lighting:** Dramatic chiaroscuro lighting—the gold foil glows as the brightest point, casting golden light across Rutherford's amazed face. The laboratory is otherwise dimly lit (they had to work in darkness to see the flashes). Particle tracks provide dynamic lighting streaks across the scene.
+
+**Mood:** Explosive excitement and genuine surprise. This is the moment a scientist expected one thing and got something completely different—and realized he'd stumbled onto something huge. Rutherford was famously loud and boisterous; the image should capture that energy. It should feel like the scientific equivalent of a sports victory—pure, shocked joy at an unexpected discovery.
+
+**Style Notes:** The illustration should have the robust, energetic quality of early 20th century British academic life—think Edwardian confidence mixed with scientific rigor. Rutherford was not a delicate theorist but a hands-on experimenter who built apparatus and got results. The image should feel dynamic, surprising, and triumphant—a farm boy from the end of the world who just cracked open the atom.
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>
@@ -41,6 +85,13 @@ Key elements:
 When you describe an image, make sure to mention that it should be a colorful,
 bright wide-landscape illustration in an early 20th century British academic/
 scientific style with energetic composition and period-accurate details.
+
+## Image Preamble
+In this session we are going to ask you to create a set of wide-landscape 16:9 ration images for a new graphic novel about Ernest Rutherford that is engaging and fun for teenagers. The target audience is high school students studying introductory physics.
+
+Image Format: All images generated must use a wide-landscape 16:9 image width:height ratio. 
+Image Style: All the images you generate should be a colorful, bright wide-landscape illustration in an early 20th century British academic/ scientific style with energetic composition and period-accurate details.
+
 </details>
 
 ### Prologue – The Kid from the End of the World
