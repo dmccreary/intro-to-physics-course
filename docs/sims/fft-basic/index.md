@@ -16,7 +16,7 @@ quality_score: 90
 You can include this MicroSim in your course by pasting the following HTML directly into your web page.
 
 ```html
-<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/basic-fft/main.html" 
+<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/fft-basic/main.html"
   height="480px" scrolling="no" style="overflow: hidden;"></iframe>
 ```
 

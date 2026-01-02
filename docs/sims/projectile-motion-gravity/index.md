@@ -20,7 +20,7 @@ social:
 You can include this MicroSim on your website using the following `iframe`:
 
 ```html
-<iframe src="https://dmccreary.github.io/microsims/sims/projectile-motion-gravity/main.html" height="452px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/projectile-motion-gravity/main.html" height="452px" scrolling="no"></iframe>
 ```
 
 ## Description

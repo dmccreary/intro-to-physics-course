@@ -11,6 +11,45 @@ social:
 # The Patent Clerk's Daydream: Einstein's Miracle Year
 
 ![](./cover.png)
+<details>
+<summary>Cover Image Prompt</summary>
+Create a colorful, bright wide-landscape 16:9 cover illustration in an early 20th century European modernist style with elements of Swiss precision, Art Nouveau elegance, and playful scientific imagination.
+
+**Title Text:** Place the title "The Patent Clerk's Daydream: Einstein's Miracle Year" prominently at the top of the image in bold early 20th century Swiss typography—clean, precise Helvetica-like lettering with subtle Art Nouveau flourishes. The text should be set against a slightly darker vignette area or a band of deep blue space to ensure readability.
+
+**Central Figure:** A young Albert Einstein (age 26, 1905) sits at a wooden desk in the Swiss Patent Office in Bern. He wears a modest brown suit with a slightly loosened tie. His famous wild hair is just beginning to show its characteristic unruliness. His eyes are unfocused on the patent papers before him—he's clearly daydreaming, lost in thought, a slight smile playing on his lips.
+
+**The Daydream Visualization:** Swirling out from Einstein's head in an Art Nouveau spiral of light and imagination, his famous thought experiments come to life:
+- A young Einstein riding alongside a beam of golden light, racing through space
+- The equation E=mc² floating luminously, with the letters transforming between energy and matter
+- A falling elevator with a floating apple inside, demonstrating the equivalence principle
+- Light bending around a stylized sun, representing curved spacetime
+- Tiny particles (atoms) dancing in zigzag Brownian motion patterns
+- A clock face warping and stretching, showing time dilation
+
+**Background Elements:**
+- Left side: The mundane patent office—neat stacks of papers, filing cabinets, a clock on the wall showing 3:00 PM, other clerks working diligently in the background, unaware of the revolution happening at Einstein's desk
+- Right side: The daydream world bleeds into cosmic imagery—stars, light beams, curved grid lines representing spacetime, the famous 1919 eclipse that would later prove his theories
+- Swiss architectural elements visible through a window—precise, orderly Bern buildings contrasting with the wild imagination inside
+
+**Visual Motifs:**
+- Light beams (gold and white) streaming throughout the composition, connecting the mundane and the cosmic
+- Mathematical equations and physics symbols floating subtly in the background
+- The year "1905" incorporated somewhere, perhaps on a calendar or document
+
+**Color Palette:**
+- Warm browns and creams of the patent office (Swiss precision)
+- Deep cosmic blues and purples of space (imagination)
+- Brilliant golds and whites for light beams (discovery)
+- Soft greens for the Swiss landscape visible through windows
+- The overall effect should feel like a portal opening between the ordinary and the extraordinary
+
+**Lighting:** Warm afternoon sunlight streams through the office window, but Einstein himself seems to glow from within, illuminated by the light of his ideas. The daydream portion should have an ethereal, luminous quality.
+
+**Mood:** Whimsical yet profound—capturing the magical moment when a "nobody" patent clerk, rejected by academia, is quietly revolutionizing our understanding of the universe while everyone around him shuffles papers. The image should feel inspiring and slightly magical, showing that great ideas can come from anywhere, even a boring government office.
+
+**Style Notes:** The illustration should blend the precision and cleanliness of Swiss design with the organic flowing lines of Art Nouveau and the bold colors of early modernism (think Klimt meets Swiss poster art). It should feel accessible and engaging to teenagers while capturing the wonder of Einstein's imagination.
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>

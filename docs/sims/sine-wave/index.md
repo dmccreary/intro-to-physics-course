@@ -21,7 +21,7 @@ hide:
 To include this MicroSim on your web site, just copy the following line of HTML code:
 
 ```html
-<iframe src="https://dmccreary.github.io/intro-to-physics/sims/sine-wave/main.html" height="480px" scrolling="no"
+<iframe src="https://dmccreary.github.io/intro-to-physics-course/sims/sine-wave/main.html" height="480px" scrolling="no"
   style="overflow: hidden;"></iframe>
 ```
 
