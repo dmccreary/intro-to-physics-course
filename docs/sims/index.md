@@ -65,6 +65,11 @@ This section contains interactive MicroSims covering topics in high school physi
     ![Banked Curve Speed Analysis](./banked-curve-speed/banked-curve-speed.png)
     Interactive exploration of how vehicle speed relative to ideal speed determines friction requirements on banked curves.
 
+- **[Bass and Treble Controls](./base-and-treble/index.md)**
+
+    ![Bass and Treble Controls](./base-and-treble/base-and-treble.png)
+    Interactive simulation of classic amplifier frequency response with adjustable bass and treble controls showing how EQ affects audio signals.
+
 - **[Branches of Physics](./branches-of-physics/index.md)**
 
     ![Branches of Physics](./branches-of-physics/branches-of-physics.png)
@@ -203,6 +208,16 @@ This section contains interactive MicroSims covering topics in high school physi
 
     ![Friction Coefficient Chart](./friction-coefficient-chart/friction-coefficient-chart.png)
     Interactive chart comparing static and kinetic friction coefficients for common material pairs.
+
+- **[FFT Basic Visualization](./fft-basic/index.md)**
+
+    ![FFT Basic Visualization](./fft-basic/fft-basic.png)
+    Interactive demonstration of the Fast Fourier Transform showing the relationship between time domain waveforms and frequency domain spectra.
+
+- **[FFT Microphone Visualization](./fft-mic/index.md)**
+
+    ![FFT Microphone Visualization](./fft-mic/fft-mic.png)
+    Real-time frequency spectrum analyzer using microphone input to visualize sound frequencies with adjustable display parameters.
 
 - **[Interactive Graph Analysis](./graph-analysis/index.md)**
 
@@ -416,6 +431,11 @@ This section contains interactive MicroSims covering topics in high school physi
     ![Simple Pendulum](./simple-pendulum/simple-pendulum.png)
     Investigate how pendulum length affects period and verify the T = 2π√(L/g) relationship through hands-on measurement.
 
+- **[Sine Wave Parameters](./sine-wave/index.md)**
+
+    ![Sine Wave Parameters](./sine-wave/sine-wave.png)
+    Interactive demonstration of sine wave parameters including amplitude, period, and phase with adjustable sliders.
+
 - **[Snell's Law Refraction](./snells-law/index.md)**
 
     ![Snell's Law Refraction](./snells-law/snells-law.png)
@@ -455,6 +475,11 @@ This section contains interactive MicroSims covering topics in high school physi
 
     ![Interactive Torque Diagram](./torque-diagram/torque-diagram.png)
     Explore how torque depends on force magnitude, position, and angle with this interactive lever simulation.
+
+- **[Tone Generator](./tone-gen/index.md)**
+
+    ![Tone Generator](./tone-gen/tone-gen.png)
+    Interactive tone generator allowing users to create and hear audio tones at different frequencies to explore pitch and frequency relationships.
 
 - **[Transverse Wave Animation](./transverse-wave/index.md)**
 

@@ -65,6 +65,7 @@ nav:
     - Atwood Machine: sims/atwood-machine/index.md
     - Banked Curve Forces: sims/banked-curve-forces/index.md
     - Banked Curve Speed: sims/banked-curve-speed/index.md
+    - Bass and Treble: sims/base-and-treble/index.md
     - Branches of Physics: sims/branches-of-physics/index.md
     - Car on Curve: sims/car-on-curve/index.md
     - Capacitor Charging Discharging: sims/capacitor-charging-discharging/index.md
@@ -91,6 +92,8 @@ nav:
     - Free Fall: sims/free-fall/index.md
     - Force Time Impulse: sims/force-time-impulse/index.md
     - Friction Coefficient Chart: sims/friction-coefficient-chart/index.md
+    - FFT Basic: sims/fft-basic/index.md
+    - FFT Microphone: sims/fft-mic/index.md
     - Graph Analysis: sims/graph-analysis/index.md
     - Gravitational Attractor: sims/gravitational-attractor/index.md
     - Hookes Law Demo: sims/hookes-law-demo/index.md
@@ -133,6 +136,7 @@ nav:
     - SHM Energy: sims/shm-energy/index.md
     - SHM Motion Graphs: sims/shm-motion-graphs/index.md
     - Simple Pendulum: sims/simple-pendulum/index.md
+    - Sine Wave: sims/sine-wave/index.md
     - Snells Law: sims/snells-law/index.md
     - Solar System: sims/solar-system/index.md
     - Standing Waves: sims/standing-waves/index.md
@@ -141,6 +145,7 @@ nav:
     - Tension Force Diagram: sims/tension-force-diagram/index.md
     - Three Graph Analyzer: sims/three-graph-analyzer/index.md
     - Torque Diagram: sims/torque-diagram/index.md
+    - Tone Generator: sims/tone-gen/index.md
     - Transverse Wave: sims/transverse-wave/index.md
     - Uniform vs Accelerated Motion: sims/uniform-accelerated-motion/index.md
     - Vector Addition: sims/vector-addition/index.md
