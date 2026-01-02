@@ -1,0 +1,4817 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A basic demonstration of FFT with time on the top and frequency on the bottom of the MicroSim">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/intro-to-physics-course/sims/fft-basic/">
+      
+      
+        <link rel="prev" href="../friction-coefficient-chart/">
+      
+      
+        <link rel="next" href="../fft-mic/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Basic FFT MicroSim - Introduction to Physics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-BF05WTGMW9"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-BF05WTGMW9",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-BF05WTGMW9",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Basic FFT MicroSim - Introduction to Physics" >
+      
+        <meta  property="og:description"  content="A basic demonstration of FFT with time on the top and frequency on the bottom of the MicroSim" >
+      
+        <meta property="og:image" content="https://dmccreary.github.io/intro-to-physics-course/sims/fft-basic/fft-basic.png">
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/intro-to-physics-course/sims/fft-basic/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Basic FFT MicroSim - Introduction to Physics" >
+      
+        <meta  name="twitter:description"  content="A basic demonstration of FFT with time on the top and frequency on the bottom of the MicroSim" >
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/intro-to-physics-course/sims/fft-basic/fft-basic.png">
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="navy" data-md-color-accent="yellow">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#basic-fft-microsim" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Introduction to Physics" class="md-header__button md-logo" aria-label="Introduction to Physics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction to Physics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Basic FFT MicroSim
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/intro-to-physics-course/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Introduction to Physics" class="md-nav__button md-logo" aria-label="Introduction to Physics" data-md-component="logo">
+      
+  <img src="../../img/logo.png" alt="logo">
+
+    </a>
+    Introduction to Physics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/intro-to-physics-course/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About This Book
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            MicroSims
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2d-collision-vectors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2D Collision Vectors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../action-reaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Action Reaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angled-projectile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Angled Projectile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angled-tension/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Angled Tension
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angular-displacement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Angular Displacement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angular-momentum-vector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Angular Momentum Vector
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../angular-velocities-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Angular Velocities Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atwood-fbd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atwood FBD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atwood-machine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atwood Machine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banked-curve-forces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Banked Curve Forces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../banked-curve-speed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Banked Curve Speed
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../base-and-treble/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bass and Treble
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../branches-of-physics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Branches of Physics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../car-on-curve/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Car on Curve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../capacitor-charging-discharging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Capacitor Charging Discharging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../centripetal-force-viz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Centripetal Force
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collisions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collisions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collision-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collision Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coulombs-law/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coulombs Law
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../current-animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Current Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../damping-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Damping Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dc-motor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DC Motor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../distance-displacement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Distance vs Displacement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doppler-effect/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Doppler Effect
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../charging-induction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Charging by Induction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../driven-oscillator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Driven Oscillator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elasticity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Elasticity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../electric-field-lines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electric Field Lines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../equilibrium-workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Equilibrium Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../energy-diagram-explorer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Energy Diagram Explorer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../energy-efficiency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Energy Efficiency
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exoplanet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exoplanet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../figure-skater-spin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Figure Skater Spin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fluid-dynamics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fluid Dynamics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../free-body-diagram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Free Body Diagram
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../free-fall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Free Fall
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../force-time-impulse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Force Time Impulse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../friction-coefficient-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Friction Coefficient Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    FFT Basic
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    FFT Basic
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-fft-visualization-lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic FFT Visualization - Lesson Plan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lab Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materials Needed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-lesson-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Lesson Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre-Lesson Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instructor-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructor Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hook-the-musical-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hook: The Musical Connection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-concept-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Concept Introduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-terms-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Terms Introduction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guided-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guided Exploration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guided Exploration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-understanding-the-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Understanding the Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-first-observations-8-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: First Observations (8 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-amplitude-exploration-7-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Amplitude Exploration (7 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#independent-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Independent Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Independent Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-worksheet-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Worksheet Activity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Worksheet Activity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-1-frequency-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 1: Frequency Prediction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-2-musical-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 2: Musical Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-3-amplitude-investigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3: Amplitude Investigation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-discussion-and-wrap-up-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Discussion and Wrap-up (5 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Discussion and Wrap-up (5 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-findings-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Findings Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connect-to-real-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect to Real World
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-next-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preview Next Lesson
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessment-rubric" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Rubric
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessment Rubric">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formative-assessment-during-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formative Assessment (During Lesson)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worksheet-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worksheet Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extension-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extension Activities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extension Activities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-advanced-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Advanced Students
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-students-needing-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Students Needing Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-student-misconceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Student Misconceptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Student Misconceptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#misconception-1-higher-frequency-means-taller-spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misconception 1: "Higher frequency means taller spike"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misconception-2-the-time-domain-wave-and-frequency-spike-should-look-similar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misconception 2: "The time domain wave and frequency spike should look similar"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misconception-3-fft-creates-the-frequencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misconception 3: "FFT creates the frequencies"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homework-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homework Assignment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Homework Assignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection-questions-due-next-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection Questions (Due Next Class)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructor-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructor Notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructor Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-technical-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Technical Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timing-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing Adjustments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differentiation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differentiation Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment-modifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Modifications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fft-mic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FFT Microphone
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graph-analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graph Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gravitational-attractor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gravitational Attractor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hookes-law-demo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hookes Law Demo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../horizontal-projection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Horizontal Projection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inclined-plane-forces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inclined Plane Forces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inclined-plane-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inclined Plane Motion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inertia-demo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inertia Demo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kinematic-selector/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kinematic Selector
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../law-of-reflection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Law of Reflection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graph-viewer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning Graph Viewer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../longitudinal-wave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Longitudinal Wave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metric-scale-zoom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metric Scale Zoom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../microscopic-surface-contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microscopic Surface Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../momentum-comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Momentum Comparison
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multistage-rocket/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multistage Rocket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../newtons-second-law/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Newtons Second Law
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../normal-force-incline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Normal Force Incline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ohms-law/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ohms Law Calculator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscillation-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oscillation Applications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pendulum-comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pendulum Comparison
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../period-frequency-relationship/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Period Frequency Relationship
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../position-time-analyzer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Position Time Analyzer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../potential-energy-chart/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Potential Energy Chart
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../precision-accuracy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Precision vs Accuracy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projectile-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projectile Motion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projectile-motion-gravity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projectile Motion Gravity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pulley-mechanical-advantage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pulley Mechanical Advantage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../relative-velocity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relative Velocity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resonance-graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resonance Graph
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../river-crossing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    River Crossing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rocket-propulsion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rocket Propulsion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roller-coaster-energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Roller Coaster Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rolling-energy-distribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rolling Energy Distribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rolling-velocity-vectors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rolling Velocity Vectors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rotational-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rotational Applications
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rotational-inertia-race/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rotational Inertia Race
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rotational-kinematics-solver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rotational Kinematics Solver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scientific-method/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scientific Method
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../series-parallel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Series vs Parallel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shm-energy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SHM Energy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shm-motion-graphs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SHM Motion Graphs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simple-pendulum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Simple Pendulum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sine-wave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sine Wave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snells-law/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Snells Law
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../solar-system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solar System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standing-waves/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standing Waves
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../static-friction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static Friction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tacoma-narrows-timeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tacoma Narrows Timeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tension-force-diagram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tension Force Diagram
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../three-graph-analyzer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three Graph Analyzer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../torque-diagram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Torque Diagram
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tone-gen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tone Generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transverse-wave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Transverse Wave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uniform-accelerated-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Uniform vs Accelerated Motion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-addition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector Addition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vector Components
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../velocity-speed-comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Velocity Speed Comparison
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../velocity-time-area/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Velocity Time Area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variable-force-work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable Force Work
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wave-interference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave Interference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../weight-gravity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Weight Gravity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../work-energy-theorem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Work Energy Theorem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../work-scenarios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Work Scenarios
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../stories/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Stories
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../book-build-references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Build References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-fft-visualization-lesson-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic FFT Visualization - Lesson Plan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lab-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lab Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Materials Needed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-lesson-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-Lesson Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pre-Lesson Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instructor-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructor Setup
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lesson Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lesson Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hook-the-musical-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hook: The Musical Connection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-concept-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Concept Introduction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-terms-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Terms Introduction
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guided-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guided Exploration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guided Exploration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-understanding-the-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Understanding the Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-first-observations-8-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: First Observations (8 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-amplitude-exploration-7-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: Amplitude Exploration (7 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#independent-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Independent Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Independent Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#student-worksheet-activity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Worksheet Activity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Worksheet Activity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-1-frequency-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 1: Frequency Prediction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-2-musical-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 2: Musical Notes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-3-amplitude-investigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exercise 3: Amplitude Investigation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#class-discussion-and-wrap-up-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Class Discussion and Wrap-up (5 minutes)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Class Discussion and Wrap-up (5 minutes)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-findings-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Findings Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connect-to-real-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect to Real World
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-next-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preview Next Lesson
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessment-rubric" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Rubric
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessment Rubric">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formative-assessment-during-lesson" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formative Assessment (During Lesson)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worksheet-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worksheet Assessment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extension-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extension Activities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extension Activities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-advanced-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Advanced Students
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-students-needing-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Students Needing Support
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-student-misconceptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Student Misconceptions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Student Misconceptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#misconception-1-higher-frequency-means-taller-spike" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misconception 1: "Higher frequency means taller spike"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misconception-2-the-time-domain-wave-and-frequency-spike-should-look-similar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misconception 2: "The time domain wave and frequency spike should look similar"
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misconception-3-fft-creates-the-frequencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Misconception 3: "FFT creates the frequencies"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homework-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homework Assignment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Homework Assignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection-questions-due-next-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection Questions (Due Next Class)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instructor-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructor Notes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instructor Notes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-technical-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Technical Issues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timing-adjustments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing Adjustments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#differentiation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differentiation Strategies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment-modifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Modifications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/intro-to-physics-course/blob/master/docs/sims/fft-basic/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="basic-fft-microsim">Basic FFT MicroSim</h1>
+<iframe src="./main.html" height="480px" scrolling="no"
+  style="overflow: hidden;"></iframe>
+
+<p>You can include this MicroSim in your course by pasting the following HTML directly into your web page.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://dmccreary.github.io/intro-to-physics-course/sims/basic-fft/main.html&quot;</span> 
+  <span class="na">height</span><span class="o">=</span><span class="s">&quot;480px&quot;</span> <span class="na">scrolling</span><span class="o">=</span><span class="s">&quot;no&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;overflow: hidden;&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p><a class="md-button md-button--primary" href="main.html">Run the Basic FFT MicroSim Fullscreen</a></p>
+<p><a href="https://editor.p5js.org/dmccreary/sketches/oDP6EoAQ6">Edit the Basic FFT MicroSim</a></p>
+<h2 id="basic-fft-visualization-lesson-plan">Basic FFT Visualization - Lesson Plan</h2>
+<h2 id="lab-information">Lab Information</h2>
+<p><strong>Course:</strong> Introduction to Signal Processing<br />
+<strong>Level:</strong> College Freshman<br />
+<strong>Duration:</strong> 20 minutes<br />
+<strong>Prerequisites:</strong> Basic trigonometry, familiarity with sine waves<br />
+<strong>Learning Objectives:</strong> Students will understand the fundamental concept of FFT and the relationship between time and frequency domains</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li>Explain what the Fast Fourier Transform (FFT) does conceptually</li>
+<li>Identify the relationship between a sine wave in time domain and its frequency domain representation</li>
+<li>Predict how changes in frequency and amplitude affect both domain representations</li>
+<li>Distinguish between time domain and frequency domain visualizations</li>
+<li>Use interactive tools to explore signal analysis concepts</li>
+</ol>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>Computer with web browser and audio capability</li>
+<li>Basic FFT Visualization MicroSim</li>
+<li>Headphones or speakers (optional but recommended)</li>
+<li>Student worksheet (provided below)</li>
+<li>Whiteboard/projector for demonstrations</li>
+</ul>
+<h2 id="pre-lesson-preparation">Pre-Lesson Preparation</h2>
+<h3 id="student-setup">Student Setup</h3>
+<ol>
+<li>Open the Basic FFT Visualization MicroSim in web browser</li>
+<li>Ensure audio is working (volume at comfortable level)</li>
+<li>Familiarize yourself with the interface:</li>
+<li>Two main display areas (top and bottom)</li>
+<li>Control sliders and buttons at bottom</li>
+<li>Note the "PAUSED" status indicator</li>
+</ol>
+<h3 id="instructor-setup">Instructor Setup</h3>
+<ul>
+<li>Project MicroSim on screen for class demonstration</li>
+<li>Have example frequency values ready (220 Hz, 440 Hz, 880 Hz)</li>
+<li>Prepare simple sine wave drawings on whiteboard</li>
+</ul>
+<h2 id="lesson-introduction">Lesson Introduction</h2>
+<h3 id="hook-the-musical-connection">Hook: The Musical Connection</h3>
+<p><strong>Ask students:</strong> "When you hear a musical note, what makes it different from noise?"</p>
+<p><strong>Brief Discussion:</strong> Students may mention pitch, tone, harmony. Lead toward the idea that musical notes have specific frequencies.</p>
+<h3 id="core-concept-introduction">Core Concept Introduction</h3>
+<p><strong>Explain:</strong> "Today we'll explore how we can analyze any signal - music, voice, or electronic signals - by breaking it down into its frequency components. This is like having X-ray vision for sound!"</p>
+<h3 id="key-terms-introduction">Key Terms Introduction</h3>
+<p>Write on board and define:</p>
+<ul>
+<li><strong>Time Domain:</strong> How a signal changes over time (what we usually see on an oscilloscope)</li>
+<li><strong>Frequency Domain:</strong> Which frequencies are present in a signal and how strong they are</li>
+<li><strong>FFT (Fast Fourier Transform):</strong> A mathematical tool that converts time domain signals to frequency domain</li>
+</ul>
+<h2 id="guided-exploration">Guided Exploration</h2>
+<h3 id="phase-1-understanding-the-interface">Phase 1: Understanding the Interface</h3>
+<p><strong>Instructor Demonstration:</strong>
+1. Point out the two main areas:</p>
+<ul>
+<li><strong>Top area (green line):</strong> "This shows how our signal changes over time"</li>
+<li>
+<p><strong>Bottom area (purple bars):</strong> "This shows which frequencies are in our signal"</p>
+</li>
+<li>
+<p>Show the controls:</p>
+</li>
+<li>
+<p><strong>Frequency slider:</strong> "Controls the pitch of our sine wave"</p>
+</li>
+<li><strong>Amplitude slider:</strong> "Controls how loud/strong our signal is"</li>
+<li><strong>Start/Pause button:</strong> "Turns our signal generator on and off"</li>
+</ul>
+<p><strong>Student Task:</strong> Have students identify these same elements on their screens.</p>
+<h3 id="phase-2-first-observations-8-minutes">Phase 2: First Observations (8 minutes)</h3>
+<p><strong>Guided Activity:</strong></p>
+<ol>
+<li><strong>Start with default settings</strong> (440 Hz, 0.5 amplitude, paused)</li>
+<li>
+<p><strong>Ask:</strong> "What do you see in both displays right now?" (Flat lines)</p>
+</li>
+<li>
+<p><strong>Press Start button</strong></p>
+</li>
+<li>
+<p><strong>Observe:</strong> Green sine wave appears in top, purple spike appears in bottom</p>
+</li>
+<li>
+<p><strong>Ask:</strong> "Where is the purple spike located? Why there?"</p>
+</li>
+<li>
+<p><strong>Change frequency to 220 Hz</strong></p>
+</li>
+<li>
+<p><strong>Observe:</strong> Wave in top gets "stretched out," spike in bottom moves left</p>
+</li>
+<li>
+<p><strong>Ask:</strong> "What happened to the wave? What happened to the spike?"</p>
+</li>
+<li>
+<p><strong>Change frequency to 880 Hz</strong></p>
+</li>
+<li>
+<p><strong>Observe:</strong> Wave in top gets "compressed," spike in bottom moves right</p>
+</li>
+<li><strong>Ask:</strong> "Can you predict the pattern here?"</li>
+</ol>
+<p><strong>Key Learning Point:</strong> "One sine wave in time always creates exactly one spike in frequency!"</p>
+<h3 id="phase-3-amplitude-exploration-7-minutes">Phase 3: Amplitude Exploration (7 minutes)</h3>
+<p><strong>Guided Activity:</strong></p>
+<ol>
+<li>
+<p><strong>Set frequency to 440 Hz</strong></p>
+</li>
+<li>
+<p><strong>Change amplitude from 0.5 to 0.1</strong></p>
+</li>
+<li><strong>Observe:</strong> Time domain wave gets smaller, frequency spike gets shorter</li>
+<li>
+<p><strong>Ask:</strong> "What changed? What stayed the same?"</p>
+</li>
+<li>
+<p><strong>Change amplitude to 1.0</strong></p>
+</li>
+<li><strong>Observe:</strong> Both displays show maximum values</li>
+<li><strong>Ask:</strong> "How does amplitude affect each domain?"</li>
+</ol>
+<p><strong>Key Learning Point:</strong> "Amplitude changes the height in both domains, but not the frequency location!"</p>
+<h2 id="independent-practice">Independent Practice</h2>
+<h3 id="student-worksheet-activity">Student Worksheet Activity</h3>
+<p><strong>Instructions:</strong> Working individually or in pairs, complete the following exercises using the MicroSim:</p>
+<h4 id="exercise-1-frequency-prediction">Exercise 1: Frequency Prediction</h4>
+<ol>
+<li>Set the frequency slider to 100 Hz and press Start</li>
+<li>Observe where the spike appears in the frequency domain</li>
+<li><strong>Predict:</strong> If you change to 200 Hz, where will the spike move?</li>
+<li>Test your prediction</li>
+<li><strong>Record:</strong> Was your prediction correct? Why or why not?</li>
+</ol>
+<h4 id="exercise-2-musical-notes">Exercise 2: Musical Notes</h4>
+<p>The following frequencies correspond to musical notes:</p>
+<ul>
+<li>C4: 262 Hz</li>
+<li>E4: 330 Hz  </li>
+<li>G4: 392 Hz</li>
+<li>
+<p>C5: 523 Hz</p>
+</li>
+<li>
+<p>Set each frequency and observe the frequency domain</p>
+</li>
+<li><strong>Record:</strong> How does the spike position relate to the pitch you hear?</li>
+<li><strong>Challenge:</strong> Can you "tune" the slider to create these exact frequencies?</li>
+</ul>
+<h4 id="exercise-3-amplitude-investigation">Exercise 3: Amplitude Investigation</h4>
+<ol>
+<li>Set frequency to 500 Hz</li>
+<li>Try amplitude values: 0.1, 0.3, 0.7, 1.0</li>
+<li><strong>Record:</strong> Complete this table:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Amplitude</th>
+<th>Time Domain Wave Height</th>
+<th>Frequency Spike Height</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0.3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0.7</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.0</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Conclusion:</strong> What is the relationship between amplitude and the heights in both domains?</li>
+</ol>
+<h2 id="class-discussion-and-wrap-up-5-minutes">Class Discussion and Wrap-up (5 minutes)</h2>
+<h3 id="key-findings-review">Key Findings Review</h3>
+<p><strong>Ask students to share:</strong>
+- "What surprised you most about the relationship between time and frequency?"
+- "How would you explain FFT to a friend in simple terms?"</p>
+<h3 id="connect-to-real-world">Connect to Real World</h3>
+<p><strong>Discuss applications:</strong>
+- <strong>Music production:</strong> Equalizers show frequency content
+- <strong>Medical imaging:</strong> MRI uses similar frequency analysis
+- <strong>Communication:</strong> Cell phones analyze frequency to separate channels
+- <strong>Audio compression:</strong> MP3 files use frequency analysis to reduce file size</p>
+<h3 id="preview-next-lesson">Preview Next Lesson</h3>
+<p>"Next time, we'll explore what happens when we have multiple sine waves at the same time. Can you predict what the frequency domain might look like with two different frequencies playing together?"</p>
+<h2 id="assessment-rubric">Assessment Rubric</h2>
+<h3 id="formative-assessment-during-lesson">Formative Assessment (During Lesson)</h3>
+<p><strong>Excellent (4):</strong> Student correctly predicts frequency/amplitude effects and explains reasoning<br />
+<strong>Proficient (3):</strong> Student makes correct observations with minimal guidance<br />
+<strong>Developing (2):</strong> Student participates but needs significant guidance<br />
+<strong>Beginning (1):</strong> Student struggles to make basic observations</p>
+<h3 id="worksheet-assessment">Worksheet Assessment</h3>
+<p><strong>Understanding of FFT Concept:</strong></p>
+<ul>
+<li>Correctly identifies that sine waves create single frequency spikes</li>
+<li>Explains relationship between time and frequency domains</li>
+<li>Demonstrates understanding that amplitude affects height, not frequency position</li>
+</ul>
+<p><strong>Problem-Solving Skills:</strong></p>
+<ul>
+<li>Makes accurate predictions about frequency changes</li>
+<li>Uses MicroSim effectively to test hypotheses</li>
+<li>Records observations accurately</li>
+</ul>
+<h2 id="extension-activities">Extension Activities</h2>
+<h3 id="for-advanced-students">For Advanced Students</h3>
+<ol>
+<li>
+<p><strong>Research Challenge:</strong> Look up the mathematical definition of Fourier Transform. How does the visual representation relate to the equations?</p>
+</li>
+<li>
+<p><strong>Real-World Connection:</strong> Find examples of frequency analysis in your field of interest (engineering, music, medicine, etc.)</p>
+</li>
+</ol>
+<h3 id="for-students-needing-support">For Students Needing Support</h3>
+<ol>
+<li>
+<p><strong>Visual Summary:</strong> Create a drawing showing a sine wave and its corresponding frequency spike with labels</p>
+</li>
+<li>
+<p><strong>Analogy Development:</strong> Think of an analogy that helps explain why we need both time and frequency representations</p>
+</li>
+</ol>
+<h2 id="common-student-misconceptions">Common Student Misconceptions</h2>
+<h3 id="misconception-1-higher-frequency-means-taller-spike">Misconception 1: "Higher frequency means taller spike"</h3>
+<p><strong>Correction:</strong> Higher frequency moves the spike to the right, not up. Height is controlled by amplitude.</p>
+<h3 id="misconception-2-the-time-domain-wave-and-frequency-spike-should-look-similar">Misconception 2: "The time domain wave and frequency spike should look similar"</h3>
+<p><strong>Correction:</strong> They represent completely different information. Time domain shows change over time; frequency domain shows which frequencies are present.</p>
+<h3 id="misconception-3-fft-creates-the-frequencies">Misconception 3: "FFT creates the frequencies"</h3>
+<p><strong>Correction:</strong> FFT reveals frequencies that were already in the signal. It's like using a prism to see colors that were already in white light.</p>
+<h2 id="homework-assignment">Homework Assignment</h2>
+<h3 id="reflection-questions-due-next-class">Reflection Questions (Due Next Class)</h3>
+<ol>
+<li>
+<p>In your own words, explain what the Fast Fourier Transform does and why it's useful.</p>
+</li>
+<li>
+<p>Describe a situation where you might want to analyze a signal in the frequency domain rather than just looking at it in time domain.</p>
+</li>
+<li>
+<p>Using the MicroSim, find the frequency that creates a spike at exactly the 1000 Hz mark. Explain how you found this frequency and what you observed.</p>
+</li>
+<li>
+<p><strong>Creative Application:</strong> If you were designing a music app, how might you use frequency domain analysis? Describe at least two features that could benefit from FFT analysis.</p>
+</li>
+</ol>
+<h2 id="instructor-notes">Instructor Notes</h2>
+<h3 id="common-technical-issues">Common Technical Issues</h3>
+<ul>
+<li><strong>Audio not working:</strong> Ensure students click "Start" button and check browser audio permissions</li>
+<li><strong>Slider not responding:</strong> Refresh page and try again</li>
+<li><strong>Display too small:</strong> Use browser zoom if needed</li>
+</ul>
+<h3 id="timing-adjustments">Timing Adjustments</h3>
+<ul>
+<li><strong>Running behind:</strong> Skip Exercise 3 in Independent Practice</li>
+<li><strong>Ahead of schedule:</strong> Add discussion about why we need 1024 samples for good frequency resolution</li>
+</ul>
+<h3 id="differentiation-strategies">Differentiation Strategies</h3>
+<ul>
+<li><strong>Visual learners:</strong> Emphasize the graphical representations and encourage drawing</li>
+<li><strong>Auditory learners:</strong> Have students listen to frequency changes with headphones</li>
+<li><strong>Kinesthetic learners:</strong> Encourage hands-on exploration with sliders</li>
+</ul>
+<h3 id="assessment-modifications">Assessment Modifications</h3>
+<ul>
+<li><strong>For students with disabilities:</strong> Allow verbal responses instead of written for worksheet</li>
+<li><strong>For ESL students:</strong> Provide vocabulary list with key terms and definitions</li>
+<li><strong>For advanced students:</strong> Ask follow-up questions about sampling rates and frequency resolution</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../friction-coefficient-chart/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Friction Coefficient Chart">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Friction Coefficient Chart
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../fft-mic/" class="md-footer__link md-footer__link--next" aria-label="Next: FFT Microphone">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                FFT Microphone
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
