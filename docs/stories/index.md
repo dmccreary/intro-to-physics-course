@@ -30,6 +30,11 @@ Think physics is just equations and formulas? Think again. These are the stories
     ![Michael Faraday](./faraday/cover.png)
     No money. No education. No connections. Michael Faraday had every reason to fail. But he taught himself science from the books he was binding, talked his way into a lab assistant job, and ended up discovering how to turn magnetism into electricity. Every motor and generator on Earth exists because of him.
 
+- **[The Man Who Lit the World](tesla/index.md)**
+
+    ![Nikola Tesla](./tesla/cover.png)
+    He arrived in America with four cents in his pocket. Thomas Edison called his ideas dangerous and impractical. He dug ditches to survive. But Nikola Tesla never stopped believing in alternating current—and when he lit the 1893 World's Fair with 100,000 bulbs, the doubters were silenced forever. Every power plant, every electrical grid, every outlet in your wall exists because Tesla proved them all wrong.
+
 - **[Glowing in the Dark](marie-curie/index.md)**
 
     ![Marie Curie](./marie-curie/cover.png)
