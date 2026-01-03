@@ -435,15 +435,15 @@ Tesla's lesson is simple: **Being ahead of your time isn't a flaw. It's a superp
 
 ## References
 
-1. [Nikola Tesla | Biography, Facts, & Inventions](PLACEHOLDER) - Tesla's complete biography from a major encyclopedia
+1. [Nikola Tesla | Biography, Facts, & Inventions](https://www.britannica.com/biography/Nikola-Tesla) - Updated 2024 - Britannica - Complete biography of the Serbian American inventor who discovered the rotating magnetic field and developed the AC power system that electrifies our world.
 
-2. [Tesla vs Edison: The War of Currents](PLACEHOLDER) - Detailed history of the AC/DC battle that shaped electrical power
+2. [Edison vs. Westinghouse: A Shocking Rivalry](https://www.smithsonianmag.com/history/edison-vs-westinghouse-a-shocking-rivalry-102146036/) - Smithsonian Magazine - The dramatic story of the War of Currents, including Edison's campaign against AC and Tesla's ultimate triumph at the 1893 Chicago World's Fair.
 
-3. [The Life and Times of Nikola Tesla](PLACEHOLDER) - Academic biography exploring Tesla's inventions and struggles
+3. [The War of the Currents: AC vs. DC Power](https://www.energy.gov/articles/war-currents-ac-vs-dc-power) - U.S. Department of Energy - Learn how Tesla's AC system defeated Edison's DC, powering Buffalo from Niagara Falls and changing electrical distribution forever.
 
-4. [Tesla's AC Induction Motor](PLACEHOLDER) - Technical explanation of Tesla's most important invention
+4. [PBS: Tesla - Master of Lightning: AC Motor](https://www.pbs.org/tesla/ins/lab_acmotor.html) - PBS - Technical explanation of Tesla's revolutionary AC induction motor, with historical photographs and diagrams from the original documentary.
 
-5. [Wardenclyffe Tower: Tesla's Dream of Wireless Power](PLACEHOLDER) - The story of Tesla's most ambitious project
+5. [The Tower - Tesla Science Center at Wardenclyffe](https://teslasciencecenter.org/history/tower/) - Tesla Science Center - The story of Tesla's 187-foot wireless power tower, funded by J.P. Morgan and demolished in 1917, at the site now preserved as a museum.
 
-6. [Tesla: Master of Lightning (PBS Documentary)](PLACEHOLDER) - Documentary exploring Tesla's life and legacy
+6. [Watch Tesla | American Experience](https://www.pbs.org/wgbh/americanexperience/films/tesla/) - 2016 - PBS - Documentary exploring Tesla's brilliant mind, his rivalry with Edison, and why his visionary ideas left him penniless despite changing the world.
 

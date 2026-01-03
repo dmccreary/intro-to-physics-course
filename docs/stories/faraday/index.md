@@ -363,5 +363,5 @@ What's your starting point? And where will curiosity take you?
 
 4. [The Genius of Michael Faraday](https://www.aaas.org/taxonomy/term/10/genius-michael-faraday) - 2024 - American Association for the Advancement of Science - Explores why Faraday, despite having no formal education, is considered one of the greatest experimentalists in history.
 
-5. [Michael Faraday: Scientist and Nonconformist](http://silas.psfc.mit.edu/Faraday/) - Ongoing - MIT Plasma Science and Fusion Center - Academic resource exploring Faraday's scientific method and his religious beliefs that shaped his view of nature's unity.
+5. [Michael Faraday | The Faraday Institute](https://www.faraday.cam.ac.uk/about/michael-faraday/) - University of Cambridge - Academic resource exploring Faraday's scientific method and his religious beliefs that shaped his view of nature's unity.
 
