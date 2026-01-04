@@ -8,7 +8,7 @@ hide:
 
 This section contains interactive MicroSims covering topics in high school physics including kinematics, dynamics, energy, momentum, rotational motion, oscillations, waves, and electricity. Each simulation allows students to explore physics concepts through hands-on experimentation and visualization.
 
-<div class="grid cards" markdown>
+<div class="grid cards grid-4-col" markdown>
 
 - **[2D Collision Vector Diagram](./2d-collision-vectors/index.md)**
 

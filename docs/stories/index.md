@@ -8,7 +8,7 @@ hide:
 
 Think physics is just equations and formulas? Think again. These are the stories of real people who broke rules, challenged authority, and changed everything we know about the universe. They got rejected, ridiculed, and sometimes arrested—but they were right, and that's what mattered.
 
-<div class="grid cards" markdown>
+<div class="grid cards grid-4-col" markdown>
 
 - **[Eureka! The Story of Archimedes](archimedes/index.md)**
 
