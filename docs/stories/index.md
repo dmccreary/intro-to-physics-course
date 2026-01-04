@@ -1,6 +1,8 @@
 ---
 title: Physics History Graphic Novels
 description: Graphic novel stories about the rebels, geniuses, and troublemakers who discovered how the universe works
+image: /stories/stories-cover.png
+og:image: /stories/stories-cover.png
 hide:
     - toc
 ---
