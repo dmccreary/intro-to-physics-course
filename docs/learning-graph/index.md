@@ -8,6 +8,8 @@ what concepts each node depends on before that concept is understood by the stud
 A learning graph is the foundational data structure for intelligent textbooks that can recommend learning paths.
 A learning graph is like a roadmap of concepts to help students arrive at their learning goals.
 
+[Open The Learning Graph](../sims/graph-viewer/main.html){ .md-button .md-button--primary }
+
 At the left of the learning graph are prerequisite or foundational concepts. They
 have no outbound edges. They only have inbound edges for other concepts that depend on
 understanding these foundational prerequisite concepts. At the far right
