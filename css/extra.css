@@ -52,3 +52,29 @@
 .admonition.prompt .copy-button:hover {
   background-color: #0041a4; /* Darker blue on hover */
 }
+
+/* 4-column grid for MicroSims gallery screenshots */
+.grid.cards.grid-4-col > ul {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 0.5em !important;
+}
+
+.grid.cards.grid-4-col > ul > li {
+  margin: 0 !important;
+}
+
+.grid.cards.grid-4-col > ul > li img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make text smaller in 4-col grid for compact view */
+.grid.cards.grid-4-col > ul > li p {
+  font-size: 0.8em;
+  margin: 0.25em 0;
+}
+
+.grid.cards.grid-4-col > ul > li strong a {
+  font-size: 0.9em;
+}
