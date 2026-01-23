@@ -3,13 +3,51 @@
   "description": "Interactive simulation demonstrating conservation of angular momentum through a figure skater spin. Control arm position to observe how moment of inertia changes affect angular velocity while angular momentum remains constant.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["angular momentum", "rotation", "physics", "conservation laws"],
+  "subject": [
+    "angular momentum",
+    "rotation",
+    "physics",
+    "conservation laws"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["angular momentum conservation", "moment of inertia", "angular velocity", "rotational kinetic energy", "L = Iω"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Angular velocity", "Moment of inertia", "Conservation of angular momentum"]
+  "concepts": [
+    "angular momentum conservation",
+    "moment of inertia",
+    "angular velocity",
+    "rotational kinetic energy",
+    "L = I\u03c9"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Angular velocity",
+    "Moment of inertia",
+    "Conservation of angular momentum"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of figure skater angular momentum conservation",
+    "Explore figure skater angular momentum conservation through interactive visualization",
+    "Apply knowledge of figure skater angular momentum conservation to solve problems",
+    "Experiment with parameters to observe their effects on figure skater angular momentum conservation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

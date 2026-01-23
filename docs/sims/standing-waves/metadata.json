@@ -3,13 +3,52 @@
   "description": "Interactive simulation showing standing wave patterns with nodes and antinodes. Adjust frequency to observe different harmonic modes on a string.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["waves", "standing waves", "physics", "harmonics"],
+  "subject": [
+    "waves",
+    "standing waves",
+    "physics",
+    "harmonics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["standing waves", "nodes", "antinodes", "harmonics", "resonance", "fundamental frequency"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Wave properties", "Superposition", "Frequency"]
+  "concepts": [
+    "standing waves",
+    "nodes",
+    "antinodes",
+    "harmonics",
+    "resonance",
+    "fundamental frequency"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Wave properties",
+    "Superposition",
+    "Frequency"
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of standing waves",
+    "Explore standing waves through interactive visualization",
+    "Apply knowledge of standing waves to solve problems",
+    "Experiment with parameters to observe their effects on standing waves"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

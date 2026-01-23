@@ -3,13 +3,46 @@
   "description": "Interactive visualization of the physics course learning graph showing concept dependencies and relationships. Features node search, group filtering, and graph statistics.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["learning graphs", "concept dependencies", "physics education", "visualization"],
+  "subject": [
+    "learning graphs",
+    "concept dependencies",
+    "physics education",
+    "visualization"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "vis-network",
-  "concepts": ["concept dependencies", "learning paths", "prerequisite relationships", "taxonomy"],
-  "bloomsLevel": ["Understand", "Analyze"],
-  "prerequisites": ["None"]
+  "concepts": [
+    "concept dependencies",
+    "learning paths",
+    "prerequisite relationships",
+    "taxonomy"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "None"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of learning graph viewer",
+    "Explore learning graph viewer through interactive visualization",
+    "Apply knowledge of learning graph viewer to solve problems",
+    "Experiment with parameters to observe their effects on learning graph viewer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Apply",
+    "Create"
+  ]
 }

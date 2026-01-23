@@ -2,7 +2,11 @@
   "title": "Elasticity",
   "description": "Interactive simulation demonstrating how elasticity affects energy loss during ball collisions with surfaces.",
   "creator": "Dan McCreary",
-  "subject": ["Physics", "Mechanics", "Collisions"],
+  "subject": [
+    "Physics",
+    "Mechanics",
+    "Collisions"
+  ],
   "date": "2025-12-21",
   "type": "Interactive Simulation",
   "format": "text/html",
@@ -17,13 +21,23 @@
     "Predict bouncing behavior based on elasticity values",
     "Compare elastic and inelastic collisions"
   ],
-  "bloomsTaxonomyLevels": ["Remember", "Understand", "Apply", "Analyze"],
+  "bloomsTaxonomyLevels": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
   "duration": "5-10 minutes",
-  "prerequisites": ["Basic understanding of energy", "Familiarity with kinetic energy"],
+  "prerequisites": [
+    "Basic understanding of energy",
+    "Familiarity with kinetic energy"
+  ],
   "framework": "p5.js",
   "canvasDimensions": "responsive x 450",
   "responsive": "Width-responsive",
-  "dependencies": ["p5.js 1.11.10"],
+  "dependencies": [
+    "p5.js 1.11.10"
+  ],
   "controls": [
     {
       "type": "button",
@@ -41,7 +55,12 @@
     }
   ],
   "modelType": "Physics-based simulation",
-  "variables": ["position", "velocity", "elasticity", "gravity"],
+  "variables": [
+    "position",
+    "velocity",
+    "elasticity",
+    "gravity"
+  ],
   "equations": [
     "v_after = -elasticity * v_before",
     "v_y += gravity (each frame)"
@@ -55,5 +74,19 @@
     "Does not model rotational effects",
     "Simplified collision detection",
     "Does not show energy values numerically"
+  ],
+  "visualizationType": [
+    "3d-model",
+    "animation",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
   ]
 }

@@ -3,7 +3,13 @@
   "description": "Interactive simulation showing how capacitors store and release energy in RC circuits, demonstrating exponential charging and discharging behavior with adjustable voltage, resistance, and capacitance parameters.",
   "creator": "Dan McCreary",
   "date": "2025-12-29",
-  "subject": ["Physics", "Electricity", "Capacitors", "RC Circuits", "Time Constant"],
+  "subject": [
+    "Physics",
+    "Electricity",
+    "Capacitors",
+    "RC Circuits",
+    "Time Constant"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -11,7 +17,11 @@
   "contributor": "Claude AI Assistant",
   "identifier": "capacitor-charging-discharging-v1",
   "educationalLevel": "High School (Grades 9-12)",
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
   "concepts": [
     "capacitance",
     "resistance",
@@ -41,15 +51,15 @@
     {
       "name": "Resistance Slider",
       "type": "slider",
-      "range": "100 Ω - 100 kΩ",
-      "default": "10 kΩ",
+      "range": "100 \u03a9 - 100 k\u03a9",
+      "default": "10 k\u03a9",
       "description": "Adjusts circuit resistance"
     },
     {
       "name": "Capacitance Slider",
       "type": "slider",
-      "range": "1-1000 μF",
-      "default": "100 μF",
+      "range": "1-1000 \u03bcF",
+      "default": "100 \u03bcF",
       "description": "Adjusts capacitor value"
     },
     {
@@ -72,5 +82,29 @@
       "type": "button",
       "description": "Resets simulation to initial state"
     }
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Observe and understand capacitor charging and discharging in action",
+    "Explore how changing parameters affects capacitor charging and discharging",
+    "Apply physics principles to predict capacitor charging and discharging behavior",
+    "Experiment with parameters to observe their effects on capacitor charging and discharging"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
   ]
 }

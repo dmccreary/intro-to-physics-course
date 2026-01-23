@@ -1,6 +1,6 @@
 {
   "title": "Angular Momentum Vector Visualization",
-  "description": "Interactive simulation visualizing angular momentum as a vector quantity, demonstrating the right-hand rule for determining direction. Students can adjust angular velocity and disk radius to explore the relationship L = Iω.",
+  "description": "Interactive simulation visualizing angular momentum as a vector quantity, demonstrating the right-hand rule for determining direction. Students can adjust angular velocity and disk radius to explore the relationship L = I\u03c9.",
   "creator": "Dan McCreary",
   "date": "2024-12-30",
   "subject": [
@@ -33,5 +33,27 @@
     "Analyzing"
   ],
   "library": "p5.js",
-  "libraryVersion": "1.11.10"
+  "libraryVersion": "1.11.10",
+  "visualizationType": [
+    "3d-model",
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of angular momentum vector visualization",
+    "Explore angular momentum vector visualization through interactive visualization",
+    "Apply knowledge of angular momentum vector visualization to solve problems",
+    "Experiment with parameters to observe their effects on angular momentum vector visualization"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ]
 }

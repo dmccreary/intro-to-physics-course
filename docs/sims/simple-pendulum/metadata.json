@@ -1,6 +1,6 @@
 {
   "title": "Simple Pendulum Period Investigation",
-  "description": "An interactive simulation for investigating the relationship between pendulum length and period. Students can measure swing periods, collect data at various lengths, and verify the theoretical equation T = 2π√(L/g) through systematic experimentation.",
+  "description": "An interactive simulation for investigating the relationship between pendulum length and period. Students can measure swing periods, collect data at various lengths, and verify the theoretical equation T = 2\u03c0\u221a(L/g) through systematic experimentation.",
   "creator": "Dan McCreary",
   "date": "2024-12-28",
   "subject": [
@@ -64,5 +64,27 @@
       "Theoretical curve overlay",
       "Responsive canvas sizing"
     ]
-  }
+  },
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of simple pendulum period investigation",
+    "Explore simple pendulum period investigation through interactive visualization",
+    "Apply knowledge of simple pendulum period investigation to solve problems",
+    "Experiment with parameters to observe their effects on simple pendulum period investigation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

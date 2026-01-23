@@ -2,8 +2,17 @@
   "microsim": {
     "dublinCore": {
       "title": "Projectile Motion with Gravity MicroSim",
-      "creator": ["Educational MicroSim Generator", "Claude AI Assistant"],
-      "subject": ["Physics", "Mechanics", "Kinematics", "Projectile Motion", "Gravity"],
+      "creator": [
+        "Educational MicroSim Generator",
+        "Claude AI Assistant"
+      ],
+      "subject": [
+        "Physics",
+        "Mechanics",
+        "Kinematics",
+        "Projectile Motion",
+        "Gravity"
+      ],
       "description": "An interactive simulation demonstrating how gravity affects the parabolic trajectory of projectiles. Students can adjust gravity values and observe multiple trajectories to understand the relationship between gravitational acceleration and projectile motion.",
       "publisher": "Educational MicroSims Project",
       "contributor": [],
@@ -15,7 +24,7 @@
       "language": "en",
       "relation": [
         "NGSS: MS-PS2-1",
-        "NGSS: MS-PS2-2", 
+        "NGSS: MS-PS2-2",
         "NGSS: HS-PS2-1",
         "Common Core Math: HSF-IF.B.4",
         "Common Core Math: HSF-IF.C.7"
@@ -27,8 +36,21 @@
       "rights": "CC BY 4.0 - Creative Commons Attribution 4.0 International"
     },
     "educational": {
-      "gradeLevel": ["6", "7", "8", "9", "10", "11", "12", "Undergraduate"],
-      "subjectArea": ["Physics", "Science", "Mathematics"],
+      "gradeLevel": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "Undergraduate"
+      ],
+      "subjectArea": [
+        "Physics",
+        "Science",
+        "Mathematics"
+      ],
       "topic": [
         "Projectile Motion",
         "Gravity",
@@ -44,7 +66,12 @@
         "Evaluate the relationship between gravitational acceleration and trajectory characteristics",
         "Compare projectile motion under different gravitational conditions"
       ],
-      "bloomsTaxonomy": ["Understand", "Apply", "Analyze", "Evaluate"],
+      "bloomsTaxonomy": [
+        "Understand",
+        "Apply",
+        "Analyze",
+        "Evaluate"
+      ],
       "prerequisites": [
         "Basic understanding of gravity as a force",
         "Familiarity with acceleration concepts",
@@ -98,7 +125,9 @@
         "drawHeight": 400,
         "controlHeight": 50
       },
-      "dependencies": ["p5.js@1.11.10"],
+      "dependencies": [
+        "p5.js@1.11.10"
+      ],
       "browserCompatibility": [
         "Chrome 90+",
         "Firefox 88+",
@@ -156,7 +185,7 @@
             "max": 2,
             "default": 0.5,
             "step": 0.1,
-            "units": "m/s²"
+            "units": "m/s\u00b2"
           }
         }
       ],
@@ -171,13 +200,19 @@
           "type": "animation",
           "description": "Projectile trajectories with dashed lines",
           "interactive": true,
-          "updateTriggers": ["fireButton", "gravitySlider"]
+          "updateTriggers": [
+            "fireButton",
+            "gravitySlider"
+          ]
         },
         {
           "type": "text-display",
           "description": "Current gravity value and trajectory count",
           "interactive": false,
-          "updateTriggers": ["gravitySlider", "fireButton"]
+          "updateTriggers": [
+            "gravitySlider",
+            "fireButton"
+          ]
         }
       ]
     },
@@ -186,8 +221,8 @@
         "type": "physics",
         "description": "Classical mechanics model of projectile motion under constant gravitational acceleration. Uses kinematic equations to calculate position based on initial velocity components and gravitational acceleration.",
         "equations": [
-          "vx = v0 * cos(θ)",
-          "vy = v0 * sin(θ)",
+          "vx = v0 * cos(\u03b8)",
+          "vy = v0 * sin(\u03b8)",
           "vy_new = vy + g * dt",
           "x_new = x + vx * dt",
           "y_new = y + vy * dt"
@@ -218,9 +253,9 @@
         {
           "name": "gravity",
           "type": "input",
-          "description": "Gravitational acceleration in m/s²",
+          "description": "Gravitational acceleration in m/s\u00b2",
           "dataType": "number",
-          "units": "m/s²",
+          "units": "m/s\u00b2",
           "range": {
             "min": 0,
             "max": 2
@@ -313,27 +348,46 @@
         {
           "name": "projectileFired",
           "description": "User clicked Fire button to launch projectile",
-          "data": ["timestamp", "currentGravity", "trajectoryCount"]
+          "data": [
+            "timestamp",
+            "currentGravity",
+            "trajectoryCount"
+          ]
         },
         {
           "name": "gravityAdjusted",
           "description": "User moved gravity slider",
-          "data": ["timestamp", "newGravityValue", "previousGravityValue"]
+          "data": [
+            "timestamp",
+            "newGravityValue",
+            "previousGravityValue"
+          ]
         },
         {
           "name": "simulationReset",
           "description": "User clicked Reset button to clear trajectories",
-          "data": ["timestamp", "numberOfTrajectoriesCleared"]
+          "data": [
+            "timestamp",
+            "numberOfTrajectoriesCleared"
+          ]
         },
         {
           "name": "sessionStart",
           "description": "User loaded the simulation",
-          "data": ["timestamp", "userAgent", "screenSize"]
+          "data": [
+            "timestamp",
+            "userAgent",
+            "screenSize"
+          ]
         },
         {
           "name": "sessionEnd",
           "description": "User closed or left the simulation",
-          "data": ["timestamp", "totalDuration", "totalProjectilesFired"]
+          "data": [
+            "timestamp",
+            "totalDuration",
+            "totalProjectilesFired"
+          ]
         }
       ],
       "metrics": [
@@ -397,7 +451,7 @@
           "level": "Apply"
         },
         {
-          "question": "Compare the trajectories at 0.5 m/s² and 1.5 m/s². What is the approximate ratio of their horizontal ranges?",
+          "question": "Compare the trajectories at 0.5 m/s\u00b2 and 1.5 m/s\u00b2. What is the approximate ratio of their horizontal ranges?",
           "type": "short-answer",
           "level": "Analyze"
         },
@@ -423,5 +477,26 @@
         "Add wind effects that vary over time"
       ]
     }
-  }
+  },
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of this concept",
+    "Explore this concept through interactive visualization",
+    "Apply knowledge of this concept to solve problems",
+    "Experiment with parameters to observe their effects on this concept"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

@@ -4,7 +4,14 @@
   "creator": "Dan McCreary",
   "contributor": "Nikola Bozhinov (vislupus)",
   "date": "2024-12-27",
-  "subject": ["elastic collisions", "momentum", "kinetic energy", "physics simulation", "particle collisions", "conservation laws"],
+  "subject": [
+    "elastic collisions",
+    "momentum",
+    "kinetic energy",
+    "physics simulation",
+    "particle collisions",
+    "conservation laws"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -13,14 +20,56 @@
   "educational": {
     "level": "High School",
     "gradeRange": "10-12",
-    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
-    "concepts": ["elastic-collisions", "momentum-conservation", "kinetic-energy", "velocity-vectors", "mass"],
-    "prerequisites": ["vectors", "newtons-laws", "momentum", "kinetic-energy"],
+    "bloomsLevel": [
+      "Understanding",
+      "Applying",
+      "Analyzing"
+    ],
+    "concepts": [
+      "elastic-collisions",
+      "momentum-conservation",
+      "kinetic-energy",
+      "velocity-vectors",
+      "mass"
+    ],
+    "prerequisites": [
+      "vectors",
+      "newtons-laws",
+      "momentum",
+      "kinetic-energy"
+    ],
     "estimatedTime": "45-60 minutes"
   },
   "technical": {
     "library": "p5.js",
     "libraryVersion": "1.11.10",
-    "features": ["particle simulation", "collision detection", "velocity vectors", "slider controls", "responsive design"]
-  }
+    "features": [
+      "particle simulation",
+      "collision detection",
+      "velocity vectors",
+      "slider controls",
+      "responsive design"
+    ]
+  },
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "interactive-demo",
+    "map",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of elastic collisions",
+    "Explore elastic collisions through interactive visualization",
+    "Apply knowledge of elastic collisions to solve problems",
+    "Experiment with parameters to observe their effects on elastic collisions"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

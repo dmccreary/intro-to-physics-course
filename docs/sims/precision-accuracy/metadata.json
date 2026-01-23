@@ -56,5 +56,26 @@
       "Gaussian random distribution for dart placement",
       "Responsive canvas sizing"
     ]
-  }
+  },
+  "visualizationType": [
+    "3d-model",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of precision vs accuracy target diagram",
+    "Explore precision vs accuracy target diagram through interactive visualization",
+    "Apply knowledge of precision vs accuracy target diagram to solve problems",
+    "Test understanding of precision vs accuracy target diagram through interactive exercises"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

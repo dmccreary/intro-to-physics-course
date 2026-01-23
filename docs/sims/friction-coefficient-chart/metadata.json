@@ -3,13 +3,45 @@
   "description": "Interactive bar chart comparing static and kinetic friction coefficients for common material pairs including rubber on concrete, steel on steel, glass on glass, and ice on ice.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["friction", "physics", "materials science"],
+  "subject": [
+    "friction",
+    "physics",
+    "materials science"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "Chart.js",
-  "concepts": ["coefficient of friction", "static friction", "kinetic friction", "material properties", "traction"],
-  "bloomsLevel": ["Remember", "Understand", "Analyze"],
-  "prerequisites": ["Friction", "Forces"]
+  "concepts": [
+    "coefficient of friction",
+    "static friction",
+    "kinetic friction",
+    "material properties",
+    "traction"
+  ],
+  "bloomsLevel": [
+    "Remember",
+    "Understand",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Friction",
+    "Forces"
+  ],
+  "visualizationType": [
+    "chart",
+    "graph",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of friction coefficient comparison chart",
+    "Explore friction coefficient comparison chart through interactive visualization",
+    "Apply knowledge of friction coefficient comparison chart to solve problems"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Analyze"
+  ]
 }

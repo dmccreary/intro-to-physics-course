@@ -3,13 +3,60 @@
   "description": "Interactive simulation demonstrating how DC motors convert electrical energy to mechanical rotation. Shows voltage control, back EMF, torque, current flow, and motor efficiency with animated armature rotation.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["electricity", "motors", "electromagnetism", "physics", "energy conversion"],
+  "subject": [
+    "electricity",
+    "motors",
+    "electromagnetism",
+    "physics",
+    "energy conversion"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["DC motor", "back EMF", "electromagnetic induction", "torque", "electrical power", "mechanical power", "motor efficiency"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Electric current", "Voltage", "Magnetism", "Electromagnetic force"]
+  "concepts": [
+    "DC motor",
+    "back EMF",
+    "electromagnetic induction",
+    "torque",
+    "electrical power",
+    "mechanical power",
+    "motor efficiency"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Electric current",
+    "Voltage",
+    "Magnetism",
+    "Electromagnetic force"
+  ],
+  "visualizationType": [
+    "3d-model",
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of dc motor operation",
+    "Explore dc motor operation through interactive visualization",
+    "Apply knowledge of dc motor operation to solve problems",
+    "Experiment with parameters to observe their effects on dc motor operation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

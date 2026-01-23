@@ -3,13 +3,52 @@
   "description": "Interactive simulation showing position, velocity, and acceleration graphs for simple harmonic motion. Demonstrates the phase relationships between these quantities.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["oscillations", "graphs", "physics", "SHM"],
+  "subject": [
+    "oscillations",
+    "graphs",
+    "physics",
+    "SHM"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["simple harmonic motion", "position-time graph", "velocity-time graph", "acceleration-time graph", "phase relationships"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Simple harmonic motion", "Derivatives", "Sinusoidal functions"]
+  "concepts": [
+    "simple harmonic motion",
+    "position-time graph",
+    "velocity-time graph",
+    "acceleration-time graph",
+    "phase relationships"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Simple harmonic motion",
+    "Derivatives",
+    "Sinusoidal functions"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of shm motion graphs",
+    "Explore shm motion graphs through interactive visualization",
+    "Apply knowledge of shm motion graphs to solve problems",
+    "Experiment with parameters to observe their effects on shm motion graphs"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

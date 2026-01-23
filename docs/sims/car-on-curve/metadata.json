@@ -3,13 +3,48 @@
   "description": "Interactive simulation demonstrating centripetal force and friction requirements for a car navigating a curve. Shows the relationship between speed, curve radius, and coefficient of friction to determine safe driving conditions.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["centripetal force", "friction", "circular motion", "physics", "dynamics"],
+  "subject": [
+    "centripetal force",
+    "friction",
+    "circular motion",
+    "physics",
+    "dynamics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["centripetal acceleration", "static friction", "circular motion", "maximum safe speed"],
+  "concepts": [
+    "centripetal acceleration",
+    "static friction",
+    "circular motion",
+    "maximum safe speed"
+  ],
   "educationalLevel": "High School Physics",
-  "bloomsLevel": ["Understanding", "Applying", "Analyzing"]
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of car on curve",
+    "Explore car on curve through interactive visualization",
+    "Apply knowledge of car on curve to solve problems",
+    "Experiment with parameters to observe their effects on car on curve"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ]
 }

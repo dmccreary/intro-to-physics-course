@@ -3,13 +3,53 @@
   "description": "Interactive simulation demonstrating Newton's second law of motion (F=ma). Adjust force and mass to observe how acceleration changes proportionally.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["Newton's laws", "dynamics", "physics", "forces"],
+  "subject": [
+    "Newton's laws",
+    "dynamics",
+    "physics",
+    "forces"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["Newton's second law", "F=ma", "force", "mass", "acceleration", "net force"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Force", "Mass", "Acceleration"]
+  "concepts": [
+    "Newton's second law",
+    "F=ma",
+    "force",
+    "mass",
+    "acceleration",
+    "net force"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Force",
+    "Mass",
+    "Acceleration"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of newton's second law",
+    "Explore newton's second law through interactive visualization",
+    "Apply knowledge of newton's second law to solve problems",
+    "Experiment with parameters to observe their effects on newton's second law"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

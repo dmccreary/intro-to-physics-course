@@ -21,7 +21,11 @@
   "contributor": "Claude AI Assistant",
   "identifier": "energy-diagram-explorer-v1",
   "educationalLevel": "High School, AP Physics, Introductory College",
-  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
   "concepts": [
     "potential energy curves",
     "kinetic energy",
@@ -40,5 +44,28 @@
     "conservation of energy",
     "force and acceleration"
   ],
-  "library": "p5.js"
+  "library": "p5.js",
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of energy diagram explorer",
+    "Explore energy diagram explorer through interactive visualization",
+    "Apply knowledge of energy diagram explorer to solve problems",
+    "Experiment with parameters to observe their effects on energy diagram explorer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

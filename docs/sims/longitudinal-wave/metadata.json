@@ -3,13 +3,53 @@
   "description": "Interactive simulation demonstrating how particles in a longitudinal wave move parallel to the wave propagation direction. Shows compressions and rarefactions with adjustable amplitude, speed, and wavelength.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["waves", "sound", "physics", "longitudinal waves"],
+  "subject": [
+    "waves",
+    "sound",
+    "physics",
+    "longitudinal waves"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["longitudinal wave", "compression", "rarefaction", "wavelength", "amplitude", "wave speed"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Wave properties", "Particle motion"]
+  "concepts": [
+    "longitudinal wave",
+    "compression",
+    "rarefaction",
+    "wavelength",
+    "amplitude",
+    "wave speed"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Wave properties",
+    "Particle motion"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of longitudinal wave animation",
+    "Explore longitudinal wave animation through interactive visualization",
+    "Apply knowledge of longitudinal wave animation to solve problems",
+    "Experiment with parameters to observe their effects on longitudinal wave animation"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ]
 }

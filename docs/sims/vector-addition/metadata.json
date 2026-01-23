@@ -3,13 +3,47 @@
   "description": "Interactive simulation demonstrating vector addition using both graphical (head-to-tail) and component methods. Visualize resultant vectors.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["vectors", "mathematics", "physics"],
+  "subject": [
+    "vectors",
+    "mathematics",
+    "physics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["vector addition", "head-to-tail method", "component method", "resultant vector", "vector components"],
-  "bloomsLevel": ["Understand", "Apply"],
-  "prerequisites": ["Vectors", "Trigonometry"]
+  "concepts": [
+    "vector addition",
+    "head-to-tail method",
+    "component method",
+    "resultant vector",
+    "vector components"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "prerequisites": [
+    "Vectors",
+    "Trigonometry"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of vector addition",
+    "Explore vector addition through interactive visualization",
+    "Apply knowledge of vector addition to solve problems",
+    "Experiment with parameters to observe their effects on vector addition"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ]
 }

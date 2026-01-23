@@ -3,13 +3,52 @@
   "description": "Interactive tool helping students solve rotational kinematics problems. Select known variables to find the appropriate rotational equation.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["rotation", "kinematics", "physics", "problem-solving"],
+  "subject": [
+    "rotation",
+    "kinematics",
+    "physics",
+    "problem-solving"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["rotational kinematics", "angular velocity", "angular acceleration", "rotational equations"],
-  "bloomsLevel": ["Remember", "Understand", "Apply"],
-  "prerequisites": ["Angular velocity", "Angular acceleration", "Kinematic equations"]
+  "concepts": [
+    "rotational kinematics",
+    "angular velocity",
+    "angular acceleration",
+    "rotational equations"
+  ],
+  "bloomsLevel": [
+    "Remember",
+    "Understand",
+    "Apply"
+  ],
+  "prerequisites": [
+    "Angular velocity",
+    "Angular acceleration",
+    "Kinematic equations"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of rotational kinematics solver",
+    "Explore rotational kinematics solver through interactive visualization",
+    "Apply knowledge of rotational kinematics solver to solve problems",
+    "Experiment with parameters to observe their effects on rotational kinematics solver"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

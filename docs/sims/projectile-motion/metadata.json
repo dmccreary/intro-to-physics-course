@@ -2,8 +2,15 @@
   "microsim": {
     "dublinCore": {
       "title": "Projectile Motion Simulation",
-      "creator": ["Claude Code", "Dan McCreary"],
-      "subject": ["Physics", "Kinematics", "Classical Mechanics"],
+      "creator": [
+        "Claude Code",
+        "Dan McCreary"
+      ],
+      "subject": [
+        "Physics",
+        "Kinematics",
+        "Classical Mechanics"
+      ],
       "description": "Interactive simulation demonstrating parabolic trajectories of projectiles with adjustable launch angle and power. Features visual cannon, trajectory tracing, and multiple shot comparison.",
       "date": "2025-10-22",
       "type": "Interactive Simulation",
@@ -23,7 +30,12 @@
         "Apply velocity component decomposition",
         "Analyze the effect of initial velocity on projectile motion"
       ],
-      "bloomsTaxonomyLevels": ["Understand", "Apply", "Analyze", "Evaluate"],
+      "bloomsTaxonomyLevels": [
+        "Understand",
+        "Apply",
+        "Analyze",
+        "Evaluate"
+      ],
       "duration": "15-25 minutes",
       "prerequisites": "Basic understanding of velocity, acceleration, and gravity"
     },
@@ -37,8 +49,13 @@
         "totalHeight": 500
       },
       "responsive": "Width-responsive, height-fixed",
-      "dependencies": ["p5.js CDN"],
-      "accessibility": ["Screen reader support via describe()", "Keyboard accessible controls"]
+      "dependencies": [
+        "p5.js CDN"
+      ],
+      "accessibility": [
+        "Screen reader support via describe()",
+        "Keyboard accessible controls"
+      ]
     },
     "userInterface": {
       "controls": [
@@ -105,10 +122,10 @@
         "x, y (projectile position)"
       ],
       "equations": [
-        "vx = power × cos(angle)",
-        "vy = power × sin(angle)",
-        "x = x₀ + vx × t",
-        "y = y₀ + vy × t + 0.5 × g × t²",
+        "vx = power \u00d7 cos(angle)",
+        "vy = power \u00d7 sin(angle)",
+        "x = x\u2080 + vx \u00d7 t",
+        "y = y\u2080 + vy \u00d7 t + 0.5 \u00d7 g \u00d7 t\u00b2",
         "vy_new = vy + g (each frame)"
       ],
       "assumptions": [
@@ -134,12 +151,12 @@
         "Heavier objects fall faster (in vacuum, all objects fall at same rate)",
         "Horizontal motion affects vertical motion (they are independent)",
         "Projectiles move in a straight line then fall (motion is always curved)",
-        "Maximum range always occurs at 45° (true only without air resistance)"
+        "Maximum range always occurs at 45\u00b0 (true only without air resistance)"
       ],
       "assessmentOpportunities": [
         "Predict landing distance for given angle and power",
         "Identify optimal angle for maximum range",
-        "Explain complementary angle phenomenon (30° and 60°)",
+        "Explain complementary angle phenomenon (30\u00b0 and 60\u00b0)",
         "Calculate time of flight using physics equations",
         "Compare simulation results to theoretical calculations"
       ],
@@ -150,5 +167,25 @@
         "Space: orbital mechanics, rocket trajectories"
       ]
     }
-  }
+  },
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of this concept",
+    "Explore this concept through interactive visualization",
+    "Apply knowledge of this concept to solve problems",
+    "Experiment with parameters to observe their effects on this concept"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

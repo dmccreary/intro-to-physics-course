@@ -1,15 +1,54 @@
 {
   "title": "Work-Energy Theorem",
-  "description": "Interactive simulation demonstrating the work-energy theorem: net work equals change in kinetic energy (W = ΔKE).",
+  "description": "Interactive simulation demonstrating the work-energy theorem: net work equals change in kinetic energy (W = \u0394KE).",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["energy", "work", "physics", "mechanics"],
+  "subject": [
+    "energy",
+    "work",
+    "physics",
+    "mechanics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["work-energy theorem", "work", "kinetic energy", "net work", "W = ΔKE"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Work", "Kinetic energy", "Force"]
+  "concepts": [
+    "work-energy theorem",
+    "work",
+    "kinetic energy",
+    "net work",
+    "W = \u0394KE"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Work",
+    "Kinetic energy",
+    "Force"
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of work-energy theorem",
+    "Explore work-energy theorem through interactive visualization",
+    "Apply knowledge of work-energy theorem to solve problems",
+    "Experiment with parameters to observe their effects on work-energy theorem"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ]
 }

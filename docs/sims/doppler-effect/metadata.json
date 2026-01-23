@@ -3,13 +3,53 @@
   "description": "An interactive MicroSim demonstrating how source motion affects observed frequency through wavefront compression and expansion. Shows wavefront behavior for approaching and receding sound sources.",
   "creator": "Dan McCreary",
   "date": "2024-12-28",
-  "subject": ["Doppler effect", "sound waves", "frequency", "wavelength", "physics", "wave mechanics"],
+  "subject": [
+    "Doppler effect",
+    "sound waves",
+    "frequency",
+    "wavelength",
+    "physics",
+    "wave mechanics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["Doppler effect", "wavefront compression", "frequency shift", "Mach number", "sound velocity"],
-  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
-  "prerequisites": ["Basic wave properties", "Frequency and wavelength relationship", "Speed of sound"]
+  "concepts": [
+    "Doppler effect",
+    "wavefront compression",
+    "frequency shift",
+    "Mach number",
+    "sound velocity"
+  ],
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
+  "prerequisites": [
+    "Basic wave properties",
+    "Frequency and wavelength relationship",
+    "Speed of sound"
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "map",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of doppler effect",
+    "Explore doppler effect through interactive visualization",
+    "Apply knowledge of doppler effect to solve problems",
+    "Experiment with parameters to observe their effects on doppler effect"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ]
 }

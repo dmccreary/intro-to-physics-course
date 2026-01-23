@@ -3,13 +3,52 @@
   "description": "Interactive simulation demonstrating that objects with different horizontal velocities but same initial height hit the ground simultaneously, illustrating independence of horizontal and vertical motion.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["projectile motion", "kinematics", "physics", "horizontal projection"],
+  "subject": [
+    "projectile motion",
+    "kinematics",
+    "physics",
+    "horizontal projection"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["horizontal projection", "independence of motion", "projectile motion", "gravity", "velocity components"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Velocity", "Acceleration", "Gravity", "Vector components"]
+  "concepts": [
+    "horizontal projection",
+    "independence of motion",
+    "projectile motion",
+    "gravity",
+    "velocity components"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Velocity",
+    "Acceleration",
+    "Gravity",
+    "Vector components"
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of horizontal projection",
+    "Explore horizontal projection through interactive visualization",
+    "Apply knowledge of horizontal projection to solve problems",
+    "Experiment with parameters to observe their effects on horizontal projection"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

@@ -3,13 +3,51 @@
   "description": "Interactive simulation of the classic river crossing problem demonstrating vector addition of velocities. Shows how boat velocity and river current combine.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["kinematics", "vectors", "physics", "2D motion"],
+  "subject": [
+    "kinematics",
+    "vectors",
+    "physics",
+    "2D motion"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["relative velocity", "vector addition", "river crossing problem", "resultant velocity"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Vectors", "Velocity", "Vector addition"]
+  "concepts": [
+    "relative velocity",
+    "vector addition",
+    "river crossing problem",
+    "resultant velocity"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Vectors",
+    "Velocity",
+    "Vector addition"
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of river crossing",
+    "Explore river crossing through interactive visualization",
+    "Apply knowledge of river crossing to solve problems",
+    "Experiment with parameters to observe their effects on river crossing"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

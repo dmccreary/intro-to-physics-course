@@ -3,13 +3,52 @@
   "description": "Interactive diagram showing how to properly decompose weight into parallel and perpendicular components on an inclined plane. Adjust angle, mass, and friction coefficient.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["forces", "inclined plane", "physics", "dynamics", "trigonometry"],
+  "subject": [
+    "forces",
+    "inclined plane",
+    "physics",
+    "dynamics",
+    "trigonometry"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["force decomposition", "inclined plane", "normal force", "parallel component", "perpendicular component", "friction"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Forces", "Trigonometry", "Friction", "Vector components"]
+  "concepts": [
+    "force decomposition",
+    "inclined plane",
+    "normal force",
+    "parallel component",
+    "perpendicular component",
+    "friction"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Forces",
+    "Trigonometry",
+    "Friction",
+    "Vector components"
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of inclined plane force decomposition",
+    "Explore inclined plane force decomposition through interactive visualization",
+    "Apply knowledge of inclined plane force decomposition to solve problems",
+    "Experiment with parameters to observe their effects on inclined plane force decomposition"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

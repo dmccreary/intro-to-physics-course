@@ -1,15 +1,53 @@
 {
   "title": "Period, Frequency, and Angular Frequency Relationships",
-  "description": "Interactive simulation demonstrating the relationships between period (T), frequency (f), and angular frequency (ω). Shows that T = 1/f and ω = 2πf.",
+  "description": "Interactive simulation demonstrating the relationships between period (T), frequency (f), and angular frequency (\u03c9). Shows that T = 1/f and \u03c9 = 2\u03c0f.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["oscillations", "waves", "physics", "frequency"],
+  "subject": [
+    "oscillations",
+    "waves",
+    "physics",
+    "frequency"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["period", "frequency", "angular frequency", "T = 1/f", "ω = 2πf", "hertz"],
-  "bloomsLevel": ["Understand", "Apply"],
-  "prerequisites": ["Periodic motion", "Radians"]
+  "concepts": [
+    "period",
+    "frequency",
+    "angular frequency",
+    "T = 1/f",
+    "\u03c9 = 2\u03c0f",
+    "hertz"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "prerequisites": [
+    "Periodic motion",
+    "Radians"
+  ],
+  "visualizationType": [
+    "animation",
+    "data-visualization",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of period, frequency, and angular frequency relationships",
+    "Explore period, frequency, and angular frequency relationships through interactive visualization",
+    "Apply knowledge of period, frequency, and angular frequency relationships to solve problems",
+    "Experiment with parameters to observe their effects on period, frequency, and angular frequency relationships"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ]
 }

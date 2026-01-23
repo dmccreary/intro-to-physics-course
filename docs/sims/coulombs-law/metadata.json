@@ -31,5 +31,27 @@
   ],
   "educationalLevel": "High School",
   "interactivityType": "active",
-  "learningResourceType": "simulation"
+  "learningResourceType": "simulation",
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of coulomb's law force calculator",
+    "Explore coulomb's law force calculator through interactive visualization",
+    "Apply knowledge of coulomb's law force calculator to solve problems",
+    "Experiment with parameters to observe their effects on coulomb's law force calculator"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ]
 }

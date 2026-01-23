@@ -3,13 +3,60 @@
   "description": "Interactive exploration of how vehicle speed relative to ideal speed determines friction requirements on banked curves. Features a friction vs speed graph, side view with friction direction indicators, and real-time status showing safe speed ranges.",
   "creator": "Dan McCreary",
   "date": "2025-01-15",
-  "subject": ["physics", "circular motion", "centripetal force", "banked curves", "friction", "dynamics", "safe driving"],
+  "subject": [
+    "physics",
+    "circular motion",
+    "centripetal force",
+    "banked curves",
+    "friction",
+    "dynamics",
+    "safe driving"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["centripetal force", "friction", "banked curves", "ideal speed", "coefficient of friction", "safe speed range"],
-  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
-  "prerequisites": ["Newton's laws", "force diagrams", "trigonometry", "circular motion basics", "friction"]
+  "concepts": [
+    "centripetal force",
+    "friction",
+    "banked curves",
+    "ideal speed",
+    "coefficient of friction",
+    "safe speed range"
+  ],
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
+  "prerequisites": [
+    "Newton's laws",
+    "force diagrams",
+    "trigonometry",
+    "circular motion basics",
+    "friction"
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of banked curve speed analysis",
+    "Explore banked curve speed analysis through interactive visualization",
+    "Apply knowledge of banked curve speed analysis to solve problems",
+    "Experiment with parameters to observe their effects on banked curve speed analysis"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ]
 }
