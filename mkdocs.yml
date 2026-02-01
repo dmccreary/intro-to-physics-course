@@ -259,6 +259,9 @@ extra_javascript:
    - js/mathjax.js
    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 extra:
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: Introduction to Physics
+  textbook_version: "1.0"
   analytics:
     provider: google
     property: G-BF05WTGMW9
