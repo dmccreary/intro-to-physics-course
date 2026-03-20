@@ -40,5 +40,50 @@
     "Applying",
     "Analyzing"
   ],
-  "library": "p5.js"
+  "library": "p5.js",
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of interactive graph analysis",
+    "Explore interactive graph analysis through interactive visualization",
+    "Apply knowledge of interactive graph analysis to solve problems",
+    "Experiment with parameters to observe their effects on interactive graph analysis"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "interpret",
+      "apply"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
 }

@@ -3,13 +3,71 @@
   "description": "Interactive introduction to vectors showing magnitude, direction, and representation. Learn to distinguish vectors from scalars.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["vectors", "mathematics", "physics"],
+  "subject": [
+    "vectors",
+    "mathematics",
+    "physics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["vectors", "magnitude", "direction", "scalars vs vectors", "vector notation"],
-  "bloomsLevel": ["Remember", "Understand"],
-  "prerequisites": ["Basic algebra", "Coordinate systems"]
+  "concepts": [
+    "vectors",
+    "magnitude",
+    "direction",
+    "scalars vs vectors",
+    "vector notation"
+  ],
+  "bloomsLevel": [
+    "Remember",
+    "Understand"
+  ],
+  "prerequisites": [
+    "Basic algebra",
+    "Coordinate systems"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of vector basics",
+    "Explore vector basics through interactive visualization",
+    "Apply knowledge of vector basics to solve problems",
+    "Experiment with parameters to observe their effects on vector basics"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "explain",
+      "calculate",
+      "illustrate",
+      "solve"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
 }

@@ -4,7 +4,15 @@
   "creator": "Dan McCreary",
   "contributor": "Tech With Tim (Python Planet Simulation)",
   "date": "2024-12-24",
-  "subject": ["orbital mechanics", "Kepler's laws", "gravitational force", "solar system", "planetary motion", "astronomy", "Newton's law of gravitation"],
+  "subject": [
+    "orbital mechanics",
+    "Kepler's laws",
+    "gravitational force",
+    "solar system",
+    "planetary motion",
+    "astronomy",
+    "Newton's law of gravitation"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -13,14 +21,81 @@
   "educational": {
     "level": "High School",
     "gradeRange": "10-12",
-    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
-    "concepts": ["gravitational-force", "orbital-velocity", "keplers-laws", "perihelion", "aphelion", "eccentricity", "astronomical-unit"],
-    "prerequisites": ["newtons-laws", "gravitational-force", "vectors", "velocity"],
+    "bloomsLevel": [
+      "Understanding",
+      "Applying",
+      "Analyzing"
+    ],
+    "concepts": [
+      "gravitational-force",
+      "orbital-velocity",
+      "keplers-laws",
+      "perihelion",
+      "aphelion",
+      "eccentricity",
+      "astronomical-unit"
+    ],
+    "prerequisites": [
+      "newtons-laws",
+      "gravitational-force",
+      "vectors",
+      "velocity"
+    ],
     "estimatedTime": "45-60 minutes"
   },
   "technical": {
     "library": "p5.js",
     "libraryVersion": "1.11.10",
-    "features": ["n-body simulation", "real astronomical data", "orbital tracking", "real-time statistics", "gravitational calculations"]
+    "features": [
+      "n-body simulation",
+      "real astronomical data",
+      "orbital tracking",
+      "real-time statistics",
+      "gravitational calculations"
+    ]
+  },
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of solar system",
+    "Explore solar system through interactive visualization",
+    "Apply knowledge of solar system to solve problems",
+    "Experiment with parameters to observe their effects on solar system"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "calculate",
+      "demonstrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "observe"
   }
 }

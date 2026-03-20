@@ -3,14 +3,83 @@
   "description": "Interactive simulation showing a mass-spring system with real-time displacement graph demonstrating underdamped, critically damped, overdamped, and undamped harmonic oscillators.",
   "creator": "Dan McCreary",
   "date": "2024-12-28",
-  "subject": ["damping", "harmonic oscillator", "physics", "oscillation", "spring-mass system", "differential equations"],
+  "subject": [
+    "damping",
+    "harmonic oscillator",
+    "physics",
+    "oscillation",
+    "spring-mass system",
+    "differential equations"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["damping ratio", "natural frequency", "underdamped", "critically damped", "overdamped", "simple harmonic motion"],
-  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
-  "prerequisites": ["algebra", "trigonometry", "basic physics"],
-  "educationLevel": "High School"
+  "concepts": [
+    "damping ratio",
+    "natural frequency",
+    "underdamped",
+    "critically damped",
+    "overdamped",
+    "simple harmonic motion"
+  ],
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
+  "prerequisites": [
+    "algebra",
+    "trigonometry",
+    "basic physics"
+  ],
+  "educationLevel": "High School",
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of types of damping comparison",
+    "Explore types of damping comparison through interactive visualization",
+    "Apply knowledge of types of damping comparison to solve problems",
+    "Experiment with parameters to observe their effects on types of damping comparison"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "summarize",
+      "calculate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
+  }
 }

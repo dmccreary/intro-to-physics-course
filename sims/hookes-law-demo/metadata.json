@@ -3,13 +3,80 @@
   "description": "An interactive MicroSim demonstrating Hooke's Law (F = kx) with a vertical spring-mass system. Users can drag the mass, adjust spring constant and mass, collect data points, and visualize the linear relationship between force and displacement.",
   "creator": "Dan McCreary",
   "date": "2024-12-28",
-  "subject": ["Hooke's Law", "springs", "elasticity", "force", "displacement", "physics", "simple harmonic motion"],
+  "subject": [
+    "Hooke's Law",
+    "springs",
+    "elasticity",
+    "force",
+    "displacement",
+    "physics",
+    "simple harmonic motion"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["Hooke's Law", "spring constant", "restoring force", "equilibrium", "oscillation", "damping"],
-  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
-  "prerequisites": ["Force concepts", "Linear relationships", "Basic algebra"]
+  "concepts": [
+    "Hooke's Law",
+    "spring constant",
+    "restoring force",
+    "equilibrium",
+    "oscillation",
+    "damping"
+  ],
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
+  "prerequisites": [
+    "Force concepts",
+    "Linear relationships",
+    "Basic algebra"
+  ],
+  "visualizationType": [
+    "animation",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of hooke's law interactive demonstration",
+    "Explore hooke's law interactive demonstration through interactive visualization",
+    "Apply knowledge of hooke's law interactive demonstration to solve problems",
+    "Experiment with parameters to observe their effects on hooke's law interactive demonstration"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "summarize",
+      "calculate",
+      "demonstrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective"
+    ],
+    "interactionStyle": "manipulate"
+  }
 }

@@ -20,7 +20,14 @@
   "identifier": "electric-field-lines-v1",
   "educational": {
     "level": "High School (Grades 10-12)",
-    "bloomsLevel": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"],
+    "bloomsLevel": [
+      "Remember",
+      "Understand",
+      "Apply",
+      "Analyze",
+      "Evaluate",
+      "Create"
+    ],
     "concepts": [
       "Electric Field",
       "Field Lines",
@@ -37,5 +44,49 @@
       "Electric Charge"
     ],
     "library": "p5.js"
+  },
+  "visualizationType": [
+    "diagram",
+    "interactive-demo",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of electric field lines visualization",
+    "Explore electric field lines visualization through interactive visualization",
+    "Apply knowledge of electric field lines visualization to solve problems",
+    "Experiment with parameters to observe their effects on electric field lines visualization"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "apply",
+      "calculate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
   }
 }

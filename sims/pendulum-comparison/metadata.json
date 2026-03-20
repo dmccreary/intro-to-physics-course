@@ -3,13 +3,73 @@
   "description": "Interactive simulation comparing simple pendulums (point mass on massless string) with physical pendulums (extended mass objects). Demonstrates differences in period and motion.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["pendulum", "oscillations", "physics", "rotational motion"],
+  "subject": [
+    "pendulum",
+    "oscillations",
+    "physics",
+    "rotational motion"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["simple pendulum", "physical pendulum", "period", "moment of inertia", "center of mass"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Simple harmonic motion", "Moment of inertia", "Gravity"]
+  "concepts": [
+    "simple pendulum",
+    "physical pendulum",
+    "period",
+    "moment of inertia",
+    "center of mass"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Simple harmonic motion",
+    "Moment of inertia",
+    "Gravity"
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "map",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of simple vs. physical pendulum comparison",
+    "Explore simple vs. physical pendulum comparison through interactive visualization",
+    "Apply knowledge of simple vs. physical pendulum comparison to solve problems",
+    "Experiment with parameters to observe their effects on simple vs. physical pendulum comparison"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "calculate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
+  }
 }

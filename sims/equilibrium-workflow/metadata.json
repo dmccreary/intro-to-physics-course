@@ -3,13 +3,76 @@
   "description": "Interactive decision tree to classify objects as in static equilibrium, dynamic equilibrium, or not in equilibrium based on net force and velocity conditions.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["physics", "equilibrium", "static equilibrium", "dynamic equilibrium", "Newton's first law", "net force", "decision tree"],
+  "subject": [
+    "physics",
+    "equilibrium",
+    "static equilibrium",
+    "dynamic equilibrium",
+    "Newton's first law",
+    "net force",
+    "decision tree"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["equilibrium", "static equilibrium", "dynamic equilibrium", "net force", "velocity", "acceleration"],
+  "concepts": [
+    "equilibrium",
+    "static equilibrium",
+    "dynamic equilibrium",
+    "net force",
+    "velocity",
+    "acceleration"
+  ],
   "educationalLevel": "High School",
-  "bloomsLevel": ["Understanding", "Applying", "Analyzing"]
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of equilibrium classification workflow",
+    "Explore equilibrium classification workflow through interactive visualization",
+    "Apply knowledge of equilibrium classification workflow to solve problems",
+    "Test understanding of equilibrium classification workflow through interactive exercises"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "worked-example",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "classify",
+      "describe",
+      "explain",
+      "apply",
+      "solve"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
+  }
 }

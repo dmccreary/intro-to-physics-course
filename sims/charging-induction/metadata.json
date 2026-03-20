@@ -3,13 +3,81 @@
   "description": "An interactive step-by-step MicroSim demonstrating how objects can be charged through electrostatic induction without direct contact. Shows electron redistribution in conductors when a charged rod approaches.",
   "creator": "Dan McCreary",
   "date": "2024-12-28",
-  "subject": ["electrostatic induction", "electric charge", "conductors", "electron mobility", "charge distribution", "physics", "electrostatics"],
+  "subject": [
+    "electrostatic induction",
+    "electric charge",
+    "conductors",
+    "electron mobility",
+    "charge distribution",
+    "physics",
+    "electrostatics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["charging by induction", "electrostatic induction", "charge polarization", "electron mobility", "conductors", "charge conservation"],
-  "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
-  "prerequisites": ["Electric charge basics", "Conductors and insulators", "Coulomb's law fundamentals"]
+  "concepts": [
+    "charging by induction",
+    "electrostatic induction",
+    "charge polarization",
+    "electron mobility",
+    "conductors",
+    "charge conservation"
+  ],
+  "bloomsLevel": [
+    "Understanding",
+    "Applying",
+    "Analyzing"
+  ],
+  "prerequisites": [
+    "Electric charge basics",
+    "Conductors and insulators",
+    "Coulomb's law fundamentals"
+  ],
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of charging by induction",
+    "Explore charging by induction through interactive visualization",
+    "Apply knowledge of charging by induction to solve problems",
+    "Test understanding of charging by induction through interactive exercises"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "apply",
+      "calculate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
 }

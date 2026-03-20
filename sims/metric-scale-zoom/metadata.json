@@ -108,8 +108,8 @@
         "Power of 10 exponent"
       ],
       "equations": [
-        "Scale position: log₁₀(size in meters)",
-        "Conversion: value × 10^exponent = size in meters"
+        "Scale position: log\u2081\u2080(size in meters)",
+        "Conversion: value \u00d7 10^exponent = size in meters"
       ],
       "assumptions": [
         "Objects are represented at approximate typical sizes",
@@ -161,8 +161,15 @@
         ]
       },
       "colorScheme": {
-        "background": ["aliceblue", "white"],
-        "text": ["black", "navy", "darkgreen"],
+        "background": [
+          "aliceblue",
+          "white"
+        ],
+        "text": [
+          "black",
+          "navy",
+          "darkgreen"
+        ],
         "borders": "silver"
       }
     },
@@ -170,14 +177,14 @@
       {
         "name": "Virus",
         "size": "100 nm",
-        "sizeInMeters": 1e-7,
+        "sizeInMeters": 1e-07,
         "prefix": "nano",
         "exponent": -9
       },
       {
         "name": "Human Hair Width",
-        "size": "100 μm",
-        "sizeInMeters": 1e-4,
+        "size": "100 \u03bcm",
+        "sizeInMeters": 0.0001,
         "prefix": "micro",
         "exponent": -6
       },
@@ -226,17 +233,62 @@
       {
         "name": "Solar System Diameter",
         "size": "28.746 Tm",
-        "sizeInMeters": 2.8746e13,
+        "sizeInMeters": 28746000000000.0,
         "prefix": "tera",
         "exponent": 12
       },
       {
         "name": "Galaxy Diameter",
         "size": "946.1 Em",
-        "sizeInMeters": 9.461e20,
+        "sizeInMeters": 9.461e+20,
         "prefix": "exa",
         "exponent": 18
       }
     ]
+  },
+  "visualizationType": [
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of this concept",
+    "Explore this concept through interactive visualization",
+    "Apply knowledge of this concept to solve problems",
+    "Experiment with parameters to observe their effects on this concept"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "interpret",
+      "apply"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
   }
 }

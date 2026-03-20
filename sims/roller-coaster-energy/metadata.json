@@ -3,13 +3,76 @@
   "description": "Interactive simulation showing energy transformations in a roller coaster. Demonstrates conservation of mechanical energy with PE to KE conversions.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["energy", "conservation", "physics", "mechanics"],
+  "subject": [
+    "energy",
+    "conservation",
+    "physics",
+    "mechanics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["conservation of energy", "kinetic energy", "potential energy", "energy transformation", "mechanical energy"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Kinetic energy", "Potential energy", "Conservation of energy"]
+  "concepts": [
+    "conservation of energy",
+    "kinetic energy",
+    "potential energy",
+    "energy transformation",
+    "mechanical energy"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Kinetic energy",
+    "Potential energy",
+    "Conservation of energy"
+  ],
+  "visualizationType": [
+    "animation",
+    "chart",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation",
+    "timeline"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of roller coaster energy",
+    "Explore roller coaster energy through interactive visualization",
+    "Apply knowledge of roller coaster energy to solve problems",
+    "Experiment with parameters to observe their effects on roller coaster energy"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "assessment",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "apply",
+      "calculate",
+      "demonstrate",
+      "illustrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "manipulate"
+  }
 }

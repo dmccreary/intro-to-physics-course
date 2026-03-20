@@ -3,13 +3,70 @@
   "description": "Interactive visualization showing the microscopic view of surface contact between materials, illustrating why friction occurs at the atomic/molecular level.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["friction", "surfaces", "physics", "materials science"],
+  "subject": [
+    "friction",
+    "surfaces",
+    "physics",
+    "materials science"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["surface contact", "microscopic friction", "surface roughness", "contact points", "atomic interaction"],
-  "bloomsLevel": ["Understand", "Analyze"],
-  "prerequisites": ["Friction", "Atomic structure"]
+  "concepts": [
+    "surface contact",
+    "microscopic friction",
+    "surface roughness",
+    "contact points",
+    "atomic interaction"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Friction",
+    "Atomic structure"
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of microscopic view of surface contact",
+    "Explore microscopic view of surface contact through interactive visualization",
+    "Apply knowledge of microscopic view of surface contact to solve problems",
+    "Experiment with parameters to observe their effects on microscopic view of surface contact"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "describe",
+      "demonstrate",
+      "illustrate",
+      "experiment",
+      "assess"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "medium",
+    "feedbackType": [
+      "corrective"
+    ],
+    "interactionStyle": "manipulate"
+  }
 }

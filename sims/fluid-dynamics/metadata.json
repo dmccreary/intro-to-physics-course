@@ -4,7 +4,15 @@
   "creator": "Dan McCreary",
   "contributor": "Nikola Bozhinov (vislupus)",
   "date": "2024-12-24",
-  "subject": ["fluid dynamics", "particle simulation", "collision detection", "laminar flow", "physics simulation", "QuadTree", "flow around obstacles"],
+  "subject": [
+    "fluid dynamics",
+    "particle simulation",
+    "collision detection",
+    "laminar flow",
+    "physics simulation",
+    "QuadTree",
+    "flow around obstacles"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
@@ -13,14 +21,80 @@
   "educational": {
     "level": "High School",
     "gradeRange": "10-12",
-    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
-    "concepts": ["fluid-dynamics", "particle-collisions", "momentum", "flow-patterns", "viscosity"],
-    "prerequisites": ["vectors", "newtons-laws", "momentum", "collisions"],
+    "bloomsLevel": [
+      "Understanding",
+      "Applying",
+      "Analyzing"
+    ],
+    "concepts": [
+      "fluid-dynamics",
+      "particle-collisions",
+      "momentum",
+      "flow-patterns",
+      "viscosity"
+    ],
+    "prerequisites": [
+      "vectors",
+      "newtons-laws",
+      "momentum",
+      "collisions"
+    ],
     "estimatedTime": "45-60 minutes"
   },
   "technical": {
     "library": "p5.js",
     "libraryVersion": "1.11.10",
-    "features": ["particle simulation", "QuadTree spatial partitioning", "collision detection", "slider controls", "real-time statistics"]
+    "features": [
+      "particle simulation",
+      "QuadTree spatial partitioning",
+      "collision detection",
+      "slider controls",
+      "real-time statistics"
+    ]
+  },
+  "visualizationType": [
+    "animation",
+    "diagram",
+    "interactive-demo",
+    "map",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of fluid dynamics",
+    "Explore fluid dynamics through interactive visualization",
+    "Apply knowledge of fluid dynamics to solve problems",
+    "Experiment with parameters to observe their effects on fluid dynamics"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "summarize",
+      "apply"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "immediate",
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
   }
 }

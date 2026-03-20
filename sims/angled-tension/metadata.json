@@ -3,14 +3,74 @@
   "description": "Interactive visualization showing how the angle of an applied force affects its horizontal and vertical components, normal force, friction, and resulting acceleration.",
   "creator": "Dan McCreary",
   "date": "2024-12-30",
-  "subject": ["physics", "forces", "tension", "friction", "trigonometry", "Newton's laws", "vector components"],
+  "subject": [
+    "physics",
+    "forces",
+    "tension",
+    "friction",
+    "trigonometry",
+    "Newton's laws",
+    "vector components"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["force components", "angle of applied force", "normal force", "kinetic friction", "acceleration"],
+  "concepts": [
+    "force components",
+    "angle of applied force",
+    "normal force",
+    "kinetic friction",
+    "acceleration"
+  ],
   "bloomsLevel": "Applying",
-  "prerequisites": ["trigonometry basics", "Newton's second law", "friction concepts"],
-  "educationalLevel": "High School Physics"
+  "prerequisites": [
+    "trigonometry basics",
+    "Newton's second law",
+    "friction concepts"
+  ],
+  "educationalLevel": "High School Physics",
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of angled tension components",
+    "Explore angled tension components through interactive visualization",
+    "Apply knowledge of angled tension components to solve problems",
+    "Experiment with parameters to observe their effects on angled tension components"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "calculate",
+      "demonstrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
+  }
 }

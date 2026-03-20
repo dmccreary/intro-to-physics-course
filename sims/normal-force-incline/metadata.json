@@ -3,13 +3,73 @@
   "description": "Interactive simulation showing how normal force varies on inclined planes. Demonstrates that normal force equals weight times cosine of the incline angle.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["forces", "inclined plane", "physics", "dynamics"],
+  "subject": [
+    "forces",
+    "inclined plane",
+    "physics",
+    "dynamics"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["normal force", "inclined plane", "weight components", "force decomposition", "N = mg cos θ"],
-  "bloomsLevel": ["Understand", "Apply"],
-  "prerequisites": ["Forces", "Trigonometry", "Weight"]
+  "concepts": [
+    "normal force",
+    "inclined plane",
+    "weight components",
+    "force decomposition",
+    "N = mg cos \u03b8"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply"
+  ],
+  "prerequisites": [
+    "Forces",
+    "Trigonometry",
+    "Weight"
+  ],
+  "visualizationType": [
+    "diagram",
+    "graph",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of normal force on inclined planes",
+    "Explore normal force on inclined planes through interactive visualization",
+    "Apply knowledge of normal force on inclined planes to solve problems",
+    "Experiment with parameters to observe their effects on normal force on inclined planes"
+  ],
+  "bloomsTaxonomy": [
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "exploration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "calculate",
+      "demonstrate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
 }

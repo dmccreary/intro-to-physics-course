@@ -3,13 +3,72 @@
   "description": "Interactive simulation racing objects with different moments of inertia down an incline. Demonstrates why solid spheres beat hollow spheres and cylinders.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["rotation", "moment of inertia", "physics", "rolling motion"],
+  "subject": [
+    "rotation",
+    "moment of inertia",
+    "physics",
+    "rolling motion"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["moment of inertia", "rolling race", "rotational kinetic energy", "solid vs hollow objects"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze"],
-  "prerequisites": ["Moment of inertia", "Kinetic energy", "Rolling motion"]
+  "concepts": [
+    "moment of inertia",
+    "rolling race",
+    "rotational kinetic energy",
+    "solid vs hollow objects"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze"
+  ],
+  "prerequisites": [
+    "Moment of inertia",
+    "Kinetic energy",
+    "Rolling motion"
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of rotational inertia race",
+    "Explore rotational inertia race through interactive visualization",
+    "Apply knowledge of rotational inertia race to solve problems",
+    "Experiment with parameters to observe their effects on rotational inertia race"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "assessment",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "calculate",
+      "analyze"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "explanatory"
+    ],
+    "interactionStyle": "construct"
+  }
 }

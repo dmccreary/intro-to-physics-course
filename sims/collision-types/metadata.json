@@ -22,7 +22,11 @@
   "coverage": "High School Physics, AP Physics 1, Introductory College Physics",
   "educational": {
     "level": "High School (Grades 10-12)",
-    "bloomsLevel": ["Understanding", "Applying", "Analyzing"],
+    "bloomsLevel": [
+      "Understanding",
+      "Applying",
+      "Analyzing"
+    ],
     "concepts": [
       "Elastic Collision",
       "Inelastic Collision",
@@ -50,5 +54,49 @@
       "Play/Pause/Step controls",
       "Responsive design"
     ]
+  },
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Observe and understand collision types comparison in action",
+    "Explore how changing parameters affects collision types comparison",
+    "Apply physics principles to predict collision types comparison behavior",
+    "Test understanding of collision types comparison through interactive exercises"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "apply",
+      "calculate"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "respond"
   }
 }

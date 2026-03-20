@@ -3,13 +3,77 @@
   "description": "Interactive simulation exploring how launch angle and initial speed affect projectile trajectory. Features trajectory prediction, velocity components, complementary angles comparison, and multiple trajectory display.",
   "creator": "Dan McCreary",
   "date": "2025-01-01",
-  "subject": ["projectile motion", "kinematics", "physics", "trajectories"],
+  "subject": [
+    "projectile motion",
+    "kinematics",
+    "physics",
+    "trajectories"
+  ],
   "type": "Interactive Simulation",
   "format": "text/html",
   "language": "en",
   "rights": "CC BY-NC-SA 4.0",
   "library": "p5.js",
-  "concepts": ["projectile motion", "launch angle", "trajectory", "velocity components", "complementary angles", "range equation"],
-  "bloomsLevel": ["Understand", "Apply", "Analyze", "Evaluate"],
-  "prerequisites": ["Velocity", "Acceleration", "Gravity", "Trigonometry"]
+  "concepts": [
+    "projectile motion",
+    "launch angle",
+    "trajectory",
+    "velocity components",
+    "complementary angles",
+    "range equation"
+  ],
+  "bloomsLevel": [
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate"
+  ],
+  "prerequisites": [
+    "Velocity",
+    "Acceleration",
+    "Gravity",
+    "Trigonometry"
+  ],
+  "visualizationType": [
+    "animation",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of angled projectile motion explorer",
+    "Explore angled projectile motion explorer through interactive visualization",
+    "Apply knowledge of angled projectile motion explorer to solve problems",
+    "Experiment with parameters to observe their effects on angled projectile motion explorer"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "evaluate"
+    ],
+    "bloomVerbs": [
+      "compare",
+      "describe",
+      "explain",
+      "calculate",
+      "use"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": true,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
 }
