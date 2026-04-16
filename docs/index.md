@@ -2,10 +2,6 @@
 title: Introduction to Physics
 description: An intelligent textbook on high school physics with many MicroSims of physics.
 image: img/cover.png
-og:image: img/cover.png
-twitter:image: /img/cover.png
-social:
-   cards: false
 hide:
     toc
 ---
