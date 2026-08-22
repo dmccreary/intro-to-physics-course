@@ -121,7 +121,7 @@ export DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib  # Add to ~/.zshrc
 
 These projects are created using an extensive library of skills found here:
 
-[Intelligent Textbook and MicroSim Claude Code Skills Library](https://github.com/dmccreary/claude-skills/tree/main/skills)
+[Intelligent Textbook and MicroSim Claude Code Skills Library](https://github.com/dmccreary/ibook-skills/tree/main/skills)
 
 There is an install script that should be run to place symbolic links in the `~/.claude/skills/` directory.
 

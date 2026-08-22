@@ -5,7 +5,7 @@
 [![GitHub Pages](https://img.shields.io/badge/View%20on-GitHub%20Pages-blue?logo=github)](https://dmccreary.github.io/intro-to-physics-course/)
 [![GitHub](https://img.shields.io/badge/GitHub-dmccreary%2Fintro--to--physics--course-blue?logo=github)](https://github.com/dmccreary/intro-to-physics-course/)
 [![Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-DA7857?logo=anthropic)](https://claude.ai/code)
-[![Claude Skills](https://img.shields.io/badge/Uses-Claude%20Skills-DA7857?logo=anthropic)](https://github.com/dmccreary/claude-skills)
+[![Claude Skills](https://img.shields.io/badge/Uses-Claude%20Skills-DA7857?logo=anthropic)](https://github.com/dmccreary/ibook-skills)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![p5.js](https://img.shields.io/badge/p5.js-ED225D?logo=p5.js&logoColor=white)](https://p5js.org/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -377,7 +377,7 @@ This project stands on the shoulders of giants in the open source and educationa
 **AI-Assisted Development:**
 - **[Claude AI](https://claude.ai)** by Anthropic - AI-assisted content generation and quality assurance
 - **[Claude Code](https://claude.ai/code)** - Development environment for educational content creation
-- **[Claude Skills](https://github.com/dmccreary/claude-skills)** - Reusable AI skills for intelligent textbook development
+- **[Claude Skills](https://github.com/dmccreary/ibook-skills)** - Reusable AI skills for intelligent textbook development
 
 **Inspiration and Resources:**
 Special thanks to the educators, physicists, and developers who contribute to making quality physics education accessible and engaging. This project draws inspiration from open educational resources (OER) movements, the Physics Education Research community, and innovative uses of technology in STEM education.
